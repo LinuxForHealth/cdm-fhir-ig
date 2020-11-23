@@ -18,4 +18,4 @@ jobs:
         source_repo: "git@github.ibm.com:watson-health-fhir-server/ig-common-data-model.git"
         source_branch: "gh-pages"
         destination_branch: "gh-pages"
-        github_token: ${{ secrets.PAT }}
+        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
