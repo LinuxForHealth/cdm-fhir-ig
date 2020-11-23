@@ -15,7 +15,7 @@ jobs:
     - name: repo-sync
       uses: repo-sync/github-sync@v2
       with:
-        source_repo: "ig-common-data-model"
+        source_repo: "git@github.ibm.com:watson-health-fhir-server/ig-common-data-model.git"
         source_branch: "gh-pages"
         destination_branch: "gh-pages"
         github_token: ${{ secrets.PAT }}
