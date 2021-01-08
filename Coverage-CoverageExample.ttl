@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Coverage/CoverageExample> a fhir:Coverage;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CoverageExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Age Rollup Group Code</b>: <span title=\"Codes: \">0-17</span></p><p><b>Age in years</b>: 16 years</p><p><b>identifier</b>: id: unencryp-id1234</p><p><b>status</b>: active</p><p><b>beneficiary</b>: <a href=\"unused\">unused</a></p><p><b>period</b>: 2000-01-01 --&gt; 2000-10-31</p><p><b>payor</b>: <a href=\"unused\">unused</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/age-rollup-group-code" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "0-17" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/coverage-snapshot-age-in-years" ];
+     fhir:Extension.valueAge [
+       fhir:Quantity.value [ fhir:value "16"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "years" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "a" ]
+     ]
+  ];
+  fhir:Coverage.identifier [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state" ];
+       fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:Identifier.value [ fhir:value "unencryp-id1234" ]
+  ];
+  fhir:Coverage.status [ fhir:value "active"];
+  fhir:Coverage.beneficiary [
+     fhir:Reference.reference [ fhir:value "unused" ]
+  ];
+  fhir:Coverage.period [
+     fhir:Period.start [ fhir:value "2000-01-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2000-10-31"^^xsd:date ]
+  ];
+  fhir:Coverage.payor [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "unused" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Coverage/CoverageExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

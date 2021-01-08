@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="CDMPatientInstance-DoNotContact"/>
+  <meta>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+      <valueString value="99999"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+      <valueString value="b069a545-9506-40c6-8498-23de2e189143"/>
+    </extension>
+    <source value="http://acme-health.com/epic"/>
+    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Status Code</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status collection}">Collections</span></p><p><b>Status Code</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status confidential}">Confidential</span></p><p><b>Status Code</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status test}">Test</span></p><p><b>importance</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance bad-debt}">Bad Debt</span></p><p><b>importance</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance do-not-contact}">Do Not Contact</span></p><p><b>Sex Assigned At Birth</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth male}">Male</span></p><p><b>identifier</b>: Source System Row Identifier: 35e4aa64-fdf8-4ef9-8acd-066aec45f63b (OFFICIAL)</p><p><b>name</b>: Norm Peterson </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1948-10-17</p></div>
+  </text>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/status-code">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-status"/>
+        <code value="collection"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/status-code">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-status"/>
+        <code value="confidential"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/status-code">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-status"/>
+        <code value="test"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-importance">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-importance"/>
+        <code value="bad-debt"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-importance">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-importance"/>
+        <code value="do-not-contact"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth"/>
+        <code value="male"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <code value="SSRI"/>
+      </coding>
+    </type>
+    <system value="http://acme-health.com/epic/patient"/>
+    <value value="35e4aa64-fdf8-4ef9-8acd-066aec45f63b"/>
+    <assigner>
+      <display value="Acme Health - Epic"/>
+    </assigner>
+  </identifier>
+  <name>
+    <family value="Peterson"/>
+    <given value="Norm"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1948-10-17"/>
+</Patient>

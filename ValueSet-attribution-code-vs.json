@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "attribution-code-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-attribution-code-system.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-attribution-source.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/attribution-source</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-attribution-product.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/attribution-product</code></a></li></ul></div>"
+  },
+  "url": "http://ibm.com/fhir/cdm/ValueSet/attribution-code-vs",
+  "version": "0.1.0",
+  "name": "AttributionCodeVS",
+  "title": "Attribution Codes",
+  "status": "active",
+  "date": "2021-01-08T18:08:05+00:00",
+  "contact": [
+    {
+      "name": "Kim Kenna",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "sloand@us.ibm.com"
+        }
+      ]
+    },
+    {
+      "name": "Jill Doty",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "jdoty@us.ibm.com"
+        }
+      ]
+    }
+  ],
+  "description": "Types of attribution used to associate a patient to a provider",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system"
+      },
+      {
+        "system": "http://ibm.com/fhir/cdm/CodeSystem/attribution-source"
+      },
+      {
+        "system": "http://ibm.com/fhir/cdm/CodeSystem/attribution-product"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "resourceType": "Coverage",
+  "id": "CoverageExample",
+  "meta": {
+    "profile": [
+      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Age Rollup Group Code</b>: <span title=\"Codes: \">0-17</span></p><p><b>Age in years</b>: 16 years</p><p><b>identifier</b>: id: unencryp-id1234</p><p><b>status</b>: active</p><p><b>beneficiary</b>: <a href=\"unused\">unused</a></p><p><b>period</b>: 2000-01-01 --&gt; 2000-10-31</p><p><b>payor</b>: <a href=\"unused\">unused</a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/age-rollup-group-code",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "1",
+            "display": "0-17"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/coverage-snapshot-age-in-years",
+      "valueAge": {
+        "value": 16,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "extension": [
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state",
+          "valueBoolean": false
+        }
+      ],
+      "value": "unencryp-id1234"
+    }
+  ],
+  "status": "active",
+  "beneficiary": {
+    "reference": "unused"
+  },
+  "period": {
+    "start": "2000-01-01",
+    "end": "2000-10-31"
+  },
+  "payor": [
+    {
+      "reference": "unused"
+    }
+  ]
+}

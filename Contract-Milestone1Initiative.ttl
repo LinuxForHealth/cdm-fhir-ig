@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Contract/Milestone1Initiative> a fhir:Contract;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Milestone1Initiative"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ffv-initative-resource";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/ffv-initative-resource>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Advantage Database Key: 1, Advantage customer key: Milestone1Initiative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "attributionCode" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system" ];
+         fhir:Coding.code [ fhir:value "enrollment" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "ffvSchedule" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/ffv-schedule" ];
+         fhir:Coding.code [ fhir:value "monthly" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "qualityMeasures" ];
+     fhir:Extension.valueReference [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "quality-measure-list-1" ]
+       ]
+     ]
+  ];
+  fhir:Contract.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system" ];
+         fhir:Coding.code [ fhir:value "ADKEY" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system" ];
+         fhir:Coding.code [ fhir:value "CUSTKEY" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "Milestone1Initiative" ]
+  ];
+  fhir:Contract.title [ fhir:value "Primary Care Incentive Program"];
+  fhir:Contract.supportingInfo [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "participating-providers-list-2" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "included-patients-list-2" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "excluded-patients-list-2" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Contract/Milestone1Initiative.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

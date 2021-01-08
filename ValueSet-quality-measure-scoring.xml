@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="quality-measure-scoring"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/2.0.0/CodeSystem-measure-scoring.html"><code>http://terminology.hl7.org/CodeSystem/measure-scoring</code></a></li><li>Include all codes defined in <a href="CodeSystem-measure-population-type.html"><code>http://ibm.com/fhir/cdm/CodeSystem/measure-population-type</code></a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href="http://terminology.hl7.org/2.0.0/CodeSystem-measure-scoring.html"><code>http://terminology.hl7.org/CodeSystem/measure-scoring</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/2.0.0/CodeSystem-measure-scoring.html#measure-scoring-proportion">proportion</a></td><td>Proportion</td><td>The measure score is defined using a proportion.</td></tr><tr><td><a href="http://terminology.hl7.org/2.0.0/CodeSystem-measure-scoring.html#measure-scoring-continuous-variable">continuous-variable</a></td><td>Continuous Variable</td><td>The score is defined by a calculation of some quantity.</td></tr><tr><td><a href="http://terminology.hl7.org/2.0.0/CodeSystem-measure-scoring.html#measure-scoring-cohort">cohort</a></td><td>Cohort</td><td>The measure is a cohort definition.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://ibm.com/fhir/cdm/ValueSet/quality-measure-scoring"/>
+  <version value="0.1.0"/>
+  <name value="QualityMeasureScoringValueSet"/>
+  <title value="Quality Measure Scoring Value Set"/>
+  <status value="active"/>
+  <date value="2021-01-08T18:08:05+00:00"/>
+  <contact>
+    <name value="Kim Kenna"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sloand@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Jill Doty"/>
+    <telecom>
+      <system value="email"/>
+      <value value="jdoty@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <description value="IBM Watson Health measure scoring methods for qualiity measures"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+    </include>
+    <include>
+      <system value="http://ibm.com/fhir/cdm/CodeSystem/measure-population-type"/>
+    </include>
+    <exclude>
+      <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+      <concept>
+        <code value="proportion"/>
+      </concept>
+      <concept>
+        <code value="continuous-variable"/>
+      </concept>
+      <concept>
+        <code value="cohort"/>
+      </concept>
+    </exclude>
+  </compose>
+</ValueSet>

@@ -1,0 +1,79 @@
+{
+  "resourceType": "Contract",
+  "id": "ExampleFFVInitiative",
+  "meta": {
+    "profile": [
+      "http://ibm.com/fhir/cdm/StructureDefinition/ffv-initative-resource"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Advantage Database Key: 2, Advantage customer key: Example FFV Initative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>"
+  },
+  "extension": [
+    {
+      "url": "attributionCode",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system",
+            "code": "enrollment"
+          }
+        ]
+      }
+    },
+    {
+      "url": "ffvSchedule",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/ffv-schedule",
+            "code": "monthly"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system",
+            "code": "ADKEY"
+          }
+        ]
+      },
+      "value": "2"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system",
+            "code": "CUSTKEY"
+          }
+        ]
+      },
+      "value": "Example FFV Initative"
+    }
+  ],
+  "title": "Primary Care Incentive Program",
+  "supportingInfo": [
+    {
+      "identifier": {
+        "value": "participating-providers-list-1"
+      }
+    },
+    {
+      "identifier": {
+        "value": "included-patients-list-1"
+      }
+    },
+    {
+      "identifier": {
+        "value": "excluded-patients-list-1"
+      }
+    }
+  ]
+}

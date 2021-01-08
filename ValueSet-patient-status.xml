@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="patient-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://terminology.hl7.org/ValueSet/v3-PatientImportance</code></li><li>Include all codes defined in <a href="CodeSystem-patient-status.html"><code>http://ibm.com/fhir/cdm/CodeSystem/patient-status</code></a></li></ul></div>
+  </text>
+  <url value="http://ibm.com/fhir/cdm/ValueSet/patient-status"/>
+  <version value="0.1.0"/>
+  <name value="PatientStatusValueSet"/>
+  <title value="Patient Status Value Set"/>
+  <status value="active"/>
+  <date value="2021-01-08T18:08:05+00:00"/>
+  <contact>
+    <name value="Kim Kenna"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sloand@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Jill Doty"/>
+    <telecom>
+      <system value="email"/>
+      <value value="jdoty@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <description value="Examples of client-specified patient status codes"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/ValueSet/v3-PatientImportance"/>
+    </include>
+    <include>
+      <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-status"/>
+    </include>
+  </compose>
+</ValueSet>

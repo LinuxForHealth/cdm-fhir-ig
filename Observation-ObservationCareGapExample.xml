@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ObservationCareGapExample"/>
+  <meta>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+      <valueString value="99999"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+      <valueString value="b069a545-9506-40c6-8498-23de2e189143"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
+      <valueString value="IBM"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
+      <valueString value="Cohorting"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-name">
+      <valueString value="Powersearch"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-version">
+      <valueString value="1.0"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp">
+      <valueDateTime value="2020-02-12T02:01:00Z"/>
+    </extension>
+    <source value="http://ibm.com/fhir/engagement-measure-cohort"/>
+    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/measure-population-observation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>CanonicalMeasure</b>: <code>Measure-QualityMeasureExample.html</code></p><p><b>Measure Population Id</b>: dm-hba1c-caregap-poor-control</p><p><b>Assigned Practitioner</b>: <a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html">Generated Summary: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL); active</a></p><p><b>Assigned Practitioner</b>: <a href="PractitionerRole/AttributedPractitioner2">PractitionerRole/AttributedPractitioner2</a></p><p><b>CareGapComplianceMet</b>: true</p><p><b>RelatedObservation</b>: <a href="Observation/RelatedCareGapObservation">Observation/RelatedCareGapObservation</a></p><p><b>identifier</b>: Derived Resource Identifier: 9591c85d-2f90-4586-b76d-be8e8ab2a719</p><p></p><p><b>code</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/measure-population-type care-gap}">Care Gap</span></p><p><b>subject</b>: <a href="Patient/Patient1">Patient/Patient1</a></p><p><b>effective</b>: 2020-02-14 --&gt; 2020-02-28</p></div>
+  </text>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure">
+    <valueCanonical value="Measure-QualityMeasureExample.html"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-population-id">
+    <valueId value="dm-hba1c-caregap-poor-control"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/assigned-practitioner">
+    <valueReference>
+      <reference value="PractitionerRole/CDMPractitionerRole-Attributed-PCP"/>
+    </valueReference>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/assigned-practitioner">
+    <valueReference>
+      <reference value="PractitionerRole/AttributedPractitioner2"/>
+    </valueReference>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-met">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/related-observation">
+    <valueReference>
+      <reference value="Observation/RelatedCareGapObservation"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <code value="DRI"/>
+      </coding>
+    </type>
+    <system value="http://ibm.com/fhir/cdm/measure-population-observation"/>
+    <value value="9591c85d-2f90-4586-b76d-be8e8ab2a719"/>
+    <assigner>
+      <display value="IBM"/>
+    </assigner>
+  </identifier>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://ibm.com/fhir/cdm/CodeSystem/measure-population-type"/>
+      <code value="care-gap"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/Patient1"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2020-02-14"/>
+    <end value="2020-02-28"/>
+  </effectivePeriod>
+</Observation>

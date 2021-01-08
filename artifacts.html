@@ -1,0 +1,2503 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>WH.CDM.FHIR\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/watson-health.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+  <a no-external="true" id="ibm-wh-logo">
+    <img src="assets/images/ibm-wh.jpg" alt="IBM WH" style="float:left" height="60"/>
+  </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">WH Common Data Model Implementation Guide</span><br/>0.1.0 - CI Build</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+<ul class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="artifacts.html">Artifacts Summary</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
+    </ul>
+  </li>
+</ul>
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <div id="segment-content">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">WH Common Data Model Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Artifacts Summary</h2>
+  
+    <!-- DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten --><div class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Data Type Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div>
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-appointment.html" title="StructureDefinition/cdm-appointment">CDM Appointment</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for an appointment</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-careplan.html" title="StructureDefinition/cdm-careplan">CDM CarePlan</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for a care plan</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-communication.html" title="StructureDefinition/cdm-communication">CDM Communication</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for a communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-communication-request.html" title="StructureDefinition/cdm-communication-request">CDM CommunicationRequest</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for a communication request</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-condition.html" title="StructureDefinition/cdm-condition">CDM Condition</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for a condition</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-coverage.html" title="StructureDefinition/cdm-coverage">CDMCoverage</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-detected-issue.html" title="StructureDefinition/cdm-detected-issue">CDM Detected Issue</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for a detected issue</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-eligibility.html" title="StructureDefinition/cdm-eligibility">CDM Eligibility</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for an eligibility record</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-eligibility-insurance-plan.html" title="StructureDefinition/cdm-eligibility-insurance-plan">CDMEligibilityInsurancePlan</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-encounter.html" title="StructureDefinition/cdm-encounter">CDM Encounter</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for an encounter</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-location.html" title="StructureDefinition/cdm-location">CDM Location</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for a location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-match-location.html" title="StructureDefinition/cdm-match-location">Location Matching - Match Location</a>
+               </td>
+               <td>
+<p>Match location record created when matched locations are found, containing links to the source location resources that were matched.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-match-patient.html" title="StructureDefinition/cdm-match-patient">CDM Match Patient</a>
+               </td>
+               <td>
+<p>Match patient record created when matched patients are found, containing links to the source patient resources that were matched.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-match-practitioner.html" title="StructureDefinition/cdm-match-practitioner">CDM Match Practitioner</a>
+               </td>
+               <td>
+<p>Match practitioner record created when matched practitioners are found, containing links to the source practitioner resources that were matched.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-observation.html" title="StructureDefinition/cdm-observation">CDM Observation</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for an observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-organization.html" title="StructureDefinition/cdm-organization">CDM Organization</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for a organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-patient.html" title="StructureDefinition/cdm-patient">CDM Patient</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for a patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-practitioner.html" title="StructureDefinition/cdm-practitioner">CDM Practitioner</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for a practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-practitioner-bundle.html" title="StructureDefinition/cdm-practitioner-bundle">CDM Practitioner Bundle</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-practitioner-role.html" title="StructureDefinition/cdm-practitioner-role">CDM Practitioner Role</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-procedure.html" title="StructureDefinition/cdm-procedure">CDM Procedure</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for a procedure</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-care-gap-detected-issue.html" title="StructureDefinition/care-gap-detected-issue">Care Gap Detected Issue</a>
+               </td>
+               <td>
+<p>Detected issues to record a history of open and closed care gaps identified for a patient over time.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-risk.html" title="StructureDefinition/dcg-risk">Advantage DCG</a>
+               </td>
+               <td>
+<p>DCG Risk</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-risk-bundle.html" title="StructureDefinition/dcg-risk-bundle">DCG Risk Bundle</a>
+               </td>
+               <td>
+<p>Concurrent and prospective DCG scores</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-engagement-communication.html" title="StructureDefinition/engagement-communication">Engagement Communication</a>
+               </td>
+               <td>
+<p>This profile is a record of an engagement communication to a patient including successful, planned, and failed communications.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-engagement-communication-request.html" title="StructureDefinition/engagement-communication-request">Engagement CommunicationRequest</a>
+               </td>
+               <td>
+<p>This profile is a record of an engagement request for a communication to a patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ffv-initative-resource.html" title="StructureDefinition/ffv-initative-resource">Fee for Value Initative</a>
+               </td>
+               <td>
+<p>The WFfH’s common data model team’s definition of what fields we currently define for an FFV initiative record</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hierarchy-practitioner-role.html" title="StructureDefinition/hierarchy-practitioner-role">Hierarchy Practitioner Role</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-measure-population-observation.html" title="StructureDefinition/measure-population-observation">Measure Population Observation</a>
+               </td>
+               <td>
+<p>Observation created by WffH to record measure populations for a patient over time.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-meg-episode-of-care.html" title="StructureDefinition/meg-episode-of-care">Advantage MEG Episode of Care</a>
+               </td>
+               <td>
+<p>Episode of Care specific to Advantage MEG</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-organization-affiliation.html" title="StructureDefinition/cdm-organization-affiliation">CDM Organization Affiliation</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-patient-list.html" title="StructureDefinition/patient-list">Patient List</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-practitioner-list.html" title="StructureDefinition/practitioner-list">Practitioner List</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-quality-measure.html" title="StructureDefinition/quality-measure">Quality Measure</a>
+               </td>
+               <td>
+<p>The quality measure profile is limited to measures with proportion and ratio scoring methods. The profile requires an initial population, denominator, and numerator in accordance with FHIR quality reporting guidelines. Measure population and measure population exclusions are not allowed.  The profile also supports care gap populations for additional use cases.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-quality-measure-list.html" title="StructureDefinition/quality-measure-list">Quality Measure List</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-quality-measure-report-organization.html" title="StructureDefinition/quality-measure-report-organization">Organization Quality Measure Report</a>
+               </td>
+               <td>
+<p>A quality measure report with an organizational focus</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-quality-measure-report-patient.html" title="StructureDefinition/quality-measure-report-patient">Patient Quality Measure Report</a>
+               </td>
+               <td>
+<p>A quality measure report focused on a single patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-quality-measure-report-practitioner.html" title="StructureDefinition/quality-measure-report-practitioner">Practitioner Quality Measure Report</a>
+               </td>
+               <td>
+<p>A quality measure report focused on practitioner performance</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-quality-measure-report.html" title="StructureDefinition/quality-measure-report">Quality Measure Report</a>
+               </td>
+               <td>
+<p>An abstract quality measure report profile. This profile serves as the base for organizational, practitioner, and patient-focused quality measure reports.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Data Type Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-communication-contact-point.html" title="StructureDefinition/cdm-communication-contact-point">Communication Contact Point</a>
+               </td>
+               <td>
+<p>Contact point extended with country and phone ext for communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-cdm-identifier.html" title="StructureDefinition/cdm-identifier">CDM Identifier</a>
+               </td>
+               <td>
+<p>CDM identifier with support for encrypted value</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-process-meta.html" title="StructureDefinition/process-meta">Data lineage meta with process extensions</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reference-with-code-and-period.html" title="StructureDefinition/reference-with-code-and-period">Reference with code and period</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reference-with-period.html" title="StructureDefinition/reference-with-period">Reference with Period</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-work-address.html" title="StructureDefinition/work-address">Work Address</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-age-group-code.html" title="StructureDefinition/age-group-code">Age Group Code</a>
+               </td>
+               <td>
+<p>Age Group Code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-coverage-snapshot-age-in-months.html" title="StructureDefinition/coverage-snapshot-age-in-months">Age in months</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-coverage-snapshot-age-in-years.html" title="StructureDefinition/coverage-snapshot-age-in-years">Age in years</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-age-rollup-group-code.html" title="StructureDefinition/age-rollup-group-code">Age Rollup Group Code</a>
+               </td>
+               <td>
+<p>Age Rollup Group Code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-allowed-amount-inpatient-epis.html" title="StructureDefinition/allowed-amount-inpatient-epis">Allowed Amount Inpatient</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-allowed-amount-managing-phys-epis.html" title="StructureDefinition/allowed-amount-managing-phys-epis">Allowed Amount Managing Physician</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-allowed-amount-outpatient.html" title="StructureDefinition/episode-allowed-amount-outpatient">Allowed Amount Outpatient</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-allowed-amount-pcp.html" title="StructureDefinition/episode-allowed-amount-pcp">Allowed Amount PCP</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-allowed-amount-primary-physician.html" title="StructureDefinition/episode-allowed-amount-primary-physician">Allowed Amount Primary Physician</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-allowed-amount-rx.html" title="StructureDefinition/episode-allowed-amount-rx">Allowed Amount Rx</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-allowed-amount-total.html" title="StructureDefinition/episode-allowed-amount-total">Allowed Amount Total</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-assigned-practitioner.html" title="StructureDefinition/assigned-practitioner">Assigned Practitioner</a>
+               </td>
+               <td>
+<p>The practitioner assigned to the patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-attributed-provider-with-period.html" title="StructureDefinition/attributed-provider-with-period">Attributed provider reference with period</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-canonical-measure.html" title="StructureDefinition/canonical-measure">CanonicalMeasure</a>
+               </td>
+               <td>
+<p>Canonical reference to the specific version of the measure used to generate the resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-care-gap-compliance-display-name.html" title="StructureDefinition/care-gap-compliance-display-name">CareGapComplianceEventDisplayName</a>
+               </td>
+               <td>
+<p>Text describing the treatment or compliance event required to close the care gap.  Should be suitable for display to patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-care-gap-compliance-frequency.html" title="StructureDefinition/care-gap-compliance-frequency">CareGapComplianceFrequency</a>
+               </td>
+               <td>
+<p>Text describing the frequency of the treatment or compliance event required to close the care gap.  Frequency should be suitable for display to patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-care-gap-compliance-met.html" title="StructureDefinition/care-gap-compliance-met">CareGapComplianceMet</a>
+               </td>
+               <td>
+<p>Indicates if the patient received the targeted treatment to close the care gap.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-child-organization-hierarchy-level-description.html" title="StructureDefinition/child-organization-hierarchy-level-description">Child Organization Hierarchy Level Description</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-child-organization-hierarchy-level-code.html" title="StructureDefinition/child-organization-hierarchy-level-code">Child Organization Hierarchy Level Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-care-gap.html" title="StructureDefinition/communication-care-gap">Communication Care Gap</a>
+               </td>
+               <td>
+<p>ID of care gap for which we are communicating</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-contact.html" title="StructureDefinition/communication-contact">Communication Contact</a>
+               </td>
+               <td>
+<p>Phone number, email, or address to contact</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-measure.html" title="StructureDefinition/communication-measure">Communication Measure</a>
+               </td>
+               <td>
+<p>Reference to the measure that resulted in the communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-mode.html" title="StructureDefinition/communication-mode">Communication Mode</a>
+               </td>
+               <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Mode of communication (phone</td>
+      <td>sms</td>
+      <td>email</td>
+      <td>mail</td>
+      <td>chat)</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-on-behalf-of.html" title="StructureDefinition/communication-on-behalf-of">Communication On-Behalf Of</a>
+               </td>
+               <td>
+<p>Attributed provider, location, or organization communication is on-behalf of</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-opt-out.html" title="StructureDefinition/communication-opt-out">Communication Opt-Out</a>
+               </td>
+               <td>
+<p>Opt-out patient for communications by product and/or mode</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-outcome.html" title="StructureDefinition/outcome">Communication Outcome</a>
+               </td>
+               <td>
+<p>Vendor-specific communication response code or text</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-payload-data.html" title="StructureDefinition/communication-payload-data">Communication Payload Data</a>
+               </td>
+               <td>
+<p>Contains dynamic data elements and vendor / medium specific elements to be included in the message payload</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-priority-sequence.html" title="StructureDefinition/communication-priority-sequence">Communication Priority Sequence</a>
+               </td>
+               <td>
+<p>Priority of the communication request (1 = highest)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-product.html" title="StructureDefinition/communication-product">Communication Product</a>
+               </td>
+               <td>
+<p>Product generating the communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-retry-limt.html" title="StructureDefinition/communication-retry-limt">Communication Retry Limit</a>
+               </td>
+               <td>
+<p>Retry limit configuration, may vary by medium and vendor</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sent-time.html" title="StructureDefinition/sent-time">Communication Sent Time</a>
+               </td>
+               <td>
+<p>Time communication was attempted</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-template.html" title="StructureDefinition/communication-template">Communication Template</a>
+               </td>
+               <td>
+<p>Id or url reference to template to be used for communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-vendor.html" title="StructureDefinition/communication-vendor">Communication Vendor</a>
+               </td>
+               <td>
+<p>Vendor used to send the communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-conversation-type.html" title="StructureDefinition/conversation-type">Conversation Type</a>
+               </td>
+               <td>
+<p>Type of conversation, used for ihe chat communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-county-code.html" title="StructureDefinition/county-code">County Code</a>
+               </td>
+               <td>
+<p>The county code for the residence of the person, for the most recent month of eligibility.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-coverage-month.html" title="StructureDefinition/coverage-month">Coverage Month</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-based-on-begin-date.html" title="StructureDefinition/dcg-based-on-begin-date">DCG Based on begin date</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-based-on-end-date.html" title="StructureDefinition/dcg-based-on-end-date">DCG Based on end date</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-filter-name.html" title="StructureDefinition/dcg-filter-name">DCG Filter Name</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-population-group.html" title="StructureDefinition/dcg-population-group">DCG Population Group</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-subset-name.html" title="StructureDefinition/dcg-subset-name">DCG Subset Name</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-diagnostic-cost-group.html" title="StructureDefinition/diagnostic-cost-group">Diagnostic Cost Group</a>
+               </td>
+               <td>
+<p>A numeric value that identifies the Diagnostic Cost Group (DCG) category to which the person was assigned during the DCG time period.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documented-sex.html" title="StructureDefinition/documented-sex">Documented Sex</a>
+               </td>
+               <td>
+<p>Sex coding indicated on the legal document</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documented-source.html" title="StructureDefinition/documented-source">Documented Source</a>
+               </td>
+               <td>
+<p>Source type of the legal document</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documented-system.html" title="StructureDefinition/documented-system">Documented System</a>
+               </td>
+               <td>
+<p>Source system or jurisdiction of the legal document</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-effective-period.html" title="StructureDefinition/effective-period">Effective Period</a>
+               </td>
+               <td>
+<p>Effective period</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-employee-fte-count.html" title="StructureDefinition/employee-fte-count">Employee FTE Count</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-employee-hire-date.html" title="StructureDefinition/employee-hire-date">Employee Hire Date</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-employee-status-code.html" title="StructureDefinition/employee-status-code">Employee Status Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-employee-hipaa-status-code.html" title="StructureDefinition/employee-hipaa-status-code">Employee Status Code HIPAA</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-employee-termination-date.html" title="StructureDefinition/employee-termination-date">Employee termination date</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-encrypted-state.html" title="StructureDefinition/encrypted-state">Encrypted State</a>
+               </td>
+               <td>
+<p>Encrypted state</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-admit-count-epis.html" title="StructureDefinition/admit-count-epis">Episode Admit Count</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-body-system.html" title="StructureDefinition/episode-body-system">Episode Body System</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-cost-scale.html" title="StructureDefinition/episode-cost-scale">Episode Cost Scale</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-derived-code.html" title="StructureDefinition/episode-derived-code">Episode Derived Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-derived-indicator.html" title="StructureDefinition/episode-derived-indicator">Episode Derived Indicator</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-disease-stage-code.html" title="StructureDefinition/episode-disease-stage-code">Episode Disease Stage Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-duration.html" title="StructureDefinition/episode-duration">Episode Duration (Days)</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-group-code.html" title="StructureDefinition/episode-group-code">Episode Group Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-primary-physician.html" title="StructureDefinition/episode-primary-physician">Episode Primary Physician</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-procedure-type-code.html" title="StructureDefinition/episode-procedure-type-code">Episode Procedure Type Code AHRQ</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-rx-count.html" title="StructureDefinition/episode-rx-count">Episode Rx Count</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-summary-group-code.html" title="StructureDefinition/episode-summary-group-code">Episode Summary Group</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-episode-use-scale.html" title="StructureDefinition/episode-use-scale">Episode Use Scale</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-family-id.html" title="StructureDefinition/family-id">Family Id</a>
+               </td>
+               <td>
+<p>The unique identifier for the subscriber (contract holder, employee) and the associated dependents.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hierarchy-version-date.html" title="StructureDefinition/hierarchy-version-date">Hierarchy Version Date</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hierarchy-version-id.html" title="StructureDefinition/hierarchy-version-id">Hierarchy VersionId</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-highest-hcc.html" title="StructureDefinition/dcg-highest-hcc">Highest HCC</a>
+               </td>
+               <td>
+<p>The Hierarchical Condition Category (HCC) with the highest associated DCG prospective cost weight assigned to a person. This field is assigned during the DCG Build and  is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-identified-pronouns.html" title="StructureDefinition/identified-pronouns">Identified Pronouns</a>
+               </td>
+               <td>
+<p>Gender, typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ingestion-batch-id.html" title="StructureDefinition/ingestion-batch-id">Ingestion Batch Id</a>
+               </td>
+               <td>
+<p>Generated by an ingestion service such as the Health Record Ingestion (HRI) management API, the ingestion-batch-id represents a collection/grouping of messages that the producer submitted together.  The ‘batch’ definition needs to be agreed upon by data producers and data consumers.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-language-rank.html" title="StructureDefinition/language-rank">Language Rank</a>
+               </td>
+               <td>
+<p>Specify preferred order of language use (1 = highest).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-legally-documented-sex.html" title="StructureDefinition/legally-documented-sex">Legally Documented Sex</a>
+               </td>
+               <td>
+<p>Sex as defined or amended on the patient’s legal documentation, for example a birth certificate or driver’s license.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-likelihood-of-hospitalization.html" title="StructureDefinition/dcg-likelihood-of-hospitalization">Likelihood of hospitalization</a>
+               </td>
+               <td>
+<p>The Likelihood of Hospitalization value assigned to an individual that predicts the likelihood of hospitalization or home care in the next 6 months for an individual, expressed on a scale of 100. This score is produced by the DxCG Likelihood of Hospitaliz</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-local-employee-status-code.html" title="StructureDefinition/local-employee-status-code">Local Employee Status Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-local-subscriber-relationship-code.html" title="StructureDefinition/local-subscriber-relationship-code">Local Subscriber Relationship Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-match-compared-to.html" title="StructureDefinition/match-compared-to">Match Compared To</a>
+               </td>
+               <td>
+<p>Reference to the record that was compared for matching</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-match-confidence-level.html" title="StructureDefinition/match-confidence-level">Match Confidence Code</a>
+               </td>
+               <td>
+<p>Confidence code for the match</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-match-confidence-score.html" title="StructureDefinition/match-confidence-score">Confidence Score</a>
+               </td>
+               <td>
+<p>Confidence score for the match</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-match-criteria.html" title="StructureDefinition/match-criteria">Match Criteria</a>
+               </td>
+               <td>
+<p>Criteria or algorythm used to identify the matched resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-match-detail.html" title="StructureDefinition/match-detail">Match Detail</a>
+               </td>
+               <td>
+<p>Detailed match algorthm results used to match resources</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-match-method.html" title="StructureDefinition/match-method">Match Method</a>
+               </td>
+               <td>
+<p>Method used to identify the matched resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-match-period.html" title="StructureDefinition/match-period">Match Period</a>
+               </td>
+               <td>
+<p>Time period when match is valid</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-match-source-reference.html" title="StructureDefinition/match-source-reference">MatchSourceReference</a>
+               </td>
+               <td>
+<p>Reference to the source resource that is matched</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-measure-parameter-values.html" title="StructureDefinition/measure-parameter-values">MeasureParameterValues</a>
+               </td>
+               <td>
+<p>Measure parameter values used to generate the measure report.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-measure-population-id.html" title="StructureDefinition/measure-population-id">Measure Population Id</a>
+               </td>
+               <td>
+<p>Unique static identifier for the measure population that does not change between cohort engine runs. This is a user-friendly textual key (internal use only) that identifies a specific population. This id should be unique across all measures and should not change when a measure is versioned or when overrides are applied.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-measure-report-assigned-practitioner.html" title="StructureDefinition/measure-report-assigned-practitioner">Measure Report Assigned Practitioner</a>
+               </td>
+               <td>
+<p>The provider identifier of the physician(s) assigned to the rule measure using one of the physician attribution methods</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-measure-report-evidence.html" title="StructureDefinition/measure-report-evidence">Measure Report Evidence</a>
+               </td>
+               <td>
+<p>Supporiting evidence showing detailed data about why a patient qualified (or did not qualify) for measure rules</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-measure-report-evidence-population-id.html" title="StructureDefinition/measure-report-evidence-population-id">Measure Report Evidence Population Id</a>
+               </td>
+               <td>
+<p>Population id of populations that reference or utilize the rule definition</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-measure-report-evidence-text.html" title="StructureDefinition/measure-report-evidence-text">Measure Report Evidence Text</a>
+               </td>
+               <td>
+<p>Textual title or description of the rule definition within a measure report</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-measure-report-evidence-value.html" title="StructureDefinition/measure-report-evidence-value">Measure Report Evidence Value</a>
+               </td>
+               <td>
+<p>Output value of rule definition within a measure report</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-measure-weight.html" title="StructureDefinition/measure-weight">Measure Weight</a>
+               </td>
+               <td>
+<p>Measure Weight</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-parent-organization-hierarchy-level-description.html" title="StructureDefinition/parent-organization-hierarchy-level-description">Parent Organization Hierarchy Level Description</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-parent-organization-hierarchy-level-code.html" title="StructureDefinition/parent-organization-hierarchy-level-code">Parent Organization Hierarchy Level Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-blood-disorder.html" title="StructureDefinition/dcg-percent-contribution-blood-disorder">Percent Contribution Blood Disorder</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to disorders of the blood (hematological). This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-cardiovascular-disorder.html" title="StructureDefinition/dcg-percent-contribution-cardiovascular-disorder">Percent Contribution Cardiovascular Disorder</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to disorders of the heart and circulatory system (cardiovascular). This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-development-disorder.html" title="StructureDefinition/dcg-percent-contribution-development-disorder">Percent Contribution Development Disability</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to developmental disabilities, such as intellect, attention deficit disorder, autism, and Down syndrome. This percentage is available only within the DCG Incur</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-diabetes.html" title="StructureDefinition/dcg-percent-contribution-diabetes">Percent Contribution Diabetes</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to diabetes. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-gastrointestinal-disorder.html" title="StructureDefinition/dcg-percent-contribution-gastrointestinal-disorder">Percent Contribution Gastrointestinal Disorder</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to disorders involving the gastrointestinal system. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-hepatobiliary-disorder.html" title="StructureDefinition/dcg-percent-contribution-hepatobiliary-disorder">Percent Contribution Hepatobiliary Disorder</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to disorders or diseases of the hepatobiliary (liver and bile) system and pancreas. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-infections.html" title="StructureDefinition/dcg-percent-contribution-infections">Percent Contribution Infections</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to viral, bacterial and parasitic infections, including HIV. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-metabolic-disorder.html" title="StructureDefinition/dcg-percent-contribution-metabolic-disorder">Percent Contribution Metabolic Disorder</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to nutritional disorders and disorders of the metabolic system. This category excludes diabetes. This percentage is available only within the DCG Incurred cate</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-musculoskeletal-disorder.html" title="StructureDefinition/dcg-percent-contribution-musculoskeletal-disorder">Percent Contribution Musculoskeletal Disorder</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to disorders of the musculoskeletal system and connective tissue. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-neonates.html" title="StructureDefinition/dcg-percent-contribution-neonates">Percent Contribution Neonates</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to care relating to newborns. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-neoplasms.html" title="StructureDefinition/dcg-percent-contribution-neoplasms">Percent Contribution Neoplasms</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to malignant and non-malignant cancers (neoplasms), including radiation and chemotherapy. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-neurological-disorder.html" title="StructureDefinition/dcg-percent-contribution-neurological-disorder">Percent Contribution Neurological Disorder</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to disorders of the brain and nervous system. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-other-conditions.html" title="StructureDefinition/dcg-percent-contribution-other-conditions">Percent Contribution Other Conditions</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to other conditions that are low frequency (such as organ transplants and amputations) or conditions that are low contributors to prospective risk (such as eye</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-pregnancy.html" title="StructureDefinition/dcg-percent-contribution-pregnancy">Percent Contribution Pregnancy</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to conditions related to pregnancy, prenatal through delivery. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-psychiatric-disorder.html" title="StructureDefinition/dcg-percent-contribution-psychiatric-disorder">Percent Contribution Psychiatric Disorder</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to mental health diseases and disorders, including depression. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-respiratory-disorder.html" title="StructureDefinition/dcg-percent-contribution-respiratory-disorder">Percent Contribution Respiratory Disorder</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to disorders of the respiratory system, including COPD and asthma. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-substance-abuse.html" title="StructureDefinition/dcg-percent-contribution-substance-abuse">Percent Contribution Substance Abuse</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to conditions related to drug and alcohol abuse. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-trauma-and-adverse-effect.html" title="StructureDefinition/dcg-percent-contribution-trauma-and-adverse-effect">Percent Contribution Trauma and Adverse Effect</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to acute trauma injuries (including fractures, burns, head injuries, and traumatic amputations), complications of care, poisonings, and allergic reactions. Thi</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-percent-contribution-urinary-system-disorder.html" title="StructureDefinition/dcg-percent-contribution-urinary-system-disorder">Percent Contribution Urinary System Disorder</a>
+               </td>
+               <td>
+<p>The percentage of condition-related DCG prospective risk for an individual that is attributable to disorders of the urinary system, including the kidneys. This category excludes diabetes. This percentage is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-plan-employee-code.html" title="StructureDefinition/plan-employee-code">Plan Employee Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-plan-group.html" title="StructureDefinition/plan-group">Plan Group</a>
+               </td>
+               <td>
+<p>Plan Group</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-plan-group-code.html" title="StructureDefinition/plan-group-code">Plan Group Code</a>
+               </td>
+               <td>
+<p>Plan Group Code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-practitioner-hierarchy-level-description.html" title="StructureDefinition/practitioner-hierarchy-level-description">Practitioner Hierarchy Level Description</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-practitioner-hierarchy-level-code.html" title="StructureDefinition/practitioner-hierarchy-level-code">Practitioner Hierarchy Level Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-primary-payer.html" title="StructureDefinition/primary-payer">Primary Payer</a>
+               </td>
+               <td>
+<p>Primary payer or insurance provider for the patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-problem-clinical-course.html" title="StructureDefinition/problem-clinical-course">Problem Clinical Course</a>
+               </td>
+               <td>
+<p>Problem clinical course code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-problem-priority.html" title="StructureDefinition/problem-priority">Problem Priority</a>
+               </td>
+               <td>
+<p>Problem priority code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-problem-type.html" title="StructureDefinition/problem-type">Problem Type</a>
+               </td>
+               <td>
+<p>Problem type code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-procedure-modifier.html" title="StructureDefinition/procedure-modifier">Procedure Modifier</a>
+               </td>
+               <td>
+<p>Modifier codes used to supplement information or adjust care decriptions for procedures</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-process-name.html" title="StructureDefinition/process-name">Process Name</a>
+               </td>
+               <td>
+<p>The name of the process or service that has produced the data held in the FHIR resource or element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-process-organization.html" title="StructureDefinition/process-organization">Process Organization</a>
+               </td>
+               <td>
+<p>The organizing entity that owns the process that has produced the data held in the FHIR resource or element. For example if an IBM analytic service has been the producer, the process-organization value would be IBM.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-process-record-id.html" title="StructureDefinition/process-record-id">Process Record ID</a>
+               </td>
+               <td>
+<p>The record id that the data producer or data integrator uses internally to identify this data.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-process-timestamp.html" title="StructureDefinition/process-timestamp">Process Timestamp</a>
+               </td>
+               <td>
+<p>The timestamp the data was generated within this FHIR resource or element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-process-type.html" title="StructureDefinition/process-type">Process Type</a>
+               </td>
+               <td>
+<p>The classification type of the process that has produced the data held in the FHIR resource or element. For example, if the process is primarily a Natural Language Processing (NLP) service, the type may be specified as NLP. Or if the process is primarily one that aggregates and groups related items, the type may be specified as Grouper.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-process-version.html" title="StructureDefinition/process-version">Process Version</a>
+               </td>
+               <td>
+<p>The version of the process or service that has produced the data held in the FHIR resource or element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-project-annual-cost.html" title="StructureDefinition/dcg-project-annual-cost">Project Annual Cost</a>
+               </td>
+               <td>
+<p>The overall future projected annual resource expenditure for the individual, as assigned through the DCG methodology, based on diagnoses and drugs, and eligibility information during the DCG time period. This value indicates the projected allowed amount  to be incurred by the individual during a 12-month period subsequent to the DCG time period.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-provider-region.html" title="StructureDefinition/provider-region">Provider Region</a>
+               </td>
+               <td>
+<p>The client specific description of the region for the practitioner’s address.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-recorder-facility.html" title="StructureDefinition/recorder-facility">Recorder Facility</a>
+               </td>
+               <td>
+<p>Facility where condition was recorded</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reference-code.html" title="StructureDefinition/reference-code">Reference Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reference-period.html" title="StructureDefinition/reference-period">Reference Period</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-region-code.html" title="StructureDefinition/region-code">Region Code</a>
+               </td>
+               <td>
+<p>Client-specific code for the geographic region of the person.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-related-issue.html" title="StructureDefinition/related-issue">RelatedIssue</a>
+               </td>
+               <td>
+<p>Related issues that can be combined to fulfill a single time period for a given care gap.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-related-observation.html" title="StructureDefinition/related-observation">RelatedObservation</a>
+               </td>
+               <td>
+<p>Related observations that can be combined to fulfill a single time period for a given care gap or other measure population.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-risk-category-code.html" title="StructureDefinition/dcg-risk-category-code">Risk Category Code</a>
+               </td>
+               <td>
+<p>The IBM Advantage Suite standard code for the risk category, using values of Risk Score Concurrent NonRescale. The risk category only applies to the Commercial All-encounter Medical and Drug models.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-dcg-risk-score-nonrescale.html" title="StructureDefinition/dcg-risk-score-nonrescale">Risk Score Nonrescale</a>
+               </td>
+               <td>
+<p>The Relative Risk Score assigned to an individual that indicates the expected relative cost risk of the individual compared to the average in the time period, expressed on a scale of 100. Because the score is not rescaled to the population on which the DCGs were assigned, the average (100) represents the average for the nationwide dataset on which the model was developed. This score is produced by the DCG models and is available only within the DCG Incurred category.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-secondary-payer.html" title="StructureDefinition/secondary-payer">Secondary Payer</a>
+               </td>
+               <td>
+<p>Pecondary payer or insurance provider for the patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-see-also.html" title="StructureDefinition/see-also">See Also</a>
+               </td>
+               <td>
+<p>References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sent-to-recipient.html" title="StructureDefinition/sent-to-recipient">Sent To recipient</a>
+               </td>
+               <td>
+<p>Records date/time and outcome of communication attempts with the recipient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sent-to-vendor.html" title="StructureDefinition/sent-to-vendor">Sent To Vendor</a>
+               </td>
+               <td>
+<p>Records date/time and outcome of communications sent to vendor</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sex-assigned-at-birth.html" title="StructureDefinition/sex-assigned-at-birth">Sex Assigned At Birth</a>
+               </td>
+               <td>
+<p>Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sexual-orientation.html" title="StructureDefinition/sexual-orientation">SexualOrientation</a>
+               </td>
+               <td>
+<p>Patient’s physical, romantic, and/or emotional attraction towards other people.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-source-data-model-version.html" title="StructureDefinition/source-data-model-version">Source Data Model Version</a>
+               </td>
+               <td>
+<p>The version of the data model in the source system used by the data producer or data integrator.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-source-file-id.html" title="StructureDefinition/source-file-id">Source File ID</a>
+               </td>
+               <td>
+<p>The identifier for a file that the data producer or data integrator extracted knowledge from to produce the data within this FHIR resource or element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-split-method.html" title="StructureDefinition/split-method">Split Method</a>
+               </td>
+               <td>
+<p>Method used to identify the matched resource to split</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-stated-reason.html" title="StructureDefinition/stated-reason">Stated Reason</a>
+               </td>
+               <td>
+<p>Recorded reason specified by the recipient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-status-code.html" title="StructureDefinition/status-code">Status Code</a>
+               </td>
+               <td>
+<p>Client-specific patient status codes.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-tenant-id.html" title="StructureDefinition/tenant-id">Tenant Id</a>
+               </td>
+               <td>
+<p>Defined by metadata and provided by the data producer, the ID that the messages will be stored at and processed as within the data pipeline.  Typically the tenant is the entity that holds the contract with IBM.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-attribution-code-vs.html" title="ValueSet/attribution-code-vs">Attribution Codes</a>
+               </td>
+               <td>
+<p>Types of attribution used to associate a patient to a provider</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-attribution-product.html" title="ValueSet/attribution-product">Attribution Product Value Set</a>
+               </td>
+               <td>
+<p>Products that associate a patient to a practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-attribution-source.html" title="ValueSet/attribution-source">Attribution Source Value Set</a>
+               </td>
+               <td>
+<p>Sources of attribution used to associate a patient to a practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-cdm-identifier-type-vs.html" title="ValueSet/cdm-identifier-type-vs">Extended identifier types</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-eng-communication-mode.html" title="ValueSet/eng-communication-mode">Engagement Communication Mode Value Set</a>
+               </td>
+               <td>
+<p>Communication modes supported for Engagement communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-eng-communication-request-status.html" title="ValueSet/eng-communication-request-status">Engagement Communication Request Status Reason Value Set</a>
+               </td>
+               <td>
+<p>Status codes detailing the reason and status history for an Engagement communication request.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-eng-communication-status.html" title="ValueSet/eng-communication-status">Engagement Communication Status Reason Value Set</a>
+               </td>
+               <td>
+<p>Status codes detailing the reason and status history for an Engagement communication.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-eng-conversation-type.html" title="ValueSet/eng-conversation-type">Engagement Conversation Type Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating types for Engagement communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-eng-opt-out-reason.html" title="ValueSet/eng-opt-out-reason">Engagement Opt-Out Reason Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating reasons patients may specifiy for opting-out of Engagement communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-eng-product.html" title="ValueSet/eng-product">Engagement Product Value Set</a>
+               </td>
+               <td>
+<p>IBM Watson Health engagement products</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-ffv-schedule-vs.html" title="ValueSet/ffv-schedule-vs">FFV Inititaive Schedules</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-gender-identity.html" title="ValueSet/gender-identity">Gender Identity Value Set</a>
+               </td>
+               <td>
+<p>Gender identity codes typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-identifier-type.html" title="ValueSet/identifier-type">Identifier Type Value Set</a>
+               </td>
+               <td>
+<p>Extended set of identifier type codes from FHIR HL7 and extended WffH CDM resource identifiers</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-legal-document-source.html" title="ValueSet/legal-document-source">Legal Document Source Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating the source of legal document used for identification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-legal-document-system.html" title="ValueSet/legal-document-system">Legal Document System Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating the system of legal document used for identification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-match-confidence-level.html" title="ValueSet/match-confidence-level">Match Confidence Level Code System</a>
+               </td>
+               <td>
+<p>Codes indicating confidence level of matched entities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-match-method.html" title="ValueSet/match-method">Match Method Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating methods used to identify matched entities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-measure-population-type.html" title="ValueSet/measure-population-type">Measure Population Type Value Set</a>
+               </td>
+               <td>
+<p>IBM Watson Health measure population types</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-patient-importance.html" title="ValueSet/patient-importance">Patient Importance Value Set</a>
+               </td>
+               <td>
+<p>Patient importance status codes derived from client code mappings, used to trigger or limit WffH patient operations.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-patient-status.html" title="ValueSet/patient-status">Patient Status Value Set</a>
+               </td>
+               <td>
+<p>Examples of client-specified patient status codes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-quality-measure-population-type.html" title="ValueSet/quality-measure-population-type">Quality Measure Population Type Value Set</a>
+               </td>
+               <td>
+<p>IBM Watson Health measure population types for qualiity measures</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-quality-measure-scoring.html" title="ValueSet/quality-measure-scoring">Quality Measure Scoring Value Set</a>
+               </td>
+               <td>
+<p>IBM Watson Health measure scoring methods for qualiity measures</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-sex-assigned-at-birth.html" title="ValueSet/sex-assigned-at-birth">Sex Assigned At Birth Value Set</a>
+               </td>
+               <td>
+<p>Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-sexual-orientation.html" title="ValueSet/sexual-orientation">Sexual Orientation Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating a person’s physical, romantic, and/or emotional attraction towards other people</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-split-method.html" title="ValueSet/split-method">Split Method Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating methods used to identify matched entities to split</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-attribution-code-system.html" title="CodeSystem/attribution-code-system">Attribution Codes</a>
+               </td>
+               <td>
+<p>Types of attribution used to associate a patient to a provider</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-attribution-product.html" title="CodeSystem/attribution-product">Attribution Product Codes</a>
+               </td>
+               <td>
+<p>Product that associate a patient to a practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-attribution-source.html" title="CodeSystem/attribution-source">Attribution Source Codes</a>
+               </td>
+               <td>
+<p>Sources of attribution used to associate a patient to a practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cdm-identifier-type-code-system.html" title="CodeSystem/cdm-identifier-type-code-system">CDM defined identifier types</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-eng-communication-mode.html" title="CodeSystem/eng-communication-mode">Engagement Communication Mode Codes</a>
+               </td>
+               <td>
+<p>Communication modes supported for Engagement communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-eng-communication-reqeust-status-reason.html" title="CodeSystem/eng-communication-reqeust-status-reason">Engagement Communication Request Status Reason Codes</a>
+               </td>
+               <td>
+<p>Status codes detailing the reason and status history for an Engagement communication request.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-eng-communication-status-reason.html" title="CodeSystem/eng-communication-status-reason">Engagement Communication Status Reason Codes</a>
+               </td>
+               <td>
+<p>Status codes detailing the reason and status history for an Engagement communication.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-eng-conversation-type.html" title="CodeSystem/eng-conversation-type">Engagement Conversation Type Codes</a>
+               </td>
+               <td>
+<p>Codes indicating conversation types for Engagement communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-eng-opt-out-reason.html" title="CodeSystem/eng-opt-out-reason">Engagement Opt-Out Reason Codes</a>
+               </td>
+               <td>
+<p>Codes indicating reasons patients may specifiy for opting-out of Engagement communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-eng-product.html" title="CodeSystem/eng-product">Engagement Product Codes</a>
+               </td>
+               <td>
+<p>IBM Watson Health engagement products</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-ffv-schedule.html" title="CodeSystem/ffv-schedule">FFV Initiative Schedules</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-gender-identity.html" title="CodeSystem/gender-identity">Gender Identity Codes</a>
+               </td>
+               <td>
+<p>Gender identity codes typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-identifier-type.html" title="CodeSystem/identifier-type">Identifier Type Codes</a>
+               </td>
+               <td>
+<p>Extended set of Identifier type code for WffH CDM resources</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-legal-document-source.html" title="CodeSystem/legal-document-source">Legal Document Source Codes</a>
+               </td>
+               <td>
+<p>Codes indicating the source of legal document used for identification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-legal-document-system.html" title="CodeSystem/legal-document-system">Legal Document System Codes</a>
+               </td>
+               <td>
+<p>Codes indicating the system of legal document used for identification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-match-confidence-level.html" title="CodeSystem/match-confidence-level">Match Confidence Level Codes</a>
+               </td>
+               <td>
+<p>Codes indicating confidence level of matched entities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-match-method.html" title="CodeSystem/match-method">Match Method Codes</a>
+               </td>
+               <td>
+<p>Codes indicating methods used to identify matched entities</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-measure-population-type.html" title="CodeSystem/measure-population-type">Measure Population Type Codes</a>
+               </td>
+               <td>
+<p>IBM Watson Health measure population types</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-patient-importance.html" title="CodeSystem/patient-importance">Patient Importance Codes</a>
+               </td>
+               <td>
+<p>Patient status code examples</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-patient-status.html" title="CodeSystem/patient-status">Patient Status Codes</a>
+               </td>
+               <td>
+<p>Patient status code examples</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-process-meta-primary-or-secondary.html" title="CodeSystem/process-meta-primary-or-secondary">Primary or Secondary</a>
+               </td>
+               <td>
+<p>Identifies the origin of the data elements from primary or secondary systems.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-sex-assigned-at-birth.html" title="CodeSystem/sex-assigned-at-birth">Sex Assigned At Birth Codes</a>
+               </td>
+               <td>
+<p>Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-sexual-orientation.html" title="CodeSystem/sexual-orientation">Sexual Orientation Codes</a>
+               </td>
+               <td>
+<p>Codes indicating a person’s physical, romantic, and/or emotional attraction towards other people</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-split-method.html" title="CodeSystem/split-method">Split Method Codes</a>
+               </td>
+               <td>
+<p>Codes indicating methods used to identify matched entities to split</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Appointment-AppointmentExample.html" title="Appointment/AppointmentExample">CDM Appointment Example</a>
+               </td>
+               <td>
+<p>Sample appointment in booked status</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-CDMConditionExample.html" title="Condition/CDMConditionExample">CDM Condition Example</a>
+               </td>
+               <td>
+<p>Sample of a hypertension condition diagnosed by a condition record</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-CDMEncounterExample.html" title="Encounter/CDMEncounterExample">CDM Encounter Example</a>
+               </td>
+               <td>
+<p>Sample encounter</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-CDMPatientInstance.html" title="Patient/CDMPatientInstance">CDM Patient Example</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-CDMPatientInstance-Attributed.html" title="Patient/CDMPatientInstance-Attributed">CDM Patient - Attributed</a>
+               </td>
+               <td>
+<p>Sample CDM Patient showing various PCP attributions with period</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-CDMPatientInstance-CommOptOut.html" title="Patient/CDMPatientInstance-CommOptOut">CDM Patient - Communication Opt-Out</a>
+               </td>
+               <td>
+<p>Sample CDM Patient showing multiple opt-out modes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-CDMPatientInstance-DoNotContact.html" title="Patient/CDMPatientInstance-DoNotContact">CDM Patient - Do Not Contact</a>
+               </td>
+               <td>
+<p>Sample CDM Patient showing client privacy and derived WffH VIP and DO-NOT-CONTACT codes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html" title="PractitionerRole/CDMPractitionerRole-Attributed-PCP">CDM Practitioner Role - Attributed PCP</a>
+               </td>
+               <td>
+<p>Sample CDM PractitionerRole created by engagement PCP attribution</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-CDMPractitionerRole-EMR-PCP.html" title="PractitionerRole/CDMPractitionerRole-EMR-PCP">CDM PractitionerRole - EMR PCP</a>
+               </td>
+               <td>
+<p>Sample CDM PractitionerRole ingested from EMR or PMS system</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Procedure-CDMProcedureExample.html" title="Procedure/CDMProcedureExample">CDM Procedure Example</a>
+               </td>
+               <td>
+<p>Sample clinical exam procedure</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DetectedIssue-CareGapDetectedIssueExample.html" title="DetectedIssue/CareGapDetectedIssueExample">Care Gap Detected Issue Example</a>
+               </td>
+               <td>
+<p>Example of an detected issue indicating that the patient was in a care gap over a period of time</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Coverage-CoverageExample.html" title="Coverage/CoverageExample">Coverage Example</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-DrKelly.html" title="Practitioner/DrKelly">CDM Practitioner - Dr Kelly</a>
+               </td>
+               <td>
+<p>Sample CDM Practitioner ingested from a EMR or PMS system</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Communication-EngagementCommunicationExample.html" title="Communication/EngagementCommunicationExample">Engagement Communication Example</a>
+               </td>
+               <td>
+<p>Example of an engagement communication to send an Outreach text to a patient concerning a care gap</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CommunicationRequest-EngagementCommunicationRequestExample.html" title="CommunicationRequest/EngagementCommunicationRequestExample">Engagement Communication Request Example</a>
+               </td>
+               <td>
+<p>Example of an engagement communication request to send an Outreach text to a patient concerning a care gap</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Contract-ExampleFFVInitiative.html" title="Contract/ExampleFFVInitiative">Example FFV Initiative</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="List-ExampleQualityMeasureList.html" title="List/ExampleQualityMeasureList">Example Quality Measure List</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-GeneralHospital.html" title="Organization/GeneralHospital">CDM Oganization - General Hospital</a>
+               </td>
+               <td>
+<p>Sample CDM Organizationr representing a hospital ingested from a EMR or PMS system</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-KellyClinic.html" title="Location/KellyClinic">CDM Location - Kelly Clinic</a>
+               </td>
+               <td>
+<p>Sample CDM Location ingested from a EMR or PMS system</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-MatchedLocationExample.html" title="Location/MatchedLocationExample">Matched Location Example</a>
+               </td>
+               <td>
+<p>Sample of a matched location linked to multiple source locations, each with confidence level and period</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-MatchedLocationSource-Cerner.html" title="Location/MatchedLocationSource-Cerner">Matched Location Source - Cerner</a>
+               </td>
+               <td>
+<p>Sample of a matched source location with mpi guid identifier and reference to the match location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-MatchedPatientExample.html" title="Patient/MatchedPatientExample">Matched Patient Example</a>
+               </td>
+               <td>
+<p>Sample of a matched patient linked to multiple source patients, each with confidence level and period</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-MatchedPatientSource-Cerner1.html" title="Patient/MatchedPatientSource-Cerner1">Matched Patient Source - Cerner 1</a>
+               </td>
+               <td>
+<p>Sample of a matched source patient with reference to the match patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-MatchedPractitionerExample.html" title="Practitioner/MatchedPractitionerExample">Matched Practitioner Example</a>
+               </td>
+               <td>
+<p>Sample of a matched practitioner linked to multiple source practitioners, each with confidence level and period</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-MatchedPractitionerSource-Cerner.html" title="Practitioner/MatchedPractitionerSource-Cerner">Matched Practitioner Source - Cerner</a>
+               </td>
+               <td>
+<p>Sample of a matched source practitioner with mpi guid identifier and reference to the match practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-MatchedPractitionerSource-Epic.html" title="Practitioner/MatchedPractitionerSource-Epic">Matched Practitioner Source - Epic</a>
+               </td>
+               <td>
+<p>Sample of a matched source practitioner with mpi guid identifier and reference to the match practitioner</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Contract-Milestone1Initiative.html" title="Contract/Milestone1Initiative">Milestone1 Initiative</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-NumeratorObservationExample.html" title="Observation/NumeratorObservationExample">Measure Population Observation - Numerator Example</a>
+               </td>
+               <td>
+<p>Example of an observation indicating that the patient was in a numerator over a period of time</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ObservationCareGapExample.html" title="Observation/ObservationCareGapExample">Measure Population Observation - Care Gap Example</a>
+               </td>
+               <td>
+<p>Example of an observation indicating that the patient was in a care gap over a period of time</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ObservationExample.html" title="Observation/ObservationExample">CDM Observation Example</a>
+               </td>
+               <td>
+<p>Sample observation showing a high blood pressure panel</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Measure-QualityMeasureExample.html" title="Measure/QualityMeasureExample">Quality Measure Example</a>
+               </td>
+               <td>
+<p>Example measure containing criteria for measure rules</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MeasureReport-QualityMeasurePatientReportExample.html" title="MeasureReport/QualityMeasurePatientReportExample">Quality Measure Report Example - Patient</a>
+               </td>
+               <td>
+<p>Example measure report containing individual measure results for a single patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MeasureReport-QualityMeasurePractitionerReportExample.html" title="MeasureReport/QualityMeasurePractitionerReportExample">Quality Measure Report Example - Practitioner</a>
+               </td>
+               <td>
+<p>Example measure report containing measure results for an attributed practitioner</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+      <div class="inner-wrapper">
+        <p><a name="8d9e458c-5db6-4dde-a9f8-4d1bebcde87b">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="sloand@us.ibm.com"></a>.  Package wh.cdm.fhir#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 8, 2021 18:08+0000">2021-01-08</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

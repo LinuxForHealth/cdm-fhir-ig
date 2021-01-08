@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Patient/CDMPatientInstance-DoNotContact> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CDMPatientInstance-DoNotContact"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.valueString [ fhir:value "99999" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
+     ];
+     fhir:Meta.source [ fhir:value "http://acme-health.com/epic" ];
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status collection}\">Collections</span></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status confidential}\">Confidential</span></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status test}\">Test</span></p><p><b>importance</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance bad-debt}\">Bad Debt</span></p><p><b>importance</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance do-not-contact}\">Do Not Contact</span></p><p><b>Sex Assigned At Birth</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></p><p><b>identifier</b>: Source System Row Identifier: 35e4aa64-fdf8-4ef9-8acd-066aec45f63b (OFFICIAL)</p><p><b>name</b>: Norm Peterson </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1948-10-17</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/status-code" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/patient-status" ];
+         fhir:Coding.code [ fhir:value "collection" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/status-code" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/patient-status" ];
+         fhir:Coding.code [ fhir:value "confidential" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/status-code" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/patient-status" ];
+         fhir:Coding.code [ fhir:value "test" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-importance" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/patient-importance" ];
+         fhir:Coding.code [ fhir:value "bad-debt" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-importance" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/patient-importance" ];
+         fhir:Coding.code [ fhir:value "do-not-contact" ]
+       ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth" ];
+         fhir:Coding.code [ fhir:value "male" ]
+       ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "SSRI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/epic/patient" ];
+     fhir:Identifier.value [ fhir:value "35e4aa64-fdf8-4ef9-8acd-066aec45f63b" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Acme Health - Epic" ]
+     ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Peterson" ];
+     fhir:HumanName.given [
+       fhir:value "Norm";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1948-10-17"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Patient/CDMPatientInstance-DoNotContact.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

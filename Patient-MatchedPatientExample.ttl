@@ -1,0 +1,587 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Patient/MatchedPatientExample> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MatchedPatientExample"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.valueString [ fhir:value "99999" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.valueString [ fhir:value "IBM" ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.valueString [ fhir:value "Matching" ]
+     ], [
+       fhir:index 4;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.valueString [ fhir:value "Patient Matching" ]
+     ], [
+       fhir:index 5;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.valueString [ fhir:value "1.0" ]
+     ], [
+       fhir:index 6;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.valueDateTime [ fhir:value "2020-02-12T03:01:00Z"^^xsd:dateTime ]
+     ];
+     fhir:Meta.source [ fhir:value "http://ibm.com/fhir/primary/patient-match" ];
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-match-patient";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-match-patient>
+     ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary" ];
+       fhir:Coding.code [ fhir:value "SECONDARY" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Sex Assigned At Birth</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth female}\">Female</span></p><blockquote><p><b>See Also</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <a href=\"Patient-MatchedPatientSource-Cerner1.html\">Generated Summary: Source System Row Identifier: a21bad95-a9df-4703-9691-b38bba13892d (OFFICIAL), Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (SECONDARY); active; Maggie Match ; Phone: 214-555-1212, ; gender: female; birthDate: 1990-01-04</a></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/match-method automated}\">Automoted matching algorithm or model identified the match</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certain}\">Certain Match</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 100</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 2020-02-12 --&gt; (ongoing)</p><p><b>Match Compared To</b>: <a href=\"Patient/MatchedPatientSource-Cerner2\">Patient/MatchedPatientSource-Cerner2</a></p><p><b>Match Criteria</b>: Exact name match</p><p><b>Match Confidence Code</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certain}\">Certain Match</span></p><p><b>Confidence Score</b>: 100</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Match Compared To</b>: <a href=\"Patient/MatchedPatientSource-Cerner2\">Patient/MatchedPatientSource-Cerner2</a></p><p><b>Match Criteria</b>: Fuzzy match</p><p><b>Match Confidence Code</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certain}\">Certain Match</span></p><p><b>Confidence Score</b>: 100</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: IBM</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Patient Match</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: MDM</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 1.0</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Jan 1, 2020, 3:01:00 AM</p></blockquote><blockquote><p><b>See Also</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <a href=\"Patient/MatchedPatientSource-Cerner2\">Patient/MatchedPatientSource-Cerner2</a></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/match-method automated}\">Automoted matching algorithm or model identified the match</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certain}\">Certain Match</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 100</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 2020-02-12 --&gt; (ongoing)</p><p><b>Match Compared To</b>: <a href=\"Patient-MatchedPatientSource-Cerner1.html\">Generated Summary: Source System Row Identifier: a21bad95-a9df-4703-9691-b38bba13892d (OFFICIAL), Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (SECONDARY); active; Maggie Match ; Phone: 214-555-1212, ; gender: female; birthDate: 1990-01-04</a></p><p><b>Match Criteria</b>: Exact name match</p><p><b>Match Confidence Code</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certain}\">Certain Match</span></p><p><b>Confidence Score</b>: 100</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Match Compared To</b>: <a href=\"Patient-MatchedPatientSource-Cerner1.html\">Generated Summary: Source System Row Identifier: a21bad95-a9df-4703-9691-b38bba13892d (OFFICIAL), Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (SECONDARY); active; Maggie Match ; Phone: 214-555-1212, ; gender: female; birthDate: 1990-01-04</a></p><p><b>Match Criteria</b>: Fuzzy match</p><p><b>Match Confidence Code</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certain}\">Certain Match</span></p><p><b>Confidence Score</b>: 100</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: IBM</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Patient Match</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: MDM</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 1.0</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Jan 1, 2020, 3:01:00 AM</p></blockquote><blockquote><p><b>See Also</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <a href=\"Patient/MatchedPatientSource-Epic\">Patient/MatchedPatientSource-Epic</a></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/match-method manual}\">Manual matching performed by a human</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certain}\">Certain Match</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 100</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 2020-04-18 --&gt; (ongoing)</p><p><b>Match Compared To</b>: <a href=\"Patient-MatchedPatientSource-Cerner1.html\">Generated Summary: Source System Row Identifier: a21bad95-a9df-4703-9691-b38bba13892d (OFFICIAL), Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (SECONDARY); active; Maggie Match ; Phone: 214-555-1212, ; gender: female; birthDate: 1990-01-04</a></p><p><b>Match Criteria</b>: Exact name match</p><p><b>Match Confidence Code</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certainly-not}\">Certainly Not a Match</span></p><p><b>Confidence Score</b>: 0</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Match Compared To</b>: <a href=\"Patient-MatchedPatientSource-Cerner1.html\">Generated Summary: Source System Row Identifier: a21bad95-a9df-4703-9691-b38bba13892d (OFFICIAL), Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (SECONDARY); active; Maggie Match ; Phone: 214-555-1212, ; gender: female; birthDate: 1990-01-04</a></p><p><b>Match Criteria</b>: Fuzzy match</p><p><b>Match Confidence Code</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade possible}\">Possible Match</span></p><p><b>Confidence Score</b>: 70</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: IBM</p><p><b>Match Compared To</b>: <a href=\"Patient-MatchedPatientSource-Cerner1.html\">Generated Summary: Source System Row Identifier: a21bad95-a9df-4703-9691-b38bba13892d (OFFICIAL), Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (SECONDARY); active; Maggie Match ; Phone: 214-555-1212, ; gender: female; birthDate: 1990-01-04</a></p><p><b>Match Criteria</b>: Manual User Match</p><p><b>Match Confidence Code</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certain}\">Certain Match</span></p><p><b>Confidence Score</b>: 100</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Manual Patient Match</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Web Portal</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 1.0</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Apr 18, 2020, 10:35:01 AM</p></blockquote><blockquote><p><b>See Also</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <a href=\"Patient/MatchedPatientSource-NextGen\">Patient/MatchedPatientSource-NextGen</a></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/match-method manual}\">Manual matching performed by a human</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certainly-not}\">Certainly Not a Match</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 0</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 2020-04-14 --&gt; 2020-04-18</p><p><b>Match Compared To</b>: <a href=\"Patient-MatchedPatientSource-Cerner1.html\">Generated Summary: Source System Row Identifier: a21bad95-a9df-4703-9691-b38bba13892d (OFFICIAL), Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (SECONDARY); active; Maggie Match ; Phone: 214-555-1212, ; gender: female; birthDate: 1990-01-04</a></p><p><b>Match Criteria</b>: Exact name match</p><p><b>Match Confidence Code</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certainly-not}\">Certainly Not a Match</span></p><p><b>Confidence Score</b>: 0</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>Match Compared To</b>: <a href=\"Patient-MatchedPatientSource-Cerner1.html\">Generated Summary: Source System Row Identifier: a21bad95-a9df-4703-9691-b38bba13892d (OFFICIAL), Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (SECONDARY); active; Maggie Match ; Phone: 214-555-1212, ; gender: female; birthDate: 1990-01-04</a></p><p><b>Match Criteria</b>: Fuzzy match</p><p><b>Match Confidence Code</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade probable}\">Probable Match</span></p><p><b>Confidence Score</b>: 80</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/match-method manual}\">Manual matching performed by a human</span></p><p><b>Match Compared To</b>: <a href=\"Patient-MatchedPatientSource-Cerner1.html\">Generated Summary: Source System Row Identifier: a21bad95-a9df-4703-9691-b38bba13892d (OFFICIAL), Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (SECONDARY); active; Maggie Match ; Phone: 214-555-1212, ; gender: female; birthDate: 1990-01-04</a></p><p><b>Match Criteria</b>: Manual User Split</p><p><b>Match Confidence Code</b>: <span title=\"{http://terminology.hl7.org/CodeSystem/match-grade certainly-not}\">Certainly Not a Match</span></p><p><b>Confidence Score</b>: 0</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: IBM</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Manual Patient Split</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Web Portal</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 1.0</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Apr 18, 2020, 10:36:02 AM</p></blockquote><p><b>identifier</b>: Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Maggie Match </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1990-01-04</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth" ];
+         fhir:Coding.code [ fhir:value "female" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner1>;
+         fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner1" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-method" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-method" ];
+           fhir:Coding.code [ fhir:value "automated" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+         fhir:Coding.code [ fhir:value "certain" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+       fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
+     ], [
+       fhir:index 4;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-period" ];
+       fhir:Extension.valuePeriod [
+         fhir:Period.start [ fhir:value "2020-02-12"^^xsd:date ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.valueReference [
+           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner2>;
+           fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner2" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.valueString [ fhir:value "Exact name match" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+           fhir:Coding.code [ fhir:value "certain" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.valueReference [
+           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner2>;
+           fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner2" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.valueString [ fhir:value "Fuzzy match" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+           fhir:Coding.code [ fhir:value "certain" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.valueString [ fhir:value "IBM" ]
+     ], [
+       fhir:index 7;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.valueString [ fhir:value "Patient Match" ]
+     ], [
+       fhir:index 8;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.valueString [ fhir:value "MDM" ]
+     ], [
+       fhir:index 9;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.valueString [ fhir:value "1.0" ]
+     ], [
+       fhir:index 10;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.valueDateTime [ fhir:value "2020-01-01T03:01:00Z"^^xsd:dateTime ]
+     ];
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/see-also" ]
+  ], [
+     fhir:index 2;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner2>;
+         fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner2" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-method" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-method" ];
+           fhir:Coding.code [ fhir:value "automated" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+         fhir:Coding.code [ fhir:value "certain" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+       fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
+     ], [
+       fhir:index 4;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-period" ];
+       fhir:Extension.valuePeriod [
+         fhir:Period.start [ fhir:value "2020-02-12"^^xsd:date ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.valueReference [
+           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner1>;
+           fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner1" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.valueString [ fhir:value "Exact name match" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+           fhir:Coding.code [ fhir:value "certain" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.valueReference [
+           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner1>;
+           fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner1" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.valueString [ fhir:value "Fuzzy match" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+           fhir:Coding.code [ fhir:value "certain" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.valueString [ fhir:value "IBM" ]
+     ], [
+       fhir:index 7;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.valueString [ fhir:value "Patient Match" ]
+     ], [
+       fhir:index 8;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.valueString [ fhir:value "MDM" ]
+     ], [
+       fhir:index 9;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.valueString [ fhir:value "1.0" ]
+     ], [
+       fhir:index 10;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.valueDateTime [ fhir:value "2020-01-01T03:01:00Z"^^xsd:dateTime ]
+     ];
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/see-also" ]
+  ], [
+     fhir:index 3;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Epic>;
+         fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Epic" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-method" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-method" ];
+           fhir:Coding.code [ fhir:value "manual" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+         fhir:Coding.code [ fhir:value "certain" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+       fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
+     ], [
+       fhir:index 4;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-period" ];
+       fhir:Extension.valuePeriod [
+         fhir:Period.start [ fhir:value "2020-04-18"^^xsd:date ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.valueReference [
+           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner1>;
+           fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner1" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.valueString [ fhir:value "Exact name match" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+           fhir:Coding.code [ fhir:value "certainly-not" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.valueDecimal [ fhir:value "0"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.valueReference [
+           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner1>;
+           fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner1" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.valueString [ fhir:value "Fuzzy match" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+           fhir:Coding.code [ fhir:value "possible" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.valueDecimal [ fhir:value "70"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.valueString [ fhir:value "IBM" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.valueReference [
+           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner1>;
+           fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner1" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.valueString [ fhir:value "Manual User Match" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+           fhir:Coding.code [ fhir:value "certain" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.valueString [ fhir:value "Manual Patient Match" ]
+     ], [
+       fhir:index 8;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.valueString [ fhir:value "Web Portal" ]
+     ], [
+       fhir:index 9;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.valueString [ fhir:value "1.0" ]
+     ], [
+       fhir:index 10;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.valueDateTime [ fhir:value "2020-04-18T10:35:01Z"^^xsd:dateTime ]
+     ];
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/see-also" ]
+  ], [
+     fhir:index 4;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference" ];
+       fhir:Extension.valueReference [
+         fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-NextGen>;
+         fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-NextGen" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-method" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-method" ];
+           fhir:Coding.code [ fhir:value "manual" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+         fhir:Coding.code [ fhir:value "certainly-not" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+       fhir:Extension.valueDecimal [ fhir:value "0"^^xsd:decimal ]
+     ], [
+       fhir:index 4;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-period" ];
+       fhir:Extension.valuePeriod [
+         fhir:Period.start [ fhir:value "2020-04-14"^^xsd:date ];
+         fhir:Period.end [ fhir:value "2020-04-18"^^xsd:date ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.valueReference [
+           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner1>;
+           fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner1" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.valueString [ fhir:value "Exact name match" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+           fhir:Coding.code [ fhir:value "certainly-not" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.valueDecimal [ fhir:value "0"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.valueReference [
+           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner1>;
+           fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner1" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.valueString [ fhir:value "Fuzzy match" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+           fhir:Coding.code [ fhir:value "probable" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.valueDecimal [ fhir:value "80"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/split-method" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-method" ];
+           fhir:Coding.code [ fhir:value "manual" ]
+         ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.valueReference [
+           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-Cerner1>;
+           fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-Cerner1" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.valueString [ fhir:value "Manual User Split" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
+           fhir:Coding.code [ fhir:value "certainly-not" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.valueDecimal [ fhir:value "0"^^xsd:decimal ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.valueString [ fhir:value "IBM" ]
+     ], [
+       fhir:index 8;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.valueString [ fhir:value "Manual Patient Split" ]
+     ], [
+       fhir:index 9;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.valueString [ fhir:value "Web Portal" ]
+     ], [
+       fhir:index 10;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.valueString [ fhir:value "1.0" ]
+     ], [
+       fhir:index 11;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.valueDateTime [ fhir:value "2020-04-18T10:36:02Z"^^xsd:dateTime ]
+     ];
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/see-also" ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "MDI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ibm.com/fhir/primary/patient-match-identifier" ];
+     fhir:Identifier.value [ fhir:value "c82a8fce-11db-4396-b10c-1150abd1a222" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "IBM" ]
+     ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Match" ];
+     fhir:HumanName.given [
+       fhir:value "Maggie";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "female"];
+  fhir:Patient.birthDate [ fhir:value "1990-01-04"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Patient/MatchedPatientExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

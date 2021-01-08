@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Measure xmlns="http://hl7.org/fhir">
+  <id value="QualityMeasureExample"/>
+  <meta>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
+      <valueString value="IBM"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
+      <valueString value="Measure Authoring"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-name">
+      <valueString value="Measure Authoring Tool (MAT)"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-version">
+      <valueString value="1.0"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp">
+      <valueDateTime value="2020-01-01T00:00:00Z"/>
+    </extension>
+    <source value="http://ibm.com/fhir/quality-measure"/>
+    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/quality-measure"/>
+    <tag>
+      <system value="http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary"/>
+      <code value="SECONDARY"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://ibm.com/fhir/cdm/Measure/QualityMeasureExample</code></p><p><b>identifier</b>: Resource identifier: 8f3a1491-a07f-4860-8977-e7dac7398175</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: Diabetes_HbA1c_Test_Performed</p><p><b>status</b>: active</p><p><b>subject</b>: <span title="Codes: {http://hl7.org/fhir/resource-types Patient}">Patient</span></p><p><b>date</b>: 2020-01-01</p><p><b>publisher</b>: IBM</p><p><b>contact</b>: Kim Kenna: <a href="mailto:sloand@us.ibm.com">sloand@us.ibm.com</a>, Jill Doty: <a href="mailto:jdoty@us.ibm.com">jdoty@us.ibm.com</a></p><p><b>description</b>: Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period</p><h3>UseContexts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>approvalDate</b>: 2020-01-01</p><p><b>lastReviewDate</b>: 2020-01-01</p><p><b>effectivePeriod</b>: 2020-01-01 --&gt; (ongoing)</p><p><b>topic</b>: <span title="Codes: {http://hl7.org/fhir/codesystem-definition-topic.html treatment}">treatment</span></p><p><b>library</b>: <code>Measure/Library</code></p><p><b>scoring</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring proportion}">Proportion</span></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-type process}">Process</span></p><p><b>improvementNotation</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}">Increased score indicates improvement</span></p><p><b>guidance</b>: Only patients with a diagnosis of Type 1 or Type 2 diabetes should be included in the denominator of this measure.  Patients with a diagnosis of secondary diabetes due to another condition should not be included.</p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></p><p><b>description</b>: Patients 18-75 years of age with diabetes</p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population denominator}">Denominator</span></p><p><b>description</b>: Patients 18-75 years of age with diabetes with a visit during the measurement period</p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population numerator}">Numerator</span></p><p><b>description</b>: Patients who have had HbA1c test within the measurement period</p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/measure-population-type care-gap}">Care Gap</span></p><p><b>description</b>: DM Control - Low Risk</p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/measure-population-type care-gap}">Care Gap</span></p><p><b>description</b>: DM Poor Control - High Risk</p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>
+  </text>
+  <url value="http://ibm.com/fhir/cdm/Measure/QualityMeasureExample"/>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="RI"/>
+      </coding>
+    </type>
+    <system value="http://ibm.com/fhir/cdm/quality-measure"/>
+    <value value="8f3a1491-a07f-4860-8977-e7dac7398175"/>
+    <assigner>
+      <display value="IBM"/>
+    </assigner>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="Diabetes_HbA1c_Test_Performed"/>
+  <status value="active"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/resource-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2020-01-01"/>
+  <publisher value="IBM"/>
+  <contact>
+    <name value="Kim Kenna"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sloand@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Jill Doty"/>
+    <telecom>
+      <system value="email"/>
+      <value value="jdoty@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <description value="Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="clinical"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="73211009"/>
+        <display value="Diabetes mellitus (disorder)"/>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <approvalDate value="2020-01-01"/>
+  <lastReviewDate value="2020-01-01"/>
+  <effectivePeriod>
+    <start value="2020-01-01"/>
+  </effectivePeriod>
+  <topic>
+    <coding>
+      <system value="http://hl7.org/fhir/codesystem-definition-topic.html"/>
+      <code value="treatment"/>
+    </coding>
+  </topic>
+  <library value="Measure/Library"/>
+  <scoring>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>
+      <code value="proportion"/>
+    </coding>
+  </scoring>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/measure-type"/>
+      <code value="process"/>
+    </coding>
+  </type>
+  <improvementNotation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/measure-improvement-notation"/>
+      <code value="increase"/>
+    </coding>
+  </improvementNotation>
+  <guidance value="Only patients with a diagnosis of Type 1 or Type 2 diabetes should be included in the denominator of this measure.  Patients with a diagnosis of secondary diabetes due to another condition should not be included."/>
+  <group>
+    <population id="dm-hba1c-initial-pop">
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="initial-population"/>
+        </coding>
+      </code>
+      <description value="Patients 18-75 years of age with diabetes"/>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="DmHbA1cTest.InInitialPopulation"/>
+      </criteria>
+    </population>
+    <population id="dm-hba1c-den">
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="denominator"/>
+        </coding>
+      </code>
+      <description value="Patients 18-75 years of age with diabetes with a visit during the measurement period"/>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="DmHbA1cTest.InDenominator"/>
+      </criteria>
+    </population>
+    <population id="dm-hba1c-num">
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="numerator"/>
+        </coding>
+      </code>
+      <description value="Patients who have had HbA1c test within the measurement period"/>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="DmHbA1cTest.InNumerator"/>
+      </criteria>
+    </population>
+    <population id="dm-hba1c-caregap-controlled">
+      <code>
+        <coding>
+          <system value="http://ibm.com/fhir/cdm/CodeSystem/measure-population-type"/>
+          <code value="care-gap"/>
+        </coding>
+      </code>
+      <description value="DM Control - Low Risk"/>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="DmHbA1cTest.InDmControlled"/>
+      </criteria>
+    </population>
+    <population id="dm-hba1c-caregap-poor-control">
+      <code>
+        <coding>
+          <system value="http://ibm.com/fhir/cdm/CodeSystem/measure-population-type"/>
+          <code value="care-gap"/>
+        </coding>
+      </code>
+      <description value="DM Poor Control - High Risk"/>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="DmHbA1cTest.InDmPoorControl"/>
+      </criteria>
+    </population>
+  </group>
+</Measure>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="eng-communication-reqeust-status-reason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/eng-communication-reqeust-status-reason defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">mu-no-email-data<a name="eng-communication-reqeust-status-reason-mu-no-email-data"> </a></td><td>Mode Unavailable - No email address</td><td>Email mode unavailable because patient does not have a valid email address.</td></tr><tr><td style="white-space:nowrap">mu-no-sms-data<a name="eng-communication-reqeust-status-reason-mu-no-sms-data"> </a></td><td>Mode Unavailable - No mobile phone</td><td>SMS text mode unavailable because patient does not have a valid mobile phone number.</td></tr><tr><td style="white-space:nowrap">mu-opt-out-email<a name="eng-communication-reqeust-status-reason-mu-opt-out-email"> </a></td><td>Mode Unavailable - Patient opt-out from email</td><td>Email mode unavailable because patient has opted out of email communications.</td></tr><tr><td style="white-space:nowrap">mu-opt-out-sms<a name="eng-communication-reqeust-status-reason-mu-opt-out-sms"> </a></td><td>Mode Unavailable - Patient opt-out from sms</td><td>Phone mode unavailable because patient has opted out of phone communications.</td></tr><tr><td style="white-space:nowrap">mu-over-comm-email<a name="eng-communication-reqeust-status-reason-mu-over-comm-email"> </a></td><td>Mode Unavailable - Over-communicaton limit met for email</td><td>Email mode unavailable because patient over-communicatin limit has been met for email.</td></tr><tr><td style="white-space:nowrap">mu-over-comm-sms<a name="eng-communication-reqeust-status-reason-mu-over-comm-sms"> </a></td><td>Mode Unavailable - Over-communicaton limit met for SMS text</td><td>SMS text mode unavailable because patient over-communicatin limit has been met for SMS text.</td></tr><tr><td style="white-space:nowrap">mu-sender-email-disabled<a name="eng-communication-reqeust-status-reason-mu-sender-email-disabled"> </a></td><td>Mode Unavailable - Email disabled for sender</td><td>Email mode unavailable because sender has email communications disabled.</td></tr><tr><td style="white-space:nowrap">mu-sender-sms-disabled<a name="eng-communication-reqeust-status-reason-mu-sender-sms-disabled"> </a></td><td>Mode Unavailable - SMS text disabled for sender</td><td>SMS text mode unavailabe because sender has SMS text communications disabled.</td></tr><tr><td style="white-space:nowrap">mu-tenant-email-disabled<a name="eng-communication-reqeust-status-reason-mu-tenant-email-disabled"> </a></td><td>Mode Unavailable - Email disabled for tenant</td><td>Email mode unavailable because tenant has email communications disabled.</td></tr><tr><td style="white-space:nowrap">mu-tenant-sms-disabled<a name="eng-communication-reqeust-status-reason-mu-tenant-sms-disabled"> </a></td><td>Mode Unavailable - SMS text disabled for tenant</td><td>SMS text mode unavailabe because tenant has SMS text communications disabled.</td></tr><tr><td style="white-space:nowrap">comm-volume-exceeded<a name="eng-communication-reqeust-status-reason-comm-volume-exceeded"> </a></td><td>Not Processed - Sender max communication volume exceeded</td><td>CommunicationRequest not processed because the maximum daily communication volume treshhold was exceeded for the sender.</td></tr><tr><td style="white-space:nowrap">higher-priotity-care-gap<a name="eng-communication-reqeust-status-reason-higher-priotity-care-gap"> </a></td><td>Not Processed - Higher priority care gap on same date</td><td>CommunicationRequest not processed because of a higher priority care gap on the same date.</td></tr><tr><td style="white-space:nowrap">np-eligible-modality<a name="eng-communication-reqeust-status-reason-np-eligible-modality"> </a></td><td>Not Processed - No eligible modality found for patient</td><td>CommunicationRequest not processed because no eligible modality was found for the patient.</td></tr><tr><td style="white-space:nowrap">np-no-email-data<a name="eng-communication-reqeust-status-reason-np-no-email-data"> </a></td><td>Not Processed - No email address</td><td>CommunicationRequest not processed because patient does not have a valid email address.</td></tr><tr><td style="white-space:nowrap">np-no-sms-data<a name="eng-communication-reqeust-status-reason-np-no-sms-data"> </a></td><td>Not Processed - No mobile phone</td><td>CommunicationRequest not processed because patient does not have a valid mobile phone number.</td></tr><tr><td style="white-space:nowrap">np-opt-out-email<a name="eng-communication-reqeust-status-reason-np-opt-out-email"> </a></td><td>Not Processed - Patient opt-out from email</td><td>CommunicationRequest not processed because patient has opted out of email communications.</td></tr><tr><td style="white-space:nowrap">np-opt-out-sms<a name="eng-communication-reqeust-status-reason-np-opt-out-sms"> </a></td><td>Not Processed - Patient opt-out from sms</td><td>CommunicationRequest not processed because patient has opted out of phone communications.</td></tr><tr><td style="white-space:nowrap">np-over-comm-email<a name="eng-communication-reqeust-status-reason-np-over-comm-email"> </a></td><td>Not Processed - Over-communicaton limit met for email</td><td>CommunicationRequest not processed  because patient over-communicatin limit has been met for email.</td></tr><tr><td style="white-space:nowrap">np-over-comm-sms<a name="eng-communication-reqeust-status-reason-np-over-comm-sms"> </a></td><td>Not Processed - Over-communicaton limit met for SMS text</td><td>CommunicationRequest not processed  because patient over-communicatin limit has been met for SMS text.</td></tr><tr><td style="white-space:nowrap">np-sender-email-disabled<a name="eng-communication-reqeust-status-reason-np-sender-email-disabled"> </a></td><td>Not Processed - Email disabled for sender</td><td>CommunicationRequest not processed because sender has email communications disabled.</td></tr><tr><td style="white-space:nowrap">np-sender-sms-disabled<a name="eng-communication-reqeust-status-reason-np-sender-sms-disabled"> </a></td><td>Not Processed - SMS text disabled for sender</td><td>CommunicationRequest not processed because sender has SMS text communications disabled.</td></tr><tr><td style="white-space:nowrap">np-tenant-email-disabled<a name="eng-communication-reqeust-status-reason-np-tenant-email-disabled"> </a></td><td>Not Processed - Email disabled for tenant</td><td>CommunicationRequest not processed because tenant has email communications disabled.</td></tr><tr><td style="white-space:nowrap">np-tenant-sms-disabled<a name="eng-communication-reqeust-status-reason-np-tenant-sms-disabled"> </a></td><td>Not Processed - SMS text disabled for tenant</td><td>CommunicationRequest not processed because tenant has SMS text communications disabled.</td></tr><tr><td style="white-space:nowrap">np-today-holiday<a name="eng-communication-reqeust-status-reason-np-today-holiday"> </a></td><td>Not Processed - Today is a holiday</td><td>CommunicationRequest not processed because tenant has this date configured as a holiday.</td></tr><tr><td style="white-space:nowrap">no-comm-health-reminder<a name="eng-communication-reqeust-status-reason-no-comm-health-reminder"> </a></td><td>Not Processed - Patient health reminders disabled</td><td>CommunicationRequest not processed because patient is flagged with 'No health reminders' importance code that disabled health reminder communications.</td></tr><tr><td style="white-space:nowrap">no-consent-communication<a name="eng-communication-reqeust-status-reason-no-consent-communication"> </a></td><td>Not Processed - No communication consent</td><td>CommunicationRequest not processed because the recipient has not consented to communication.</td></tr><tr><td style="white-space:nowrap">no-contact-data<a name="eng-communication-reqeust-status-reason-no-contact-data"> </a></td><td>Not Processed - Patient does not have contact data</td><td>CommunicationRequest not processed because patient does not have valid contact data for any of the modalities.</td></tr><tr><td style="white-space:nowrap">no-preferred-contact<a name="eng-communication-reqeust-status-reason-no-preferred-contact"> </a></td><td>Not Processed - No preferred contact</td><td>CommunicationRequest not processed because the patient does not have preferred contact information for communication.</td></tr><tr><td style="white-space:nowrap">no-sender<a name="eng-communication-reqeust-status-reason-no-sender"> </a></td><td>Not processed - No sender / attributed practitioner</td><td>CommunicationRequest not processed because patient does not have an attributed practitioner/location or a sender record.</td></tr><tr><td style="white-space:nowrap">opt-out-care-gap<a name="eng-communication-reqeust-status-reason-opt-out-care-gap"> </a></td><td>Not processed - Patient opt-out from care gap</td><td>CommunicationRequest not processed because the recipient is opted out of communication from care gapt.</td></tr><tr><td style="white-space:nowrap">opt-out-product<a name="eng-communication-reqeust-status-reason-opt-out-product"> </a></td><td>Not Processed - Patient opt-out from product</td><td>CommunicationRequest not processed because the recipient is opted out of communication from product.</td></tr><tr><td style="white-space:nowrap">patient-already-contacted<a name="eng-communication-reqeust-status-reason-patient-already-contacted"> </a></td><td>Not Processed - Patient already contacted</td><td>CommunicationRequest not processed because patient has already been contacted successfully in the past X days.</td></tr><tr><td style="white-space:nowrap">patient-appointment-recompliant<a name="eng-communication-reqeust-status-reason-patient-appointment-recompliant"> </a></td><td>Not Processed - Patient complient with an appointment</td><td>CommunicationRequest not processed because patient has a recent or future appointment scheduled with the attributed practitioner.</td></tr><tr><td style="white-space:nowrap">patient-bad-debt<a name="eng-communication-reqeust-status-reason-patient-bad-debt"> </a></td><td>Not Processed - Bad-debt patient</td><td>CommunicationRequest not processed because the patient is in collections or has an unpaid account on file (bad-debt).</td></tr><tr><td style="white-space:nowrap">patient-deceased<a name="eng-communication-reqeust-status-reason-patient-deceased"> </a></td><td>Not Processed - Deceased patient</td><td>CommunicationRequest not processed because the patient is deceased.</td></tr><tr><td style="white-space:nowrap">patient-do-not-contact<a name="eng-communication-reqeust-status-reason-patient-do-not-contact"> </a></td><td>Not Processed - Do-not-contact patient</td><td>CommunicationRequest not processed because patient is flagged as a do-not-contact patient to prevent communication.</td></tr><tr><td style="white-space:nowrap">patient-privacy<a name="eng-communication-reqeust-status-reason-patient-privacy"> </a></td><td>Not Processed - Privacy concerned patient</td><td>CommunicationRequest not processed because patient is flagged with a 'Privacy concerned patient' code tahtat prevents communications.</td></tr><tr><td style="white-space:nowrap">patient-inactive<a name="eng-communication-reqeust-status-reason-patient-inactive"> </a></td><td>Not Processed - Patient is inactive</td><td>CommunicationRequest not processed because the patient is marked as inactive in the source system of record.</td></tr><tr><td style="white-space:nowrap">patient-vip<a name="eng-communication-reqeust-status-reason-patient-vip"> </a></td><td>Not Processed - VIP patient</td><td>CommunicationRequest not processed because patient is flagged with a VIP code that prevents communications.</td></tr><tr><td style="white-space:nowrap">practitioner-care-gap-disabled<a name="eng-communication-reqeust-status-reason-practitioner-care-gap-disabled"> </a></td><td>Not Processed - Practitioner care gap disabled	</td><td>CommunicationRequest not processed because the attributed practitioner has the care gap disabled.</td></tr><tr><td style="white-space:nowrap">ns-stalled-scheduler<a name="eng-communication-reqeust-status-reason-ns-stalled-scheduler"> </a></td><td>Not Sent - Message has not gone out during the schedule period</td><td>CommunicationRequest not sent because the message was not send during the scheduled period.</td></tr><tr><td style="white-space:nowrap">ns-user-remove-message<a name="eng-communication-reqeust-status-reason-ns-user-remove-message"> </a></td><td>Not Sent - User removed the communication from message queue</td><td>CommunicationRequest not sent because the user remove the communication from the message queue.</td></tr><tr><td style="white-space:nowrap">request-complete<a name="eng-communication-reqeust-status-reason-request-complete"> </a></td><td>In-Process - Communication request complete</td><td>Communication in-progress, FHIR CommunicationRequest completed and delivered to the communication engine</td></tr></table></div>
+  </text>
+  <url value="http://ibm.com/fhir/cdm/CodeSystem/eng-communication-reqeust-status-reason"/>
+  <version value="0.1.0"/>
+  <name value="EngagementCommunicationRequestStatusReasonCodeSystem"/>
+  <title value="Engagement Communication Request Status Reason Codes"/>
+  <status value="active"/>
+  <date value="2021-01-08T18:08:05+00:00"/>
+  <contact>
+    <name value="Kim Kenna"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sloand@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Jill Doty"/>
+    <telecom>
+      <system value="email"/>
+      <value value="jdoty@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <description value="Status codes detailing the reason and status history for an Engagement communication request."/>
+  <content value="complete"/>
+  <count value="43"/>
+  <concept>
+    <code value="mu-no-email-data"/>
+    <display value="Mode Unavailable - No email address"/>
+    <definition value="Email mode unavailable because patient does not have a valid email address."/>
+  </concept>
+  <concept>
+    <code value="mu-no-sms-data"/>
+    <display value="Mode Unavailable - No mobile phone"/>
+    <definition value="SMS text mode unavailable because patient does not have a valid mobile phone number."/>
+  </concept>
+  <concept>
+    <code value="mu-opt-out-email"/>
+    <display value="Mode Unavailable - Patient opt-out from email"/>
+    <definition value="Email mode unavailable because patient has opted out of email communications."/>
+  </concept>
+  <concept>
+    <code value="mu-opt-out-sms"/>
+    <display value="Mode Unavailable - Patient opt-out from sms"/>
+    <definition value="Phone mode unavailable because patient has opted out of phone communications."/>
+  </concept>
+  <concept>
+    <code value="mu-over-comm-email"/>
+    <display value="Mode Unavailable - Over-communicaton limit met for email"/>
+    <definition value="Email mode unavailable because patient over-communicatin limit has been met for email."/>
+  </concept>
+  <concept>
+    <code value="mu-over-comm-sms"/>
+    <display value="Mode Unavailable - Over-communicaton limit met for SMS text"/>
+    <definition value="SMS text mode unavailable because patient over-communicatin limit has been met for SMS text."/>
+  </concept>
+  <concept>
+    <code value="mu-sender-email-disabled"/>
+    <display value="Mode Unavailable - Email disabled for sender"/>
+    <definition value="Email mode unavailable because sender has email communications disabled."/>
+  </concept>
+  <concept>
+    <code value="mu-sender-sms-disabled"/>
+    <display value="Mode Unavailable - SMS text disabled for sender"/>
+    <definition value="SMS text mode unavailabe because sender has SMS text communications disabled."/>
+  </concept>
+  <concept>
+    <code value="mu-tenant-email-disabled"/>
+    <display value="Mode Unavailable - Email disabled for tenant"/>
+    <definition value="Email mode unavailable because tenant has email communications disabled."/>
+  </concept>
+  <concept>
+    <code value="mu-tenant-sms-disabled"/>
+    <display value="Mode Unavailable - SMS text disabled for tenant"/>
+    <definition value="SMS text mode unavailabe because tenant has SMS text communications disabled."/>
+  </concept>
+  <concept>
+    <code value="comm-volume-exceeded"/>
+    <display value="Not Processed - Sender max communication volume exceeded"/>
+    <definition value="CommunicationRequest not processed because the maximum daily communication volume treshhold was exceeded for the sender."/>
+  </concept>
+  <concept>
+    <code value="higher-priotity-care-gap"/>
+    <display value="Not Processed - Higher priority care gap on same date"/>
+    <definition value="CommunicationRequest not processed because of a higher priority care gap on the same date."/>
+  </concept>
+  <concept>
+    <code value="np-eligible-modality"/>
+    <display value="Not Processed - No eligible modality found for patient"/>
+    <definition value="CommunicationRequest not processed because no eligible modality was found for the patient."/>
+  </concept>
+  <concept>
+    <code value="np-no-email-data"/>
+    <display value="Not Processed - No email address"/>
+    <definition value="CommunicationRequest not processed because patient does not have a valid email address."/>
+  </concept>
+  <concept>
+    <code value="np-no-sms-data"/>
+    <display value="Not Processed - No mobile phone"/>
+    <definition value="CommunicationRequest not processed because patient does not have a valid mobile phone number."/>
+  </concept>
+  <concept>
+    <code value="np-opt-out-email"/>
+    <display value="Not Processed - Patient opt-out from email"/>
+    <definition value="CommunicationRequest not processed because patient has opted out of email communications."/>
+  </concept>
+  <concept>
+    <code value="np-opt-out-sms"/>
+    <display value="Not Processed - Patient opt-out from sms"/>
+    <definition value="CommunicationRequest not processed because patient has opted out of phone communications."/>
+  </concept>
+  <concept>
+    <code value="np-over-comm-email"/>
+    <display value="Not Processed - Over-communicaton limit met for email"/>
+    <definition value="CommunicationRequest not processed  because patient over-communicatin limit has been met for email."/>
+  </concept>
+  <concept>
+    <code value="np-over-comm-sms"/>
+    <display value="Not Processed - Over-communicaton limit met for SMS text"/>
+    <definition value="CommunicationRequest not processed  because patient over-communicatin limit has been met for SMS text."/>
+  </concept>
+  <concept>
+    <code value="np-sender-email-disabled"/>
+    <display value="Not Processed - Email disabled for sender"/>
+    <definition value="CommunicationRequest not processed because sender has email communications disabled."/>
+  </concept>
+  <concept>
+    <code value="np-sender-sms-disabled"/>
+    <display value="Not Processed - SMS text disabled for sender"/>
+    <definition value="CommunicationRequest not processed because sender has SMS text communications disabled."/>
+  </concept>
+  <concept>
+    <code value="np-tenant-email-disabled"/>
+    <display value="Not Processed - Email disabled for tenant"/>
+    <definition value="CommunicationRequest not processed because tenant has email communications disabled."/>
+  </concept>
+  <concept>
+    <code value="np-tenant-sms-disabled"/>
+    <display value="Not Processed - SMS text disabled for tenant"/>
+    <definition value="CommunicationRequest not processed because tenant has SMS text communications disabled."/>
+  </concept>
+  <concept>
+    <code value="np-today-holiday"/>
+    <display value="Not Processed - Today is a holiday"/>
+    <definition value="CommunicationRequest not processed because tenant has this date configured as a holiday."/>
+  </concept>
+  <concept>
+    <code value="no-comm-health-reminder"/>
+    <display value="Not Processed - Patient health reminders disabled"/>
+    <definition value="CommunicationRequest not processed because patient is flagged with &#39;No health reminders&#39; importance code that disabled health reminder communications."/>
+  </concept>
+  <concept>
+    <code value="no-consent-communication"/>
+    <display value="Not Processed - No communication consent"/>
+    <definition value="CommunicationRequest not processed because the recipient has not consented to communication."/>
+  </concept>
+  <concept>
+    <code value="no-contact-data"/>
+    <display value="Not Processed - Patient does not have contact data"/>
+    <definition value="CommunicationRequest not processed because patient does not have valid contact data for any of the modalities."/>
+  </concept>
+  <concept>
+    <code value="no-preferred-contact"/>
+    <display value="Not Processed - No preferred contact"/>
+    <definition value="CommunicationRequest not processed because the patient does not have preferred contact information for communication."/>
+  </concept>
+  <concept>
+    <code value="no-sender"/>
+    <display value="Not processed - No sender / attributed practitioner"/>
+    <definition value="CommunicationRequest not processed because patient does not have an attributed practitioner/location or a sender record."/>
+  </concept>
+  <concept>
+    <code value="opt-out-care-gap"/>
+    <display value="Not processed - Patient opt-out from care gap"/>
+    <definition value="CommunicationRequest not processed because the recipient is opted out of communication from care gapt."/>
+  </concept>
+  <concept>
+    <code value="opt-out-product"/>
+    <display value="Not Processed - Patient opt-out from product"/>
+    <definition value="CommunicationRequest not processed because the recipient is opted out of communication from product."/>
+  </concept>
+  <concept>
+    <code value="patient-already-contacted"/>
+    <display value="Not Processed - Patient already contacted"/>
+    <definition value="CommunicationRequest not processed because patient has already been contacted successfully in the past X days."/>
+  </concept>
+  <concept>
+    <code value="patient-appointment-recompliant"/>
+    <display value="Not Processed - Patient complient with an appointment"/>
+    <definition value="CommunicationRequest not processed because patient has a recent or future appointment scheduled with the attributed practitioner."/>
+  </concept>
+  <concept>
+    <code value="patient-bad-debt"/>
+    <display value="Not Processed - Bad-debt patient"/>
+    <definition value="CommunicationRequest not processed because the patient is in collections or has an unpaid account on file (bad-debt)."/>
+  </concept>
+  <concept>
+    <code value="patient-deceased"/>
+    <display value="Not Processed - Deceased patient"/>
+    <definition value="CommunicationRequest not processed because the patient is deceased."/>
+  </concept>
+  <concept>
+    <code value="patient-do-not-contact"/>
+    <display value="Not Processed - Do-not-contact patient"/>
+    <definition value="CommunicationRequest not processed because patient is flagged as a do-not-contact patient to prevent communication."/>
+  </concept>
+  <concept>
+    <code value="patient-privacy"/>
+    <display value="Not Processed - Privacy concerned patient"/>
+    <definition value="CommunicationRequest not processed because patient is flagged with a &#39;Privacy concerned patient&#39; code tahtat prevents communications."/>
+  </concept>
+  <concept>
+    <code value="patient-inactive"/>
+    <display value="Not Processed - Patient is inactive"/>
+    <definition value="CommunicationRequest not processed because the patient is marked as inactive in the source system of record."/>
+  </concept>
+  <concept>
+    <code value="patient-vip"/>
+    <display value="Not Processed - VIP patient"/>
+    <definition value="CommunicationRequest not processed because patient is flagged with a VIP code that prevents communications."/>
+  </concept>
+  <concept>
+    <code value="practitioner-care-gap-disabled"/>
+    <display value="Not Processed - Practitioner care gap disabled&#x9;"/>
+    <definition value="CommunicationRequest not processed because the attributed practitioner has the care gap disabled."/>
+  </concept>
+  <concept>
+    <code value="ns-stalled-scheduler"/>
+    <display value="Not Sent - Message has not gone out during the schedule period"/>
+    <definition value="CommunicationRequest not sent because the message was not send during the scheduled period."/>
+  </concept>
+  <concept>
+    <code value="ns-user-remove-message"/>
+    <display value="Not Sent - User removed the communication from message queue"/>
+    <definition value="CommunicationRequest not sent because the user remove the communication from the message queue."/>
+  </concept>
+  <concept>
+    <code value="request-complete"/>
+    <display value="In-Process - Communication request complete"/>
+    <definition value="Communication in-progress, FHIR CommunicationRequest completed and delivered to the communication engine"/>
+  </concept>
+</CodeSystem>

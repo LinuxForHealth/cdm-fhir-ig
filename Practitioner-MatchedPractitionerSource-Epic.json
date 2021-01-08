@@ -1,0 +1,90 @@
+{
+  "resourceType": "Practitioner",
+  "id": "MatchedPractitionerSource-Epic",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "valueString": "99999"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "valueString": "b069a545-9506-40c6-8498-23de2e189143"
+      }
+    ],
+    "source": "http://acme-health.com/epic",
+    "profile": [
+      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: 449ef60a-ad94-43fe-acae-7a4bffc800e0 (OFFICIAL), Provider number: 1122445599 (OFFICIAL), Match Data Identifier: e65bdcac-6e50-4353-8faa-dc147a603468 (SECONDARY)</p><p><b>name</b>: Dr Rosemary B Match, MD</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "SSRI"
+          }
+        ]
+      },
+      "system": "http://acme-health.com/epic/practitioner",
+      "value": "449ef60a-ad94-43fe-acae-7a4bffc800e0",
+      "assigner": {
+        "display": "Acme Health - Epic"
+      }
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/us-npi",
+      "value": "1122445599",
+      "assigner": {
+        "display": "cms.gov"
+      }
+    },
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "MDI"
+          }
+        ]
+      },
+      "system": "http://ibm.com/fhir/primary/practitioner-match-identifier",
+      "value": "e65bdcac-6e50-4353-8faa-dc147a603468",
+      "assigner": {
+        "display": "IBM"
+      }
+    }
+  ],
+  "name": [
+    {
+      "text": "Dr Rosemary B Match, MD",
+      "family": "Match",
+      "given": [
+        "Rosemary",
+        "B"
+      ],
+      "prefix": [
+        "Dr"
+      ],
+      "suffix": [
+        "MD"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Contract xmlns="http://hl7.org/fhir">
+  <id value="Milestone1Initiative"/>
+  <meta>
+    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/ffv-initative-resource"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Advantage Database Key: 1, Advantage customer key: Milestone1Initiative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>
+  </text>
+  <extension url="attributionCode">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system"/>
+        <code value="enrollment"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="ffvSchedule">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/ffv-schedule"/>
+        <code value="monthly"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="qualityMeasures">
+    <valueReference>
+      <identifier>
+        <value value="quality-measure-list-1"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system"/>
+        <code value="ADKEY"/>
+      </coding>
+    </type>
+    <value value="1"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system"/>
+        <code value="CUSTKEY"/>
+      </coding>
+    </type>
+    <value value="Milestone1Initiative"/>
+  </identifier>
+  <title value="Primary Care Incentive Program"/>
+  <supportingInfo>
+    <identifier>
+      <value value="participating-providers-list-2"/>
+    </identifier>
+  </supportingInfo>
+  <supportingInfo>
+    <identifier>
+      <value value="included-patients-list-2"/>
+    </identifier>
+  </supportingInfo>
+  <supportingInfo>
+    <identifier>
+      <value value="excluded-patients-list-2"/>
+    </identifier>
+  </supportingInfo>
+</Contract>

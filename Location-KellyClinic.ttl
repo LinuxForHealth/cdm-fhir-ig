@@ -1,0 +1,161 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Location/KellyClinic> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "KellyClinic"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.valueString [ fhir:value "99999" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
+     ];
+     fhir:Meta.source [ fhir:value "http://acme-health.com/epic" ];
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-location";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-location>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: 7d5007d6-edd0-48b5-b34f-5c5f948b6d13 (OFFICIAL), Tax ID number: 223338765 (SECONDARY)</p><p><b>status</b>: active</p><p><b>name</b>: Kelly Clinic</p><p><b>mode</b>: instance</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode FMC}\">Family medicine clinic</span></p><p><b>telecom</b>: ph: 214-555-2100(WORK), fax: 214-555-2101(WORK)</p><p><b>address</b>: 200 Main Street Irving TX 75014 US (WORK)</p><p><b>physicalType</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bu}\">Building</span></p><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: mon, tue, wed, thu</p><p><b>openingTime</b>: 17:00:00</p></blockquote><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: fri</p><p><b>openingTime</b>: 08:00:00</p><p><b>closingTime</b>: 12:00:00</p></blockquote><blockquote><p><b>hoursOfOperation</b></p><p><b>daysOfWeek</b>: sat</p><p><b>openingTime</b>: 10:00:00</p><p><b>closingTime</b>: 15:00:00</p></blockquote></div>"
+  ];
+  fhir:Location.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "SSRI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/epic/location" ];
+     fhir:Identifier.value [ fhir:value "7d5007d6-edd0-48b5-b34f-5c5f948b6d13" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Acme Health - Epic" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "TAX" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.4.4" ];
+     fhir:Identifier.value [ fhir:value "223338765" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "irs.gov" ]
+     ]
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.name [ fhir:value "Kelly Clinic"];
+  fhir:Location.mode [ fhir:value "instance"];
+  fhir:Location.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ];
+       fhir:Coding.code [ fhir:value "FMC" ];
+       fhir:Coding.display [ fhir:value "Family medicine clinic" ]
+     ]
+  ];
+  fhir:Location.telecom [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/contactpoint-country" ];
+       fhir:Extension.valueString [ fhir:value "1" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/contactpoint-extension" ];
+       fhir:Extension.valueString [ fhir:value "100" ]
+     ];
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "214-555-2100" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/contactpoint-country" ];
+       fhir:Extension.valueString [ fhir:value "1" ]
+     ];
+     fhir:ContactPoint.system [ fhir:value "fax" ];
+     fhir:ContactPoint.value [ fhir:value "214-555-2101" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Location.address [
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.line [
+       fhir:value "200 Main Street";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Irving" ];
+     fhir:Address.district [ fhir:value "Dallas" ];
+     fhir:Address.state [ fhir:value "TX" ];
+     fhir:Address.postalCode [ fhir:value "75014" ];
+     fhir:Address.country [ fhir:value "US" ]
+  ];
+  fhir:Location.physicalType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/location-physical-type" ];
+       fhir:Coding.code [ fhir:value "bu" ];
+       fhir:Coding.display [ fhir:value "Building" ]
+     ]
+  ];
+  fhir:Location.hoursOfOperation [
+     fhir:index 0;
+     fhir:Location.hoursOfOperation.daysOfWeek [
+       fhir:value "mon";
+       fhir:index 0
+     ], [
+       fhir:value "tue";
+       fhir:index 1
+     ], [
+       fhir:value "wed";
+       fhir:index 2
+     ], [
+       fhir:value "thu";
+       fhir:index 3
+     ];
+     fhir:Location.hoursOfOperation.openingTime [ fhir:value "17:00:00"^^xsd:time ]
+  ], [
+     fhir:index 1;
+     fhir:Location.hoursOfOperation.daysOfWeek [
+       fhir:value "fri";
+       fhir:index 0
+     ];
+     fhir:Location.hoursOfOperation.openingTime [ fhir:value "08:00:00"^^xsd:time ];
+     fhir:Location.hoursOfOperation.closingTime [ fhir:value "12:00:00"^^xsd:time ]
+  ], [
+     fhir:index 2;
+     fhir:Location.hoursOfOperation.daysOfWeek [
+       fhir:value "sat";
+       fhir:index 0
+     ];
+     fhir:Location.hoursOfOperation.openingTime [ fhir:value "10:00:00"^^xsd:time ];
+     fhir:Location.hoursOfOperation.closingTime [ fhir:value "15:00:00"^^xsd:time ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Location/KellyClinic.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

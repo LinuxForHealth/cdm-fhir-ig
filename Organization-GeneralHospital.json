@@ -1,0 +1,96 @@
+{
+  "resourceType": "Organization",
+  "id": "GeneralHospital",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "valueString": "99999"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "valueString": "b069a545-9506-40c6-8498-23de2e189143"
+      }
+    ],
+    "source": "http://acme-health.com/epic",
+    "profile": [
+      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: 7d5007d6-edd0-48b5-b34f-5c5f948b6d13 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: General Hospital</p><p><b>telecom</b>: ph: 214-555-6000(WORK), fax: 214-555-6001(WORK)</p><p><b>address</b>: 100 Easy Street Irving TX 75014 US (WORK)</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "SSRI"
+          }
+        ]
+      },
+      "system": "http://acme-health.com/epic/organization",
+      "value": "7d5007d6-edd0-48b5-b34f-5c5f948b6d13",
+      "assigner": {
+        "display": "Acme Health - Epic"
+      }
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "prov"
+        }
+      ]
+    }
+  ],
+  "name": "General Hospital",
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-country",
+          "valueString": "1"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-extension",
+          "valueString": "100"
+        }
+      ],
+      "system": "phone",
+      "value": "214-555-6000",
+      "use": "work"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-country",
+          "valueString": "1"
+        }
+      ],
+      "system": "fax",
+      "value": "214-555-6001",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "type": "physical",
+      "line": [
+        "100 Easy Street"
+      ],
+      "city": "Irving",
+      "district": "Dallas",
+      "state": "TX",
+      "postalCode": "75014",
+      "country": "US"
+    }
+  ]
+}
