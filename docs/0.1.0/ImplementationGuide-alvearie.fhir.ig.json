@@ -1,0 +1,611 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "alvearie.fhir.ig",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AlvearieFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://alvearie.github.io/alvearie-fhir-ig/ImplementationGuide/alvearie.fhir.ig</pre><div><p>Alvearie FHIR Profiles</p>\n</div></div>"
+  },
+  "url": "http://alvearie.github.io/alvearie-fhir-ig/ImplementationGuide/alvearie.fhir.ig",
+  "version": "0.1.0",
+  "name": "AlvearieFHIRImplementationGuide",
+  "title": "Alvearie FHIR Implementation Guide",
+  "status": "active",
+  "date": "2021-02-19T13:15:40-06:00",
+  "contact": [
+    {
+      "name": "Kim Kenna",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "sloand@us.ibm.com"
+        }
+      ]
+    },
+    {
+      "name": "Tom Eggebraaten",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "tegge@us.ibm.com"
+        }
+      ]
+    }
+  ],
+  "description": "Alvearie FHIR Profiles",
+  "packageId": "alvearie.fhir.ig",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "hl7_fhir_us_core",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.1.0"
+    }
+  ],
+  "definition": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "copyrightyear"
+          },
+          {
+            "url": "value",
+            "valueString": "2021+"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "releaselabel"
+          },
+          {
+            "url": "value",
+            "valueString": "CI Build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "show-inherited-invariants"
+          },
+          {
+            "url": "value",
+            "valueString": "false"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "template/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "input/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-qa"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/qa"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-temp"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/pages"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "output"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-suppressed-warnings"
+          },
+          {
+            "url": "value",
+            "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "http://alvearie.github.io/alvearie-fhir-ig/history.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-html"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-md"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page-md.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-contact"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-context"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-copyright"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-license"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/alvearie-organization"
+        },
+        "name": "Alvearie Organization",
+        "description": "Alvearie definition of what fields are needed for a organization",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/process-meta"
+        },
+        "name": "Data lineage meta with process extensions",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ingestion-batch-id"
+        },
+        "name": "Ingestion Batch Id",
+        "description": "Generated by an ingestion service management API, the ingestion-batch-id represents a collection/grouping of messages that the producer submitted together.  The 'batch' definition needs to be agreed upon by data producers and data consumers.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/process-name"
+        },
+        "name": "Process Name",
+        "description": "The name of the process or service that has produced the data held in the FHIR resource or element.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/process-organization"
+        },
+        "name": "Process Organization",
+        "description": "The organizing entity that owns the process that has produced the data held in the FHIR resource or element. ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/process-record-id"
+        },
+        "name": "Process Record ID",
+        "description": "The record id that the data producer or data integrator uses internally to identify this data.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/process-timestamp"
+        },
+        "name": "Process Timestamp",
+        "description": "The timestamp the data was generated within this FHIR resource or element.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/process-type"
+        },
+        "name": "Process Type",
+        "description": "The classification type of the process that has produced the data held in the FHIR resource or element. For example, if the process is primarily a Natural Language Processing (NLP) service, the type may be specified as NLP. Or if the process is primarily one that aggregates and groups related items, the type may be specified as Grouper.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/process-version"
+        },
+        "name": "Process Version",
+        "description": "The version of the process or service that has produced the data held in the FHIR resource or element.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/source-data-model-version"
+        },
+        "name": "Source Data Model Version",
+        "description": "The version of the data model in the source system used by the data producer or data integrator.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/source-file-id"
+        },
+        "name": "Source File ID",
+        "description": "The identifier for a file that the data producer or data integrator extracted knowledge from to produce the data within this FHIR resource or element.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/tenant-id"
+        },
+        "name": "Tenant Id",
+        "description": "Defined by metadata and provided by the data producer, the ID that the messages will be stored at and processed as within the data pipeline.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/identifier-type"
+        },
+        "name": "Identifier Type Value Set",
+        "description": "Extended set of identifier type codes from FHIR HL7 and extended Alvearie resource identifiers",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/identifier-type"
+        },
+        "name": "Identifier Type Codes",
+        "description": "Extended set of Identifier type code for Alvearie resources",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/process-meta-primary-or-secondary"
+        },
+        "name": "Primary or Secondary",
+        "description": "Identifies the origin of the data elements from primary or secondary systems.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/GeneralHospital"
+        },
+        "name": "Alvearie Organization - General Hospital",
+        "description": "Sample Alvearie Organization representing a hospital ingested from a EMR or PMS system",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "path-resource",
+        "value": "input/capabilities"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/examples"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/extensions"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/models"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/operations"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/profiles"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/testing"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "template/config"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/images"
+      },
+      {
+        "code": "path-tx-cache",
+        "value": "input-cache/txcache"
+      }
+    ]
+  }
+}

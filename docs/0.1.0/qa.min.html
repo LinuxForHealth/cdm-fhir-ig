@@ -1,0 +1,611 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 109, errors = 0, warn = 13, info = 0 -->
+<head>
+  <title>AlvearieFHIRImplementationGuide : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for AlvearieFHIRImplementationGuide</h1>
+ <p>Generated Fri Feb 19 13:16:35 CST 2021, FHIR version 4.0.1 for alvearie.fhir.ig#0.1.0 (canonical = <a href="http://alvearie.github.io/alvearie-fhir-ig">http://alvearie.github.io/alvearie-fhir-ig</a> (<a href="http://alvearie.github.io/alvearie-fhir-ig/history.html">history</a>)). See <a href="c:\users\tomeggebraaten\git\alvearie-fhir-ig\build\output\qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.59</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = alvearie.fhir.ig, Canonical = http://alvearie.github.io/alvearie-fhir-ig</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">No entry in the package-list.json file for this version</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAL0lEQVR42u3XsQ0AQAgCQHdl/xn8jxvYWB3JlTR0VJLa+OltBwAAYP6EEQAAgCsPVYVAgIJrA/sAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> alvearie.fhir.ig</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://alvearie.github.io/alvearie-fhir-ig</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.us.core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/us/core/STU3.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: alvearie.fhir.template#0.1.0 -&gt; fhir.base.template#current</para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://alvearie.github.io/alvearie-fhir-ig (Problem #1 with package-list.json at http://alvearie.github.io/alvearie-fhir-ig: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 109, errors = 0, warn = 13, info = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>109</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_ImplementationGuide-alvearie.fhir.ig"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\ImplementationGuide-alvearie.fhir.ig</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_examples_organization-GeneralHospital"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\examples\organization-GeneralHospital</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-name"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\structuredefinition-process-name</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-organization"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\structuredefinition-process-organization</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-record-id"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\structuredefinition-process-record-id</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-timestamp"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\structuredefinition-process-timestamp</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-type"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\structuredefinition-process-type</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-version"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\structuredefinition-process-version</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-source-data-model-version"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\structuredefinition-source-data-model-version</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-source-file-id"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\structuredefinition-source-file-id</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_profiles_structuredefinition-alvearie-organization"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\profiles\structuredefinition-alvearie-organization</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_profiles_structuredefinition-process-meta"><b>C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\profiles\structuredefinition-process-meta</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/process-meta.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-identifier-type.change.history.html#fc90c012-e4bf-4ebd-8791-3b40e14b6078">CodeSystem-identifier-type.change.history.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-identifier-type.html#94e2facc-0d13-4e45-b5ab-ce03db517518">CodeSystem-identifier-type.html#/html/body/div/div/div/p/a at Line 215, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-identifier-type.json.html#c6454da4-83b7-4f16-adf7-d1f00c8c69f6">CodeSystem-identifier-type.json.html#/html/body/div/div/div/p/a at Line 247, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-identifier-type.ttl.html#00559c9b-413c-4391-b0a2-d5ec2a826264">CodeSystem-identifier-type.ttl.html#/html/body/div/div/div/p/a at Line 255, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-identifier-type.xml.html#5e59ca59-4913-464f-9c7d-7e660edc36ba">CodeSystem-identifier-type.xml.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-process-meta-primary-or-secondary.change.history.html#b9690f4a-11e9-496b-8523-8a651fb03cd2">CodeSystem-process-meta-primary-or-secondary.change.history.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-process-meta-primary-or-secondary.html#b3d1d20b-3545-47c9-b885-e6a373484bb2">CodeSystem-process-meta-primary-or-secondary.html#/html/body/div/div/div/p/a at Line 213, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-process-meta-primary-or-secondary.json.html#e449141c-389f-46c3-bb13-b9d2063866cc">CodeSystem-process-meta-primary-or-secondary.json.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-process-meta-primary-or-secondary.ttl.html#5cf9e049-8a62-40e3-8e0f-cfebb3890d0f">CodeSystem-process-meta-primary-or-secondary.ttl.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-process-meta-primary-or-secondary.xml.html#15d5f777-2ec8-4f37-930e-6b07a566f912">CodeSystem-process-meta-primary-or-secondary.xml.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-GeneralHospital.change.history.html#b7ccf943-3e76-4255-a160-6eb1dc876962">Organization-GeneralHospital.change.history.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-GeneralHospital.html#550133da-b14e-42c0-8b00-d9c8b2fca057">Organization-GeneralHospital.html#/html/body/div/div/div/p/a at Line 191, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-GeneralHospital.json.html#c81a52f3-e4e4-4975-bd82-7ad593957752">Organization-GeneralHospital.json.html#/html/body/div/div/div/p/a at Line 289, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-GeneralHospital.ttl.html#be63eb10-d350-4b89-a979-430f2d515187">Organization-GeneralHospital.ttl.html#/html/body/div/div/div/p/a at Line 286, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Organization-GeneralHospital.xml.html#edcab72e-f549-4280-bd10-78a1f482cca7">Organization-GeneralHospital.xml.html#/html/body/div/div/div/p/a at Line 269, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-alvearie-organization-definitions.html#4e2af91d-f729-4934-bb6d-0a731ca00450">StructureDefinition-alvearie-organization-definitions.html#/html/body/div/div/div/p/a at Line 972, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-alvearie-organization-examples.html#7c610fb0-279b-480e-b13e-a59cb5625951">StructureDefinition-alvearie-organization-examples.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-alvearie-organization-mappings.html#e90cf3fc-6aa3-4aab-b527-b417efe3ab0d">StructureDefinition-alvearie-organization-mappings.html#/html/body/div/div/div/p/a at Line 397, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-alvearie-organization.html#0ee87df6-6d18-46f5-89bb-aebacd1f7f94">StructureDefinition-alvearie-organization.html#/html/body/div/div/div/p/a at Line 939, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-alvearie-organization.profile.history.html#ac61a78e-0ef2-4f96-b1a2-94742003ad0c">StructureDefinition-alvearie-organization.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-alvearie-organization.profile.json.html#b4a3fe49-6f72-4ef9-bc8f-709bd5ff2b23">StructureDefinition-alvearie-organization.profile.json.html#/html/body/div/div/div/p/a at Line 3946, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-alvearie-organization.profile.ttl.html#04c19c6c-e9c0-4e32-86ce-7ed7ce15dce9">StructureDefinition-alvearie-organization.profile.ttl.html#/html/body/div/div/div/p/a at Line 3389, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-alvearie-organization.profile.xml.html#93693bbd-b561-49f7-b5ed-a21576faf731">StructureDefinition-alvearie-organization.profile.xml.html#/html/body/div/div/div/p/a at Line 3526, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ingestion-batch-id-definitions.html#4db89ae8-69b9-42a1-9f2d-5e12278388ba">StructureDefinition-ingestion-batch-id-definitions.html#/html/body/div/div/div/p/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ingestion-batch-id-mappings.html#cf7bd134-1d80-41b2-a533-f8fa227852be">StructureDefinition-ingestion-batch-id-mappings.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ingestion-batch-id.html#e7ad85f6-eaf7-4133-b423-f308021bcdfc">StructureDefinition-ingestion-batch-id.html#/html/body/div/div/div/p/a at Line 458, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ingestion-batch-id.profile.history.html#e5a8ac2f-50ca-4d6b-b5b6-73de5afbdd66">StructureDefinition-ingestion-batch-id.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ingestion-batch-id.profile.json.html#d76c7828-affa-4d87-a620-716a5434a7f0">StructureDefinition-ingestion-batch-id.profile.json.html#/html/body/div/div/div/p/a at Line 520, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ingestion-batch-id.profile.ttl.html#a81c06a7-da7e-4685-baeb-e3d16dbb7bd6">StructureDefinition-ingestion-batch-id.profile.ttl.html#/html/body/div/div/div/p/a at Line 493, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ingestion-batch-id.profile.xml.html#e62eda8c-bb40-4802-8a6b-c4d69900f577">StructureDefinition-ingestion-batch-id.profile.xml.html#/html/body/div/div/div/p/a at Line 477, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-meta-definitions.html#dbb36939-7219-464c-a847-af9b55fab4cd">StructureDefinition-process-meta-definitions.html#/html/body/div/div/div/p/a at Line 402, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-meta-examples.html#b0663fd6-bf26-4f46-a9da-24e0f458dca9">StructureDefinition-process-meta-examples.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-meta-mappings.html#e6f2ac9b-f361-4c98-95b1-29cb3554dceb">StructureDefinition-process-meta-mappings.html#/html/body/div/div/div/p/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-meta.html#c0bd604b-315c-4c36-8fe9-7b384b787a5a">StructureDefinition-process-meta.html#/html/body/div/div/div/p/a at Line 642, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-meta.profile.history.html#00f8b79e-a776-4a29-8be1-bff30ba558d5">StructureDefinition-process-meta.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-meta.profile.json.html#a26ca052-f177-4e26-a58a-cc31a3eed8fa">StructureDefinition-process-meta.profile.json.html#/html/body/div/div/div/p/a at Line 1319, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-meta.profile.ttl.html#ae758a2e-ce7b-4799-9047-dbee43ca7de4">StructureDefinition-process-meta.profile.ttl.html#/html/body/div/div/div/p/a at Line 1211, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-meta.profile.xml.html#46a23128-7297-4442-8e50-a16d5aae349f">StructureDefinition-process-meta.profile.xml.html#/html/body/div/div/div/p/a at Line 1167, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-name-definitions.html#8f79a99d-ae4e-4723-a39f-91fcceee4748">StructureDefinition-process-name-definitions.html#/html/body/div/div/div/p/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-name-mappings.html#9d85c7ad-3f8b-453f-b531-73175b45dc22">StructureDefinition-process-name-mappings.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-name.html#9838e453-1f03-465b-b4eb-fa37a5ede6c5">StructureDefinition-process-name.html#/html/body/div/div/div/p/a at Line 458, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-name.profile.history.html#273e1375-8f71-44b2-8a5e-dddd26c81925">StructureDefinition-process-name.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-name.profile.json.html#ca0127da-bf5f-4775-a092-d6c12a5e8bd4">StructureDefinition-process-name.profile.json.html#/html/body/div/div/div/p/a at Line 520, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-name.profile.ttl.html#db336fd4-77bb-4751-a3ab-03c4615f19ab">StructureDefinition-process-name.profile.ttl.html#/html/body/div/div/div/p/a at Line 493, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-name.profile.xml.html#ffa06bf1-2e44-4078-b27c-ae27b6db60be">StructureDefinition-process-name.profile.xml.html#/html/body/div/div/div/p/a at Line 477, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-organization-definitions.html#7f8a7d82-647e-4400-b847-da4c96549b0c">StructureDefinition-process-organization-definitions.html#/html/body/div/div/div/p/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-organization-mappings.html#e442feb8-ef42-47c8-b579-719c2987ff7a">StructureDefinition-process-organization-mappings.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-organization.html#5e253523-a25d-4c7c-bc83-517a602892e3">StructureDefinition-process-organization.html#/html/body/div/div/div/p/a at Line 458, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-organization.profile.history.html#bb545d32-2167-441d-abe4-c691a133ed3f">StructureDefinition-process-organization.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-organization.profile.json.html#73e28359-1572-4c1f-a286-c5d12e1ae7ff">StructureDefinition-process-organization.profile.json.html#/html/body/div/div/div/p/a at Line 520, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-organization.profile.ttl.html#224e0ea9-8c09-4de6-b89c-9f50c9530d80">StructureDefinition-process-organization.profile.ttl.html#/html/body/div/div/div/p/a at Line 493, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-organization.profile.xml.html#e6a3792e-8fe9-49a5-9ef7-2b0316a4a11e">StructureDefinition-process-organization.profile.xml.html#/html/body/div/div/div/p/a at Line 477, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-record-id-definitions.html#6e4b560b-97ba-426a-b5a0-8a5e5fb374ef">StructureDefinition-process-record-id-definitions.html#/html/body/div/div/div/p/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-record-id-mappings.html#f737b689-996b-41e7-a2b3-c39e9706960e">StructureDefinition-process-record-id-mappings.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-record-id.html#0fc9a4b3-0d73-445e-b750-afb62ff45151">StructureDefinition-process-record-id.html#/html/body/div/div/div/p/a at Line 458, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-record-id.profile.history.html#e1fe4b86-2540-4fa4-8fca-bb948c9fee4c">StructureDefinition-process-record-id.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-record-id.profile.json.html#772e6673-a24c-416b-9d72-a7f4442384f9">StructureDefinition-process-record-id.profile.json.html#/html/body/div/div/div/p/a at Line 520, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-record-id.profile.ttl.html#48acc23d-532f-4f6f-a755-5d7a3439ff27">StructureDefinition-process-record-id.profile.ttl.html#/html/body/div/div/div/p/a at Line 493, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-record-id.profile.xml.html#613197c3-4704-403f-bbce-87b23b139395">StructureDefinition-process-record-id.profile.xml.html#/html/body/div/div/div/p/a at Line 477, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-timestamp-definitions.html#7a763279-45ff-48a0-bcb0-225ef21cdbe6">StructureDefinition-process-timestamp-definitions.html#/html/body/div/div/div/p/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-timestamp-mappings.html#e993ac9d-9a0c-44ce-8bc5-e0f45df79d19">StructureDefinition-process-timestamp-mappings.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-timestamp.html#3979fff0-dc52-4449-8648-98eb2c506216">StructureDefinition-process-timestamp.html#/html/body/div/div/div/p/a at Line 458, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-timestamp.profile.history.html#2a03c12d-5917-4e55-ad3a-4e5dec33bca1">StructureDefinition-process-timestamp.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-timestamp.profile.json.html#226db9cf-85a8-4c41-a75a-132f32ede961">StructureDefinition-process-timestamp.profile.json.html#/html/body/div/div/div/p/a at Line 520, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-timestamp.profile.ttl.html#80d8083e-a94c-4169-b190-83adbcdc31cd">StructureDefinition-process-timestamp.profile.ttl.html#/html/body/div/div/div/p/a at Line 493, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-timestamp.profile.xml.html#532edf75-2cd4-4ce1-a34c-70c0bd907a21">StructureDefinition-process-timestamp.profile.xml.html#/html/body/div/div/div/p/a at Line 477, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-type-definitions.html#7b733bfa-7899-44ef-8e1c-7f053de5dd45">StructureDefinition-process-type-definitions.html#/html/body/div/div/div/p/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-type-mappings.html#6b59ff5c-35a7-4a18-a821-c4e458cd36cb">StructureDefinition-process-type-mappings.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-type.html#560da238-d1a8-49b3-936d-852bea863fa1">StructureDefinition-process-type.html#/html/body/div/div/div/p/a at Line 458, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-type.profile.history.html#32a385f3-cef7-4474-b165-f37f31104359">StructureDefinition-process-type.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-type.profile.json.html#74fa7248-e39d-4e16-adcc-87400253a9d1">StructureDefinition-process-type.profile.json.html#/html/body/div/div/div/p/a at Line 520, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-type.profile.ttl.html#bcc82b55-9609-4cf5-89c0-0676817c082a">StructureDefinition-process-type.profile.ttl.html#/html/body/div/div/div/p/a at Line 493, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-type.profile.xml.html#a65d0563-5909-48c4-8e2a-0d2acbfb779a">StructureDefinition-process-type.profile.xml.html#/html/body/div/div/div/p/a at Line 477, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-version-definitions.html#53d5e5c6-4345-4b3c-82ab-711e4e928689">StructureDefinition-process-version-definitions.html#/html/body/div/div/div/p/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-version-mappings.html#0acda64f-a8e5-480a-94ed-5a03f40ccdad">StructureDefinition-process-version-mappings.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-version.html#37167a2c-105d-4fbd-8b53-0d0d62480fb1">StructureDefinition-process-version.html#/html/body/div/div/div/p/a at Line 458, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-version.profile.history.html#5bb3fe57-071b-4cb8-b947-afbc088569af">StructureDefinition-process-version.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-version.profile.json.html#8d0ca153-55d4-4701-9d16-f23f6222b9ee">StructureDefinition-process-version.profile.json.html#/html/body/div/div/div/p/a at Line 520, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-version.profile.ttl.html#09835c21-0ddd-44fd-b6e4-9fdedf025447">StructureDefinition-process-version.profile.ttl.html#/html/body/div/div/div/p/a at Line 493, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-process-version.profile.xml.html#739bef55-5f48-4b0b-bcf2-e548ee8c4ec0">StructureDefinition-process-version.profile.xml.html#/html/body/div/div/div/p/a at Line 477, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-data-model-version-definitions.html#35117e20-1484-4fc5-8c65-1d9eb8c8174b">StructureDefinition-source-data-model-version-definitions.html#/html/body/div/div/div/p/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-data-model-version-mappings.html#150e0e96-8558-4487-a667-8c8330f14e28">StructureDefinition-source-data-model-version-mappings.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-data-model-version.html#1e21e74d-3480-4462-81b5-d2e1d5f7e204">StructureDefinition-source-data-model-version.html#/html/body/div/div/div/p/a at Line 458, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-data-model-version.profile.history.html#5b094ef6-4c96-4bb2-b1b9-835faaf15434">StructureDefinition-source-data-model-version.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-data-model-version.profile.json.html#76faa896-bade-445b-92fd-77358645abfc">StructureDefinition-source-data-model-version.profile.json.html#/html/body/div/div/div/p/a at Line 520, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-data-model-version.profile.ttl.html#0835901c-900d-48f3-a876-cf2c418729ea">StructureDefinition-source-data-model-version.profile.ttl.html#/html/body/div/div/div/p/a at Line 493, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-data-model-version.profile.xml.html#c2ffbedf-858c-4b90-8349-03f037dd30ea">StructureDefinition-source-data-model-version.profile.xml.html#/html/body/div/div/div/p/a at Line 477, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-file-id-definitions.html#08349af3-2e72-4549-ad74-352fbc573cd1">StructureDefinition-source-file-id-definitions.html#/html/body/div/div/div/p/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-file-id-mappings.html#8a513c79-8a90-47f8-8b0e-fb31f8aa3908">StructureDefinition-source-file-id-mappings.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-file-id.html#a80d3400-f027-4ec4-9aa5-5d5bde7ff238">StructureDefinition-source-file-id.html#/html/body/div/div/div/p/a at Line 458, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-file-id.profile.history.html#bbe4cd63-2590-4cb6-80e8-f660263a0938">StructureDefinition-source-file-id.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-file-id.profile.json.html#dfda7695-e0ce-4dbb-9e74-cce1c311671d">StructureDefinition-source-file-id.profile.json.html#/html/body/div/div/div/p/a at Line 520, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-file-id.profile.ttl.html#cba1e5d0-bdcb-459c-9162-21e9b4640d12">StructureDefinition-source-file-id.profile.ttl.html#/html/body/div/div/div/p/a at Line 493, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-source-file-id.profile.xml.html#0c0a8378-1364-4d0e-b63b-7a3f38b6b26f">StructureDefinition-source-file-id.profile.xml.html#/html/body/div/div/div/p/a at Line 477, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-tenant-id-definitions.html#22e23a2a-9731-48f9-8922-054f283f90bc">StructureDefinition-tenant-id-definitions.html#/html/body/div/div/div/p/a at Line 274, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-tenant-id-mappings.html#59c61f6b-98ef-4165-a0cb-ce9e02e53646">StructureDefinition-tenant-id-mappings.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-tenant-id.html#6cb5d4f1-3fe6-4b82-987a-9056dc85474b">StructureDefinition-tenant-id.html#/html/body/div/div/div/p/a at Line 458, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-tenant-id.profile.history.html#d08820ac-3668-4cad-8cb0-d3eb7a5ab078">StructureDefinition-tenant-id.profile.history.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-tenant-id.profile.json.html#1a58695a-f82f-4ef2-83c0-bd988a78660b">StructureDefinition-tenant-id.profile.json.html#/html/body/div/div/div/p/a at Line 520, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-tenant-id.profile.ttl.html#cdbd556f-fd8d-47d8-8181-50f1c92320da">StructureDefinition-tenant-id.profile.ttl.html#/html/body/div/div/div/p/a at Line 493, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-tenant-id.profile.xml.html#46d1c2d2-6335-4a95-a2f2-5613576dbdc3">StructureDefinition-tenant-id.profile.xml.html#/html/body/div/div/div/p/a at Line 477, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-identifier-type.change.history.html#61c3cd49-310c-4aa1-b388-4a97c7343e43">ValueSet-identifier-type.change.history.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-identifier-type.html#2d35d226-a881-4dea-ab5f-6cb5db3e85f9">ValueSet-identifier-type.html#/html/body/div/div/div/p/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-identifier-type.json.html#f6ede69d-6c45-4d78-aa2c-3f87a377c9c8">ValueSet-identifier-type.json.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-identifier-type.ttl.html#c6ae75bb-6d5b-41b2-bf80-1104440ad3dd">ValueSet-identifier-type.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-identifier-type.xml.html#6fbd4be0-6bc6-4697-a76c-e71932025123">ValueSet-identifier-type.xml.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#e5fbea37-82c2-4563-8dc2-4e2d36f3dc99">artifacts.html#/html/body/div/div/div/p/a at Line 385, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#b1c1bb8f-ac25-4235-83ac-f8cc84be21f5">index.html#/html/body/div/div/div/p/a at Line 180, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#44891aae-ece5-442c-9797-ebdb720e8857">toc.html#/html/body/div/div/div/p/a at Line 142, column 28</a></b></td><td><b>error</b></td><td><b>The link 'sloand@us.ibm.com' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_ImplementationGuide-alvearie.fhir.ig"> </a>
+<h2><a href="ImplementationGuide-alvearie.fhir.ig.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\ImplementationGuide-alvearie.fhir.ig.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/alvearie.fhir.ig: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide/alvearie.fhir.ig: ImplementationGuide.definition.resource[4].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_examples_organization-GeneralHospital"> </a>
+<h2><a href="Organization-GeneralHospital.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\examples\Organization-GeneralHospital.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Organization/GeneralHospital: Organization (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization/GeneralHospital: Organization.meta.profile[0] (l1/c2)</b></td><td><b>warning</b></td><td title="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"><b>Profile reference 'http://alvearie.github.io/fhir/cdm/StructureDefinition/alvearie-organization' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-name"> </a>
+<h2><a href="StructureDefinition-process-name.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\StructureDefinition-process-name.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/process-name: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-name')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-organization"> </a>
+<h2><a href="StructureDefinition-process-organization.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\StructureDefinition-process-organization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/process-organization: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-organization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-record-id"> </a>
+<h2><a href="StructureDefinition-process-record-id.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\StructureDefinition-process-record-id.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/process-record-id: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-record-id')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-timestamp"> </a>
+<h2><a href="StructureDefinition-process-timestamp.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\StructureDefinition-process-timestamp.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/process-timestamp: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-timestamp')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-type"> </a>
+<h2><a href="StructureDefinition-process-type.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\StructureDefinition-process-type.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/process-type: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-type')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-process-version"> </a>
+<h2><a href="StructureDefinition-process-version.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\StructureDefinition-process-version.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/process-version: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-version')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-source-data-model-version"> </a>
+<h2><a href="StructureDefinition-source-data-model-version.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\StructureDefinition-source-data-model-version.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/source-data-model-version: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/source-data-model-version')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_extensions_structuredefinition-source-file-id"> </a>
+<h2><a href="StructureDefinition-source-file-id.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\extensions\StructureDefinition-source-file-id.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/source-file-id: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/source-file-id')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_profiles_structuredefinition-alvearie-organization"> </a>
+<h2><a href="StructureDefinition-alvearie-organization.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\profiles\StructureDefinition-alvearie-organization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/alvearie-organization: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/alvearie-organization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_TomEggebraaten_git_alvearie-fhir-ig_build_input_profiles_structuredefinition-process-meta"> </a>
+<h2><a href="StructureDefinition-process-meta.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\profiles\StructureDefinition-process-meta.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/process-meta: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-meta')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this data type profile</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-alvearie.fhir.ig.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\ImplementationGuide-alvearie.fhir.ig.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY"> </a>
+<h2>VALIDATION_VAL_PROFILE_UNKNOWN_NOT_POLICY</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Organization-GeneralHospital.html">C:\Users\TomEggebraaten\git\alvearie-fhir-ig\build\input\examples\Organization-GeneralHospital.json</a></td><td><b>Profile reference 'http://alvearie.github.io/fhir/cdm/StructureDefinition/alvearie-organization' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles</b></td>
+   </tr>
+</table>
+</body>
+</html>

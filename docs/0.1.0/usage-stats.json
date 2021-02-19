@@ -1,0 +1,158 @@
+{
+  "package": "alvearie.fhir.ig",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/ingestion-batch-id",
+      "title": "Ingestion Batch Id",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-name",
+      "title": "Process Name",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-organization",
+      "title": "Process Organization",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-record-id",
+      "title": "Process Record ID",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-timestamp",
+      "title": "Process Timestamp",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-type",
+      "title": "Process Type",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-version",
+      "title": "Process Version",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/source-data-model-version",
+      "title": "Source Data Model Version",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/source-file-id",
+      "title": "Source File ID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/tenant-id",
+      "title": "Tenant Id",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Organization": [
+      {
+        "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/alvearie-organization",
+        "title": "Alvearie Organization"
+      }
+    ]
+  },
+  "usage": {
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/ingestion-batch-id": [
+      "Meta",
+      "Organization.meta"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-name": [
+      "Meta"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-organization": [
+      "Meta"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-record-id": [
+      "Meta"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-timestamp": [
+      "Meta"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-type": [
+      "Meta"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-version": [
+      "Meta"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/source-data-model-version": [
+      "Meta"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/source-file-id": [
+      "Meta"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/tenant-id": [
+      "Meta",
+      "Organization.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/contactpoint-country": [
+      "Organization.telecom"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/contactpoint-extension": [
+      "Organization.telecom"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ]
+  }
+}

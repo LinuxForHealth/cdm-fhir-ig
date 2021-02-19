@@ -1,0 +1,601 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://alvearie.github.io/alvearie-fhir-ig/ImplementationGuide/alvearie.fhir.ig> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "alvearie.fhir.ig"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AlvearieFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://alvearie.github.io/alvearie-fhir-ig/ImplementationGuide/alvearie.fhir.ig</pre><div><p>Alvearie FHIR Profiles</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/ImplementationGuide/alvearie.fhir.ig"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "AlvearieFHIRImplementationGuide"];
+  fhir:ImplementationGuide.title [ fhir:value "Alvearie FHIR Implementation Guide"];
+  fhir:ImplementationGuide.status [ fhir:value "active"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-02-19T13:15:40-06:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "Alvearie FHIR Profiles"];
+  fhir:ImplementationGuide.packageId [ fhir:value "alvearie.fhir.ig"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7_fhir_us_core" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core";
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2021+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "CI Build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "show-inherited-invariants" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "false" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/alvearie-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/alvearie-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Alvearie Organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alvearie definition of what fields are needed for a organization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-meta>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/process-meta" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data lineage meta with process extensions" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/ingestion-batch-id>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ingestion-batch-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingestion Batch Id" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generated by an ingestion service management API, the ingestion-batch-id represents a collection/grouping of messages that the producer submitted together.  The 'batch' definition needs to be agreed upon by data producers and data consumers." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-name>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/process-name" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Process Name" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The name of the process or service that has produced the data held in the FHIR resource or element." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/process-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Process Organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The organizing entity that owns the process that has produced the data held in the FHIR resource or element. " ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-record-id>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/process-record-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Process Record ID" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The record id that the data producer or data integrator uses internally to identify this data." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-timestamp>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/process-timestamp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Process Timestamp" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The timestamp the data was generated within this FHIR resource or element." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/process-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Process Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The classification type of the process that has produced the data held in the FHIR resource or element. For example, if the process is primarily a Natural Language Processing (NLP) service, the type may be specified as NLP. Or if the process is primarily one that aggregates and groups related items, the type may be specified as Grouper." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-version>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/process-version" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Process Version" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The version of the process or service that has produced the data held in the FHIR resource or element." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/source-data-model-version>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/source-data-model-version" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Source Data Model Version" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The version of the data model in the source system used by the data producer or data integrator." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/source-file-id>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/source-file-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Source File ID" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The identifier for a file that the data producer or data integrator extracted knowledge from to produce the data within this FHIR resource or element." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/tenant-id>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/tenant-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tenant Id" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defined by metadata and provided by the data producer, the ID that the messages will be stored at and processed as within the data pipeline." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/identifier-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/identifier-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identifier Type Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extended set of identifier type codes from FHIR HL7 and extended Alvearie resource identifiers" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/identifier-type>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/identifier-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identifier Type Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extended set of Identifier type code for Alvearie resources" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/process-meta-primary-or-secondary>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/process-meta-primary-or-secondary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Primary or Secondary" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifies the origin of the data elements from primary or secondary systems." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/Organization/GeneralHospital>;
+         fhir:Reference.reference [ fhir:value "Organization/GeneralHospital" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Alvearie Organization - General Hospital" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sample Alvearie Organization representing a hospital ingested from a EMR or PMS system" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://alvearie.github.io/alvearie-fhir-ig/ImplementationGuide/alvearie.fhir.ig.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
