@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "canonical": "http://alvearie.github.io/alvearie-fhir-ig",
   "url": "http://alvearie.github.io/alvearie-fhir-ig",
-  "title": "WH Common Data Alvearie FHIR Implementation Guide",
+  "title": "Alvearie FHIR Implementation Guide",
   "description": "Alvearie FHIR Profiles",
   "devDependencies": {
     "fsh-sushi": "^0.16.0"
@@ -11,10 +11,13 @@
   "scripts": {
     "sushi": "sushi data",
     "sushi_snapshot": "sushi -s data",
-    "ig_init": "cp -r data/ig-data/cdm-template build/ && cd build && ./_updatePublisher.sh && ./_genonce.sh",
-    "ig": "cp -r data/ig-data/cdm-template build/ && cd build && ./_genonce.sh",
-    "all": "npm run sushi && npm run ig_init",
-    "sushi_ig": "npm run sushi && npm run ig"
+    "ig_init": "cp -r data/ig-data/alvearie-template build/ && cd build && ./_updatePublisher.sh && ./_genonce.sh",
+    "ig_init_win": "xcopy \"data\\ig-data\\alvearie-template\" \"build\\alvearie-template\" /s /i /y /q && cd build && _updatePublisher.bat && _genonce.bat",
+    "ig": "cp -r data/ig-data/alvearie-template build/ && cd build && ./_genonce.sh",
+    "ig_win": "xcopy \"data\\ig-data\\alvearie-template\" \"build\\alvearie-template\" /s /i /y /q && cd build && _genonce.bat",
+    "copy_version": "cp -r build/output docs/0.1.0",
+    "copy_version_win": "xcopy \"build\\output\" \"docs\\0.1.0\" /s /i /y /q",
+    "all": "npm run sushi && npm run ig_init && npm run copy_version"
   },
   "language": "en",
   "author": "Alvearie Team",
@@ -27,7 +30,6 @@
       "name": "Kim Kenna",
       "email": "sloand@us.ibm.com"
     }
-
   ],
   "license": "CC0-1.0"
 }

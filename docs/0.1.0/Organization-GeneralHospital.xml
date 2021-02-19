@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="GeneralHospital"/>
+  <meta>
+    <extension url="http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/tenant-id">
+      <valueString value="99999"/>
+    </extension>
+    <extension url="http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/ingestion-batch-id">
+      <valueString value="b069a545-9506-40c6-8498-23de2e189143"/>
+    </extension>
+    <source value="http://acme-health.com/epic"/>
+    <profile value="http://alvearie.github.io/fhir/cdm/StructureDefinition/alvearie-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: 7d5007d6-edd0-48b5-b34f-5c5f948b6d13 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span></p><p><b>name</b>: General Hospital</p><p><b>telecom</b>: ph: 214-555-6000(WORK), fax: 214-555-6001(WORK)</p><p><b>address</b>: 100 Easy Street Irving TX 75014 US (WORK)</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/identifier-type"/>
+        <code value="SSRI"/>
+      </coding>
+    </type>
+    <system value="http://acme-health.com/epic/organization"/>
+    <value value="7d5007d6-edd0-48b5-b34f-5c5f948b6d13"/>
+    <assigner>
+      <display value="Acme Health - Epic"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+    </coding>
+  </type>
+  <name value="General Hospital"/>
+  <telecom>
+    <extension url="http://hl7.org/fhir/StructureDefinition/contactpoint-country">
+      <valueString value="1"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/contactpoint-extension">
+      <valueString value="100"/>
+    </extension>
+    <system value="phone"/>
+    <value value="214-555-6000"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <extension url="http://hl7.org/fhir/StructureDefinition/contactpoint-country">
+      <valueString value="1"/>
+    </extension>
+    <system value="fax"/>
+    <value value="214-555-6001"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="physical"/>
+    <line value="100 Easy Street"/>
+    <city value="Irving"/>
+    <district value="Dallas"/>
+    <state value="TX"/>
+    <postalCode value="75014"/>
+    <country value="US"/>
+  </address>
+</Organization>
