@@ -6,4 +6,4 @@ The following Alvearie Implementation Guides have been published:
 
 | Date           | IG Version      | FHIR Version | Description |
 | -------------- | --------------- | ------------ | ----------- |
-|  TBD    | 0.1.0           | 4.0.1        | Draft       |
+|  TBD    | [0.1.0](docs/0.1.0)           | 4.0.1        | Draft       |
