@@ -2,7 +2,7 @@ Profile:          AlvearieOrganization
 Parent:           Organization
 Id:               alvearie-organization
 Title:            "Alvearie Organization"
-Description:      "Alvearie definition of what fields are needed for a organization"
+Description:      "Alvearie definition of what fields are needed for an organization"
 * contained 0..0
 * meta only ProcessMeta
 

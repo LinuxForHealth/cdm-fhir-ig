@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/eng-product> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "eng-product"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/eng-product defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">campaign<a name=\"eng-product-campaign\"> </a></td><td>Campaign</td><td>Custom campaign for patient engagement</td></tr><tr><td style=\"white-space:nowrap\">appointment-reminder<a name=\"eng-product-appointment-reminder\"> </a></td><td>Remind</td><td>Automated apppointment reminders</td></tr><tr><td style=\"white-space:nowrap\">health-reminder<a name=\"eng-product-health-reminder\"> </a></td><td>Remind</td><td>Health reminders associated with a clinical diagnosis, care gap, or other treatment opportunities</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/eng-product"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "EngagementContextCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Engagement Context Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-04-02T11:32:07-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Context for an engagement action "];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "campaign" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Campaign" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Custom campaign for patient engagement" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "appointment-reminder" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Remind" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Automated apppointment reminders" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "health-reminder" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Remind" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Health reminders associated with a clinical diagnosis, care gap, or other treatment opportunities" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/eng-product.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

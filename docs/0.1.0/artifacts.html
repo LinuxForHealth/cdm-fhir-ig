@@ -157,7 +157,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="StructureDefinition-alvearie-organization.html" title="StructureDefinition/alvearie-organization">Alvearie Organization</a>
                </td>
                <td>
-<p>Alvearie definition of what fields are needed for a organization</p>
+<p>Alvearie definition of what fields are needed for an organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-alvearie-patient.html" title="StructureDefinition/alvearie-patient">Alvearie Patient</a>
+               </td>
+               <td>
+<p>The AlveariePatient resource contains the base information for the exchange of demographic and other data about a patient either receiving care or with the potential to receive care as known by a particular data source.  An AlveariePatient record is generally created and maintained by each organization with knowledge about the care provided for a patient. A unique patient may therefore have its information present in multiple AlveariePatient resource instances since multiple organizations are typically aware of and/or involved in a patient’s care, including but not limited to provider organizations, payer organizations, and research organizations. The AlvearieMatchedPatient profile can be used in combination with this base profile to associate multiple instances of an AlveariePatient that are believed to potentially be about the same real world  individual.</p>
 </td>
             </tr>
          </tbody>
@@ -174,8 +182,59 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-alvearie-address.html" title="StructureDefinition/alvearie-address">Alvearie Address</a>
+               </td>
+               <td>
+<p>Address wtih common extensions</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-alvearie-communication-contact-point.html" title="StructureDefinition/alvearie-communication-contact-point">Communication Contact Point</a>
+               </td>
+               <td>
+<p>Contact point extended with country and phone ext for communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-alvearie-contact-point.html" title="StructureDefinition/alvearie-contact-point">Alvearie ContactPoint</a>
+               </td>
+               <td>
+<p>ContactPoint with common extensions</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-alvearie-identifier.html" title="StructureDefinition/alvearie-identifier">Alvearie Identifier</a>
+               </td>
+               <td>
+<p>Alvearie identifier with support for encrypted value</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-process-meta.html" title="StructureDefinition/process-meta">Data lineage meta with process extensions</a>
                </td>
+               <td>
+<p>Metadata about a resource. The ProcessMeta StructureDefinition augments the base FHIR Meta profile with a set of extensions to support data lineage.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reference-with-code-and-period.html" title="StructureDefinition/reference-with-code-and-period">Reference with code and period</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reference-with-period.html" title="StructureDefinition/reference-with-period">Reference with Period</a>
+               </td>
+               <td>
+
+</td>
             </tr>
          </tbody>
       </table>
@@ -191,10 +250,276 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-age-group-code.html" title="StructureDefinition/age-group-code">Age Group Code</a>
+               </td>
+               <td>
+<p>Age Group Code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-coverage-snapshot-age-in-months.html" title="StructureDefinition/coverage-snapshot-age-in-months">Age in months</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-coverage-snapshot-age-in-years.html" title="StructureDefinition/coverage-snapshot-age-in-years">Age in years</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-age-rollup-group-code.html" title="StructureDefinition/age-rollup-group-code">Age Rollup Group Code</a>
+               </td>
+               <td>
+<p>Age Rollup Group Code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-attributed-provider-with-period.html" title="StructureDefinition/attributed-provider-with-period">Attributed provider reference with period</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-care-gap.html" title="StructureDefinition/communication-care-gap">Communication Care Gap</a>
+               </td>
+               <td>
+<p>ID of care gap for which we are communicating</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-contact.html" title="StructureDefinition/communication-contact">Communication Contact</a>
+               </td>
+               <td>
+<p>Phone number, email, or address to contact</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-language.html" title="StructureDefinition/communication-language">Communication Language</a>
+               </td>
+               <td>
+<p>Language used for communication messaging content</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-measure.html" title="StructureDefinition/communication-measure">Communication Measure</a>
+               </td>
+               <td>
+<p>Reference to the measure that resulted in the communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-mode.html" title="StructureDefinition/communication-mode">Communication Mode</a>
+               </td>
+               <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Mode of communication (phone</td>
+      <td>sms</td>
+      <td>email</td>
+      <td>mail</td>
+      <td>chat)</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-on-behalf-of.html" title="StructureDefinition/communication-on-behalf-of">Communication On-Behalf Of</a>
+               </td>
+               <td>
+<p>Attributed provider, location, or organization communication is on-behalf of</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-opt-out.html" title="StructureDefinition/communication-opt-out">Communication Opt-Out</a>
+               </td>
+               <td>
+<p>Opt-out details for communication with an individual</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-outcome.html" title="StructureDefinition/outcome">Communication Outcome</a>
+               </td>
+               <td>
+<p>Vendor-specific communication response code or text</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-payload-data.html" title="StructureDefinition/communication-payload-data">Communication Payload Data</a>
+               </td>
+               <td>
+<p>Contains dynamic data elements and vendor / medium specific elements to be included in the message payload</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-priority-sequence.html" title="StructureDefinition/communication-priority-sequence">Communication Priority Sequence</a>
+               </td>
+               <td>
+<p>Priority of the communication request (1 = highest)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-product.html" title="StructureDefinition/communication-product">Communication Product</a>
+               </td>
+               <td>
+<p>Product generating the communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-reengagement.html" title="StructureDefinition/communication-reengagement">Communication Reengagement</a>
+               </td>
+               <td>
+<p>Sequence for subsequent communication attempts to reengage the patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-retry-limt.html" title="StructureDefinition/communication-retry-limt">Communication Retry Limit</a>
+               </td>
+               <td>
+<p>Retry limit configuration, may vary by medium and vendor</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sent-time.html" title="StructureDefinition/sent-time">Communication Sent Time</a>
+               </td>
+               <td>
+<p>Time communication was attempted</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-template.html" title="StructureDefinition/communication-template">Communication Template</a>
+               </td>
+               <td>
+<p>Id or url reference to template to be used for communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-communication-vendor.html" title="StructureDefinition/communication-vendor">Communication Vendor</a>
+               </td>
+               <td>
+<p>Vendor used to send the communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-conversation-type.html" title="StructureDefinition/conversation-type">Conversation Type</a>
+               </td>
+               <td>
+<p>Type of conversation, used for ihe chat communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-county-code.html" title="StructureDefinition/county-code">County Code</a>
+               </td>
+               <td>
+<p>Administrative division of a country or state</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documented-sex.html" title="StructureDefinition/documented-sex">Documented Sex</a>
+               </td>
+               <td>
+<p>Sex coding indicated on the legal document</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documented-source.html" title="StructureDefinition/documented-source">Documented Source</a>
+               </td>
+               <td>
+<p>Source type of the legal document</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-documented-system.html" title="StructureDefinition/documented-system">Documented System</a>
+               </td>
+               <td>
+<p>Source system or jurisdiction of the legal document</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-effective-period.html" title="StructureDefinition/effective-period">Effective Period</a>
+               </td>
+               <td>
+<p>Effective period</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-encrypted-state.html" title="StructureDefinition/encrypted-state">Encrypted State</a>
+               </td>
+               <td>
+<p>Encrypted state</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-family-id.html" title="StructureDefinition/family-id">Family Id</a>
+               </td>
+               <td>
+<p>The unique identifier for the subscriber (contract holder, employee) and the associated dependents.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-identified-pronouns.html" title="StructureDefinition/identified-pronouns">Identified Pronouns</a>
+               </td>
+               <td>
+<p>Gender, typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-ingestion-batch-id.html" title="StructureDefinition/ingestion-batch-id">Ingestion Batch Id</a>
                </td>
                <td>
 <p>Generated by an ingestion service management API, the ingestion-batch-id represents a collection/grouping of messages that the producer submitted together.  The ‘batch’ definition needs to be agreed upon by data producers and data consumers.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-language-rank.html" title="StructureDefinition/language-rank">Language Rank</a>
+               </td>
+               <td>
+<p>Specify preferred order of language use (1 = highest).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-legally-documented-sex.html" title="StructureDefinition/legally-documented-sex">Legally Documented Sex</a>
+               </td>
+               <td>
+<p>Sex as defined or amended on the patient’s legal documentation, for example a birth certificate or driver’s license.</p>
 </td>
             </tr>
             <tr>
@@ -247,6 +572,78 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-reengagement-display.html" title="StructureDefinition/reengagement-display">Reengagement Display</a>
+               </td>
+               <td>
+<p>Communication reengagement sequence display text</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reengagement-value.html" title="StructureDefinition/reengagement-value">ReengagementValue</a>
+               </td>
+               <td>
+<p>Communication reengagement sequence value</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reference-code.html" title="StructureDefinition/reference-code">Reference Code</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reference-period.html" title="StructureDefinition/reference-period">Reference Period</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-region-code.html" title="StructureDefinition/region-code">Region Code</a>
+               </td>
+               <td>
+<p>Administrative area or division with definable characteristics</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sent-to-recipient.html" title="StructureDefinition/sent-to-recipient">Sent To recipient</a>
+               </td>
+               <td>
+<p>Records date/time and outcome of communication attempts with the recipient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sent-to-vendor.html" title="StructureDefinition/sent-to-vendor">Sent To Vendor</a>
+               </td>
+               <td>
+<p>Records date/time and outcome of communications sent to vendor</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sex-assigned-at-birth.html" title="StructureDefinition/sex-assigned-at-birth">Sex Assigned At Birth</a>
+               </td>
+               <td>
+<p>Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sexual-orientation.html" title="StructureDefinition/sexual-orientation">SexualOrientation</a>
+               </td>
+               <td>
+<p>Patient’s physical, romantic, and/or emotional attraction towards other people.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-source-data-model-version.html" title="StructureDefinition/source-data-model-version">Source Data Model Version</a>
                </td>
                <td>
@@ -259,6 +656,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>The identifier for a file that the data producer or data integrator extracted knowledge from to produce the data within this FHIR resource or element.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-stated-reason.html" title="StructureDefinition/stated-reason">Stated Reason</a>
+               </td>
+               <td>
+<p>Recorded reason specified by the recipient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-status-code.html" title="StructureDefinition/status-code">Status Code</a>
+               </td>
+               <td>
+<p>Client-specific patient status codes.</p>
 </td>
             </tr>
             <tr>
@@ -283,10 +696,98 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-eng-communication-mode.html" title="ValueSet/eng-communication-mode">Engagement Communication Mode Value Set</a>
+               </td>
+               <td>
+<p>Communication modes supported for Engagement communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-eng-product.html" title="ValueSet/eng-product">Engagement Context Value Set</a>
+               </td>
+               <td>
+<p>Context for an engagement action</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-eng-conversation-type.html" title="ValueSet/eng-conversation-type">Engagement Conversation Type Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating types for Engagement communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-gender-identity.html" title="ValueSet/gender-identity">Gender Identity Value Set</a>
+               </td>
+               <td>
+<p>Gender identity codes typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-identifier-type.html" title="ValueSet/identifier-type">Identifier Type Value Set</a>
                </td>
                <td>
 <p>Extended set of identifier type codes from FHIR HL7 and extended Alvearie resource identifiers</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-legal-document-source.html" title="ValueSet/legal-document-source">Legal Document Source Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating the source of legal document used for identification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-legal-document-system.html" title="ValueSet/legal-document-system">Legal Document System Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating the system of legal document used for identification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-opt-out-reason.html" title="ValueSet/opt-out-reason">Opt-Out Reason Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating reasons patients may specify for opting-out of communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-patient-importance.html" title="ValueSet/patient-importance">Patient Importance Value Set</a>
+               </td>
+               <td>
+<p>Patient importance status codes used to trigger or limit patient operations</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-patient-status.html" title="ValueSet/patient-status">Patient Status Value Set</a>
+               </td>
+               <td>
+<p>Examples of client-specified patient status codes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-sex-assigned-at-birth.html" title="ValueSet/sex-assigned-at-birth">Sex Assigned At Birth Value Set</a>
+               </td>
+               <td>
+<p>Value set for sex assigned at birth based on observation by a physician. Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-sexual-orientation.html" title="ValueSet/sexual-orientation">Sexual Orientation Value Set</a>
+               </td>
+               <td>
+<p>Codes indicating a person’s physical, romantic, and/or emotional attraction towards other people</p>
 </td>
             </tr>
          </tbody>
@@ -303,6 +804,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-eng-communication-mode.html" title="CodeSystem/eng-communication-mode">Engagement Communication Mode Codes</a>
+               </td>
+               <td>
+<p>Communication modes supported for Engagement communication</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-eng-product.html" title="CodeSystem/eng-product">Engagement Context Codes</a>
+               </td>
+               <td>
+<p>Context for an engagement action</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-eng-conversation-type.html" title="CodeSystem/eng-conversation-type">Engagement Conversation Type Codes</a>
+               </td>
+               <td>
+<p>Codes indicating conversation types for Engagement communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-gender-identity.html" title="CodeSystem/gender-identity">Gender Identity Codes</a>
+               </td>
+               <td>
+<p>Gender identity codes typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-identifier-type.html" title="CodeSystem/identifier-type">Identifier Type Codes</a>
                </td>
                <td>
@@ -311,10 +844,66 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-legal-document-source.html" title="CodeSystem/legal-document-source">Legal Document Source Codes</a>
+               </td>
+               <td>
+<p>Codes indicating the source of legal document used for identification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-legal-document-system.html" title="CodeSystem/legal-document-system">Legal Document System Codes</a>
+               </td>
+               <td>
+<p>Codes indicating the system of legal document used for identification</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-opt-out-reason.html" title="CodeSystem/opt-out-reason">Opt-Out Reason Codes</a>
+               </td>
+               <td>
+<p>Codes indicating reasons patients may specify for opting-out of communications</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-patient-importance.html" title="CodeSystem/patient-importance">Patient Importance Codes</a>
+               </td>
+               <td>
+<p>Patient status code examples</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-patient-status.html" title="CodeSystem/patient-status">Patient Status Codes</a>
+               </td>
+               <td>
+<p>Patient status code examples</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-process-meta-primary-or-secondary.html" title="CodeSystem/process-meta-primary-or-secondary">Primary or Secondary</a>
                </td>
                <td>
 <p>Identifies the origin of the data elements from primary or secondary systems.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-sex-assigned-at-birth.html" title="CodeSystem/sex-assigned-at-birth">Sex Assigned At Birth Codes</a>
+               </td>
+               <td>
+<p>Value set for sex assigned at birth based on observation by a physician. Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-sexual-orientation.html" title="CodeSystem/sexual-orientation">Sexual Orientation Codes</a>
+               </td>
+               <td>
+<p>Codes indicating a person’s physical, romantic, and/or emotional attraction towards other people</p>
 </td>
             </tr>
          </tbody>
@@ -361,12 +950,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="e5fbea37-82c2-4563-8dc2-4e2d36f3dc99">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 19, 2021 13:15-0600">2021-02-19</span>
+        <p><a name="b3fd9e9e-49b2-4b98-9c9e-4f827174873e">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 2, 2021 11:32-0500">2021-04-02</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 
+                
           </span>
         </p>
       </div>    <!-- /inner-wrapper -->
@@ -388,6 +979,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   </body>

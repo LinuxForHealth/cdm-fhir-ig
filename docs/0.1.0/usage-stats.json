@@ -4,10 +4,463 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/age-group-code",
+      "title": "Age Group Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/age-rollup-group-code",
+      "title": "Age Rollup Group Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/attributed-provider-with-period",
+      "title": "Attributed provider reference with period",
+      "types": [
+        "Reference",
+        "string",
+        "Extension",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-care-gap",
+      "title": "Communication Care Gap",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-contact",
+      "title": "Communication Contact",
+      "types": [
+        "Address",
+        "ContactPoint"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-language",
+      "title": "Communication Language",
+      "types": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-measure",
+      "title": "Communication Measure",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-mode",
+      "title": "Communication Mode",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-on-behalf-of",
+      "title": "Communication On-Behalf Of",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-opt-out",
+      "title": "Communication Opt-Out",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-payload-data",
+      "title": "Communication Payload Data",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-priority-sequence",
+      "title": "Communication Priority Sequence",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-product",
+      "title": "Communication Product",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-reengagement",
+      "title": "Communication Reengagement",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-retry-limt",
+      "title": "Communication Retry Limit",
+      "types": [
+        "string",
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-template",
+      "title": "Communication Template",
+      "types": [
+        "string",
+        "Attachment"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-vendor",
+      "title": "Communication Vendor",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/conversation-type",
+      "title": "Conversation Type",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/county-code",
+      "title": "County Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/coverage-snapshot-age-in-months",
+      "title": "Age in months",
+      "types": [
+        "Age",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "string",
+        "Extension",
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/coverage-snapshot-age-in-years",
+      "title": "Age in years",
+      "types": [
+        "Age",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "string",
+        "Extension",
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/documented-sex",
+      "title": "Documented Sex",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/documented-source",
+      "title": "Documented Source",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/documented-system",
+      "title": "Documented System",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/effective-period",
+      "title": "Effective Period",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/encrypted-state",
+      "title": "Encrypted State",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/family-id",
+      "title": "Family Id",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/identified-pronouns",
+      "title": "Identified Pronouns",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/ingestion-batch-id",
       "title": "Ingestion Batch Id",
       "types": [
         "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/language-rank",
+      "title": "Language Rank",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/legally-documented-sex",
+      "title": "Legally Documented Sex",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/outcome",
+      "title": "Communication Outcome",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -53,6 +506,176 @@
       ]
     },
     {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reengagement-display",
+      "title": "Reengagement Display",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reengagement-value",
+      "title": "ReengagementValue",
+      "types": [
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reference-code",
+      "title": "Reference Code",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reference-period",
+      "title": "Reference Period",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/region-code",
+      "title": "Region Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sent-time",
+      "title": "Communication Sent Time",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sent-to-recipient",
+      "title": "Sent To recipient",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sent-to-vendor",
+      "title": "Sent To Vendor",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sex-assigned-at-birth",
+      "title": "Sex Assigned At Birth",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sexual-orientation",
+      "title": "SexualOrientation",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/source-data-model-version",
       "title": "Source Data Model Version",
       "types": [
@@ -64,6 +687,21 @@
       "title": "Source File ID",
       "types": [
         "string"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/stated-reason",
+      "title": "Stated Reason",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/status-code",
+      "title": "Status Code",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
       ]
     },
     {
@@ -80,12 +718,61 @@
         "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/alvearie-organization",
         "title": "Alvearie Organization"
       }
+    ],
+    "Patient": [
+      {
+        "url": "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/alvearie-patient",
+        "title": "Alvearie Patient"
+      }
     ]
   },
   "usage": {
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-care-gap": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-mode": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-opt-out": [
+      "Patient"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-product": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/conversation-type": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/county-code": [
+      "Address"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/documented-sex": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/documented-source": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/documented-system": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/effective-period": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/encrypted-state": [
+      "Identifier",
+      "Patient.identifier"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/family-id": [
+      "Patient"
+    ],
     "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/ingestion-batch-id": [
       "Meta",
       "Organization.meta"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/language-rank": [
+      "Patient.communication"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/outcome": [
+      "Extension"
     ],
     "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-name": [
       "Meta"
@@ -105,20 +792,50 @@
     "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/process-version": [
       "Meta"
     ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reengagement-display": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reengagement-value": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reference-code": [
+      "Reference"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reference-period": [
+      "Extension.value[x]",
+      "Reference"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/region-code": [
+      "Address"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sent-time": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sex-assigned-at-birth": [
+      "Patient"
+    ],
     "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/source-data-model-version": [
       "Meta"
     ],
     "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/source-file-id": [
       "Meta"
     ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/stated-reason": [
+      "Extension"
+    ],
+    "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/status-code": [
+      "Patient"
+    ],
     "http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/tenant-id": [
       "Meta",
       "Organization.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/contactpoint-country": [
+      "ContactPoint",
       "Organization.telecom"
     ],
     "http://hl7.org/fhir/StructureDefinition/contactpoint-extension": [
+      "ContactPoint",
       "Organization.telecom"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -136,8 +853,23 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address": [
+      "ContactPoint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-importance": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -153,6 +885,15 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
     ]
   }
 }
