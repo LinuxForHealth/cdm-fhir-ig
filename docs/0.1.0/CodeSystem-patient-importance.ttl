@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/patient-importance> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "patient-importance"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/patient-importance defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">bad-debt<a name=\"patient-importance-bad-debt\"> </a></td><td>Bad Debt</td><td>Patient is in collections or has uncollected or overdue payments on account</td></tr><tr><td style=\"white-space:nowrap\">do-not-contact<a name=\"patient-importance-do-not-contact\"> </a></td><td>Do Not Contact</td><td>Patient is flagged to prevent automated communications</td></tr><tr><td style=\"white-space:nowrap\">no-comm-health-reminder<a name=\"patient-importance-no-comm-health-reminder\"> </a></td><td>No Communication - Health Reminders</td><td>Patient is falgged to prevent the communication of health reminders</td></tr><tr><td style=\"white-space:nowrap\">no-comm-privacy<a name=\"patient-importance-no-comm-privacy\"> </a></td><td>No Communication - Specific Privacy Concerns</td><td>Patient is flagged with specific privary concerns (example HIV, Mental Health, patients)</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/patient-importance"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "PatientImportanceCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Patient Importance Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-04-02T11:32:07-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Patient status code examples"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "bad-debt" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bad Debt" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient is in collections or has uncollected or overdue payments on account" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "do-not-contact" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Do Not Contact" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient is flagged to prevent automated communications" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "no-comm-health-reminder" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No Communication - Health Reminders" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient is falgged to prevent the communication of health reminders" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "no-comm-privacy" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No Communication - Specific Privacy Concerns" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient is flagged with specific privary concerns (example HIV, Mental Health, patients)" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/patient-importance.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

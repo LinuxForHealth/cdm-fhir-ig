@@ -10,7 +10,7 @@
   "name": "AlvearieFHIRImplementationGuide",
   "title": "Alvearie FHIR Implementation Guide",
   "status": "active",
-  "date": "2021-02-19T13:15:40-06:00",
+  "date": "2021-04-02T11:32:07-05:00",
   "contact": [
     {
       "name": "Kim Kenna",
@@ -313,6 +313,62 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/alvearie-address"
+        },
+        "name": "Alvearie Address",
+        "description": "Address wtih common extensions",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/alvearie-communication-contact-point"
+        },
+        "name": "Communication Contact Point",
+        "description": "Contact point extended with country and phone ext for communications",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/alvearie-contact-point"
+        },
+        "name": "Alvearie ContactPoint",
+        "description": "ContactPoint with common extensions",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/alvearie-identifier"
+        },
+        "name": "Alvearie Identifier",
+        "description": "Alvearie identifier with support for encrypted value",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -320,7 +376,21 @@
           "reference": "StructureDefinition/alvearie-organization"
         },
         "name": "Alvearie Organization",
-        "description": "Alvearie definition of what fields are needed for a organization",
+        "description": "Alvearie definition of what fields are needed for an organization",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/alvearie-patient"
+        },
+        "name": "Alvearie Patient",
+        "description": "The AlveariePatient resource contains the base information for the exchange of demographic and other data about a patient either receiving care or with the potential to receive care as known by a particular data source.  An AlveariePatient record is generally created and maintained by each organization with knowledge about the care provided for a patient. A unique patient may therefore have its information present in multiple AlveariePatient resource instances since multiple organizations are typically aware of and/or involved in a patient's care, including but not limited to provider organizations, payer organizations, and research organizations. The AlvearieMatchedPatient profile can be used in combination with this base profile to associate multiple instances of an AlveariePatient that are believed to potentially be about the same real world  individual. ",
         "exampleBoolean": false
       },
       {
@@ -334,6 +404,450 @@
           "reference": "StructureDefinition/process-meta"
         },
         "name": "Data lineage meta with process extensions",
+        "description": "Metadata about a resource. The ProcessMeta StructureDefinition augments the base FHIR Meta profile with a set of extensions to support data lineage.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/reference-with-code-and-period"
+        },
+        "name": "Reference with code and period",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/reference-with-period"
+        },
+        "name": "Reference with Period",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/age-group-code"
+        },
+        "name": "Age Group Code",
+        "description": "Age Group Code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/coverage-snapshot-age-in-months"
+        },
+        "name": "Age in months",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/coverage-snapshot-age-in-years"
+        },
+        "name": "Age in years",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/age-rollup-group-code"
+        },
+        "name": "Age Rollup Group Code",
+        "description": "Age Rollup Group Code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/attributed-provider-with-period"
+        },
+        "name": "Attributed provider reference with period",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-care-gap"
+        },
+        "name": "Communication Care Gap",
+        "description": "ID of care gap for which we are communicating",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-contact"
+        },
+        "name": "Communication Contact",
+        "description": "Phone number, email, or address to contact",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-language"
+        },
+        "name": "Communication Language",
+        "description": "Language used for communication messaging content",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-measure"
+        },
+        "name": "Communication Measure",
+        "description": "Reference to the measure that resulted in the communication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-mode"
+        },
+        "name": "Communication Mode",
+        "description": "Mode of communication (phone | sms | email | mail | chat)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-on-behalf-of"
+        },
+        "name": "Communication On-Behalf Of",
+        "description": "Attributed provider, location, or organization communication is on-behalf of",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-opt-out"
+        },
+        "name": "Communication Opt-Out",
+        "description": "Opt-out details for communication with an individual",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/outcome"
+        },
+        "name": "Communication Outcome",
+        "description": "Vendor-specific communication response code or text",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-payload-data"
+        },
+        "name": "Communication Payload Data",
+        "description": "Contains dynamic data elements and vendor / medium specific elements to be included in the message payload",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-priority-sequence"
+        },
+        "name": "Communication Priority Sequence",
+        "description": "Priority of the communication request (1 = highest)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-product"
+        },
+        "name": "Communication Product",
+        "description": "Product generating the communication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-reengagement"
+        },
+        "name": "Communication Reengagement",
+        "description": "Sequence for subsequent communication attempts to reengage the patient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-retry-limt"
+        },
+        "name": "Communication Retry Limit",
+        "description": "Retry limit configuration, may vary by medium and vendor",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/sent-time"
+        },
+        "name": "Communication Sent Time",
+        "description": "Time communication was attempted",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-template"
+        },
+        "name": "Communication Template",
+        "description": "Id or url reference to template to be used for communication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/communication-vendor"
+        },
+        "name": "Communication Vendor",
+        "description": "Vendor used to send the communication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/conversation-type"
+        },
+        "name": "Conversation Type",
+        "description": "Type of conversation, used for ihe chat communications",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/county-code"
+        },
+        "name": "County Code",
+        "description": "Administrative division of a country or state",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/documented-sex"
+        },
+        "name": "Documented Sex",
+        "description": "Sex coding indicated on the legal document",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/documented-source"
+        },
+        "name": "Documented Source",
+        "description": "Source type of the legal document",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/documented-system"
+        },
+        "name": "Documented System",
+        "description": "Source system or jurisdiction of the legal document",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/effective-period"
+        },
+        "name": "Effective Period",
+        "description": "Effective period",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/encrypted-state"
+        },
+        "name": "Encrypted State",
+        "description": "Encrypted state",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/family-id"
+        },
+        "name": "Family Id",
+        "description": "The unique identifier for the subscriber (contract holder, employee) and the associated dependents.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/identified-pronouns"
+        },
+        "name": "Identified Pronouns",
+        "description": "Gender, typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.",
         "exampleBoolean": false
       },
       {
@@ -348,6 +862,34 @@
         },
         "name": "Ingestion Batch Id",
         "description": "Generated by an ingestion service management API, the ingestion-batch-id represents a collection/grouping of messages that the producer submitted together.  The 'batch' definition needs to be agreed upon by data producers and data consumers.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/language-rank"
+        },
+        "name": "Language Rank",
+        "description": "Specify preferred order of language use (1 = highest).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/legally-documented-sex"
+        },
+        "name": "Legally Documented Sex",
+        "description": "Sex as defined or amended on the patient's legal documentation, for example a birth certificate or driver's license.",
         "exampleBoolean": false
       },
       {
@@ -442,6 +984,130 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/reengagement-display"
+        },
+        "name": "Reengagement Display",
+        "description": "Communication reengagement sequence display text",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/reengagement-value"
+        },
+        "name": "ReengagementValue",
+        "description": "Communication reengagement sequence value",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/reference-code"
+        },
+        "name": "Reference Code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/reference-period"
+        },
+        "name": "Reference Period",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/region-code"
+        },
+        "name": "Region Code",
+        "description": "Administrative area or division with definable characteristics",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/sent-to-recipient"
+        },
+        "name": "Sent To recipient",
+        "description": "Records date/time and outcome of communication attempts with the recipient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/sent-to-vendor"
+        },
+        "name": "Sent To Vendor",
+        "description": "Records date/time and outcome of communications sent to vendor",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/sex-assigned-at-birth"
+        },
+        "name": "Sex Assigned At Birth",
+        "description": "Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/sexual-orientation"
+        },
+        "name": "SexualOrientation",
+        "description": "Patient's physical, romantic, and/or emotional attraction towards other people.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/source-data-model-version"
         },
         "name": "Source Data Model Version",
@@ -470,6 +1136,34 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/stated-reason"
+        },
+        "name": "Stated Reason",
+        "description": "Recorded reason specified by the recipient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/status-code"
+        },
+        "name": "Status Code",
+        "description": "Client-specific patient status codes.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/tenant-id"
         },
         "name": "Tenant Id",
@@ -484,10 +1178,220 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/eng-communication-mode"
+        },
+        "name": "Engagement Communication Mode Value Set",
+        "description": "Communication modes supported for Engagement communication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/eng-product"
+        },
+        "name": "Engagement Context Value Set",
+        "description": "Context for an engagement action",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/eng-conversation-type"
+        },
+        "name": "Engagement Conversation Type Value Set",
+        "description": "Codes indicating types for Engagement communications",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/gender-identity"
+        },
+        "name": "Gender Identity Value Set",
+        "description": "Gender identity codes typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/identifier-type"
         },
         "name": "Identifier Type Value Set",
         "description": "Extended set of identifier type codes from FHIR HL7 and extended Alvearie resource identifiers",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/legal-document-source"
+        },
+        "name": "Legal Document Source Value Set",
+        "description": "Codes indicating the source of legal document used for identification",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/legal-document-system"
+        },
+        "name": "Legal Document System Value Set",
+        "description": "Codes indicating the system of legal document used for identification",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/opt-out-reason"
+        },
+        "name": "Opt-Out Reason Value Set",
+        "description": "Codes indicating reasons patients may specify for opting-out of communications",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/patient-importance"
+        },
+        "name": "Patient Importance Value Set",
+        "description": "Patient importance status codes used to trigger or limit patient operations",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/patient-status"
+        },
+        "name": "Patient Status Value Set",
+        "description": "Examples of client-specified patient status codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/sex-assigned-at-birth"
+        },
+        "name": "Sex Assigned At Birth Value Set",
+        "description": "Value set for sex assigned at birth based on observation by a physician. Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/sexual-orientation"
+        },
+        "name": "Sexual Orientation Value Set",
+        "description": "Codes indicating a person's physical, romantic, and/or emotional attraction towards other people",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/eng-communication-mode"
+        },
+        "name": "Engagement Communication Mode Codes",
+        "description": "Communication modes supported for Engagement communication",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/eng-product"
+        },
+        "name": "Engagement Context Codes",
+        "description": "Context for an engagement action ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/eng-conversation-type"
+        },
+        "name": "Engagement Conversation Type Codes",
+        "description": "Codes indicating conversation types for Engagement communications",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/gender-identity"
+        },
+        "name": "Gender Identity Codes",
+        "description": "Gender identity codes typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.",
         "exampleBoolean": false
       },
       {
@@ -512,10 +1416,108 @@
           }
         ],
         "reference": {
+          "reference": "CodeSystem/legal-document-source"
+        },
+        "name": "Legal Document Source Codes",
+        "description": "Codes indicating the source of legal document used for identification",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/legal-document-system"
+        },
+        "name": "Legal Document System Codes",
+        "description": "Codes indicating the system of legal document used for identification",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/opt-out-reason"
+        },
+        "name": "Opt-Out Reason Codes",
+        "description": "Codes indicating reasons patients may specify for opting-out of communications",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/patient-importance"
+        },
+        "name": "Patient Importance Codes",
+        "description": "Patient status code examples",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/patient-status"
+        },
+        "name": "Patient Status Codes",
+        "description": "Patient status code examples",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
           "reference": "CodeSystem/process-meta-primary-or-secondary"
         },
         "name": "Primary or Secondary",
         "description": "Identifies the origin of the data elements from primary or secondary systems.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/sex-assigned-at-birth"
+        },
+        "name": "Sex Assigned At Birth Codes",
+        "description": "Value set for sex assigned at birth based on observation by a physician. Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/sexual-orientation"
+        },
+        "name": "Sexual Orientation Codes",
+        "description": "Codes indicating a person's physical, romantic, and/or emotional attraction towards other people",
         "exampleBoolean": false
       },
       {

@@ -11,7 +11,7 @@
   <name value="AlvearieFHIRImplementationGuide"/>
   <title value="Alvearie FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-02-19T13:15:40-06:00"/>
+  <date value="2021-04-02T11:32:07-05:00"/>
   <contact>
     <name value="Kim Kenna"/>
     <telecom>
@@ -198,13 +198,68 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/alvearie-address"/>
+      </reference>
+      <name value="Alvearie Address"/>
+      <description value="Address wtih common extensions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/alvearie-communication-contact-point"/>
+      </reference>
+      <name value="Communication Contact Point"/>
+      <description value="Contact point extended with country and phone ext for communications"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/alvearie-contact-point"/>
+      </reference>
+      <name value="Alvearie ContactPoint"/>
+      <description value="ContactPoint with common extensions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/alvearie-identifier"/>
+      </reference>
+      <name value="Alvearie Identifier"/>
+      <description value="Alvearie identifier with support for encrypted value"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/alvearie-organization"/>
       </reference>
       <name value="Alvearie Organization"/>
-      <description value="Alvearie definition of what fields are needed for a organization"/>
+      <description value="Alvearie definition of what fields are needed for an organization"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/alvearie-patient"/>
+      </reference>
+      <name value="Alvearie Patient"/>
+      <description value="The AlveariePatient resource contains the base information for the exchange of demographic and other data about a patient either receiving care or with the potential to receive care as known by a particular data source.  An AlveariePatient record is generally created and maintained by each organization with knowledge about the care provided for a patient. A unique patient may therefore have its information present in multiple AlveariePatient resource instances since multiple organizations are typically aware of and/or involved in a patient&#39;s care, including but not limited to provider organizations, payer organizations, and research organizations. The AlvearieMatchedPatient profile can be used in combination with this base profile to associate multiple instances of an AlveariePatient that are believed to potentially be about the same real world  individual. "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -215,6 +270,354 @@
         <reference value="StructureDefinition/process-meta"/>
       </reference>
       <name value="Data lineage meta with process extensions"/>
+      <description value="Metadata about a resource. The ProcessMeta StructureDefinition augments the base FHIR Meta profile with a set of extensions to support data lineage."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/reference-with-code-and-period"/>
+      </reference>
+      <name value="Reference with code and period"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/reference-with-period"/>
+      </reference>
+      <name value="Reference with Period"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/age-group-code"/>
+      </reference>
+      <name value="Age Group Code"/>
+      <description value="Age Group Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/coverage-snapshot-age-in-months"/>
+      </reference>
+      <name value="Age in months"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/coverage-snapshot-age-in-years"/>
+      </reference>
+      <name value="Age in years"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/age-rollup-group-code"/>
+      </reference>
+      <name value="Age Rollup Group Code"/>
+      <description value="Age Rollup Group Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/attributed-provider-with-period"/>
+      </reference>
+      <name value="Attributed provider reference with period"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-care-gap"/>
+      </reference>
+      <name value="Communication Care Gap"/>
+      <description value="ID of care gap for which we are communicating"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-contact"/>
+      </reference>
+      <name value="Communication Contact"/>
+      <description value="Phone number, email, or address to contact"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-language"/>
+      </reference>
+      <name value="Communication Language"/>
+      <description value="Language used for communication messaging content"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-measure"/>
+      </reference>
+      <name value="Communication Measure"/>
+      <description value="Reference to the measure that resulted in the communication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-mode"/>
+      </reference>
+      <name value="Communication Mode"/>
+      <description value="Mode of communication (phone | sms | email | mail | chat)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-on-behalf-of"/>
+      </reference>
+      <name value="Communication On-Behalf Of"/>
+      <description value="Attributed provider, location, or organization communication is on-behalf of"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-opt-out"/>
+      </reference>
+      <name value="Communication Opt-Out"/>
+      <description value="Opt-out details for communication with an individual"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/outcome"/>
+      </reference>
+      <name value="Communication Outcome"/>
+      <description value="Vendor-specific communication response code or text"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-payload-data"/>
+      </reference>
+      <name value="Communication Payload Data"/>
+      <description value="Contains dynamic data elements and vendor / medium specific elements to be included in the message payload"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-priority-sequence"/>
+      </reference>
+      <name value="Communication Priority Sequence"/>
+      <description value="Priority of the communication request (1 = highest)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-product"/>
+      </reference>
+      <name value="Communication Product"/>
+      <description value="Product generating the communication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-reengagement"/>
+      </reference>
+      <name value="Communication Reengagement"/>
+      <description value="Sequence for subsequent communication attempts to reengage the patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-retry-limt"/>
+      </reference>
+      <name value="Communication Retry Limit"/>
+      <description value="Retry limit configuration, may vary by medium and vendor"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sent-time"/>
+      </reference>
+      <name value="Communication Sent Time"/>
+      <description value="Time communication was attempted"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-template"/>
+      </reference>
+      <name value="Communication Template"/>
+      <description value="Id or url reference to template to be used for communication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-vendor"/>
+      </reference>
+      <name value="Communication Vendor"/>
+      <description value="Vendor used to send the communication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/conversation-type"/>
+      </reference>
+      <name value="Conversation Type"/>
+      <description value="Type of conversation, used for ihe chat communications"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/county-code"/>
+      </reference>
+      <name value="County Code"/>
+      <description value="Administrative division of a country or state"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documented-sex"/>
+      </reference>
+      <name value="Documented Sex"/>
+      <description value="Sex coding indicated on the legal document"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documented-source"/>
+      </reference>
+      <name value="Documented Source"/>
+      <description value="Source type of the legal document"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/documented-system"/>
+      </reference>
+      <name value="Documented System"/>
+      <description value="Source system or jurisdiction of the legal document"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/effective-period"/>
+      </reference>
+      <name value="Effective Period"/>
+      <description value="Effective period"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/encrypted-state"/>
+      </reference>
+      <name value="Encrypted State"/>
+      <description value="Encrypted state"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/family-id"/>
+      </reference>
+      <name value="Family Id"/>
+      <description value="The unique identifier for the subscriber (contract holder, employee) and the associated dependents."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/identified-pronouns"/>
+      </reference>
+      <name value="Identified Pronouns"/>
+      <description value="Gender, typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -226,6 +629,28 @@
       </reference>
       <name value="Ingestion Batch Id"/>
       <description value="Generated by an ingestion service management API, the ingestion-batch-id represents a collection/grouping of messages that the producer submitted together.  The &#39;batch&#39; definition needs to be agreed upon by data producers and data consumers."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/language-rank"/>
+      </reference>
+      <name value="Language Rank"/>
+      <description value="Specify preferred order of language use (1 = highest)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/legally-documented-sex"/>
+      </reference>
+      <name value="Legally Documented Sex"/>
+      <description value="Sex as defined or amended on the patient&#39;s legal documentation, for example a birth certificate or driver&#39;s license."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -299,6 +724,103 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/reengagement-display"/>
+      </reference>
+      <name value="Reengagement Display"/>
+      <description value="Communication reengagement sequence display text"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/reengagement-value"/>
+      </reference>
+      <name value="ReengagementValue"/>
+      <description value="Communication reengagement sequence value"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/reference-code"/>
+      </reference>
+      <name value="Reference Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/reference-period"/>
+      </reference>
+      <name value="Reference Period"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/region-code"/>
+      </reference>
+      <name value="Region Code"/>
+      <description value="Administrative area or division with definable characteristics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sent-to-recipient"/>
+      </reference>
+      <name value="Sent To recipient"/>
+      <description value="Records date/time and outcome of communication attempts with the recipient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sent-to-vendor"/>
+      </reference>
+      <name value="Sent To Vendor"/>
+      <description value="Records date/time and outcome of communications sent to vendor"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sex-assigned-at-birth"/>
+      </reference>
+      <name value="Sex Assigned At Birth"/>
+      <description value="Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sexual-orientation"/>
+      </reference>
+      <name value="SexualOrientation"/>
+      <description value="Patient&#39;s physical, romantic, and/or emotional attraction towards other people."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/source-data-model-version"/>
       </reference>
       <name value="Source Data Model Version"/>
@@ -321,6 +843,28 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/stated-reason"/>
+      </reference>
+      <name value="Stated Reason"/>
+      <description value="Recorded reason specified by the recipient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/status-code"/>
+      </reference>
+      <name value="Status Code"/>
+      <description value="Client-specific patient status codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tenant-id"/>
       </reference>
       <name value="Tenant Id"/>
@@ -332,10 +876,175 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/eng-communication-mode"/>
+      </reference>
+      <name value="Engagement Communication Mode Value Set"/>
+      <description value="Communication modes supported for Engagement communication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eng-product"/>
+      </reference>
+      <name value="Engagement Context Value Set"/>
+      <description value="Context for an engagement action"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/eng-conversation-type"/>
+      </reference>
+      <name value="Engagement Conversation Type Value Set"/>
+      <description value="Codes indicating types for Engagement communications"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/gender-identity"/>
+      </reference>
+      <name value="Gender Identity Value Set"/>
+      <description value="Gender identity codes typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/identifier-type"/>
       </reference>
       <name value="Identifier Type Value Set"/>
       <description value="Extended set of identifier type codes from FHIR HL7 and extended Alvearie resource identifiers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/legal-document-source"/>
+      </reference>
+      <name value="Legal Document Source Value Set"/>
+      <description value="Codes indicating the source of legal document used for identification"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/legal-document-system"/>
+      </reference>
+      <name value="Legal Document System Value Set"/>
+      <description value="Codes indicating the system of legal document used for identification"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/opt-out-reason"/>
+      </reference>
+      <name value="Opt-Out Reason Value Set"/>
+      <description value="Codes indicating reasons patients may specify for opting-out of communications"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/patient-importance"/>
+      </reference>
+      <name value="Patient Importance Value Set"/>
+      <description value="Patient importance status codes used to trigger or limit patient operations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/patient-status"/>
+      </reference>
+      <name value="Patient Status Value Set"/>
+      <description value="Examples of client-specified patient status codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sex-assigned-at-birth"/>
+      </reference>
+      <name value="Sex Assigned At Birth Value Set"/>
+      <description value="Value set for sex assigned at birth based on observation by a physician. Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sexual-orientation"/>
+      </reference>
+      <name value="Sexual Orientation Value Set"/>
+      <description value="Codes indicating a person&#39;s physical, romantic, and/or emotional attraction towards other people"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/eng-communication-mode"/>
+      </reference>
+      <name value="Engagement Communication Mode Codes"/>
+      <description value="Communication modes supported for Engagement communication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/eng-product"/>
+      </reference>
+      <name value="Engagement Context Codes"/>
+      <description value="Context for an engagement action "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/eng-conversation-type"/>
+      </reference>
+      <name value="Engagement Conversation Type Codes"/>
+      <description value="Codes indicating conversation types for Engagement communications"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/gender-identity"/>
+      </reference>
+      <name value="Gender Identity Codes"/>
+      <description value="Gender identity codes typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -354,10 +1063,87 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/legal-document-source"/>
+      </reference>
+      <name value="Legal Document Source Codes"/>
+      <description value="Codes indicating the source of legal document used for identification"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/legal-document-system"/>
+      </reference>
+      <name value="Legal Document System Codes"/>
+      <description value="Codes indicating the system of legal document used for identification"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/opt-out-reason"/>
+      </reference>
+      <name value="Opt-Out Reason Codes"/>
+      <description value="Codes indicating reasons patients may specify for opting-out of communications"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/patient-importance"/>
+      </reference>
+      <name value="Patient Importance Codes"/>
+      <description value="Patient status code examples"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/patient-status"/>
+      </reference>
+      <name value="Patient Status Codes"/>
+      <description value="Patient status code examples"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/process-meta-primary-or-secondary"/>
       </reference>
       <name value="Primary or Secondary"/>
       <description value="Identifies the origin of the data elements from primary or secondary systems."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/sex-assigned-at-birth"/>
+      </reference>
+      <name value="Sex Assigned At Birth Codes"/>
+      <description value="Value set for sex assigned at birth based on observation by a physician. Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/sexual-orientation"/>
+      </reference>
+      <name value="Sexual Orientation Codes"/>
+      <description value="Codes indicating a person&#39;s physical, romantic, and/or emotional attraction towards other people"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

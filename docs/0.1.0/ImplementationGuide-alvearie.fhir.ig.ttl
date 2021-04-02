@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "AlvearieFHIRImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "Alvearie FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-02-19T13:15:40-06:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-04-02T11:32:07-05:00"^^xsd:dateTime];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -299,6 +299,62 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/alvearie-address>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/alvearie-address" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Alvearie Address" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Address wtih common extensions" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/alvearie-communication-contact-point>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/alvearie-communication-contact-point" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Contact Point" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contact point extended with country and phone ext for communications" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/alvearie-contact-point>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/alvearie-contact-point" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Alvearie ContactPoint" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ContactPoint with common extensions" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/alvearie-identifier>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/alvearie-identifier" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Alvearie Identifier" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alvearie identifier with support for encrypted value" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -306,10 +362,24 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/alvearie-organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Alvearie Organization" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alvearie definition of what fields are needed for a organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Alvearie definition of what fields are needed for an organization" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/alvearie-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/alvearie-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Alvearie Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The AlveariePatient resource contains the base information for the exchange of demographic and other data about a patient either receiving care or with the potential to receive care as known by a particular data source.  An AlveariePatient record is generally created and maintained by each organization with knowledge about the care provided for a patient. A unique patient may therefore have its information present in multiple AlveariePatient resource instances since multiple organizations are typically aware of and/or involved in a patient's care, including but not limited to provider organizations, payer organizations, and research organizations. The AlvearieMatchedPatient profile can be used in combination with this base profile to associate multiple instances of an AlveariePatient that are believed to potentially be about the same real world  individual. " ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -320,9 +390,453 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/process-meta" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Data lineage meta with process extensions" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Metadata about a resource. The ProcessMeta StructureDefinition augments the base FHIR Meta profile with a set of extensions to support data lineage." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reference-with-code-and-period>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/reference-with-code-and-period" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reference with code and period" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reference-with-period>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/reference-with-period" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reference with Period" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/age-group-code>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/age-group-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Age Group Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Age Group Code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/coverage-snapshot-age-in-months>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/coverage-snapshot-age-in-months" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Age in months" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/coverage-snapshot-age-in-years>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/coverage-snapshot-age-in-years" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Age in years" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/age-rollup-group-code>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/age-rollup-group-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Age Rollup Group Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Age Rollup Group Code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/attributed-provider-with-period>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/attributed-provider-with-period" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Attributed provider reference with period" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-care-gap>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-care-gap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Care Gap" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ID of care gap for which we are communicating" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-contact>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-contact" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Contact" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Phone number, email, or address to contact" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-language>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-language" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Language" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Language used for communication messaging content" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-measure>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-measure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Measure" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Reference to the measure that resulted in the communication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-mode>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-mode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Mode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mode of communication (phone | sms | email | mail | chat)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-on-behalf-of>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-on-behalf-of" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication On-Behalf Of" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Attributed provider, location, or organization communication is on-behalf of" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-opt-out>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-opt-out" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Opt-Out" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Opt-out details for communication with an individual" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/outcome>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/outcome" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Outcome" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vendor-specific communication response code or text" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-payload-data>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-payload-data" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Payload Data" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contains dynamic data elements and vendor / medium specific elements to be included in the message payload" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-priority-sequence>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-priority-sequence" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Priority Sequence" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Priority of the communication request (1 = highest)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-product>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-product" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Product" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Product generating the communication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-reengagement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-reengagement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Reengagement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sequence for subsequent communication attempts to reengage the patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-retry-limt>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-retry-limt" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Retry Limit" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Retry limit configuration, may vary by medium and vendor" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sent-time>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sent-time" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Sent Time" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Time communication was attempted" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-template>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-template" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Template" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Id or url reference to template to be used for communication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-vendor>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/communication-vendor" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Communication Vendor" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vendor used to send the communication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/conversation-type>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/conversation-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conversation Type" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type of conversation, used for ihe chat communications" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/county-code>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/county-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "County Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Administrative division of a country or state" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/documented-sex>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/documented-sex" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Documented Sex" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sex coding indicated on the legal document" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/documented-source>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/documented-source" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Documented Source" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Source type of the legal document" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/documented-system>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/documented-system" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Documented System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Source system or jurisdiction of the legal document" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/effective-period>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/effective-period" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Effective Period" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Effective period" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/encrypted-state>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/encrypted-state" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encrypted State" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encrypted state" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/family-id>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/family-id" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Family Id" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The unique identifier for the subscriber (contract holder, employee) and the associated dependents." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/identified-pronouns>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/identified-pronouns" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identified Pronouns" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gender, typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -336,7 +850,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generated by an ingestion service management API, the ingestion-batch-id represents a collection/grouping of messages that the producer submitted together.  The 'batch' definition needs to be agreed upon by data producers and data consumers." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/language-rank>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/language-rank" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Language Rank" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Specify preferred order of language use (1 = highest)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/legally-documented-sex>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/legally-documented-sex" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Legally Documented Sex" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sex as defined or amended on the patient's legal documentation, for example a birth certificate or driver's license." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -350,7 +892,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The name of the process or service that has produced the data held in the FHIR resource or element." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -364,7 +906,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The organizing entity that owns the process that has produced the data held in the FHIR resource or element. " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -378,7 +920,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The record id that the data producer or data integrator uses internally to identify this data." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -392,7 +934,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The timestamp the data was generated within this FHIR resource or element." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -406,7 +948,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The classification type of the process that has produced the data held in the FHIR resource or element. For example, if the process is primarily a Natural Language Processing (NLP) service, the type may be specified as NLP. Or if the process is primarily one that aggregates and groups related items, the type may be specified as Grouper." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -420,7 +962,131 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The version of the process or service that has produced the data held in the FHIR resource or element." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reengagement-display>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/reengagement-display" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reengagement Display" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Communication reengagement sequence display text" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reengagement-value>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/reengagement-value" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ReengagementValue" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Communication reengagement sequence value" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reference-code>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/reference-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reference Code" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reference-period>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/reference-period" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reference Period" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/region-code>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/region-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Region Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Administrative area or division with definable characteristics" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sent-to-recipient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sent-to-recipient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sent To recipient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Records date/time and outcome of communication attempts with the recipient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sent-to-vendor>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sent-to-vendor" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sent To Vendor" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Records date/time and outcome of communications sent to vendor" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sex-assigned-at-birth>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sex-assigned-at-birth" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sex Assigned At Birth" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sexual-orientation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sexual-orientation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SexualOrientation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient's physical, romantic, and/or emotional attraction towards other people." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -434,7 +1100,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The version of the data model in the source system used by the data producer or data integrator." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -448,7 +1114,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The identifier for a file that the data producer or data integrator extracted knowledge from to produce the data within this FHIR resource or element." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/stated-reason>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/stated-reason" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Stated Reason" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Recorded reason specified by the recipient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/status-code>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/status-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Status Code" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Client-specific patient status codes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -462,7 +1156,63 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Defined by metadata and provided by the data producer, the ID that the messages will be stored at and processed as within the data pipeline." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/eng-communication-mode>;
+         fhir:Reference.reference [ fhir:value "ValueSet/eng-communication-mode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Engagement Communication Mode Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Communication modes supported for Engagement communication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/eng-product>;
+         fhir:Reference.reference [ fhir:value "ValueSet/eng-product" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Engagement Context Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Context for an engagement action" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/eng-conversation-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/eng-conversation-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Engagement Conversation Type Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicating types for Engagement communications" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/gender-identity>;
+         fhir:Reference.reference [ fhir:value "ValueSet/gender-identity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Gender Identity Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gender identity codes typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -476,7 +1226,161 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extended set of identifier type codes from FHIR HL7 and extended Alvearie resource identifiers" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/legal-document-source>;
+         fhir:Reference.reference [ fhir:value "ValueSet/legal-document-source" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Legal Document Source Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicating the source of legal document used for identification" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/legal-document-system>;
+         fhir:Reference.reference [ fhir:value "ValueSet/legal-document-system" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Legal Document System Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicating the system of legal document used for identification" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/opt-out-reason>;
+         fhir:Reference.reference [ fhir:value "ValueSet/opt-out-reason" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Opt-Out Reason Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicating reasons patients may specify for opting-out of communications" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/patient-importance>;
+         fhir:Reference.reference [ fhir:value "ValueSet/patient-importance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Importance Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient importance status codes used to trigger or limit patient operations" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/patient-status>;
+         fhir:Reference.reference [ fhir:value "ValueSet/patient-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Status Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Examples of client-specified patient status codes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/sex-assigned-at-birth>;
+         fhir:Reference.reference [ fhir:value "ValueSet/sex-assigned-at-birth" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sex Assigned At Birth Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for sex assigned at birth based on observation by a physician. Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/ValueSet/sexual-orientation>;
+         fhir:Reference.reference [ fhir:value "ValueSet/sexual-orientation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sexual Orientation Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicating a person's physical, romantic, and/or emotional attraction towards other people" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/eng-communication-mode>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/eng-communication-mode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Engagement Communication Mode Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Communication modes supported for Engagement communication" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/eng-product>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/eng-product" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Engagement Context Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Context for an engagement action " ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/eng-conversation-type>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/eng-conversation-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Engagement Conversation Type Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicating conversation types for Engagement communications" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/gender-identity>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/gender-identity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Gender Identity Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gender identity codes typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 78;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -490,7 +1394,77 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extended set of Identifier type code for Alvearie resources" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/legal-document-source>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/legal-document-source" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Legal Document Source Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicating the source of legal document used for identification" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/legal-document-system>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/legal-document-system" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Legal Document System Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicating the system of legal document used for identification" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/opt-out-reason>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/opt-out-reason" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Opt-Out Reason Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicating reasons patients may specify for opting-out of communications" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/patient-importance>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/patient-importance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Importance Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient status code examples" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/patient-status>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/patient-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Status Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient status code examples" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 84;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -504,7 +1478,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifies the origin of the data elements from primary or secondary systems." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/sex-assigned-at-birth>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/sex-assigned-at-birth" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sex Assigned At Birth Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for sex assigned at birth based on observation by a physician. Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/sexual-orientation>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/sexual-orientation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sexual Orientation Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes indicating a person's physical, romantic, and/or emotional attraction towards other people" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 87;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

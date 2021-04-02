@@ -1,6 +1,7 @@
 Profile: ProcessMeta
 Parent: Meta
 Title: "Data lineage meta with process extensions"
+Description: "Metadata about a resource. The ProcessMeta StructureDefinition augments the base FHIR Meta profile with a set of extensions to support data lineage."
 Id: process-meta
 * extension contains 
     TenantId named tenantId 0..1 and

@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/opt-out-reason> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "opt-out-reason"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/opt-out-reason defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">not-interested<a name=\"opt-out-reason-not-interested\"> </a></td><td>Individual has requested to no longer be contacted in this context.</td></tr><tr><td style=\"white-space:nowrap\">invalid-contact<a name=\"opt-out-reason-invalid-contact\"> </a></td><td>Contact information is not valid to reach the desired individual.</td></tr><tr><td style=\"white-space:nowrap\">deceased<a name=\"opt-out-reason-deceased\"> </a></td><td>Individual is no longer living.</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"opt-out-reason-unknown\"> </a></td><td>Reason is unknown</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"opt-out-reason-other\"> </a></td><td>Other reason not already listed</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/opt-out-reason"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "OptOutReasonCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Opt-Out Reason Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-04-02T11:32:07-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Codes indicating reasons patients may specify for opting-out of communications"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "not-interested" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Individual has requested to no longer be contacted in this context." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "invalid-contact" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Contact information is not valid to reach the desired individual." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "deceased" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Individual is no longer living." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Reason is unknown" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other reason not already listed" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/opt-out-reason.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

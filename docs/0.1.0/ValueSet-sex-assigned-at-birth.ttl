@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://alvearie.github.io/alvearie-fhir-ig/ValueSet/sex-assigned-at-birth> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "sex-assigned-at-birth"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-sex-assigned-at-birth.html\"><code>http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/sex-assigned-at-birth</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/ValueSet/sex-assigned-at-birth"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "SexAssignedAtBirthValueSet"];
+  fhir:ValueSet.title [ fhir:value "Sex Assigned At Birth Value Set"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-04-02T11:32:07-05:00"^^xsd:dateTime];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Value set for sex assigned at birth based on observation by a physician. Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/sex-assigned-at-birth" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://alvearie.github.io/alvearie-fhir-ig/ValueSet/sex-assigned-at-birth.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
