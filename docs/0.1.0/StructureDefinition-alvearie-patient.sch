@@ -13,11 +13,11 @@
     <sch:title>f:Patient</sch:title>
     <sch:rule context="f:Patient">
       <sch:assert test="count(f:contained) &lt;= 0">contained: maximum cardinality of 'contained' is 0</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/family-id']) &lt;= 1">extension with URL = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/family-id': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/family-id']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/family-id': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sex-assigned-at-birth']) &lt;= 1">extension with URL = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/sex-assigned-at-birth': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/sex-assigned-at-birth']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/sex-assigned-at-birth': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -110,7 +110,7 @@
     <sch:title>f:Patient/f:identifier</sch:title>
     <sch:rule context="f:Patient/f:identifier">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/encrypted-state']) &lt;= 1">extension with URL = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/encrypted-state': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/encrypted-state']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/encrypted-state': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
@@ -299,7 +299,7 @@
   <sch:pattern>
     <sch:title>f:Patient/f:communication</sch:title>
     <sch:rule context="f:Patient/f:communication">
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/language-rank']) &lt;= 1">extension with URL = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/language-rank': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/language-rank']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/language-rank': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

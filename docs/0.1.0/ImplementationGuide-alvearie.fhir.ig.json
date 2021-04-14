@@ -3,14 +3,14 @@
   "id": "alvearie.fhir.ig",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AlvearieFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://alvearie.github.io/alvearie-fhir-ig/ImplementationGuide/alvearie.fhir.ig</pre><div><p>Alvearie FHIR Profiles</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AlvearieFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://alvearie.io/fhir/ImplementationGuide/alvearie.fhir.ig</pre><div><p>Alvearie FHIR Profiles</p>\n</div></div>"
   },
-  "url": "http://alvearie.github.io/alvearie-fhir-ig/ImplementationGuide/alvearie.fhir.ig",
+  "url": "http://alvearie.io/fhir/ImplementationGuide/alvearie.fhir.ig",
   "version": "0.1.0",
   "name": "AlvearieFHIRImplementationGuide",
   "title": "Alvearie FHIR Implementation Guide",
   "status": "active",
-  "date": "2021-04-02T11:32:07-05:00",
+  "date": "2021-04-14T11:21:37-05:00",
   "contact": [
     {
       "name": "Kim Kenna",
@@ -172,7 +172,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://alvearie.github.io/alvearie-fhir-ig/history.html"
+            "valueString": "http://alvearie.io/fhir/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -363,6 +363,20 @@
         },
         "name": "Alvearie Identifier",
         "description": "Alvearie identifier with support for encrypted value",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/alvearie-match-patient"
+        },
+        "name": "Alvearie Match Patient",
+        "description": "The AlvearieMatchPatient resource contains references to 0..*  source Patients records that a matching algorithm believes with some degree of confidence to be source records about the same individual.  In addition to keeping references of match decisions, the AlvearieMatchPatient resource can also contain details on split decisions that may be (optionally) leveraged to override matches.\r\n\r\nIt is the intention of the AlvearieMatchPatient profile to allow multiple match algorithms to be leveraged to match Patient records and to store those matched decisions in such a way that each use case of the AlvearieMatchPatient records can independently determine which combination(s) of algorithms based on a  an acceptable degree of match confidence for that indivudal use case. (i.e.: A use case that will directly engage the patient based on match information will trust different algorithms and confidence vectors than a use case against the same data set trying to summarize  population analytics.)\r\n\r\nThe AlvearieMatchPatient resource also contains preferred demographics for an individual.Preferred demographics are selected from data provided for multiple source systems, and may be derived from source data. The method for determining preferred demographics will vary by use case, but will likely use an algorithm that uses some combination of data system ranking, record update dates, and/or vote counting to determine the most reliable demographic information for the individual.",
         "exampleBoolean": false
       },
       {
@@ -900,6 +914,118 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/match-compared-to"
+        },
+        "name": "Match Compared To",
+        "description": "Reference to the record that was compared for matching",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/match-confidence-level"
+        },
+        "name": "Match Confidence Code",
+        "description": "Confidence code for the match",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/match-confidence-score"
+        },
+        "name": "Confidence Score",
+        "description": "Confidence score for the match",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/match-criteria"
+        },
+        "name": "Match Criteria",
+        "description": "Criteria or algorythm used to identify the matched resource",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/match-detail"
+        },
+        "name": "Match Detail",
+        "description": "Detailed match algorithm results used to match resources",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/match-method"
+        },
+        "name": "Match Method",
+        "description": "Method used to identify the matched resource",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/match-period"
+        },
+        "name": "Match Period",
+        "description": "Time period when match is valid",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/match-source-reference"
+        },
+        "name": "MatchSourceReference",
+        "description": "Reference to the source resource that is matched",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/process-name"
         },
         "name": "Process Name",
@@ -1052,6 +1178,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/see-also"
+        },
+        "name": "See Also",
+        "description": "References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/sent-to-recipient"
         },
         "name": "Sent To recipient",
@@ -1126,6 +1266,20 @@
         },
         "name": "Source File ID",
         "description": "The identifier for a file that the data producer or data integrator extracted knowledge from to produce the data within this FHIR resource or element.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/split-method"
+        },
+        "name": "Split Method",
+        "description": "Method used to identify the matched resource to split",
         "exampleBoolean": false
       },
       {
@@ -1276,6 +1430,34 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/match-confidence-level"
+        },
+        "name": "Match Confidence Level Value Set",
+        "description": "Codes indicating confidence level of matched entities",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/match-method"
+        },
+        "name": "Match Method Value Set",
+        "description": "Codes indicating methods used to identify matched entities",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/opt-out-reason"
         },
         "name": "Opt-Out Reason Value Set",
@@ -1336,6 +1518,20 @@
         },
         "name": "Sexual Orientation Value Set",
         "description": "Codes indicating a person's physical, romantic, and/or emotional attraction towards other people",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/split-method"
+        },
+        "name": "Split Method Value Set",
+        "description": "Codes indicating methods used to identify matched entities to split",
         "exampleBoolean": false
       },
       {
@@ -1444,6 +1640,34 @@
           }
         ],
         "reference": {
+          "reference": "CodeSystem/match-confidence-level"
+        },
+        "name": "Match Confidence Level Code System",
+        "description": "Codes indicating confidence level of matched entities",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/match-method"
+        },
+        "name": "Match Method Codes",
+        "description": "Codes indicating methods used to identify matched entities",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
           "reference": "CodeSystem/opt-out-reason"
         },
         "name": "Opt-Out Reason Codes",
@@ -1518,6 +1742,20 @@
         },
         "name": "Sexual Orientation Codes",
         "description": "Codes indicating a person's physical, romantic, and/or emotional attraction towards other people",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/split-method"
+        },
+        "name": "Split Method Codes",
+        "description": "Codes indicating methods used to identify matched entities to split",
         "exampleBoolean": false
       },
       {

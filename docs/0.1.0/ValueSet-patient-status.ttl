@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://alvearie.github.io/alvearie-fhir-ig/ValueSet/patient-status> a fhir:ValueSet;
+<http://alvearie.io/fhir/ValueSet/patient-status> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "patient-status"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://terminology.hl7.org/ValueSet/v3-PatientImportance</code></li><li>Include all codes defined in <a href=\"CodeSystem-patient-status.html\"><code>http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/patient-status</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://terminology.hl7.org/ValueSet/v3-PatientImportance</code></li><li>Include all codes defined in <a href=\"CodeSystem-patient-status.html\"><code>http://alvearie.io/fhir/CodeSystem/patient-status</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/ValueSet/patient-status"];
+  fhir:ValueSet.url [ fhir:value "http://alvearie.io/fhir/ValueSet/patient-status"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "PatientStatusValueSet"];
   fhir:ValueSet.title [ fhir:value "Patient Status Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-04-02T11:32:07-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-04-14T11:21:37-05:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -42,13 +42,13 @@
        fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-PatientImportance" ]
      ], [
        fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/patient-status" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://alvearie.io/fhir/CodeSystem/patient-status" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://alvearie.github.io/alvearie-fhir-ig/ValueSet/patient-status.ttl> a owl:Ontology;
+<http://alvearie.io/fhir/ValueSet/patient-status.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
