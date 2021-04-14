@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://alvearie.github.io/alvearie-fhir-ig/ValueSet/gender-identity> a fhir:ValueSet;
+<http://alvearie.io/fhir/ValueSet/gender-identity> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "gender-identity"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-gender-identity.html\"><code>http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/gender-identity</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-gender-identity.html\"><code>http://alvearie.io/fhir/CodeSystem/gender-identity</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/ValueSet/gender-identity"];
+  fhir:ValueSet.url [ fhir:value "http://alvearie.io/fhir/ValueSet/gender-identity"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "GenderIdentityValueSet"];
   fhir:ValueSet.title [ fhir:value "Gender Identity Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-04-02T11:32:07-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-04-14T11:21:37-05:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -39,13 +39,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/gender-identity" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://alvearie.io/fhir/CodeSystem/gender-identity" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://alvearie.github.io/alvearie-fhir-ig/ValueSet/gender-identity.ttl> a owl:Ontology;
+<http://alvearie.io/fhir/ValueSet/gender-identity.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

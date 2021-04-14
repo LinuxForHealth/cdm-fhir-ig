@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:Identifier</sch:title>
     <sch:rule context="f:Identifier">
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/encrypted-state']) &lt;= 1">extension with URL = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/encrypted-state': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/encrypted-state']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/encrypted-state': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

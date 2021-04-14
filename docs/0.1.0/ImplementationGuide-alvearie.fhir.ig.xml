@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="alvearie.fhir.ig"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>AlvearieFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://alvearie.github.io/alvearie-fhir-ig/ImplementationGuide/alvearie.fhir.ig</pre><div><p>Alvearie FHIR Profiles</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>AlvearieFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://alvearie.io/fhir/ImplementationGuide/alvearie.fhir.ig</pre><div><p>Alvearie FHIR Profiles</p>
 </div></div>
   </text>
-  <url value="http://alvearie.github.io/alvearie-fhir-ig/ImplementationGuide/alvearie.fhir.ig"/>
+  <url value="http://alvearie.io/fhir/ImplementationGuide/alvearie.fhir.ig"/>
   <version value="0.1.0"/>
   <name value="AlvearieFHIRImplementationGuide"/>
   <title value="Alvearie FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-04-02T11:32:07-05:00"/>
+  <date value="2021-04-14T11:21:37-05:00"/>
   <contact>
     <name value="Kim Kenna"/>
     <telecom>
@@ -113,7 +113,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://alvearie.github.io/alvearie-fhir-ig/history.html"/>
+        <valueString value="http://alvearie.io/fhir/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -238,6 +238,17 @@
       </reference>
       <name value="Alvearie Identifier"/>
       <description value="Alvearie identifier with support for encrypted value"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/alvearie-match-patient"/>
+      </reference>
+      <name value="Alvearie Match Patient"/>
+      <description value="The AlvearieMatchPatient resource contains references to 0..*  source Patients records that a matching algorithm believes with some degree of confidence to be source records about the same individual.  In addition to keeping references of match decisions, the AlvearieMatchPatient resource can also contain details on split decisions that may be (optionally) leveraged to override matches.&#xD;&#xA;&#xD;&#xA;It is the intention of the AlvearieMatchPatient profile to allow multiple match algorithms to be leveraged to match Patient records and to store those matched decisions in such a way that each use case of the AlvearieMatchPatient records can independently determine which combination(s) of algorithms based on a  an acceptable degree of match confidence for that indivudal use case. (i.e.: A use case that will directly engage the patient based on match information will trust different algorithms and confidence vectors than a use case against the same data set trying to summarize  population analytics.)&#xD;&#xA;&#xD;&#xA;The AlvearieMatchPatient resource also contains preferred demographics for an individual.Preferred demographics are selected from data provided for multiple source systems, and may be derived from source data. The method for determining preferred demographics will vary by use case, but will likely use an algorithm that uses some combination of data system ranking, record update dates, and/or vote counting to determine the most reliable demographic information for the individual."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -658,6 +669,94 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/match-compared-to"/>
+      </reference>
+      <name value="Match Compared To"/>
+      <description value="Reference to the record that was compared for matching"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/match-confidence-level"/>
+      </reference>
+      <name value="Match Confidence Code"/>
+      <description value="Confidence code for the match"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/match-confidence-score"/>
+      </reference>
+      <name value="Confidence Score"/>
+      <description value="Confidence score for the match"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/match-criteria"/>
+      </reference>
+      <name value="Match Criteria"/>
+      <description value="Criteria or algorythm used to identify the matched resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/match-detail"/>
+      </reference>
+      <name value="Match Detail"/>
+      <description value="Detailed match algorithm results used to match resources"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/match-method"/>
+      </reference>
+      <name value="Match Method"/>
+      <description value="Method used to identify the matched resource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/match-period"/>
+      </reference>
+      <name value="Match Period"/>
+      <description value="Time period when match is valid"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/match-source-reference"/>
+      </reference>
+      <name value="MatchSourceReference"/>
+      <description value="Reference to the source resource that is matched"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/process-name"/>
       </reference>
       <name value="Process Name"/>
@@ -777,6 +876,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/see-also"/>
+      </reference>
+      <name value="See Also"/>
+      <description value="References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/sent-to-recipient"/>
       </reference>
       <name value="Sent To recipient"/>
@@ -836,6 +946,17 @@
       </reference>
       <name value="Source File ID"/>
       <description value="The identifier for a file that the data producer or data integrator extracted knowledge from to produce the data within this FHIR resource or element."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/split-method"/>
+      </reference>
+      <name value="Split Method"/>
+      <description value="Method used to identify the matched resource to split"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -953,6 +1074,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/match-confidence-level"/>
+      </reference>
+      <name value="Match Confidence Level Value Set"/>
+      <description value="Codes indicating confidence level of matched entities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/match-method"/>
+      </reference>
+      <name value="Match Method Value Set"/>
+      <description value="Codes indicating methods used to identify matched entities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/opt-out-reason"/>
       </reference>
       <name value="Opt-Out Reason Value Set"/>
@@ -1001,6 +1144,17 @@
       </reference>
       <name value="Sexual Orientation Value Set"/>
       <description value="Codes indicating a person&#39;s physical, romantic, and/or emotional attraction towards other people"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/split-method"/>
+      </reference>
+      <name value="Split Method Value Set"/>
+      <description value="Codes indicating methods used to identify matched entities to split"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1085,6 +1239,28 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/match-confidence-level"/>
+      </reference>
+      <name value="Match Confidence Level Code System"/>
+      <description value="Codes indicating confidence level of matched entities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/match-method"/>
+      </reference>
+      <name value="Match Method Codes"/>
+      <description value="Codes indicating methods used to identify matched entities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/opt-out-reason"/>
       </reference>
       <name value="Opt-Out Reason Codes"/>
@@ -1144,6 +1320,17 @@
       </reference>
       <name value="Sexual Orientation Codes"/>
       <description value="Codes indicating a person&#39;s physical, romantic, and/or emotional attraction towards other people"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/split-method"/>
+      </reference>
+      <name value="Split Method Codes"/>
+      <description value="Codes indicating methods used to identify matched entities to split"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

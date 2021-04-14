@@ -9,8 +9,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/attributed-provider-with-period""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
-"Extension.value[x]","","","",0,1,"","","","Reference {[CanonicalType[http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reference-with-period]]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://alvearie.io/fhir/StructureDefinition/attributed-provider-with-period""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Extension.value[x]","","","",0,1,"","","","Reference {[CanonicalType[http://alvearie.io/fhir/StructureDefinition/reference-with-period]]} {[]}
 ","A reference from one resource to another","A reference from one resource to another.","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
 "Extension.value[x].id","","","",0,1,"","","","string {[]} {[]}
@@ -19,7 +19,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Extension.value[x].extension","referencePeriod","","",1,1,"","","","Extension {[CanonicalType[http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/reference-period]]} {[]}
+"Extension.value[x].extension","referencePeriod","","",1,1,"","","","Extension {[CanonicalType[http://alvearie.io/fhir/StructureDefinition/reference-period]]} {[]}
 ","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Extension.value[x].reference","","","",0,1,"","","Y","string {[]} {[]}

@@ -12,12 +12,12 @@
   <sch:pattern>
     <sch:title>f:Extension</sch:title>
     <sch:rule context="f:Extension">
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-product']) &lt;= 1">extension with URL = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-product': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-mode']) &lt;= 1">extension with URL = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-mode': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/conversation-type']) &lt;= 1">extension with URL = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/conversation-type': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-care-gap']) &lt;= 1">extension with URL = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/communication-care-gap': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/stated-reason']) &lt;= 1">extension with URL = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/stated-reason': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/effective-period']) &lt;= 1">extension with URL = 'http://alvearie.github.io/alvearie-fhir-ig/StructureDefinition/effective-period': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/communication-product']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/communication-product': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/communication-mode']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/communication-mode': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/conversation-type']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/conversation-type': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/communication-care-gap']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/communication-care-gap': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/stated-reason']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/stated-reason': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/effective-period']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/effective-period': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>

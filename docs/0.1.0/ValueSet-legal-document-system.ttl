@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://alvearie.github.io/alvearie-fhir-ig/ValueSet/legal-document-system> a fhir:ValueSet;
+<http://alvearie.io/fhir/ValueSet/legal-document-system> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "legal-document-system"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-legal-document-system.html\"><code>http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/legal-document-system</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-legal-document-system.html\"><code>http://alvearie.io/fhir/CodeSystem/legal-document-system</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/ValueSet/legal-document-system"];
+  fhir:ValueSet.url [ fhir:value "http://alvearie.io/fhir/ValueSet/legal-document-system"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "LegalDocumentSystemValueSet"];
   fhir:ValueSet.title [ fhir:value "Legal Document System Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-04-02T11:32:07-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-04-14T11:21:37-05:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -39,13 +39,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://alvearie.github.io/alvearie-fhir-ig/CodeSystem/legal-document-system" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://alvearie.io/fhir/CodeSystem/legal-document-system" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://alvearie.github.io/alvearie-fhir-ig/ValueSet/legal-document-system.ttl> a owl:Ontology;
+<http://alvearie.io/fhir/ValueSet/legal-document-system.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
