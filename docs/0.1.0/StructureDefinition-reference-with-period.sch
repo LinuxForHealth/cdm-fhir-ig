@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Reference</sch:title>
     <sch:rule context="f:Reference">
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/reference-period']) &gt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/reference-period': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/reference-period']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/reference-period': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/reference-period']) &gt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/reference-period': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/reference-period']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/reference-period': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

@@ -12,12 +12,12 @@
   <sch:pattern>
     <sch:title>f:Extension</sch:title>
     <sch:rule context="f:Extension">
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/documented-sex']) &gt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/documented-sex': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/documented-sex']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/documented-sex': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/documented-source']) &gt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/documented-source': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/documented-source']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/documented-source': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/documented-system']) &gt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/documented-system': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/documented-system']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/documented-system': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-sex']) &gt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-sex': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-sex']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-sex': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-source']) &gt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-source': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-source']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-source': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-system']) &gt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-system': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-system']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/documented-system': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>

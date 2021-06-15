@@ -1,0 +1,204 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/List/ExampleQualityMeasureList> a fhir:List;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExampleQualityMeasureList"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-list";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-list>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"clstu\"><tr><td>Mode: workingStatus: current</td></tr><tr><td></td></tr></table><table class=\"grid\"><tr style=\"backgound-color: #eeeeee\"><td><b>Items</b></td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr><tr><td>?ngen-16?</td></tr></table></div>"
+  ];
+  fhir:List.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "example-quality-measure-list" ]
+  ];
+  fhir:List.status [ fhir:value "current"];
+  fhir:List.mode [ fhir:value "working"];
+  fhir:List.entry [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.1"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "102" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.1"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "90" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.05"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "192" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.05"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "153" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.05"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "152" ]
+       ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.1"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "755" ]
+       ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.1"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "190" ]
+       ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "189" ]
+       ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.1"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "812" ]
+       ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.1"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "151" ]
+       ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.05"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "753" ]
+       ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.075"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "134" ]
+       ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.075"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "791" ]
+       ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight" ];
+       fhir:Extension.valueDecimal [ fhir:value "0.05"^^xsd:decimal ]
+     ];
+     fhir:List.entry.item [
+       fhir:Reference.identifier [
+         fhir:Identifier.value [ fhir:value "754" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/List/ExampleQualityMeasureList.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -3,7 +3,7 @@ Id:             communication-product
 Title:          "Communication Product"
 Description:    "Product generating the communication"
 * value[x] only CodeableConcept
-* valueCodeableConcept from EngagementContextValueSet (extensible)
+* valueCodeableConcept from EngagementProductValueSet (extensible)
 
 Extension:      CommunicationOnBehalfOf
 Id:             communication-on-behalf-of
@@ -33,7 +33,7 @@ Extension:      CommunicationContact
 Id:             communication-contact
 Title:          "Communication Contact"
 Description:    "Phone number, email, or address to contact"
-* value[x] only AlvearieCommunicationContactPoint or Address
+* value[x] only CDMCommunicationContactPoint or Address
 
 Extension:      CommunicationMode
 Id:             communication-mode
@@ -59,7 +59,7 @@ Description:    "Language used for communication messaging content"
 Extension:      CommunicationTemplate
 Id:             communication-template
 Title:          "Communication Template"
-Description:    "Id or url reference to template to be used for communication"
+Description:    "ID or url reference to template to be used for communication"
 * value[x] only string or Attachment
 
 Extension:      CommunicationRetryLimit
@@ -89,8 +89,10 @@ Description:    "Records date/time and outcome of communications sent to vendor"
 * extension contains
     CommunicationSentTime named communicationSentTime 0..1 and
     CommunicationOutcome named communicationOutcome 0..*
-* extension[communicationSentTime] ^short = "Time communication was attempted"
-* extension[communicationOutcome] ^short = "Vendor-specific communication response code or text"
+* extension[communicationSentTime] ^short      = "Time communication was attempted"
+* extension[communicationSentTime] ^definition = "Time communication was attempted"
+* extension[communicationOutcome] ^short      = "Vendor-specific communication response code or text"
+* extension[communicationOutcome] ^definition = "Vendor-specific communication response code or text"
 
 Extension:      SentToRecipient
 Id:             sent-to-recipient
@@ -99,8 +101,10 @@ Description:    "Records date/time and outcome of communication attempts with th
 * extension contains
     CommunicationSentTime named communicationSentTime 0..1 and
     CommunicationOutcome named communicationOutcome 0..*
-* extension[communicationSentTime] ^short = "Time communication was attempted"
-* extension[communicationOutcome] ^short = "Vendor-specific communication response code or text"
+* extension[communicationSentTime] ^short      = "Time communication was attempted"
+* extension[communicationSentTime] ^definition = "Time communication was attempted"
+* extension[communicationOutcome] ^short      = "Vendor-specific communication response code or text"
+* extension[communicationOutcome] ^definition = "Vendor-specific communication response code or text"
 
 Extension:      CommunicationSentTime
 Id:             sent-time
@@ -123,8 +127,10 @@ Description:    "Sequence for subsequent communication attempts to reengage the 
 * extension contains
     ReengagementValue named reengagementValue 0..1 and
     ReengagementDisplay named reengagementDisplay 0..1
-* extension[reengagementValue] ^short = "Communication reengagement sequence value"
-* extension[reengagementDisplay] ^short = "Communication reengagement sequence display text"
+* extension[reengagementValue] ^short      = "Communication reengagement sequence value"
+* extension[reengagementValue] ^definition = "Communication reengagement sequence value"
+* extension[reengagementDisplay] ^short      = "Communication reengagement sequence display text"
+* extension[reengagementDisplay] ^definition = "Communication reengagement sequence display text"
 
 Extension:      ReengagementValue
 Id:             reengagement-value
@@ -137,3 +143,5 @@ Id:             reengagement-display
 Title:          "Reengagement Display"
 Description:    "Communication reengagement sequence display text"
 * value[x] only string
+
+///////////////////////////////////

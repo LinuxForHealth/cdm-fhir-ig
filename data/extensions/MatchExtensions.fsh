@@ -13,28 +13,39 @@ Description:    "References matched source entities. Links a matched resource to
 * extension[matchMethod].valueCodeableConcept from MatchMethodValueSet (extensible)
 * extension[splitMethod].valueCodeableConcept from SplitMethodValueSet (extensible)
 * extension[matchConfidenceLevel].valueCoding from MatchConfidenceLevelValueSet (extensible)
-* extension[matchSourceReference] ^short = "Reference to the source resource that is matched"
-* extension[matchMethod] ^short = "Method used to identify the matched resource"
-* extension[splitMethod] ^short = "Method used to identify the matched resource to split"
-* extension[matchConfidenceLevel] ^short = "Confidence level code for the matched resource"
-* extension[matchConfidenceScore] ^short = "Confidence score for the matched resource"
-* extension[matchPeriod] ^short = "Time period when match is valid"
-* extension[matchDetail] ^short = "Detailed match algorithm results used to match resources"
+* extension[matchSourceReference] ^short      = "Reference to the source resource that is matched"
+* extension[matchSourceReference] ^definition = "Reference to the source resource that is matched"
+* extension[matchMethod] ^short      = "Method used to identify the matched resource"
+* extension[matchMethod] ^definition = "Method used to identify the matched resource"
+* extension[splitMethod] ^short      = "Method used to identify the matched resource to split"
+* extension[splitMethod] ^definition = "Method used to identify the matched resource to split"
+* extension[matchConfidenceLevel] ^short      = "Confidence level code for the matched resource"
+* extension[matchConfidenceLevel] ^definition = "Confidence level code for the matched resource"
+* extension[matchConfidenceScore] ^short      = "Confidence score for the matched resource"
+* extension[matchConfidenceScore] ^definition = "Confidence score for the matched resource"
+* extension[matchPeriod] ^short      = "Time period when match is valid"
+* extension[matchPeriod] ^definition = "Time period when match is valid"
+* extension[matchDetail] ^short      = "Detailed match algorthm results used to match resources"
+* extension[matchDetail] ^definition = "Detailed match algorthm results used to match resources"
 
 Extension:      MatchDetail
 Id:             match-detail
 Title:          "Match Detail"
-Description:    "Detailed match algorithm results used to match resources"
+Description:    "Detailed match algorthm results used to match resources"
 * extension contains 
     MatchComparedTo named matchComparedTo 1..* and 
     MatchCriteria named matchCriteria 1..1 and 
     MatchConfidenceLevel named matchConfidenceLevel 0..1 and
     MatchConfidenceScore named matchConfidenceScore 0..1 
-* extension[matchComparedTo] ^short = "Reference to the record that was compared for matching"
+* extension[matchComparedTo] ^short      = "Reference to the record that was compared for matching"
+* extension[matchComparedTo] ^definition = "Reference to the record that was compared for matching"
 * extension[matchConfidenceLevel].valueCoding from MatchConfidenceLevelValueSet (extensible)
-* extension[matchCriteria] ^short = "Algorithm or criteria used to identify matched resources"
-* extension[matchConfidenceLevel] ^short = "Confidence level code for the match"
-* extension[matchConfidenceScore] ^short = "Confidence score for the match"
+* extension[matchCriteria] ^short      = "Algorithm or criteria used to identify matched resources"
+* extension[matchCriteria] ^definition = "Algorithm or criteria used to identify matched resources"
+* extension[matchConfidenceLevel] ^short      = "Confidence level code for the match"
+* extension[matchConfidenceLevel] ^definition = "Confidence level code for the match"
+* extension[matchConfidenceScore] ^short      = "Confidence score for the match"
+* extension[matchConfidenceScore] ^definition = "Confidence score for the match"
 
 Extension:      MatchSourceReference
 Id:             match-source-reference

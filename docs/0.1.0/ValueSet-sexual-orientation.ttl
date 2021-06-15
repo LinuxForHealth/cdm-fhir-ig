@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://alvearie.io/fhir/ValueSet/sexual-orientation> a fhir:ValueSet;
+<http://ibm.com/fhir/cdm/ValueSet/sexual-orientation> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "sexual-orientation"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-sexual-orientation.html\"><code>http://alvearie.io/fhir/CodeSystem/sexual-orientation</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-sexual-orientation.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/sexual-orientation</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://alvearie.io/fhir/ValueSet/sexual-orientation"];
+  fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/sexual-orientation"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "SexualOrientationValueSet"];
   fhir:ValueSet.title [ fhir:value "Sexual Orientation Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-04-30T10:15:05-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-06-14T16:26:11-05:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -39,13 +39,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://alvearie.io/fhir/CodeSystem/sexual-orientation" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/sexual-orientation" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://alvearie.io/fhir/ValueSet/sexual-orientation.ttl> a owl:Ontology;
+<http://ibm.com/fhir/cdm/ValueSet/sexual-orientation.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

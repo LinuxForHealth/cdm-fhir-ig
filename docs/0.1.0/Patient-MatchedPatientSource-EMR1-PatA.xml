@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="MatchedPatientSource-EMR1-PatA"/>
+  <meta>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+      <valueString value="99999"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+      <valueString value="b069a545-9506-40c6-8498-23de2e189143"/>
+    </extension>
+    <source value="http://acme-health.com/emr1"/>
+    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Sex Assigned At Birth</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth female}">Female</span></p><p><b>identifier</b>: Source System Row Identifier: a11bad95-a9df-4703-9691-b38bba13892d (OFFICIAL), Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Maggie Match </p><p><b>telecom</b>: ph: 214-555-1212(HOME), 214-555-6767(MOBILE)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1990-01-04</p></div>
+  </text>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth"/>
+        <code value="female"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <code value="SSRI"/>
+      </coding>
+    </type>
+    <system value="http://acme-health.com/emr1/patient"/>
+    <value value="a11bad95-a9df-4703-9691-b38bba13892d"/>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <type>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <code value="MDI"/>
+      </coding>
+    </type>
+    <system value="http://ibm.com/fhir/primary/patient-match-identifier"/>
+    <value value="c82a8fce-11db-4396-b10c-1150abd1a222"/>
+    <assigner>
+      <display value="IBM"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Match"/>
+    <given value="Maggie"/>
+  </name>
+  <telecom>
+    <extension url="http://hl7.org/fhir/StructureDefinition/contactpoint-country">
+      <valueString value="1"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address">
+      <valueUrl value="tel:+12145556767"/>
+    </extension>
+    <system value="phone"/>
+    <value value="214-555-1212"/>
+    <use value="home"/>
+    <rank value="2"/>
+  </telecom>
+  <telecom>
+    <system value="sms"/>
+    <value value="214-555-6767"/>
+    <use value="mobile"/>
+    <rank value="1"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1990-01-04"/>
+</Patient>

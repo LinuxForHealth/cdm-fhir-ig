@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="CDMPractitionerRole-Payer"/>
+  <meta>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+      <valueString value="tenant7209"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+      <valueString value="rgVCJnQBxvghkKTI8Hzz"/>
+    </extension>
+    <source value="http://acme-health.com/payment"/>
+    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner-role"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019723078 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner/DrJones">Practitioner/DrJones</a></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 59058001}">General physician</span></p><p><b>specialty</b>: <span title="Codes: {http://snomed.info/sct 394814009}">General practice (specialty)</span></p><p><b>location</b>: <a href="Location/JonesFamilyMedical">Location/JonesFamilyMedical</a></p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <code value="SSRI"/>
+      </coding>
+    </type>
+    <system value="http://acme-health.com/payment/practitioner-role"/>
+    <value value="000000000000000000019723078"/>
+    <assigner>
+      <display value="Acme Health - Claims Payment Center"/>
+    </assigner>
+  </identifier>
+  <active value="true"/>
+  <practitioner>
+    <reference value="Practitioner/DrJones"/>
+  </practitioner>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="59058001"/>
+      <display value="General physician"/>
+    </coding>
+  </code>
+  <specialty>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="394814009"/>
+      <display value="General practice (specialty)"/>
+    </coding>
+  </specialty>
+  <location>
+    <reference value="Location/JonesFamilyMedical"/>
+  </location>
+</PractitionerRole>

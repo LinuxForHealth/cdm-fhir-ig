@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "insurance-plan-benefit-type"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">administrative-fee<a name=\"insurance-plan-benefit-type-administrative-fee\"> </a></td><td>Administrative Fee</td><td>Indicates the administrative fee for the component on the eligibility data.</td></tr><tr><td style=\"white-space:nowrap\">employee-contribution<a name=\"insurance-plan-benefit-type-employee-contribution\"> </a></td><td>Employee Contribution</td><td>Indicates the employee premium contribution for the component on the eligibility data.</td></tr><tr><td style=\"white-space:nowrap\">non-claim-payment<a name=\"insurance-plan-benefit-type-non-claim-payment\"> </a></td><td>Non Claim Payment</td><td>Indicates the miscellaneous other non-claim payments on the eligibility data, not included in Administrative Fee, Capitation Amount, HMO Premium or Employee Contribution Amount.</td></tr><tr><td style=\"white-space:nowrap\">monthly-premium-paid<a name=\"insurance-plan-benefit-type-monthly-premium-paid\"> </a></td><td>Monthly Premium Paid</td><td>Indicates the monthly premium paid for the component on the eligibility data.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "InsurancePlanBenefitTypeCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Insurance Plan Benefit Type Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-06-14T16:26:11-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "The codes that indicates the specific types of costs (admin fees, premiums, etc.) that may be tied to a member based on their Insurance plan cost category."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "administrative-fee" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Administrative Fee" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the administrative fee for the component on the eligibility data." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "employee-contribution" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Employee Contribution" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the employee premium contribution for the component on the eligibility data." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "non-claim-payment" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non Claim Payment" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the miscellaneous other non-claim payments on the eligibility data, not included in Administrative Fee, Capitation Amount, HMO Premium or Employee Contribution Amount." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "monthly-premium-paid" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Monthly Premium Paid" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Indicates the monthly premium paid for the component on the eligibility data." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

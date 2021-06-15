@@ -12,13 +12,13 @@
   <sch:pattern>
     <sch:title>f:Extension</sch:title>
     <sch:rule context="f:Extension">
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/match-source-reference']) &gt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/match-source-reference': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/match-source-reference']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/match-source-reference': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/match-method']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/match-method': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/split-method']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/split-method': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/match-confidence-level']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/match-confidence-level': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/match-confidence-score']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/match-confidence-score': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://alvearie.io/fhir/StructureDefinition/match-period']) &lt;= 1">extension with URL = 'http://alvearie.io/fhir/StructureDefinition/match-period': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference']) &gt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/match-method']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/match-method': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/split-method']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/split-method': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/match-period']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/match-period': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value[x]) &lt;= 0">value[x]: maximum cardinality of 'value[x]' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>

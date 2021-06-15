@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="claim-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-wh-payer-claim-type.html"><code>http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type</code></a></li></ul></div>
+  </text>
+  <url value="http://ibm.com/fhir/cdm/ValueSet/claim-type"/>
+  <version value="0.1.0"/>
+  <name value="ClaimTypeValueSet"/>
+  <title value="Claim Type Value Set"/>
+  <status value="active"/>
+  <date value="2021-06-14T16:26:11-05:00"/>
+  <contact>
+    <name value="Kim Kenna"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sloand@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Tom Eggebraaten"/>
+    <telecom>
+      <system value="email"/>
+      <value value="tegge@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <description value="IBM Health Data Connect standard value set for the coverage type under which the claim was paid"/>
+  <compose>
+    <include>
+      <system value="http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type"/>
+    </include>
+  </compose>
+</ValueSet>
