@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="insurance-plan-benefit-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">administrative-fee<a name="insurance-plan-benefit-type-administrative-fee"> </a></td><td>Administrative Fee</td><td>Indicates the administrative fee for the component on the eligibility data.</td></tr><tr><td style="white-space:nowrap">employee-contribution<a name="insurance-plan-benefit-type-employee-contribution"> </a></td><td>Employee Contribution</td><td>Indicates the employee premium contribution for the component on the eligibility data.</td></tr><tr><td style="white-space:nowrap">non-claim-payment<a name="insurance-plan-benefit-type-non-claim-payment"> </a></td><td>Non Claim Payment</td><td>Indicates the miscellaneous other non-claim payments on the eligibility data, not included in Administrative Fee, Capitation Amount, HMO Premium or Employee Contribution Amount.</td></tr><tr><td style="white-space:nowrap">monthly-premium-paid<a name="insurance-plan-benefit-type-monthly-premium-paid"> </a></td><td>Monthly Premium Paid</td><td>Indicates the monthly premium paid for the component on the eligibility data.</td></tr></table></div>
+  </text>
+  <url value="http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type"/>
+  <version value="0.1.0"/>
+  <name value="InsurancePlanBenefitTypeCodeSystem"/>
+  <title value="Insurance Plan Benefit Type Codes"/>
+  <status value="active"/>
+  <date value="2021-06-15T15:17:59-05:00"/>
+  <contact>
+    <name value="Kim Kenna"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sloand@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Tom Eggebraaten"/>
+    <telecom>
+      <system value="email"/>
+      <value value="tegge@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <description value="The codes that indicates the specific types of costs (admin fees, premiums, etc.) that may be tied to a member based on their Insurance plan cost category."/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="administrative-fee"/>
+    <display value="Administrative Fee"/>
+    <definition value="Indicates the administrative fee for the component on the eligibility data."/>
+  </concept>
+  <concept>
+    <code value="employee-contribution"/>
+    <display value="Employee Contribution"/>
+    <definition value="Indicates the employee premium contribution for the component on the eligibility data."/>
+  </concept>
+  <concept>
+    <code value="non-claim-payment"/>
+    <display value="Non Claim Payment"/>
+    <definition value="Indicates the miscellaneous other non-claim payments on the eligibility data, not included in Administrative Fee, Capitation Amount, HMO Premium or Employee Contribution Amount."/>
+  </concept>
+  <concept>
+    <code value="monthly-premium-paid"/>
+    <display value="Monthly Premium Paid"/>
+    <definition value="Indicates the monthly premium paid for the component on the eligibility data."/>
+  </concept>
+</CodeSystem>

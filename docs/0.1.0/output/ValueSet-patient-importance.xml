@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="patient-importance"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://terminology.hl7.org/ValueSet/v3-PatientImportance</code></li><li>Include all codes defined in <a href="CodeSystem-patient-importance.html"><code>http://ibm.com/fhir/cdm/CodeSystem/patient-importance</code></a></li></ul></div>
+  </text>
+  <url value="http://ibm.com/fhir/cdm/ValueSet/patient-importance"/>
+  <version value="0.1.0"/>
+  <name value="PatientImportanceValueSet"/>
+  <title value="Patient Importance Value Set"/>
+  <status value="active"/>
+  <date value="2021-06-15T15:17:59-05:00"/>
+  <contact>
+    <name value="Kim Kenna"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sloand@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Tom Eggebraaten"/>
+    <telecom>
+      <system value="email"/>
+      <value value="tegge@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <description value="Patient importance status codes derived from customer-specific code mappings, used to trigger or limit IBM Health Data Connect patient operations."/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/ValueSet/v3-PatientImportance"/>
+    </include>
+    <include>
+      <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-importance"/>
+    </include>
+  </compose>
+</ValueSet>
