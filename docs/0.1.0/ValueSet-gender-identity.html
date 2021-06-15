@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -41,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.82"}
-    h3,h4,h5,h6{--heading-prefix:"2.82"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.246"}
+    h3,h4,h5,h6{--heading-prefix:"2.246"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -94,21 +93,24 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Gender Identity Value Set</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://alvearie.io/fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -154,12 +156,12 @@
   </p>
   <table class="grid">
 <tbody>
-<tr><td>Defining URL:</td><td>http://alvearie.io/fhir/ValueSet/gender-identity</td></tr>
+<tr><td>Defining URL:</td><td>http://ibm.com/fhir/cdm/ValueSet/gender-identity</td></tr>
  <tr><td>Version:</td><td>0.1.0</td></tr>
  <tr><td>Name:</td><td>GenderIdentityValueSet</td></tr>
  <tr><td>Title:</td><td>Gender Identity Value Set</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-04-30T10:15:05-05:00</td></tr>
- <tr><td>Definition:</td><td><p>Gender identity codes typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.</p>
+ <tr><td>Status:</td><td>Active as of 2021-06-14T16:26:11-05:00</td></tr>
+ <tr><td>Definition:</td><td><p>Typically, gender identity codes are described in terms of masculinity and femininity. Gender identity is a social construct that varies, both across different cultures and over time. This value is often used for identity purposes, and should be collected directly from the patient.</p>
 </td></tr>
  <tr><td>Source Resource:</td><td><a href="ValueSet-gender-identity.xml.html">XML</a> / <a href="ValueSet-gender-identity.json.html">JSON</a> / <a href="ValueSet-gender-identity.ttl.html">Turtle</a></td></tr>
 </tbody></table>
@@ -170,7 +172,8 @@
   </p>
   
 <ul>
- <li><a href="StructureDefinition-alvearie-match-patient.html">Alvearie Match Patient</a></li>
+ <li><a href="StructureDefinition-cdm-match-patient.html">CDM Match Patient</a></li>
+ <li><a href="StructureDefinition-cdm-patient.html">CDM Patient</a></li>
 </ul>
 
 
@@ -183,13 +186,13 @@
 
   <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div><ul><li>Include all codes defined in <a href="CodeSystem-gender-identity.html"><code>http://alvearie.io/fhir/CodeSystem/gender-identity</code></a></li></ul></div>
+<div><ul><li>Include all codes defined in <a href="CodeSystem-gender-identity.html"><code>http://ibm.com/fhir/cdm/CodeSystem/gender-identity</code></a></li></ul></div>
 
   <p>&nbsp;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div><p>This value set contains 6 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-gender-identity.html">Gender Identity Codes v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-gender-identity.html"><code>http://alvearie.io/fhir/CodeSystem/gender-identity</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---alvearie.io-fhir-CodeSystem-gender-identity-female"> </a><a href="CodeSystem-gender-identity.html#gender-identity-female">female</a></td><td>Female</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---alvearie.io-fhir-CodeSystem-gender-identity-gender-neutral"> </a><a href="CodeSystem-gender-identity.html#gender-identity-gender-neutral">gender-neutral</a></td><td>Gender-neutral</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---alvearie.io-fhir-CodeSystem-gender-identity-male"> </a><a href="CodeSystem-gender-identity.html#gender-identity-male">male</a></td><td>Male</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---alvearie.io-fhir-CodeSystem-gender-identity-non-binary"> </a><a href="CodeSystem-gender-identity.html#gender-identity-non-binary">non-binary</a></td><td>Non-binary</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---alvearie.io-fhir-CodeSystem-gender-identity-other"> </a><a href="CodeSystem-gender-identity.html#gender-identity-other">other</a></td><td>Other</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---alvearie.io-fhir-CodeSystem-gender-identity-unknown"> </a><a href="CodeSystem-gender-identity.html#gender-identity-unknown">unknown</a></td><td>Unknown</td><td></td></tr></table></div>
+  <div><p>This value set contains 6 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-gender-identity.html">Gender Identity Codes v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href="CodeSystem-gender-identity.html"><code>http://ibm.com/fhir/cdm/CodeSystem/gender-identity</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-gender-identity-female"> </a><a href="CodeSystem-gender-identity.html#gender-identity-female">female</a></td><td>Female</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-gender-identity-gender-neutral"> </a><a href="CodeSystem-gender-identity.html#gender-identity-gender-neutral">gender-neutral</a></td><td>Gender-neutral</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-gender-identity-male"> </a><a href="CodeSystem-gender-identity.html#gender-identity-male">male</a></td><td>Male</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-gender-identity-non-binary"> </a><a href="CodeSystem-gender-identity.html#gender-identity-non-binary">non-binary</a></td><td>Non-binary</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-gender-identity-other"> </a><a href="CodeSystem-gender-identity.html#gender-identity-other">other</a></td><td>Other</td><td></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-gender-identity-unknown"> </a><a href="CodeSystem-gender-identity.html#gender-identity-unknown">unknown</a></td><td>Unknown</td><td></td></tr></table></div>
 
   <hr/>
   <p>
@@ -246,18 +249,20 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="12f91831-feb5-4ea3-a5db-a955e6e086ae">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 30, 2021 10:15-0500">2021-04-30</span>
+        <p><a name="5fc11f01-d7d0-4644-a21c-697badaccf52">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 14, 2021 16:26-0500">2021-06-14</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-          </span>
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->

@@ -1,0 +1,450 @@
+{
+  "resourceType": "Claim",
+  "id": "CDMClaimFacilityInstance",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "valueString": "tenant7209"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "valueString": "rgVCJnQBxvghkKTI8Hzz"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+        "valueString": "TREX"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id",
+        "valueString": "7209"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-record-id",
+        "valueIdentifier": {
+          "system": "http://acme-health.com/WellnessMedicalFacility",
+          "value": "7209_07869_e00080779_3938586_2516181"
+        }
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/source-file-id",
+        "valueString": "e00030779"
+      }
+    ],
+    "source": "http://acme-health.com/WellnessMedicalFacility",
+    "profile": [
+      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Age In Years</b>: 20</p><p><b>Claim Snapshot Provider Name</b>: Dr D. Kelly, MD</p><p><b>Claim Snapshot Provider Zip Code</b>: 75014</p><p><b>Employee Business Unit</b>: <span title=\"Codes: {http://acme-health.com/CodeSystem/local-employee-business-unit EmpBusUnit1}\">EmpBusUnit1</span></p><p><b>Referral Indicator</b>: N</p><p><b>Health Data Connect PCP Responsibility Indicator</b>: N</p><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019721078 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type medical}, {http://acmehealth.com/CodeSystem/local-claim-type Medical}\">Medical claim; Institutional/Professional unknown</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-CDMPatientInstance.html\">Generated Summary: Source System Row Identifier: unencryp-id1234 (OFFICIAL), Source System Row Identifier: encryp-id1234 (SECONDARY), Medical record number: 1011110101 (OFFICIAL), Medical record number: 1011110101 (USUAL), Social Beneficiary Identifier: 0001223333 (OFFICIAL), Social Beneficiary Identifier: 1CA0CA0CC00 (OFFICIAL), Social Beneficiary Identifier: 987654321000 (OFFICIAL), Match Data Identifier: 7b78d6de-46cb-4fbb-930d-2a74e24b17fe (SECONDARY); active; Firstname McLastname ; , Phone: 216-345-2662, Phone: 216-555-2222, fmclastname@fakemail.com; gender: male; birthDate: 1990-01-04; deceased: Sep 27, 2020 7:00:00 PM</a></p><p><b>billablePeriod</b>: 2017-06-02 --&gt; 2017-06-02</p><p><b>created</b>: Jul 25, 2017 5:31:00 PM</p><p><b>provider</b>: <a href=\"Practitioner-DrKelly.html\">Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com</a></p><p><b>priority</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span></p><h3>CareTeams</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Provider</b></td><td><b>Role</b></td></tr><tr><td>*</td><td>1</td><td><a href=\"Practitioner-DrKelly.html\">Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com</a></td><td><span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role ordering}\">Ordering provider</span></td></tr></table><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type capitated-service-indicator}\">Capitated service indicator</span></p><p><b>value</b>: N</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory other}\">Other</span></p><p><b>code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/er-or-observation-room-service 1}\">Emergency Room</span></p><p><b>value</b>: N</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 3</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory hospitalized}\">Hospitalized</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 4</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory hospitalized}\">Hospitalized</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 5</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory hospitalized}\">Hospitalized</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 6</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory hospitalized}\">Hospitalized</span></p><p><b>code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type days-count}\">Days count</span></p><p><b>value</b>: 3 /d</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 8</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory other}\">Other</span></p><p><b>code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/room-and-board-service 1}\">Room and Board</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 9</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type network-provider-indicator}\">Network provider indicator</span></p><p><b>value</b>: N</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 1</p><p><b>diagnosis</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm R51}\">Headache</span></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype principal}\">Principal Diagnosis</span></p><p><b>onAdmission</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/diagnosis-present-on-admission Y}\">Yes, present ad admission</span></p><p><b>packageCode</b>: <span title=\"Codes: {https://www.cms.gov/icd10m/version37-fullcode-cms/fullcode_cms/P0002.html 102}\">102</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 2</p><p><b>diagnosis</b>: <span title=\"Codes: {http://hl7.org/fhir/sid/icd-10-cm G43.909}\">Migraine, Unspecified, not Intractable, without Status Migrainosus</span></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/ex-diagnosistype discharge}\">Discharge Diagnosis</span></p><p><b>onAdmission</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/diagnosis-present-on-admission Y}\">Yes, present ad admission</span></p></blockquote><h3>Procedures</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Type</b></td><td><b>Procedure[x]</b></td></tr><tr><td>*</td><td>1</td><td><span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/procedure-type surgical}\">surgical</span></td><td><span title=\"Codes: {https://www.cms.gov/medicare/icd-10/2021-icd-10-pcs 30230Q1}\">30230Q1</span></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Identifier</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td>id: PPOB</td><td><a href=\"Coverage-CoverageExample.html\">Generated Summary: id: unencryp-id1234; status: active; subscriberId: FamilyId_0001; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}, {http://ibm.com/fhir/cdm/CodeSystem/wh-payer-subscriber-relationship childother}\">Self</span>; period: 2000-01-01 --&gt; 2000-10-31</a></td></tr></table><h3>Items</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Sequence</b></td><td><b>Revenue</b></td><td><b>ProductOrService</b></td><td><b>Modifier</b></td><td><b>Serviced[x]</b></td><td><b>Location[x]</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td></td><td>1</td><td><span title=\"Codes: {https://www.nubc.org/RevenueCodes 0450}\">Emergency Room</span></td><td><span title=\"Codes: {http://www.ama-assn.org/go/cpt 20200}, {http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens 69452015120}\">superficial muscle biopsy</span></td><td><span title=\"Codes: {https://oidref.com/2.16.840.1.113883.6.285 AF}\">AF</span></td><td>2017-06-02</td><td><span title=\"Codes: {https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set 23}\">23</span></td><td>3</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years",
+      "valueUnsignedInt": 20
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-name",
+      "valueString": "Dr D. Kelly, MD"
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code",
+      "valueString": "75014"
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://acme-health.com/CodeSystem/local-employee-business-unit",
+            "code": "EmpBusUnit1"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/referral-indicator",
+      "valueString": "N"
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-pcp-responsibility-indicator",
+      "valueString": "N"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "SSRI"
+          }
+        ]
+      },
+      "system": "http://acmehealth.com/CodeSystem/local-claim-identifier",
+      "value": "000000000000000000019721078",
+      "assigner": {
+        "display": "Acme Health - Wellness Medical Facility"
+      }
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type",
+        "code": "medical"
+      },
+      {
+        "system": "http://acmehealth.com/CodeSystem/local-claim-type",
+        "code": "Medical"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/CDMPatientInstance"
+  },
+  "billablePeriod": {
+    "start": "2017-06-02",
+    "end": "2017-06-02"
+  },
+  "created": "2017-07-25T17:31:00-05:00",
+  "provider": {
+    "reference": "Practitioner/DrKelly"
+  },
+  "priority": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+        "code": "normal"
+      }
+    ]
+  },
+  "careTeam": [
+    {
+      "sequence": 1,
+      "provider": {
+        "reference": "Practitioner/DrKelly"
+      },
+      "role": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role",
+            "code": "ordering"
+          }
+        ]
+      }
+    }
+  ],
+  "supportingInfo": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "code": "capitated-service-indicator"
+          }
+        ]
+      },
+      "valueString": "N"
+    },
+    {
+      "sequence": 2,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "other"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/er-or-observation-room-service",
+            "code": "1"
+          }
+        ]
+      },
+      "valueString": "N"
+    },
+    {
+      "sequence": 3,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "hospitalized"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 4,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "hospitalized"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 5,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "hospitalized"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 6,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "hospitalized"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "code": "days-count"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "unit": "/d",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "sequence": 8,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "other"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/room-and-board-service",
+            "code": "1"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 9,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "code": "network-provider-indicator"
+          }
+        ]
+      },
+      "valueString": "N"
+    }
+  ],
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosisCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+            "code": "R51",
+            "display": "Headache"
+          }
+        ]
+      },
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+              "code": "principal"
+            }
+          ]
+        }
+      ],
+      "onAdmission": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/diagnosis-present-on-admission",
+            "code": "Y"
+          }
+        ]
+      },
+      "packageCode": {
+        "coding": [
+          {
+            "system": "https://www.cms.gov/icd10m/version37-fullcode-cms/fullcode_cms/P0002.html",
+            "code": "102"
+          }
+        ]
+      }
+    },
+    {
+      "sequence": 2,
+      "diagnosisCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10-cm",
+            "code": "G43.909",
+            "display": "Migraine, Unspecified, not Intractable, without Status Migrainosus"
+          }
+        ]
+      },
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+              "code": "discharge"
+            }
+          ]
+        }
+      ],
+      "onAdmission": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/diagnosis-present-on-admission",
+            "code": "Y"
+          }
+        ]
+      }
+    }
+  ],
+  "procedure": [
+    {
+      "sequence": 1,
+      "type": [
+        {
+          "coding": [
+            {
+              "system": "http://ibm.com/fhir/cdm/CodeSystem/procedure-type",
+              "code": "surgical"
+            }
+          ]
+        }
+      ],
+      "procedureCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://www.cms.gov/medicare/icd-10/2021-icd-10-pcs",
+            "code": "30230Q1"
+          }
+        ]
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "identifier": {
+        "system": "http://acme-health.com/BCBS",
+        "value": "PPOB"
+      },
+      "coverage": {
+        "reference": "Coverage/CoverageExample"
+      }
+    }
+  ],
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/capitated-service-indicator",
+          "valueString": "N"
+        }
+      ],
+      "sequence": 1,
+      "revenue": {
+        "coding": [
+          {
+            "system": "https://www.nubc.org/RevenueCodes",
+            "code": "0450",
+            "display": "Emergency Room"
+          }
+        ]
+      },
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://www.ama-assn.org/go/cpt",
+            "code": "20200",
+            "display": "superficial muscle biopsy"
+          },
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens",
+            "code": "69452015120"
+          }
+        ]
+      },
+      "modifier": [
+        {
+          "coding": [
+            {
+              "system": "https://oidref.com/2.16.840.1.113883.6.285",
+              "code": "AF"
+            }
+          ]
+        }
+      ],
+      "servicedDate": "2017-06-02",
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
+            "code": "23"
+          }
+        ]
+      },
+      "quantity": {
+        "extension": [
+          {
+            "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service",
+            "valueQuantity": {
+              "value": 5
+            }
+          }
+        ],
+        "value": 3
+      }
+    }
+  ]
+}

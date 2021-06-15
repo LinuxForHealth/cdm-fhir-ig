@@ -43,13 +43,13 @@ Description:    "Patient status code examples"
 ValueSet:       PatientStatusValueSet
 Id:             patient-status
 Title:          "Patient Status Value Set"
-Description:    "Examples of client-specified patient status codes"
+Description:    "Examples of customer-specific patient status codes"
 * codes from system http://terminology.hl7.org/ValueSet/v3-PatientImportance
 * codes from system PatientStatusCodeSystem
 
 ValueSet:       PatientImportanceValueSet
 Id:             patient-importance
 Title:          "Patient Importance Value Set"
-Description:    "Patient importance status codes used to trigger or limit patient operations"
+Description:    "Patient importance status codes derived from customer-specific code mappings, used to trigger or limit IBM Health Data Connect patient operations."
 * codes from system http://terminology.hl7.org/ValueSet/v3-PatientImportance
 * codes from system PatientImportanceCodeSystem

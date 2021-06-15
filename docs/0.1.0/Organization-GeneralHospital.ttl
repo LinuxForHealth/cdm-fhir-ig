@@ -5,24 +5,24 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://alvearie.io/fhir/Organization/GeneralHospital> a fhir:Organization;
+<http://ibm.com/fhir/cdm/Organization/GeneralHospital> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "GeneralHospital"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://alvearie.io/fhir/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://alvearie.io/fhir/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
-     fhir:Meta.source [ fhir:value "http://acme-health.com/epic" ];
+     fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
-       fhir:value "http://alvearie.github.io/fhir/cdm/StructureDefinition/alvearie-organization";
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization";
        fhir:index 0;
-       fhir:link <http://alvearie.github.io/fhir/cdm/StructureDefinition/alvearie-organization>
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization>
      ]
   ];
   fhir:DomainResource.text [
@@ -35,14 +35,14 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://alvearie.io/fhir/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "http://acme-health.com/epic/organization" ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/emr1/organization" ];
      fhir:Identifier.value [ fhir:value "7d5007d6-edd0-48b5-b34f-5c5f948b6d13" ];
      fhir:Identifier.assigner [
-       fhir:Reference.display [ fhir:value "Acme Health - Epic" ]
+       fhir:Reference.display [ fhir:value "Acme Health - EMR1" ]
      ]
   ];
   fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
@@ -97,7 +97,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://alvearie.io/fhir/Organization/GeneralHospital.ttl> a owl:Ontology;
+<http://ibm.com/fhir/cdm/Organization/GeneralHospital.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

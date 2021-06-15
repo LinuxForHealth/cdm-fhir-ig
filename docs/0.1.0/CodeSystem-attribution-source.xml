@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="attribution-source"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/attribution-source defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">client-emr<a name="attribution-source-client-emr"> </a></td><td>Client EMR</td><td>Practitioner attribution recorded in a client's PMS or EMR system</td></tr><tr><td style="white-space:nowrap">enrollment<a name="attribution-source-enrollment"> </a></td><td>Enrollment</td><td>Practitioner provided on the eligibility record</td></tr><tr><td style="white-space:nowrap">imputed<a name="attribution-source-imputed"> </a></td><td>Imputed</td><td>Practitioner attribution derived from attribution models</td></tr></table></div>
+  </text>
+  <url value="http://ibm.com/fhir/cdm/CodeSystem/attribution-source"/>
+  <version value="0.1.0"/>
+  <name value="AttributionSourceCodeSystem"/>
+  <title value="Attribution Source Codes"/>
+  <status value="active"/>
+  <date value="2021-06-14T16:26:11-05:00"/>
+  <contact>
+    <name value="Kim Kenna"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sloand@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Tom Eggebraaten"/>
+    <telecom>
+      <system value="email"/>
+      <value value="tegge@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <description value="Sources of attribution used to associate a patient to a practitioner"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="client-emr"/>
+    <display value="Client EMR"/>
+    <definition value="Practitioner attribution recorded in a client&#39;s PMS or EMR system"/>
+  </concept>
+  <concept>
+    <code value="enrollment"/>
+    <display value="Enrollment"/>
+    <definition value="Practitioner provided on the eligibility record"/>
+  </concept>
+  <concept>
+    <code value="imputed"/>
+    <display value="Imputed"/>
+    <definition value="Practitioner attribution derived from attribution models"/>
+  </concept>
+</CodeSystem>

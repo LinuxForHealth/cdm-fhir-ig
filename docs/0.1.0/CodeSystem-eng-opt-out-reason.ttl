@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/eng-opt-out-reason> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "eng-opt-out-reason"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/eng-opt-out-reason defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">email-health-related<a name=\"eng-opt-out-reason-email-health-related\"> </a></td><td>I don't want to receive health related information via email</td></tr><tr><td style=\"white-space:nowrap\">email-address-change<a name=\"eng-opt-out-reason-email-address-change\"> </a></td><td>I have changed my email address</td></tr><tr><td style=\"white-space:nowrap\">sms-health-related<a name=\"eng-opt-out-reason-sms-health-related\"> </a></td><td>I don't want to receive health related information via sms</td></tr><tr><td style=\"white-space:nowrap\">unintended-recipient<a name=\"eng-opt-out-reason-unintended-recipient\"> </a></td><td>I am not the intended recipient</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"eng-opt-out-reason-unknown\"> </a></td><td>Unknown reason</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"eng-opt-out-reason-other\"> </a></td><td>Other</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-opt-out-reason"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "EngagementOptOutReasonCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Engagement Opt-Out Reason Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-06-14T16:26:11-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Codes indicating reasons patients may specify for opting-out of Engagement communications"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "email-health-related" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I don't want to receive health related information via email" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "email-address-change" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I have changed my email address" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "sms-health-related" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I don't want to receive health related information via sms" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "unintended-recipient" ];
+     fhir:CodeSystem.concept.display [ fhir:value "I am not the intended recipient" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown reason" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/eng-opt-out-reason.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

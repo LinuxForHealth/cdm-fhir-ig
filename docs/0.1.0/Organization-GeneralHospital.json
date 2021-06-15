@@ -4,17 +4,17 @@
   "meta": {
     "extension": [
       {
-        "url": "http://alvearie.io/fhir/StructureDefinition/tenant-id",
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
         "valueString": "99999"
       },
       {
-        "url": "http://alvearie.io/fhir/StructureDefinition/ingestion-batch-id",
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
         "valueString": "b069a545-9506-40c6-8498-23de2e189143"
       }
     ],
-    "source": "http://acme-health.com/epic",
+    "source": "http://acme-health.com/emr1",
     "profile": [
-      "http://alvearie.github.io/fhir/cdm/StructureDefinition/alvearie-organization"
+      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
     ]
   },
   "text": {
@@ -27,15 +27,15 @@
       "type": {
         "coding": [
           {
-            "system": "http://alvearie.io/fhir/CodeSystem/identifier-type",
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
             "code": "SSRI"
           }
         ]
       },
-      "system": "http://acme-health.com/epic/organization",
+      "system": "http://acme-health.com/emr1/organization",
       "value": "7d5007d6-edd0-48b5-b34f-5c5f948b6d13",
       "assigner": {
-        "display": "Acme Health - Epic"
+        "display": "Acme Health - EMR1"
       }
     }
   ],

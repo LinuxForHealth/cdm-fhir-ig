@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Coverage xmlns="http://hl7.org/fhir">
+  <id value="CoverageExample"/>
+  <meta>
+    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Age and Gender Groups</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/age-gender-group 7}">Males 20-24 yr</span></p><p><b>Age In Years</b>: 21</p><p><b>Coverage Month</b>: 2017-06-01</p><p><b>Enrollment PCP</b>: EnrollmentPCP1</p><p><b>Employee Status</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/wh-payer-employee-status-code 1}">Active Full Time</span></p><p><b>Employee Business Unit</b>: <span title="Codes: {http://acmehealth.com/CodeSystem/local-employee-business-unit EmpBusUnit1}">EmpBusUnit1</span></p><p><b>Job Class Code</b>: <span title="Codes: {http://acmehealth.com/CodeSystem/local-job-class-code jobclass1}">jobclass1</span></p><p><b>Salary Indicator</b>: Y</p><p><b>Union Worker Indicator</b>: N</p><p><b>Medicare Indicator</b>: N</p><p><b>identifier</b>: id: unencryp-id1234</p><p><b>status</b>: active</p><p><b>subscriberId</b>: FamilyId_0001</p><p><b>beneficiary</b>: <span></span></p><p><b>relationship</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship self}, {http://ibm.com/fhir/cdm/CodeSystem/wh-payer-subscriber-relationship childother}">Self</span></p><p><b>period</b>: 2000-01-01 --&gt; 2000-10-31</p><p><b>payor</b>: <span></span></p><blockquote><p><b>class</b></p><p><b>type</b>: <span title="Codes: {http://acmehealth.com/CodeSystem/local-coverage-class tier}">tier</span></p><p><b>value</b>: F</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: <span title="Codes: {http://acmehealth.com/CodeSystem/local-coverage-class tier}">tier</span></p><p><b>value</b>: F</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: <span title="Codes: {http://acmehealth.com/CodeSystem/local-coverage-class tier}">tier</span></p><p><b>value</b>: F</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: <span title="Codes: {http://acmehealth.com/CodeSystem/local-coverage-class tier}">tier</span></p><p><b>value</b>: F</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: <span title="Codes: {http://acmehealth.com/CodeSystem/local-coverage-class group}">group</span></p><p><b>value</b>: Group1</p></blockquote></div>
+  </text>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/age-gender-group">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/age-gender-group"/>
+        <code value="7"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years">
+    <valueUnsignedInt value="21"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/coverage-month">
+    <valueDate value="2017-06-01"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/enrollment-pcp">
+    <valueString value="EnrollmentPCP1"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/employee-status">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/wh-payer-employee-status-code"/>
+        <code value="1"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://acmehealth.com/CodeSystem/local-employee-business-unit"/>
+        <code value="EmpBusUnit1"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/job-class-code">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://acmehealth.com/CodeSystem/local-job-class-code"/>
+        <code value="jobclass1"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/salary-indicator">
+    <valueString value="Y"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/union-worker-indicator">
+    <valueString value="N"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/medicare-indicator">
+    <valueString value="N"/>
+  </extension>
+  <identifier>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state">
+      <valueBoolean value="false"/>
+    </extension>
+    <value value="unencryp-id1234"/>
+  </identifier>
+  <status value="active"/>
+  <subscriberId value="FamilyId_0001"/>
+  <beneficiary>
+    <type value="Person"/>
+    <identifier>
+      <system value="http://acme-health.com/emr1/person"/>
+      <value value="Payer1"/>
+    </identifier>
+  </beneficiary>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
+      <code value="self"/>
+    </coding>
+    <coding>
+      <system value="http://ibm.com/fhir/cdm/CodeSystem/wh-payer-subscriber-relationship"/>
+      <code value="childother"/>
+    </coding>
+  </relationship>
+  <period>
+    <start value="2000-01-01"/>
+    <end value="2000-10-31"/>
+  </period>
+  <payor>
+    <type value="Organiation"/>
+    <identifier>
+      <system value="http://acme-health.com/payer1/payer"/>
+      <value value="encryp-id1234"/>
+    </identifier>
+  </payor>
+  <class>
+    <type>
+      <coding>
+        <system value="http://acmehealth.com/CodeSystem/local-coverage-class"/>
+        <code value="tier"/>
+      </coding>
+    </type>
+    <value value="F"/>
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://acmehealth.com/CodeSystem/local-coverage-class"/>
+        <code value="tier"/>
+      </coding>
+    </type>
+    <value value="F"/>
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://acmehealth.com/CodeSystem/local-coverage-class"/>
+        <code value="tier"/>
+      </coding>
+    </type>
+    <value value="F"/>
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://acmehealth.com/CodeSystem/local-coverage-class"/>
+        <code value="tier"/>
+      </coding>
+    </type>
+    <value value="F"/>
+  </class>
+  <class>
+    <type>
+      <coding>
+        <system value="http://acmehealth.com/CodeSystem/local-coverage-class"/>
+        <code value="group"/>
+      </coding>
+    </type>
+    <value value="Group1"/>
+  </class>
+</Coverage>

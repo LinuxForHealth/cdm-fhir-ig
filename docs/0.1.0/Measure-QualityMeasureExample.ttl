@@ -1,0 +1,274 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Measure/QualityMeasureExample> a fhir:Measure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "QualityMeasureExample"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.valueString [ fhir:value "IBM" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.valueString [ fhir:value "Measure Authoring" ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.valueString [ fhir:value "Measure Authoring Tool (MAT)" ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.valueString [ fhir:value "1.0" ]
+     ], [
+       fhir:index 4;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.valueDateTime [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime ]
+     ];
+     fhir:Meta.source [ fhir:value "http://ibm.com/fhir/quality-measure" ];
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/quality-measure>
+     ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary" ];
+       fhir:Coding.code [ fhir:value "SECONDARY" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Measure Parameter</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here</b></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter" ];
+     fhir:Extension.valueParameterDefinition [
+       fhir:ParameterDefinition.name [ fhir:value "measurePeriod" ];
+       fhir:ParameterDefinition.use [ fhir:value "out" ];
+       fhir:ParameterDefinition.type [ fhir:value "Period" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter" ];
+     fhir:Extension.valueParameterDefinition [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/default-value" ];
+         fhir:Extension.valueString [ fhir:value "Pharyngitis Testing" ]
+       ];
+       fhir:ParameterDefinition.name [ fhir:value "complianceDisplayName" ];
+       fhir:ParameterDefinition.use [ fhir:value "out" ];
+       fhir:ParameterDefinition.type [ fhir:value "string" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter" ];
+     fhir:Extension.valueParameterDefinition [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/default-value" ];
+         fhir:Extension.valueString [ fhir:value "Once yearly" ]
+       ];
+       fhir:ParameterDefinition.name [ fhir:value "complianceFrequency" ];
+       fhir:ParameterDefinition.use [ fhir:value "out" ];
+       fhir:ParameterDefinition.type [ fhir:value "string" ]
+     ]
+  ];
+  fhir:Measure.url [ fhir:value "http://ibm.com/fhir/cdm/Measure/QualityMeasureExample"];
+  fhir:Measure.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "RI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ibm.com/fhir/cdm/quality-measure" ];
+     fhir:Identifier.value [ fhir:value "8f3a1491-a07f-4860-8977-e7dac7398175" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "IBM" ]
+     ]
+  ];
+  fhir:Measure.version [ fhir:value "0.1.0"];
+  fhir:Measure.name [ fhir:value "Diabetes_HbA1c_Test_Performed"];
+  fhir:Measure.status [ fhir:value "active"];
+  fhir:Measure.subjectCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/resource-types" ];
+       fhir:Coding.code [ fhir:value "Patient" ]
+     ]
+  ];
+  fhir:Measure.date [ fhir:value "2020-01-01"^^xsd:date];
+  fhir:Measure.publisher [ fhir:value "IBM"];
+  fhir:Measure.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:Measure.description [ fhir:value "Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period"];
+  fhir:Measure.useContext [
+     fhir:index 0;
+     fhir:UsageContext.code [
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/usage-context-type" ];
+       fhir:Coding.code [ fhir:value "clinical" ]
+     ];
+     fhir:UsageContext.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:73211009;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "73211009" ];
+         fhir:Coding.display [ fhir:value "Diabetes mellitus (disorder)" ]
+       ]
+     ]
+  ];
+  fhir:Measure.approvalDate [ fhir:value "2020-01-01"^^xsd:date];
+  fhir:Measure.lastReviewDate [ fhir:value "2020-01-01"^^xsd:date];
+  fhir:Measure.effectivePeriod [
+     fhir:Period.start [ fhir:value "2020-01-01"^^xsd:date ]
+  ];
+  fhir:Measure.topic [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/codesystem-definition-topic.html" ];
+       fhir:Coding.code [ fhir:value "treatment" ]
+     ]
+  ];
+  fhir:Measure.library [
+     fhir:value "Measure/Library";
+     fhir:index 0;
+     fhir:link <http://ibm.com/fhir/cdm/Measure/Library>
+  ];
+  fhir:Measure.scoring [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-scoring" ];
+       fhir:Coding.code [ fhir:value "proportion" ]
+     ]
+  ];
+  fhir:Measure.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-type" ];
+       fhir:Coding.code [ fhir:value "process" ]
+     ]
+  ];
+  fhir:Measure.improvementNotation [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-improvement-notation" ];
+       fhir:Coding.code [ fhir:value "increase" ]
+     ]
+  ];
+  fhir:Measure.guidance [ fhir:value "Only patients with a diagnosis of Type 1 or Type 2 diabetes should be included in the denominator of this measure.  Patients with a diagnosis of secondary diabetes due to another condition should not be included."];
+  fhir:Measure.group [
+     fhir:index 0;
+     fhir:Measure.group.population [
+       fhir:index 0;
+       fhir:Element.id [ fhir:value "dm-hba1c-initial-pop" ];
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "initial-population" ]
+         ]
+       ];
+       fhir:Measure.group.population.description [ fhir:value "Patients 18-75 years of age with diabetes" ];
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/cql" ];
+         fhir:Expression.expression [ fhir:value "DmHbA1cTest.InInitialPopulation" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.id [ fhir:value "dm-hba1c-den" ];
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "denominator" ]
+         ]
+       ];
+       fhir:Measure.group.population.description [ fhir:value "Patients 18-75 years of age with diabetes with a visit during the measurement period" ];
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/cql" ];
+         fhir:Expression.expression [ fhir:value "DmHbA1cTest.InDenominator" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "dm-hba1c-num" ];
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "numerator" ]
+         ]
+       ];
+       fhir:Measure.group.population.description [ fhir:value "Patients who have had HbA1c test within the measurement period" ];
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/cql" ];
+         fhir:Expression.expression [ fhir:value "DmHbA1cTest.InNumerator" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.id [ fhir:value "dm-hba1c-caregap-controlled" ];
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/measure-population-type" ];
+           fhir:Coding.code [ fhir:value "care-gap" ]
+         ]
+       ];
+       fhir:Measure.group.population.description [ fhir:value "DM Control - Low Risk" ];
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/cql" ];
+         fhir:Expression.expression [ fhir:value "DmHbA1cTest.InDmControlled" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "dm-hba1c-caregap-poor-control" ];
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/measure-population-type" ];
+           fhir:Coding.code [ fhir:value "care-gap" ]
+         ]
+       ];
+       fhir:Measure.group.population.description [ fhir:value "DM Poor Control - High Risk" ];
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/cql" ];
+         fhir:Expression.expression [ fhir:value "DmHbA1cTest.InDmPoorControl" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Measure/QualityMeasureExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

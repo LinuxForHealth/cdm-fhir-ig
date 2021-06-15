@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "attribution-code-system"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">client-emr-pcp<a name=\"attribution-code-system-client-emr-pcp\"> </a></td><td>Client EMR PCP</td><td>Primary care physician recorded in a client's PMS or EMR system</td></tr><tr><td style=\"white-space:nowrap\">eng-attr-pcp<a name=\"attribution-code-system-eng-attr-pcp\"> </a></td><td>Engagement Attributed PCP</td><td>Primary care physician attributed by the Engagement pipeline</td></tr><tr><td style=\"white-space:nowrap\">eng-attr-specialist<a name=\"attribution-code-system-eng-attr-specialist\"> </a></td><td>Engagement Attributed Specialist</td><td>Specialist physician attributed by the Engagement pipeline</td></tr><tr><td style=\"white-space:nowrap\">enrollment<a name=\"attribution-code-system-enrollment\"> </a></td><td>Enrollment</td><td>Practitioner provided on the eligibility record</td></tr><tr><td style=\"white-space:nowrap\">adv-imputed-pcp<a name=\"attribution-code-system-adv-imputed-pcp\"> </a></td><td>Advantage Imputed PCP</td><td>Primary care physician imputed by the Advantage pipeline</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "AttributionCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Attribution Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-06-14T16:26:11-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Types of attribution used to associate a patient to a provider"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "client-emr-pcp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Client EMR PCP" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Primary care physician recorded in a client's PMS or EMR system" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "eng-attr-pcp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Engagement Attributed PCP" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Primary care physician attributed by the Engagement pipeline" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "eng-attr-specialist" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Engagement Attributed Specialist" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Specialist physician attributed by the Engagement pipeline" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "enrollment" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Enrollment" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Practitioner provided on the eligibility record" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "adv-imputed-pcp" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Advantage Imputed PCP" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Primary care physician imputed by the Advantage pipeline" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
