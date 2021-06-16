@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Contract/ExampleFFVInitiative> a fhir:Contract;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExampleFFVInitiative"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ffv-initative-resource";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/ffv-initative-resource>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Attribution Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system enrollment}\">Enrollment</span></p><p><b>FFV Schedule</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/ffv-schedule monthly}\">Monthly</span></p><p><b>identifier</b>: Advantage Database Key: 2, Advantage customer key: Example FFV Initative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/attribution-code" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system" ];
+         fhir:Coding.code [ fhir:value "enrollment" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ffv-schedule" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/ffv-schedule" ];
+         fhir:Coding.code [ fhir:value "monthly" ]
+       ]
+     ]
+  ];
+  fhir:Contract.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "ADKEY" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "2" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "CUSTKEY" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "Example FFV Initative" ]
+  ];
+  fhir:Contract.title [ fhir:value "Primary Care Incentive Program"];
+  fhir:Contract.supportingInfo [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "participating-providers-list-1" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "included-patients-list-1" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "excluded-patients-list-1" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Contract/ExampleFFVInitiative.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

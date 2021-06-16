@@ -1,0 +1,178 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "adjudication-category",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/adjudication-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">allowed<a name=\"adjudication-category-allowed\"> </a></td><td>Allowed Amount</td><td>The maximum amount allowed by the plan for payment</td></tr><tr><td style=\"white-space:nowrap\">coinsurance<a name=\"adjudication-category-coinsurance\"> </a></td><td>Coinsurance</td><td>The coinsurance paid by the subscriber as specified in the plan provision</td></tr><tr><td style=\"white-space:nowrap\">copay<a name=\"adjudication-category-copay\"> </a></td><td>Copayment</td><td>The copayment paid by the subscriber, as specified in the plan provision</td></tr><tr><td style=\"white-space:nowrap\">deductible<a name=\"adjudication-category-deductible\"> </a></td><td>Deductible Amount</td><td>The amount paid by the subscriber through the deductible arrangement of the plan</td></tr><tr><td style=\"white-space:nowrap\">discount<a name=\"adjudication-category-discount\"> </a></td><td>Discount Amount</td><td>The discount amount applied to the service, based on plan pricing reductions</td></tr><tr><td style=\"white-space:nowrap\">drg-outlier<a name=\"adjudication-category-drg-outlier\"> </a></td><td>DRG Outlier</td><td>The Diagnosis Related Group (DRG) outlier amount, as reported on the facility claim</td></tr><tr><td style=\"white-space:nowrap\">excess_copay<a name=\"adjudication-category-excess_copay\"> </a></td><td>Excess Copayment</td><td>The amount paid by the subscriber outside of the flat copayment amount. Examples: (1) Additional copayment when selecting a brand name medication, instead of the generic alternative, or (2) Selecting a non-formulary medication, instead of the formulary option.</td></tr><tr><td style=\"white-space:nowrap\">excluded1<a name=\"adjudication-category-excluded1\"> </a></td><td>Excluded Amount 1</td><td>The ineligible amount or not covered amount that is associated with a reason code 1</td></tr><tr><td style=\"white-space:nowrap\">excluded2<a name=\"adjudication-category-excluded2\"> </a></td><td>Excluded Amount 2</td><td>The ineligible amount or not covered amount that is associated with a reason code 2</td></tr><tr><td style=\"white-space:nowrap\">excluded3<a name=\"adjudication-category-excluded3\"> </a></td><td>Excluded Amount 3</td><td>The ineligible amount or not covered amount that is associated with a reason code 3</td></tr><tr><td style=\"white-space:nowrap\">ffs-equivalent<a name=\"adjudication-category-ffs-equivalent\"> </a></td><td>Fee For Service Equivalent</td><td>For capitated services (encounter records), the fee-for-service equivalent amount for the service</td></tr><tr><td style=\"white-space:nowrap\">fully-insured-payment<a name=\"adjudication-category-fully-insured-payment\"> </a></td><td>Fully Insured Payment</td><td>Under a fully-insured arrangement, the actual check amount for the service. This represents the amount after applying all plan provisions and cost-sharing.</td></tr><tr><td style=\"white-space:nowrap\">healthcare-reimbursement<a name=\"adjudication-category-healthcare-reimbursement\"> </a></td><td>Healthcare Reimbursement Amount</td><td>The amount applied towards the service, funded by the subscriber's Health Reimbursement Arrangement (HRA)</td></tr><tr><td style=\"white-space:nowrap\">healthcare-savings-account<a name=\"adjudication-category-healthcare-savings-account\"> </a></td><td>Healthcare Savings Account</td><td>The amount applied towards the service, funded by the patient's Heathcare Savings Account (HSA)</td></tr><tr><td style=\"white-space:nowrap\">medicare-allowed<a name=\"adjudication-category-medicare-allowed\"> </a></td><td>Medicare Allowed Amount</td><td>The maximum amount allowed by Medicare for payment</td></tr><tr><td style=\"white-space:nowrap\">medicare-coinsurance<a name=\"adjudication-category-medicare-coinsurance\"> </a></td><td>Medicare Coinsurance Amount</td><td>The coinsurance amount determined by Medicare for the service</td></tr><tr><td style=\"white-space:nowrap\">medicare-deductible<a name=\"adjudication-category-medicare-deductible\"> </a></td><td>Medicare Deductible Amount</td><td>The deductible amount for the service, as determined by Medicare, that must be paid before Medicare pays</td></tr><tr><td style=\"white-space:nowrap\">medicare-paid<a name=\"adjudication-category-medicare-paid\"> </a></td><td>Medicare Paid Amount</td><td>The amount paid by Medicare for the claim</td></tr><tr><td style=\"white-space:nowrap\">net-payment<a name=\"adjudication-category-net-payment\"> </a></td><td>Net Payment</td><td>The actual check amount for the service. This represents the amount after applying all plan provisions and cost-sharing.</td></tr><tr><td style=\"white-space:nowrap\">out-of-network-access-fee<a name=\"adjudication-category-out-of-network-access-fee\"> </a></td><td>ITS Access Fee (Out of Network Access Fee)</td><td>The amount of the ITS access fee charged by the host plan for out-of-state patient use of its provider network</td></tr><tr><td style=\"white-space:nowrap\">out-of-network-surcharge-fee<a name=\"adjudication-category-out-of-network-surcharge-fee\"> </a></td><td>ITS Surcharge Amount (Out of Network Surcharge Amount)</td><td>The amount of the ITS surcharge added to the ITS access fee by the host plan for out-of-state patient use of its provider network</td></tr><tr><td style=\"white-space:nowrap\">patient-liability<a name=\"adjudication-category-patient-liability\"> </a></td><td>Patient Liability</td><td>The total amount of the service for which the subscriber is responsible. Generally, this includes, for example, copayments, coinsurance, and deductibles.</td></tr><tr><td style=\"white-space:nowrap\">penalty<a name=\"adjudication-category-penalty\"> </a></td><td>Penalty</td><td>The penalty amount that reduces provider payments for the service. This is due to penalties that result from not meeting plan standards.</td></tr><tr><td style=\"white-space:nowrap\">remittance<a name=\"adjudication-category-remittance\"> </a></td><td>Remittance</td><td/></tr><tr><td style=\"white-space:nowrap\">submitted<a name=\"adjudication-category-submitted\"> </a></td><td>Submitted</td><td>The submitted or billed charge amount, as reported by the provider for the service</td></tr><tr><td style=\"white-space:nowrap\">tax<a name=\"adjudication-category-tax\"> </a></td><td>Tax Amount</td><td>The state tax or another tax amount for the claim service record for medical and drug claims. Note that this is not the sales tax amount applied to the drug purchase.</td></tr><tr><td style=\"white-space:nowrap\">third-party<a name=\"adjudication-category-third-party\"> </a></td><td>Third Party Amount</td><td>The amount saved due to integration of third-party liability (Coordination of Benefits) by all third-party payers (including Medicare)</td></tr><tr><td style=\"white-space:nowrap\">withhold<a name=\"adjudication-category-withhold\"> </a></td><td>Risk Withhold</td><td>The amount of the net payment either retained or withheld from the servicing provider. This amount is placed in a risk-sharing pool, for future distribution.</td></tr></table></div>"
+  },
+  "url": "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+  "version": "0.1.0",
+  "name": "AdjudicationCategoryCodeSystem",
+  "title": "Adjudication Category Codes",
+  "status": "active",
+  "date": "2021-06-15T15:17:59-05:00",
+  "contact": [
+    {
+      "name": "Kim Kenna",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "sloand@us.ibm.com"
+        }
+      ]
+    },
+    {
+      "name": "Tom Eggebraaten",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "tegge@us.ibm.com"
+        }
+      ]
+    }
+  ],
+  "description": "Adjudication category codes for claims",
+  "content": "complete",
+  "count": 28,
+  "concept": [
+    {
+      "code": "allowed",
+      "display": "Allowed Amount",
+      "definition": "The maximum amount allowed by the plan for payment"
+    },
+    {
+      "code": "coinsurance",
+      "display": "Coinsurance",
+      "definition": "The coinsurance paid by the subscriber as specified in the plan provision"
+    },
+    {
+      "code": "copay",
+      "display": "Copayment",
+      "definition": "The copayment paid by the subscriber, as specified in the plan provision"
+    },
+    {
+      "code": "deductible",
+      "display": "Deductible Amount",
+      "definition": "The amount paid by the subscriber through the deductible arrangement of the plan"
+    },
+    {
+      "code": "discount",
+      "display": "Discount Amount",
+      "definition": "The discount amount applied to the service, based on plan pricing reductions"
+    },
+    {
+      "code": "drg-outlier",
+      "display": "DRG Outlier",
+      "definition": "The Diagnosis Related Group (DRG) outlier amount, as reported on the facility claim"
+    },
+    {
+      "code": "excess_copay",
+      "display": "Excess Copayment",
+      "definition": "The amount paid by the subscriber outside of the flat copayment amount. Examples: (1) Additional copayment when selecting a brand name medication, instead of the generic alternative, or (2) Selecting a non-formulary medication, instead of the formulary option."
+    },
+    {
+      "code": "excluded1",
+      "display": "Excluded Amount 1",
+      "definition": "The ineligible amount or not covered amount that is associated with a reason code 1"
+    },
+    {
+      "code": "excluded2",
+      "display": "Excluded Amount 2",
+      "definition": "The ineligible amount or not covered amount that is associated with a reason code 2"
+    },
+    {
+      "code": "excluded3",
+      "display": "Excluded Amount 3",
+      "definition": "The ineligible amount or not covered amount that is associated with a reason code 3"
+    },
+    {
+      "code": "ffs-equivalent",
+      "display": "Fee For Service Equivalent",
+      "definition": "For capitated services (encounter records), the fee-for-service equivalent amount for the service"
+    },
+    {
+      "code": "fully-insured-payment",
+      "display": "Fully Insured Payment",
+      "definition": "Under a fully-insured arrangement, the actual check amount for the service. This represents the amount after applying all plan provisions and cost-sharing."
+    },
+    {
+      "code": "healthcare-reimbursement",
+      "display": "Healthcare Reimbursement Amount",
+      "definition": "The amount applied towards the service, funded by the subscriber's Health Reimbursement Arrangement (HRA)"
+    },
+    {
+      "code": "healthcare-savings-account",
+      "display": "Healthcare Savings Account",
+      "definition": "The amount applied towards the service, funded by the patient's Heathcare Savings Account (HSA)"
+    },
+    {
+      "code": "medicare-allowed",
+      "display": "Medicare Allowed Amount",
+      "definition": "The maximum amount allowed by Medicare for payment"
+    },
+    {
+      "code": "medicare-coinsurance",
+      "display": "Medicare Coinsurance Amount",
+      "definition": "The coinsurance amount determined by Medicare for the service"
+    },
+    {
+      "code": "medicare-deductible",
+      "display": "Medicare Deductible Amount",
+      "definition": "The deductible amount for the service, as determined by Medicare, that must be paid before Medicare pays"
+    },
+    {
+      "code": "medicare-paid",
+      "display": "Medicare Paid Amount",
+      "definition": "The amount paid by Medicare for the claim"
+    },
+    {
+      "code": "net-payment",
+      "display": "Net Payment",
+      "definition": "The actual check amount for the service. This represents the amount after applying all plan provisions and cost-sharing."
+    },
+    {
+      "code": "out-of-network-access-fee",
+      "display": "ITS Access Fee (Out of Network Access Fee)",
+      "definition": "The amount of the ITS access fee charged by the host plan for out-of-state patient use of its provider network"
+    },
+    {
+      "code": "out-of-network-surcharge-fee",
+      "display": "ITS Surcharge Amount (Out of Network Surcharge Amount)",
+      "definition": "The amount of the ITS surcharge added to the ITS access fee by the host plan for out-of-state patient use of its provider network"
+    },
+    {
+      "code": "patient-liability",
+      "display": "Patient Liability",
+      "definition": "The total amount of the service for which the subscriber is responsible. Generally, this includes, for example, copayments, coinsurance, and deductibles."
+    },
+    {
+      "code": "penalty",
+      "display": "Penalty",
+      "definition": "The penalty amount that reduces provider payments for the service. This is due to penalties that result from not meeting plan standards."
+    },
+    {
+      "code": "remittance",
+      "display": "Remittance"
+    },
+    {
+      "code": "submitted",
+      "display": "Submitted",
+      "definition": "The submitted or billed charge amount, as reported by the provider for the service"
+    },
+    {
+      "code": "tax",
+      "display": "Tax Amount",
+      "definition": "The state tax or another tax amount for the claim service record for medical and drug claims. Note that this is not the sales tax amount applied to the drug purchase."
+    },
+    {
+      "code": "third-party",
+      "display": "Third Party Amount",
+      "definition": "The amount saved due to integration of third-party liability (Coordination of Benefits) by all third-party payers (including Medicare)"
+    },
+    {
+      "code": "withhold",
+      "display": "Risk Withhold",
+      "definition": "The amount of the net payment either retained or withheld from the servicing provider. This amount is placed in a risk-sharing pool, for future distribution."
+    }
+  ]
+}

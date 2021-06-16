@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="DrKelly"/>
+  <meta>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+      <valueString value="99999"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+      <valueString value="b069a545-9506-40c6-8498-23de2e189143"/>
+    </extension>
+    <source value="http://acme-health.com/emr1"/>
+    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY)</p><p><b>name</b>: Dr Debra R Kelly, MD</p><p><b>telecom</b>: ph: 214-555-2100(WORK), fax: 214-555-2101(WORK), <a href="mailto:drkelly@kellyclinic.com">drkelly@kellyclinic.com</a></p><p><b>address</b>: 200 Main Street Suite 101 Irving TX 75014 US (WORK)</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <code value="SSRI"/>
+      </coding>
+    </type>
+    <system value="http://acme-health.com/emr1/practitioner"/>
+    <value value="0d82c96d-98c5-46cf-911d-a41991601320"/>
+    <assigner>
+      <display value="Acme Health - EMR1"/>
+    </assigner>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PRN"/>
+      </coding>
+    </type>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="1122334499"/>
+    <assigner>
+      <display value="cms.gov"/>
+    </assigner>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="TAX"/>
+      </coding>
+    </type>
+    <system value="urn:oid:2.16.840.1.113883.4.4"/>
+    <value value="123456789"/>
+    <assigner>
+      <display value="irs.gov"/>
+    </assigner>
+  </identifier>
+  <name>
+    <text value="Dr Debra R Kelly, MD"/>
+    <family value="Kelly"/>
+    <given value="Debra"/>
+    <given value="R"/>
+    <prefix value="Dr"/>
+    <suffix value="MD"/>
+  </name>
+  <telecom>
+    <extension url="http://hl7.org/fhir/StructureDefinition/contactpoint-country">
+      <valueString value="1"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/contactpoint-extension">
+      <valueString value="101"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address">
+      <valueUrl value="tel:+12145552100;ext=101"/>
+    </extension>
+    <system value="phone"/>
+    <value value="214-555-2100"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <extension url="http://hl7.org/fhir/StructureDefinition/contactpoint-country">
+      <valueString value="1"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address">
+      <valueUrl value="tel:+12145552101"/>
+    </extension>
+    <system value="fax"/>
+    <value value="214-555-2101"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="drkelly@kellyclinic.com"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="physical"/>
+    <line value="200 Main Street"/>
+    <line value="Suite 101"/>
+    <city value="Irving"/>
+    <district value="TX"/>
+    <state value="TX"/>
+    <postalCode value="75014"/>
+    <country value="US"/>
+  </address>
+</Practitioner>

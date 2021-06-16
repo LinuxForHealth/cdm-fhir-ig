@@ -1,0 +1,451 @@
+{
+  "resourceType": "Patient",
+  "id": "CDMPatientInstance",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "valueString": "99999"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "valueString": "b069a545-9506-40c6-8498-23de2e189143"
+      }
+    ],
+    "source": "http://acme-health.com/emr1",
+    "profile": [
+      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Sex Assigned At Birth</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></p><p><b>genderIdentity</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/gender-identity gender-neutral}\">Gender-neutral</span></p><p><b>Identified Pronouns</b>: they</p><p><b>Identified Pronouns</b>: ze</p><blockquote><p><b>Legally Documented Sex</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/legal-document-source passport}\">Official document issued by a government, certifying identity and citizenship</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/legal-document-system us-gov}\">U.S. Federal Goverment</span></p></blockquote><p><b>SexualOrientation</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/sexual-orientation asexual}\">Asexual</span></p><blockquote><p><b>US Core Race Extension</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2106-3}\">White</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"{urn:oid:2.16.840.1.113883.6.238 2186-5}\">Not Hispanic or Latino</span></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Local Race Code</b>: <span title=\"Codes: {http://acmehealth.com/CodeSystem/local-race-code White}\">White</span></p><p><b>identifier</b>: Source System Row Identifier: unencryp-id1234 (OFFICIAL), Source System Row Identifier: encryp-id1234 (SECONDARY), Medical record number: 1011110101 (OFFICIAL), Medical record number: 1011110101 (USUAL), Social Beneficiary Identifier: 0001223333 (OFFICIAL), Social Beneficiary Identifier: 1CA0CA0CC00 (OFFICIAL), Social Beneficiary Identifier: 987654321000 (OFFICIAL), Match Data Identifier: 7b78d6de-46cb-4fbb-930d-2a74e24b17fe (SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Firstname McLastname </p><p><b>telecom</b>: 216-248-8689(MOBILE), ph: 216-345-2662(HOME), ph: 216-555-2222(WORK), <a href=\"mailto:fmclastname@fakemail.com\">fmclastname@fakemail.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1990-01-04</p><p><b>deceased</b>: Sep 27, 2020 7:00:00 PM</p><p><b>address</b>: Townington Ohio 12345 US (HOME)</p><h3>Communications</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Language</b></td></tr><tr><td>*</td><td></td><td><span title=\"Codes: {urn:ietf:bcp:47 en}\">English</span></td></tr></table><p><b>generalPractitioner</b>: <a href=\"PractitionerRole-CDMPractitionerRole-EMR-PCP.html\">Generated Summary: Source System Row Identifier: 5870c580-0d87-4237-a86b-a49ef4637b31 (OFFICIAL); active; <span title=\"Codes: {http://snomed.info/sct 59058001}\">General physician</span>; <span title=\"Codes: {http://snomed.info/sct 394814009}\">General practice (specialty)</span></a></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth",
+            "code": "male"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/gender-identity",
+            "code": "gender-neutral"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/identified-pronouns",
+      "valueString": "they"
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/identified-pronouns",
+      "valueString": "ze"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/documented-sex",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth",
+                "code": "male"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/documented-source",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/legal-document-source",
+                "code": "passport"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/documented-system",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/legal-document-system",
+                "code": "us-gov"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/legally-documented-sex"
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/sexual-orientation",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/sexual-orientation",
+            "code": "asexual"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2106-3",
+            "display": "White"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "White"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+    },
+    {
+      "extension": [
+        {
+          "url": "ombCategory",
+          "valueCoding": {
+            "system": "urn:oid:2.16.840.1.113883.6.238",
+            "code": "2186-5",
+            "display": "Not Hispanic or Latino"
+          }
+        },
+        {
+          "url": "text",
+          "valueString": "Not Hispanic or Latino"
+        }
+      ],
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-race-cd",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://acmehealth.com/CodeSystem/local-race-code",
+            "code": "White"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "extension": [
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/unencrypted-state",
+          "valueBoolean": false
+        }
+      ],
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "SSRI"
+          }
+        ]
+      },
+      "system": "http://acme-health.com/emr1/patient",
+      "value": "unencryp-id1234",
+      "assigner": {
+        "display": "Acme Health - EMR1 (unencrypted)"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state",
+          "valueBoolean": true
+        }
+      ],
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "SSRI"
+          }
+        ]
+      },
+      "system": "http://acme-health.com/emr1/patient",
+      "value": "encryp-id1234",
+      "assigner": {
+        "display": "Acme Health - EMR1 (encrpyted)"
+      }
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "http://acme-health.com/patient-mrn",
+      "value": "1011110101",
+      "assigner": {
+        "display": "Acme Health MRN"
+      }
+    },
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "http://acme-health.com/patient-mrn",
+      "value": "1011110101",
+      "assigner": {
+        "display": "Acme Health MRN"
+      }
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SB"
+          },
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SS"
+          }
+        ]
+      },
+      "system": "http;//hl7.org/fhir/sid/us-ssn",
+      "value": "0001223333",
+      "assigner": {
+        "display": "ssa.gov"
+      }
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SB"
+          },
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MC"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/us-mbi",
+      "value": "1CA0CA0CC00",
+      "assigner": {
+        "display": "medicare.gov"
+      }
+    },
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "SB"
+          },
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MA"
+          }
+        ]
+      },
+      "value": "987654321000",
+      "assigner": {
+        "display": "medicaid.ohio.gov"
+      }
+    },
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "MDI"
+          }
+        ]
+      },
+      "system": "http://ibm.com/fhir/primary/patient-match-identifier",
+      "value": "7b78d6de-46cb-4fbb-930d-2a74e24b17fe",
+      "assigner": {
+        "display": "IBM"
+      }
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "McLastname",
+      "given": [
+        "Firstname"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-country",
+          "valueString": "1"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address",
+          "valueUrl": "tel:+12162488969"
+        }
+      ],
+      "system": "sms",
+      "value": "216-248-8689",
+      "use": "mobile",
+      "rank": 1
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-country",
+          "valueString": "1"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address",
+          "valueUrl": "tel:+12163452662"
+        }
+      ],
+      "system": "phone",
+      "value": "216-345-2662",
+      "use": "home",
+      "rank": 2
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-country",
+          "valueString": "1"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-extension",
+          "valueString": "123"
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address",
+          "valueUrl": "tel:+12165552222;ext=123"
+        }
+      ],
+      "system": "phone",
+      "value": "216-555-2222",
+      "use": "work",
+      "rank": 4
+    },
+    {
+      "system": "email",
+      "value": "fmclastname@fakemail.com",
+      "use": "home",
+      "rank": 3
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1990-01-04",
+  "deceasedDateTime": "2020-09-28T00:00:00Z",
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/county-code",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://acmehealth.com/CodeSystem/local-county-code",
+                "code": "001"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/region-code",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://acmehealth.com/CodeSystem/local-region-code",
+                "code": "MW"
+              }
+            ]
+          }
+        }
+      ],
+      "use": "home",
+      "type": "both",
+      "city": "Townington",
+      "state": "Ohio",
+      "postalCode": "12345",
+      "country": "US",
+      "period": {
+        "start": "2000-01-01",
+        "end": "2000-10-31"
+      }
+    }
+  ],
+  "communication": [
+    {
+      "extension": [
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/language-rank",
+          "valuePositiveInt": 1
+        }
+      ],
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "en"
+          }
+        ]
+      }
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "extension": [
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/reference-code",
+          "valueCoding": {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/attribution-source",
+            "code": "client-emr"
+          }
+        },
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/reference-period",
+          "valuePeriod": {
+            "start": "2019-01-01"
+          }
+        }
+      ],
+      "reference": "PractitionerRole/CDMPractitionerRole-EMR-PCP"
+    }
+  ]
+}

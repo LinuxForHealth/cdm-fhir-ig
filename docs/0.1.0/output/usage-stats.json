@@ -1,0 +1,2670 @@
+{
+  "package": "alvearie.fhir.ig",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/admit-count-epis",
+      "title": "Episode Admit Count",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/age-gender-group",
+      "title": "Age and Gender Groups",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/age-group",
+      "title": "Age Group",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/allowed-amount-inpatient-epis",
+      "title": "Allowed Amount Inpatient (USD)",
+      "types": [
+        "Money",
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/allowed-amount-managing-phys-epis",
+      "title": "Allowed Amount Managing Physician (USD)",
+      "types": [
+        "Money",
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/assigned-practitioner",
+      "title": "Assigned Practitioner",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/attributed-provider-with-period",
+      "title": "Attributed Provider Reference with Period",
+      "types": [
+        "Reference",
+        "string",
+        "Extension",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/attribution-code",
+      "title": "Attribution Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure",
+      "title": "CanonicalMeasure",
+      "types": [
+        "canonical"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/capitated-service-indicator",
+      "title": "Capitated Service Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-display-name",
+      "title": "CareGapComplianceEventDisplayName",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-frequency",
+      "title": "CareGapComplianceFrequency",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-met",
+      "title": "CareGapComplianceMet",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/child-organization-hierarchy-level-code",
+      "title": "Child Organization Hierarchy Level Code",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/child-organization-hierarchy-level-description",
+      "title": "Child Organization Hierarchy Level Description",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-adjustment-type",
+      "title": "Claim Adjustment Type",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-group-identifier",
+      "title": "Claim Group Identifier",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification",
+      "title": "Claim Item Detail Classification",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-response-benefit-plan",
+      "title": "Claim Response Benefit Plan",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-response-item-status",
+      "title": "Claim Response Item Status",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-name",
+      "title": "Claim Snapshot Provider Name",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code",
+      "title": "Claim Snapshot Provider Zip Code",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-status",
+      "title": "Claim Status",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap",
+      "title": "Communication Care Gap",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-contact",
+      "title": "Communication Contact",
+      "types": [
+        "Address",
+        "ContactPoint"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-language",
+      "title": "Communication Language",
+      "types": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-measure",
+      "title": "Communication Measure",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-mode",
+      "title": "Communication Mode",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-on-behalf-of",
+      "title": "Communication On-Behalf Of",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-opt-out",
+      "title": "Communication Opt-Out",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-payload-data",
+      "title": "Communication Payload Data",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-priority-sequence",
+      "title": "Communication Priority Sequence",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-product",
+      "title": "Communication Product",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-reengagement",
+      "title": "Communication Reengagement",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-retry-limt",
+      "title": "Communication Retry Limit",
+      "types": [
+        "string",
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-template",
+      "title": "Communication Template",
+      "types": [
+        "string",
+        "Attachment"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/communication-vendor",
+      "title": "Communication Vendor",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/company-code",
+      "title": "Company Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/compound-code",
+      "title": "Compound Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/conversation-type",
+      "title": "Conversation Type",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/converted-quantity",
+      "title": "Converted Quantity",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/county-code",
+      "title": "County Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/coverage-month",
+      "title": "Coverage Month",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/default-value",
+      "title": "Default Value",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "date",
+        "dateTime",
+        "decimal",
+        "instant",
+        "integer",
+        "string",
+        "time",
+        "uri",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/documented-sex",
+      "title": "Documented Sex",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/documented-source",
+      "title": "Documented Source",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/documented-system",
+      "title": "Documented System",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/effective-period",
+      "title": "Effective Period",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit",
+      "title": "Employee Business Unit",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-count",
+      "title": "Employee Count",
+      "types": [
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-fte-count",
+      "title": "Employee FTE Count",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-hire-date",
+      "title": "Employee Hire Date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-status",
+      "title": "Employee Status",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-termination-date",
+      "title": "Employee Termination Date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state",
+      "title": "Encrypted State",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/enrollment-pcp",
+      "title": "Enrollment PCP",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-allowed-amount-outpatient",
+      "title": "Episode Allowed Amount Outpatient (USD)",
+      "types": [
+        "Money",
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-allowed-amount-pcp",
+      "title": "Episode Allowed Amount PCP (USD)",
+      "types": [
+        "Money",
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-allowed-amount-primary-physician",
+      "title": "Episode Allowed Amount Primary Physician (USD)",
+      "types": [
+        "Money",
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-allowed-amount-rx",
+      "title": "Episode Allowed Amount Rx (USD)",
+      "types": [
+        "Money",
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-allowed-amount-total",
+      "title": "Episode Allowed Amount Total (USD)",
+      "types": [
+        "Money",
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-body-system",
+      "title": "Episode Body System",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-cost-scale",
+      "title": "Episode Cost Scale",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-derived-code",
+      "title": "Episode Derived Code",
+      "types": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-derived-indicator",
+      "title": "Episode Derived Indicator",
+      "types": [
+        "boolean",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-disease-stage-code",
+      "title": "Episode Disease Stage Code",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-duration",
+      "title": "Episode Duration (Days)",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-group-code",
+      "title": "Episode Group Code",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-primary-physician",
+      "title": "Episode Primary Physician",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-procedure-type-code",
+      "title": "Episode Procedure Type Code",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-rx-count",
+      "title": "Episode Rx Count",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-summary-group-code",
+      "title": "Episode Summary Group Code",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/episode-use-scale",
+      "title": "Episode Use Scale",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/family-id",
+      "title": "Family Id",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/ffv-schedule",
+      "title": "FFV Schedule",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/hierarchy-version-date",
+      "title": "Hierarchy Version Date",
+      "types": [
+        "date"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/hierarchy-version-id",
+      "title": "Hierarchy VersionId",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/identified-pronouns",
+      "title": "Identified Pronouns",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/industry-classification",
+      "title": "Industry Classification",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+      "title": "Ingestion Batch Id",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/job-class-code",
+      "title": "Job Class Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/job-title-code",
+      "title": "Job Title Code",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/language-rank",
+      "title": "Language Rank",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/legally-documented-sex",
+      "title": "Legally Documented Sex",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service",
+      "title": "Local Number Of Units Per Service",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-race-cd",
+      "title": "Local Race Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-subscriber-relationship-code",
+      "title": "Local Subscriber Relationship Code",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
+      "title": "Match Compared To",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+      "title": "Match Confidence Code",
+      "types": [
+        "Coding",
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+      "title": "Confidence Score",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria",
+      "title": "Match Criteria",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/match-detail",
+      "title": "Match Detail",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/match-method",
+      "title": "Match Method",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/match-period",
+      "title": "Match Period",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference",
+      "title": "MatchSourceReference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter",
+      "title": "Measure Parameter",
+      "types": [
+        "ParameterDefinition"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value",
+      "title": "MeasureParameterValue",
+      "types": [
+        "ParameterDefinition"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-population-id",
+      "title": "Measure Population Id",
+      "types": [
+        "id"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-assigned-practitioner",
+      "title": "Measure Report Assigned Practitioner",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence",
+      "title": "Measure Report Evidence",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence-population-id",
+      "title": "Measure Report Evidence Population Id",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence-text",
+      "title": "Measure Report Evidence Text",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence-value",
+      "title": "Measure Report Evidence Value",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "dateTime",
+        "decimal",
+        "integer",
+        "string",
+        "uri",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Period",
+        "Quantity",
+        "Reference",
+        "RelatedArtifact"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight",
+      "title": "Measure Weight",
+      "types": [
+        "decimal"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/medicare-indicator",
+      "title": "Medicare Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/member-employee-indicator",
+      "title": "Member Employee Indicator",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/network-id",
+      "title": "Network Id",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/outcome",
+      "title": "Communication Outcome",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/parameter-value",
+      "title": "Parameter Value",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "date",
+        "dateTime",
+        "decimal",
+        "instant",
+        "integer",
+        "string",
+        "time",
+        "uri",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/parent-organization-hierarchy-level-code",
+      "title": "Parent Organization Hierarchy Level Code",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/parent-organization-hierarchy-level-description",
+      "title": "Parent Organization Hierarchy Level Description",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/plan-employee-code",
+      "title": "Plan Employee Code",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/practitioner-hierarchy-level-code",
+      "title": "Practitioner Hierarchy Level Code",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/practitioner-hierarchy-level-description",
+      "title": "Practitioner Hierarchy Level Description",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/problem-clinical-course",
+      "title": "Problem Clinical Course",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/problem-priority",
+      "title": "Problem Priority",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/problem-type",
+      "title": "Problem Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/procedure-modifier",
+      "title": "Procedure Modifier",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id",
+      "title": "Process Client ID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+      "title": "Process Name",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-organization",
+      "title": "Process Organization",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-record-id",
+      "title": "Process Record ID",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp",
+      "title": "Process Timestamp",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-type",
+      "title": "Process Type",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-version",
+      "title": "Process Version",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/provider-region",
+      "title": "Provider Region",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/quality-measures",
+      "title": "Quality Measures",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/recorder-facility",
+      "title": "Recorder Facility",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/reengagement-display",
+      "title": "Reengagement Display",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/reengagement-value",
+      "title": "ReengagementValue",
+      "types": [
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/reference-code",
+      "title": "Reference Code",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/reference-period",
+      "title": "Reference Period",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/referral-indicator",
+      "title": "Referral Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/region-code",
+      "title": "Region Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/related-issue",
+      "title": "RelatedIssue",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/related-observation",
+      "title": "RelatedObservation",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/rx-formulary-indicator",
+      "title": "Rx Formulary Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/rx-pay-tier",
+      "title": "Rx Pay Tier",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/rx-supply-indicator",
+      "title": "Rx Supply Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/salary-indicator",
+      "title": "Salary Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/see-also",
+      "title": "See Also",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/sent-time",
+      "title": "Communication Sent Time",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/sent-to-recipient",
+      "title": "Sent To recipient",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/sent-to-vendor",
+      "title": "Sent To Vendor",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth",
+      "title": "Sex Assigned At Birth",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/sexual-orientation",
+      "title": "SexualOrientation",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-months",
+      "title": "Snapshot Age in months",
+      "types": [
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years",
+      "title": "Age In Years",
+      "types": [
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/source-data-model-version",
+      "title": "Source Data Model Version",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/source-event-timestamp",
+      "title": "Source Event Timestamp",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger",
+      "title": "Source Event Trigger",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/source-file-id",
+      "title": "Source File ID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/source-record-id",
+      "title": "Source Record ID",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/source-record-type",
+      "title": "Source Record Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/split-method",
+      "title": "Split Method",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/stated-reason",
+      "title": "Stated Reason",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/status-code",
+      "title": "Status Code",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+      "title": "Tenant Id",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/union-worker-indicator",
+      "title": "Union Worker Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-dental-coverage-indicator",
+      "title": "Dental Coverage Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-drug-coverage-indicator",
+      "title": "Drug Coverage Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-hearing-coverage-indicator",
+      "title": "Hearing Coverage Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-medical-coverage-indicator",
+      "title": "Medical Coverage Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-pcp-responsibility-indicator",
+      "title": "Health Data Connect PCP Responsibility Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-psych-coverage-indicator",
+      "title": "Psychiatric Coverage Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-record-population-count",
+      "title": "Health Data Connect Record Population Count",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-subscriber-relationship",
+      "title": "Health Data Connect Subscriber Relationship Code",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-vision-coverage-indicator",
+      "title": "Vision Coverage Indicator",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "DetectedIssue": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-detected-issue",
+        "title": "CDM Detected Issue"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-appointment",
+        "title": "CDM Appointment"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-careplan",
+        "title": "CDM CarePlan"
+      }
+    ],
+    "Claim": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim",
+        "title": "CDM Claim"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-drug",
+        "title": "CDM Claim Drug"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-facility",
+        "title": "CDM Claim Facility"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-professional",
+        "title": "CDM Claim Professional"
+      }
+    ],
+    "ClaimResponse": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-response",
+        "title": "CDM Claim Response"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-response-drug",
+        "title": "CDM Claim Response Drug"
+      }
+    ],
+    "Communication": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/engagement-communication",
+        "title": "Engagement Communication"
+      }
+    ],
+    "CommunicationRequest": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/engagement-communication-request",
+        "title": "Engagement CommunicationRequest"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition",
+        "title": "CDM Condition"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage",
+        "title": "CDM Coverage"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner-bundle",
+        "title": "CDM Practitioner Bundle"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-encounter",
+        "title": "CDM Encounter"
+      }
+    ],
+    "InsurancePlan": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-insurance-plan",
+        "title": "CDM Insurance Plan"
+      }
+    ],
+    "Library": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-library",
+        "title": "CDM Library"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-location",
+        "title": "CDM Location"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-match-location",
+        "title": "Location Matching - Match Location"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient",
+        "title": "CDM Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner",
+        "title": "CDM Practitioner"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-population-observation",
+        "title": "Measure Population Observation"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization",
+        "title": "CDM Organization"
+      }
+    ],
+    "OrganizationAffiliation": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization-affiliation",
+        "title": "CDM Organization Affiliation"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/hierarchy-practitioner-role",
+        "title": "Hierarchy Practitioner Role"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-procedure",
+        "title": "CDM Procedure"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-service-request",
+        "title": "CDM Service Request"
+      }
+    ],
+    "Contract": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ffv-initative-resource",
+        "title": "Fee for Value Initative"
+      }
+    ],
+    "List": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-list",
+        "title": "Quality Measure List"
+      }
+    ],
+    "Measure": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure",
+        "title": "Quality Measure"
+      }
+    ],
+    "MeasureReport": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report",
+        "title": "Quality Measure Report"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report-organization",
+        "title": "Organization Quality Measure Report"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report-patient",
+        "title": "Patient Quality Measure Report"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report-practitioner",
+        "title": "Practitioner Quality Measure Report"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/contactpoint-country": [
+      "ContactPoint",
+      "Location.telecom",
+      "Organization.telecom",
+      "Patient.telecom",
+      "Practitioner.telecom"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/contactpoint-extension": [
+      "ContactPoint",
+      "Location.telecom",
+      "Organization.telecom",
+      "Patient.telecom",
+      "Practitioner.telecom"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address": [
+      "ContactPoint",
+      "Location.telecom",
+      "Patient.telecom",
+      "Practitioner.telecom"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-importance": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/age-gender-group": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/age-group": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/assigned-practitioner": [
+      "DetectedIssue",
+      "Observation"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/attributed-provider-with-period": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/attribution-code": [
+      "Contract"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure": [
+      "DetectedIssue",
+      "Observation"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/capitated-service-indicator": [
+      "Claim.item"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-display-name": [
+      "DetectedIssue"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-frequency": [
+      "DetectedIssue"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-met": [
+      "DetectedIssue",
+      "Observation"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/child-organization-hierarchy-level-code": [
+      "OrganizationAffiliation"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/child-organization-hierarchy-level-description": [
+      "OrganizationAffiliation"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/claim-adjustment-type": [
+      "ClaimResponse.payment"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/claim-group-identifier": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification": [
+      "Claim.item.detail"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/claim-response-benefit-plan": [
+      "ClaimResponse.item"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/claim-response-item-status": [
+      "ClaimResponse.item"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-name": [
+      "Claim"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code": [
+      "Claim"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/claim-status": [
+      "ClaimResponse"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap": [
+      "Communication",
+      "CommunicationRequest",
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-contact": [
+      "Communication",
+      "CommunicationRequest"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-language": [
+      "Communication",
+      "CommunicationRequest"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-measure": [
+      "Communication",
+      "CommunicationRequest"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-mode": [
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-on-behalf-of": [
+      "Communication",
+      "CommunicationRequest"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-opt-out": [
+      "Patient"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-payload-data": [
+      "Communication",
+      "CommunicationRequest"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-priority-sequence": [
+      "Communication",
+      "CommunicationRequest"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-product": [
+      "Communication",
+      "CommunicationRequest",
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-reengagement": [
+      "Communication",
+      "CommunicationRequest"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-retry-limt": [
+      "Communication",
+      "CommunicationRequest"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-template": [
+      "Communication",
+      "CommunicationRequest"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/communication-vendor": [
+      "Communication",
+      "CommunicationRequest"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/company-code": [
+      "Claim.item"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/compound-code": [
+      "Claim.item"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/conversation-type": [
+      "Communication",
+      "CommunicationRequest",
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/converted-quantity": [
+      "Observation.component.valueQuantity",
+      "Quantity"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/county-code": [
+      "Address",
+      "Patient.address"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/coverage-month": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/default-value": [
+      "Library.parameter",
+      "ParameterDefinition"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/documented-sex": [
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/documented-source": [
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/documented-system": [
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/effective-period": [
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit": [
+      "Claim",
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/employee-count": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/employee-fte-count": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/employee-hire-date": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/employee-status": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/employee-termination-date": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state": [
+      "Coverage.identifier",
+      "Identifier",
+      "Patient.identifier"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/enrollment-pcp": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/family-id": [
+      "Patient"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/ffv-schedule": [
+      "Contract"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/hierarchy-version-date": [
+      "OrganizationAffiliation",
+      "PractitionerRole"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/hierarchy-version-id": [
+      "OrganizationAffiliation",
+      "PractitionerRole"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/identified-pronouns": [
+      "Patient"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/industry-classification": [
+      "InsurancePlan"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id": [
+      "Appointment.meta",
+      "Claim.meta",
+      "ClaimResponse.meta",
+      "Communication.meta",
+      "CommunicationRequest.meta",
+      "Condition.meta",
+      "Contract.meta",
+      "Coverage.meta",
+      "DetectedIssue.meta",
+      "Encounter.meta",
+      "Location.meta",
+      "MeasureReport.meta",
+      "Meta",
+      "Observation.meta",
+      "Organization.meta",
+      "OrganizationAffiliation.meta",
+      "Patient.meta",
+      "Practitioner.meta",
+      "PractitionerRole.meta",
+      "Procedure.meta",
+      "ServiceRequest.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/job-class-code": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/job-title-code": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/language-rank": [
+      "Patient.communication"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/legally-documented-sex": [
+      "Patient"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service": [
+      "Claim.item.quantity"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/local-race-cd": [
+      "Patient"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/local-subscriber-relationship-code": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to": [
+      "Extension",
+      "Location.extension.extension",
+      "Patient.extension.extension",
+      "Practitioner.extension.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level": [
+      "Extension",
+      "Location.extension",
+      "Location.extension.extension",
+      "Patient.extension",
+      "Patient.extension.extension",
+      "Practitioner.extension",
+      "Practitioner.extension.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score": [
+      "Extension",
+      "Location.extension",
+      "Location.extension.extension",
+      "Patient.extension",
+      "Patient.extension.extension",
+      "Practitioner.extension",
+      "Practitioner.extension.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria": [
+      "Extension",
+      "Location.extension.extension",
+      "Patient.extension.extension",
+      "Practitioner.extension.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/match-detail": [
+      "Extension",
+      "Location.extension",
+      "Patient.extension",
+      "Practitioner.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/match-method": [
+      "Extension",
+      "Location.extension",
+      "Patient.extension",
+      "Practitioner.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/match-period": [
+      "Extension",
+      "Location.extension",
+      "Patient.extension",
+      "Practitioner.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference": [
+      "Extension",
+      "Location.extension",
+      "Patient.extension",
+      "Practitioner.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter": [
+      "Measure"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value": [
+      "MeasureReport"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/measure-population-id": [
+      "DetectedIssue",
+      "Observation"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-assigned-practitioner": [
+      "MeasureReport"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence": [
+      "MeasureReport"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence-population-id": [
+      "Extension",
+      "MeasureReport.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence-text": [
+      "Extension",
+      "MeasureReport.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence-value": [
+      "Extension",
+      "MeasureReport.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/measure-weight": [
+      "List.entry"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/medicare-indicator": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/member-employee-indicator": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/outcome": [
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/parameter-value": [
+      "ParameterDefinition"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/parent-organization-hierarchy-level-code": [
+      "OrganizationAffiliation"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/parent-organization-hierarchy-level-description": [
+      "OrganizationAffiliation"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/plan-employee-code": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/practitioner-hierarchy-level-code": [
+      "PractitionerRole"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/practitioner-hierarchy-level-description": [
+      "PractitionerRole"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/problem-clinical-course": [
+      "Condition"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/problem-priority": [
+      "Condition"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/problem-type": [
+      "Condition"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/procedure-modifier": [
+      "Procedure"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id": [
+      "Claim.meta",
+      "ClaimResponse.meta",
+      "Contract.meta",
+      "Meta",
+      "OrganizationAffiliation.meta",
+      "PractitionerRole.meta",
+      "ServiceRequest.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/process-name": [
+      "Claim.meta",
+      "ClaimResponse.meta",
+      "Communication.meta",
+      "CommunicationRequest.meta",
+      "Contract.meta",
+      "DetectedIssue.meta",
+      "Location.meta",
+      "Measure.meta",
+      "MeasureReport.meta",
+      "Meta",
+      "Observation.meta",
+      "OrganizationAffiliation.meta",
+      "Patient.generalPractitioner",
+      "Patient.meta",
+      "Practitioner.meta",
+      "PractitionerRole.meta",
+      "ServiceRequest.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/process-organization": [
+      "Communication.meta",
+      "CommunicationRequest.meta",
+      "Contract.meta",
+      "DetectedIssue.meta",
+      "Location.meta",
+      "Measure.meta",
+      "MeasureReport.meta",
+      "Meta",
+      "Observation.meta",
+      "OrganizationAffiliation.meta",
+      "Patient.generalPractitioner",
+      "Patient.meta",
+      "Practitioner.meta",
+      "PractitionerRole.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/process-record-id": [
+      "Claim.meta",
+      "ClaimResponse.meta",
+      "Contract.meta",
+      "Meta",
+      "OrganizationAffiliation.meta",
+      "PractitionerRole.meta",
+      "ServiceRequest.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp": [
+      "Communication.meta",
+      "Communication.statusReason.coding",
+      "CommunicationRequest.meta",
+      "CommunicationRequest.statusReason",
+      "Contract.meta",
+      "DetectedIssue.meta",
+      "Location.meta",
+      "Measure.meta",
+      "MeasureReport.meta",
+      "Meta",
+      "Observation.meta",
+      "OrganizationAffiliation.meta",
+      "Patient.generalPractitioner",
+      "Patient.meta",
+      "Practitioner.meta",
+      "PractitionerRole.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/process-type": [
+      "Communication.meta",
+      "CommunicationRequest.meta",
+      "Contract.meta",
+      "DetectedIssue.meta",
+      "Location.meta",
+      "Measure.meta",
+      "MeasureReport.meta",
+      "Meta",
+      "Observation.meta",
+      "OrganizationAffiliation.meta",
+      "Patient.generalPractitioner",
+      "Patient.meta",
+      "Practitioner.meta",
+      "PractitionerRole.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/process-version": [
+      "Communication.meta",
+      "CommunicationRequest.meta",
+      "Contract.meta",
+      "DetectedIssue.meta",
+      "Location.meta",
+      "Measure.meta",
+      "MeasureReport.meta",
+      "Meta",
+      "Observation.meta",
+      "OrganizationAffiliation.meta",
+      "Patient.generalPractitioner",
+      "Patient.meta",
+      "Practitioner.meta",
+      "PractitionerRole.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/provider-region": [
+      "Address"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/quality-measures": [
+      "Contract"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/recorder-facility": [
+      "Condition"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/reengagement-display": [
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/reengagement-value": [
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/reference-code": [
+      "Patient.generalPractitioner",
+      "Reference"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/reference-period": [
+      "Extension.value[x]",
+      "Patient.generalPractitioner",
+      "Reference"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/referral-indicator": [
+      "Claim"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/region-code": [
+      "Address",
+      "Patient.address"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/related-issue": [
+      "DetectedIssue"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/related-observation": [
+      "Observation"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/rx-formulary-indicator": [
+      "ClaimResponse.item"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/rx-pay-tier": [
+      "ClaimResponse.item"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/rx-supply-indicator": [
+      "ClaimResponse.item"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/salary-indicator": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/see-also": [
+      "Location",
+      "Patient",
+      "Practitioner"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/sent-time": [
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/sent-to-recipient": [
+      "Communication"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/sent-to-vendor": [
+      "Communication"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth": [
+      "Patient"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/sexual-orientation": [
+      "Patient"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-months": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years": [
+      "Claim",
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/source-data-model-version": [
+      "Contract.meta",
+      "Meta",
+      "OrganizationAffiliation.meta",
+      "PractitionerRole.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/source-event-timestamp": [
+      "Contract.meta",
+      "Meta",
+      "OrganizationAffiliation.meta",
+      "PractitionerRole.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/source-event-trigger": [
+      "Contract.meta",
+      "Meta",
+      "OrganizationAffiliation.meta",
+      "PractitionerRole.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/source-file-id": [
+      "Claim.meta",
+      "ClaimResponse.meta",
+      "Contract.meta",
+      "Meta",
+      "OrganizationAffiliation.meta",
+      "PractitionerRole.meta",
+      "ServiceRequest.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/source-record-id": [
+      "Contract.meta",
+      "Meta",
+      "OrganizationAffiliation.meta",
+      "PractitionerRole.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/source-record-type": [
+      "Contract.meta",
+      "Meta",
+      "OrganizationAffiliation.meta",
+      "PractitionerRole.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/split-method": [
+      "Extension",
+      "Location.extension",
+      "Patient.extension",
+      "Practitioner.extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/stated-reason": [
+      "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/status-code": [
+      "Patient"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id": [
+      "Appointment.meta",
+      "Claim.meta",
+      "ClaimResponse.meta",
+      "Communication.meta",
+      "CommunicationRequest.meta",
+      "Condition.meta",
+      "Contract.meta",
+      "Coverage.meta",
+      "DetectedIssue.meta",
+      "Encounter.meta",
+      "Location.meta",
+      "MeasureReport.meta",
+      "Meta",
+      "Observation.meta",
+      "Organization.meta",
+      "OrganizationAffiliation.meta",
+      "Patient.meta",
+      "Practitioner.meta",
+      "PractitionerRole.meta",
+      "Procedure.meta",
+      "ServiceRequest.meta"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/unencrypted-state": [
+      "Patient.identifier"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/union-worker-indicator": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-dental-coverage-indicator": [
+      "InsurancePlan"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-drug-coverage-indicator": [
+      "InsurancePlan"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-hearing-coverage-indicator": [
+      "InsurancePlan"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-medical-coverage-indicator": [
+      "InsurancePlan"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-pcp-responsibility-indicator": [
+      "Claim"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-psych-coverage-indicator": [
+      "InsurancePlan"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-record-population-count": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-subscriber-relationship": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-vision-coverage-indicator": [
+      "InsurancePlan"
+    ]
+  }
+}

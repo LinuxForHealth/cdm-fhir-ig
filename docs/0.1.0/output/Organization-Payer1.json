@@ -1,0 +1,41 @@
+{
+  "resourceType": "Organization",
+  "id": "Payer1",
+  "meta": {
+    "source": "http://acme-health.com/organization/payer",
+    "profile": [
+      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: Payer1 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}\">Payer</span></p><p><b>name</b>: Payer 1</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "SSRI"
+          }
+        ]
+      },
+      "system": "http://acme-health.com/organization/payer",
+      "value": "Payer1"
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "pay"
+        }
+      ]
+    }
+  ],
+  "name": "Payer 1"
+}

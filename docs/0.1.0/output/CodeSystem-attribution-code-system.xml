@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="attribution-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">client-emr-pcp<a name="attribution-code-system-client-emr-pcp"> </a></td><td>Client EMR PCP</td><td>Primary care physician recorded in a client's PMS or EMR system</td></tr><tr><td style="white-space:nowrap">eng-attr-pcp<a name="attribution-code-system-eng-attr-pcp"> </a></td><td>Engagement Attributed PCP</td><td>Primary care physician attributed by the Engagement pipeline</td></tr><tr><td style="white-space:nowrap">eng-attr-specialist<a name="attribution-code-system-eng-attr-specialist"> </a></td><td>Engagement Attributed Specialist</td><td>Specialist physician attributed by the Engagement pipeline</td></tr><tr><td style="white-space:nowrap">enrollment<a name="attribution-code-system-enrollment"> </a></td><td>Enrollment</td><td>Practitioner provided on the eligibility record</td></tr><tr><td style="white-space:nowrap">adv-imputed-pcp<a name="attribution-code-system-adv-imputed-pcp"> </a></td><td>Advantage Imputed PCP</td><td>Primary care physician imputed by the Advantage pipeline</td></tr></table></div>
+  </text>
+  <url value="http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system"/>
+  <version value="0.1.0"/>
+  <name value="AttributionCodeSystem"/>
+  <title value="Attribution Codes"/>
+  <status value="active"/>
+  <date value="2021-06-15T15:17:59-05:00"/>
+  <contact>
+    <name value="Kim Kenna"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sloand@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Tom Eggebraaten"/>
+    <telecom>
+      <system value="email"/>
+      <value value="tegge@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <description value="Types of attribution used to associate a patient to a provider"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="client-emr-pcp"/>
+    <display value="Client EMR PCP"/>
+    <definition value="Primary care physician recorded in a client&#39;s PMS or EMR system"/>
+  </concept>
+  <concept>
+    <code value="eng-attr-pcp"/>
+    <display value="Engagement Attributed PCP"/>
+    <definition value="Primary care physician attributed by the Engagement pipeline"/>
+  </concept>
+  <concept>
+    <code value="eng-attr-specialist"/>
+    <display value="Engagement Attributed Specialist"/>
+    <definition value="Specialist physician attributed by the Engagement pipeline"/>
+  </concept>
+  <concept>
+    <code value="enrollment"/>
+    <display value="Enrollment"/>
+    <definition value="Practitioner provided on the eligibility record"/>
+  </concept>
+  <concept>
+    <code value="adv-imputed-pcp"/>
+    <display value="Advantage Imputed PCP"/>
+    <definition value="Primary care physician imputed by the Advantage pipeline"/>
+  </concept>
+</CodeSystem>
