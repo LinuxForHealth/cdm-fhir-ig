@@ -15,7 +15,7 @@
     "ig_init_win": "xcopy \"data\\ig-data\\alvearie-template\" \"build\\alvearie-template\" /s /i /y /q && cd build && _updatePublisher.bat && _genonce.bat",
     "ig": "cp -r data/ig-data/alvearie-template build/ && cd build && ./_genonce.sh",
     "ig_win": "xcopy \"data\\ig-data\\alvearie-template\" \"build\\alvearie-template\" /s /i /y /q && cd build && _genonce.bat",
-    "copy_version": "cp -r build/output docs/0.1.0",
+    "copy_version": "rsync -ahcv build/output/ docs/0.1.0 --delete",
     "copy_version_win": "xcopy \"build\\output\" \"docs\\0.1.0\" /s /i /y /q",
     "all": "npm run sushi && npm run ig_init && npm run copy_version"
   },
