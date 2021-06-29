@@ -65,6 +65,10 @@ Description:    "Data lineage meta with process extensions"
 * extension[sourceEventTimestamp] ^short      = "Date and time of the source event that triggers either the creation or updating of this FHIR resource"
 * extension[sourceEventTimestamp] ^definition = "Date and time of the source event that triggers either the creation or updating of this FHIR resource"
 
+* extension contains Insight named insight 0..*
+* extension[insight] ^short = "References element level insight results pertaining to the data in this resource instance."
+* extension[insight] ^definition = "References element level insight results pertaining to the data in this resource instance."
+
 * tag 0..*
 * tag ^slicing.ordered = false
 * tag ^slicing.rules = #open
