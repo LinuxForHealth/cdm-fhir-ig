@@ -33,5 +33,11 @@ jobs:
       - run: gem install jekyll
       - run: npm run sushi
       - run: yes | npm run ig_init
-
+      - run: mkdir -p src/main/resources/hl7/fhir/alvearie/core
+      - run: cp build/output/package.tgz src/main/resources/hl7/fhir/alvearie/core
+      
+      - run: sudo apt install unzip
+      - run: unzip src/main/resources/hl7/fhir/alvearie/core/package.tgz -d src/main/resources/hl7/fhir/alvearie/core
+      - run: unzip src/main/resources/hl7/fhir/alvearie/core/package.tar -d src/main/resources/hl7/fhir/alvearie/core
+      
       - run: echo "🍏 This job's status is ${{ job.status }}."
