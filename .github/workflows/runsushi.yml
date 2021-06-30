@@ -42,7 +42,8 @@ jobs:
       - run: |
          cp -r data/ig-data/alvearie-template build/
          cd build
+         echo List files in workspace
          ls ${{ github.workspace }}
-         bash yes | ./_updatepublisher.sh
+      - run: bash yes | ./_updatepublisher.sh
       - run: echo List files in workspace
       - run: ls ${{ github.workspace }}
