@@ -38,3 +38,9 @@ jobs:
       - run: npm run sushi
       - run: echo List files in workspace
       - run: ls ${{ github.workspace }}
+      - run: echo Setup template
+      - run: cp -r data/ig-data/alvearie-template build/
+      - run: cd build
+      - run: yes | run npm ig_init
+      - run: echo List files in workspace
+      - run: ls ${{ github.workspace }}
