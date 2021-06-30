@@ -1,0 +1,25 @@
+# Run Sushi to build FHIR IG
+
+name: Run Sushi
+jobs:
+  run-sushi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with: 
+          node-version: '14'
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '3'
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 Now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 Branch is ${{ github.ref }} ${{ github.repository }} repo"
+      - run: echo "💡 The ${{ github.repository }} repo has been cloned to the runner."
+      
+      - run: npm install
+      - run: gem install jekyll
+      - run: npm run sushi
+      - run: yes | npm run ig_init
+
+      - run: echo "🍏 This job's status is ${{ job.status }}."
