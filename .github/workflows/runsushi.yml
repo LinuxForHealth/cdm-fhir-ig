@@ -41,6 +41,6 @@ jobs:
       - run: echo Setup template
       - run: cp -r data/ig-data/alvearie-template build/
       - run: cd build
-      - run: yes | run npm ig_init
+      - run: yes | ./_updatepublisher.sh
       - run: echo List files in workspace
       - run: ls ${{ github.workspace }}
