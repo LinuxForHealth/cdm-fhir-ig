@@ -39,7 +39,7 @@ jobs:
       - run: echo List files in workspace
       - run: ls ${{ github.workspace }}
       - run: echo Setup template
-      - run |
+      - run: |
          cp -r data/ig-data/alvearie-template build/
          cd build
          ls ${{ github.workspace }}
