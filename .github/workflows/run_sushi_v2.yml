@@ -39,4 +39,6 @@ jobs:
 #      - run: sudo apt install unzip
       - run: tar -xzf  src/main/resources/hl7/fhir/alvearie/core/package.tgz  -C src/main/resources/hl7/fhir/alvearie/core
       
+      - run: mvn clean install
+      
       - run: echo "🍏 This job's status is ${{ job.status }}."
