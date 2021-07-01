@@ -2,7 +2,7 @@ Alias: ID-TYPE = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: RESOURCE-TYPE = 	http://hl7.org/fhir/resource-types
 
 Alias: SNOMED = http://snomed.info/sct
-Alias: LOINC = http://loinc
+Alias: LOINC = http://loinc.org
 Alias: UMLS = http://terminology.hl7.org/CodeSystem/umls
 
 Alias: RACE = urn:oid:2.16.840.1.113883.6.238

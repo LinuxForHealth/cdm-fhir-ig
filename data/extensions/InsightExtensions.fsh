@@ -46,13 +46,13 @@ Description:    "ID for the insight as it is known by the source (or source syst
 Extension:      SourceId
 Id:              source-id
 Title:          "Source Id"
-Description:    "The ID of the source of the insight, such as an individual, algorithm, etc. that generated the insight."
+Description:    "The ID of the source of information provided"
 * value[x] only Identifier
 
 Extension:      Path
 Id:             path
 Title:          "Path"
-Description:    "Path to the FHIR element that the insight pertains to."
+Description:    "Path to a FHIR element"
 * value[x] only string
 
 Extension:      Detected
@@ -64,7 +64,7 @@ Description:    "When the insight evaluation occurred."
 Extension:      Category
 Id:              category
 Title:          "Category"
-Description:    "Top level category classifying the type of insight."
+Description:    "Top level category for classification purposes"
 * value[x] only CodeableConcept
 
 Extension:      InsightType

@@ -3,7 +3,7 @@ Id:             insight-detail
 Title:          "Insight Detail"
 Description:    "The break down of information referenced to produce the insight and information specific scoring breakdown and output when appropriate"
 
-* extension contains InsightReference named reference 1..1 
+* extension contains InsightReference named reference 0..1 
 * extension[reference] ^short = "Reference to content leveraged to produce the insight"
 * extension[reference] ^definition = "Reference to content leveraged to produce the insight"
 
