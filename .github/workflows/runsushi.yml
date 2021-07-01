@@ -44,7 +44,6 @@ jobs:
          
       - run: |
          echo Get IG version from json file Version 2
-         githubjson='cat package.json'
          version2=echo $(jq -r 'version' <<< "$githubjson")
          echo version2
          echo 'version2'
