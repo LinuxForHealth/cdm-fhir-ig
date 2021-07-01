@@ -33,15 +33,20 @@ jobs:
       - run: gem install jekyll
       - run: npm run sushi
       - run: yes | npm run ig_init
-      - run: mkdir -p src/main/resources/hl7/fhir/alvearie/core
-      - run: cp build/output/package.tgz src/main/resources/hl7/fhir/alvearie/core
+      - run: npm run copy_version
       
-#      - run: sudo apt install unzip
-      - run: tar -xzf  src/main/resources/hl7/fhir/alvearie/core/package.tgz  -C src/main/resources/hl7/fhir/alvearie/core
+      - run: |
+          echo "Unzip package."
+          mkdir -p src/main/resources/hl7/fhir/alvearie/core
+          cp build/output/package.tgz src/main/resources/hl7/fhir/alvearie/core
+          tar -xzf  src/main/resources/hl7/fhir/alvearie/core/package.tgz  -C src/main/resources/hl7/fhir/alvearie/core
       
-      - run: mvn clean install
+      - run: |
+         echo "Build."
+         mvn clean install
 
       - run: |
+         echo "Push changes."
          git config user.name github-actions
          git config user.email github.actions@github.com
          git add .
