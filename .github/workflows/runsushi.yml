@@ -57,23 +57,7 @@ jobs:
           path: 'package.json'
           prop_path: 'version'
       - run: echo ${{steps.version.outputs.prop}} 
-
-         steps:
-         - id: set_var
-           run: |
-              echo "Try version 3"
-              version3='cat package.json'
-              # the following lines are only required for multi line json
-              version3="${version3//'%'/'%25'}"
-              version3="${version3//$'\n'/'%0A'}"
-              version3="${version3//$'\r'/'%0D'}"
-              # end of optional handling for multi line json
-              echo "::set-output name=packageJson::$version3"
-         - run: |
-             echo "${{fromJson(steps.set_var.outputs.packageJson).version}}"
-             version4 = echo "${{fromJson(steps.set_var.outputs.packageJson).version}}"
-         
-         
+                  
       - run: echo List files in workspace
       - run: ls ${{ github.workspace }}
       
