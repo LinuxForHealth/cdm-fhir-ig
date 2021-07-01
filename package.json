@@ -11,12 +11,14 @@
   "scripts": {
     "sushi": "sushi data",
     "sushi_snapshot": "sushi -s data",
-    "ig_init": "cp -r data/ig-data/alvearie-template build/ && cd build && ./_updatePublisher.sh && ./_genonce.sh",
+    "ig_init": "cp -r data/ig-data/alvearie-template build/ && cd build && yes | ./_updatePublisher.sh && ./_genonce.sh",
     "ig_init_win": "xcopy \"data\\ig-data\\alvearie-template\" \"build\\alvearie-template\" /s /i /y /q && cd build && _updatePublisher.bat && _genonce.bat",
     "ig": "cp -r data/ig-data/alvearie-template build/ && cd build && ./_genonce.sh",
     "ig_win": "xcopy \"data\\ig-data\\alvearie-template\" \"build\\alvearie-template\" /s /i /y /q && cd build && _genonce.bat",
-    "copy_version": "rsync -ahcv build/output/ docs/0.1.0 --delete",
-    "copy_version_win": "xcopy \"build\\output\" \"docs\\0.1.0\" /s /i /y /q",
+    "mvn_snapshot": "mkdir -p ./src/main/resources/com/ibm/fhir/cdm && tar -C ./src/main/resources/com/ibm/fhir/cdm/ -xf ./build/output/package.tgz && mvn test",
+    "copy_snapshot": "cp target/*.jar build/output",
+    "copy_docs_version": "mkdir -p docs/0.1.0 && rsync -ahcv build/output/ docs/0.1.0 --delete",
+    "copy_docs_version_win": "xcopy \"build\\output\" \"docs\\0.1.0\" /s /i /y /q",
     "all": "npm run sushi && npm run ig_init && npm run copy_version"
   },
   "language": "en",
