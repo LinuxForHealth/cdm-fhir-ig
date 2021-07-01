@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Run Sushi
+name: Test github actions
 
 # Controls when the workflow will run
 on:
@@ -32,19 +32,11 @@ jobs:
       - run: echo Job is now running on a ${{ runner.os }} server hosted by Github.
       - run: echo Name of the branch is ${{ github.ref }}.
       - run: echo Name of the repository is ${{ github.repository }}.
-      - run: echo   
-      - run: echo We are now going to run sushi.
-      - run: npm install
-      - run: npm run sushi
+
+      - run: echo IG version is ${{ version }}
+      
       - run: echo List files in workspace
       - run: ls ${{ github.workspace }}
-      - run: echo Setup template
-      - run: cp -r data/ig-data/alvearie-template build/
-      - run: ls ${{ github.workspace }}
-      - run: bash cd ~
-      - run: bash cd build
-      - run: ls ${{ github.workspace }}
+
       - run: bash pwd
-      - run: bash yes | ./_updatepublisher.sh
-      - run: echo List files in workspace
-      - run: ls ${{ github.workspace }}
+
