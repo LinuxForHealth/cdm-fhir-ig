@@ -33,12 +33,11 @@ jobs:
       - run: echo Name of the branch is ${{ github.ref }}.
       - run: echo Name of the repository is ${{ github.repository }}.
 
-      - name: fetch IG version from json
       - run: |
+         echo Get IG version from json file
          githubjson='cat package.json'
          echo $githubjson
          version='echo $(jq -r '.version' <<< "$githubjson")'
-         echo version
       
       - run: echo List files in workspace
       - run: ls ${{ github.workspace }}
