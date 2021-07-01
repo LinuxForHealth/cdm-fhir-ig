@@ -32,17 +32,8 @@ jobs:
       - run: echo Job is now running on a ${{ runner.os }} server hosted by Github.
       - run: echo Name of the branch is ${{ github.ref }}.
       - run: echo Name of the repository is ${{ github.repository }}.
-
-      - run: |
-         echo Get IG version from json file Version 1
-         githubjson='cat package.json'
-         echo $githubjson
-         version='echo $(jq -r 'version' <<< "$githubjson")'
-         echo version
-         echo 'version'
-         echo $version
          
-      - name: get version
+      - name: get IG version
         id: version
         uses: notiz-dev/github-action-json-property@release
         with: 
