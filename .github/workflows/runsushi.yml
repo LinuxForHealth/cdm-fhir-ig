@@ -34,24 +34,37 @@ jobs:
       - run: echo Name of the repository is ${{ github.repository }}.
 
       - run: |
-         echo Get IG version from json file
+         echo Get IG version from json file Version 1
          githubjson='cat package.json'
          echo $githubjson
          version='echo $(jq -r 'version' <<< "$githubjson")'
          echo version
          echo 'version'
          echo $version
+         
+      - run: |
+         echo Get IG version from json file Version 2
+         githubjson='cat package.json'
          version2=echo $(jq -r 'version' <<< "$githubjson")
          echo version2
+         echo 'version2'
          echo $version2
-         content=`cat ./path/to/package.json`
-         # the following lines are only required for multi line json
-         content="${content//'%'/'%25'}"
-         content="${content//$'\n'/'%0A'}"
-         content="${content//$'\r'/'%0D'}"
-         # end of optional handling for multi line json
-         echo "::set-output name=packageJson::$content"
-         echo "${{fromJson(steps.set_var.outputs.packageJson).version}}"
+         
+         steps:
+         - id: set_var
+           run: |
+              echo "Try version 3"
+              version3='cat package.json'
+              # the following lines are only required for multi line json
+              version3="${version3//'%'/'%25'}"
+              version3="${version3//$'\n'/'%0A'}"
+              version3="${version3//$'\r'/'%0D'}"
+              # end of optional handling for multi line json
+              echo "::set-output name=packageJson::$version3"
+         - run: |
+             echo "${{fromJson(steps.set_var.outputs.packageJson).version}}"
+             version4 = echo "${{fromJson(steps.set_var.outputs.packageJson).version}}"
+         
          
       - run: echo List files in workspace
       - run: ls ${{ github.workspace }}
