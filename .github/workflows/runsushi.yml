@@ -41,6 +41,17 @@ jobs:
          echo version
          echo 'version'
          echo $version
+         version2=echo $(jq -r 'version' <<< "$githubjson")
+         echo version2
+         echo $version2
+         content=`cat ./path/to/package.json`
+         # the following lines are only required for multi line json
+         content="${content//'%'/'%25'}"
+         content="${content//$'\n'/'%0A'}"
+         content="${content//$'\r'/'%0D'}"
+         # end of optional handling for multi line json
+         echo "::set-output name=packageJson::$content"
+         echo "${{fromJson(steps.set_var.outputs.packageJson).version}}"
          
       - run: echo List files in workspace
       - run: ls ${{ github.workspace }}
