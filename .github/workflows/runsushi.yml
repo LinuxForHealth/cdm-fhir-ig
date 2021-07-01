@@ -42,13 +42,6 @@ jobs:
          echo 'version'
          echo $version
          
-      - run: |
-         echo Get IG version from json file Version 2
-         version2=echo $(jq -r 'version' <<< "$githubjson")
-         echo version2
-         echo 'version2'
-         echo $version2
-         
       - name: get version
         id: version
         uses: notiz-dev/github-action-json-property@release
