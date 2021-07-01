@@ -39,6 +39,8 @@ jobs:
          echo $githubjson
          version='echo $(jq -r 'version' <<< "$githubjson")'
          echo version
+         echo 'version'
+         echo $version
          
       - run: echo List files in workspace
       - run: ls ${{ github.workspace }}
