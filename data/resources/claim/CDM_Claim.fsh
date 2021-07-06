@@ -2,7 +2,7 @@ Profile:        CDMClaim
 Parent:         Claim
 Id:             cdm-claim
 Title:          "CDM Claim"
-Description:    "A provider issued list of professional services and products which have been provided, or are to be provided, to a patient which is sent to an insurer for reimbursement. The CDMClaim profile extends the base FHIR Claim resource with additional details."
+Description:    "This is a test of IG build and publish - A provider issued list of professional services and products which have been provided, or are to be provided, to a patient which is sent to an insurer for reimbursement. The CDMClaim profile extends the base FHIR Claim resource with additional details."
 * contained 0..0
 * meta only ProcessMeta
 
