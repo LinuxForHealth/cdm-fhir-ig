@@ -1,0 +1,69 @@
+name: Build And Publish v3
+on: 
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-publish-3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Runner Info
+        run: |
+          echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+          echo "🐧 Now running on a ${{ runner.os }} server hosted by GitHub!"
+          echo "🔎 Branch is ${{ github.ref }} ${{ github.repository }} repo"
+          echo "💡 The ${{ github.repository }} repo has been cloned to the runner."
+          echo "The event_name is ${{ github.event_name }}"
+          echo "The event.pull_request.merged is ${{ github.event.pull_request.merged}}"
+          echo "The ref is ${{ github.ref }}"
+          echo "The base_ref is ${{ github.base_ref }}"
+          echo "The head_ref is ${{ github.head_ref }}"
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '3'
+
+      - name: Setup Java / Maven
+        uses: actions/setup-java@v2
+        with:
+          java-version: '8'
+          distribution: 'adopt'          
+
+      - name: Install Dependencies
+        run:  |
+          npm install
+          gem install jekyll
+          mvn clean install
+      - name: Build IG
+        run:  |
+          npm run sushi
+          npm run ig_init
+      - name: Create Snapshot Jar
+        run:  |
+          npm run mvn_snapshot
+          npm run copy_snapshot
+      - name: Add Snapshot Jar to full-ig.zip
+        run: zip -ur build/output/full-ig.zip build/output/*.jar 
+
+      - name: Deploy Github Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages      # The branch to deploy to
+          folder: build/output  # Folder to deploy
+
+#      - name: Copy To Documents Folder
+#      - run: npm run copy_docs_version
+#
+#      - name: Commit Changes
+#        run: |
+#          git config user.name github-actions
+#          git config user.email github.actions@github.com
+#          git add .
+#          git commit -m "Generated docs"
+#          git push          

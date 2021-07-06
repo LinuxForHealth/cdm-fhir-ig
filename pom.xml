@@ -1,70 +1,67 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.ibm.fhir.cdm</groupId>
-	<version>${revision}</version>
-
-	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<base-version>0.1.0</base-version>
-		<revision>${base-version}-SNAPSHOT</revision>
-	</properties>
-
-	<artifactId>ig-common-data-model</artifactId>
-	<dependencies>
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>com.ibm.fhir</groupId>
-			<artifactId>fhir-model</artifactId>
-			<version>4.7.1</version>
-			<type>pom</type>
-		</dependency>
-
-		<dependency>
-			<groupId>com.ibm.fhir</groupId>
-			<artifactId>fhir-registry</artifactId>
-			<version>4.7.1</version>
-			<type>pom</type>
-		</dependency>
-
-		<dependency>
-			<groupId>com.ibm.fhir</groupId>
-			<artifactId>fhir-validation</artifactId>
-			<version>4.7.1</version>
-			<type>pom</type>
-		</dependency>
-	</dependencies>
-	
-	<distributionManagement>
-		<repository>
-			<id>ibm-fhir-releases</id>
-			<name>IBM FHIR Repository</name>
-			<url>https://na.artifactory.swg-devops.com:443/artifactory/wh-fhir-server-releases-maven-local</url>
-		</repository>
-		<snapshotRepository>
-			<id>ibm-fhir-snapshots</id>
-			<name>IBM FHIR Repository</name>
-			<url>https://na.artifactory.swg-devops.com:443/artifactory/wh-fhir-server-snapshots-maven-local</url>
-		</snapshotRepository>
-	</distributionManagement>
-
-	<profiles>
-		<profile>
-			<id>release</id>
-			<properties>
-				<revision>${base-version}</revision>
-			</properties>
-		</profile>
-	</profiles>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ibm.fhir.cdm</groupId>
+  <artifactId>ig-common-data-model</artifactId>
+  <version>0.1.1-SNAPSHOT</version>
+  <properties>
+    <maven.compiler.source>6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+  </properties>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.0</version>
+          <configuration>
+            <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  <distributionManagement>
+    <repository>
+      <id>ibm-fhir-releases</id>
+      <name>IBM FHIR Repository</name>
+      <url>https://na.artifactory.swg-devops.com:443/artifactory/wh-fhir-server-releases-maven-local</url>
+    </repository>
+    <snapshotRepository>
+      <id>ibm-fhir-snapshots</id>
+      <name>IBM FHIR Repository</name>
+      <url>https://na.artifactory.swg-devops.com:443/artifactory/wh-fhir-server-snapshots-maven-local</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <dependencies>
+    <dependency>
+      <groupId>com.ibm.fhir</groupId>
+      <artifactId>fhir-model</artifactId>
+      <version>4.8.3</version>
+      <type>pom</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.fhir</groupId>
+      <artifactId>fhir-registry</artifactId>
+      <version>4.8.3</version>
+      <type>pom</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.ibm.fhir</groupId>
+      <artifactId>fhir-validation</artifactId>
+      <version>4.8.3</version>
+      <type>pom</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.9.13.6</version>
+      <scope>compile</scope>
+    </dependency>    
+  </dependencies>
 </project>
