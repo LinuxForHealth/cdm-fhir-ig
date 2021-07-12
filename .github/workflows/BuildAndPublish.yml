@@ -1,0 +1,59 @@
+name: Build And Publish
+on: 
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-publish-3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Runner Info
+        run: |
+          echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+          echo "🐧 Now running on a ${{ runner.os }} server hosted by GitHub!"
+          echo "🔎 Branch is ${{ github.ref }} ${{ github.repository }} repo"
+          echo "💡 The ${{ github.repository }} repo has been cloned to the runner."
+          echo "The event_name is ${{ github.event_name }}"
+          echo "The event.pull_request.merged is ${{ github.event.pull_request.merged}}"
+          echo "The ref is ${{ github.ref }}"
+          echo "The base_ref is ${{ github.base_ref }}"
+          echo "The head_ref is ${{ github.head_ref }}"
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '3'
+
+      - name: Setup Java / Maven
+        uses: actions/setup-java@v2
+        with:
+          java-version: '8'
+          distribution: 'adopt'          
+
+      - name: Install Dependencies
+        run:  |
+          npm install
+          gem install jekyll
+          mvn clean install
+
+      - name: Build IG
+        run:  |
+          npm run sushi
+          npm run ig_init
+
+      - name: Create Snapshot Jar
+        run:  |
+          npm run mvn_snapshot
+          npm run copy_snapshot
+
+      - name: Add Snapshot Jar to full-ig.zip
+        run:  | 
+          pushd .
+          cd build/output
+          zip -ur full-ig.zip *.jar
+          popd 
