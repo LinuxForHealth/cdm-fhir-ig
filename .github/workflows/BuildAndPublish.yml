@@ -57,22 +57,3 @@ jobs:
           cd build/output
           zip -ur full-ig.zip *.jar
           popd 
-
-      - name: Copy To Documents Folder
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        run:  |
-          npm run copy_docs_version
-          git status
-          git config user.name github-actions
-          git config user.email github.actions@github.com
-          git add .
-          git commit -m "Generated docs"
-          git push          
-
-      - name: Deploy Github Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: gh-pages      # The branch to deploy to
-          folder: build/output  # Folder to deploy
-
