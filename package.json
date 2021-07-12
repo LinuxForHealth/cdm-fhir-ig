@@ -11,7 +11,7 @@
   "scripts": {
     "sushi": "sushi data",
     "sushi_snapshot": "sushi -s data",
-    "ig_init": "cp -r data/ig-data/alvearie-template build/ && cd build && ./_updatePublisher.sh && ./_genonce.sh",
+    "ig_init": "cp -r data/ig-data/alvearie-template build/ && cd build && yes | ./_updatePublisher.sh && ./_genonce.sh",
     "ig_init_win": "xcopy \"data\\ig-data\\alvearie-template\" \"build\\alvearie-template\" /s /i /y /q && cd build && _updatePublisher.bat && _genonce.bat",
     "ig": "cp -r data/ig-data/alvearie-template build/ && cd build && ./_genonce.sh",
     "ig_win": "xcopy \"data\\ig-data\\alvearie-template\" \"build\\alvearie-template\" /s /i /y /q && cd build && _genonce.bat",
