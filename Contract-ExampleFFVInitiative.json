@@ -7,12 +7,12 @@
     ]
   },
   "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Advantage Database Key: 2, Advantage customer key: Example FFV Initative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>"
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Attribution Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system enrollment}\">Enrollment</span></p><p><b>FFV Schedule</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/ffv-schedule monthly}\">Monthly</span></p><p><b>identifier</b>: Advantage Database Key: 2, Advantage customer key: Example FFV Initative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>"
   },
   "extension": [
     {
-      "url": "attributionCode",
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/attribution-code",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -23,7 +23,7 @@
       }
     },
     {
-      "url": "ffvSchedule",
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/ffv-schedule",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -39,7 +39,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system",
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
             "code": "ADKEY"
           }
         ]
@@ -50,7 +50,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system",
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
             "code": "CUSTKEY"
           }
         ]

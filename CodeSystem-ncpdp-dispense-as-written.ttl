@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/ncpdp-dispense-as-written> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ncpdp-dispense-as-written"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/ncpdp-dispense-as-written defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"ncpdp-dispense-as-written-0\"> </a></td><td>0</td><td>No Product Selection Indicated</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"ncpdp-dispense-as-written-1\"> </a></td><td>1</td><td>Prescriber Required (no sub)</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"ncpdp-dispense-as-written-2\"> </a></td><td>2</td><td>Patient Requested Product</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"ncpdp-dispense-as-written-3\"> </a></td><td>3</td><td>Pharmacist Selected Product</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"ncpdp-dispense-as-written-4\"> </a></td><td>4</td><td>Generic Drug Not in Stock</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"ncpdp-dispense-as-written-5\"> </a></td><td>5</td><td>Brand Dispensed as Generic</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"ncpdp-dispense-as-written-6\"> </a></td><td>6</td><td>Override</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"ncpdp-dispense-as-written-7\"> </a></td><td>7</td><td>Brand Mandated by Law (no sub)</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"ncpdp-dispense-as-written-8\"> </a></td><td>8</td><td>Generic Not Available</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"ncpdp-dispense-as-written-9\"> </a></td><td>9</td><td>Other</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/ncpdp-dispense-as-written"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "NCPDPDispenseAsWrittenCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "NCPDP Dispense As Written Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-07-13T16:59:08+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "The NCPDP industry standard description of how the product was dispensed."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "0" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "No Product Selection Indicated" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Prescriber Required (no sub)" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "2" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Patient Requested Product" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "3" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Pharmacist Selected Product" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "4" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Generic Drug Not in Stock" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "5" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Brand Dispensed as Generic" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "6" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Override" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "7" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Brand Mandated by Law (no sub)" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "8" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Generic Not Available" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "9" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/ncpdp-dispense-as-written.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

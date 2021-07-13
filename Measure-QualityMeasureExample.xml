@@ -26,8 +26,35 @@
     </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://ibm.com/fhir/cdm/Measure/QualityMeasureExample</code></p><p><b>identifier</b>: Resource identifier: 8f3a1491-a07f-4860-8977-e7dac7398175</p><p><b>version</b>: 0.1.0</p><p><b>name</b>: Diabetes_HbA1c_Test_Performed</p><p><b>status</b>: active</p><p><b>subject</b>: <span title="Codes: {http://hl7.org/fhir/resource-types Patient}">Patient</span></p><p><b>date</b>: 2020-01-01</p><p><b>publisher</b>: IBM</p><p><b>contact</b>: Kim Kenna: <a href="mailto:sloand@us.ibm.com">sloand@us.ibm.com</a>, Jill Doty: <a href="mailto:jdoty@us.ibm.com">jdoty@us.ibm.com</a></p><p><b>description</b>: Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period</p><h3>UseContexts</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>approvalDate</b>: 2020-01-01</p><p><b>lastReviewDate</b>: 2020-01-01</p><p><b>effectivePeriod</b>: 2020-01-01 --&gt; (ongoing)</p><p><b>topic</b>: <span title="Codes: {http://hl7.org/fhir/codesystem-definition-topic.html treatment}">treatment</span></p><p><b>library</b>: <code>Measure/Library</code></p><p><b>scoring</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring proportion}">Proportion</span></p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-type process}">Process</span></p><p><b>improvementNotation</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}">Increased score indicates improvement</span></p><p><b>guidance</b>: Only patients with a diagnosis of Type 1 or Type 2 diabetes should be included in the denominator of this measure.  Patients with a diagnosis of secondary diabetes due to another condition should not be included.</p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></p><p><b>description</b>: Patients 18-75 years of age with diabetes</p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population denominator}">Denominator</span></p><p><b>description</b>: Patients 18-75 years of age with diabetes with a visit during the measurement period</p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population numerator}">Numerator</span></p><p><b>description</b>: Patients who have had HbA1c test within the measurement period</p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/measure-population-type care-gap}">Care Gap</span></p><p><b>description</b>: DM Control - Low Risk</p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/measure-population-type care-gap}">Care Gap</span></p><p><b>description</b>: DM Poor Control - High Risk</p><h3>Criteria</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Measure Parameter</b>: </p><p><b style="color: maroon">Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here</b></p></div>
   </text>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter">
+    <valueParameterDefinition>
+      <name value="measurePeriod"/>
+      <use value="out"/>
+      <type value="Period"/>
+    </valueParameterDefinition>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter">
+    <valueParameterDefinition>
+      <extension url="http://ibm.com/fhir/cdm/StructureDefinition/default-value">
+        <valueString value="Pharyngitis Testing"/>
+      </extension>
+      <name value="complianceDisplayName"/>
+      <use value="out"/>
+      <type value="string"/>
+    </valueParameterDefinition>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter">
+    <valueParameterDefinition>
+      <extension url="http://ibm.com/fhir/cdm/StructureDefinition/default-value">
+        <valueString value="Once yearly"/>
+      </extension>
+      <name value="complianceFrequency"/>
+      <use value="out"/>
+      <type value="string"/>
+    </valueParameterDefinition>
+  </extension>
   <url value="http://ibm.com/fhir/cdm/Measure/QualityMeasureExample"/>
   <identifier>
     <type>
@@ -61,10 +88,10 @@
     </telecom>
   </contact>
   <contact>
-    <name value="Jill Doty"/>
+    <name value="Tom Eggebraaten"/>
     <telecom>
       <system value="email"/>
-      <value value="jdoty@us.ibm.com"/>
+      <value value="tegge@us.ibm.com"/>
     </telecom>
   </contact>
   <description value="Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period"/>

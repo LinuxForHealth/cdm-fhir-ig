@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>WH.CDM.FHIR\CDM Condition Example - JSON Representation - FHIR v4.0.1</title>
+    <title>ALVEARIE.FHIR.IG\CDM Condition Example - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -20,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-<link rel="stylesheet" href="assets/css/watson-health.css"/>
+<link rel="stylesheet" href="assets/css/alvearie.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -41,20 +40,20 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.247"}
-    h3,h4,h5,h6{--heading-prefix:"2.247"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.362"}
+    h3,h4,h5,h6{--heading-prefix:"2.362"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a no-external="true" id="ibm-wh-logo">
-    <img src="assets/images/ibm-wh.jpg" alt="IBM WH" style="float:left" height="60"/>
+  <a no-external="true" id="alvearie-logo">
+    <img src="assets/images/alvearieLogo.png" alt="Alvearie" style="float:left" height="60"/>
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WH Common Data Model Implementation Guide</span><br/>0.1.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>0.1.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -94,21 +93,24 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>CDM Condition Example</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">WH Common Data Model Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -175,14 +177,14 @@
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "b069a545-9506-40c6-8498-23de2e189143"
       }
     ],
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "http://acme-health.com/epic",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "http://acme-health.com/emr1",
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
       "http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition"
     ]
   },
   "<a href="http://hl7.org/fhir/R4/condition.html#Condition.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Source System Row Identifier: 46706977-907b-453a-87bc-76002d7076ef (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\"&gt;Active&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\"&gt;Confirmed&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\"&gt;Encounter Diagnosis&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;severity&lt;/b&gt;: &lt;span title=\"Codes: {http://snomed.info/sct 6736007}\"&gt;Moderate&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://snomed.info/sct 1201005}\"&gt;Benign essential hypertension&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Patient-CDMPatientInstance.html\"&gt;Generated Summary: Source System Row Identifier: unencryp-id1234 (OFFICIAL), Source System Row Identifier: encryp-id1234 (SECONDARY), Medical record number: 1011110101 (OFFICIAL), Medical record number: 1011110101 (USUAL), Social Beneficiary Identifier: 0001223333 (OFFICIAL), Social Beneficiary Identifier: 1CA0CA0CC00 (OFFICIAL), Social Beneficiary Identifier: 987654321000 (OFFICIAL); active; Firstname McLastname ; , Phone: 216-345-2662, Phone: 216-555-2222, fmclastname@fakemail.com; gender: male; birthDate: 1990-01-04; deceased: Sep 28, 2020, 12:00:00 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\"Encounter-CDMEncounterExample.html\"&gt;Generated Summary: Source System Row Identifier: e17be8c4-07be-43d2-a53c-9487881f6f70 (OFFICIAL); status: finished; &lt;span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\"&gt;ambulatory&lt;/span&gt;; &lt;span title=\"Codes: {http://snomed.info/sct 270427003}\"&gt;Patient-initiated encounter&lt;/span&gt;; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/service-type 367}\"&gt;Hypertension&lt;/span&gt;; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority R}\"&gt;routine&lt;/span&gt;; period: Apr 15, 2020, 9:00:00 AM --&amp;gt; Apr 15, 2020, 9:15:00 AM; &lt;span title=\"Codes: {http://snomed.info/sct 1201005}\"&gt;Benign essential hypertension&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2020-01-04&lt;/p&gt;&lt;p&gt;&lt;b&gt;recorder&lt;/b&gt;: &lt;a href=\"Practitioner-DrKelly.html\"&gt;Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), PRN: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;asserter&lt;/b&gt;: &lt;a href=\"Practitioner-DrKelly.html\"&gt;Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), PRN: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Source System Row Identifier: 46706977-907b-453a-87bc-76002d7076ef (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-clinical active}\"&gt;Active&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\"&gt;Confirmed&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\"&gt;Encounter Diagnosis&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;severity&lt;/b&gt;: &lt;span title=\"Codes: {http://snomed.info/sct 6736007}\"&gt;Moderate&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://snomed.info/sct 1201005}\"&gt;Benign essential hypertension&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Patient-CDMPatientInstance.html\"&gt;Generated Summary: Source System Row Identifier: unencryp-id1234 (OFFICIAL), Source System Row Identifier: encryp-id1234 (SECONDARY), Medical record number: 1011110101 (OFFICIAL), Medical record number: 1011110101 (USUAL), Social Beneficiary Identifier: 0001223333 (OFFICIAL), Social Beneficiary Identifier: 1CA0CA0CC00 (OFFICIAL), Social Beneficiary Identifier: 987654321000 (OFFICIAL), Match Data Identifier: 7b78d6de-46cb-4fbb-930d-2a74e24b17fe (SECONDARY); active; Firstname McLastname ; , Phone: 216-345-2662, Phone: 216-555-2222, fmclastname@fakemail.com; gender: male; birthDate: 1990-01-04; deceased: Sep 28, 2020, 12:00:00 AM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\"Encounter-CDMEncounterExample.html\"&gt;Generated Summary: Source System Row Identifier: e17be8c4-07be-43d2-a53c-9487881f6f70 (OFFICIAL); status: finished; &lt;span title=\"{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\"&gt;ambulatory&lt;/span&gt;; &lt;span title=\"Codes: {http://snomed.info/sct 270427003}\"&gt;Patient-initiated encounter&lt;/span&gt;; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/service-type 367}\"&gt;Hypertension&lt;/span&gt;; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActPriority R}\"&gt;routine&lt;/span&gt;; period: Apr 15, 2020, 9:00:00 AM --&amp;gt; Apr 15, 2020, 9:15:00 AM; &lt;span title=\"Codes: {http://snomed.info/sct 1201005}\"&gt;Benign essential hypertension&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2020-01-04&lt;/p&gt;&lt;p&gt;&lt;b&gt;recorder&lt;/b&gt;: &lt;a href=\"Practitioner-DrKelly.html\"&gt;Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;asserter&lt;/b&gt;: &lt;a href=\"Practitioner-DrKelly.html\"&gt;Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>" : [
     {
@@ -195,10 +197,10 @@
           }
         ]
       },
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://acme-health.com/epic/condition",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://acme-health.com/emr1/condition",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "46706977-907b-453a-87bc-76002d7076ef",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>" : {
-        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Acme Health - Epic"
+        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Acme Health - EMR1"
       }
     }
   ],
@@ -283,16 +285,20 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="78729543-19f9-4085-a9e7-689f6d4d226f">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="sloand@us.ibm.com"></a>.  Package wh.cdm.fhir#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 8, 2021 18:08+0000">2021-01-08</span>
+        <p><a name="3625d3fc-38e7-4d79-a218-d1ab9f2c667d">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 13, 2021 16:59+0000">2021-07-13</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-          </span>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -313,6 +319,13 @@
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   </body>

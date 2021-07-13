@@ -18,7 +18,7 @@
        fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
-     fhir:Meta.source [ fhir:value "http://acme-health.com/epic" ];
+     fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
        fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient";
        fhir:index 0;
@@ -27,7 +27,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status collection}\">Collections</span></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status confidential}\">Confidential</span></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status test}\">Test</span></p><p><b>importance</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance bad-debt}\">Bad Debt</span></p><p><b>importance</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance do-not-contact}\">Do Not Contact</span></p><p><b>Sex Assigned At Birth</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></p><p><b>identifier</b>: Source System Row Identifier: 35e4aa64-fdf8-4ef9-8acd-066aec45f63b (OFFICIAL)</p><p><b>name</b>: Norm Peterson </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1948-10-17</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status collection}\">Collections</span></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status confidential}\">Confidential</span></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status test}\">Test</span></p><p><b>importance</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance bad-debt}\">Bad Debt</span></p><p><b>importance</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance do-not-contact}\">Do Not Contact</span></p><p><b>Sex Assigned At Birth</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></p><p><b>identifier</b>: Source System Row Identifier: 35e4aa64-fdf8-4ef9-8acd-066aec45f63b (OFFICIAL), Match Data Identifier: 4fd6049c-59c5-4c7b-81b1-88869044535d (SECONDARY)</p><p><b>name</b>: Norm Peterson </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1948-10-17</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -100,10 +100,25 @@
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "http://acme-health.com/epic/patient" ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/emr1/patient" ];
      fhir:Identifier.value [ fhir:value "35e4aa64-fdf8-4ef9-8acd-066aec45f63b" ];
      fhir:Identifier.assigner [
-       fhir:Reference.display [ fhir:value "Acme Health - Epic" ]
+       fhir:Reference.display [ fhir:value "Acme Health - EMR1" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "MDI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ibm.com/fhir/primary/patient-match-identifier" ];
+     fhir:Identifier.value [ fhir:value "4fd6049c-59c5-4c7b-81b1-88869044535d" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "IBM" ]
      ]
   ];
   fhir:Patient.name [

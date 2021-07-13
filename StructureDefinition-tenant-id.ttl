@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "TenantId"];
   fhir:StructureDefinition.title [ fhir:value "Tenant Id"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-01-08T18:08:05+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-13T16:59:08+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -28,14 +28,14 @@
      ]
   ], [
      fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Jill Doty" ];
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jdoty@us.ibm.com" ]
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Defined by metadata and provided by the data producer, the ID that the messages will be stored at and processed as within the data pipeline.  Typically the tenant is the entity that holds the contract with IBM."];
+  fhir:StructureDefinition.description [ fhir:value "The ID for either the client or tenant that holds the contract with the data receiver, as recorded by the data receiver. This ID must be unique to data sent on behalf of that client or tenant within the data receiver systems. The receiver systems should associate this ID to the messages that originate from this client or tenant. This supports traceability, data protection, and data isolation, when appropriate."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

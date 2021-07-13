@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "SeeAlso"];
   fhir:StructureDefinition.title [ fhir:value "See Also"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-01-08T18:08:05+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-13T16:59:08+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -28,11 +28,11 @@
      ]
   ], [
      fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Jill Doty" ];
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jdoty@us.ibm.com" ]
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization)."];
@@ -188,7 +188,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchSourceReference" ];
        fhir:ElementDefinition.short [ fhir:value "Reference to the source resource that is matched" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reference to the source resource that is matched" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -236,7 +236,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchMethod" ];
        fhir:ElementDefinition.short [ fhir:value "Method used to identify the matched resource" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Method used to identify the matched resource" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -284,7 +284,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "splitMethod" ];
        fhir:ElementDefinition.short [ fhir:value "Method used to identify the matched resource to split" ];
-       fhir:ElementDefinition.definition [ fhir:value "Optional Extension Element - found in all resources." ];
+       fhir:ElementDefinition.definition [ fhir:value "Method used to identify the matched resource to split" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -341,7 +341,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchConfidenceLevel" ];
        fhir:ElementDefinition.short [ fhir:value "Confidence level code for the matched resource" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Confidence level code for the matched resource" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -389,7 +389,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchConfidenceScore" ];
        fhir:ElementDefinition.short [ fhir:value "Confidence score for the matched resource" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Confidence score for the matched resource" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -437,7 +437,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchPeriod" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when match is valid" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Time period when match is valid" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -485,7 +485,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchDetail" ];
        fhir:ElementDefinition.short [ fhir:value "Detailed match algorthm results used to match resources" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Detailed match algorthm results used to match resources" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -763,6 +763,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchSourceReference" ];
        fhir:ElementDefinition.short [ fhir:value "Reference to the source resource that is matched" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reference to the source resource that is matched" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -780,6 +781,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchMethod" ];
        fhir:ElementDefinition.short [ fhir:value "Method used to identify the matched resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "Method used to identify the matched resource" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -797,6 +799,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "splitMethod" ];
        fhir:ElementDefinition.short [ fhir:value "Method used to identify the matched resource to split" ];
+       fhir:ElementDefinition.definition [ fhir:value "Method used to identify the matched resource to split" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -814,6 +817,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchConfidenceLevel" ];
        fhir:ElementDefinition.short [ fhir:value "Confidence level code for the matched resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "Confidence level code for the matched resource" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -831,6 +835,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchConfidenceScore" ];
        fhir:ElementDefinition.short [ fhir:value "Confidence score for the matched resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "Confidence score for the matched resource" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -848,6 +853,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchPeriod" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when match is valid" ];
+       fhir:ElementDefinition.definition [ fhir:value "Time period when match is valid" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -865,6 +871,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchDetail" ];
        fhir:ElementDefinition.short [ fhir:value "Detailed match algorthm results used to match resources" ];
+       fhir:ElementDefinition.definition [ fhir:value "Detailed match algorthm results used to match resources" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [

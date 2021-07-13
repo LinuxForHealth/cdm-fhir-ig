@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>WH.CDM.FHIR\Family Id - Profile XML - FHIR v4.0.1</title>
+    <title>ALVEARIE.FHIR.IG\Family Id - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -20,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-<link rel="stylesheet" href="assets/css/watson-health.css"/>
+<link rel="stylesheet" href="assets/css/alvearie.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -41,20 +40,20 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.111"}
-    h3,h4,h5,h6{--heading-prefix:"2.111"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.137"}
+    h3,h4,h5,h6{--heading-prefix:"2.137"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a no-external="true" id="ibm-wh-logo">
-    <img src="assets/images/ibm-wh.jpg" alt="IBM WH" style="float:left" height="60"/>
+  <a no-external="true" id="alvearie-logo">
+    <img src="assets/images/alvearieLogo.png" alt="Alvearie" style="float:left" height="60"/>
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WH Common Data Model Implementation Guide</span><br/>0.1.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>0.1.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -94,21 +93,24 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Family Id</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">WH Common Data Model Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -190,7 +192,7 @@
     &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"&gt;&lt;tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"&gt;&lt;th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element"&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element"&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance"&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style="width: 100px" class="hierarchy"&gt;&lt;a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element"&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element"&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style="float: right"&gt;&lt;a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"&gt;&lt;img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/&gt; &lt;a href="StructureDefinition-family-id-definitions.html#Extension"&gt;Extension&lt;/a&gt;&lt;a name="Extension"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;span style="opacity: 0.5"&gt;0&lt;/span&gt;&lt;span style="opacity: 0.5"&gt;..&lt;/span&gt;&lt;span style="opacity: 0.5"&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="http://hl7.org/fhir/R4/extensibility.html#Extension"&gt;Extension&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;span style="opacity: 0.5"&gt;Extension&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy"/&gt; &lt;span style="text-decoration:line-through"&gt;extension&lt;/span&gt;&lt;a name="Extension.extension"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;span style="text-decoration:line-through"/&gt;&lt;span style="text-decoration:line-through"&gt;0&lt;/span&gt;&lt;span style="text-decoration:line-through"&gt;..&lt;/span&gt;&lt;span style="text-decoration:line-through"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;/tr&gt;
 &lt;tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"&gt;&lt;td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/&gt; &lt;a href="StructureDefinition-family-id-definitions.html#Extension.url"&gt;url&lt;/a&gt;&lt;a name="Extension.url"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;span style="opacity: 0.5"&gt;1&lt;/span&gt;&lt;span style="opacity: 0.5"&gt;..&lt;/span&gt;&lt;span style="opacity: 0.5"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#uri"&gt;uri&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;span style="color: darkgreen"&gt;&amp;quot;http://ibm.com/fhir/cdm/StructureDefinition/family-id&amp;quot;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/&gt; &lt;a href="StructureDefinition-family-id-definitions.html#Extension.value[x]"&gt;value[x]&lt;/a&gt;&lt;a name="Extension.value_x_"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;span style="opacity: 0.5"&gt;0&lt;/span&gt;&lt;span style="opacity: 0.5"&gt;..&lt;/span&gt;&lt;span style="opacity: 0.5"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="http://hl7.org/fhir/R4/datatypes.html#string"&gt;string&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;span style="opacity: 0.5"&gt;Value of extension&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"&gt;&lt;img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/&gt;&lt;img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/&gt; &lt;a href="StructureDefinition-family-id-definitions.html#Extension.value[x]"&gt;value[x]&lt;/a&gt;&lt;a name="Extension.value_x_"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;span style="opacity: 0.5"&gt;0&lt;/span&gt;&lt;span style="opacity: 0.5"&gt;..&lt;/span&gt;&lt;span style="opacity: 0.5"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;a href="http://hl7.org/fhir/R4/datatypes.html#Identifier"&gt;Identifier&lt;/a&gt;&lt;/td&gt;&lt;td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"&gt;&lt;span style="opacity: 0.5"&gt;Value of extension&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td colspan="5" class="hierarchy"&gt;&lt;br/&gt;&lt;a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"&gt;&lt;img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://ibm.com/fhir/cdm/StructureDefinition/family-id"/&gt;
@@ -198,7 +200,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="FamilyId"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Family Id"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="active"/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2021-01-08T18:08:05+00:00"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2021-07-13T16:59:08+00:00"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Kim Kenna"/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -207,14 +209,14 @@
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Jill Doty"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Tom Eggebraaten"/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="email"/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="jdoty@us.ibm.com"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="tegge@us.ibm.com"/&gt;
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.description">description</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="The unique identifier for the subscriber (contract holder, employee) and the associated dependents."/&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="The unique identifier for the subscriber (contract holder, employee) and the associated dependents"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.fhirVersion">fhirVersion</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="4.0.1"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping">mapping</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="rim"/&gt;
@@ -374,7 +376,7 @@
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="1"/&gt;
       &lt;/base&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="string"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="Identifier"/&gt;
       &lt;/type&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>="ele-1"/&gt;
@@ -407,7 +409,7 @@
     &lt;<a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.differential.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">id</a>="Extension.value[x]"&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">path</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Extension.value[x]"/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="string"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="Identifier"/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
   &lt;/differential&gt;
@@ -459,16 +461,20 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="1e965fd1-7df8-4a4a-a968-2a114604109e">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="sloand@us.ibm.com"></a>.  Package wh.cdm.fhir#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 8, 2021 18:08+0000">2021-01-08</span>
+        <p><a name="65d69491-d309-4d01-b821-c14547e6eb2b">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 13, 2021 16:59+0000">2021-07-13</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-          </span>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -489,6 +495,13 @@
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   </body>

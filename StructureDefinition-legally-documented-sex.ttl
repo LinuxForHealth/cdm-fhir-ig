@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "LegallyDocumentedSex"];
   fhir:StructureDefinition.title [ fhir:value "Legally Documented Sex"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-01-08T18:08:05+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-13T16:59:08+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -28,14 +28,14 @@
      ]
   ], [
      fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Jill Doty" ];
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jdoty@us.ibm.com" ]
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Sex as defined or amended on the patient's legal documentation, for example a birth certificate or driver's license."];
+  fhir:StructureDefinition.description [ fhir:value "Sex as defined or amended on the patient's legal documentation, for example a birth certificate or driver's license"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
@@ -188,7 +188,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "documentedSex" ];
        fhir:ElementDefinition.short [ fhir:value "Sex coding identified on the legal document" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Sex coding identified on the legal document" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -236,7 +236,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "documentedSource" ];
        fhir:ElementDefinition.short [ fhir:value "Source type of the legal document" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Source type of the legal document" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -284,7 +284,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "documentedSystem" ];
        fhir:ElementDefinition.short [ fhir:value "Source system or jurisdiction of the legal document" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Source system or jurisdiction of the legal document" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -562,6 +562,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "documentedSex" ];
        fhir:ElementDefinition.short [ fhir:value "Sex coding identified on the legal document" ];
+       fhir:ElementDefinition.definition [ fhir:value "Sex coding identified on the legal document" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -579,6 +580,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "documentedSource" ];
        fhir:ElementDefinition.short [ fhir:value "Source type of the legal document" ];
+       fhir:ElementDefinition.definition [ fhir:value "Source type of the legal document" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -596,6 +598,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "documentedSystem" ];
        fhir:ElementDefinition.short [ fhir:value "Source system or jurisdiction of the legal document" ];
+       fhir:ElementDefinition.definition [ fhir:value "Source system or jurisdiction of the legal document" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [

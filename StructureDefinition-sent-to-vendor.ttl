@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "SentToVendor"];
   fhir:StructureDefinition.title [ fhir:value "Sent To Vendor"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-01-08T18:08:05+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-13T16:59:08+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -28,11 +28,11 @@
      ]
   ], [
      fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Jill Doty" ];
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jdoty@us.ibm.com" ]
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "Records date/time and outcome of communications sent to vendor"];
@@ -201,7 +201,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "communicationSentTime" ];
        fhir:ElementDefinition.short [ fhir:value "Time communication was attempted" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Time communication was attempted" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -249,7 +249,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "communicationOutcome" ];
        fhir:ElementDefinition.short [ fhir:value "Vendor-specific communication response code or text" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Vendor-specific communication response code or text" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -522,6 +522,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "communicationSentTime" ];
        fhir:ElementDefinition.short [ fhir:value "Time communication was attempted" ];
+       fhir:ElementDefinition.definition [ fhir:value "Time communication was attempted" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -539,6 +540,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "communicationOutcome" ];
        fhir:ElementDefinition.short [ fhir:value "Vendor-specific communication response code or text" ];
+       fhir:ElementDefinition.definition [ fhir:value "Vendor-specific communication response code or text" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [

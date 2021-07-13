@@ -1,0 +1,213 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Patient/CDMPatientInstanceWithDataQualityInsights> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CDMPatientInstanceWithDataQualityInsights"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.valueString [ fhir:value "99999" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/path" ];
+         fhir:Extension.valueString [ fhir:value "contact.telecom.value(where system = 'phone')" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-id" ];
+         fhir:Extension.valueIdentifier [
+           fhir:Identifier.system [ fhir:value "http://www.claro.com/insights" ];
+           fhir:Identifier.value [ fhir:value "data-state-id-2" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/source-id" ];
+         fhir:Extension.valueIdentifier [
+           fhir:Identifier.system [ fhir:value "www.claro.com/analytics/phone-validator" ];
+           fhir:Identifier.value [ fhir:value "watson-md" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/detected" ];
+         fhir:Extension.valueDateTime [ fhir:value "2020-01-01T03:01:00Z"^^xsd:dateTime ]
+       ], [
+         fhir:index 4;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/category" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insight-category-code-system" ];
+             fhir:Coding.code [ fhir:value "data-quality" ]
+           ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-value" ];
+           fhir:Extension.valueString [ fhir:value "555-000-5500" ]
+         ], [
+           fhir:index 1;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/method" ];
+             fhir:Extension.valueCodeableConcept [
+               fhir:CodeableConcept.coding [
+                 fhir:index 0;
+                 fhir:Coding.system [ fhir:value "www.claro.com/phone-number-insights" ];
+                 fhir:Coding.code [ fhir:value "INCONSISTENT_PHONE_AREA_CODE" ]
+               ]
+             ]
+           ], [
+             fhir:index 1;
+             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/score" ];
+             fhir:Extension.valueDecimal [ fhir:value "0"^^xsd:decimal ]
+           ], [
+             fhir:index 2;
+             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/description" ];
+             fhir:Extension.valueString [ fhir:value "555 is not an area code in Chicago." ]
+           ];
+           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-confidence" ]
+         ];
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-result-summary" ]
+       ], [
+         fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-value" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-value" ];
+           fhir:Extension.valueString [ fhir:value "773-555-0100" ]
+         ], [
+           fhir:index 2;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/method" ];
+             fhir:Extension.valueCodeableConcept [
+               fhir:CodeableConcept.coding [
+                 fhir:index 0;
+                 fhir:Coding.system [ fhir:value "www.claro.com/phone-number-insights" ];
+                 fhir:Coding.code [ fhir:value "INCONSISTENT_PHONE_AREA_CODE" ]
+               ]
+             ]
+           ], [
+             fhir:index 1;
+             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/score" ];
+             fhir:Extension.valueDecimal [ fhir:value "1"^^xsd:decimal ]
+           ], [
+             fhir:index 2;
+             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/description" ];
+             fhir:Extension.valueString [ fhir:value "773 is a valid area code in Chicago." ]
+           ];
+           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-confidence" ]
+         ];
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-result-summary" ]
+       ], [
+         fhir:index 7;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/reference" ];
+           fhir:Extension.valueReference [
+             fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstanceWithDataQualityInsights>;
+             fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstanceWithDataQualityInsights" ]
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/reference-path" ];
+           fhir:Extension.valueString [ fhir:value "address.city" ]
+         ], [
+           fhir:index 2;
+           fhir:Element.extension [
+             fhir:index 0;
+             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/based-on-value" ];
+             fhir:Extension.valueString [ fhir:value "Chicago" ]
+           ];
+           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-result" ]
+         ];
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-detail" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight" ]
+     ];
+     fhir:Meta.source [ fhir:value "http://acme-health.com/emr" ];
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: unencryp-id1234 (OFFICIAL)</p><p><b>name</b>: Firstname McLastname </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1990-01-04</p><p><b>address</b>: 123 East St Chicago IL 60603 (HOME)</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: 555-000-5500(HOME), ph: 773-555-0100(HOME)</td></tr></table></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "SSRI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/emr/patient" ];
+     fhir:Identifier.value [ fhir:value "unencryp-id1234" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Acme Health - EMR System (unencrypted)" ]
+     ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "McLastname" ];
+     fhir:HumanName.given [
+       fhir:value "Firstname";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1990-01-04"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "physical" ];
+     fhir:Address.line [
+       fhir:value "123 East St";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Chicago" ];
+     fhir:Address.state [ fhir:value "IL" ];
+     fhir:Address.postalCode [ fhir:value "60603" ]
+  ];
+  fhir:Patient.contact [
+     fhir:index 0;
+     fhir:Patient.contact.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "555-000-5500" ];
+       fhir:ContactPoint.use [ fhir:value "home" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "773-555-0100" ];
+       fhir:ContactPoint.use [ fhir:value "home" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Patient/CDMPatientInstanceWithDataQualityInsights.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

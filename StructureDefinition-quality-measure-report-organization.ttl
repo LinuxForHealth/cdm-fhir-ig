@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "QualityMeasureOrganizationReport"];
   fhir:StructureDefinition.title [ fhir:value "Organization Quality Measure Report"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-01-08T18:08:05+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-13T16:59:08+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -37,11 +37,11 @@
      ]
   ], [
      fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Jill Doty" ];
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jdoty@us.ibm.com" ]
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "A quality measure report with an organizational focus"];
@@ -473,11 +473,11 @@
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8;
-       fhir:Element.id [ fhir:value "MeasureReport.extension:measureParameterValues" ];
+       fhir:Element.id [ fhir:value "MeasureReport.extension:measureParameterValue" ];
        fhir:ElementDefinition.path [ fhir:value "MeasureReport.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "measureParameterValues" ];
-       fhir:ElementDefinition.short [ fhir:value "Measure parameter values used to generate the measure report." ];
-       fhir:ElementDefinition.definition [ fhir:value "Optional Extension Element - found in all resources." ];
+       fhir:ElementDefinition.sliceName [ fhir:value "measureParameterValue" ];
+       fhir:ElementDefinition.short [ fhir:value "Measure parameter value used to generate the measure report" ];
+       fhir:ElementDefinition.definition [ fhir:value "Measure parameter value used to generate the measure report" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -489,9 +489,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-values";
+           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-values>
+           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1392,7 +1392,7 @@
        fhir:Element.id [ fhir:value "MeasureReport.group.population.code" ];
        fhir:ElementDefinition.path [ fhir:value "MeasureReport.group.population.code" ];
        fhir:ElementDefinition.short [ fhir:value "initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | care-gap" ];
-       fhir:ElementDefinition.definition [ fhir:value "The type of the population." ];
+       fhir:ElementDefinition.definition [ fhir:value "initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | care-gap" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -1985,7 +1985,7 @@
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "denominator-exclusion" ]
+           fhir:Coding.code [ fhir:value "numerator" ]
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2277,7 +2277,7 @@
          fhir:CodeableConcept.coding [
            fhir:index 0;
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "numerator" ]
+           fhir:Coding.code [ fhir:value "denominator" ]
          ]
        ];
        fhir:ElementDefinition.constraint [

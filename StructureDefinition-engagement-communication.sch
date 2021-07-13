@@ -18,10 +18,12 @@
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-measure']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-measure': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-priority-sequence']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-priority-sequence': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-language']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-language': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-template']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-template': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-payload-data']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-payload-data': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-vendor']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-vendor': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/conversation-type']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/conversation-type': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-reengagement']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-reengagement': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-retry-limt']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/communication-retry-limt': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:partOf) &lt;= 0">partOf: maximum cardinality of 'partOf' is 0</sch:assert>
       <sch:assert test="count(f:inResponseTo) &lt;= 0">inResponseTo: maximum cardinality of 'inResponseTo' is 0</sch:assert>
@@ -31,6 +33,7 @@
       <sch:assert test="count(f:encounter) &lt;= 0">encounter: maximum cardinality of 'encounter' is 0</sch:assert>
       <sch:assert test="count(f:sent) &lt;= 0">sent: maximum cardinality of 'sent' is 0</sch:assert>
       <sch:assert test="count(f:reasonCode) &lt;= 0">reasonCode: maximum cardinality of 'reasonCode' is 0</sch:assert>
+      <sch:assert test="count(f:reasonReference) &lt;= 0">reasonReference: maximum cardinality of 'reasonReference' is 0</sch:assert>
       <sch:assert test="count(f:note) &lt;= 0">note: maximum cardinality of 'note' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -85,12 +88,16 @@
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>

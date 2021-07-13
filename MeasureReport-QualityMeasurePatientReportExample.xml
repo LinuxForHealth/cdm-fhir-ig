@@ -32,15 +32,45 @@
     </tag>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Measure Report Assigned Practitioner</b>: <a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html">Generated Summary: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL); active</a></p><p><b>MeasureParameterValues</b>: { complianceDisplayName = 'HbA1c Test', complianceFrequency = 'Once yearly' }</p><blockquote><p><b>Measure Report Evidence</b></p><h3>Urls</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Patient is adult 18-75</p><h3>Urls</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: true</p></blockquote><blockquote><p><b>Measure Report Evidence</b></p><h3>Urls</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Patient is diabetic</p><h3>Urls</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: true</p></blockquote><blockquote><p><b>Measure Report Evidence</b></p><h3>Urls</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Patient had HbA1c test in meeasurement period</p><h3>Urls</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: false</p></blockquote><p><b>identifier</b>: Resource identifier: de25d288-120e-47c1-bb76-caac8bc3f439</p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <code>Measure-QualityMeasureExample.html</code></p><p><b>subject</b>: <a href="Patient/Patient1">Patient/Patient1</a></p><p><b>date</b>: Mar 1, 2020, 3:00:00 AM</p><p><b>reporter</b>: <a href="Organization/IBM">Organization/IBM</a></p><p><b>period</b>: 2020-01-01 --&gt; 2020-12-31</p><p><b>improvementNotation</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}">Initial Population</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population denominator}">Denominator</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/measure-population numerator}">Numerator</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/measure-population-type care-gap}">Care Gap</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/measure-population-type care-gap}">Care Gap</span></p><p><b>count</b>: 1</p></blockquote></blockquote></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Measure Report Assigned Practitioner</b>: <a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html">Generated Summary: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL); active</a></p><p><b>MeasureParameterValue</b>: </p><p><b style="color: maroon">Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here</b></p></div>
   </text>
   <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-report-assigned-practitioner">
     <valueReference>
       <reference value="PractitionerRole/CDMPractitionerRole-Attributed-PCP"/>
     </valueReference>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-values">
-    <valueString value="{ complianceDisplayName = &#39;HbA1c Test&#39;, complianceFrequency = &#39;Once yearly&#39; }"/>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value">
+    <valueParameterDefinition>
+      <extension url="http://ibm.com/fhir/cdm/StructureDefinition/parameter-value">
+        <valuePeriod>
+          <start value="2019-02-13"/>
+          <end value="2020-02-12"/>
+        </valuePeriod>
+      </extension>
+      <name value="measurePeriod"/>
+      <use value="out"/>
+      <type value="Period"/>
+    </valueParameterDefinition>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value">
+    <valueParameterDefinition>
+      <extension url="http://ibm.com/fhir/cdm/StructureDefinition/parameter-value">
+        <valueString value="HbA1c Testing"/>
+      </extension>
+      <name value="complianceDisplayName"/>
+      <use value="out"/>
+      <type value="string"/>
+    </valueParameterDefinition>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value">
+    <valueParameterDefinition>
+      <extension url="http://ibm.com/fhir/cdm/StructureDefinition/parameter-value">
+        <valueString value="Once yearly"/>
+      </extension>
+      <name value="complianceFrequency"/>
+      <use value="out"/>
+      <type value="string"/>
+    </valueParameterDefinition>
   </extension>
   <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence">
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence-text">

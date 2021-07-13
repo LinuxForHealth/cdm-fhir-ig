@@ -1,4 +1,4 @@
-"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping","Mapping: CDA (R2)","Mapping: FiveWs Pattern Mapping","Mapping: HL7 v2 Mapping","Mapping: LOINC code for the element","Mapping: Advantage Person"
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping","Mapping: CDA (R2)","Mapping: FiveWs Pattern Mapping","Mapping: HL7 v2 Mapping","Mapping: LOINC code for the element"
 "Patient","","SubjectOfCare Client Resident
 ","",0,*,"","","","","Information about an individual or animal receiving health care services","Demographics and other administrative information about an individual or animal receiving care or other health-related services.","","","","","","","","","",,,,,"",,,,"Patient",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
 dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}","Entity. Role, or Act","Patient[classCode=PAT]","ClinicalDocument.recordTarget.patientRole"
@@ -25,34 +25,28 @@ anonymous resourcescontained resources","",0,0,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension","familyId","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/family-id]]} {[]}
-","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Patient.extension","familyId","","",0,*,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/family-id]]} {[]}
+","The unique identifier for the subscriber (contract holder, employee) and the associated dependents","The unique identifier for the subscriber (contract holder, employee) and the associated dependents","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Patient.extension","birthSex","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex]]} {[]}
-","Extension","A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc).","The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Patient.extension","usCoreBirthSex","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex]]} {[]}
+","A code classifying the person’s sex assigned at birth as specified by the Office of the National Coordinator for Health IT (ONC)","A code classifying the person’s sex assigned at birth as specified by the Office of the National Coordinator for Health IT (ONC). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9).","The codes required are intended to present birth sex (i.e., the sex recorded on the patient’s birth certificate) and not gender identity or reassigned sex.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender","N/A","D_DEMOG.sex_cd"
-"Patient.extension","race","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race]]} {[]}
-","US Core Race Extension","Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
-
-   - American Indian or Alaska Native
-   - Asian
-   - Black or African American
-   - Native Hawaiian or Other Pacific Islander
-   - White.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender"
+"Patient.extension","usCoreRace","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-race]]} {[]}
+","Complex extension for race allows one or more race codes","Complex extension for race allows one or more race codes. Must Support at least one code from OMB Race Categories. May include additional race codes from CDC Race Codes. Must include text description of race.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A","D_DEMOG.race_cd"
-"Patient.extension","ethnicity","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity]]} {[]}
-","US Core ethnicity Extension","Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Patient.extension","usCoreEthnicity","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity]]} {[]}
+","Complex extension for ethnicity allows one or more ethnicity codes","Complex extension for ethnicity allows one or more rethnicityce codes. Must Support at least one code from OMB Ethnicity Categories. May include additional ethnicity codes from CDC Ethnicity Codes. Must include text description of ethnicity.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension","statusCode","","",0,*,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/status-code]]} {[]}
-","Client-specific patient status codes.","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Customer-specific patient status codes","Customer-specific patient status codes","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.extension","patientImportance","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-importance]]} {[]}
-","Special status given the patient","The importance of the patient (e.g. VIP).","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","The importance of the patient.  For example: VIP, DO-NOT-CONTACT, etc.","The importance of the patient.  For example: VIP, DO-NOT-CONTACT, etc.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -67,23 +61,19 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
 ","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Patient.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
+"Patient.extension.value[x]","valueCodeableConcept","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"extensible","","http://ibm.com/fhir/cdm/ValueSet/patient-importance","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Patient.extension","primaryPayer","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/primary-payer]]} {[]}
-","Primary payer or insurance provider for the patient.","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Patient.extension","secondaryPayer","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/secondary-payer]]} {[]}
-","Secondary payer or insurance provider for the patient.","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Patient.extension","localRaceCd","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/local-race-cd]]} {[]}
+","Customer-specific code for the race of the person","Customer-specific code for the race of the person","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.extension","sexAssignedAtBirth","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth]]} {[]}
-","Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.","Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender Identity of the person, which will not be known until the newborn is older.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.extension","patientGenderIdentity","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-genderIdentity]]} {[]}
-","The patient's gender identity","The gender the patient identifies with. The Patient's gender identity is used as guidance (e.g. for staff) about how to interact with the patient.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","The gender the patient identifies with. The Patient's gender identity is used as guidance (e.g. for staff) about how to interact with the patient.","The gender the patient identifies with. The Patient's gender identity is used as guidance (e.g. for staff) about how to interact with the patient.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -98,23 +88,23 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"example","","http://hl7.org/fhir/ValueSet/gender-identity","","type:$this}
 ","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Patient.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
+"Patient.extension.value[x]","valueCodeableConcept","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/extensibility.html) for a list).","","","","","","","","","",,"extensible","","http://ibm.com/fhir/cdm/ValueSet/gender-identity","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Patient.extension","identifiedPronouns","","",0,*,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/identified-pronouns]]} {[]}
-","Gender, typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Gender, typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.","Gender, typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.extension","legallyDocumentedSex","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/legally-documented-sex]]} {[]}
-","Sex as defined or amended on the patient's legal documentation, for example a birth certificate or driver's license.","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Sex as defined or amended on the patient's legal documentation, for example a birth certificate or driver's license","Sex as defined or amended on the patient's legal documentation, for example a birth certificate or driver's license","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.extension","sexualOrientation","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/sexual-orientation]]} {[]}
-","Patient's physical, romantic, and/or emotional attraction towards other people.","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Patient's physical, romantic, and/or emotional attraction towards other people","Patient's physical, romantic, and/or emotional attraction towards other people","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.extension","communicationOptOut","","",0,*,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/communication-opt-out]]} {[]}
-","Opt-out patient for communications by product and/or communication mode.","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Opt-out patient for communications by product and/or communication mode","Opt-out patient for communications by product and/or communication mode","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.modifierExtension","","extensions
@@ -135,7 +125,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.identifier.extension","encryptedState","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state]]} {[]}
-","Used to indicates whether the identifier value is encrypted.","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Used to indicate whether the identifier value is encrypted","Used to indicate whether the identifier value is encrypted","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.identifier.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -166,130 +156,23 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
 "Patient.name","","","",0,*,"","","Y","HumanName {[]} {[]}
 ","A name associated with the patient","A name associated with the individual.","A patient may have multiple names with different uses or applicable periods. For animals, the name is a ""HumanName"" in the sense that is assigned and used by humans and has the same patterns.","Need to be able to track the patient by multiple names. Examples are your official name and a partner name.","","","","","","","",,,,,"",,,,"Patient.name",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","name",".patient.name","PID-5, PID-9"
-"Patient.name.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Patient.name.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Patient.name.use","","","",0,1,"","Y","Y","code {[]} {[]}
-","usual | official | temp | nickname | anonymous | old | maiden","Identifies the purpose for this name.","Applications can assume that a name is current unless it explicitly says that it is temporary or old.","Allows the appropriate name for a particular context of use to be selected from among a set of names.","","","","","","","",,"required","The use of a human name.","http://hl7.org/fhir/ValueSet/name-use|4.0.1","",,,,"HumanName.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","unique(./use)","XPN.7, but often indicated by which field contains the name"
-"Patient.name.text","","","",0,1,"","","Y","string {[]} {[]}
-","Text representation of the full name","Specifies the entire name as it should be displayed e.g. on an application UI. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating a name SHALL ensure that when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","","","",,,,,"",,,,"HumanName.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./formatted","implied by XPN.11"
-"Patient.name.family","","surname
-","",0,1,"","","Y","string {[]} {[]}
-","Family name (often called 'Surname')","The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father.","Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).","","","","","","","","",,,,,"",,,,"HumanName.family",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./part[partType = FAM]","XPN.1/FN.1","D_PERSON.last_name"
-"Patient.name.given","","first name
-middle name","",0,*,"","","Y","string {[]} {[]}
-","Given names (not always 'first'). Includes middle names","Given name.","If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called ""first name"" since given names do not always come first.","","","","","","","","",,,,,"",,,,"HumanName.given",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./part[partType = GIV]","XPN.2 + XPN.3"
-"Patient.name.prefix","","","",0,*,"","","Y","string {[]} {[]}
-","Parts that come before the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name.","","","","","","","","","",,,,,"",,,,"HumanName.prefix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./part[partType = PFX]","XPN.5"
-"Patient.name.suffix","","","",0,*,"","","Y","string {[]} {[]}
-","Parts that come after the name","Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name.","","","","","","","","","",,,,,"",,,,"HumanName.suffix",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./part[partType = SFX]","XPN/4"
-"Patient.name.period","","","",0,1,"","","Y","Period {[]} {[]}
-","Time period when name was/is in use","Indicates the period of time when this name was valid for the named person.","","Allows names to be placed in historical context.","","","","","","","",,,,,"",,,,"HumanName.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./usablePeriod[type=""IVL<TS>""]","XPN.13 + XPN.14"
-"Patient.telecom","","","",0,*,"","","Y","ContactPoint {[]} {[]}
-","A contact detail for the individual","A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted.","A Patient may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and also to help with identification. The address might not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner's phone).","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","telecom",".telecom","PID-13, PID-14, PID-40"
-"Patient.telecom.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Patient.telecom.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Patient.telecom.extension","contactPointCountry","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/contactpoint-country]]} {[]}
-","The country code as defined by the ITU. This extension is used when a system wishes to designate specific parts of a phone number.","The country code as defined by the ITU. This extension is used when a system wishes to designate specific parts of a phone number (and potentially place constraints on which components must be present and how they're filled in).","The ContactPoint.value element SHOULD still be populated even if the extension is present.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Patient.telecom.extension","contactPointExt","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/contactpoint-extension]]} {[]}
-","The number that may be dialed within a private phone network or after successfully connecting to a private phone network.","The number that may be dialed within a private phone network or after successfully connecting to a private phone network. This extension is used when a system wishes to designate specific parts of a phone number (and potentially place constraints on which components must be present and how they're filled in).","The ContactPoint.value element SHOULD still be populated even if the extension is present.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.telecom.system","","","",0,1,"","","Y","code {[]} {[]}
-","phone | fax | email | pager | url | sms | other","Telecommunications form for contact point - what communications system is required to make use of the contact.","","","","","","","","","",,"required","Telecommunications form for contact point.","http://hl7.org/fhir/ValueSet/contact-point-system|4.0.1","",,,,"ContactPoint.system",0,1,"cpt-2
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./scheme","XTN.3"
-"Patient.telecom.value","","","",0,1,"","","Y","string {[]} {[]}
-","The actual contact point details","The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).","Additional text data such as phone extension numbers, or notes about use of the contact are sometimes included in the value.","Need to support legacy numbers that are not in a tightly controlled format.","","","","","","","",,,,,"",,,,"ContactPoint.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./url","XTN.1 (or XTN.12)"
-"Patient.telecom.use","","","",0,1,"","Y","Y","code {[]} {[]}
-","home | work | temp | old | mobile - purpose of this contact point","Identifies the purpose for the contact point.","Applications can assume that a contact is current unless it explicitly says that it is temporary or old.","Need to track the way a person uses this contact, so a user can choose which is appropriate for their purpose.","","","","","","","",,"required","Use of contact point.","http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1","",,,,"ContactPoint.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","unique(./use)","XTN.2 - but often indicated by field"
-"Patient.telecom.rank","","","",0,1,"","","Y","positiveInt {[]} {[]}
-","Specify preferred order of use (1 = highest)","Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.","Note that rank does not necessarily follow the order in which the contacts are represented in the instance.","","","","","","","","",,,,,"",,,,"ContactPoint.rank",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","n/a","n/a"
-"Patient.telecom.period","","","",0,1,"","","Y","Period {[]} {[]}
-","Time period when the contact point was/is in use","Time period when the contact point was/is in use.","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./usablePeriod[type=""IVL<TS>""]","N/A"
+"Patient.telecom","","","",0,*,"","","","ContactPoint {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/cdm-contact-point]]} {[]}
+","Details of a Technology mediated contact point (phone, fax, email, etc.)","Details for all kinds of technology mediated contact points for a person or organization, including telephone, email, etc.","A Patient may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and also to help with identification. The address might not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner's phone).","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.telecom",0,*,"ele-1
+","cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}
+ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}","n/a","TEL","XTN"
 "Patient.gender","","","",0,1,"","","Y","code {[]} {[]}
 ","male | female | other | unknown","Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes.","The gender might not match the biological sex as determined by genetics or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than male and female, though the vast majority of systems and contexts only support male and female.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific sex or gender aspect of interest (anatomical, chromosomal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosomal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overridable error, not a ""hard"" error.  See the Patient Gender and Sex section for additional information about communicating patient gender and sex.","Needed for identification of the individual, in combination with (at least) name and birth date.","","","","","","","",,"required","The gender of a person used for administrative purposes.","http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1","",,,,"Patient.gender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender",".patient.administrativeGenderCode","PID-8"
 "Patient.birthDate","","","",0,1,"","","Y","date {[]} {[]}
 ","The date of birth for the individual","The date of birth for the individual.","At least an estimated year should be provided as a guess if the real DOB is unknown  There is a standard extension ""patient-birthTime"" available that should be used where Time is required (such as in maternity/infant care systems).","Age of the individual drives many clinical processes.","","","","","","","",,,,,"",,,,"Patient.birthDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","player[classCode=PSN|ANM and determinerCode=INSTANCE]/birthTime",".patient.birthTime","PID-7","21112-8","D_PERSON.birth_dt"
+","player[classCode=PSN|ANM and determinerCode=INSTANCE]/birthTime",".patient.birthTime","PID-7","21112-8"
 "Patient.deceased[x]","","","",0,1,"","Y","Y","boolean {[]} {[]}
 dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates if the individual is deceased or not.","If there's no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.","The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.","","","","","","","",,,,,"",,,,"Patient.deceased[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedInd, player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedTime","n/a","PID-30  (bool) and PID-29 (datetime)","D_PERSON.death_dt"
-"Patient.address","","","",0,*,"","","Y","Address {[]} {[]}
-","An address for the individual","An address for the individual.","Patient may have multiple addresses with different uses or applicable periods.","May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.","","","","","","","",,,,,"",,,,"Patient.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","addr",".addr","PID-11"
-"Patient.address.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Patient.address.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Patient.address.extension","countyCode","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/county-code]]} {[]}
-","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A","D_PERSON.county_cd"
-"Patient.address.extension","regionCode","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/region-code]]} {[]}
-","Optional Extensions Element","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A","D_GEO.region_cd"
-"Patient.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
-","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","unique(./use)","XAD.7"
-"Patient.address.type","","","",0,1,"","","Y","code {[]} {[]}
-","postal | physical | both","Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.","The definition of Address states that ""address is intended to describe postal addresses, not physical locations"". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","<valueCode xmlns=""http://hl7.org/fhir"" value=""both""/>","","",,"required","The type of an address (physical / postal).","http://hl7.org/fhir/ValueSet/address-type|4.0.1","",,,,"Address.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","unique(./use)","XAD.18"
-"Patient.address.text","","","",0,1,"","","Y","string {[]} {[]}
-","Text representation of the address","Specifies the entire address as it should be displayed e.g. on a postal label. This may be provided instead of or as well as the specific parts.","Can provide both a text representation and parts. Applications updating an address SHALL ensure that  when both text and parts are present,  no content is included in the text that isn't found in a part.","A renderable, unencoded form.","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street, Erewhon 9132""/>","","",,,,,"",,,,"Address.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./formatted","XAD.1 + XAD.2 + XAD.3 + XAD.4 + XAD.5 + XAD.6"
-"Patient.address.line","","","",0,*,"","","Y","string {[]} {[]}
-","Street name, number, direction & P.O. Box etc.","This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""137 Nowhere Street""/>","","",,,,,"",,,,"Address.line",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = AL]","XAD.1 + XAD.2 (note: XAD.1 and XAD.2 have different meanings for a company address than for a person address)","D_PERSON.address"
-"Patient.address.city","","Municpality
-","",0,1,"","","Y","string {[]} {[]}
-","Name of city, town etc.","The name of the city, town, suburb, village or other community or delivery center.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Erewhon""/>","","",,,,,"",,,,"Address.city",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = CTY]","XAD.3","D_PERSON.city"
-"Patient.address.district","","County
-","",0,1,"","","Y","string {[]} {[]}
-","District name (aka county)","The name of the administrative area (county).","District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead.","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Madison""/>","","",,,,,"",,,,"Address.district",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = CNT | CPA]","XAD.9","D_PERSON.county"
-"Patient.address.state","","Province
-Territory","",0,1,"","","Y","string {[]} {[]}
-","Sub-unit of country (abbreviations ok)","Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).","","","","","","","","","",,,,,"",,,,"Address.state",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = STA]","XAD.4","D_PERSON.state_cd"
-"Patient.address.postalCode","","Zip
-","",0,1,"","","Y","string {[]} {[]}
-","Postal code for area","A postal code designating a region defined by the postal service.","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9132""/>","","",,,,,"",,,,"Address.postalCode",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = ZIP]","XAD.5","D_PERSON.zip_cd","D_PERSON.zip_plus4_cd"
-"Patient.address.country","","","",0,1,"","","Y","string {[]} {[]}
-","Country (e.g. can be ISO 3166 2 or 3 letter code)","Country - a nation as commonly understood or generally accepted.","ISO 3166 3 letter codes can be used in place of a human readable country name.","","","","","","","","",,,,,"",,,,"Address.country",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","AD.part[parttype = CNT]","XAD.6"
-"Patient.address.period","","","",0,1,"","","Y","Period {[]} {[]}
-","Time period when address was/is in use","Time period when address was/is in use.","","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
-  <start value=""2010-03-23""/>
-  <end value=""2010-07-01""/>
-</valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","./usablePeriod[type=""IVL<TS>""]","XAD.12 / XAD.13 + XAD.14"
+","player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedInd, player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedTime","n/a","PID-30  (bool) and PID-29 (datetime)"
+"Patient.address","","","",0,*,"","","","Address {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/cdm-address]]} {[]}
+","An address expressed using postal conventions (as opposed to GPS or other location definition formats)","An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.","Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.","","","","","","","",,,,,"",,,,"Patient.address",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","AD","XAD"
 "Patient.maritalStatus","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Marital (civil) status of a patient","This field contains a patient's most recent marital (civil) status.","","Most, if not all systems capture it.","","","","","","","",,"extensible","The domestic partnership status of a person.","http://hl7.org/fhir/ValueSet/marital-status","",,,,"Patient.maritalStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN]/maritalStatusCode",".patient.maritalStatusCode","PID-16"
@@ -323,12 +206,14 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.contact.name","","","",0,1,"","","","HumanName {[]} {[]}
 ","A name associated with the contact person","A name associated with the contact person.","","Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person.","","","","","","","",,,,,"",,,,"Patient.contact.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","name","n/a","NK1-2"
-"Patient.contact.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
-","A contact detail for the person","A contact detail for the person, e.g. a telephone number or an email address.","Contact may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification.","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.contact.telecom",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","telecom","n/a","NK1-5, NK1-6, NK1-40"
-"Patient.contact.address","","","",0,1,"","","","Address {[]} {[]}
-","Address for the contact person","Address for the contact person.","","Need to keep track where the contact person can be contacted per postal mail or visited.","","","","","","","",,,,,"",,,,"Patient.contact.address",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","addr","n/a","NK1-4"
+"Patient.contact.telecom","","","",0,*,"","","","ContactPoint {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/cdm-contact-point]]} {[]}
+","Details of a Technology mediated contact point (phone, fax, email, etc.)","Details for all kinds of technology mediated contact points for a person or organization, including telephone, email, etc.","Contact may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification.","People have (primary) ways to contact them in some way such as phone, email.","","","","","","","",,,,,"",,,,"Patient.contact.telecom",0,*,"ele-1
+","cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}
+ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}","n/a","TEL","XTN"
+"Patient.contact.address","","","",0,1,"","","","Address {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/cdm-address]]} {[]}
+","An address expressed using postal conventions (as opposed to GPS or other location definition formats)","An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.","Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","Need to keep track where the contact person can be contacted per postal mail or visited.","","","","","","","",,,,,"",,,,"Patient.contact.address",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","AD","XAD"
 "Patient.contact.gender","","","",0,1,"","","","code {[]} {[]}
 ","male | female | other | unknown","Administrative Gender - the gender that the contact person is considered to have for administration and record keeping purposes.","","Needed to address the person correctly.","","","","","","","",,"required","The gender of a person used for administrative purposes.","http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1","",,,,"Patient.contact.gender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender","n/a","NK1-15"
@@ -349,7 +234,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.communication.extension","languageRank","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/language-rank]]} {[]}
-","Specify preferred order of language use (1 = highest).","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Specify preferred order of language use (1 = highest)","Specify preferred order of language use (1 = highest)","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.communication.modifierExtension","","extensions

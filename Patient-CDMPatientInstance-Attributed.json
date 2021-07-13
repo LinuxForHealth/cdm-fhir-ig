@@ -12,14 +12,14 @@
         "valueString": "b069a545-9506-40c6-8498-23de2e189143"
       }
     ],
-    "source": "http://acme-health.com/epic",
+    "source": "http://acme-health.com/emr1",
     "profile": [
       "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
     ]
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Sex Assigned At Birth</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></p><p><b>identifier</b>: Source System Row Identifier: 1fe85e9a-a19f-463c-b8cf-2b649c1740b6 (OFFICIAL)</p><p><b>name</b>: Sam Malone </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1947-12-29</p><p><b>generalPractitioner</b>: </p><ul><li><a href=\"PractitionerRole-CDMPractitionerRole-EMR-PCP.html\">Generated Summary: Source System Row Identifier: 5870c580-0d87-4237-a86b-a49ef4637b31 (OFFICIAL); active; <span title=\"Codes: {http://snomed.info/sct 59058001}\">General physician</span>; <span title=\"Codes: {http://snomed.info/sct 394814009}\">General practice (specialty)</span></a></li><li><a href=\"PractitionerRole/EnrollmentPCP1\">PractitionerRole/EnrollmentPCP1</a></li><li><a href=\"PractitionerRole/EnrollmentPCP2\">PractitionerRole/EnrollmentPCP2</a></li><li><a href=\"PractitionerRole/AdvImputedPCP\">PractitionerRole/AdvImputedPCP</a></li><li><a href=\"PractitionerRole-CDMPractitionerRole-Attributed-PCP.html\">Generated Summary: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL); active</a></li><li><a href=\"PractitionerRole-CDMPractitionerRole-Attributed-PCP.html\">Generated Summary: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL); active</a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Sex Assigned At Birth</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></p><p><b>identifier</b>: Source System Row Identifier: 1fe85e9a-a19f-463c-b8cf-2b649c1740b6 (OFFICIAL), Match Data Identifier: a491127b-2e01-452f-ba3c-0cc93e986e8c (SECONDARY)</p><p><b>name</b>: Sam Malone </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1947-12-29</p><p><b>generalPractitioner</b>: </p><ul><li><a href=\"PractitionerRole-CDMPractitionerRole-EMR-PCP.html\">Generated Summary: Source System Row Identifier: 5870c580-0d87-4237-a86b-a49ef4637b31 (OFFICIAL); active; <span title=\"Codes: {http://snomed.info/sct 59058001}\">General physician</span>; <span title=\"Codes: {http://snomed.info/sct 394814009}\">General practice (specialty)</span></a></li><li><a href=\"PractitionerRole/EnrollmentPCP1\">PractitionerRole/EnrollmentPCP1</a></li><li><a href=\"PractitionerRole/EnrollmentPCP2\">PractitionerRole/EnrollmentPCP2</a></li><li><a href=\"PractitionerRole/AdvImputedPCP\">PractitionerRole/AdvImputedPCP</a></li><li><a href=\"PractitionerRole-CDMPractitionerRole-Attributed-PCP.html\">Generated Summary: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL); active</a></li><li><a href=\"PractitionerRole-CDMPractitionerRole-Attributed-PCP.html\">Generated Summary: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL); active</a></li></ul></div>"
   },
   "extension": [
     {
@@ -45,10 +45,26 @@
           }
         ]
       },
-      "system": "http://acme-health.com/epic/patient",
+      "system": "http://acme-health.com/emr1/patient",
       "value": "1fe85e9a-a19f-463c-b8cf-2b649c1740b6",
       "assigner": {
-        "display": "Acme Health - Epic"
+        "display": "Acme Health - EMR1"
+      }
+    },
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "MDI"
+          }
+        ]
+      },
+      "system": "http://ibm.com/fhir/primary/patient-match-identifier",
+      "value": "a491127b-2e01-452f-ba3c-0cc93e986e8c",
+      "assigner": {
+        "display": "IBM"
       }
     }
   ],

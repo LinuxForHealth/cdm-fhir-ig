@@ -25,39 +25,43 @@ anonymous resourcescontained resources","",0,0,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Communication.extension","communicationProduct","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/communication-product]]} {[]}
-","Product generating the communication","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Product generating the communication","Product generating the communication","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Communication.extension","communicationOnBehalfOf","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/communication-on-behalf-of]]} {[]}
-","Attributed provider, location, or organization communication is on-behalf of","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Attributed provider, location, or organization communication is on-behalf of","Attributed provider, location, or organization communication is on-behalf of","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Communication.extension","communicationContact","","",1,1,"Y","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/communication-contact]]} {[]}
-","Phone number, email, or address to contact","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Phone number, email, or address to contact","Phone number, email, or address to contact","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Communication.extension","communicationMeasure","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/communication-measure]]} {[]}
-","Reference to the measure that resulted in the communication","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Reference to the measure that resulted in the communication","Reference to the measure that resulted in the communication","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Communication.extension","communicationCareGap","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap]]} {[]}
-","ID of care gap for which we are communicating","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ID of care gap for which we are communicating","ID of care gap for which we are communicating","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Communication.extension","communicationPrioritySequence","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/communication-priority-sequence]]} {[]}
-","Priority of the communication request (1 = highest)","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Priority of the communication request (1 = highest)","Priority of the communication request (1 = highest)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Communication.extension","communicationLanguage","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/communication-language]]} {[]}
+","Language used for communication messaging content","Language used for communication messaging content","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Communication.extension","communicationTemplate","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/communication-template]]} {[]}
-","Id or url reference to template to be used for communication","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ID or url reference to template to be used for communication","ID or url reference to template to be used for communication","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Communication.extension","communicationPayloadData","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/communication-payload-data]]} {[]}
-","Contains dynamic data elements and vendor / medium specific elements to be included in the message payload","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Contains dynamic data elements and vendor / medium specific elements to be included in the message payload","Contains dynamic data elements and vendor / medium specific elements to be included in the message payload","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Communication.extension","communicationVendor","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/communication-vendor]]} {[]}
-","Vendor used to send the communication","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Vendor used to send the communication","Vendor used to send the communication","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Communication.modifierExtension","","extensions

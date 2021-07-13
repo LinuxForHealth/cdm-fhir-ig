@@ -16,12 +16,12 @@
      ]
   ];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Advantage Database Key: 1, Advantage customer key: Milestone1Initiative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>"
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Attribution Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system enrollment}\">Enrollment</span></p><p><b>FFV Schedule</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/ffv-schedule monthly}\">Monthly</span></p><p><b>Quality Measures</b>: <span></span></p><p><b>identifier</b>: Advantage Database Key: 1, Advantage customer key: Milestone1Initiative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "attributionCode" ];
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/attribution-code" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
@@ -31,7 +31,7 @@
      ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "ffvSchedule" ];
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ffv-schedule" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
@@ -41,7 +41,7 @@
      ]
   ], [
      fhir:index 2;
-     fhir:Extension.url [ fhir:value "qualityMeasures" ];
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/quality-measures" ];
      fhir:Extension.valueReference [
        fhir:Reference.identifier [
          fhir:Identifier.value [ fhir:value "quality-measure-list-1" ]
@@ -53,7 +53,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system" ];
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "ADKEY" ]
        ]
      ];
@@ -63,7 +63,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system" ];
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "CUSTKEY" ]
        ]
      ];

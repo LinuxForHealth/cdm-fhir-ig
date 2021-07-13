@@ -28,7 +28,7 @@
   <name value="QualityMeasurePractitionerReport"/>
   <title value="Practitioner Quality Measure Report"/>
   <status value="active"/>
-  <date value="2021-01-08T18:08:05+00:00"/>
+  <date value="2021-07-13T16:59:08+00:00"/>
   <contact>
     <name value="Kim Kenna"/>
     <telecom>
@@ -37,10 +37,10 @@
     </telecom>
   </contact>
   <contact>
-    <name value="Jill Doty"/>
+    <name value="Tom Eggebraaten"/>
     <telecom>
       <system value="email"/>
-      <value value="jdoty@us.ibm.com"/>
+      <value value="tegge@us.ibm.com"/>
     </telecom>
   </contact>
   <description value="A quality measure report focused on practitioner performance"/>
@@ -363,11 +363,11 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="MeasureReport.extension:measureParameterValues">
+    <element id="MeasureReport.extension:measureParameterValue">
       <path value="MeasureReport.extension"/>
-      <sliceName value="measureParameterValues"/>
-      <short value="Measure parameter values used to generate the measure report."/>
-      <definition value="Optional Extension Element - found in all resources."/>
+      <sliceName value="measureParameterValue"/>
+      <short value="Measure parameter value used to generate the measure report"/>
+      <definition value="Measure parameter value used to generate the measure report"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -377,7 +377,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-values"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -1049,7 +1049,7 @@
     <element id="MeasureReport.group.population.code">
       <path value="MeasureReport.group.population.code"/>
       <short value="initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | care-gap"/>
-      <definition value="The type of the population."/>
+      <definition value="initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | care-gap"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -1497,7 +1497,7 @@
       <patternCodeableConcept>
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
-          <code value="denominator-exclusion"/>
+          <code value="numerator"/>
         </coding>
       </patternCodeableConcept>
       <constraint>
@@ -1717,7 +1717,7 @@
       <patternCodeableConcept>
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
-          <code value="numerator"/>
+          <code value="denominator"/>
         </coding>
       </patternCodeableConcept>
       <constraint>

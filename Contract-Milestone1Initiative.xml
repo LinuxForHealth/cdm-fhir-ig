@@ -6,9 +6,9 @@
     <profile value="http://ibm.com/fhir/cdm/StructureDefinition/ffv-initative-resource"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Advantage Database Key: 1, Advantage customer key: Milestone1Initiative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Attribution Code</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system enrollment}">Enrollment</span></p><p><b>FFV Schedule</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/ffv-schedule monthly}">Monthly</span></p><p><b>Quality Measures</b>: <span></span></p><p><b>identifier</b>: Advantage Database Key: 1, Advantage customer key: Milestone1Initiative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>
   </text>
-  <extension url="attributionCode">
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/attribution-code">
     <valueCodeableConcept>
       <coding>
         <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system"/>
@@ -16,7 +16,7 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="ffvSchedule">
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ffv-schedule">
     <valueCodeableConcept>
       <coding>
         <system value="http://ibm.com/fhir/cdm/CodeSystem/ffv-schedule"/>
@@ -24,7 +24,7 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="qualityMeasures">
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/quality-measures">
     <valueReference>
       <identifier>
         <value value="quality-measure-list-1"/>
@@ -34,7 +34,7 @@
   <identifier>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system"/>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="ADKEY"/>
       </coding>
     </type>
@@ -43,7 +43,7 @@
   <identifier>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/cdm-identifier-type-code-system"/>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="CUSTKEY"/>
       </coding>
     </type>

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>WH.CDM.FHIR\Engagement Communication Request Example - TTL Representation - FHIR v4.0.1</title>
+    <title>ALVEARIE.FHIR.IG\Engagement Communication Request Example - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -20,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-<link rel="stylesheet" href="assets/css/watson-health.css"/>
+<link rel="stylesheet" href="assets/css/alvearie.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -41,20 +40,20 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.260"}
-    h3,h4,h5,h6{--heading-prefix:"2.260"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.382"}
+    h3,h4,h5,h6{--heading-prefix:"2.382"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a no-external="true" id="ibm-wh-logo">
-    <img src="assets/images/ibm-wh.jpg" alt="IBM WH" style="float:left" height="60"/>
+  <a no-external="true" id="alvearie-logo">
+    <img src="assets/images/alvearieLogo.png" alt="Alvearie" style="float:left" height="60"/>
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WH Common Data Model Implementation Guide</span><br/>0.1.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>0.1.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -94,21 +93,24 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Engagement Communication Request Example</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">WH Common Data Model Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!-- ReleaseHeader --><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
 
@@ -206,7 +208,7 @@
   ];
   <a href="http://hl7.org/fhir/R4/communicationrequest.html#CommunicationRequest.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "extensions" ];
-     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Contact&lt;/b&gt;: 808-248-8689(MOBILE)&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Template&lt;/b&gt;: dm-template&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Payload Data&lt;/b&gt;: {shortCode = '888-111'}&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Product&lt;/b&gt;: &lt;span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/eng-product ihe}\"&gt;IHE&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Conversation Type&lt;/b&gt;: &lt;span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/eng-conversation-type health-reminder}\"&gt;Health reminders associated with a clinical diagnosis, care gap, or other treatment opportunities&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication On-Behalf Of&lt;/b&gt;: &lt;a href=\"PractitionerRole-CDMPractitionerRole-Attributed-PCP.html\"&gt;Generated Summary: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL); active&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Measure&lt;/b&gt;: &lt;a href=\"Measure-QualityMeasureExample.html\"&gt;Generated Summary: url: http://ibm.com/fhir/cdm/Measure/QualityMeasureExample; Resource identifier: 8f3a1491-a07f-4860-8977-e7dac7398175; version: 0.1.0; name: Diabetes_HbA1c_Test_Performed; status: active; &lt;span title=\"Codes: {http://hl7.org/fhir/resource-types Patient}\"&gt;Patient&lt;/span&gt;; date: 2020-01-01; publisher: IBM; Kim Kenna: sloand@us.ibm.com, Jill Doty: jdoty@us.ibm.com; description: Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period; approvalDate: 2020-01-01; lastReviewDate: 2020-01-01; effectivePeriod: 2020-01-01 --&amp;gt; (ongoing); &lt;span title=\"Codes: {http://hl7.org/fhir/codesystem-definition-topic.html treatment}\"&gt;treatment&lt;/span&gt;; library: Measure/Library; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring proportion}\"&gt;Proportion&lt;/span&gt;; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type process}\"&gt;Process&lt;/span&gt;; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\"&gt;Increased score indicates improvement&lt;/span&gt;; guidance: Only patients with a diagnosis of Type 1 or Type 2 diabetes should be included in the denominator of this measure.  Patients with a diagnosis of secondary diabetes due to another condition should not be included.&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Care Gap&lt;/b&gt;: dm-hba1c-caregap-poor-control&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Priority Sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Retry Limit&lt;/b&gt;: 5&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Vendor&lt;/b&gt;: &lt;a href=\"Organization/Genesis\"&gt;Organization/Genesis&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Derived Resource Identifier: 0bd930b0-e2fc-4967-957d-a6719ecde9b4&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusReason&lt;/b&gt;: &lt;span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/eng-communication-reqeust-status-reason request-complete}\"&gt;In-Process - Communication request complete&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/communication-category notification}\"&gt;Notification&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;medium&lt;/b&gt;: &lt;span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/eng-communication-mode sms}\"&gt;Sms Text&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Patient/Patient1\"&gt;Patient/Patient1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;about&lt;/b&gt;: &lt;a href=\"DetectedIssue-CareGapDetectedIssueExample.html\"&gt;Generated Summary: Derived Resource Identifier: d90a8ceb-6f1a-4bc6-8d2a-8c00e6ea8a3e; status: final; identified: 2020-02-14 --&amp;gt; 2020-02-28&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Payloads&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Content[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Our records indicate you are overdue for a medical appointment.  Please contact [PRACTIIONER-NAME] at [FACILITY-NAME], [FACILTY-PHONE] to schedule an appointment.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: Jun 16, 2020, 9:00:00 AM --&amp;gt; Jun 16, 2020, 8:00:00 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: Jun 16, 2020, 3:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href=\"Organization/IBM\"&gt;Organization/IBM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recipient&lt;/b&gt;: &lt;a href=\"Patient/Patient1\"&gt;Patient/Patient1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sender&lt;/b&gt;: &lt;a href=\"Organization/IBM\"&gt;Organization/IBM&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Contact&lt;/b&gt;: 808-248-8689(MOBILE)&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Template&lt;/b&gt;: dm-template&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Payload Data&lt;/b&gt;: {shortCode = '888-111'}&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Product&lt;/b&gt;: &lt;span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/eng-product ihe}\"&gt;IHE&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Conversation Type&lt;/b&gt;: &lt;span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/eng-conversation-type gap-in-care}\"&gt;Health reminders associated with a gap in care&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication On-Behalf Of&lt;/b&gt;: &lt;a href=\"PractitionerRole-CDMPractitionerRole-Attributed-PCP.html\"&gt;Generated Summary: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL); active&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Measure&lt;/b&gt;: &lt;a href=\"Measure-QualityMeasureExample.html\"&gt;Generated Summary: url: http://ibm.com/fhir/cdm/Measure/QualityMeasureExample; Resource identifier: 8f3a1491-a07f-4860-8977-e7dac7398175; version: 0.1.0; name: Diabetes_HbA1c_Test_Performed; status: active; &lt;span title=\"Codes: {http://hl7.org/fhir/resource-types Patient}\"&gt;Patient&lt;/span&gt;; date: 2020-01-01; publisher: IBM; Kim Kenna: sloand@us.ibm.com, Tom Eggebraaten: tegge@us.ibm.com; description: Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period; approvalDate: 2020-01-01; lastReviewDate: 2020-01-01; effectivePeriod: 2020-01-01 --&amp;gt; (ongoing); &lt;span title=\"Codes: {http://hl7.org/fhir/codesystem-definition-topic.html treatment}\"&gt;treatment&lt;/span&gt;; library: Measure/Library; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-scoring proportion}\"&gt;Proportion&lt;/span&gt;; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-type process}\"&gt;Process&lt;/span&gt;; &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\"&gt;Increased score indicates improvement&lt;/span&gt;; guidance: Only patients with a diagnosis of Type 1 or Type 2 diabetes should be included in the denominator of this measure.  Patients with a diagnosis of secondary diabetes due to another condition should not be included.&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Care Gap&lt;/b&gt;: dm-hba1c-caregap-poor-control&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Priority Sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Communication Reengagement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1st reengagement&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;Communication Language&lt;/b&gt;: en-US&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Retry Limit&lt;/b&gt;: 5&lt;/p&gt;&lt;p&gt;&lt;b&gt;Communication Vendor&lt;/b&gt;: &lt;a href=\"Organization/Genesis\"&gt;Organization/Genesis&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Derived Resource Identifier: 0bd930b0-e2fc-4967-957d-a6719ecde9b4&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;statusReason&lt;/b&gt;: &lt;span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/eng-communication-reqeust-status-reason request-complete}\"&gt;In-Process - Communication request complete&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\"Codes: {http://terminology.hl7.org/CodeSystem/communication-category notification}\"&gt;Notification&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: routine&lt;/p&gt;&lt;p&gt;&lt;b&gt;medium&lt;/b&gt;: &lt;span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/eng-communication-mode sms}\"&gt;Sms Text&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"Patient/Patient1\"&gt;Patient/Patient1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;about&lt;/b&gt;: &lt;a href=\"DetectedIssue-CareGapDetectedIssueExample.html\"&gt;Generated Summary: Derived Resource Identifier: d90a8ceb-6f1a-4bc6-8d2a-8c00e6ea8a3e; status: final; identified: 2020-02-14 --&amp;gt; 2020-02-28&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Payloads&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Content[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Our records indicate you are overdue for a medical appointment.  Please contact [PRACTIIONER-NAME] at [FACILITY-NAME], [FACILTY-PHONE] to schedule an appointment.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;occurrence&lt;/b&gt;: Jun 16, 2020, 9:00:00 AM --&amp;gt; Jun 16, 2020, 8:00:00 PM&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: Jun 16, 2020, 3:00:00 AM&lt;/p&gt;&lt;p&gt;&lt;b&gt;requester&lt;/b&gt;: &lt;a href=\"Organization/IBM\"&gt;Organization/IBM&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recipient&lt;/b&gt;: &lt;a href=\"Patient/Patient1\"&gt;Patient/Patient1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sender&lt;/b&gt;: &lt;a href=\"Organization/IBM\"&gt;Organization/IBM&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"
   ];
   <a href="http://hl7.org/fhir/R4/communicationrequest.html#CommunicationRequest.extension">fhir:DomainResource.extension</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -238,7 +240,7 @@
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://ibm.com/fhir/cdm/CodeSystem/eng-conversation-type" ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "health-reminder" ]       ]     ]
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "gap-in-care" ]       ]     ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5;
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://ibm.com/fhir/cdm/StructureDefinition/communication-on-behalf-of" ];
@@ -259,10 +261,24 @@
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueDecimal</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">fhir:value</a> "1"^^xsd:decimal ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 9;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">fhir:Element.extension</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://ibm.com/fhir/cdm/StructureDefinition/reengagement-value" ];
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueUnsignedInt</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> "1"^^xsd:nonNegativeInteger ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://ibm.com/fhir/cdm/StructureDefinition/reengagement-display" ];
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "1st reengagement" ]     ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://ibm.com/fhir/cdm/StructureDefinition/communication-reengagement" ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10;
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://ibm.com/fhir/cdm/StructureDefinition/communication-language" ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "en-US" ]
+  ], [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 11;
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://ibm.com/fhir/cdm/StructureDefinition/communication-retry-limt" ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "5" ]
   ], [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10;
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 12;
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://ibm.com/fhir/cdm/StructureDefinition/communication-vendor" ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueReference</a> [
        <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Organization/Genesis" ]     ]
@@ -363,16 +379,20 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="a3261e03-d9d5-41bd-b238-865340169b7e">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="sloand@us.ibm.com"></a>.  Package wh.cdm.fhir#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 8, 2021 18:08+0000">2021-01-08</span>
+        <p><a name="f1471703-7c8c-4b37-9637-f852ffe36cf0">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 13, 2021 16:59+0000">2021-07-13</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-          </span>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -393,6 +413,13 @@
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   </body>

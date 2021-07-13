@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>WH.CDM.FHIR\CDM Procedure Example - FHIR v4.0.1</title>
+    <title>ALVEARIE.FHIR.IG\CDM Procedure Example - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -20,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-<link rel="stylesheet" href="assets/css/watson-health.css"/>
+<link rel="stylesheet" href="assets/css/alvearie.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -41,20 +40,20 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.255"}
-    h3,h4,h5,h6{--heading-prefix:"2.255"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.373"}
+    h3,h4,h5,h6{--heading-prefix:"2.373"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a no-external="true" id="ibm-wh-logo">
-    <img src="assets/images/ibm-wh.jpg" alt="IBM WH" style="float:left" height="60"/>
+  <a no-external="true" id="alvearie-logo">
+    <img src="assets/images/alvearieLogo.png" alt="Alvearie" style="float:left" height="60"/>
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WH Common Data Model Implementation Guide</span><br/>0.1.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>0.1.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -94,21 +93,24 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>CDM Procedure Example</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">WH Common Data Model Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
   
 
@@ -161,7 +163,7 @@
 
 
 
-  <div><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: 3c4c3b81-07d2-434a-8696-0d5f325b6519 (OFFICIAL)</p><p><b>status</b>: completed</p><p><b>category</b>: <span title="Codes: {http://snomed.info/sct 103693007}">Diagnostic procedure</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 5880005}">Clinical examination</span></p><p><b>subject</b>: <a href="Patient-CDMPatientInstance.html">Generated Summary: Source System Row Identifier: unencryp-id1234 (OFFICIAL), Source System Row Identifier: encryp-id1234 (SECONDARY), Medical record number: 1011110101 (OFFICIAL), Medical record number: 1011110101 (USUAL), Social Beneficiary Identifier: 0001223333 (OFFICIAL), Social Beneficiary Identifier: 1CA0CA0CC00 (OFFICIAL), Social Beneficiary Identifier: 987654321000 (OFFICIAL); active; Firstname McLastname ; , Phone: 216-345-2662, Phone: 216-555-2222, fmclastname@fakemail.com; gender: male; birthDate: 1990-01-04; deceased: Sep 28, 2020, 12:00:00 AM</a></p><p><a name="5daa2bdb-a4a6-4f08-a224-ba8eb8588660">​</a><b>encounter</b>: <a href="Encounter/Encounter1">Encounter/Encounter1</a></p><p><b>performed</b>: Jan 6, 2020, 10:30:00 AM</p><p><b>recorder</b>: <a href="Practitioner-DrKelly.html">Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), PRN: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com</a></p><p><b>asserter</b>: <a href="Practitioner-DrKelly.html">Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), PRN: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com</a></p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Function</b></td><td><b>Actor</b></td><td><b>OnBehalfOf</b></td></tr><tr><td>*</td><td><span title="Codes: {http://snomed.info/sct 59058001}">General physician</span></td><td><a href="Practitioner-DrKelly.html">Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), PRN: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com</a></td><td><a href="Organization-GeneralHospital.html">Generated Summary: Source System Row Identifier: 7d5007d6-edd0-48b5-b34f-5c5f948b6d13 (OFFICIAL); active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: General Hospital; Phone: 214-555-6000, Fax: 214-555-6001</a></td></tr></table><p><b>location</b>: <a href="Location-KellyClinic.html">Generated Summary: Source System Row Identifier: 7d5007d6-edd0-48b5-b34f-5c5f948b6d13 (OFFICIAL), Tax ID number: 223338765 (SECONDARY); status: active; name: Kelly Clinic; mode: instance; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-RoleCode FMC}">Family medicine clinic</span>; Phone: 214-555-2100, Fax: 214-555-2101; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bu}">Building</span></a></p><p><b>reasonCode</b>: <span title="Codes: {http://snomed.info/sct 1119007}">Closed reduction of dislocation of foot and toe</span></p><p><b>bodySite</b>: <span title="Codes: {http://snomed.info/sct 1484003}">Structure of metatarsal region of foot</span></p><p><b>outcome</b>: <span title="Codes: {http://snomed.info/sct 385669000}">Successful</span></p><p><b>complication</b>: <span title="Codes: {http://snomed.info/sct 1525003}">Blister of foot without infection</span></p><p><b>note</b>: Patient complained of pain in foot. Slight fracture suspected.  None found.  Blister looks fine, no infection. (By Practitioner/DrKelly @Jan 6, 2020, 10:45:00 AM)</p></div>
+  <div><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: 3c4c3b81-07d2-434a-8696-0d5f325b6519 (OFFICIAL)</p><p><b>status</b>: completed</p><p><b>category</b>: <span title="Codes: {http://snomed.info/sct 103693007}">Diagnostic procedure</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 5880005}">Clinical examination</span></p><p><b>subject</b>: <a href="Patient-CDMPatientInstance.html">Generated Summary: Source System Row Identifier: unencryp-id1234 (OFFICIAL), Source System Row Identifier: encryp-id1234 (SECONDARY), Medical record number: 1011110101 (OFFICIAL), Medical record number: 1011110101 (USUAL), Social Beneficiary Identifier: 0001223333 (OFFICIAL), Social Beneficiary Identifier: 1CA0CA0CC00 (OFFICIAL), Social Beneficiary Identifier: 987654321000 (OFFICIAL), Match Data Identifier: 7b78d6de-46cb-4fbb-930d-2a74e24b17fe (SECONDARY); active; Firstname McLastname ; , Phone: 216-345-2662, Phone: 216-555-2222, fmclastname@fakemail.com; gender: male; birthDate: 1990-01-04; deceased: Sep 28, 2020, 12:00:00 AM</a></p><p><a name="efa44507-69e1-4707-b681-0c69ba263c76">​</a><b>encounter</b>: <a href="Encounter/Encounter1">Encounter/Encounter1</a></p><p><b>performed</b>: Jan 6, 2020, 10:30:00 AM</p><p><b>recorder</b>: <a href="Practitioner-DrKelly.html">Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com</a></p><p><b>asserter</b>: <a href="Practitioner-DrKelly.html">Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com</a></p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Function</b></td><td><b>Actor</b></td><td><b>OnBehalfOf</b></td></tr><tr><td>*</td><td><span title="Codes: {http://snomed.info/sct 59058001}">General physician</span></td><td><a href="Practitioner-DrKelly.html">Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com</a></td><td><a href="Organization-GeneralHospital.html">Generated Summary: Source System Row Identifier: 7d5007d6-edd0-48b5-b34f-5c5f948b6d13 (OFFICIAL); active; <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type prov}">Healthcare Provider</span>; name: General Hospital; Phone: 214-555-6000, Fax: 214-555-6001</a></td></tr></table><p><b>location</b>: <a href="Location-KellyClinic.html">Generated Summary: Source System Row Identifier: 7d5007d6-edd0-48b5-b34f-5c5f948b6d13 (OFFICIAL), Tax ID number: 223338765 (SECONDARY); status: active; name: Kelly Clinic; mode: instance; <span title="Codes: {https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set 11}">Office</span>; Phone: 214-555-2100, Fax: 214-555-2101; <span title="Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bu}">Building</span></a></p><p><b>reasonCode</b>: <span title="Codes: {http://snomed.info/sct 1119007}">Closed reduction of dislocation of foot and toe</span></p><p><b>bodySite</b>: <span title="Codes: {http://snomed.info/sct 1484003}">Structure of metatarsal region of foot</span></p><p><b>outcome</b>: <span title="Codes: {http://snomed.info/sct 385669000}">Successful</span></p><p><b>complication</b>: <span title="Codes: {http://snomed.info/sct 1525003}">Blister of foot without infection</span></p><p><b>note</b>: Patient complained of pain in foot. Slight fracture suspected.  None found.  Blister looks fine, no infection. (By Practitioner/DrKelly @Jan 6, 2020, 10:45:00 AM)</p></div>
 
     <!-- insert notes if present -->
   
@@ -184,16 +186,20 @@
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="8613935c-764b-4ced-b6df-453afff7ddf1">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="sloand@us.ibm.com"></a>.  Package wh.cdm.fhir#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 8, 2021 18:08+0000">2021-01-08</span>
+        <p><a name="034e19ca-0742-46de-b37f-5f2358b61f94">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 13, 2021 16:59+0000">2021-07-13</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-          </span>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -214,6 +220,13 @@
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   </body>

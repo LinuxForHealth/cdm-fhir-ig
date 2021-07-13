@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>WH.CDM.FHIR\CDM Match Practitioner - Definitions - FHIR v4.0.1</title>
+    <title>ALVEARIE.FHIR.IG\CDM Match Practitioner - Definitions - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
       <!-- Project extras -->
@@ -20,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
   	<link rel="stylesheet" href="assets/css/prism.css"/>
       <!-- Placeholder for child template CSS declarations -->
-<link rel="stylesheet" href="assets/css/watson-health.css"/>
+<link rel="stylesheet" href="assets/css/alvearie.css"/>
 
     <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
@@ -41,20 +40,20 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.14"}
-    h3,h4,h5,h6{--heading-prefix:"2.14"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.21"}
+    h3,h4,h5,h6{--heading-prefix:"2.21"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a no-external="true" id="ibm-wh-logo">
-    <img src="assets/images/ibm-wh.jpg" alt="IBM WH" style="float:left" height="60"/>
+  <a no-external="true" id="alvearie-logo">
+    <img src="assets/images/alvearieLogo.png" alt="Alvearie" style="float:left" height="60"/>
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WH Common Data Model Implementation Guide</span><br/>0.1.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>0.1.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -94,21 +93,24 @@
       </div>    <!-- /container -->
     </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
+
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>CDM Match Practitioner</b></li>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
 
-    <div id="segment-content">    <!-- segment-content -->
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">WH Common Data Model Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -260,7 +262,7 @@ A human language.
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on Practitioner.extension. The slices are unordered and Open, and can be differentiated using the following discriminators: <ul> <li>value @ url</li></ul></td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Practitioner.extension:seeAlso"> </a><span style="color: grey">9.</span> <b>Practitioner.extension:seeAlso</b><a href="#Practitioner.extension:seeAlso" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>seeAlso</td></tr>
-  <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
+  <tr><td>Definition</td><td><p>References matched source practitioners. Links a CDMMatchPractitioner to one or more source CDMPractitioner resources that refer the same person.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-see-also.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/see-also]]">SeeAlso</a>)  (Extension Type: Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">base64Binary</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">markdown</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#oid">oid</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#uuid">uuid</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Count">Count</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Distance">Distance</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Money">Money</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a>, <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#SampledData">SampledData</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail">ContactDetail</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#Contributor">Contributor</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement">DataRequirement</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition">ParameterDefinition</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact">RelatedArtifact</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition">TriggerDefinition</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext">UsageContext</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Dosage">Dosage</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a>)</td></tr>
@@ -328,7 +330,7 @@ A human language.
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Practitioner.extension:seeAlso.extension:matchMethod"> </a><span style="color: grey">18.</span> <b>Practitioner.extension:seeAlso.extension:matchMethod</b><a href="#Practitioner.extension:seeAlso.extension:matchMethod" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>matchMethod</td></tr>
-  <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
+  <tr><td>Definition</td><td><p>Method used to identify the matched resource</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-match-method.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/match-method]]">MatchMethod</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
@@ -336,7 +338,7 @@ A human language.
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Practitioner.extension:seeAlso.extension:splitMethod"> </a><span style="color: grey">19.</span> <b>Practitioner.extension:seeAlso.extension:splitMethod</b><a href="#Practitioner.extension:seeAlso.extension:splitMethod" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>splitMethod</td></tr>
-  <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
+  <tr><td>Definition</td><td><p>Method used to identify the matched resource to split</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-split-method.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/split-method]]">SplitMethod</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
@@ -344,7 +346,7 @@ A human language.
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Practitioner.extension:seeAlso.extension:matchConfidenceLevel"> </a><span style="color: grey">20.</span> <b>Practitioner.extension:seeAlso.extension:matchConfidenceLevel</b><a href="#Practitioner.extension:seeAlso.extension:matchConfidenceLevel" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>matchConfidenceLevel</td></tr>
-  <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
+  <tr><td>Definition</td><td><p>Confidence level code for the matched resource</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-match-confidence-level.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level]]">MatchConfidenceLevel</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
@@ -352,7 +354,7 @@ A human language.
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Practitioner.extension:seeAlso.extension:matchConfidenceScore"> </a><span style="color: grey">21.</span> <b>Practitioner.extension:seeAlso.extension:matchConfidenceScore</b><a href="#Practitioner.extension:seeAlso.extension:matchConfidenceScore" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>matchConfidenceScore</td></tr>
-  <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
+  <tr><td>Definition</td><td><p>Confidence score for the matched resource</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-match-confidence-score.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score]]">MatchConfidenceScore</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a>)</td></tr>
@@ -360,7 +362,7 @@ A human language.
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Practitioner.extension:seeAlso.extension:matchPeriod"> </a><span style="color: grey">22.</span> <b>Practitioner.extension:seeAlso.extension:matchPeriod</b><a href="#Practitioner.extension:seeAlso.extension:matchPeriod" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>matchPeriod</td></tr>
-  <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
+  <tr><td>Definition</td><td><p>Time period when match is valid</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-match-period.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/match-period]]">MatchPeriod</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a>)</td></tr>
@@ -436,7 +438,7 @@ A human language.
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Practitioner.extension:seeAlso.extension:matchDetail.extension:matchCriteria"> </a><span style="color: grey">32.</span> <b>Practitioner.extension:seeAlso.extension:matchDetail.extension:matchCriteria</b><a href="#Practitioner.extension:seeAlso.extension:matchDetail.extension:matchCriteria" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>matchCriteria</td></tr>
-  <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
+  <tr><td>Definition</td><td><p>Algorithm or criteria used to identify matched resources</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-match-criteria.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/match-criteria]]">MatchCriteria</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>)</td></tr>
@@ -444,7 +446,7 @@ A human language.
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Practitioner.extension:seeAlso.extension:matchDetail.extension:matchConfidenceLevel"> </a><span style="color: grey">33.</span> <b>Practitioner.extension:seeAlso.extension:matchDetail.extension:matchConfidenceLevel</b><a href="#Practitioner.extension:seeAlso.extension:matchDetail.extension:matchConfidenceLevel" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>matchConfidenceLevel</td></tr>
-  <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
+  <tr><td>Definition</td><td><p>Confidence level code for the match</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-match-confidence-level.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level]]">MatchConfidenceLevel</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>)</td></tr>
@@ -452,7 +454,7 @@ A human language.
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Practitioner.extension:seeAlso.extension:matchDetail.extension:matchConfidenceScore"> </a><span style="color: grey">34.</span> <b>Practitioner.extension:seeAlso.extension:matchDetail.extension:matchConfidenceScore</b><a href="#Practitioner.extension:seeAlso.extension:matchDetail.extension:matchConfidenceScore" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>matchConfidenceScore</td></tr>
-  <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
+  <tr><td>Definition</td><td><p>Confidence score for the match</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-match-confidence-score.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score]]">MatchConfidenceScore</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a>)</td></tr>
@@ -815,16 +817,20 @@ A human language.
       }
     });
   </script>
+  <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
+
       <div class="inner-wrapper">
-        <p><a name="a80da86f-ec23-418b-a74f-78091b7d96d7">​</a>
-          IG &copy; 2020+ <a style="color: #81BEF7" href="sloand@us.ibm.com"></a>.  Package wh.cdm.fhir#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 8, 2021 18:08+0000">2021-01-08</span>
+        <p><a name="af4616c7-16bb-4ad4-b31d-914f490199f0">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 13, 2021 16:59+0000">2021-07-13</span>
           <br/>
-          <span style="color: #FFFF77">
-                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
-          </span>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->
@@ -845,6 +851,13 @@ A human language.
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
     <!-- Analytics Below
   ================================================== -->
   </body>

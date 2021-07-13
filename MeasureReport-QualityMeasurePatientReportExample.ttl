@@ -52,7 +52,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Measure Report Assigned Practitioner</b>: <a href=\"PractitionerRole-CDMPractitionerRole-Attributed-PCP.html\">Generated Summary: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL); active</a></p><p><b>MeasureParameterValues</b>: { complianceDisplayName = 'HbA1c Test', complianceFrequency = 'Once yearly' }</p><blockquote><p><b>Measure Report Evidence</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Patient is adult 18-75</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: true</p></blockquote><blockquote><p><b>Measure Report Evidence</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Patient is diabetic</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: true</p></blockquote><blockquote><p><b>Measure Report Evidence</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Patient had HbA1c test in meeasurement period</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: false</p></blockquote><p><b>identifier</b>: Resource identifier: de25d288-120e-47c1-bb76-caac8bc3f439</p><p><b>status</b>: complete</p><p><b>type</b>: individual</p><p><b>measure</b>: <code>Measure-QualityMeasureExample.html</code></p><p><b>subject</b>: <a href=\"Patient/Patient1\">Patient/Patient1</a></p><p><b>date</b>: Mar 1, 2020, 3:00:00 AM</p><p><b>reporter</b>: <a href=\"Organization/IBM\">Organization/IBM</a></p><p><b>period</b>: 2020-01-01 --&gt; 2020-12-31</p><p><b>improvementNotation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-improvement-notation increase}\">Increased score indicates improvement</span></p><blockquote><p><b>group</b></p><blockquote><p><b>population</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population initial-population}\">Initial Population</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population denominator}\">Denominator</span></p><p><b>count</b>: 1</p></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/measure-population numerator}\">Numerator</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/measure-population-type care-gap}\">Care Gap</span></p><p><b>count</b>: 0</p></blockquote><blockquote><p><b>population</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/measure-population-type care-gap}\">Care Gap</span></p><p><b>count</b>: 1</p></blockquote></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Measure Report Assigned Practitioner</b>: <a href=\"PractitionerRole-CDMPractitionerRole-Attributed-PCP.html\">Generated Summary: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL); active</a></p><p><b>MeasureParameterValue</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here</b></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -63,10 +63,48 @@
      ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-values" ];
-     fhir:Extension.valueString [ fhir:value "{ complianceDisplayName = 'HbA1c Test', complianceFrequency = 'Once yearly' }" ]
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value" ];
+     fhir:Extension.valueParameterDefinition [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/parameter-value" ];
+         fhir:Extension.valuePeriod [
+           fhir:Period.start [ fhir:value "2019-02-13"^^xsd:date ];
+           fhir:Period.end [ fhir:value "2020-02-12"^^xsd:date ]
+         ]
+       ];
+       fhir:ParameterDefinition.name [ fhir:value "measurePeriod" ];
+       fhir:ParameterDefinition.use [ fhir:value "out" ];
+       fhir:ParameterDefinition.type [ fhir:value "Period" ]
+     ]
   ], [
      fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value" ];
+     fhir:Extension.valueParameterDefinition [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/parameter-value" ];
+         fhir:Extension.valueString [ fhir:value "HbA1c Testing" ]
+       ];
+       fhir:ParameterDefinition.name [ fhir:value "complianceDisplayName" ];
+       fhir:ParameterDefinition.use [ fhir:value "out" ];
+       fhir:ParameterDefinition.type [ fhir:value "string" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value" ];
+     fhir:Extension.valueParameterDefinition [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/parameter-value" ];
+         fhir:Extension.valueString [ fhir:value "Once yearly" ]
+       ];
+       fhir:ParameterDefinition.name [ fhir:value "complianceFrequency" ];
+       fhir:ParameterDefinition.use [ fhir:value "out" ];
+       fhir:ParameterDefinition.type [ fhir:value "string" ]
+     ]
+  ], [
+     fhir:index 4;
      fhir:Element.extension [
        fhir:index 0;
        fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence-text" ];
@@ -78,7 +116,7 @@
      ];
      fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence" ]
   ], [
-     fhir:index 3;
+     fhir:index 5;
      fhir:Element.extension [
        fhir:index 0;
        fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence-text" ];
@@ -90,7 +128,7 @@
      ];
      fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence" ]
   ], [
-     fhir:index 4;
+     fhir:index 6;
      fhir:Element.extension [
        fhir:index 0;
        fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-report-evidence-text" ];

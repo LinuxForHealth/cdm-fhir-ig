@@ -12,14 +12,14 @@
         "valueString": "b069a545-9506-40c6-8498-23de2e189143"
       }
     ],
-    "source": "http://acme-health.com/epic",
+    "source": "http://acme-health.com/emr1",
     "profile": [
       "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
     ]
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status collection}\">Collections</span></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status confidential}\">Confidential</span></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status test}\">Test</span></p><p><b>importance</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance bad-debt}\">Bad Debt</span></p><p><b>importance</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance do-not-contact}\">Do Not Contact</span></p><p><b>Sex Assigned At Birth</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></p><p><b>identifier</b>: Source System Row Identifier: 35e4aa64-fdf8-4ef9-8acd-066aec45f63b (OFFICIAL)</p><p><b>name</b>: Norm Peterson </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1948-10-17</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status collection}\">Collections</span></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status confidential}\">Confidential</span></p><p><b>Status Code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-status test}\">Test</span></p><p><b>importance</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance bad-debt}\">Bad Debt</span></p><p><b>importance</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/patient-importance do-not-contact}\">Do Not Contact</span></p><p><b>Sex Assigned At Birth</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></p><p><b>identifier</b>: Source System Row Identifier: 35e4aa64-fdf8-4ef9-8acd-066aec45f63b (OFFICIAL), Match Data Identifier: 4fd6049c-59c5-4c7b-81b1-88869044535d (SECONDARY)</p><p><b>name</b>: Norm Peterson </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1948-10-17</p></div>"
   },
   "extension": [
     {
@@ -100,10 +100,26 @@
           }
         ]
       },
-      "system": "http://acme-health.com/epic/patient",
+      "system": "http://acme-health.com/emr1/patient",
       "value": "35e4aa64-fdf8-4ef9-8acd-066aec45f63b",
       "assigner": {
-        "display": "Acme Health - Epic"
+        "display": "Acme Health - EMR1"
+      }
+    },
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "MDI"
+          }
+        ]
+      },
+      "system": "http://ibm.com/fhir/primary/patient-match-identifier",
+      "value": "4fd6049c-59c5-4c7b-81b1-88869044535d",
+      "assigner": {
+        "display": "IBM"
       }
     }
   ],

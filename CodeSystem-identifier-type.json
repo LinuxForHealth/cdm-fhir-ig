@@ -3,14 +3,14 @@
   "id": "identifier-type",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/identifier-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DRI<a name=\"identifier-type-DRI\"> </a></td><td>Derived Resource Identifier</td><td>Used for business identifier for derived resources created by an internal IBM process</td></tr><tr><td style=\"white-space:nowrap\">MDI<a name=\"identifier-type-MDI\"> </a></td><td>Match Data Identifier</td><td>Used for match identifiers that link up matched patient, provider, and location recources</td></tr><tr><td style=\"white-space:nowrap\">SSRI<a name=\"identifier-type-SSRI\"> </a></td><td>Source System Row Identifier</td><td>Used for source system identifiers that the primary identifier for resources that originate from an external source system</td></tr><tr><td style=\"white-space:nowrap\">MEG<a name=\"identifier-type-MEG\"> </a></td><td>Advantage Medical Episode Grouper</td><td>Advantage Medical Episode Grouper</td></tr><tr><td style=\"white-space:nowrap\">ADKEY<a name=\"identifier-type-ADKEY\"> </a></td><td>Advantage Database Key</td><td>Advantage Database Key</td></tr><tr><td style=\"white-space:nowrap\">CUSTKEY<a name=\"identifier-type-CUSTKEY\"> </a></td><td>Advantage customer key</td><td>Advantage customer key</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/identifier-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DRI<a name=\"identifier-type-DRI\"> </a></td><td>Derived Resource Identifier</td><td>Business identifier for derived resources created by an internal IBM process</td></tr><tr><td style=\"white-space:nowrap\">MDI<a name=\"identifier-type-MDI\"> </a></td><td>Match Data Identifier</td><td>Shared business identifier that is created to link matched resources during MDI match processing</td></tr><tr><td style=\"white-space:nowrap\">SSRI<a name=\"identifier-type-SSRI\"> </a></td><td>Source System Row Identifier</td><td>Represents the primary id from the original source system</td></tr><tr><td style=\"white-space:nowrap\">ADKEY<a name=\"identifier-type-ADKEY\"> </a></td><td>Advantage Database Key</td><td>Advantage Database Key</td></tr><tr><td style=\"white-space:nowrap\">CUSTKEY<a name=\"identifier-type-CUSTKEY\"> </a></td><td>Advantage customer key</td><td>Advantage customer key</td></tr></table></div>"
   },
   "url": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
   "version": "0.1.0",
   "name": "IdentifierTypeCodeSystem",
   "title": "Identifier Type Codes",
   "status": "active",
-  "date": "2021-01-08T18:08:05+00:00",
+  "date": "2021-07-13T16:59:08+00:00",
   "contact": [
     {
       "name": "Kim Kenna",
@@ -22,38 +22,33 @@
       ]
     },
     {
-      "name": "Jill Doty",
+      "name": "Tom Eggebraaten",
       "telecom": [
         {
           "system": "email",
-          "value": "jdoty@us.ibm.com"
+          "value": "tegge@us.ibm.com"
         }
       ]
     }
   ],
-  "description": "Extended set of Identifier type code for WffH CDM resources",
+  "description": "Extended set of Identifier type code for IBM Health Data Connect Common Data Model resources",
   "content": "complete",
-  "count": 6,
+  "count": 5,
   "concept": [
     {
       "code": "DRI",
       "display": "Derived Resource Identifier",
-      "definition": "Used for business identifier for derived resources created by an internal IBM process"
+      "definition": "Business identifier for derived resources created by an internal IBM process"
     },
     {
       "code": "MDI",
       "display": "Match Data Identifier",
-      "definition": "Used for match identifiers that link up matched patient, provider, and location recources"
+      "definition": "Shared business identifier that is created to link matched resources during MDI match processing"
     },
     {
       "code": "SSRI",
       "display": "Source System Row Identifier",
-      "definition": "Used for source system identifiers that the primary identifier for resources that originate from an external source system"
-    },
-    {
-      "code": "MEG",
-      "display": "Advantage Medical Episode Grouper",
-      "definition": "Advantage Medical Episode Grouper"
+      "definition": "Represents the primary id from the original source system"
     },
     {
       "code": "ADKEY",

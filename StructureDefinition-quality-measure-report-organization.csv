@@ -24,8 +24,8 @@ anonymous resourcescontained resources","",0,0,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"MeasureReport.extension","measureParameterValues","","",0,*,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-values]]} {[]}
-","Measure parameter values used to generate the measure report.","Optional Extension Element - found in all resources.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"MeasureReport.extension","measureParameterValue","","",0,*,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value]]} {[]}
+","Measure parameter value used to generate the measure report","Measure parameter value used to generate the measure report","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "MeasureReport.modifierExtension","","extensions
@@ -98,7 +98,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "MeasureReport.group.population.code","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | care-gap","The type of the population.","","","","","","","","","",,"extensible","","http://ibm.com/fhir/cdm/ValueSet/quality-measure-population-type","",,,,"MeasureReport.group.population.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | care-gap","initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | care-gap","","","","","","","","","",,"extensible","","http://ibm.com/fhir/cdm/ValueSet/quality-measure-population-type","",,,,"MeasureReport.group.population.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MeasureReport.group.population.count","","","",0,1,"","","","integer {[]} {[]}
 ","Size of the population","The number of members of the population.","","","","","","","","","",,,,,"",,,,"MeasureReport.group.population.count",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -154,7 +154,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | measure-population | measure-population-exclusion | measure-observation","The type of the population.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/measure-population""/>
-    <code value=""denominator-exclusion""/>
+    <code value=""numerator""/>
   </coding>
 </valueCodeableConcept>","","","",,"extensible","","http://ibm.com/fhir/cdm/ValueSet/measure-population-type","",,,,"MeasureReport.group.population.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -183,7 +183,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | measure-population | measure-population-exclusion | measure-observation","The type of the population.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/measure-population""/>
-    <code value=""numerator""/>
+    <code value=""denominator""/>
   </coding>
 </valueCodeableConcept>","","","",,"extensible","","http://ibm.com/fhir/cdm/ValueSet/measure-population-type","",,,,"MeasureReport.group.population.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

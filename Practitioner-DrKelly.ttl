@@ -18,7 +18,7 @@
        fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
-     fhir:Meta.source [ fhir:value "http://acme-health.com/epic" ];
+     fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
        fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner";
        fhir:index 0;
@@ -27,7 +27,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), PRN: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY)</p><p><b>name</b>: Dr Debra R Kelly, MD</p><p><b>telecom</b>: ph: 214-555-2100(WORK), fax: 214-555-2101(WORK), <a href=\"mailto:drkelly@kellyclinic.com\">drkelly@kellyclinic.com</a></p><p><b>address</b>: 200 Main Street Suite 101 Irving TX 75014 US (WORK)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY)</p><p><b>name</b>: Dr Debra R Kelly, MD</p><p><b>telecom</b>: ph: 214-555-2100(WORK), fax: 214-555-2101(WORK), <a href=\"mailto:drkelly@kellyclinic.com\">drkelly@kellyclinic.com</a></p><p><b>address</b>: 200 Main Street Suite 101 Irving TX 75014 US (WORK)</p></div>"
   ];
   fhir:Practitioner.identifier [
      fhir:index 0;
@@ -39,10 +39,10 @@
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "http://acme-health.com/epic/practitioner" ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/emr1/practitioner" ];
      fhir:Identifier.value [ fhir:value "0d82c96d-98c5-46cf-911d-a41991601320" ];
      fhir:Identifier.assigner [
-       fhir:Reference.display [ fhir:value "Acme Health - Epic" ]
+       fhir:Reference.display [ fhir:value "Acme Health - EMR1" ]
      ]
   ], [
      fhir:index 1;
@@ -50,7 +50,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
          fhir:Coding.code [ fhir:value "PRN" ]
        ]
      ];
@@ -105,6 +105,10 @@
        fhir:index 1;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/contactpoint-extension" ];
        fhir:Extension.valueString [ fhir:value "101" ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address" ];
+       fhir:Extension.valueUrl [ fhir:value "tel:+12145552100;ext=101" ]
      ];
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "214-555-2100" ];
@@ -115,6 +119,10 @@
        fhir:index 0;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/contactpoint-country" ];
        fhir:Extension.valueString [ fhir:value "1" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address" ];
+       fhir:Extension.valueUrl [ fhir:value "tel:+12145552101" ]
      ];
      fhir:ContactPoint.system [ fhir:value "fax" ];
      fhir:ContactPoint.value [ fhir:value "214-555-2101" ];

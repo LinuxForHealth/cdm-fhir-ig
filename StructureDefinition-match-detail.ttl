@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "MatchDetail"];
   fhir:StructureDefinition.title [ fhir:value "Match Detail"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-01-08T18:08:05+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-13T16:59:08+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -28,11 +28,11 @@
      ]
   ], [
      fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Jill Doty" ];
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "jdoty@us.ibm.com" ]
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "Detailed match algorthm results used to match resources"];
@@ -188,7 +188,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchComparedTo" ];
        fhir:ElementDefinition.short [ fhir:value "Reference to the record that was compared for matching" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reference to the record that was compared for matching" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.base [
@@ -236,7 +236,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchCriteria" ];
        fhir:ElementDefinition.short [ fhir:value "Algorithm or criteria used to identify matched resources" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Algorithm or criteria used to identify matched resources" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -284,7 +284,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchConfidenceLevel" ];
        fhir:ElementDefinition.short [ fhir:value "Confidence level code for the match" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Confidence level code for the match" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -332,7 +332,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchConfidenceScore" ];
        fhir:ElementDefinition.short [ fhir:value "Confidence score for the match" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Confidence score for the match" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -610,6 +610,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchComparedTo" ];
        fhir:ElementDefinition.short [ fhir:value "Reference to the record that was compared for matching" ];
+       fhir:ElementDefinition.definition [ fhir:value "Reference to the record that was compared for matching" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "*" ];
        fhir:ElementDefinition.type [
@@ -627,6 +628,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchCriteria" ];
        fhir:ElementDefinition.short [ fhir:value "Algorithm or criteria used to identify matched resources" ];
+       fhir:ElementDefinition.definition [ fhir:value "Algorithm or criteria used to identify matched resources" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -644,6 +646,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchConfidenceLevel" ];
        fhir:ElementDefinition.short [ fhir:value "Confidence level code for the match" ];
+       fhir:ElementDefinition.definition [ fhir:value "Confidence level code for the match" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
@@ -661,6 +664,7 @@
        fhir:ElementDefinition.path [ fhir:value "Extension.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "matchConfidenceScore" ];
        fhir:ElementDefinition.short [ fhir:value "Confidence score for the match" ];
+       fhir:ElementDefinition.definition [ fhir:value "Confidence score for the match" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.type [
