@@ -57,3 +57,11 @@ jobs:
           cd build/output
           zip -ur full-ig.zip *.jar
           popd 
+
+      - name: Deploy Github Pages (main push / merge only)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages      # The branch to deploy to
+          folder: build/output  # Folder to deploy
+
