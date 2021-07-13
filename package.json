@@ -17,9 +17,9 @@
     "ig_win": "xcopy \"data\\ig-data\\alvearie-template\" \"build\\alvearie-template\" /s /i /y /q && cd build && _genonce.bat",
     "mvn_snapshot": "mkdir -p ./src/main/resources/com/ibm/fhir/cdm && tar -C ./src/main/resources/com/ibm/fhir/cdm/ -xf ./build/output/package.tgz && mvn test",
     "copy_snapshot": "cp target/*.jar build/output",
-    "copy_version": "rsync -ahcv build/output/ docs/0.1.0 --delete",
-    "copy_version_win": "xcopy \"build\\output\" \"docs\\0.1.0\" /s /i /y /q",
-    "all": "npm run sushi && npm run ig_init && npm run copy_version"
+    "copy_docs_version": "mkdir -p docs/0.1.0 && rsync -ahcv build/output/ docs/0.1.0 --delete",
+    "copy_docs_version_win": "xcopy \"build\\output\" \"docs\\0.1.0\" /s /i /y /q",
+    "all": "npm run sushi && npm run ig_init && npm run copy_docs_version"
   },
   "language": "en",
   "author": "Alvearie Team",
