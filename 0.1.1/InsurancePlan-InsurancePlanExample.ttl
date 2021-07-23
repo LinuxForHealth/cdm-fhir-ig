@@ -1,0 +1,507 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/InsurancePlan/InsurancePlanExample> a fhir:InsurancePlan;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "InsurancePlanExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-insurance-plan";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-insurance-plan>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Medical Coverage Indicator</b>: Y</p><p><b>Dental Coverage Indicator</b>: Y</p><p><b>Drug Coverage Indicator</b>: Y</p><p><b>Hearing Coverage Indicator</b>: Y</p><p><b>Vision Coverage Indicator</b>: Y</p><p><b>Psychiatric Coverage Indicator</b>: N</p><p><b>Industry Classification</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/naics 621112}\">621112</span></p><p><b>identifier</b>: Source System Row Identifier: plan_code_1234 (OFFICIAL), Source System Row Identifier: account_id_1234 (SECONDARY)</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type medical}\">Medical</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type dental}\">Dental</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type Drug}\">Drug</span>, <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-type hearing}\">Hearing</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type vision}\">Vision</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type mental}\">Mental Health</span>, <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type subst-ab}\">Substance Abuse</span></p><blockquote><p><b>coverage</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type medical}\">Medical</span></p><h3>Benefits</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type medical}\">Medical</span></td></tr></table></blockquote><blockquote><p><b>coverage</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type dental}\">Dental</span></p><h3>Benefits</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type dental}\">Dental</span></td></tr></table></blockquote><blockquote><p><b>coverage</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type Drug}\">Drug</span></p><h3>Benefits</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type Drug}\">Drug</span></td></tr></table></blockquote><blockquote><p><b>coverage</b></p><p><b>type</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-type hearing}\">Hearing</span></p><h3>Benefits</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-type hearing}\">Hearing</span></td></tr></table></blockquote><blockquote><p><b>coverage</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type vision}\">Vision</span></p><h3>Benefits</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type vision}\">Vision</span></td></tr></table></blockquote><blockquote><p><b>coverage</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type mental}\">Mental Health</span></p><h3>Benefits</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type mental}\">Mental Health</span></td></tr></table></blockquote><blockquote><p><b>coverage</b></p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type subst-ab}\">Substance Abuse</span></p><h3>Benefits</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/insurance-plan-type subst-ab}\">Substance Abuse</span></td></tr></table></blockquote><blockquote><p><b>plan</b></p><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category drug}\">Drug</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type administrative-fee}\">Administrative Fee</span></p><h3>Costs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type administrative-fee}\">Administrative Fee</span></td><td>3</td></tr></table></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category medical}\">Medical</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type administrative-fee}\">Administrative Fee</span></p><h3>Costs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type administrative-fee}\">Administrative Fee</span></td><td>75</td></tr></table></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category drug}\">Drug</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type employee-contribution}\">Employee Contribution</span></p><h3>Costs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type employee-contribution}\">Employee Contribution</span></td><td>15</td></tr></table></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category medical}\">Medical</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type employee-contribution}\">Employee Contribution</span></p><h3>Costs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type employee-contribution}\">Employee Contribution</span></td><td>125</td></tr></table></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category drug}\">Drug</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type monthly-premium-paid}\">Monthly Premium Paid</span></p><h3>Costs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type monthly-premium-paid}\">Monthly Premium Paid</span></td><td>25</td></tr></table></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category medical}\">Medical</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type monthly-premium-paid}\">Monthly Premium Paid</span></p><h3>Costs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type monthly-premium-paid}\">Monthly Premium Paid</span></td><td>55</td></tr></table></blockquote></blockquote><blockquote><p><b>specificCost</b></p><p><b>category</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category other}\">Other</span></p><blockquote><p><b>benefit</b></p><p><b>type</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type non-claim-payment}\">Non Claim Payment</span></p><h3>Costs</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type non-claim-payment}\">Non Claim Payment</span></td><td>5</td></tr></table></blockquote></blockquote></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-medical-coverage-indicator" ];
+     fhir:Extension.valueString [ fhir:value "Y" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-dental-coverage-indicator" ];
+     fhir:Extension.valueString [ fhir:value "Y" ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-drug-coverage-indicator" ];
+     fhir:Extension.valueString [ fhir:value "Y" ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-hearing-coverage-indicator" ];
+     fhir:Extension.valueString [ fhir:value "Y" ]
+  ], [
+     fhir:index 4;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-vision-coverage-indicator" ];
+     fhir:Extension.valueString [ fhir:value "Y" ]
+  ], [
+     fhir:index 5;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-psych-coverage-indicator" ];
+     fhir:Extension.valueString [ fhir:value "N" ]
+  ], [
+     fhir:index 6;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/industry-classification" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/naics" ];
+         fhir:Coding.code [ fhir:value "621112" ]
+       ]
+     ]
+  ];
+  fhir:InsurancePlan.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "SSRI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/plan/insuranceplan1" ];
+     fhir:Identifier.value [ fhir:value "plan_code_1234" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Acme Health - Insurance Plan Code" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "SSRI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/plan/insuranceplan1" ];
+     fhir:Identifier.value [ fhir:value "account_id_1234" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Acme Health - Insurance Plan Account ID" ]
+     ]
+  ];
+  fhir:InsurancePlan.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+       fhir:Coding.code [ fhir:value "medical" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+       fhir:Coding.code [ fhir:value "dental" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+       fhir:Coding.code [ fhir:value "Drug" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-type" ];
+       fhir:Coding.code [ fhir:value "hearing" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+       fhir:Coding.code [ fhir:value "vision" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+       fhir:Coding.code [ fhir:value "mental" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+       fhir:Coding.code [ fhir:value "subst-ab" ]
+     ]
+  ];
+  fhir:InsurancePlan.coverage [
+     fhir:index 0;
+     fhir:InsurancePlan.coverage.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+         fhir:Coding.code [ fhir:value "medical" ]
+       ]
+     ];
+     fhir:InsurancePlan.coverage.benefit [
+       fhir:index 0;
+       fhir:InsurancePlan.coverage.benefit.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+           fhir:Coding.code [ fhir:value "medical" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:InsurancePlan.coverage.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+         fhir:Coding.code [ fhir:value "dental" ]
+       ]
+     ];
+     fhir:InsurancePlan.coverage.benefit [
+       fhir:index 0;
+       fhir:InsurancePlan.coverage.benefit.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+           fhir:Coding.code [ fhir:value "dental" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:InsurancePlan.coverage.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+         fhir:Coding.code [ fhir:value "Drug" ]
+       ]
+     ];
+     fhir:InsurancePlan.coverage.benefit [
+       fhir:index 0;
+       fhir:InsurancePlan.coverage.benefit.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+           fhir:Coding.code [ fhir:value "Drug" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:InsurancePlan.coverage.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-type" ];
+         fhir:Coding.code [ fhir:value "hearing" ]
+       ]
+     ];
+     fhir:InsurancePlan.coverage.benefit [
+       fhir:index 0;
+       fhir:InsurancePlan.coverage.benefit.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-type" ];
+           fhir:Coding.code [ fhir:value "hearing" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:InsurancePlan.coverage.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+         fhir:Coding.code [ fhir:value "vision" ]
+       ]
+     ];
+     fhir:InsurancePlan.coverage.benefit [
+       fhir:index 0;
+       fhir:InsurancePlan.coverage.benefit.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+           fhir:Coding.code [ fhir:value "vision" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:InsurancePlan.coverage.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+         fhir:Coding.code [ fhir:value "mental" ]
+       ]
+     ];
+     fhir:InsurancePlan.coverage.benefit [
+       fhir:index 0;
+       fhir:InsurancePlan.coverage.benefit.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+           fhir:Coding.code [ fhir:value "mental" ]
+         ]
+       ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:InsurancePlan.coverage.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+         fhir:Coding.code [ fhir:value "subst-ab" ]
+       ]
+     ];
+     fhir:InsurancePlan.coverage.benefit [
+       fhir:index 0;
+       fhir:InsurancePlan.coverage.benefit.type [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/insurance-plan-type" ];
+           fhir:Coding.code [ fhir:value "subst-ab" ]
+         ]
+       ]
+     ]
+  ];
+  fhir:InsurancePlan.plan [
+     fhir:index 0;
+     fhir:InsurancePlan.plan.specificCost [
+       fhir:index 0;
+       fhir:InsurancePlan.plan.specificCost.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category" ];
+           fhir:Coding.code [ fhir:value "drug" ]
+         ]
+       ];
+       fhir:InsurancePlan.plan.specificCost.benefit [
+         fhir:index 0;
+         fhir:InsurancePlan.plan.specificCost.benefit.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+             fhir:Coding.code [ fhir:value "administrative-fee" ]
+           ]
+         ];
+         fhir:InsurancePlan.plan.specificCost.benefit.cost [
+           fhir:index 0;
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+               fhir:Coding.code [ fhir:value "administrative-fee" ]
+             ]
+           ];
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.value [
+             fhir:Quantity.value [ fhir:value "3"^^xsd:decimal ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:InsurancePlan.plan.specificCost.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category" ];
+           fhir:Coding.code [ fhir:value "medical" ]
+         ]
+       ];
+       fhir:InsurancePlan.plan.specificCost.benefit [
+         fhir:index 0;
+         fhir:InsurancePlan.plan.specificCost.benefit.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+             fhir:Coding.code [ fhir:value "administrative-fee" ]
+           ]
+         ];
+         fhir:InsurancePlan.plan.specificCost.benefit.cost [
+           fhir:index 0;
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+               fhir:Coding.code [ fhir:value "administrative-fee" ]
+             ]
+           ];
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.value [
+             fhir:Quantity.value [ fhir:value "75"^^xsd:decimal ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:InsurancePlan.plan.specificCost.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category" ];
+           fhir:Coding.code [ fhir:value "drug" ]
+         ]
+       ];
+       fhir:InsurancePlan.plan.specificCost.benefit [
+         fhir:index 0;
+         fhir:InsurancePlan.plan.specificCost.benefit.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+             fhir:Coding.code [ fhir:value "employee-contribution" ]
+           ]
+         ];
+         fhir:InsurancePlan.plan.specificCost.benefit.cost [
+           fhir:index 0;
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+               fhir:Coding.code [ fhir:value "employee-contribution" ]
+             ]
+           ];
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.value [
+             fhir:Quantity.value [ fhir:value "15"^^xsd:decimal ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:InsurancePlan.plan.specificCost.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category" ];
+           fhir:Coding.code [ fhir:value "medical" ]
+         ]
+       ];
+       fhir:InsurancePlan.plan.specificCost.benefit [
+         fhir:index 0;
+         fhir:InsurancePlan.plan.specificCost.benefit.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+             fhir:Coding.code [ fhir:value "employee-contribution" ]
+           ]
+         ];
+         fhir:InsurancePlan.plan.specificCost.benefit.cost [
+           fhir:index 0;
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+               fhir:Coding.code [ fhir:value "employee-contribution" ]
+             ]
+           ];
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.value [
+             fhir:Quantity.value [ fhir:value "125"^^xsd:decimal ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:InsurancePlan.plan.specificCost.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category" ];
+           fhir:Coding.code [ fhir:value "drug" ]
+         ]
+       ];
+       fhir:InsurancePlan.plan.specificCost.benefit [
+         fhir:index 0;
+         fhir:InsurancePlan.plan.specificCost.benefit.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+             fhir:Coding.code [ fhir:value "monthly-premium-paid" ]
+           ]
+         ];
+         fhir:InsurancePlan.plan.specificCost.benefit.cost [
+           fhir:index 0;
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+               fhir:Coding.code [ fhir:value "monthly-premium-paid" ]
+             ]
+           ];
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.value [
+             fhir:Quantity.value [ fhir:value "25"^^xsd:decimal ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:InsurancePlan.plan.specificCost.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category" ];
+           fhir:Coding.code [ fhir:value "medical" ]
+         ]
+       ];
+       fhir:InsurancePlan.plan.specificCost.benefit [
+         fhir:index 0;
+         fhir:InsurancePlan.plan.specificCost.benefit.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+             fhir:Coding.code [ fhir:value "monthly-premium-paid" ]
+           ]
+         ];
+         fhir:InsurancePlan.plan.specificCost.benefit.cost [
+           fhir:index 0;
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+               fhir:Coding.code [ fhir:value "monthly-premium-paid" ]
+             ]
+           ];
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.value [
+             fhir:Quantity.value [ fhir:value "55"^^xsd:decimal ]
+           ]
+         ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:InsurancePlan.plan.specificCost.category [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-cost-category" ];
+           fhir:Coding.code [ fhir:value "other" ]
+         ]
+       ];
+       fhir:InsurancePlan.plan.specificCost.benefit [
+         fhir:index 0;
+         fhir:InsurancePlan.plan.specificCost.benefit.type [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+             fhir:Coding.code [ fhir:value "non-claim-payment" ]
+           ]
+         ];
+         fhir:InsurancePlan.plan.specificCost.benefit.cost [
+           fhir:index 0;
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.type [
+             fhir:CodeableConcept.coding [
+               fhir:index 0;
+               fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type" ];
+               fhir:Coding.code [ fhir:value "non-claim-payment" ]
+             ]
+           ];
+           fhir:InsurancePlan.plan.specificCost.benefit.cost.value [
+             fhir:Quantity.value [ fhir:value "5"^^xsd:decimal ]
+           ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/InsurancePlan/InsurancePlanExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

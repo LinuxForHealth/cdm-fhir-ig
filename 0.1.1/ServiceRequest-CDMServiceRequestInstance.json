@@ -1,0 +1,76 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "CDMServiceRequestInstance",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "valueString": "tenant7209"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "valueString": "rgVCJnQBxvghkKTI8Hzz"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+        "valueString": "TREX"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id",
+        "valueString": "7209"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-record-id",
+        "valueIdentifier": {
+          "system": "http://acme-health.com/WellnessMedicalCenter",
+          "value": "7209_07869_e00080779_3938586_2516181"
+        }
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/source-file-id",
+        "valueString": "e00080779"
+      }
+    ],
+    "source": "http://acme-health.com/WellnessMedicalCenter",
+    "profile": [
+      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-service-request"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019721078 (OFFICIAL)</p><p><b>status</b>: on-hold</p><p><b>intent</b>: proposal</p><p><b>category</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/local-referral-type localreferraltype}\">localreferraltype</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Generated Summary: Source System Row Identifier: unencryp-id1234 (OFFICIAL), Source System Row Identifier: encryp-id1234 (SECONDARY), Medical record number: 1011110101 (OFFICIAL), Medical record number: 1011110101 (USUAL), Social Beneficiary Identifier: 0001223333 (OFFICIAL), Social Beneficiary Identifier: 1CA0CA0CC00 (OFFICIAL), Social Beneficiary Identifier: 987654321000 (OFFICIAL), Match Data Identifier: 7b78d6de-46cb-4fbb-930d-2a74e24b17fe (SECONDARY); active; Firstname McLastname ; , Phone: 216-345-2662, Phone: 216-555-2222, fmclastname@fakemail.com; gender: male; birthDate: 1990-01-04; deceased: Sep 28, 2020, 12:00:00 AM</a></p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "SSRI"
+          }
+        ]
+      },
+      "system": "http://acme-health.com/CodeSystem/local-identifier",
+      "value": "000000000000000000019721078",
+      "assigner": {
+        "display": "Acme Health - Wellness Medical Center"
+      }
+    }
+  ],
+  "status": "on-hold",
+  "intent": "proposal",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://ibm.com/fhir/cdm/CodeSystem/local-referral-type",
+          "code": "localreferraltype"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/CDMPatientInstance"
+  }
+}

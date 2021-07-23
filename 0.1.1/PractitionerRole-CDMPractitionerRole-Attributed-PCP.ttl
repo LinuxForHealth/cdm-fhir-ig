@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/PractitionerRole/CDMPractitionerRole-Attributed-PCP> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CDMPractitionerRole-Attributed-PCP"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.valueString [ fhir:value "99999" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.valueString [ fhir:value "IBM" ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.valueString [ fhir:value "Attribution" ]
+     ], [
+       fhir:index 4;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.valueString [ fhir:value "EngagementAttribution" ]
+     ], [
+       fhir:index 5;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.valueString [ fhir:value "1.0" ]
+     ], [
+       fhir:index 6;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.valueDateTime [ fhir:value "2020-02-14T03:18:00Z"^^xsd:dateTime ]
+     ];
+     fhir:Meta.source [ fhir:value "http://ibm.com/fhir/engagement-attribution" ];
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner-role";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner-role>
+     ];
+     fhir:Meta.tag [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary" ];
+       fhir:Coding.code [ fhir:value "SECONDARY" ]
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Derived Resource Identifier: dd914419-12db-4367-aa93-5c7930510e19 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-DrKelly.html\">Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com</a></p><p><b>location</b>: <a href=\"Location-KellyClinic.html\">Generated Summary: Source System Row Identifier: 7d5007d6-edd0-48b5-b34f-5c5f948b6d13 (OFFICIAL), Tax ID number: 223338765 (SECONDARY); status: active; name: Kelly Clinic; mode: instance; <span title=\"Codes: {https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set 11}\">Office</span>; Phone: 214-555-2100, Fax: 214-555-2101; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/location-physical-type bu}\">Building</span></a></p></div>"
+  ];
+  fhir:PractitionerRole.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "DRI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ibm.com/fhir/cdm/engagement-attributed-pcp" ];
+     fhir:Identifier.value [ fhir:value "dd914419-12db-4367-aa93-5c7930510e19" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "IBM" ]
+     ]
+  ];
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://ibm.com/fhir/cdm/Practitioner/DrKelly>;
+     fhir:Reference.reference [ fhir:value "Practitioner/DrKelly" ]
+  ];
+  fhir:PractitionerRole.location [
+     fhir:index 0;
+     fhir:link <http://ibm.com/fhir/cdm/Location/KellyClinic>;
+     fhir:Reference.reference [ fhir:value "Location/KellyClinic" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/PractitionerRole/CDMPractitionerRole-Attributed-PCP.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
