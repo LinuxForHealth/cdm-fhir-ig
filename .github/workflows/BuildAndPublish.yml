@@ -39,24 +39,18 @@ jobs:
         run:  |
           npm install
           gem install jekyll
-          mvn clean install
 
       - name: Build IG
         run:  |
           npm run sushi
           npm run ig_init
 
-      - name: Create Snapshot Jar
+      - name: Create Snapshot Jar & Copy to Site
         run:  |
-          npm run mvn_snapshot
+          npm run build_snapshot
           npm run copy_snapshot
-
-      - name: Add Snapshot Jar to full-ig.zip
-        run:  | 
-          pushd .
-          cd build/output
-          zip -ur full-ig.zip *.jar
-          popd 
+          npm run zip_snapshot
+          npm run copy_version
 
       - name: Deploy Github Pages (main push / merge only)
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
