@@ -7,6 +7,7 @@ To build upon FHIR standards, IBM® Watson Health has developed IBM® Health Dat
 
 The Common Data Model extends the industry-standard, base FHIR specification to support the data model requirements needed by healthcare data platform base capabilities, for example, data lineage and resource matching. In addition, the Common Data Model adds elements to support higher-level value that can be driven by a healthcare data platform, including claims data enrichment, care gap analytics, and patient engagement.
 
+Current version of the IG is hosted here:  [https://alvearie.io/alvearie-fhir-ig/index.html](https://alvearie.io/alvearie-fhir-ig/index.html).
 
 ## How to Build the Implementation Guide
 
