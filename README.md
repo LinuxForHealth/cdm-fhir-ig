@@ -111,4 +111,9 @@ IBM and the IBM logo are trademarks of International Business Machines Corporati
 
 ## Release History
 
-View the [Release][https://github.com/Alvearie/alvearie-fhir-ig/releases]. Each release includes the full IG specication. 
+For release history of this IG, view the [Github Release Page](https://github.com/Alvearie/alvearie-fhir-ig/releases). Each release includes:
+
+- Full IG Site Specification (full-ig.zip)
+- A snapshot jar file used to register the IG profiles on an IBM FHIR Server
+- Tar archive containing all assets used by the FHIR Publisher to build the site (package.tgz)
+- Zip fies containing definitions and examples in json, xml, and ttl (Turtle)
