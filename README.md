@@ -39,8 +39,4 @@ IBM and the IBM logo are trademarks of International Business Machines Corporati
 
 ## Release History
 
-The following Alvearie Implementation Guides have been published:
-
-| Date           | IG Version      | FHIR Version | Description |
-| -------------- | --------------- | ------------ | ----------- |
-|  7/23/2021    | [0.1.1](https://alvearie.github.io/alvearie-fhir-ig/)           | 4.0.1        | Release       |
+View the [Release][https://github.com/Alvearie/alvearie-fhir-ig/releases]. Each release includes the full IG specication. 
