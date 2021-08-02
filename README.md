@@ -91,7 +91,7 @@ export GREN_GITHUB_TOKEN=<YOUR TOKEN HERE>
 # Update the history.md file locally
 gren changelog --override
 
-# Update the history.md file locally
+# Build the IG site and view the history page locally
 npm install
 npm run sushi
 npm run ig_init
