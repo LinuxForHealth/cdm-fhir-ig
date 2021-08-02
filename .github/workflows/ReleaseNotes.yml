@@ -1,0 +1,110 @@
+name: Release Notes
+on:
+  release:
+    branches:
+      - main
+    tags:
+      - "*"
+    types:
+      - created
+      
+jobs:
+  release-notes:
+    runs-on: ubuntu-latest
+    steps:
+      # --------------------------------------------------------------------------------------------
+      # DEBUG INFO
+      # --------------------------------------------------------------------------------------------
+      #- name: Dump Env VARIABLES
+      #  run: env | sort
+      #- name: Dump Github Context
+      #  env:
+      #   GITHUB_CONTEXT: ${{ toJson(github) }}
+      #  run: echo "$GITHUB_CONTEXT"
+
+      # --------------------------------------------------------------------------------------------
+      # ADD RELEASE NOTES AND HISTORY BASED ON CLOSED ISSUES
+      # --------------------------------------------------------------------------------------------
+      # Gren is used to update release comments (based on closed issues since last release)
+      # Gren is also used to generate the history page in the IG
+      # Issue tags are used to control sections displayed in the release
+      # Gren configuration is stored in .grenrc.js
+      # See https://github.com/github-tools/github-release-notes for more details
+      # --------------------------------------------------------------------------------------------
+      - name: Update release notes (gren)
+        env:
+            GREN_GITHUB_TOKEN: ${{ secrets.GREN_GITHUB_TOKEN }}
+        run: |
+            npm install github-release-notes -g
+            gren release --tags=${{ github.event.release.tag_name }} --override
+            gren changelog --override 
+            git commit -am "Github action - gren updated history.md on release {{ github.event.release.tag_name }}" 
+
+      # --------------------------------------------------------------------------------------------
+      # BUILD THE IG
+      # --------------------------------------------------------------------------------------------
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '3'
+
+      - name: Setup Java / Maven
+        uses: actions/setup-java@v2
+        with:
+          java-version: '8'
+          distribution: 'adopt'          
+
+      - name: Install Dependencies
+        run:  |
+          npm install
+          gem install jekyll
+          mvn clean install
+
+      - name: Build IG
+        run:  |
+          npm run sushi
+          npm run ig_init
+
+      - name: Create Snapshot Jar
+        run:  |
+          npm run mvn_snapshot
+          npm run copy_snapshot
+
+      - name: Add Snapshot Jar to full-ig.zip
+        run: zip -ur build/output/full-ig.zip build/output/*.jar 
+
+      # --------------------------------------------------------------------------------------------
+      # ADD KEY ASSETS TO THE RELEASE
+      # --------------------------------------------------------------------------------------------
+      - name: Upload Assets to Release (full-ig-zip))
+        uses: csexton/release-asset-action@v2
+        with:
+          release-url: ${{ github.event.release.upload_url }}         
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+              build/output/full-ig.zip
+
+      - name: Upload Assets to Release (snapshot jar))
+        uses: csexton/release-asset-action@v2
+        with:
+          release-url: ${{ github.event.release.upload_url }}         
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          pattern: "build/output/*.jar"
+
+      - name: Upload Assets to Release with a file list
+        uses: csexton/release-asset-action@v2
+        with:
+         release-url: ${{ github.event.release.upload_url }}         
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+            build/output/package.tgz
+            build/output/definitions.json.zip
+            build/output/examples.json.zip
+            build/output/definitions.xml.zip
+            build/output/examples.xml.zip
+            build/output/definitions.ttl.zip
+
+
