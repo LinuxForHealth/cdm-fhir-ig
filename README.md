@@ -87,12 +87,12 @@ export GREN_GITHUB_TOKEN=<YOUR TOKEN HERE>
 
 3. Run gren command to generate the history.md file (data/ig-data/input/pagecontent/history.md).
 
-To update the history.md file locally:
+3.1 To update the history.md file locally:
 ```console
 gren changelog --override
 ```
 
-To build the IG site and view the history page locally:
+3.2 To build the IG site and view the history page locally:
 ```console
 npm install
 npm run sushi
