@@ -8,8 +8,8 @@ module.exports = {
     "groupBy": {
         "BREAKING CHANGES 💔": ["breaking change", "breaking"],
         "FEATURES ⭐️": ["enhancement", "feature", "ig profiling"],
-        "BUG FIXES 🕸": ["bug", "bug fix", "typo"],
-        "DOCUMENTATION 📚 ": ["documentation"],
+        "BUG FIXES 🕸": ["bug", "bug fix"],
+        "DOCUMENTATION 📚 ": ["documentation", "typo"],
         "OTHER CHANGES": ["..."]    
     },
     "template": {
