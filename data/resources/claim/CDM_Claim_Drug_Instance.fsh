@@ -16,9 +16,9 @@ Description:    "Sample of a CDM Drug Claim"
 * meta.extension[sourceFileId].valueString     = "e00080779"
 
 * identifier[0].use                = #official
-* identifier[0].type               = IdentifierTypeCodeSystem#SSRI
+* identifier[0].type               = IdentifierTypeCodeSystem#RXN
 * identifier[0].system             = "http://acmehealth.com/CodeSystem/local-claim-identifier"
-* identifier[0].value              = "000000000000000000019721078"
+* identifier[0].value              = "00000000000000000001921078"
 * identifier[0].assigner.display   = "Acme Health - Wellness Center Pharmacy"
 
 * extension[snapshotAgeInYears].valueUnsignedInt   = 20
@@ -30,14 +30,22 @@ Description:    "Sample of a CDM Drug Claim"
 * use      = #claim
 * patient  = Reference(CDMPatientInstance)
 * created  = "2017-07-25T17:31:00-05:00"
-* provider = Reference(DrKelly)
+* provider = Reference(Provider1)
 * priority = PROCESS-PRIORITY#normal
+* prescription =  Reference(MedicationRequestDrugExample)
 
 * careTeam[0].sequence  = 1
 * careTeam[0].role      = ClaimCareTeamRoleCodeSystem#ordering
 * careTeam[0].provider  = Reference(DrKelly)
 
-// Place holder to prevent QA error; indexes can't skip; will re-evaluate after remaining claims attributes updated
+// Mapping has this as index 5, but for example purposes we'll use 1
+* careTeam[1].sequence                    = 2
+* careTeam[1].role                        = ClaimCareTeamRoleCodeSystem#servicing
+* careTeam[1].provider                    = Reference(Payer1)
+* careTeam[1].qualification.coding.system = "http://acmehealth.com/CodeSystem/local-specialty"
+* careTeam[1].qualification.coding.code   = #01
+
+// Place holder to prevent QA error; sipping indexes generates error
 * supportingInfo[0].sequence             = 1
 * supportingInfo[0].category             = ClaimSupportingInfoCategoryCodeSystem#daysupply
 
@@ -71,21 +79,35 @@ Description:    "Sample of a CDM Drug Claim"
 * supportingInfo[6].code.coding[1].system = "http://acmehealth.com/CodeSystem/local-compound-code"
 * supportingInfo[6].code.coding[1].code   = #N
 
-* insurance.sequence          = 1
-* insurance.focal             = true
-* insurance.identifier.system = "http://acme-health.com/insurer"
-* insurance.identifier.value  = "PPOB"
-* insurance.coverage          = Reference(CoverageDrugExample)
+* supportingInfo[7].sequence              = 8
+* supportingInfo[7].category              = CLAIM-INFORMATION-CATEGORY#info
+* supportingInfo[7].code.coding[0].system = "http://acmehealth.com/CodeSystem/local-dispensing-status"
+* supportingInfo[7].code.coding[0].code   = #N
+
+* supportingInfo[8].sequence              = 9
+* supportingInfo[8].category              = CLAIM-INFORMATION-CATEGORY#info
+* supportingInfo[8].code.coding[0].system = "http://acmehealth.com/CodeSystem/local-rx-rebate"
+* supportingInfo[8].code.coding[0].code   = #Generic
+
+* insurance[0].sequence          = 1
+* insurance[0].focal             = true
+* insurance[0].identifier.system = "http://acme-health.com/insurer"
+* insurance[0].identifier.value  = "PPOB"
+* insurance[0].coverage          = Reference(CoverageDrugExample)
+* insurance[0].extension[crossoverIndicator].valueString = "N"
 
 * item[0].sequence            = 1
-* item[0].productOrService    = NdcNoHyphensCodeSystem#69452015120
-* item[0].servicedDate        = "2017-06-18"
-* item[0].locationCodeableConcept[0]                 = CMS-PLACE-OF-SERVICE#01 "Pharmacy"
-* item[0].locationCodeableConcept.coding[1].system   = "http://acmehealth.com/CodeSystem/local-place-of-service"
-* item[0].locationCodeableConcept.coding[1].code     = #LocalPlcOfService
-* item[0].quantity.value      = 30.00
-* item[0].net.value           = 18.86
-* item[0].extension[compoundCode].valueCodeableConcept  = http://acmehealth.com/CodeSystem/local-compound-code#CompoundCd1
+* item[0].productOrService.coding[0]        = NdcNoHyphensCodeSystem#69452015120
+* item[0].productOrService.coding[1]        = http://acme-health.com/CodeSystem/local-service-type#LocServiceType
+* item[0].servicedDate                      = "2017-06-18"
+* item[0].locationCodeableConcept.coding[0] = CMS-PLACE-OF-SERVICE#01 "Pharmacy"
+* item[0].locationCodeableConcept.coding[1] = http://acmehealth.com/CodeSystem/local-place-of-service#LocalPlcOfService
+* item[0].quantity.value                    = 30.00
+* item[0].net.value                         = 18.86
+* item[0].extension[compoundCode].valueCodeableConcept      = http://acmehealth.com/CodeSystem/local-compound-code#CompoundCd1
+* item[0].extension[capitatedServiceIndicator].valueString  = "N"
+* item[0].extension[fullyInsuredIndicator].valueString      = "Y"
+* item[0].extension[nursingHomeIndicator].valueString       = "N"
 
 * item[0].detail[0].sequence         = 1
 * item[0].detail[0].productOrService = NdcNoHyphensCodeSystem#69452015120
@@ -102,7 +124,17 @@ Description:    "Sample of a CDM Drug Claim"
 * item[0].detail[2].extension[ClaimItemDetailClassification].valueCodeableConcept = ClaimItemDetailClassificationCodeSystem#sales-tax
 * item[0].detail[2].unitPrice.value  = 1.00
 
+* extension[aggregateClaimIndicator].valueString           = "N"
 * extension[claimSnapshotProviderName].valueString         = "Dr Kelly"
 * extension[claimSnapshotProviderZipCode].valueString      = "75014"
+* extension[companyCode].valueCodeableConcept              = http://acmehealth.com/CodeSystem/local-company-code#LocCompanyCd
 * extension[employeeBusinessUnit].valueCodeableConcept     = http://acmehealth.com/CodeSystem/local-employee-business-unit#EmpBusUnit1
+* extension[employer].valueCodeableConcept                 = http://acmehealth.com/CodeSystem/local-employer-code#EmployerCode1
+* extension[financialSystem].valueCodeableConcept          = http://acmehealth.com/CodeSystem/local-financial-system#FinanceSys1
+* extension[hipaaClaimCategory].valueCodeableConcept       = CLAIM-STATUS-CATEGORY#F1
+* extension[hipaaClaimStatus].valueCodeableConcept         = CLAIM-STATUS#F1
+* extension[lastClaimIndicator].valueString                = "Y"
+* extension[lineOfBusiness].valueCodeableConcept           = http://acmeheath.com/CodeSyste/local-line-of-business#lob1
+* extension[rxCount].valueUnsignedInt                      = 1
+* extension[submissionType].valueCodeableConcept           = http://acmehealth.com/CodeSystem/local-submission-type#SubmitType1
 * extension[whPayerPcpResponsibilityIndicator].valueString = "N"
