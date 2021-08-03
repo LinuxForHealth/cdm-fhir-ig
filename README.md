@@ -52,7 +52,7 @@ If you want to run gren locally, you can update release notes for a single relea
 npm install github-release-notes -g
 
 # Create an environmment variable containing a github token with access to the repo
-xport GREN_GITHUB_TOKEN=<YOUR TOKEN HERE>
+export GREN_GITHUB_TOKEN=<YOUR TOKEN HERE>
 
 # Run gren command to update the release notes for a single release
 gren release --tags=v0.x.x --override
