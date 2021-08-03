@@ -100,3 +100,37 @@ For release history of this IG, view the [release page](https://github.com/Alvea
 - A snapshot jar file used to register the IG profiles on an IBM FHIR Server
 - Tar archive containing all assets used by the FHIR Publisher to build the site (package.tgz)
 - Zip fies containing definitions and examples in json, xml, and ttl (Turtle)
+
+## Versioning IG Releases
+
+Please follow the guidelines listed below when making changes to this repo and labeling IG releases.
+
+Changes must be made to the following files to version the IG. This will ensure the automatmed releases work correctly.
+
+- package.json (root folder)
+- data/package.json
+- data/config.yaml
+
+IG releases and version numbers should be modified as follows:
+
+- **New major versions on breaking changes**
+    - New required fields on existing profiles
+    - Tighter cardinality restrictions on existing fields
+    - Tighter data type or valueset binding constraints on existing profiles
+    - Code changes to existing vocabularies
+    - Url changes to existing profiles, vocabularies, etc.
+
+- **New minor version on non-breaking IG profile changes**
+    - New profiles or extensions
+    - New codes, coding system, or vocabularies
+    - Looser cardinality restrictions on existing fields
+    - Looser data type or valueset binding constraints on existing profiles
+    - New optional fields on existing profiles
+  
+- **New revision on documentation changes that are reflected in the IG**
+    - Changes to descriptions of profiles, extensions, or codes
+    - Changes on IG pages that do not impact the profiles
+  
+- **No version updates on other repo changes that do not affect the IG**
+    - Documentation in github pages only that are reflected in the IG (readme.md, etc)
+    - Build CI changes
