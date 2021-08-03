@@ -4,6 +4,10 @@ Id:             cdm-claim-drug
 Title:          "CDM Claim Drug"
 Description:    "The CDMClaimDrug profile extends the base CDMClaim profile with additional details that are specific to pharmacy claims"
 
+* extension contains RxCount named rxCount 0..1
+* extension[rxCount] ^short      = "Count of prescriptions for the drug claim"
+* extension[rxCount] ^definition = "Count of prescriptions for the drug claim"
+
 * item.extension contains CompoundCode named compoundCode 0..1
 * item.extension[compoundCode]  ^short      = "Indicator of whether the product is a compound drug or not"
 * item.extension[compoundCode]  ^definition = "Indicator of whether the product is a compound drug or not"
