@@ -24,13 +24,13 @@ Extension:      OffsetBegin
 Id:             offset-begin
 Title:          "Offset Begin"
 Description:    "Offset location of the first character for the span of covered text in relation to the overall reference where this span of text appears"
-* value[x] only decimal
+* value[x] only integer
 
 Extension:      OffsetEnd
 Id:             offset-end
 Title:          "Offset End"
 Description:    "Offset location of the last character for the span of covered text in relation to the overall reference where this span of text appears"
-* value[x] only decimal
+* value[x] only integer
 
 
 Extension:      CoveredText
