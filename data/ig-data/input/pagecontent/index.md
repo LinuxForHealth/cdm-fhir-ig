@@ -17,3 +17,11 @@ This Implementation Guide is an extensive data reference. As a recommended launc
 -	An extensive overview of all FHIR artifacts defined by this implementation guide
 -	Common terminology
 
+## Release History
+
+For release history of this IG, view the [release page](https://github.com/Alvearie/alvearie-fhir-ig/releases) on our GitHub repo. Each release includes:
+
+- Full IG Site Specification (full-ig.zip)
+- A snapshot jar file used to register the IG profiles on an IBM FHIR Server
+- Tar archive containing all assets used by the FHIR Publisher to build the site (package.tgz)
+- Zip fies containing definitions and examples in json, xml, and ttl (Turtle)
