@@ -21,6 +21,8 @@ Description:    "Sample of a CDM Drug Coverage Claim"
 * beneficiary.identifier.system = "http://acme-health.com/emr1/person"
 * beneficiary.identifier.value  = "Payer1"
 
+* subscriber = Reference(CDMPatientInstance)
+
 * status      = #active
 
 * extension[ageGenderGroup].valueCodeableConcept          = AgeGenderGroupCodeSystem#7
