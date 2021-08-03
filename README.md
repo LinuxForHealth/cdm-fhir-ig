@@ -113,24 +113,24 @@ Changes must be made to the following files to version the IG. This will ensure 
 
 IG releases and version numbers should be modified as follows:
 
-- **New major versions on breaking changes**
+1. **New major versions on breaking changes**
     - New required fields on existing profiles
     - Tighter cardinality restrictions on existing fields
     - Tighter data type or valueset binding constraints on existing profiles
     - Code changes to existing vocabularies
     - Url changes to existing profiles, vocabularies, etc.
 
-- **New minor version on non-breaking IG profile changes**
+2. **New minor version on non-breaking IG profile changes**
     - New profiles or extensions
     - New codes, coding system, or vocabularies
     - Looser cardinality restrictions on existing fields
     - Looser data type or valueset binding constraints on existing profiles
     - New optional fields on existing profiles
   
-- **New revision on documentation changes that are reflected in the IG**
+3. **New revision on documentation changes that are reflected in the IG**
     - Changes to descriptions of profiles, extensions, or codes
     - Changes on IG pages that do not impact the profiles
   
-- **No version updates on other repo changes that do not affect the IG**
+4. **No version updates on other repo changes that do not affect the IG**
     - Documentation in github pages only that are reflected in the IG (readme.md, etc)
     - Build CI changes
