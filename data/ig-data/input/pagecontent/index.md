@@ -17,7 +17,12 @@ This Implementation Guide is an extensive data reference. As a recommended launc
 -	An extensive overview of all FHIR artifacts defined by this implementation guide
 -	Common terminology
 
-## Release History
+### License
+
+FHIR® is the registered trademark of HL7 and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
+IBM and the IBM logo are trademarks of International Business Machines Corporation, registered in many jurisdictions worldwide. Other product and service names might be trademarks of IBM or other companies. A current list of IBM trademarks is available on [https://ibm.com/trademark](https://ibm.com/trademark).
+
+### Release History
 
 For release history of this IG, view the [release page](https://github.com/Alvearie/alvearie-fhir-ig/releases) on our GitHub repo. Each release includes:
 
