@@ -27,8 +27,8 @@ Description:    "Condition example where condition code is set from NLP derived 
 
 //Each text fragment annotated and scored has individual scoring results
 * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[coveredText].valueString = "results consistent with insulin-dependent diabetes"
-* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[offsetBegin].valueDecimal = 17
-* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[offsetEnd].valueDecimal = 56
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[offsetBegin].valueInteger = 17
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[offsetEnd].valueInteger = 56
 
 //Two scoring results apply to this fragment
      * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].code = #Diagnosis_Explicit_Score
