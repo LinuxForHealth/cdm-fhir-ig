@@ -42,7 +42,7 @@ Occasionally, you may find you need to update release notes.  Perhaps you forgot
 
 1. Update the release notes manually using github release edit page
 2. Delete the release and create a new one with the same label
-3. Run gren locally, as decribed below
+3. Run gren locally, as described below
    
 ### Updating release notes locally
 If you want to run gren locally, you can update release notes for a single release or for all releases.  
@@ -103,34 +103,39 @@ For release history of this IG, view the [release page](https://github.com/Alvea
 
 ## Versioning IG Releases
 
-Please follow the guidelines listed below when making changes to this repo and labeling IG releases.
+IG versioning follows the semantic release pattern of MAJOR.MINOR.REVISION.  Please follow the guidelines listed below when making changes to this repo and labeling IG releases.
 
-Changes must be made to the following files to version the IG. This will ensure the automatmed releases work correctly.
-
-- package.json (root folder)
-- data/package.json
-- data/config.yaml
+### When to change the version
 
 IG releases and version numbers should be modified as follows:
 
-1. **New major versions on breaking changes**
+1. **Bump MAJOR version (N.x.x) on breaking changes**
     - New required fields on existing profiles
     - Tighter cardinality restrictions on existing fields
     - Tighter data type or valueset binding constraints on existing profiles
     - Code changes to existing vocabularies
     - Url changes to existing profiles, vocabularies, etc.
 
-2. **New minor version on non-breaking IG profile changes**
+2. **Bump MINOR version (x.N.x) on non-breaking IG profile changes**
     - New profiles or extensions
     - New codes, coding system, or vocabularies
     - Looser cardinality restrictions on existing fields
     - Looser data type or valueset binding constraints on existing profiles
     - New optional fields on existing profiles
   
-3. **New revision on documentation changes that are reflected in the IG**
+3. **Bump REVISION number (x.x.N) on documentation changes that are reflected in the IG**
     - Changes to descriptions of profiles, extensions, or codes
     - Changes on IG pages that do not impact the profiles
   
-4. **No version updates on other repo changes that do not affect the IG**
-    - Documentation in github pages only that are reflected in the IG (readme.md, etc)
+4. **No version change to be made on other repo changes that do not affect the IG**
     - Build CI changes
+    - Documentation in github pages only that are reflected in the IG (readme.md, etc)
+    - Any other change not reflected in the IG web site or artifacts
+
+### How to change the version
+Changes must be made to the following files to version the IG. This will ensure the automated releases work correctly.
+
+- package.json (root folder)
+- data/package.json
+- data/config.yaml
+
