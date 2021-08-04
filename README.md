@@ -133,7 +133,7 @@ IG releases and version numbers should be modified as follows:
     - Any other change not reflected in the IG web site or artifacts
 
 ### How to change the version
-Changes must be made to the following files to version the IG. This will ensure the automated releases work correctly.
+Changes must be made to the following files to version the IG. This will ensure the automated releases work correctly, and is displayed top of the IG web site after it is published.
 
 - package.json (root folder)
 - data/package.json
