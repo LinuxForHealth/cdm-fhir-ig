@@ -7,8 +7,8 @@ Description:    "Sample CDM Organization representing a provider"
 * meta.source  = "http://acme-health.com/organization/provider"
 * meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
 
-* identifier[0].use    = #official
-* identifier[0].type   = IdentifierTypeCodeSystem#NPI
+* identifier[0].use    = #secondary
+* identifier[0].type   = ID-TYPE#NPI
 * identifier[0].system = US-NPI
 * identifier[0].value  = "12345"
 
