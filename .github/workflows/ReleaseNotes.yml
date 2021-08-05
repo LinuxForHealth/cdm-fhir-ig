@@ -55,7 +55,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '8'
-          distribution: 'adopt'          
+          distribution: 'adopt'
 
       - name: Install Dependencies
         run:  |
@@ -82,7 +82,7 @@ jobs:
       - name: Upload Assets to Release (full-ig-zip))
         uses: csexton/release-asset-action@v2
         with:
-          release-url: ${{ github.event.release.upload_url }}         
+          release-url: ${{ github.event.release.upload_url }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           files: |
               build/output/full-ig.zip
@@ -90,14 +90,14 @@ jobs:
       - name: Upload Assets to Release (snapshot jar))
         uses: csexton/release-asset-action@v2
         with:
-          release-url: ${{ github.event.release.upload_url }}         
+          release-url: ${{ github.event.release.upload_url }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           pattern: "build/output/*.jar"
 
       - name: Upload Assets to Release with a file list
         uses: csexton/release-asset-action@v2
         with:
-         release-url: ${{ github.event.release.upload_url }}         
+          release-url: ${{ github.event.release.upload_url }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           files: |
             build/output/package.tgz
@@ -106,5 +106,3 @@ jobs:
             build/output/definitions.xml.zip
             build/output/examples.xml.zip
             build/output/definitions.ttl.zip
-
-
