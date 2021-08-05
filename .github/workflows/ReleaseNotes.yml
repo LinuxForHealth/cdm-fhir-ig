@@ -38,17 +38,15 @@ jobs:
         env:
             GREN_GITHUB_TOKEN: ${{ secrets.GREN_GITHUB_TOKEN }}
         run: |
-            npm install
-            echo TEST-1
             npm install github-release-notes -g
-            echo TEST-2
             gren release --tags=${{ github.event.release.tag_name }} --override
-            echo TEST-3
             gren changelog --override 
-            echo TEST-4
-            git commit -am "Github action - gren updated history.md on release {{ github.event.release.tag_name }}" 
-            echo TEST-5
 
+      - name: push
+        uses: actions-x/commit@v2
+        with:
+          message: "Github action updated history.md on release {{ github.event.release.tag_name }}" 
+          
       # --------------------------------------------------------------------------------------------
       # BUILD THE IG
       # --------------------------------------------------------------------------------------------
