@@ -31,9 +31,6 @@ jobs:
       # Gren configuration is stored in .grenrc.js
       # See https://github.com/github-tools/github-release-notes for more details
       # --------------------------------------------------------------------------------------------
-      - name: Checkout Repo
-        uses: actions/checkout@v2
-
       - name: Update release notes (gren)
         env:
             GREN_GITHUB_TOKEN: ${{ secrets.GREN_GITHUB_TOKEN }}
@@ -46,6 +43,9 @@ jobs:
       # --------------------------------------------------------------------------------------------
       # BUILD THE IG
       # --------------------------------------------------------------------------------------------
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
       - name: Setup Ruby
         uses: actions/setup-ruby@v1
         with:
