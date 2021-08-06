@@ -98,9 +98,10 @@ Description:    "Sample of a CDM Drug Claim Response"
 * item.extension[claimResponseItemStatus].valueCodeableConcept = WhPayerClaimStatusCodeSystem#P "Paid"
 * item.extension[claimResponseBenefitPlan].valueReference = Reference(CoverageDrugExample)
 
-* item.extension[rxFormularyIndicator].valueString = "N"
-* item.extension[rxPayTier].valueCodeableConcept   = http://acmehealth.com/CodeSystem/local-rx-pay-tier#Tier1
-* item.extension[rxSupplyIndicator].valueString    = "N"
+* item.extension[rxFormularyIndicator].valueString     = "N"
+* item.extension[rxPayTier].valueCodeableConcept       = http://acmehealth.com/CodeSystem/local-rx-pay-tier#Tier1
+* item.extension[rxSupplyIndicator].valueString        = "N"
+* item.extension[usualAndCustomaryAmount].valueDecimal = 0.00
 
 * adjudication.category                    = PaidInNetworkIndicatorCodeSystem#in-network
 * adjudication.extension[adjudicationDate].valueDate = 2017-06-30
