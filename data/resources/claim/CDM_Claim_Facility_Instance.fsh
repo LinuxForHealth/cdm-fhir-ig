@@ -100,6 +100,7 @@ Description:    "Sample of a CDM Facility Claim"
 * item[0].productOrService.coding[1]     = NdcNoHyphensCodeSystem#69452015120
 * item[0].modifier[0]                    = HCPCS#AF
 * item[0].extension[capitatedServiceIndicator].valueString = "N"
+* item[0].extension[companyCode].valueCodeableConcept = http://acmehealth.com/CodeSystem/local-company-code#LocCompanyCd
 * item[0].quantity.value                 = 3
 * item[0].quantity.extension[localNumberOfUnitsPerService].valueQuantity.value = 5.00
 * item[0].revenue                        = NUBC-REVENUE-CODE#0450 "Emergency Room"

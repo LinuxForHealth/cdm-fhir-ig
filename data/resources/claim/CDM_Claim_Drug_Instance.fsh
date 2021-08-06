@@ -127,7 +127,7 @@ Description:    "Sample of a CDM Drug Claim"
 * extension[aggregateClaimIndicator].valueString           = "N"
 * extension[claimSnapshotProviderName].valueString         = "Dr Kelly"
 * extension[claimSnapshotProviderZipCode].valueString      = "75014"
-* extension[companyCode].valueCodeableConcept              = http://acmehealth.com/CodeSystem/local-company-code#LocCompanyCd
+* extension[employeeCompanyCode].valueCodeableConcept      = http://acmehealth.com/CodeSystem/local-employee-company-code#LocEmpCompanyCd
 * extension[employeeBusinessUnit].valueCodeableConcept     = http://acmehealth.com/CodeSystem/local-employee-business-unit#EmpBusUnit1
 * extension[employer].valueCodeableConcept                 = http://acmehealth.com/CodeSystem/local-employer-code#EmployerCode1
 * extension[financialSystem].valueCodeableConcept          = http://acmehealth.com/CodeSystem/local-financial-system#FinanceSys1

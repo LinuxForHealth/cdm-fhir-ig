@@ -31,7 +31,7 @@ Description:    "Original provider postal code, as reported on the claim"
 Extension:      CompanyCode
 Id:             company-code
 Title:          "Company Code"
-Description:    "Company code of the subscriber as reported on the claim"    
+Description:    "Customer-specific code for the company of the employee"    
 * value[x] only CodeableConcept
 
 Extension:      CompoundCode
