@@ -1,7 +1,7 @@
 Extension:   AdjudicationDate
 Id:          adjudication-date
 Title:       "Adjudication Date"
-Description: "Date on which the payment status of the claim was adjudicated by the state" 
+Description: "Date on which the payment status of the claim was adjudicated" 
 * value[x] only date
 
 Extension:   ClaimAdjustmentType
@@ -41,12 +41,6 @@ Title:       "Rx Supply Indicator"
 Description: "An indicator of whether or not the drug claim is a medical supply (Y) or a drug (N)"
 * value[x] only string
 
-Extension:      UsualAndCustomaryAmount
-Id:             usual-and-customary-amount
-Title:          "Usual And Customary Amount"
-Description:    "Usual and customary amount on the drug claim"
-* value[x] only decimal
-
 Extension:   ClaimResponseItemStatus
 Id:          claim-response-item-status
 Title:       "Claim Response Item Status"
@@ -71,3 +65,9 @@ Id:          submission-type
 Title:       "Submission Type"
 Description: "Customer-specific code for the type of electronic submission"
 * value[x] only CodeableConcept
+
+Extension:      UsualAndCustomaryAmount
+Id:             usual-and-customary-amount
+Title:          "Usual And Customary Amount"
+Description:    "Usual and customary amount on the drug claim"
+* value[x] only decimal
