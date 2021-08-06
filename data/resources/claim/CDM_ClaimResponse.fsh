@@ -14,8 +14,8 @@ Description:     "This resource provides the adjudication details from the proce
 * identifier.type  from IdentifierTypeValueSet (extensible)
 
 * adjudication.extension contains AdjudicationDate named adjudicationDate 0..1
-* adjudication.extension[adjudicationDate] ^short      = "Date on which the payment status of the claim was adjudicated by the state"
-* adjudication.extension[adjudicationDate] ^definition = "Date on which the payment status of the claim was adjudicated by the state"
+* adjudication.extension[adjudicationDate] ^short      = "Date on which the payment status of the claim was adjudicated"
+* adjudication.extension[adjudicationDate] ^definition = "Date on which the payment status of the claim was adjudicated"
 
 * type  from ClaimTypeValueSet (extensible)
 
