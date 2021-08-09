@@ -28,9 +28,9 @@ Title:          "Claim Snapshot Provider Zip Code"
 Description:    "Original provider postal code, as reported on the claim"
 * value[x] only string
 
-Extension:      CompanyCode
-Id:             company-code
-Title:          "Company Code"
+Extension:      EmployeeCompany
+Id:             employee-company
+Title:          "Employee Company"
 Description:    "Customer-specific code for the company of the employee"    
 * value[x] only CodeableConcept
 
@@ -89,12 +89,6 @@ Id:             last-claim-indicator
 Title:          "Last Claim Indicator"
 Description:    "Indicator that identifies whether this claim record is the last or most recent claim"   
 * value[x] only string
-
-Extension:      LineOfBusiness
-Id:             line-of-business
-Title:          "Line Of Business"
-Description:    "Customer-specific code for the line of business"   
-* value[x] only CodeableConcept
 
 Extension:      LocalNumberOfUnitsPerService
 Id:             local-number-of-units-per-service

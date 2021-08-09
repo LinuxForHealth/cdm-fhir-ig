@@ -48,9 +48,9 @@ Description:    "A provider issued list of professional services and products wh
 * extension[claimSnapshotProviderZipCode] ^short      = "Original provider postal code, as reported on the claim"
 * extension[claimSnapshotProviderZipCode] ^definition = "Original provider postal code, as reported on the claim"
 
-* extension contains CompanyCode named employeeCompanyCode 0..1
-* extension[employeeCompanyCode] ^short      = "Customer-specific code for the company of the employee" 
-* extension[employeeCompanyCode] ^definition = "Customer-specific code for the company of the employee" 
+* extension contains EmployeeCompany named employeeCompany 0..1
+* extension[employeeCompany] ^short      = "Customer-specific code for the company of the employee" 
+* extension[employeeCompany] ^definition = "Customer-specific code for the company of the employee" 
 
 * extension contains EmployeeBusinessUnit named employeeBusinessUnit 0..1
 * extension[employeeBusinessUnit] ^short      = "Business unit of the subscriber as reported on the claim" 
@@ -75,10 +75,6 @@ Description:    "A provider issued list of professional services and products wh
 * extension contains LastClaimIndicator named lastClaimIndicator 0..1
 * extension[lastClaimIndicator] ^short      = "Indicator that identifies whether this claim record is the last or most recent claim" 
 * extension[lastClaimIndicator] ^definition = "Indicator that identifies whether this claim record is the last or most recent claim"
-
-* extension contains LineOfBusiness named lineOfBusiness 0..1
-* extension[lineOfBusiness] ^short      = "Customer-specific code for the line of business"
-* extension[lineOfBusiness] ^definition = "Customer-specific code for the line of business"
 
 * item.quantity.extension contains LocalNumberOfUnitsPerService named localNumberOfUnitsPerService 0..1
 * item.quantity.extension[localNumberOfUnitsPerService] ^short      = "Customer-specific quantity of either services or units"
