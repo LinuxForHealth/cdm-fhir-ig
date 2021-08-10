@@ -70,16 +70,16 @@ Title:          "Fully Insured Indicator"
 Description:    "Indicator that the claim was for a fully insured plan"
 * value[x] only string
 
-Extension:      HipaaClaimCategory
-Id:             hipaa-claim-category
-Title:          "HIPAA Claim Category"
+Extension:      ClaimCategory
+Id:             claim-category
+Title:          "Claim Category"
 Description:    "Standard HIPAA code for the category of the claim status"   
 * value[x] only CodeableConcept
 * valueCodeableConcept from CLAIM-STATUS-CATEGORY (extensible)
 
-Extension:      HipaaClaimStatus
-Id:             hipaa-claim-status
-Title:          "HIPAA Claim Status"
+Extension:      ClaimStatus
+Id:             claim-status
+Title:          "Claim Status"
 Description:    "Standard HIPAA code for the status of an entire claim"   
 * value[x] only CodeableConcept
 * valueCodeableConcept from CLAIM-STATUS (extensible)

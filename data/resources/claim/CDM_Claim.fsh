@@ -64,13 +64,13 @@ Description:    "A provider issued list of professional services and products wh
 * extension[financialSystem] ^short      = "Customer-specific code for the financial system"
 * extension[financialSystem] ^definition = "Customer-specific code for the financial system"
 
-* extension contains HipaaClaimCategory named hipaaClaimCategory 0..1
-* extension[hipaaClaimCategory] ^short      = "Standard HIPAA code for the category of the claim status" 
-* extension[hipaaClaimCategory] ^definition = "Standard HIPAA code for the category of the claim status" 
+* extension contains ClaimCategory named claimCategory 0..1
+* extension[claimCategory] ^short      = "Standard HIPAA code for the category of the claim status" 
+* extension[claimCategory] ^definition = "Standard HIPAA code for the category of the claim status" 
 
-* extension contains HipaaClaimStatus named hipaaClaimStatus 0..1
-* extension[hipaaClaimStatus] ^short      = "Standard HIPAA code for the status of an entire claim"
-* extension[hipaaClaimStatus] ^definition = "Standard HIPAA code for the status of an entire claim"
+* extension contains ClaimStatus named claimStatus 0..1
+* extension[claimStatus] ^short      = "Standard HIPAA code for the status of an entire claim"
+* extension[claimStatus] ^definition = "Standard HIPAA code for the status of an entire claim"
 
 * extension contains LastClaimIndicator named lastClaimIndicator 0..1
 * extension[lastClaimIndicator] ^short      = "Indicator that identifies whether this claim record is the last or most recent claim" 
