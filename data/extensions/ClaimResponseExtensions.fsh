@@ -51,7 +51,7 @@ Description: "Payment status of claim item"
 Extension:   ClaimResponseBenefitPlan
 Id:          claim-response-benefit-plan
 Title:       "Claim Response Benefit Plan"
-Description: "The Benefit Plan on the claim item"
+Description: "The benefit plan on the claim item"
 * value[x] only Reference(Coverage)
 
 Extension:   DispositionReason
