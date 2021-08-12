@@ -45,49 +45,39 @@ Description:    "Sample of a CDM Drug Claim"
 * careTeam[1].qualification.coding.system = "http://acmehealth.com/CodeSystem/local-specialty"
 * careTeam[1].qualification.coding.code   = #01
 
-// Place holder to prevent QA error; sipping indexes generates error
+// Resequenced indexes to prevent QA errors
 * supportingInfo[0].sequence             = 1
-* supportingInfo[0].category             = ClaimSupportingInfoCategoryCodeSystem#daysupply
-
-* supportingInfo[1].sequence             = 2
-* supportingInfo[1].category             = ClaimSupportingInfoCategoryCodeSystem#daysupply
-* supportingInfo[1].valueQuantity.value  = 30
-
-* supportingInfo[2].sequence             = 3
+* supportingInfo[0].category             = ClaimSupportingInfoCategoryCodeSystem#dayssupply
+* supportingInfo[0].valueQuantity.value  = 30
+* supportingInfo[1].sequence             = 3
+* supportingInfo[1].category             = CLAIM-INFORMATION-CATEGORY#info
+* supportingInfo[1].code                 = ClaimSupportingInfoTypeCodeSystem#network-provider-indicator
+* supportingInfo[1].valueString          = "Y"
+* supportingInfo[2].sequence             = 4
 * supportingInfo[2].category             = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[2].code                 = ClaimSupportingInfoTypeCodeSystem#network-provider-indicator
-* supportingInfo[2].valueString          = "Y"
-
-* supportingInfo[3].sequence             = 4
+* supportingInfo[2].code                 = NCPDPDispenseAsWrittenCodeSystem#0
+* supportingInfo[2].valueString          = "0"
+* supportingInfo[3].sequence             = 5
 * supportingInfo[3].category             = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[3].code                 = NCPDPDispenseAsWrittenCodeSystem#0
-* supportingInfo[3].valueString          = "0"
-
-* supportingInfo[4].sequence             = 5
+* supportingInfo[3].code                 = ClaimSupportingInfoTypeCodeSystem#refill-number
+* supportingInfo[3].valueQuantity.value  = 4
+* supportingInfo[4].sequence             = 6
 * supportingInfo[4].category             = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[4].code                 = ClaimSupportingInfoTypeCodeSystem#refill-number
+* supportingInfo[4].code                 = RxMailOrRetailCodeSystem#r
 * supportingInfo[4].valueQuantity.value  = 4
-
-* supportingInfo[5].sequence             = 6
-* supportingInfo[5].category             = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[5].code                 = RxMailOrRetailCodeSystem#r
-* supportingInfo[5].valueQuantity.value  = 4
-
-* supportingInfo[6].sequence              = 7
+* supportingInfo[5].sequence              = 7
+* supportingInfo[5].category              = CLAIM-INFORMATION-CATEGORY#info
+* supportingInfo[5].code[0]               = ClaimSupportingInfoTypeCodeSystem#compound-indicator
+* supportingInfo[5].code.coding[1].system = "http://acmehealth.com/CodeSystem/local-compound-code"
+* supportingInfo[5].code.coding[1].code   = #N
+* supportingInfo[6].sequence              = 8
 * supportingInfo[6].category              = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[6].code[0]               = ClaimSupportingInfoTypeCodeSystem#compound-indicator
-* supportingInfo[6].code.coding[1].system = "http://acmehealth.com/CodeSystem/local-compound-code"
-* supportingInfo[6].code.coding[1].code   = #N
-
-* supportingInfo[7].sequence              = 8
+* supportingInfo[6].code.coding[0].system = "http://acmehealth.com/CodeSystem/local-dispensing-status"
+* supportingInfo[6].code.coding[0].code   = #N
+* supportingInfo[7].sequence              = 9
 * supportingInfo[7].category              = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[7].code.coding[0].system = "http://acmehealth.com/CodeSystem/local-dispensing-status"
-* supportingInfo[7].code.coding[0].code   = #N
-
-* supportingInfo[8].sequence              = 9
-* supportingInfo[8].category              = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[8].code.coding[0].system = "http://acmehealth.com/CodeSystem/local-rx-rebate"
-* supportingInfo[8].code.coding[0].code   = #Generic
+* supportingInfo[7].code.coding[0].system = "http://acmehealth.com/CodeSystem/local-rx-rebate"
+* supportingInfo[7].code.coding[0].code   = #Generic
 
 * insurance[0].sequence          = 1
 * insurance[0].focal             = true
