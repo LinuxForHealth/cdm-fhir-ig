@@ -20,6 +20,10 @@ Description:    "A provider issued list of professional services and products wh
 * careTeam.role           from ClaimCareTeamRoleValueSet (extensible)
 * careTeam.provider       only Reference(Practitioner or PractitionerRole or Organization)
 
+* diagnosis.extension contains MajorDiagnosticCategory named majorDiagnosticCategory 0..1
+
+* procedure.extension contains ProcedureGroup named procedureGroup 0..1
+
 * item.extension contains CapitatedServiceIndicator named capitatedServiceIndicator 0..1
 * item.extension[capitatedServiceIndicator] ^short      = "An indicator that this service (encounter record) was capitated" 
 * item.extension[capitatedServiceIndicator] ^definition = "An indicator that this service (encounter record) was capitated" 

@@ -46,11 +46,25 @@ Title:          "Local Number Of Units Per Service"
 Description:    "Customer-specific quantity of either services or units"
 * value[x] only Quantity
 
+Extension:      MajorDiagnosticCategory 
+Id:             major-diagnostic-category 
+Title:          "Major Diagnostic Category"
+Description:    "Body-system or disease related groupings of clinical conditions, based on diagnosis codes" 
+* value[x] only CodeableConcept 
+* valueCodeableConcept from WHPayerMajorDiagnosticCategoryValueSet (extensible)
+
 Extension:      NetworkId
 Id:             network-id
 Title:          "Network Id"
 Description:    "Customer-specific identifier of the patient provider network in which the member is enrolled"
 * value[x] only string
+
+Extension:      ProcedureGroup
+Id:             procedure-group
+Title:          "Procedure Group"
+Description:    "The groups of related outpatient procedures"
+* value[x] only CodeableConcept 
+* valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
 
 Extension:      ReferralIndicator
 Id:             referral-indicator
