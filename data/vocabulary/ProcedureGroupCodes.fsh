@@ -204,6 +204,6 @@ Description:    "IBM® Health Data Connect standard procedure group codes"
 
 ValueSet:       WHPayerProcedureGroupValueSet
 Id:             wh-payer-procedure-group
-Title:          "Health Data Connect Procedure Group Value Set"
+Title:          "Procedure Group Value Set"
 Description:    "IBM® Health Data Connect standard value set containing procedure group codes"
 * codes from system WHPayerProcedureGroupCodeSystem
