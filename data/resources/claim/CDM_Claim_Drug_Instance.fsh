@@ -120,8 +120,8 @@ Description:    "Sample of a CDM Drug Claim"
 * item[0].detail[2].unitPrice.value  = 1.00
 
 * extension[aggregateClaimIndicator].valueString           = "N"
-* extension[claimSnapshotProviderName].valueString         = "Dr Kelly"
-* extension[claimSnapshotProviderZipCode].valueString      = "75014"
+* extension[claimSnapshotProviderName].valueString         = "Dr Smith"
+* extension[claimSnapshotProviderZipCode].valueString      = "79912"
 * extension[employeeCompany].valueCodeableConcept          = http://acmehealth.com/CodeSystem/local-employee-company#LocEmpCompany
 * extension[employeeBusinessUnit].valueCodeableConcept     = http://acmehealth.com/CodeSystem/local-employee-business-unit#EmpBusUnit1
 * extension[employer].valueCodeableConcept                 = http://acmehealth.com/CodeSystem/local-employer-code#EmployerCode1
