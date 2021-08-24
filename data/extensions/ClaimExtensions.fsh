@@ -49,7 +49,7 @@ Description:    "Customer-specific quantity of either services or units"
 Extension:      MajorDiagnosticCategory 
 Id:             major-diagnostic-category 
 Title:          "Major Diagnostic Category"
-Description:    "Body-system or disease related groupings of clinical conditions, based on diagnosis codes" 
+Description:    "Body system or disease related groupings of clinical conditions, based on diagnosis codes" 
 * value[x] only CodeableConcept 
 * valueCodeableConcept from WHPayerMajorDiagnosticCategoryValueSet (extensible)
 
@@ -62,7 +62,7 @@ Description:    "Customer-specific identifier of the patient provider network in
 Extension:      ProcedureGroup
 Id:             procedure-group
 Title:          "Procedure Group"
-Description:    "The groups of related outpatient procedures"
+Description:    "Groups assigned to categorize related procedures"
 * value[x] only CodeableConcept 
 * valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
 

@@ -18,10 +18,10 @@ Description:    "The date which reflects the month of eligibility"
 
 Extension:      CoverageInsurancePlan
 Id:             coverage-insurance-plan
-Title:          "Insurance Plan Providing Coverage"
+Title:          "Coverage Insurance Plan"
 Description:    "A reference to the insurance plan for this coverage"
 * value[x] only Reference
-* valueReference only Reference(CDMInsurancePlan)
+* valueReference only Reference(InsurancePlan)
 
 Extension:      EnrollmentPcp
 Id:             enrollment-pcp
