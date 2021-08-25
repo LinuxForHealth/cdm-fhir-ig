@@ -1,4 +1,4 @@
-# Contributing to Alvearie-IG
+# Contributing to alvearie-fhir-ig
 Since we have not completely moved our development into the open yet, external contributions are limited. If you would like to make contributions, please create an issue detailing the change. We will work with you to get it merged in.
 
 ## Git Signed-By Commits
