@@ -87,6 +87,8 @@ open ./build/output/history.md
 
 Since we have not completely moved our development into the open yet, external contributions are limited. If you would like to make contributions, please create an issue detailing the change. We will work with you to get it merged in.
 
+You must have git configured for signed-by commmits.  See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
 ## License
 
 FHIR® is the registered trademark of HL7 and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
