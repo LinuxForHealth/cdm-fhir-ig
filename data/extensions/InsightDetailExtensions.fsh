@@ -12,8 +12,8 @@ Description:    "The break down of information referenced to produce the insight
 * extension[referencePath] ^definition = "Path to FHIR element in the reference that was used to produce the insight"
 
 * extension contains EvaluatedOutput named evaluatedOutput 0..1 
-* extension[reference] ^short = "Reference to content leveraged to produce the insight"
-* extension[reference] ^definition = "Reference to content leveraged to produce the insight"
+* extension[evaluatedOutput] ^short = "Attachment for content created as output when producing the insight"
+* extension[evaluatedOutput] ^definition = "Attachment for content created as output when producing the insight"
 
 * extension contains InsightResult named insightResult 0..*
 * extension[insightResult] ^short = "Value specific final insight results based on a particular piece of evaluated input."
@@ -34,5 +34,5 @@ Description:    "Path to FHIR element in the reference that was leveraged to pro
 Extension:      EvaluatedOutput
 Id:             evaluated-output
 Title:          "Evaluated Ouptut"
-Description:    "Reference to content produced while evaluating the insight."
-* value[x] only Reference
+Description:    "Attachment for content created as output when producing the insight."
+* value[x] only Attachment
