@@ -30,8 +30,8 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[ageGenderGroup] ^definition = "Standard code for groupings that combine age and gender"
 
 * extension contains CoverageDays named coverageDays 0..1
-* extension[coverageDays] ^short      = "The number of covered days for the month of eligibility"
-* extension[coverageDays] ^definition = "The number of covered days for the month of eligibility"
+* extension[coverageDays] ^short      = "The number of covered days of eligibility"
+* extension[coverageDays] ^definition = "The number of covered days of eligibility"
 
 * extension contains CoverageMonth named coverageMonth 0..1
 * extension[coverageMonth] ^short      = "The date which reflects the month of eligibility"

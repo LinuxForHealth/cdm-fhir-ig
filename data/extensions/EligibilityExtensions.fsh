@@ -7,7 +7,7 @@ Description:    "Group ID of the plan member. This ID associates the primary pla
 Extension:      CoverageDays
 Id:             coverage-days
 Title:          "Coverage Days"
-Description:    "The number of days for the month of eligibility"
+Description:    "The number of covered days of eligibility"
 * value[x] only unsignedInt
 
 Extension:      CoverageMonth
