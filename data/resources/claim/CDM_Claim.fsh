@@ -48,10 +48,6 @@ Description:    "A provider issued list of professional services and products wh
 * extension[claimSnapshotProviderZipCode] ^short      = "Original provider postal code, as reported on the claim"
 * extension[claimSnapshotProviderZipCode] ^definition = "Original provider postal code, as reported on the claim"
 
-* extension contains EmployeeCompany named employeeCompany 0..1
-* extension[employeeCompany] ^short      = "Customer-specific code for the company of the employee" 
-* extension[employeeCompany] ^definition = "Customer-specific code for the company of the employee" 
-
 * extension contains EmployeeBusinessUnit named employeeBusinessUnit 0..1
 * extension[employeeBusinessUnit] ^short      = "Business unit of the subscriber as reported on the claim" 
 * extension[employeeBusinessUnit] ^definition = "Business unit of the subscriber as reported on the claim" 

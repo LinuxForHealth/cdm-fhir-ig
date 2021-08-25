@@ -28,12 +28,6 @@ Title:          "Claim Snapshot Provider Zip Code"
 Description:    "Original provider postal code, as reported on the claim"
 * value[x] only string
 
-Extension:      EmployeeCompany
-Id:             employee-company
-Title:          "Employee Company"
-Description:    "Customer-specific code for the company of the employee"    
-* value[x] only CodeableConcept
-
 Extension:      CompoundCode
 Id:             compound-code
 Title:          "Compound Code"
