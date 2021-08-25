@@ -415,6 +415,12 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Claim/f:diagnosis</sch:title>
+    <sch:rule context="f:Claim/f:diagnosis">
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/major-diagnostic-category']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/major-diagnostic-category': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Claim.diagnosis</sch:title>
     <sch:rule context="f:Claim/f:diagnosis">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -425,6 +431,8 @@
     <sch:rule context="f:Claim/f:diagnosis/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -465,6 +473,12 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Claim/f:procedure</sch:title>
+    <sch:rule context="f:Claim/f:procedure">
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/procedure-group']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/procedure-group': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Claim.procedure</sch:title>
     <sch:rule context="f:Claim/f:procedure">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -475,6 +489,8 @@
     <sch:rule context="f:Claim/f:procedure/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

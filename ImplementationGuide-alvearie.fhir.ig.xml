@@ -11,7 +11,7 @@
   <name value="AlvearieFHIRImplementationGuide"/>
   <title value="Alvearie FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-08-05T19:56:33+00:00"/>
+  <date value="2021-08-25T17:41:48+00:00"/>
   <contact>
     <name value="Kim Kenna"/>
     <telecom>
@@ -1289,6 +1289,28 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/coverage-days"/>
+      </reference>
+      <name value="Coverage Days"/>
+      <description value="The number of covered days of eligibility"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/coverage-insurance-plan"/>
+      </reference>
+      <name value="Coverage Insurance Plan"/>
+      <description value="A reference to the insurance plan for this coverage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/coverage-month"/>
       </reference>
       <name value="Coverage Month"/>
@@ -1971,6 +1993,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/major-diagnostic-category"/>
+      </reference>
+      <name value="Major Diagnostic Category"/>
+      <description value="Body system or disease related groupings of clinical conditions, based on diagnosis codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/match-compared-to"/>
       </reference>
       <name value="Match Compared To"/>
@@ -2316,6 +2349,17 @@
       </reference>
       <name value="Problem Type"/>
       <description value="Problem type code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/procedure-group"/>
+      </reference>
+      <name value="Procedure Group"/>
+      <description value="Groups assigned to categorize related procedures"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3489,6 +3533,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/wh-payer-major-diagnostic-category"/>
+      </reference>
+      <name value="Major Diagnostic Category Value Set"/>
+      <description value="IBM&#xAE; Health Data Connect standard value set containing major diagnostic category codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/wh-payer-procedure-group"/>
+      </reference>
+      <name value="Procedure Group Value Set"/>
+      <description value="IBM&#xAE; Health Data Connect standard value set containing procedure group codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/wh-organization-type"/>
       </reference>
       <name value="WH Organization Value Set"/>
@@ -4032,6 +4098,28 @@
       </reference>
       <name value="Split Method Codes"/>
       <description value="Codes indicating methods used to identify matched entities to split"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/wh-payer-major-diagnostic-category"/>
+      </reference>
+      <name value="Health Data Connect Major Diagnostic Category Codes"/>
+      <description value="IBM&#xAE; Health Data Connect standard major diagnostic category codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/wh-payer-procedure-group"/>
+      </reference>
+      <name value="Health Data Connect Procedure Group Codes"/>
+      <description value="IBM&#xAE; Health Data Connect standard procedure group codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

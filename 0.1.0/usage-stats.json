@@ -490,6 +490,21 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/coverage-days",
+      "title": "Coverage Days",
+      "types": [
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/coverage-insurance-plan",
+      "title": "Coverage Insurance Plan",
+      "types": [
+        "Reference",
+        "Reference"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/coverage-month",
       "title": "Coverage Month",
       "types": [
@@ -1441,6 +1456,14 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/major-diagnostic-category",
+      "title": "Major Diagnostic Category",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
       "title": "Match Compared To",
       "types": [
@@ -1805,6 +1828,14 @@
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/problem-type",
       "title": "Problem Type",
       "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/procedure-group",
+      "title": "Procedure Group",
+      "types": [
+        "CodeableConcept",
         "CodeableConcept"
       ]
     },
@@ -2816,6 +2847,12 @@
       "Address",
       "Patient.address"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/coverage-days": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/coverage-insurance-plan": [
+      "Coverage"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/coverage-month": [
       "Coverage"
     ],
@@ -2967,6 +3004,9 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/local-subscriber-relationship-code": [
       "Coverage"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/major-diagnostic-category": [
+      "Claim.diagnosis"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to": [
       "Extension",
       "Location.extension.extension",
@@ -3099,6 +3139,9 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/problem-type": [
       "Condition"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/procedure-group": [
+      "Claim.procedure"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/procedure-modifier": [
       "Procedure"
@@ -3241,6 +3284,7 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/region-code": [
       "Address",
+      "Coverage",
       "Patient.address"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/related-issue": [

@@ -20,7 +20,7 @@
   "name": "CDMClaimFacility",
   "title": "CDM Claim Facility",
   "status": "active",
-  "date": "2021-08-05T19:56:33+00:00",
+  "date": "2021-08-25T17:41:48+00:00",
   "contact": [
     {
       "name": "Kim Kenna",
@@ -3333,13 +3333,18 @@
       {
         "id": "Claim.diagnosis.extension",
         "path": "Claim.diagnosis.extension",
-        "short": "Additional content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
         "min": 0,
         "max": "*",
         "base": {
@@ -3371,11 +3376,59 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
+        "isSummary": false
+      },
+      {
+        "id": "Claim.diagnosis.extension:majorDiagnosticCategory",
+        "path": "Claim.diagnosis.extension",
+        "sliceName": "majorDiagnosticCategory",
+        "short": "The body system or disease related groupings of clinical conditions, based on diagnosis codes",
+        "definition": "The body system or disease related groupings of clinical conditions, based on diagnosis codes",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/major-diagnostic-category"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -3714,13 +3767,18 @@
       {
         "id": "Claim.procedure.extension",
         "path": "Claim.procedure.extension",
-        "short": "Additional content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
         "min": 0,
         "max": "*",
         "base": {
@@ -3752,11 +3810,59 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
+        "isSummary": false
+      },
+      {
+        "id": "Claim.procedure.extension:procedureGroup",
+        "path": "Claim.procedure.extension",
+        "sliceName": "procedureGroup",
+        "short": "Groups assigned to categorize related procedures",
+        "definition": "Groups assigned to categorize related procedures",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/procedure-group"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },

@@ -17,7 +17,9 @@
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/age-group']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/age-group': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/age-gender-group']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/age-gender-group': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/coverage-days']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/coverage-days': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/coverage-month']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/coverage-month': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/coverage-insurance-plan']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/coverage-insurance-plan': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/enrollment-pcp']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/enrollment-pcp': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/employee-count']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/employee-count': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit': maximum cardinality of 'extension' is 1</sch:assert>
@@ -31,6 +33,7 @@
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/employee-termination-date']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/employee-termination-date': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/medicare-indicator']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/medicare-indicator': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/member-employee-indicator']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/member-employee-indicator': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/region-code']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/region-code': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/attributed-provider-with-period']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/attributed-provider-with-period': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/claim-group-identifier']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/claim-group-identifier': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-record-population-count']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-record-population-count': maximum cardinality of 'extension' is 1</sch:assert>
@@ -80,6 +83,12 @@
     <sch:rule context="f:Coverage/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>

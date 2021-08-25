@@ -24,7 +24,7 @@
   <name value="CDMClaimDrug"/>
   <title value="CDM Claim Drug"/>
   <status value="active"/>
-  <date value="2021-08-05T19:56:33+00:00"/>
+  <date value="2021-08-25T17:41:48+00:00"/>
   <contact>
     <name value="Kim Kenna"/>
     <telecom>
@@ -2651,11 +2651,16 @@
     </element>
     <element id="Claim.diagnosis.extension">
       <path value="Claim.diagnosis.extension"/>
-      <short value="Additional content defined by implementations"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
-      <alias value="extensions"/>
-      <alias value="user content"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -2684,9 +2689,48 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+    </element>
+    <element id="Claim.diagnosis.extension:majorDiagnosticCategory">
+      <path value="Claim.diagnosis.extension"/>
+      <sliceName value="majorDiagnosticCategory"/>
+      <short value="The body system or disease related groupings of clinical conditions, based on diagnosis codes"/>
+      <definition value="The body system or disease related groupings of clinical conditions, based on diagnosis codes"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/major-diagnostic-category"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Claim.diagnosis.modifierExtension">
@@ -2957,11 +3001,16 @@
     </element>
     <element id="Claim.procedure.extension">
       <path value="Claim.procedure.extension"/>
-      <short value="Additional content defined by implementations"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
-      <alias value="extensions"/>
-      <alias value="user content"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -2990,9 +3039,48 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+    </element>
+    <element id="Claim.procedure.extension:procedureGroup">
+      <path value="Claim.procedure.extension"/>
+      <sliceName value="procedureGroup"/>
+      <short value="Groups assigned to categorize related procedures"/>
+      <definition value="Groups assigned to categorize related procedures"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/procedure-group"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Claim.procedure.modifierExtension">

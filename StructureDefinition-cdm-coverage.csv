@@ -40,8 +40,16 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Standard code for groupings that combine age and gender","Standard code for groupings that combine age and gender","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Coverage.extension","coverageDays","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/coverage-days]]} {[]}
+","The number of covered days of eligibility","The number of covered days of eligibility","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Coverage.extension","coverageMonth","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/coverage-month]]} {[]}
 ","The date which reflects the month of eligibility","The date which reflects the month of eligibility","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Coverage.extension","coverageInsurancePlan","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/coverage-insurance-plan]]} {[]}
+","The insurance plan providing coverage","The insurance plan providing coverage","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Coverage.extension","enrollmentPcp","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/enrollment-pcp]]} {[]}
@@ -94,6 +102,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Coverage.extension","memberEmployeeIndicator","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/member-employee-indicator]]} {[]}
 ","Indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan","Indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Coverage.extension","regionCode","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/region-code]]} {[]}
+","Customer-specific code for the geographic region of the employee","Customer-specific code for the geographic region of the employee","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Coverage.extension","attributedProviderReferenceWithPeriod","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/attributed-provider-with-period]]} {[]}
