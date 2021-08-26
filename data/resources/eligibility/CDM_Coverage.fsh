@@ -29,9 +29,17 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[ageGenderGroup] ^short      = "Standard code for groupings that combine age and gender"
 * extension[ageGenderGroup] ^definition = "Standard code for groupings that combine age and gender"
 
+* extension contains CoverageDays named coverageDays 0..1
+* extension[coverageDays] ^short      = "The number of covered days of eligibility"
+* extension[coverageDays] ^definition = "The number of covered days of eligibility"
+
 * extension contains CoverageMonth named coverageMonth 0..1
 * extension[coverageMonth] ^short      = "The date which reflects the month of eligibility"
 * extension[coverageMonth] ^definition = "The date which reflects the month of eligibility"
+
+* extension contains CoverageInsurancePlan named coverageInsurancePlan 0..1
+* extension[coverageInsurancePlan] ^short      = "The insurance plan providing coverage"
+* extension[coverageInsurancePlan] ^definition = "The insurance plan providing coverage"
 
 * extension contains EnrollmentPcp named enrollmentPcp 0..1
 * extension[enrollmentPcp] ^short      = "Provider identifier of the primary care physician for the plan member"
@@ -83,6 +91,10 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension contains MemberEmployeeIndicator named memberEmployeeIndicator 0..1
 * extension[memberEmployeeIndicator] ^short      = "Indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan"
 * extension[memberEmployeeIndicator] ^definition = "Indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan"
+
+* extension contains RegionCode named regionCode 0..1
+* extension[regionCode] ^short      = "Customer-specific code for the geographic region of the employee"
+* extension[regionCode] ^definition = "Customer-specific code for the geographic region of the employee"
 
 * extension contains AttributedProviderReferenceWithPeriod named attributedProviderReferenceWithPeriod 0..1
 * extension[attributedProviderReferenceWithPeriod] ^short      = "Attributed provider reference with period"

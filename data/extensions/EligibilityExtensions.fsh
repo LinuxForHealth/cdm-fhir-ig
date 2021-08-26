@@ -4,11 +4,24 @@ Title:          "Claim Group Identifier"
 Description:    "Group ID of the plan member. This ID associates the primary plan holder with any dependents."
 * value[x] only string
 
+Extension:      CoverageDays
+Id:             coverage-days
+Title:          "Coverage Days"
+Description:    "The number of covered days of eligibility"
+* value[x] only unsignedInt
+
 Extension:      CoverageMonth
 Id:             coverage-month
 Title:          "Coverage Month"
 Description:    "The date which reflects the month of eligibility"
 * value[x] only date
+
+Extension:      CoverageInsurancePlan
+Id:             coverage-insurance-plan
+Title:          "Coverage Insurance Plan"
+Description:    "A reference to the insurance plan for this coverage"
+* value[x] only Reference
+* valueReference only Reference(InsurancePlan)
 
 Extension:      EnrollmentPcp
 Id:             enrollment-pcp

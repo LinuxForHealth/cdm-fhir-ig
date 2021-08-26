@@ -90,6 +90,13 @@ Title:          "Local Number Of Units Per Service"
 Description:    "Customer-specific quantity of either services or units"
 * value[x] only Quantity
 
+Extension:      MajorDiagnosticCategory 
+Id:             major-diagnostic-category 
+Title:          "Major Diagnostic Category"
+Description:    "Body system or disease related groupings of clinical conditions, based on diagnosis codes" 
+* value[x] only CodeableConcept 
+* valueCodeableConcept from WHPayerMajorDiagnosticCategoryValueSet (extensible)
+
 Extension:      NetworkId
 Id:             network-id
 Title:          "Network Id"
@@ -101,6 +108,13 @@ Id:             nursing-home-indicator
 Title:          "Nursing Home Indicator"
 Description:    "Indicator that the claim was for a nursing home patient"
 * value[x] only string
+
+Extension:      ProcedureGroup
+Id:             procedure-group
+Title:          "Procedure Group"
+Description:    "Groups assigned to categorize related procedures"
+* value[x] only CodeableConcept 
+* valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
 
 Extension:      ReferralIndicator
 Id:             referral-indicator
