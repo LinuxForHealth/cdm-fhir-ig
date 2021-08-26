@@ -13,7 +13,15 @@ Description:     "This resource provides the adjudication details from the proce
 * identifier.value 1..1
 * identifier.type  from IdentifierTypeValueSet (extensible)
 
-* type             from ClaimTypeValueSet (extensible)
+* adjudication.extension contains AdjudicationDate named adjudicationDate 0..1
+* adjudication.extension[adjudicationDate] ^short      = "Date on which the payment status of the claim was adjudicated"
+* adjudication.extension[adjudicationDate] ^definition = "Date on which the payment status of the claim was adjudicated"
+
+* type  from ClaimTypeValueSet (extensible)
+
+* extension contains ClaimReceivedDate named claimReceivedDate 0..1
+* extension[claimReceivedDate] ^short      = "Date the claim was received" 
+* extension[claimReceivedDate] ^definition = "Date the claim was received" 
 
 * extension contains ClaimStatus named claimStatus 0..1
 * extension[claimStatus] ^short      = "Custom code for the claim status"
@@ -22,6 +30,10 @@ Description:     "This resource provides the adjudication details from the proce
 * payment.extension contains ClaimAdjustmentType named claimAdjustmentType 0..*
 * payment.extension[claimAdjustmentType] ^short      = "The code for the type of adjustment for the claim"
 * payment.extension[claimAdjustmentType] ^definition = "The code for the type of adjustment for the claim"
+
+* payment.extension contains DispositionReason named dispositionReason 0..*
+* payment.extension[dispositionReason] ^short      = "Customer-specific code for the disposition reason, as related to how the claim was paid"
+* payment.extension[dispositionReason] ^definition = "Customer-specific code for the disposition reason, as related to how the claim was paid"
 
 * item.adjudication.category from AdjudicationCategoryValueSet (example)
 

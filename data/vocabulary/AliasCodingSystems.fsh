@@ -1,3 +1,4 @@
+Alias: YES-NO  = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: ID-TYPE = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: RESOURCE-TYPE = 	http://hl7.org/fhir/resource-types
 
@@ -29,6 +30,7 @@ Alias: DEFINITION-TOPIC = http://hl7.org/fhir/codesystem-definition-topic.html
 
 Alias: ORGANIZATION-TYPE = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: PRACTITIONER-ROLE = http://terminology.hl7.org/CodeSystem/practitioner-role
+Alias: US-NPI            = http://hl7.org/fhir/sid/us-npi
 
 // APPOINTMENT
 Alias: APPOINTMENT-TYPE = http://terminology.hl7.org/CodeSystem/v2-0276
@@ -69,6 +71,9 @@ Alias: LIBRARY-TYPE = http://terminology.hl7.org/CodeSystem/library-type
 
 // CLAIM
 Alias: CLAIM-INFORMATION-CATEGORY = http://terminology.hl7.org/CodeSystem/claiminformationcategory
+Alias: CLAIM-TYPE                 = http://terminology.hl7.org/CodeSystem/claim-type
+Alias: CLAIM-STATUS-CATEGORY      = https://x12.org/codes/claim-status-category-codes
+Alias: CLAIM-STATUS               = https://x12.org/codes/claim-status-codes
 Alias: PAYMENT-TYPE               = http://terminology.hl7.org/CodeSystem/ex-paymenttype
 Alias: PROCESS-PRIORITY           = http://terminology.hl7.org/CodeSystem/processpriority
 Alias: USCORE-PCS                 = https://www.hl7.org/fhir/us/core/ValueSet-us-core-procedure-code.html
@@ -78,9 +83,8 @@ Alias: ICD10-PCS                  = https://www.cms.gov/medicare/icd-10/2021-icd
 Alias: CPT                        = http://www.ama-assn.org/go/cpt
 Alias: HCPCS                      = https://oidref.com/2.16.840.1.113883.6.285
 Alias: DIAGNOSIS-TYPE             = http://terminology.hl7.org/CodeSystem/ex-diagnosistype
-Alias: CLAIM-TYPE                 = http://terminology.hl7.org/CodeSystem/claim-type
 Alias: MSDRG                      = https://www.cms.gov/icd10m/version37-fullcode-cms/fullcode_cms/P0002.html
 Alias: NUBC-REVENUE-CODE          = https://www.nubc.org/RevenueCodes
 Alias: NUBC-PATIENT-DISCHARGE     = https://www.nubc.org/patient-discharge
 Alias: CURRENCIES                 = https://www.hl7.org/fhir/valueset-currencies
-
+Alias: REMIT-ADVICE-REMARK-CODE   = https://x12.org/codes/remittance-advice-remark-codes

@@ -4,6 +4,10 @@ Id:             cdm-claim-response-drug
 Title:          "CDM Claim Response Drug"
 Description:    "This resource provides the adjudication details from the processing of a Claim resource. The CDMClaimResponseDrug profile extends the CDMClaimResponse resource with additional adjudication details that are specific to pharmacy claims."
 
+* item.extension contains UsualAndCustomaryAmount named usualAndCustomaryAmount 0..1
+* item.extension[usualAndCustomaryAmount] ^short      = "Usual and customary amount on the drug claim"
+* item.extension[usualAndCustomaryAmount] ^definition = "Usual and customary amount on the drug claim"
+
 * item.extension contains RxFormularyIndicator named rxFormularyIndicator 0..1
 * item.extension[rxFormularyIndicator] ^short      = "An indicator that the prescription drug is included in the formulary"
 * item.extension[rxFormularyIndicator] ^definition = "An indicator that the prescription drug is included in the formulary"

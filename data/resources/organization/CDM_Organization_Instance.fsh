@@ -1,7 +1,7 @@
 Instance:       GeneralHospital
 InstanceOf:     CDMOrganization
 Usage:          #example
-Title:          "CDM Oganization - General Hospital"
+Title:          "CDM Organization - General Hospital"
 Description:    "Sample CDM Organizationr representing a hospital ingested from a EMR or PMS system"
 
 * meta.source = "http://acme-health.com/emr1"

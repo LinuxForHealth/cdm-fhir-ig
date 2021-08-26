@@ -1,9 +1,21 @@
+Extension:   AdjudicationDate
+Id:          adjudication-date
+Title:       "Adjudication Date"
+Description: "Date on which the payment status of the claim was adjudicated" 
+* value[x] only date
+
 Extension:   ClaimAdjustmentType
 Id:          claim-adjustment-type
 Title:       "Claim Adjustment Type"
 Description: "The code for the claim's adjustment type" 
 * value[x] only CodeableConcept
 * valueCodeableConcept from WhPayerClaimAdjustmentTypeValueSet (extensible)
+
+Extension:   ClaimReceivedDate
+Id:          claim-received-date
+Title:       "Claim Received Date"
+Description: "Date the claim was received" 
+* value[x] only date
 
 Extension:   ClaimStatus
 Id:          claim-status
@@ -39,5 +51,23 @@ Description: "Payment status of claim item"
 Extension:   ClaimResponseBenefitPlan
 Id:          claim-response-benefit-plan
 Title:       "Claim Response Benefit Plan"
-Description: "The Benefit Plan on the claim item."
+Description: "The benefit plan on the claim item"
 * value[x] only Reference(Coverage)
+
+Extension:   DispositionReason
+Id:          disposition-reason
+Title:       "Disposition Reason"
+Description: "Customer-specific code for the disposition reason, as related to how the claim was paid"
+* value[x] only CodeableConcept
+
+Extension:   SubmissionType
+Id:          submission-type
+Title:       "Submission Type"
+Description: "Customer-specific code for the type of electronic submission"
+* value[x] only CodeableConcept
+
+Extension:      UsualAndCustomaryAmount
+Id:             usual-and-customary-amount
+Title:          "Usual And Customary Amount"
+Description:    "Usual and customary amount on the drug claim"
+* value[x] only decimal
