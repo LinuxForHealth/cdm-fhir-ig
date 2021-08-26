@@ -18,7 +18,7 @@
   <name value="CDMClaimFacility"/>
   <title value="CDM Claim Facility"/>
   <status value="active"/>
-  <date value="2021-08-25T21:19:12+00:00"/>
+  <date value="2021-08-26T16:02:37+00:00"/>
   <contact>
     <name value="Kim Kenna"/>
     <telecom>
@@ -350,11 +350,54 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
+    <element id="Claim.extension:aggregateClaimIndicator">
+      <path value="Claim.extension"/>
+      <sliceName value="aggregateClaimIndicator"/>
+      <short value="Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"/>
+      <definition value="Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/aggregate-claim-indicator"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
     <element id="Claim.extension:claimSnapshotProviderName">
       <path value="Claim.extension"/>
       <sliceName value="claimSnapshotProviderName"/>
-      <short value="The original provider name as reported on the claim"/>
-      <definition value="The original provider name as reported on the claim"/>
+      <short value="Original provider name as reported on the claim"/>
+      <definition value="Original provider name as reported on the claim"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -396,8 +439,8 @@
     <element id="Claim.extension:claimSnapshotProviderZipCode">
       <path value="Claim.extension"/>
       <sliceName value="claimSnapshotProviderZipCode"/>
-      <short value="The original provider postal code, as reported on the claim"/>
-      <definition value="The original provider postal code, as reported on the claim"/>
+      <short value="Original provider postal code, as reported on the claim"/>
+      <definition value="Original provider postal code, as reported on the claim"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -439,8 +482,8 @@
     <element id="Claim.extension:employeeBusinessUnit">
       <path value="Claim.extension"/>
       <sliceName value="employeeBusinessUnit"/>
-      <short value="The business unit of the subscriber as reported on the claim"/>
-      <definition value="The business unit of the subscriber as reported on the claim"/>
+      <short value="Business unit of the subscriber as reported on the claim"/>
+      <definition value="Business unit of the subscriber as reported on the claim"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -451,6 +494,221 @@
       <type>
         <code value="Extension"/>
         <profile value="http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Claim.extension:employer">
+      <path value="Claim.extension"/>
+      <sliceName value="employer"/>
+      <short value="Customer-specific code for the employer as reported on the claim record"/>
+      <definition value="Customer-specific code for the employer as reported on the claim record"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/employer"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Claim.extension:financialSystem">
+      <path value="Claim.extension"/>
+      <sliceName value="financialSystem"/>
+      <short value="Customer-specific code for the financial system"/>
+      <definition value="Customer-specific code for the financial system"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/financial-system"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Claim.extension:claimCategory">
+      <path value="Claim.extension"/>
+      <sliceName value="claimCategory"/>
+      <short value="Standard HIPAA code for the category of the claim status"/>
+      <definition value="Standard HIPAA code for the category of the claim status"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/claim-category"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Claim.extension:claimStatus">
+      <path value="Claim.extension"/>
+      <sliceName value="claimStatus"/>
+      <short value="Standard HIPAA code for the status of an entire claim"/>
+      <definition value="Standard HIPAA code for the status of an entire claim"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/claim-status"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Claim.extension:lastClaimIndicator">
+      <path value="Claim.extension"/>
+      <sliceName value="lastClaimIndicator"/>
+      <short value="Indicator that identifies whether this claim record is the last or most recent claim"/>
+      <definition value="Indicator that identifies whether this claim record is the last or most recent claim"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/last-claim-indicator"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -522,11 +780,54 @@
         <map value="N/A"/>
       </mapping>
     </element>
+    <element id="Claim.extension:submissionType">
+      <path value="Claim.extension"/>
+      <sliceName value="submissionType"/>
+      <short value="Customer-specific code for the type of electronic submission"/>
+      <definition value="Customer-specific code for the type of electronic submission"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/submission-type"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
     <element id="Claim.extension:whPayerPcpResponsibilityIndicator">
       <path value="Claim.extension"/>
       <sliceName value="whPayerPcpResponsibilityIndicator"/>
-      <short value="An indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"/>
-      <definition value="An indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"/>
+      <short value="Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"/>
+      <definition value="Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -3376,11 +3677,16 @@
     </element>
     <element id="Claim.insurance.extension">
       <path value="Claim.insurance.extension"/>
-      <short value="Additional content defined by implementations"/>
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
-      <alias value="extensions"/>
-      <alias value="user content"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <ordered value="false"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Extension"/>
+      <definition value="An Extension"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -3409,9 +3715,48 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
+    </element>
+    <element id="Claim.insurance.extension:crossoverIndicator">
+      <path value="Claim.insurance.extension"/>
+      <sliceName value="crossoverIndicator"/>
+      <short value="Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare"/>
+      <definition value="Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
       <mapping>
         <identity value="rim"/>
         <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
       </mapping>
     </element>
     <element id="Claim.insurance.modifierExtension">
@@ -3979,8 +4324,8 @@
     <element id="Claim.item.extension:capitatedServiceIndicator">
       <path value="Claim.item.extension"/>
       <sliceName value="capitatedServiceIndicator"/>
-      <short value="An indicator that this service (encounter record) was capitated"/>
-      <definition value="An indicator that this service (encounter record) was capitated"/>
+      <short value="Indicator that this service (encounter record) was capitated"/>
+      <definition value="Indicator that this service (encounter record) was capitated"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -4019,11 +4364,11 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Claim.item.extension:companyCode">
+    <element id="Claim.item.extension:fullyInsuredIndicator">
       <path value="Claim.item.extension"/>
-      <sliceName value="companyCode"/>
-      <short value="The company code of the subscriber as reported on the claim"/>
-      <definition value="The company code of the subscriber as reported on the claim"/>
+      <sliceName value="fullyInsuredIndicator"/>
+      <short value="Indicator that the claim was for a fully insured plan"/>
+      <definition value="Indicator that the claim was for a fully insured plan"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -4033,7 +4378,50 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/company-code"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/fully-insured-indicator"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Claim.item.extension:nursingHomeIndicator">
+      <path value="Claim.item.extension"/>
+      <sliceName value="nursingHomeIndicator"/>
+      <short value="Indicator that the claim was for a nursing home patient"/>
+      <definition value="Indicator that the claim was for a nursing home patient"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/nursing-home-indicator"/>
       </type>
       <condition value="ele-1"/>
       <constraint>

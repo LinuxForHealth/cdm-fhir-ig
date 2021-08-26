@@ -7,7 +7,7 @@
     <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: Payer1 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}">Payer</span></p><p><b>name</b>: Payer 1</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Source System Row Identifier: Payer1 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/organization-type pay}, {http://acme-health.com/CodeSystem/local-provider-type-claim LocPayerType}">Payer</span></p><p><b>name</b>: Payer 1</p><p><b>address</b>: 200 Main Street Suite 101 Irving TX 75014 US (WORK)</p></div>
   </text>
   <identifier>
     <use value="official"/>
@@ -26,6 +26,29 @@
       <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
       <code value="pay"/>
     </coding>
+    <coding>
+      <system value="http://acme-health.com/CodeSystem/local-provider-type-claim"/>
+      <code value="LocPayerType"/>
+    </coding>
   </type>
   <name value="Payer 1"/>
+  <address>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/county-code">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://acme-health.com/CodeSystem/local-county-code"/>
+          <code value="057"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <use value="work"/>
+    <type value="physical"/>
+    <line value="200 Main Street"/>
+    <line value="Suite 101"/>
+    <city value="Irving"/>
+    <district value="TX"/>
+    <state value="TX"/>
+    <postalCode value="75014"/>
+    <country value="US"/>
+  </address>
 </Organization>

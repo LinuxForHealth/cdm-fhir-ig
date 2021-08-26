@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Provider1"/>
+  <meta>
+    <source value="http://acme-health.com/organization/provider"/>
+    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: National provider identifier: 12345 (SECONDARY)</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://ibm.com/fhir/cdm/CodeSystem/wh-payer-provider-type 204}">Internal Medicine</span></p><p><b>name</b>: Dr Smith</p><p><b>telecom</b>: ph: 915-555-6000(WORK), fax: 915-555-6001(WORK)</p><p><b>address</b>: 100 Mesa Drive El Paso TX 79912 US (WORK)</p></div>
+  </text>
+  <identifier>
+    <use value="secondary"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="NPI"/>
+      </coding>
+    </type>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="12345"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://ibm.com/fhir/cdm/CodeSystem/wh-payer-provider-type"/>
+      <code value="204"/>
+    </coding>
+  </type>
+  <name value="Dr Smith"/>
+  <telecom>
+    <extension url="http://hl7.org/fhir/StructureDefinition/contactpoint-country">
+      <valueString value="1"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/contactpoint-extension">
+      <valueString value="100"/>
+    </extension>
+    <system value="phone"/>
+    <value value="915-555-6000"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <extension url="http://hl7.org/fhir/StructureDefinition/contactpoint-country">
+      <valueString value="1"/>
+    </extension>
+    <system value="fax"/>
+    <value value="915-555-6001"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/county-code">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://acme-health.com/CodeSystem/local-county-code"/>
+          <code value="057"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <use value="work"/>
+    <type value="physical"/>
+    <line value="100 Mesa Drive"/>
+    <city value="El Paso"/>
+    <district value="TX"/>
+    <state value="TX"/>
+    <postalCode value="79912"/>
+    <country value="US"/>
+  </address>
+</Organization>

@@ -25,6 +25,10 @@ anonymous resourcescontained resources","",0,0,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ClaimResponse.extension","claimReceivedDate","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/claim-received-date]]} {[]}
+","Date the claim was received","Date the claim was received","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "ClaimResponse.extension","claimStatus","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/claim-status]]} {[]}
 ","Custom code for the claim status","Custom code for the claim status","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -348,7 +352,36 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "ClaimResponse.addItem.detail.subDetail.adjudication","","","",1,*,"","","","","Added items detail adjudication","The adjudication results.","","","","","","","","","",,,,,"",,,,"ClaimResponse.addItem.detail.subDetail.adjudication",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"ClaimResponse.adjudication","","","",0,*,"","","","","Header-level adjudication","The adjudication results which are presented at the header level rather than at the line-item or add-item levels.","","Some insurers will receive line-items but provide the adjudication only at a summary or header-level.","","","","","","","",,,,,"",,,,"ClaimResponse.adjudication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"ClaimResponse.adjudication","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Header-level adjudication","The adjudication results which are presented at the header level rather than at the line-item or add-item levels.","","Some insurers will receive line-items but provide the adjudication only at a summary or header-level.","","","","","","","",,,,,"",,,,"ClaimResponse.adjudication",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"ClaimResponse.adjudication.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"ClaimResponse.adjudication.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ClaimResponse.adjudication.extension","adjudicationDate","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/adjudication-date]]} {[]}
+","Date on which the payment status of the claim was adjudicated","Date on which the payment status of the claim was adjudicated","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"ClaimResponse.adjudication.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"ClaimResponse.adjudication.category","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Type of adjudication information","A code to indicate the information type of this adjudication record. Information types may include the value submitted, maximum values or percentages allowed or payable under the plan, amounts that: the patient is responsible for in aggregate or pertaining to this item; amounts paid by other coverages; and, the benefit payable for this item.","For example codes indicating: Co-Pay, deductible, eligible, benefit, tax, etc.","Needed to enable understanding of the context of the other information in the adjudication.","","","","","","","",,"example","The adjudication codes.","http://hl7.org/fhir/ValueSet/adjudication","",,,,"ClaimResponse.item.adjudication.category",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"ClaimResponse.adjudication.reason","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Explanation of adjudication outcome","A code supporting the understanding of the adjudication result and explaining variance from expected amount.","For example may indicate that the funds for this benefit type have been exhausted.","To support understanding of variance from adjudication expectations.","","","","","","","",,"example","The adjudication reason codes.","http://hl7.org/fhir/ValueSet/adjudication-reason","",,,,"ClaimResponse.item.adjudication.reason",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"ClaimResponse.adjudication.amount","","","",0,1,"","","","Money {[]} {[]}
+","Monetary amount","Monetary amount associated with the category.","For example: amount submitted, eligible amount, co-payment, and benefit payable.","Most adjuciation categories convey a monetary amount.","","","","","","","",,,,,"",,,,"ClaimResponse.item.adjudication.amount",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"ClaimResponse.adjudication.value","","","",0,1,"","","","decimal {[]} {[]}
+","Non-monetary value","A non-monetary value associated with the category. Mutually exclusive to the amount element above.","For example: eligible percentage or co-payment percentage.","Some adjudication categories convey a percentage or a fixed value.","","","","","","","",,,,,"",,,,"ClaimResponse.item.adjudication.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ClaimResponse.total","","","",0,*,"","","Y","BackboneElement {[]} {[]}
 ","Adjudication totals","Categorized monetary totals for the adjudication.","Totals for amounts submitted, co-pays, benefits payable etc.","To provide the requestor with financial totals by category for the adjudication.","","","","","","","",,,,,"",,,,"ClaimResponse.total",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -382,6 +415,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ClaimResponse.payment.extension","claimAdjustmentType","","",0,*,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/claim-adjustment-type]]} {[]}
 ","The code for the type of adjustment for the claim","The code for the type of adjustment for the claim","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"ClaimResponse.payment.extension","dispositionReason","","",0,*,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/disposition-reason]]} {[]}
+","Customer-specific code for the disposition reason, as related to how the claim was paid","Customer-specific code for the disposition reason, as related to how the claim was paid","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "ClaimResponse.payment.modifierExtension","","extensions

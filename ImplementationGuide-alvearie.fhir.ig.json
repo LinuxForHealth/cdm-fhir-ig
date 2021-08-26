@@ -10,7 +10,7 @@
   "name": "AlvearieFHIRImplementationGuide",
   "title": "Alvearie FHIR Implementation Guide",
   "status": "active",
-  "date": "2021-08-25T21:19:12+00:00",
+  "date": "2021-08-26T16:02:37+00:00",
   "contact": [
     {
       "name": "Kim Kenna",
@@ -1086,6 +1086,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/adjudication-date"
+        },
+        "name": "Adjudication Date",
+        "description": "Date on which the payment status of the claim was adjudicated",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/age-gender-group"
         },
         "name": "Age and Gender Groups",
@@ -1104,6 +1118,20 @@
         },
         "name": "Age Group",
         "description": "Standard code for age groupings",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/aggregate-claim-indicator"
+        },
+        "name": "Aggregate Claim Indicator",
+        "description": "Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs",
         "exampleBoolean": false
       },
       {
@@ -1201,7 +1229,7 @@
           "reference": "StructureDefinition/capitated-service-indicator"
         },
         "name": "Capitated Service Indicator",
-        "description": "An indicator that this service (encounter record) was capitated",
+        "description": "Indicator that this service (encounter record) was capitated",
         "exampleBoolean": false
       },
       {
@@ -1310,6 +1338,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/claim-category"
+        },
+        "name": "Claim Category",
+        "description": "Standard HIPAA code for the category of the claim status",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/claim-group-identifier"
         },
         "name": "Claim Group Identifier",
@@ -1338,10 +1380,24 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/claim-received-date"
+        },
+        "name": "Claim Received Date",
+        "description": "Date the claim was received",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/claim-response-benefit-plan"
         },
         "name": "Claim Response Benefit Plan",
-        "description": "The Benefit Plan on the claim item.",
+        "description": "The benefit plan on the claim item",
         "exampleBoolean": false
       },
       {
@@ -1369,7 +1425,7 @@
           "reference": "StructureDefinition/claim-snapshot-provider-name"
         },
         "name": "Claim Snapshot Provider Name",
-        "description": "The original provider name as reported on the claim",
+        "description": "Original provider name as reported on the claim",
         "exampleBoolean": false
       },
       {
@@ -1383,7 +1439,7 @@
           "reference": "StructureDefinition/claim-snapshot-provider-zip-code"
         },
         "name": "Claim Snapshot Provider Zip Code",
-        "description": "The original provider postal code, as reported on the claim",
+        "description": "Original provider postal code, as reported on the claim",
         "exampleBoolean": false
       },
       {
@@ -1397,7 +1453,7 @@
           "reference": "StructureDefinition/claim-status"
         },
         "name": "Claim Status",
-        "description": "Custom code for the claim status",
+        "description": "Standard HIPAA code for the status of an entire claim",
         "exampleBoolean": false
       },
       {
@@ -1632,20 +1688,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/company-code"
-        },
-        "name": "Company Code",
-        "description": "The company code of the subscriber as reported on the claim",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/compound-code"
         },
         "name": "Compound Code",
@@ -1758,6 +1800,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/crossover-indicator"
+        },
+        "name": "Crossover Indicator",
+        "description": "Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/default-value"
         },
         "name": "Default Value",
@@ -1790,6 +1846,20 @@
         },
         "name": "Detected",
         "description": "When the insight evaluation occurred.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/disposition-reason"
+        },
+        "name": "Disposition Reason",
+        "description": "Customer-specific code for the disposition reason, as related to how the claim was paid",
         "exampleBoolean": false
       },
       {
@@ -1859,7 +1929,7 @@
           "reference": "StructureDefinition/employee-business-unit"
         },
         "name": "Employee Business Unit",
-        "description": "The business unit of the subscriber as reported on the claim",
+        "description": "Business unit of the subscriber as reported on the claim",
         "exampleBoolean": false
       },
       {
@@ -1930,6 +2000,20 @@
         },
         "name": "Employee Termination Date",
         "description": "The last date of employment for the employee",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/employer"
+        },
+        "name": "Employer",
+        "description": "Customer-specific code for the employer as reported on the claim record",
         "exampleBoolean": false
       },
       {
@@ -2262,6 +2346,34 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/financial-system"
+        },
+        "name": "Financial System",
+        "description": "Customer-specific code for the financial system",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/fully-insured-indicator"
+        },
+        "name": "Fully Insured Indicator",
+        "description": "Indicator that the claim was for a fully insured plan",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/hierarchy-version-date"
         },
         "name": "Hierarchy Version Date",
@@ -2532,6 +2644,20 @@
         },
         "name": "Language Rank",
         "description": "Specify preferred order of language use (1 = highest)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/last-claim-indicator"
+        },
+        "name": "Last Claim Indicator",
+        "description": "Indicator that identifies whether this claim record is the last or most recent claim",
         "exampleBoolean": false
       },
       {
@@ -2882,6 +3008,20 @@
         },
         "name": "Network Id",
         "description": "Customer-specific identifier of the patient provider network in which the member is enrolled",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/nursing-home-indicator"
+        },
+        "name": "Nursing Home Indicator",
+        "description": "Indicator that the claim was for a nursing home patient",
         "exampleBoolean": false
       },
       {
@@ -3301,7 +3441,7 @@
           "reference": "StructureDefinition/referral-indicator"
         },
         "name": "Referral Indicator",
-        "description": "An indicator signifying the service resulted from a referral",
+        "description": "Indicator signifying the service resulted from a referral",
         "exampleBoolean": false
       },
       {
@@ -3344,6 +3484,20 @@
         },
         "name": "RelatedObservation",
         "description": "Related observations that can be combined to fulfill a single time period for a given care gap or other measure population.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/rx-count"
+        },
+        "name": "RX Count",
+        "description": "Count of prescriptions for the drug claim",
         "exampleBoolean": false
       },
       {
@@ -3676,6 +3830,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/submission-type"
+        },
+        "name": "Submission Type",
+        "description": "Customer-specific code for the type of electronic submission",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/tenant-id"
         },
         "name": "Tenant Id",
@@ -3694,6 +3862,20 @@
         },
         "name": "Union Worker Indicator",
         "description": "An indicator that the contract holder (subscriber) belongs to a union",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/usual-and-customary-amount"
+        },
+        "name": "Usual And Customary Amount",
+        "description": "Usual and customary amount on the drug claim",
         "exampleBoolean": false
       },
       {
@@ -3763,7 +3945,7 @@
           "reference": "StructureDefinition/wh-payer-pcp-responsibility-indicator"
         },
         "name": "Health Data Connect PCP Responsibility Indicator",
-        "description": "An indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim",
+        "description": "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim",
         "exampleBoolean": false
       },
       {
@@ -4628,6 +4810,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/medication-knowledge-cost-type"
+        },
+        "name": "Health Data Connect Medication Knowledge Cost Type Value Set",
+        "description": "IBM® Health Data Connect medication knowledge cost type value set",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/wh-payer-subscriber-relationship"
         },
         "name": "Health Data Connect Subscriber Relationship Value Set",
@@ -5370,6 +5566,20 @@
           }
         ],
         "reference": {
+          "reference": "CodeSystem/medication-knowledge-cost-type"
+        },
+        "name": "Health Data Connect Medication Knowledge Cost Type Codes",
+        "description": "IBM® Health Data Connect medication knowledge cost type code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
           "reference": "CodeSystem/wh-payer-provider-type"
         },
         "name": "Health Data Connect Provider Type Codes",
@@ -5806,7 +6016,7 @@
         "reference": {
           "reference": "Organization/GeneralHospital"
         },
-        "name": "CDM Oganization - General Hospital",
+        "name": "CDM Organization - General Hospital",
         "description": "Sample CDM Organizationr representing a hospital ingested from a EMR or PMS system",
         "exampleCanonical": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
       },
@@ -5926,6 +6136,34 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationKnowledge"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationKnowledge/MedicationKnowledgeDrugExample"
+        },
+        "name": "CDM Medication Knowledge Drug Example",
+        "description": "Sample information about a medication for a drug claim",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/MedicationRequestDrugExample"
+        },
+        "name": "CDM Medication Request Drug Example",
+        "description": "Sample medication request or order for a drug claim",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Contract"
           }
         ],
@@ -5988,7 +6226,7 @@
         "reference": {
           "reference": "Organization/Payer1"
         },
-        "name": "CDM Oganization - Payer 1",
+        "name": "CDM Organization - Payer 1",
         "description": "Sample CDM Organization representing a payer",
         "exampleCanonical": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
       },
@@ -6005,6 +6243,20 @@
         "name": "Coverage Example - Primary Payer",
         "description": "Example of primary payer data originating from an EMR system",
         "exampleCanonical": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/Provider1"
+        },
+        "name": "CDM Organization - Provider 1",
+        "description": "Sample CDM Organization representing a provider",
+        "exampleCanonical": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
       },
       {
         "extension": [

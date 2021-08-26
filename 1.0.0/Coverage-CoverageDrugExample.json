@@ -9,7 +9,7 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Age and Gender Groups</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/age-gender-group 7}\">Males 20-24 yr</span></p><p><b>Age In Years</b>: 21</p><p><b>Claim Group Identifier</b>: claim group id</p><p><b>Coverage Month</b>: 2017-06-01</p><p><b>Employee Count</b>: 1</p><p><b>Health Data Connect Subscriber Relationship Code</b>: 2</p><p><b>Employee Status</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/wh-payer-employee-status-code 1}\">Active Full Time</span></p><p><b>Employee Hire Date</b>: 2017-01-30</p><p><b>identifier</b>: Source System Row Identifier: encryp-id1234</p><p><b>status</b>: active</p><p><b>beneficiary</b>: <span></span></p><p><b>period</b>: 2017-06-01 --&gt; 2017-06-30</p><p><b>payor</b>: <span></span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Age and Gender Groups</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/age-gender-group 7}\">Males 20-24 yr</span></p><p><b>Age In Years</b>: 21</p><p><b>Claim Group Identifier</b>: claim group id</p><p><b>Coverage Month</b>: 2017-06-01</p><p><b>Employee Count</b>: 1</p><p><b>Health Data Connect Subscriber Relationship Code</b>: 2</p><p><b>Employee Status</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/wh-payer-employee-status-code 1}\">Active Full Time</span></p><p><b>Employee Hire Date</b>: 2017-01-30</p><p><b>identifier</b>: Source System Row Identifier: encryp-id1234</p><p><b>status</b>: active</p><p><b>subscriber</b>: <a href=\"Patient-CDMPatientInstance.html\">Generated Summary: Source System Row Identifier: unencryp-id1234 (OFFICIAL), Source System Row Identifier: encryp-id1234 (SECONDARY), Medical record number: 1011110101 (OFFICIAL), Medical record number: 1011110101 (USUAL), Social Beneficiary Identifier: 0001223333 (OFFICIAL), Social Beneficiary Identifier: 1CA0CA0CC00 (OFFICIAL), Social Beneficiary Identifier: 987654321000 (OFFICIAL), Match Data Identifier: 7b78d6de-46cb-4fbb-930d-2a74e24b17fe (SECONDARY); active; Firstname McLastname ; , Phone: 216-345-2662, Phone: 216-555-2222, fmclastname@fakemail.com; gender: male; birthDate: 1990-01-04; deceased: Sep 28, 2020, 12:00:00 AM</a></p><p><b>beneficiary</b>: <span></span></p><p><b>period</b>: 2017-06-01 --&gt; 2017-06-30</p><p><b>payor</b>: <span></span></p></div>"
   },
   "extension": [
     {
@@ -81,6 +81,9 @@
     }
   ],
   "status": "active",
+  "subscriber": {
+    "reference": "Patient/CDMPatientInstance"
+  },
   "beneficiary": {
     "type": "Person",
     "identifier": {

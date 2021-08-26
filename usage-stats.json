@@ -4,6 +4,13 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/adjudication-date",
+      "title": "Adjudication Date",
+      "types": [
+        "date"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/admit-count-epis",
       "title": "Episode Admit Count",
       "types": [
@@ -24,6 +31,13 @@
       "types": [
         "CodeableConcept",
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/aggregate-claim-indicator",
+      "title": "Aggregate Claim Indicator",
+      "types": [
+        "string"
       ]
     },
     {
@@ -150,6 +164,14 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-category",
+      "title": "Claim Category",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-group-identifier",
       "title": "Claim Group Identifier",
       "types": [
@@ -161,6 +183,13 @@
       "title": "Claim Item Detail Classification",
       "types": [
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-received-date",
+      "title": "Claim Received Date",
+      "types": [
+        "date"
       ]
     },
     {
@@ -196,6 +225,7 @@
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-status",
       "title": "Claim Status",
       "types": [
+        "CodeableConcept",
         "CodeableConcept"
       ]
     },
@@ -454,13 +484,6 @@
       ]
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/company-code",
-      "title": "Company Code",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/compound-code",
       "title": "Compound Code",
       "types": [
@@ -519,6 +542,13 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator",
+      "title": "Crossover Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/default-value",
       "title": "Default Value",
       "types": [
@@ -554,6 +584,13 @@
       "title": "Detected",
       "types": [
         "dateTime"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/disposition-reason",
+      "title": "Disposition Reason",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -628,6 +665,13 @@
       "title": "Employee Termination Date",
       "types": [
         "date"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employer",
+      "title": "Employer",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -809,6 +853,20 @@
       "title": "FFV Schedule",
       "types": [
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/financial-system",
+      "title": "Financial System",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/fully-insured-indicator",
+      "title": "Fully Insured Indicator",
+      "types": [
+        "string"
       ]
     },
     {
@@ -1379,6 +1437,13 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/last-claim-indicator",
+      "title": "Last Claim Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/legally-documented-sex",
       "title": "Legally Documented Sex",
       "types": [
@@ -1724,6 +1789,13 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/nursing-home-indicator",
+      "title": "Nursing Home Indicator",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/offset-begin",
       "title": "Offset Begin",
       "types": [
@@ -1984,6 +2056,13 @@
       "title": "RelatedObservation",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/rx-count",
+      "title": "RX Count",
+      "types": [
+        "unsignedInt"
       ]
     },
     {
@@ -2355,6 +2434,13 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/submission-type",
+      "title": "Submission Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
       "title": "Tenant Id",
       "types": [
@@ -2366,6 +2452,13 @@
       "title": "Union Worker Indicator",
       "types": [
         "string"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/usual-and-customary-amount",
+      "title": "Usual And Customary Amount",
+      "types": [
+        "decimal"
       ]
     },
     {
@@ -2703,11 +2796,17 @@
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/adjudication-date": [
+      "ClaimResponse.adjudication"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/age-gender-group": [
       "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/age-group": [
       "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/aggregate-claim-indicator": [
+      "Claim"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/assigned-practitioner": [
       "DetectedIssue",
@@ -2751,11 +2850,17 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-adjustment-type": [
       "ClaimResponse.payment"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/claim-category": [
+      "Claim"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-group-identifier": [
       "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification": [
       "Claim.item.detail"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/claim-received-date": [
+      "ClaimResponse"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-response-benefit-plan": [
       "ClaimResponse.item"
@@ -2770,6 +2875,7 @@
       "Claim"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-status": [
+      "Claim",
       "ClaimResponse"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap": [
@@ -2828,9 +2934,6 @@
       "Communication",
       "CommunicationRequest"
     ],
-    "http://ibm.com/fhir/cdm/StructureDefinition/company-code": [
-      "Claim.item"
-    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/compound-code": [
       "Claim.item"
     ],
@@ -2845,6 +2948,7 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/county-code": [
       "Address",
+      "Organization.address",
       "Patient.address"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/coverage-days": [
@@ -2859,6 +2963,9 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/covered-text": [
       "Extension"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator": [
+      "Claim.insurance"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/default-value": [
       "Library.parameter",
       "ParameterDefinition"
@@ -2868,6 +2975,9 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/detected": [
       "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/disposition-reason": [
+      "ClaimResponse.payment"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/documented-sex": [
       "Extension"
@@ -2900,6 +3010,9 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/employee-termination-date": [
       "Coverage"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/employer": [
+      "Claim"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state": [
       "Coverage.identifier",
       "Identifier",
@@ -2916,6 +3029,12 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/ffv-schedule": [
       "Contract"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/financial-system": [
+      "Claim"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/fully-insured-indicator": [
+      "Claim.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/hierarchy-version-date": [
       "OrganizationAffiliation",
@@ -2991,6 +3110,9 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/language-rank": [
       "Patient.communication"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/last-claim-indicator": [
+      "Claim"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/legally-documented-sex": [
       "Patient"
@@ -3100,6 +3222,9 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/method": [
       "Extension"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/nursing-home-indicator": [
+      "Claim.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/offset-begin": [
       "Extension"
@@ -3293,6 +3418,9 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/related-observation": [
       "Observation"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/rx-count": [
+      "Claim"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/rx-formulary-indicator": [
       "ClaimResponse.item"
     ],
@@ -3392,6 +3520,9 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/status-code": [
       "Patient"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/submission-type": [
+      "Claim"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id": [
       "Appointment.meta",
       "Claim.meta",
@@ -3420,6 +3551,9 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/union-worker-indicator": [
       "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/usual-and-customary-amount": [
+      "ClaimResponse.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-dental-coverage-indicator": [
       "InsurancePlan"

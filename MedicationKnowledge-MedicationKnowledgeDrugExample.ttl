@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/MedicationKnowledge/MedicationKnowledgeDrugExample> a fhir:MedicationKnowledge;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MedicationKnowledgeDrugExample"];
+  fhir:Resource.meta [
+     fhir:Meta.source [ fhir:value "http://acme-health.com/pharmacy1" ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens 69452015120}\">69452-0151-20</span></p><p><b>status</b>: active</p><blockquote><p><b>cost</b></p><p><b>type</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/medication-knowledge-cost-type federal-upper-limit}\">The federal upper limit price for the NDC of a drug claim</span></p><p><b>source</b>: NDC</p></blockquote></div>"
+  ];
+  fhir:MedicationKnowledge.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens" ];
+       fhir:Coding.code [ fhir:value "69452015120" ]
+     ]
+  ];
+  fhir:MedicationKnowledge.status [ fhir:value "active"];
+  fhir:MedicationKnowledge.cost [
+     fhir:index 0;
+     fhir:MedicationKnowledge.cost.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/medication-knowledge-cost-type" ];
+         fhir:Coding.code [ fhir:value "federal-upper-limit" ]
+       ]
+     ];
+     fhir:MedicationKnowledge.cost.source [ fhir:value "NDC" ];
+     fhir:MedicationKnowledge.cost.cost [
+       fhir:Money.currency [ fhir:value "USD" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/MedicationKnowledge/MedicationKnowledgeDrugExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

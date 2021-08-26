@@ -20,7 +20,7 @@
   "name": "CDMClaimProfessional",
   "title": "CDM Claim Professional",
   "status": "active",
-  "date": "2021-08-25T21:19:12+00:00",
+  "date": "2021-08-26T16:02:37+00:00",
   "contact": [
     {
       "name": "Kim Kenna",
@@ -428,11 +428,65 @@
         "isSummary": false
       },
       {
+        "id": "Claim.extension:aggregateClaimIndicator",
+        "path": "Claim.extension",
+        "sliceName": "aggregateClaimIndicator",
+        "short": "Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs",
+        "definition": "Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/aggregate-claim-indicator"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
         "id": "Claim.extension:claimSnapshotProviderName",
         "path": "Claim.extension",
         "sliceName": "claimSnapshotProviderName",
-        "short": "The original provider name as reported on the claim",
-        "definition": "The original provider name as reported on the claim",
+        "short": "Original provider name as reported on the claim",
+        "definition": "Original provider name as reported on the claim",
         "min": 0,
         "max": "1",
         "base": {
@@ -485,8 +539,8 @@
         "id": "Claim.extension:claimSnapshotProviderZipCode",
         "path": "Claim.extension",
         "sliceName": "claimSnapshotProviderZipCode",
-        "short": "The original provider postal code, as reported on the claim",
-        "definition": "The original provider postal code, as reported on the claim",
+        "short": "Original provider postal code, as reported on the claim",
+        "definition": "Original provider postal code, as reported on the claim",
         "min": 0,
         "max": "1",
         "base": {
@@ -539,8 +593,8 @@
         "id": "Claim.extension:employeeBusinessUnit",
         "path": "Claim.extension",
         "sliceName": "employeeBusinessUnit",
-        "short": "The business unit of the subscriber as reported on the claim",
-        "definition": "The business unit of the subscriber as reported on the claim",
+        "short": "Business unit of the subscriber as reported on the claim",
+        "definition": "Business unit of the subscriber as reported on the claim",
         "min": 0,
         "max": "1",
         "base": {
@@ -553,6 +607,276 @@
             "code": "Extension",
             "profile": [
               "http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Claim.extension:employer",
+        "path": "Claim.extension",
+        "sliceName": "employer",
+        "short": "Customer-specific code for the employer as reported on the claim record",
+        "definition": "Customer-specific code for the employer as reported on the claim record",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/employer"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Claim.extension:financialSystem",
+        "path": "Claim.extension",
+        "sliceName": "financialSystem",
+        "short": "Customer-specific code for the financial system",
+        "definition": "Customer-specific code for the financial system",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/financial-system"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Claim.extension:claimCategory",
+        "path": "Claim.extension",
+        "sliceName": "claimCategory",
+        "short": "Standard HIPAA code for the category of the claim status",
+        "definition": "Standard HIPAA code for the category of the claim status",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/claim-category"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Claim.extension:claimStatus",
+        "path": "Claim.extension",
+        "sliceName": "claimStatus",
+        "short": "Standard HIPAA code for the status of an entire claim",
+        "definition": "Standard HIPAA code for the status of an entire claim",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/claim-status"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Claim.extension:lastClaimIndicator",
+        "path": "Claim.extension",
+        "sliceName": "lastClaimIndicator",
+        "short": "Indicator that identifies whether this claim record is the last or most recent claim",
+        "definition": "Indicator that identifies whether this claim record is the last or most recent claim",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/last-claim-indicator"
             ]
           }
         ],
@@ -644,11 +968,65 @@
         ]
       },
       {
+        "id": "Claim.extension:submissionType",
+        "path": "Claim.extension",
+        "sliceName": "submissionType",
+        "short": "Customer-specific code for the type of electronic submission",
+        "definition": "Customer-specific code for the type of electronic submission",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/submission-type"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
         "id": "Claim.extension:whPayerPcpResponsibilityIndicator",
         "path": "Claim.extension",
         "sliceName": "whPayerPcpResponsibilityIndicator",
-        "short": "An indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim",
-        "definition": "An indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim",
+        "short": "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim",
+        "definition": "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim",
         "min": 0,
         "max": "1",
         "base": {
@@ -4187,13 +4565,18 @@
       {
         "id": "Claim.insurance.extension",
         "path": "Claim.insurance.extension",
-        "short": "Additional content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Extension",
+        "definition": "An Extension",
         "min": 0,
         "max": "*",
         "base": {
@@ -4225,11 +4608,59 @@
           }
         ],
         "isModifier": false,
-        "isSummary": false,
+        "isSummary": false
+      },
+      {
+        "id": "Claim.insurance.extension:crossoverIndicator",
+        "path": "Claim.insurance.extension",
+        "sliceName": "crossoverIndicator",
+        "short": "Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare",
+        "definition": "Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
         "mapping": [
           {
             "identity": "rim",
             "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -4930,8 +5361,8 @@
         "id": "Claim.item.extension:capitatedServiceIndicator",
         "path": "Claim.item.extension",
         "sliceName": "capitatedServiceIndicator",
-        "short": "An indicator that this service (encounter record) was capitated",
-        "definition": "An indicator that this service (encounter record) was capitated",
+        "short": "Indicator that this service (encounter record) was capitated",
+        "definition": "Indicator that this service (encounter record) was capitated",
         "min": 0,
         "max": "1",
         "base": {
@@ -4981,11 +5412,11 @@
         ]
       },
       {
-        "id": "Claim.item.extension:companyCode",
+        "id": "Claim.item.extension:fullyInsuredIndicator",
         "path": "Claim.item.extension",
-        "sliceName": "companyCode",
-        "short": "The company code of the subscriber as reported on the claim",
-        "definition": "The company code of the subscriber as reported on the claim",
+        "sliceName": "fullyInsuredIndicator",
+        "short": "Indicator that the claim was for a fully insured plan",
+        "definition": "Indicator that the claim was for a fully insured plan",
         "min": 0,
         "max": "1",
         "base": {
@@ -4997,7 +5428,61 @@
           {
             "code": "Extension",
             "profile": [
-              "http://ibm.com/fhir/cdm/StructureDefinition/company-code"
+              "http://ibm.com/fhir/cdm/StructureDefinition/fully-insured-indicator"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Claim.item.extension:nursingHomeIndicator",
+        "path": "Claim.item.extension",
+        "sliceName": "nursingHomeIndicator",
+        "short": "Indicator that the claim was for a nursing home patient",
+        "definition": "Indicator that the claim was for a nursing home patient",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/nursing-home-indicator"
             ]
           }
         ],

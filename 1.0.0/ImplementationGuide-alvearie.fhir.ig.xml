@@ -11,7 +11,7 @@
   <name value="AlvearieFHIRImplementationGuide"/>
   <title value="Alvearie FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-08-25T21:19:12+00:00"/>
+  <date value="2021-08-26T16:02:37+00:00"/>
   <contact>
     <name value="Kim Kenna"/>
     <telecom>
@@ -805,6 +805,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/adjudication-date"/>
+      </reference>
+      <name value="Adjudication Date"/>
+      <description value="Date on which the payment status of the claim was adjudicated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/age-gender-group"/>
       </reference>
       <name value="Age and Gender Groups"/>
@@ -820,6 +831,17 @@
       </reference>
       <name value="Age Group"/>
       <description value="Standard code for age groupings"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/aggregate-claim-indicator"/>
+      </reference>
+      <name value="Aggregate Claim Indicator"/>
+      <description value="Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -896,7 +918,7 @@
         <reference value="StructureDefinition/capitated-service-indicator"/>
       </reference>
       <name value="Capitated Service Indicator"/>
-      <description value="An indicator that this service (encounter record) was capitated"/>
+      <description value="Indicator that this service (encounter record) was capitated"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -981,6 +1003,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/claim-category"/>
+      </reference>
+      <name value="Claim Category"/>
+      <description value="Standard HIPAA code for the category of the claim status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/claim-group-identifier"/>
       </reference>
       <name value="Claim Group Identifier"/>
@@ -1003,10 +1036,21 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/claim-received-date"/>
+      </reference>
+      <name value="Claim Received Date"/>
+      <description value="Date the claim was received"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/claim-response-benefit-plan"/>
       </reference>
       <name value="Claim Response Benefit Plan"/>
-      <description value="The Benefit Plan on the claim item."/>
+      <description value="The benefit plan on the claim item"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1028,7 +1072,7 @@
         <reference value="StructureDefinition/claim-snapshot-provider-name"/>
       </reference>
       <name value="Claim Snapshot Provider Name"/>
-      <description value="The original provider name as reported on the claim"/>
+      <description value="Original provider name as reported on the claim"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1039,7 +1083,7 @@
         <reference value="StructureDefinition/claim-snapshot-provider-zip-code"/>
       </reference>
       <name value="Claim Snapshot Provider Zip Code"/>
-      <description value="The original provider postal code, as reported on the claim"/>
+      <description value="Original provider postal code, as reported on the claim"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1050,7 +1094,7 @@
         <reference value="StructureDefinition/claim-status"/>
       </reference>
       <name value="Claim Status"/>
-      <description value="Custom code for the claim status"/>
+      <description value="Standard HIPAA code for the status of an entire claim"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1234,17 +1278,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/company-code"/>
-      </reference>
-      <name value="Company Code"/>
-      <description value="The company code of the subscriber as reported on the claim"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/compound-code"/>
       </reference>
       <name value="Compound Code"/>
@@ -1333,6 +1366,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/crossover-indicator"/>
+      </reference>
+      <name value="Crossover Indicator"/>
+      <description value="Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/default-value"/>
       </reference>
       <name value="Default Value"/>
@@ -1359,6 +1403,17 @@
       </reference>
       <name value="Detected"/>
       <description value="When the insight evaluation occurred."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/disposition-reason"/>
+      </reference>
+      <name value="Disposition Reason"/>
+      <description value="Customer-specific code for the disposition reason, as related to how the claim was paid"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1413,7 +1468,7 @@
         <reference value="StructureDefinition/employee-business-unit"/>
       </reference>
       <name value="Employee Business Unit"/>
-      <description value="The business unit of the subscriber as reported on the claim"/>
+      <description value="Business unit of the subscriber as reported on the claim"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1469,6 +1524,17 @@
       </reference>
       <name value="Employee Termination Date"/>
       <description value="The last date of employment for the employee"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/employer"/>
+      </reference>
+      <name value="Employer"/>
+      <description value="Customer-specific code for the employer as reported on the claim record"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1729,6 +1795,28 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/financial-system"/>
+      </reference>
+      <name value="Financial System"/>
+      <description value="Customer-specific code for the financial system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fully-insured-indicator"/>
+      </reference>
+      <name value="Fully Insured Indicator"/>
+      <description value="Indicator that the claim was for a fully insured plan"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/hierarchy-version-date"/>
       </reference>
       <name value="Hierarchy Version Date"/>
@@ -1942,6 +2030,17 @@
       </reference>
       <name value="Language Rank"/>
       <description value="Specify preferred order of language use (1 = highest)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/last-claim-indicator"/>
+      </reference>
+      <name value="Last Claim Indicator"/>
+      <description value="Indicator that identifies whether this claim record is the last or most recent claim"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2217,6 +2316,17 @@
       </reference>
       <name value="Network Id"/>
       <description value="Customer-specific identifier of the patient provider network in which the member is enrolled"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/nursing-home-indicator"/>
+      </reference>
+      <name value="Nursing Home Indicator"/>
+      <description value="Indicator that the claim was for a nursing home patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2546,7 +2656,7 @@
         <reference value="StructureDefinition/referral-indicator"/>
       </reference>
       <name value="Referral Indicator"/>
-      <description value="An indicator signifying the service resulted from a referral"/>
+      <description value="Indicator signifying the service resulted from a referral"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2580,6 +2690,17 @@
       </reference>
       <name value="RelatedObservation"/>
       <description value="Related observations that can be combined to fulfill a single time period for a given care gap or other measure population."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rx-count"/>
+      </reference>
+      <name value="RX Count"/>
+      <description value="Count of prescriptions for the drug claim"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2840,6 +2961,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/submission-type"/>
+      </reference>
+      <name value="Submission Type"/>
+      <description value="Customer-specific code for the type of electronic submission"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tenant-id"/>
       </reference>
       <name value="Tenant Id"/>
@@ -2855,6 +2987,17 @@
       </reference>
       <name value="Union Worker Indicator"/>
       <description value="An indicator that the contract holder (subscriber) belongs to a union"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/usual-and-customary-amount"/>
+      </reference>
+      <name value="Usual And Customary Amount"/>
+      <description value="Usual and customary amount on the drug claim"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2909,7 +3052,7 @@
         <reference value="StructureDefinition/wh-payer-pcp-responsibility-indicator"/>
       </reference>
       <name value="Health Data Connect PCP Responsibility Indicator"/>
-      <description value="An indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"/>
+      <description value="Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3588,6 +3731,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/medication-knowledge-cost-type"/>
+      </reference>
+      <name value="Health Data Connect Medication Knowledge Cost Type Value Set"/>
+      <description value="IBM&#xAE; Health Data Connect medication knowledge cost type value set"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/wh-payer-subscriber-relationship"/>
       </reference>
       <name value="Health Data Connect Subscriber Relationship Value Set"/>
@@ -4171,6 +4325,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/medication-knowledge-cost-type"/>
+      </reference>
+      <name value="Health Data Connect Medication Knowledge Cost Type Codes"/>
+      <description value="IBM&#xAE; Health Data Connect medication knowledge cost type code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/wh-payer-provider-type"/>
       </reference>
       <name value="Health Data Connect Provider Type Codes"/>
@@ -4514,7 +4679,7 @@
       <reference>
         <reference value="Organization/GeneralHospital"/>
       </reference>
-      <name value="CDM Oganization - General Hospital"/>
+      <name value="CDM Organization - General Hospital"/>
       <description value="Sample CDM Organizationr representing a hospital ingested from a EMR or PMS system"/>
       <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"/>
     </resource>
@@ -4608,6 +4773,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/MedicationKnowledgeDrugExample"/>
+      </reference>
+      <name value="CDM Medication Knowledge Drug Example"/>
+      <description value="Sample information about a medication for a drug claim"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/MedicationRequestDrugExample"/>
+      </reference>
+      <name value="CDM Medication Request Drug Example"/>
+      <description value="Sample medication request or order for a drug claim"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Contract"/>
       </extension>
       <reference>
@@ -4657,7 +4844,7 @@
       <reference>
         <reference value="Organization/Payer1"/>
       </reference>
-      <name value="CDM Oganization - Payer 1"/>
+      <name value="CDM Organization - Payer 1"/>
       <description value="Sample CDM Organization representing a payer"/>
       <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"/>
     </resource>
@@ -4671,6 +4858,17 @@
       <name value="Coverage Example - Primary Payer"/>
       <description value="Example of primary payer data originating from an EMR system"/>
       <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Provider1"/>
+      </reference>
+      <name value="CDM Organization - Provider 1"/>
+      <description value="Sample CDM Organization representing a provider"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

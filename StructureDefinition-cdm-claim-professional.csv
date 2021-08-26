@@ -25,24 +25,52 @@ anonymous resourcescontained resources","",0,0,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Claim.extension","aggregateClaimIndicator","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/aggregate-claim-indicator]]} {[]}
+","Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs","Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Claim.extension","claimSnapshotProviderName","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-name]]} {[]}
-","The original provider name as reported on the claim","The original provider name as reported on the claim","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Original provider name as reported on the claim","Original provider name as reported on the claim","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Claim.extension","claimSnapshotProviderZipCode","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code]]} {[]}
-","The original provider postal code, as reported on the claim","The original provider postal code, as reported on the claim","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Original provider postal code, as reported on the claim","Original provider postal code, as reported on the claim","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Claim.extension","employeeBusinessUnit","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit]]} {[]}
-","The business unit of the subscriber as reported on the claim","The business unit of the subscriber as reported on the claim","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Business unit of the subscriber as reported on the claim","Business unit of the subscriber as reported on the claim","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Claim.extension","employer","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/employer]]} {[]}
+","Customer-specific code for the employer as reported on the claim record","Customer-specific code for the employer as reported on the claim record","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Claim.extension","financialSystem","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/financial-system]]} {[]}
+","Customer-specific code for the financial system","Customer-specific code for the financial system","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Claim.extension","claimCategory","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/claim-category]]} {[]}
+","Standard HIPAA code for the category of the claim status","Standard HIPAA code for the category of the claim status","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Claim.extension","claimStatus","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/claim-status]]} {[]}
+","Standard HIPAA code for the status of an entire claim","Standard HIPAA code for the status of an entire claim","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Claim.extension","lastClaimIndicator","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/last-claim-indicator]]} {[]}
+","Indicator that identifies whether this claim record is the last or most recent claim","Indicator that identifies whether this claim record is the last or most recent claim","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Claim.extension","snapshotAgeInYears","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years]]} {[]}
 ","The age of the patient in years at the date of service","The age of the patient in years at the date of service","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Claim.extension","submissionType","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/submission-type]]} {[]}
+","Customer-specific code for the type of electronic submission","Customer-specific code for the type of electronic submission","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Claim.extension","whPayerPcpResponsibilityIndicator","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-pcp-responsibility-indicator]]} {[]}
-","An indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim","An indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim","Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Claim.extension","referralIndicator","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/referral-indicator]]} {[]}
@@ -317,10 +345,14 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Procedure
 ","Coverage"
 "Claim.insurance.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Claim.insurance.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Claim.insurance.extension","","","",0,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Claim.insurance.extension","crossoverIndicator","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator]]} {[]}
+","Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare","Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Claim.insurance.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -382,11 +414,15 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Claim.item.extension","capitatedServiceIndicator","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/capitated-service-indicator]]} {[]}
-","An indicator that this service (encounter record) was capitated","An indicator that this service (encounter record) was capitated","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Indicator that this service (encounter record) was capitated","Indicator that this service (encounter record) was capitated","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Claim.item.extension","companyCode","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/company-code]]} {[]}
-","The company code of the subscriber as reported on the claim","The company code of the subscriber as reported on the claim","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+"Claim.item.extension","fullyInsuredIndicator","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/fully-insured-indicator]]} {[]}
+","Indicator that the claim was for a fully insured plan","Indicator that the claim was for a fully insured plan","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Claim.item.extension","nursingHomeIndicator","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/nursing-home-indicator]]} {[]}
+","Indicator that the claim was for a nursing home patient","Indicator that the claim was for a nursing home patient","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Claim.item.modifierExtension","","extensions
