@@ -15,11 +15,6 @@ Description:    "Sample of a CDM Professional Explanation of Benefit"
 * meta.extension[processRecordId].valueIdentifier.value  = "7209_07869_e00080779_3938586_2516181"
 //* meta.extension[sourceFileId].valueString     = "e00080739"
 //* meta.extension[sourceFileId].valueString     = "e00080779"
-* meta.source  = "http://acme-health.com/WellnessMedicalCenter"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim"
-
-
-
 
 * identifier[0].use              = #official
 * identifier[0].type             = IdentifierTypeCodeSystem#SSRI
