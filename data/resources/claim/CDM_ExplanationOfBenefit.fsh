@@ -47,10 +47,6 @@ Description:    "This resource provides the list of professional services and pr
 * item.extension[claimResponseItemStatus] ^short      = "The status of claim payment on claim item"
 * item.extension[claimResponseItemStatus] ^definition = "The status of claim payment on claim item"
 
-* item.extension contains CompanyCode named companyCode 0..1
-* item.extension[companyCode] ^short      = "The company code of the subscriber as reported on the claim"
-* item.extension[companyCode] ^definition = "The company code of the subscriber as reported on the claim"
-
 * item.extension contains CompoundCode named compoundCode 0..1
 * item.extension[compoundCode]  ^short      = "Indicator of whether the product is a compound drug or not"
 * item.extension[compoundCode]  ^definition = "Indicator of whether the product is a compound drug or not"
