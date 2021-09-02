@@ -28,6 +28,12 @@ Title:          "Claim Snapshot Provider Zip Code"
 Description:    "Original provider postal code, as reported on the claim"
 * value[x] only string
 
+Extension:      CompanyCode
+Id:             company-code
+Title:          "Company Code"
+Description:    "Company code of the subscriber as reported on the claim"    
+* value[x] only CodeableConcept
+
 Extension:      CompoundCode
 Id:             compound-code
 Title:          "Compound Code"
@@ -71,13 +77,6 @@ Description:    "Standard HIPAA code for the category of the claim status"
 * value[x] only CodeableConcept
 * valueCodeableConcept from CLAIM-STATUS-CATEGORY (extensible)
 
-Extension:      ClaimStatus
-Id:             claim-status
-Title:          "Claim Status"
-Description:    "Standard HIPAA code for the status of an entire claim"   
-* value[x] only CodeableConcept
-* valueCodeableConcept from CLAIM-STATUS (extensible)
-
 Extension:      LastClaimIndicator
 Id:             last-claim-indicator
 Title:          "Last Claim Indicator"
@@ -116,6 +115,18 @@ Description:    "Groups assigned to categorize related procedures"
 * value[x] only CodeableConcept 
 * valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
 
+Extension:      ParticipatingPlan
+Id:             participating-plan
+Title:          "Participating Plan"
+Description:    "Customer-specific code for the participating plan"   
+* value[x] only CodeableConcept
+
+Extension:      PriorAuthorizationIndicator
+Id:             prior-authorization-indicator
+Title:          "Prior Authorization Indicator"
+Description:    "Indicator of prior authorization for the claim"
+* value[x] only string
+
 Extension:      ReferralIndicator
 Id:             referral-indicator
 Title:          "Referral Indicator"
@@ -126,6 +137,12 @@ Extension:      RxCount
 Id:             rx-count
 Title:          "RX Count"
 Description:    "Count of prescriptions for the drug claim"
+* value[x] only unsignedInt
+
+Extension:      ServiceBillDaysCount
+Id:             service-bill-days-count
+Title:          "Service Bill Days Count"
+Description:    "Number of days between the date of service and the date the claim was received"
 * value[x] only unsignedInt
 
 Extension:      SubmissionType
