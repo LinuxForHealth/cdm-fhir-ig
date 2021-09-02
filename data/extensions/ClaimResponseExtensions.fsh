@@ -65,18 +65,6 @@ Title:       "Rx Supply Indicator"
 Description: "An indicator of whether or not the drug claim is a medical supply (Y) or a drug (N)"
 * value[x] only string
 
-Extension:      UsualAndCustomaryAmount
-Id:             usual-and-customary-amount
-Title:          "Usual And Customary Amount"
-Description:    "Usual and customary amount on the drug claim"
-* value[x] only decimal
-
-Extension:   UtilizationReview
-Id:          utilization-review
-Title:       "Utilization Review"
-Description: "Customer-specific code for the type of utilization review"
-* value[x] only CodeableConcept
-
 Extension:   ClaimResponseItemStatus
 Id:          claim-response-item-status
 Title:       "Claim Response Item Status"
@@ -119,3 +107,9 @@ Id:             usual-and-customary-amount
 Title:          "Usual And Customary Amount"
 Description:    "Usual and customary amount on the drug claim"
 * value[x] only decimal
+
+Extension:   UtilizationReview
+Id:          utilization-review
+Title:       "Utilization Review"
+Description: "Customer-specific code for the type of utilization review"
+* value[x] only CodeableConcept
