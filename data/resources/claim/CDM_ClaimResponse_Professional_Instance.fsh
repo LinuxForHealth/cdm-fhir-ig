@@ -5,34 +5,48 @@ Title:          "CDM Claim Response - Professional Example"
 Description:    "Sample of a CDM Professional Claim Response"
 
 * meta.source = "http://acme-health.com/WellnessMedicalCenter"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-response-drug"
+* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-response"
 
 * meta.extension[tenantId].valueString         = "tenant7209"
 * meta.extension[ingestionBatchId].valueString = "rgVCJnQBxvghkKTI8Hzz"
 * meta.extension[processName].valueString      = "TREX"
 * meta.extension[processClientId].valueString  = "7209"
 * meta.extension[processRecordId].valueIdentifier.system  = "http://acme-health.com/WellnessMedicalCenter"
-* meta.extension[processRecordId].valueIdentifier.value  = "7209_07869_e00080779_3938586_2516181"
-* meta.extension[sourceFileId].valueString     = "e00080739"
+* meta.extension[processRecordId].valueIdentifier.value   = "7209_07869_e00080779_3938586_2516181"
+* meta.extension[sourceFileId].valueString                = "e00080739"
 
 * identifier[0].use              = #official
 * identifier[0].type             = IdentifierTypeCodeSystem#SSRI
-* identifier[0].system           = "http://acmehealth.com/CodeSystem/local-claim-identifier"
+* identifier[0].system           = "http://acme-health.com/CodeSystem/local-claim-identifier"
 * identifier[0].value            = "000000000000000000019721078"
 * identifier[0].assigner.display = "Acme Health - Wellness Medical Center"
 
 * status                   = #active
 * type.coding[0]           = WhPayerClaimTypeCodeSystem#medical
-* type.coding[1].system    = "http://acmehealth.com/CodeSystem/local-claim-type"
+* type.coding[1].system    = "http://acme-health.com/CodeSystem/local-claim-type"
 * type.coding[1].code      = #MedicalClaimType
 
-* use      = #claim
-* patient  = Reference(CDMPatientInstance)
-* created  = "2017-07-25T17:31:00-05:00"
-* insurer.type = RESOURCE-TYPE#Organization
+* use                       = #claim
+* patient                   = Reference(CDMPatientInstance)
+* created                   = "2017-07-25T17:31:00-05:00"
+* insurer.type              = RESOURCE-TYPE#Organization
 * insurer.identifier.system = "http://acme-health.com/payer1/payer"
 * insurer.identifier.value  = "Payer1"
-* outcome  = #complete
+* outcome                   = #complete
+
+// itemSequence is only specified for source detailed fields
+* error[0].code.coding      = http://acme-health.com/CodeSystem/local-error-header#LocErrorHeader1
+* error[1].code.coding      = http://acme-health.com/CodeSystem/local-error-header#LocErrorHeader2
+* error[2].itemSequence     = 1
+* error[2].code.coding      = http://acme-health.com/CodeSystem/local-error-detail#LocErrorDetail1
+* error[3].itemSequence     = 2
+* error[3].code.coding      = http://acme-health.com/CodeSystem/local-error-detail#LocErrorDetail2
+* error[4].code.coding      = http://acme-health.com/CodeSystem/local-exception-header#LocExceptionHeader1
+* error[5].code.coding      = http://acme-health.com/CodeSystem/local-exception-header#LocExceptionHeader2
+* error[6].itemSequence     = 3
+* error[6].code.coding      = http://acme-health.com/CodeSystem/local-exception-detail#LocExceptionDetail1
+* error[7].itemSequence     = 4
+* error[7].code.coding      = http://acme-health.com/CodeSystem/local-exception-detail#LocExceptionDetail2
 
 * item.itemSequence = 1
 * item.adjudication[0].category            = AdjudicationCategoryCodeSystem#coinsurance
@@ -41,98 +55,105 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[1].amount.value        = 10.00
 * item.adjudication[2].category            = AdjudicationCategoryCodeSystem#deductible
 * item.adjudication[2].amount.value        = 20.00
-// Index 3 not specified for Professional. Will throw QA error since index skipped.
+* item.adjudication[3].category            = AdjudicationCategoryCodeSystem#summary
+* item.adjudication[3].reason.coding[0]    = http://acme-health.com/CodeSystem/local-explanation-of-benefits#LocalEOB1
 * item.adjudication[4].category            = AdjudicationCategoryCodeSystem#third-party
 * item.adjudication[4].amount.value        = 0.00
+* item.adjudication[4].extension[savingsType].valueString = "Savings Type 1"
 * item.adjudication[5].category            = AdjudicationCategoryCodeSystem#allowed
 * item.adjudication[5].amount.value        = 25.0
 * item.adjudication[6].category            = AdjudicationCategoryCodeSystem#submitted
 * item.adjudication[6].amount.value        = 5.00
+* item.adjudication[7].category            = AdjudicationCategoryCodeSystem#net-payment
+* item.adjudication[7].reason.coding[0]    = REMIT-ADVICE-REMARK-CODE#M2
+* item.adjudication[7].reason.coding[1]    = REMIT-ADVICE-REMARK-CODE#N16
+* item.adjudication[7].reason.coding[2]    = http://acme-health.com/CodeSystem/local-explanation-of-benefits#LocalEOB2
+* item.adjudication[8].category            = AdjudicationCategoryCodeSystem#remittance 
+* item.adjudication[9].category            = AdjudicationCategoryCodeSystem#discount
+* item.adjudication[9].amount.value        = 0.00
+* item.adjudication[10].category           = AdjudicationCategoryCodeSystem#ffs-equivalent
+* item.adjudication[10].amount.currency    = CURRENCIES#USD
+* item.adjudication[10].amount.value       = 0.00
+* item.adjudication[11].category           = AdjudicationCategoryCodeSystem#fully-insured-payment
+* item.adjudication[11].amount.currency    = CURRENCIES#USD
+* item.adjudication[11].amount.value       = 0.00
+* item.adjudication[12].category           = AdjudicationCategoryCodeSystem#healthcare-reimbursement
+* item.adjudication[12].amount.currency    = CURRENCIES#USD
+* item.adjudication[12].amount.value       = 0.00
+* item.adjudication[13].category           = AdjudicationCategoryCodeSystem#healthcare-savings-account
+* item.adjudication[13].amount.currency    = CURRENCIES#USD
+* item.adjudication[13].amount.value       = 0.00
+* item.adjudication[14].category           = AdjudicationCategoryCodeSystem#medicare-allowed
+* item.adjudication[14].amount.currency    = CURRENCIES#USD
+* item.adjudication[14].amount.value       = 0.00
+* item.adjudication[15].category           = AdjudicationCategoryCodeSystem#medicare-coinsurance
+* item.adjudication[15].amount.currency    = CURRENCIES#USD
+* item.adjudication[15].amount.value       = 0.00
+* item.adjudication[16].category           = AdjudicationCategoryCodeSystem#medicare-deductible
+* item.adjudication[16].amount.currency    = CURRENCIES#USD
+* item.adjudication[16].amount.value       = 0.00
+* item.adjudication[17].category           = AdjudicationCategoryCodeSystem#patient-liability
+* item.adjudication[17].amount.currency    = CURRENCIES#USD
+* item.adjudication[17].amount.value       = 0.00
+* item.adjudication[18].category           = AdjudicationCategoryCodeSystem#penalty
+* item.adjudication[18].reason.coding[0]   = http://acme-health.com/CodeSystem/local-excluded-reason#LocPenaltyType
+* item.adjudication[19].category           = AdjudicationCategoryCodeSystem#withhold
+* item.adjudication[19].amount.value       = 0.00
+* item.adjudication[20].category           = AdjudicationCategoryCodeSystem#medicare-paid
+* item.adjudication[20].amount.currency    = CURRENCIES#USD
+* item.adjudication[20].amount.value       = 0.00
 
-// Index 7 not required, but added as example to prevent QA error
-* item.adjudication[7].category             = AdjudicationCategoryCodeSystem#net-payment
-* item.adjudication[7].reason.coding.system = "http://acmehealth.com/CodeSystem/local-explanation-of-benefits"
-* item.adjudication[7].reason.coding.code   = #LocalEOB1
-
-* item.adjudication[8].category             = AdjudicationCategoryCodeSystem#remittance 
-
-* item.adjudication[9].category             = AdjudicationCategoryCodeSystem#discount
-* item.adjudication[9].amount.value         = 0.00
-// Indexex 10 - 11  not specified for Professional. Will throw QA error since index skipped.
-// Indexes 12 - 16 not required, but added example to prevent QA error
-* item.adjudication[12].category              = AdjudicationCategoryCodeSystem#healthcare-reimbursement
-* item.adjudication[12].amount.currency       = CURRENCIES#USD
-* item.adjudication[12].amount.value          = 0.00
-* item.adjudication[13].category              = AdjudicationCategoryCodeSystem#healthcare-savings-account
-* item.adjudication[13].amount.currency       = CURRENCIES#USD
-* item.adjudication[13].amount.value          = 0.00
-* item.adjudication[14].category              = AdjudicationCategoryCodeSystem#medicare-allowed
-* item.adjudication[14].amount.currency       = CURRENCIES#USD
-* item.adjudication[14].amount.value          = 0.00
-* item.adjudication[15].category              = AdjudicationCategoryCodeSystem#medicare-coinsurance
-* item.adjudication[15].amount.currency       = CURRENCIES#USD
-* item.adjudication[15].amount.value          = 0.00
-* item.adjudication[16].category              = AdjudicationCategoryCodeSystem#medicare-deductible
-* item.adjudication[16].amount.currency       = CURRENCIES#USD
-* item.adjudication[16].amount.value          = 0.00
-
-* item.adjudication[17].category              = AdjudicationCategoryCodeSystem#patient-liability
-* item.adjudication[17].amount.currency       = CURRENCIES#USD
-* item.adjudication[17].amount.value          = 0.00
-
-// Index 18 not requred, but included as example to prevent QA errors
-* item.adjudication[18].category              = AdjudicationCategoryCodeSystem#penalty
-* item.adjudication[18].reason.coding.system  = "http://acmehealth.com/CodeSystem/local-penalty-type"
-* item.adjudication[18].reason.coding.code    = #LocalPenaltyType
-
-* item.adjudication[19].category              = AdjudicationCategoryCodeSystem#withhold
-* item.adjudication[19].amount.value          = 0.00
-
-// Indexes 20 thru 32 not requred, but included as example to prevent QA errors
-// Some extensions not added for these
-* item.adjudication[20].category              = AdjudicationCategoryCodeSystem#medicare-paid
-* item.adjudication[20].amount.currency       = CURRENCIES#USD
-* item.adjudication[20].amount.value          = 0.00
-// Index 21 doesn't exist for Professional
-* item.adjudication[22].category              = AdjudicationCategoryCodeSystem#excluded1
+// QA errors occur if index entries are skipped so resequence in the examples
+// Mapped to source index's 22-34
+* item.adjudication[21].category              = AdjudicationCategoryCodeSystem#excluded1
+* item.adjudication[21].amount.currency       = CURRENCIES#USD
+* item.adjudication[21].amount.value          = 0.0
+* item.adjudication[22].category              = AdjudicationCategoryCodeSystem#excluded2
 * item.adjudication[22].amount.currency       = CURRENCIES#USD
 * item.adjudication[22].amount.value          = 0.0
-* item.adjudication[23].category              = AdjudicationCategoryCodeSystem#excluded2
+* item.adjudication[23].category              = AdjudicationCategoryCodeSystem#excluded3
 * item.adjudication[23].amount.currency       = CURRENCIES#USD
 * item.adjudication[23].amount.value          = 0.0
-* item.adjudication[24].category              = AdjudicationCategoryCodeSystem#excluded3
+* item.adjudication[24].category              = AdjudicationCategoryCodeSystem#out-of-network-access-fee
 * item.adjudication[24].amount.currency       = CURRENCIES#USD
 * item.adjudication[24].amount.value          = 0.0
-* item.adjudication[25].category              = AdjudicationCategoryCodeSystem#out-of-network-access-fee
-* item.adjudication[26].category              = AdjudicationCategoryCodeSystem#out-of-network-access-fee
-* item.adjudication[26].amount.currency       = CURRENCIES#USD
-* item.adjudication[26].amount.value          = 0.0
-* item.adjudication[27].category              = AdjudicationCategoryCodeSystem#out-of-network-surcharge-fee
-* item.adjudication[27].amount.currency       = CURRENCIES#USD
-* item.adjudication[27].amount.value          = 0.0
-* item.adjudication[28].category              = AdjudicationCategoryCodeSystem#excluded1
-* item.adjudication[28].reason.coding.system  = "http://acmehealth.com/CodeSystem/local-excluded-reason"
-* item.adjudication[28].reason.coding.code    = #LocalExcludedReason1
-* item.adjudication[29].category              = AdjudicationCategoryCodeSystem#excluded2
-* item.adjudication[29].reason.coding.system  = "http://acmehealth.com/CodeSystem/local-excluded-reason"
-* item.adjudication[29].reason.coding.code    = #LocalExcludedReason2
-* item.adjudication[30].category              = AdjudicationCategoryCodeSystem#excluded3
-* item.adjudication[30].reason.coding.system  = "http://acmehealth.com/CodeSystem/local-excluded-reason"
-* item.adjudication[30].reason.coding.code    = #LocalExcludedReason3
-* item.adjudication[31].category              = AdjudicationCategoryCodeSystem#third-party
-* item.adjudication[32].category              = AdjudicationCategoryCodeSystem#discount
-* item.adjudication[32].reason.coding.system  = "http://acmehealth.com/CodeSystem/local-discount-type"
-* item.adjudication[32].reason.coding.code    = #LocalDiscountType
+* item.adjudication[25].category              = AdjudicationCategoryCodeSystem#out-of-network-surcharge-fee
+* item.adjudication[25].amount.currency       = CURRENCIES#USD
+* item.adjudication[25].amount.value          = 0.0
+* item.adjudication[26].category              = AdjudicationCategoryCodeSystem#excluded1
+* item.adjudication[26].reason.coding.system  = "http://acme-health.com/CodeSystem/local-excluded-reason"
+* item.adjudication[26].reason.coding.code    = #LocalExcludedReason1
+* item.adjudication[27].category              = AdjudicationCategoryCodeSystem#excluded2
+* item.adjudication[27].reason.coding.system  = "http://acme-health.com/CodeSystem/local-excluded-reason"
+* item.adjudication[27].reason.coding.code    = #LocalExcludedReason2
+* item.adjudication[28].category              = AdjudicationCategoryCodeSystem#excluded3
+* item.adjudication[28].reason.coding.system  = "http://acme-health.com/CodeSystem/local-excluded-reason"
+* item.adjudication[28].reason.coding.code    = #LocalExcludedReason3
+* item.adjudication[29].category              = AdjudicationCategoryCodeSystem#discount
+* item.adjudication[29].reason.coding.system  = "http://acme-health.com/CodeSystem/local-discount-type"
+* item.adjudication[29].reason.coding.code    = #LocalDiscountType
+* item.adjudication[30].category              = AdjudicationCategoryCodeSystem#out-of-network-access-fee
+* item.adjudication[30].extension[routingNumber].valueString = "12345"
+* item.adjudication[31].category              = AdjudicationCategoryCodeSystem#tax
+* item.adjudication[31].amount.value          = 1.00
+* item.adjudication[32].category              = AdjudicationCategoryCodeSystem#net-payment
+* item.adjudication[32].amount.value          = 25.00
 
-* item.adjudication[33].category              = AdjudicationCategoryCodeSystem#tax
-* item.adjudication[33].amount.value          = 1.00
-* item.adjudication[34].category              = AdjudicationCategoryCodeSystem#net-payment
-* item.adjudication[34].amount.value          = 25.00
+* item.extension[copayExclusion].valueCodeableConcept    = http://acme-health.com/CodeSystem/local-copay-exclusion#LocCopayExclusion
+* item.extension[numberOfUnitsAllowed].valueString       = "2 units"
+* item.extension[reinsuranceMetIndicator].valueString    = "Y"
+* item.extension[utilizationReview].valueCodeableConcept =  http://acme-health.com/CodeSystem/local-utilization-review#LocUtilizatinoReviewCd
 
-* adjudication.category          = PaidInNetworkIndicatorCodeSystem#paid-in-network
+* adjudication.category          = PaidInNetworkIndicatorCodeSystem#in-network
+* adjudication.reason.coding     = PaidInNetworkIndicatorCodeSystem#in-network
+* adjudication.extension[adjudicationDate].valueDate = 2017-06-30
 
 * payment.date                   = "2017-07-20"
 * payment.type                   = PAYMENT-TYPE#complete
 * payment.amount.value           = 5.00
-* payment.adjustmentReason[0]    = http://acmehealth.com/CodeSystem/local-adjustment-reason#local-adj-reason
+* payment.adjustmentReason[0]    = http://acme-health.com/CodeSystem/local-adjustment-reason#local-adj-reason
 * payment.extension[claimAdjustmentType][0].valueCodeableConcept = WhPayerClaimAdjustmentTypeCodeSystem#1
+* payment.extension[claimAdjustmentType][1].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-adjustment-type#LocalClaimAdjType
+
+* extension[claimStatus].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-status#LocClaimStatus
+* extension[daysToProcess].valueInteger       = 15
