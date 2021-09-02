@@ -17,16 +17,16 @@ Description:    "Sample of a CDM Drug Claim Response"
 
 * identifier[0].use              = #official
 * identifier[0].type             = IdentifierTypeCodeSystem#RXN
-* identifier[0].system           = "http://acmehealth.com/CodeSystem/local-claim-identifier"
+* identifier[0].system           = "http://acme-health.com/CodeSystem/local-claim-identifier"
 * identifier[0].value            = "000000000000000000019721078"
 * identifier[0].assigner.display = "Acme Health - Wellness Center Pharmacy"
 
 * status            = #active
-* extension[claimStatus].valueCodeableConcept = http://acmehealth.com/CodeSystem/local-claim-status#LocClaimSts
+* extension[claimStatus].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-status#LocClaimSts
 * extension[claimReceivedDate].valueDate      = "2017-06-01"
 
 * type.coding[0]    = WhPayerClaimTypeCodeSystem#pharmacy
-* type.coding[1]    = http://acmehealth.com/CodeSystem/local-claim-type#Pharmacy
+* type.coding[1]    = http://acme-health.com/CodeSystem/local-claim-type#Pharmacy
 
 * use      = #claim
 * patient  = Reference(CDMPatientInstance)
@@ -87,7 +87,7 @@ Description:    "Sample of a CDM Drug Claim Response"
 // Mapped to index 18
 * item.adjudication[17].category         = AdjudicationCategoryCodeSystem#penalty
 * item.adjudication[17].amount.value     = 1.00
-* item.adjudication[17].reason.coding[0] = http://acmehealth.com/CodeSystem/local-penalty-type#LocPenaltyType
+* item.adjudication[17].reason.coding[0] = http://acme-health.com/CodeSystem/local-penalty-type#LocPenaltyType
 // Mapped to index 19
 * item.adjudication[18].category     = AdjudicationCategoryCodeSystem#excess_copay
 * item.adjudication[18].amount.value = 0.00
@@ -99,7 +99,7 @@ Description:    "Sample of a CDM Drug Claim Response"
 * item.extension[claimResponseBenefitPlan].valueReference = Reference(CoverageDrugExample)
 
 * item.extension[rxFormularyIndicator].valueString     = "N"
-* item.extension[rxPayTier].valueCodeableConcept       = http://acmehealth.com/CodeSystem/local-rx-pay-tier#Tier1
+* item.extension[rxPayTier].valueCodeableConcept       = http://acme-health.com/CodeSystem/local-rx-pay-tier#Tier1
 * item.extension[rxSupplyIndicator].valueString        = "N"
 * item.extension[usualAndCustomaryAmount].valueDecimal = 0.00
 
@@ -109,7 +109,7 @@ Description:    "Sample of a CDM Drug Claim Response"
 * payment.date                   = "2017-07-20"
 * payment.type                   = PAYMENT-TYPE#complete
 * payment.amount.value           = 5.00
-* payment.adjustmentReason[0]    = http://acmehealth.com/CodeSystem/local-adjustment-reason#local-adj-reason
+* payment.adjustmentReason[0]    = http://acme-health.com/CodeSystem/local-adjustment-reason#local-adj-reason
 * payment.extension[claimAdjustmentType][0].valueCodeableConcept = WhPayerClaimAdjustmentTypeCodeSystem#1
-* payment.extension[claimAdjustmentType][1].valueCodeableConcept = http://acmehealth.com/CodeSystem/local-claim-adjustment-type#LocalClaimAdjType
-* payment.extension[dispositionReason][0].valueCodeableConcept  = http://acmehealth.com/CodeSystem/local-disposition-reason#record-in-error-correct-and-resubmit
+* payment.extension[claimAdjustmentType][1].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-adjustment-type#LocalClaimAdjType
+* payment.extension[dispositionReason][0].valueCodeableConcept  = http://acme-health.com/CodeSystem/local-disposition-reason#record-in-error-correct-and-resubmit
