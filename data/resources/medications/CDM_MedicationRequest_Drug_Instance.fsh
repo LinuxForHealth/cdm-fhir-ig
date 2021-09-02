@@ -8,7 +8,7 @@ Description:    "Sample medication request or order for a drug claim"
 
 * identifier[0].use                = #official
 * identifier[0].type               = IdentifierTypeCodeSystem#RXN
-* identifier[0].system             = "http://acmehealth.com/CodeSystem/local-claim-identifier"
+* identifier[0].system             = "http://acme-health.com/CodeSystem/local-claim-identifier"
 * identifier[0].value              = "00000000000000000001921078"
 * identifier[0].assigner.display   = "Acme Health - Wellness Center Pharmacy"
 

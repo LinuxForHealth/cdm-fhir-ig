@@ -91,7 +91,7 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 * extension[usCoreEthnicity].extension[ombCategory].valueCoding = ETHNICITY#2186-5 "Not Hispanic or Latino"
 * extension[usCoreEthnicity].extension[text].valueString = "Not Hispanic or Latino"
 
-* extension[localRaceCd].valueCodeableConcept = http://acmehealth.com/CodeSystem/local-race-code#White
+* extension[localRaceCd].valueCodeableConcept = http://acme-health.com/CodeSystem/local-race-code#White
 
 * communication[0].language = LANGUAGE#en
 * communication[0].extension[languageRank].valuePositiveInt = 1
@@ -108,8 +108,8 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 * address.country = "US"
 * address.state = "Ohio"
 * address.city = "Townington"
-* address.extension[countyCode].valueCodeableConcept  = http://acmehealth.com/CodeSystem/local-county-code#001
-* address.extension[regionCode].valueCodeableConcept  = http://acmehealth.com/CodeSystem/local-region-code#MW
+* address.extension[countyCode].valueCodeableConcept  = http://acme-health.com/CodeSystem/local-county-code#001
+* address.extension[regionCode].valueCodeableConcept  = http://acme-health.com/CodeSystem/local-region-code#MW
 
 * telecom[0].system = #sms
 * telecom[0].use = #mobile
