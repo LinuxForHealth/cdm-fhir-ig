@@ -145,12 +145,6 @@ Title:          "Service Bill Days Count"
 Description:    "Number of days between the date of service and the date the claim was received"
 * value[x] only unsignedInt
 
-Extension:      SubmissionType
-Id:             submission-type
-Title:          "Submission Type"
-Description:    "Customer-specific code for the type of electronic submission"   
-* value[x] only CodeableConcept
-
 Extension:      WhPayerPcpResponsibilityIndicator
 Id:             wh-payer-pcp-responsibility-indicator
 Title:          "Health Data Connect PCP Responsibility Indicator"

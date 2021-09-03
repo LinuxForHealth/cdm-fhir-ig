@@ -96,12 +96,6 @@ Title:       "Savings Type"
 Description: "Customer-specific code for the type of third party savings"
 * value[x] only string
 
-Extension:   SubmissionType
-Id:          submission-type
-Title:       "Submission Type"
-Description: "Customer-specific code for the type of electronic submission"
-* value[x] only CodeableConcept
-
 Extension:      UsualAndCustomaryAmount
 Id:             usual-and-customary-amount
 Title:          "Usual And Customary Amount"
