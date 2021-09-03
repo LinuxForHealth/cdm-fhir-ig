@@ -25,8 +25,8 @@ Description:    "A provider issued list of professional services and products wh
 * diagnosis.extension[majorDiagnosticCategory]  ^definition      = "The body system or disease related groupings of clinical conditions, based on diagnosis codes"
 
 * procedure.extension contains ProcedureGroup named procedureGroup 0..1
-* procedure.extension[procedureGroup]  ^short           = "Groups assigned to categorize related procedures"
-* procedure.extension[procedureGroup]  ^definition      = "Groups assigned to categorize related procedures"
+* procedure.extension[procedureGroup]  ^short           = "Group assigned to categorize related procedures"
+* procedure.extension[procedureGroup]  ^definition      = "Group assigned to categorize related procedures"
 
 * item.extension contains CapitatedServiceIndicator named capitatedServiceIndicator 0..1
 * item.extension[capitatedServiceIndicator] ^short      = "Indicator that this service (encounter record) was capitated" 
