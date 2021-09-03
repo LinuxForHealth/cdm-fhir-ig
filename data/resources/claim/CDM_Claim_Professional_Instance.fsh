@@ -62,25 +62,26 @@ Description:    "Sample of a CDM Professional Claim"
 
 * subType.coding              = ClaimSubtypeCodeSystem#emergency
 
-* item[0].sequence                                  = 1
-* item[0].productOrService.coding[0]                = CPT#68840
-* item[0].productOrService.coding[1]                = http://acme-health.com/CodeSystem/local-service-type#LocalServiceType
-* item[0].servicedPeriod.start                      = "2017-06-25"
-* item[0].servicedPeriod.end                        = "2017-06-25"
-* item[0].locationCodeableConcept.coding[0]         = CMS-PLACE-OF-SERVICE#11 "Office" 
-* item[0].locationCodeableConcept.coding[1]         = http://acme-health.com/CodeSystem/local-place-of-service#LocalPlcOfService
-* item[0].quantity.value                            = 1.00
-* item[0].quantity.extension[localNumberOfUnitsPerService].valueQuantity.value = 1.00
-* item[0].modifier.coding[0]                        = ProcedureModifierCodeSystem#A1
-* item[0].bodySite.coding[0]                        = ADAToothCodeSystem#1
-* item[0].bodySite.coding[1]                        = ADAToothQuadrantCodeSystem#UR
-* item[0].subSite[0].coding                         = http://acme-health.com/CodeSystem/local-tooth-surface#LocalToothSurface1
-* item[0].subSite[1].coding                         = http://acme-health.com/CodeSystem/local-tooth-surface#LocalToothSurface2
+* item.sequence                                  = 1
+* item.productOrService.coding[0]                = HCPCS#G0438
+* item.productOrService.text                     = "Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit"
+* item.productOrService.coding[1]                = http://acme-health.com/CodeSystem/local-service-type#LocalServiceType
+* item.servicedPeriod.start                      = "2017-06-25"
+* item.servicedPeriod.end                        = "2017-06-25"
+* item.locationCodeableConcept.coding[0]         = CMS-PLACE-OF-SERVICE#11 "Office" 
+* item.locationCodeableConcept.coding[1]         = http://acme-health.com/CodeSystem/local-place-of-service#LocalPlcOfService
+* item.quantity.value                            = 1.00
+* item.quantity.extension[localNumberOfUnitsPerService].valueQuantity.value = 1.00
+* item.modifier.coding[0]                        = ProcedureModifierCodeSystem#A1
+* item.bodySite.coding[0]                        = ADAToothCodeSystem#1
+* item.bodySite.coding[1]                        = ADAToothQuadrantCodeSystem#UR
+* item.subSite[0].coding                         = http://acme-health.com/CodeSystem/local-tooth-surface#LocalToothSurface1
+* item.subSite[1].coding                         = http://acme-health.com/CodeSystem/local-tooth-surface#LocalToothSurface2
 
-* item[0].extension[capitatedServiceIndicator].valueString   = "N"
-* item[0].extension[fullyInsuredIndicator].valueString       = "Y"
-* item[0].extension[nursingHomeIndicator].valueString        = "N"
-* item[0].extension[serviceBillDaysCount].valueUnsignedInt   = 20
+* item.extension[capitatedServiceIndicator].valueString   = "N"
+* item.extension[fullyInsuredIndicator].valueString       = "Y"
+* item.extension[nursingHomeIndicator].valueString        = "N"
+* item.extension[serviceBillDaysCount].valueUnsignedInt   = 20
 
 * supportingInfo[0].sequence             = 1
 * supportingInfo[0].category             = CLAIM-INFORMATION-CATEGORY#info
@@ -108,5 +109,5 @@ Description:    "Sample of a CDM Professional Claim"
 * diagnosis[0].type                      = DIAGNOSIS-TYPE#principal
 
 * diagnosis[1].sequence                  = 2
-* diagnosis[1].diagnosisCodeableConcept  = ICD10#G44.84 "Primary exertional headache"
+* diagnosis[1].diagnosisCodeableConcept  = ICD10#Z00.00 "Encntr for general adult medical exam w/o abnormal findings"
 * diagnosis[1].type                      = DIAGNOSIS-TYPE#discharge
