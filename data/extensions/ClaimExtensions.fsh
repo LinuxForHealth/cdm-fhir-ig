@@ -111,7 +111,7 @@ Description:    "Indicator that the claim was for a nursing home patient"
 Extension:      ProcedureGroup
 Id:             procedure-group
 Title:          "Procedure Group"
-Description:    "Group assigned to categorize related procedures"
+Description:    "Code assigned to categorize related procedures"
 * value[x] only CodeableConcept 
 * valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
 
