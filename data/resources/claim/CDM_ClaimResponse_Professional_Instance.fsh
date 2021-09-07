@@ -130,7 +130,7 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[28].reason.coding.system  = "http://acme-health.com/CodeSystem/local-discount-type"
 * item.adjudication[28].reason.coding.code    = #LocalDiscountType
 * item.adjudication[29].category              = AdjudicationCategoryCodeSystem#out-of-network-access-fee
-* item.adjudication[29].extension[routingNumber].valueString = "12345"
+* item.adjudication[29].extension[ITSroutingNumber].valueString = "12345"
 * item.adjudication[30].category              = AdjudicationCategoryCodeSystem#tax
 * item.adjudication[30].amount.value          = 1.00
 

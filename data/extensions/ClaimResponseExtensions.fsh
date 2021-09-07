@@ -35,9 +35,9 @@ Title:       "Number of Units Allowed"
 Description: "Customer-specific quantity of services or units allowed"
 * value[x] only string
 
-Extension:   RoutingNumber
-Id:          routing-number
-Title:       "Routing Number"
+Extension:   ITSRoutingNumber
+Id:          its-routing-number
+Title:       "ITS Routing Number"
 Description: "Customer-specific code for the ITS routing number" 
 * value[x] only string
 
