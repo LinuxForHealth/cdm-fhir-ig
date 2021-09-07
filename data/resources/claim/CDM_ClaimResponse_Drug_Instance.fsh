@@ -55,43 +55,29 @@ Description:    "Sample of a CDM Drug Claim Response"
 * item.adjudication[7].amount.value  = 0.00
 * item.adjudication[7].reason.coding[0] = REMIT-ADVICE-REMARK-CODE#M50 
 * item.adjudication[7].reason.coding[1] = REMIT-ADVICE-REMARK-CODE#N423 
-
-// QA errors occur if index entries are skipped so resequence in the examples
-// Mapped to index 9
 * item.adjudication[8].category      = AdjudicationCategoryCodeSystem#discount
 * item.adjudication[8].amount.value  = 0.00
-// Mapped to index 10
 * item.adjudication[9].category      = AdjudicationCategoryCodeSystem#ffs-equivalent
 * item.adjudication[9].amount.value  = 0.00
-// Mapped to index 11
 * item.adjudication[10].category      = AdjudicationCategoryCodeSystem#fully-insured-payment
 * item.adjudication[10].amount.value  = 0.00
-// Mapped to index 12
 * item.adjudication[11].category      = AdjudicationCategoryCodeSystem#healthcare-reimbursement
 * item.adjudication[11].amount.value  = 0.00
-// Mapped to index 13
 * item.adjudication[12].category      = AdjudicationCategoryCodeSystem#healthcare-savings-account
 * item.adjudication[12].amount.value  = 0.00
-// Mapped to index 14
 * item.adjudication[13].category     = AdjudicationCategoryCodeSystem#medicare-allowed
 * item.adjudication[13].amount.value = 0.00
-// Mapped to index 15
 * item.adjudication[14].category     = AdjudicationCategoryCodeSystem#medicare-coinsurance
 * item.adjudication[14].amount.value = 0.00
-// Mapped to index 16
 * item.adjudication[15].category     = AdjudicationCategoryCodeSystem#medicare-deductible
 * item.adjudication[15].amount.value = 0.00
-// Mapped to index 17
 * item.adjudication[16].category     = AdjudicationCategoryCodeSystem#patient-liability
 * item.adjudication[16].amount.value = 0.00
-// Mapped to index 18
 * item.adjudication[17].category         = AdjudicationCategoryCodeSystem#penalty
 * item.adjudication[17].amount.value     = 1.00
 * item.adjudication[17].reason.coding[0] = http://acme-health.com/CodeSystem/local-penalty-type#LocPenaltyType
-// Mapped to index 19
 * item.adjudication[18].category     = AdjudicationCategoryCodeSystem#excess_copay
 * item.adjudication[18].amount.value = 0.00
-// Mapped to index 20
 * item.adjudication[19].category     = AdjudicationCategoryCodeSystem#medicare-paid
 * item.adjudication[19].amount.value = 0.00
 

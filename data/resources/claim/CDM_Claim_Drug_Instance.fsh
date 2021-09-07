@@ -56,7 +56,7 @@ Description:    "Sample of a CDM Drug Claim"
 
 * supportingInfo[2].sequence             = 3
 * supportingInfo[2].category             = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[2].code                  = NCPDPDispenseAsWrittenCodeSystem#8 "Generic Not Available"
+* supportingInfo[2].code                 = NCPDPDispenseAsWrittenCodeSystem#8 "Generic Not Available"
 
 * supportingInfo[3].sequence             = 4
 * supportingInfo[3].category             = CLAIM-INFORMATION-CATEGORY#info
@@ -66,26 +66,22 @@ Description:    "Sample of a CDM Drug Claim"
 * supportingInfo[4].sequence             = 5
 * supportingInfo[4].category             = CLAIM-INFORMATION-CATEGORY#info
 * supportingInfo[4].code                 = RxMailOrRetailCodeSystem#r
-* supportingInfo[4].valueQuantity.value  = 4
 
 * supportingInfo[5].sequence              = 6
 * supportingInfo[5].category              = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[5].code[0]               = ClaimSupportingInfoTypeCodeSystem#compound-indicator
-* supportingInfo[5].code.coding[1].system = "http://acme-health.com/CodeSystem/local-compound-code"
-* supportingInfo[5].code.coding[1].display = "Local compound code"
-* supportingInfo[5].code.coding[1].code   = #N
+* supportingInfo[5].code                  = ClaimSupportingInfoTypeCodeSystem#compound-indicator
 * supportingInfo[5].valueString           = "N"
 
 * supportingInfo[6].sequence              = 7
 * supportingInfo[6].category              = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[6].code.coding[0].system = "http://acme-health.com/CodeSystem/local-dispensing-status"
+* supportingInfo[6].code.coding.system    = "http://acme-health.com/CodeSystem/local-dispensing-status"
 * supportingInfo[6].code.coding.display   = "Local dispensing status"
 * supportingInfo[6].code.coding.code      = #LocalDispenseStatus
 * supportingInfo[6].valueString           = "N"
 
 * supportingInfo[7].sequence              = 8
 * supportingInfo[7].category              = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[7].code.coding[0].system = "http://acme-health.com/CodeSystem/local-rx-rebate"
+* supportingInfo[7].code.coding.system    = "http://acme-health.com/CodeSystem/local-rx-rebate"
 * supportingInfo[7].code.coding.display   = "Local RX rebate"
 * supportingInfo[7].code.coding.code      = #LocalRxRebate
 * supportingInfo[7].valueString           = "Generic"
