@@ -56,7 +56,7 @@ Description: "An indicator that the prescription drug is included in the formula
 Extension:   RxPayTier
 Id:          rx-pay-tier
 Title:       "Rx Pay Tier"
-Description: "Payment tier of the prescription drug"
+Description: "Customer-specific code for the payment tier of the drug Claim"
 * value[x] only CodeableConcept
 
 Extension:   RxSupplyIndicator
