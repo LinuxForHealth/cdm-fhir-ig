@@ -23,10 +23,12 @@ Description:    "A provider issued list of professional services and products wh
 * diagnosis.extension contains MajorDiagnosticCategory named majorDiagnosticCategory 0..1
 * diagnosis.extension[majorDiagnosticCategory]  ^short           = "The body system or disease related groupings of clinical conditions, based on diagnosis codes"
 * diagnosis.extension[majorDiagnosticCategory]  ^definition      = "The body system or disease related groupings of clinical conditions, based on diagnosis codes"
+* diagnosis.extension[majorDiagnosticCategory].valueCodeableConcept from WHPayerMajorDiagnosticCategoryValueSet (extensible)
 
 * procedure.extension contains ProcedureGroup named procedureGroup 0..1
 * procedure.extension[procedureGroup]  ^short           = "Code assigned to categorize related procedures"
 * procedure.extension[procedureGroup]  ^definition      = "Code assigned to categorize related procedures"
+* procedure.extension[procedureGroup].valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
 
 * item.extension contains CapitatedServiceIndicator named capitatedServiceIndicator 0..1
 * item.extension[capitatedServiceIndicator] ^short      = "Indicator that this service (encounter record) was capitated" 
