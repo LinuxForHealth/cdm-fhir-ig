@@ -15,12 +15,14 @@ Id:             claim-category
 Title:          "Claim Category"
 Description:    "Standard HIPAA code for the category of the claim status"   
 * value[x] only CodeableConcept
+* valueCodeableConcept from CLAIM-STATUS-CATEGORY (extensible)
 
 Extension:      ClaimItemDetailClassification
 Id:             claim-item-detail-classification
 Title:          "Claim Item Detail Classification"
 Description:    "Classification of the information contained in this claim item detail section"    
 * value[x] only CodeableConcept
+* valueCodeableConcept from ClaimItemDetailClassificationValueSet (extensible)
 
 Extension:      ClaimSnapshotProviderName
 Id:             claim-snapshot-provider-name
@@ -43,7 +45,7 @@ Description:    "Company code of the subscriber as reported on the claim"
 Extension:      CompoundCode
 Id:             compound-code
 Title:          "Compound Code"
-Description:    "Indicator of whether the product is a compound drug or not"    
+Description:    "Customer-specific code for the compound of the drug"    
 * value[x] only CodeableConcept
 
 Extension:      CrossoverIndicator
