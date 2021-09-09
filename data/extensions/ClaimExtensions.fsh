@@ -151,3 +151,16 @@ Id:             wh-payer-pcp-responsibility-indicator
 Title:          "Health Data Connect PCP Responsibility Indicator"
 Description:    "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"
 * value[x] only string
+
+// Extensions that are also used in ClaimResponse
+Extension:      ClaimStatus
+Id:             claim-status
+Title:          "Claim Status"
+Description:    "Code for the status of a claim"   
+* value[x] only CodeableConcept
+
+Extension:      SubmissionType
+Id:             submission-type
+Title:          "Submission Type"
+Description:    "Customer-specific code for the type of electronic submission"   
+* value[x] only CodeableConcept

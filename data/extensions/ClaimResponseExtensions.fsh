@@ -107,3 +107,7 @@ Id:          utilization-review
 Title:       "Utilization Review"
 Description: "Customer-specific code for the type of utilization review"
 * value[x] only CodeableConcept
+
+// Extensions used in ClaimResponse, but defined in ClaimExtensions.fsh
+// Extension:      ClaimStatus
+// Extension:      SubmissionType
