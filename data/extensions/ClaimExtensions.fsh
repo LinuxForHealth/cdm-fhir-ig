@@ -10,6 +10,12 @@ Title:          "Capitated Service Indicator"
 Description:    "Indicator that this service (encounter record) was capitated"
 * value[x] only string
 
+Extension:      ClaimCategory
+Id:             claim-category
+Title:          "Claim Category"
+Description:    "Standard HIPAA code for the category of the claim status"   
+* value[x] only CodeableConcept
+
 Extension:      ClaimItemDetailClassification
 Id:             claim-item-detail-classification
 Title:          "Claim Item Detail Classification"
@@ -69,13 +75,6 @@ Id:             fully-insured-indicator
 Title:          "Fully Insured Indicator"
 Description:    "Indicator that the claim was for a fully insured plan"
 * value[x] only string
-
-Extension:      ClaimCategory
-Id:             claim-category
-Title:          "Claim Category"
-Description:    "Standard HIPAA code for the category of the claim status"   
-* value[x] only CodeableConcept
-* valueCodeableConcept from CLAIM-STATUS-CATEGORY (extensible)
 
 Extension:      LastClaimIndicator
 Id:             last-claim-indicator
