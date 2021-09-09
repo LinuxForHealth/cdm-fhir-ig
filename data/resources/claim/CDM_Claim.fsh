@@ -83,6 +83,7 @@ Description:    "A provider issued list of professional services and products wh
 * extension contains ClaimCategory named claimCategory 0..1
 * extension[claimCategory] ^short      = "Standard HIPAA code for the category of the claim status" 
 * extension[claimCategory] ^definition = "Standard HIPAA code for the category of the claim status" 
+* extension[claimCategory].valueCodeableConcept from CLAIM-STATUS-CATEGORY (extensible)
 
 * extension contains ClaimStatus named claimStatus 0..1 
 * extension[claimStatus] ^short      = "Standard HIPAA code for the status of an entire claim"
