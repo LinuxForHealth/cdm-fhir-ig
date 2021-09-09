@@ -50,26 +50,34 @@ Description:    "Sample of a CDM Professional Claim Response"
 
 * item.itemSequence = 1
 * item.adjudication[0].category            = AdjudicationCategoryCodeSystem#coinsurance
+* item.adjudication[0].amount.currency     = CURRENCY#USD
 * item.adjudication[0].amount.value        = 0.00
 * item.adjudication[1].category            = AdjudicationCategoryCodeSystem#copay
+* item.adjudication[1].amount.currency     = CURRENCY#USD
 * item.adjudication[1].amount.value        = 25.00
 * item.adjudication[2].category            = AdjudicationCategoryCodeSystem#deductible
+* item.adjudication[2].amount.currency     = CURRENCY#USD
 * item.adjudication[2].amount.value        = 0.00
 * item.adjudication[3].category            = AdjudicationCategoryCodeSystem#summary
 * item.adjudication[3].reason.coding[0]    = http://acme-health.com/CodeSystem/local-explanation-of-benefits#LocalEOB1
 * item.adjudication[4].category            = AdjudicationCategoryCodeSystem#third-party
+* item.adjudication[4].amount.currency     = CURRENCY#USD
 * item.adjudication[4].amount.value        = 0.00
 * item.adjudication[4].extension[savingsType].valueString = "Savings Type 1"
 * item.adjudication[5].category            = AdjudicationCategoryCodeSystem#allowed
+* item.adjudication[5].amount.currency     = CURRENCY#USD
 * item.adjudication[5].amount.value        = 125.00
 * item.adjudication[6].category            = AdjudicationCategoryCodeSystem#submitted
+* item.adjudication[6].amount.currency     = CURRENCY#USD
 * item.adjudication[6].amount.value        = 165.00
 * item.adjudication[7].category            = AdjudicationCategoryCodeSystem#net-payment
+* item.adjudication[7].amount.currency     = CURRENCY#USD
 * item.adjudication[7].amount.value        = 100.00
 * item.adjudication[7].reason.coding[0]    = REMIT-ADVICE-REMARK-CODE#M2
 * item.adjudication[7].reason.coding[1]    = REMIT-ADVICE-REMARK-CODE#N16
 * item.adjudication[7].reason.coding[2]    = http://acme-health.com/CodeSystem/local-explanation-of-benefits#LocalEOB2
 * item.adjudication[8].category            = AdjudicationCategoryCodeSystem#discount
+* item.adjudication[8].amount.currency     = CURRENCY#USD
 * item.adjudication[8].amount.value        = 40.00
 * item.adjudication[9].category            = AdjudicationCategoryCodeSystem#ffs-equivalent
 * item.adjudication[9].amount.currency     = CURRENCY#USD
@@ -96,8 +104,9 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[16].amount.currency    = CURRENCY#USD
 * item.adjudication[16].amount.value       = 0.00
 * item.adjudication[17].category           = AdjudicationCategoryCodeSystem#penalty
-* item.adjudication[17].reason.coding[0]   = http://acme-health.com/CodeSystem/local-excluded-reason#LocPenaltyType
+* item.adjudication[17].reason.coding[0]   = http://acme-health.com/CodeSystem/local-penalty-type#LocPenaltyType
 * item.adjudication[18].category           = AdjudicationCategoryCodeSystem#withhold
+* item.adjudication[18].amount.currency     = CURRENCY#USD
 * item.adjudication[18].amount.value       = 0.00
 * item.adjudication[19].category           = AdjudicationCategoryCodeSystem#medicare-paid
 * item.adjudication[19].amount.currency    = CURRENCY#USD
@@ -132,6 +141,7 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[29].category              = AdjudicationCategoryCodeSystem#out-of-network-access-fee
 * item.adjudication[29].extension[ITSroutingNumber].valueString = "12345"
 * item.adjudication[30].category              = AdjudicationCategoryCodeSystem#tax
+* item.adjudication[30].amount.currency     = CURRENCY#USD
 * item.adjudication[30].amount.value          = 1.00
 
 * item.extension[copayExclusion].valueCodeableConcept    = http://acme-health.com/CodeSystem/local-copay-exclusion#LocCopayExclusion
