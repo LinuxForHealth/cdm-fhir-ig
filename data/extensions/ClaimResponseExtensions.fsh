@@ -33,11 +33,11 @@ Extension:   NumberOfUnitsAllowed
 Id:          number-of-units-allowed
 Title:       "Number of Units Allowed"
 Description: "Customer-specific quantity of services or units allowed"
-* value[x] only string
+* value[x] only integer
 
-Extension:   ITSRoutingNumber
-Id:          its-routing-number
-Title:       "ITS Routing Number"
+Extension:   RoutingNumberCode
+Id:          routing-number-code
+Title:       "Routing Number Code"
 Description: "Customer-specific code for the ITS routing number" 
 * value[x] only string
 
@@ -94,7 +94,7 @@ Extension:   SavingsType
 Id:          savings-type
 Title:       "Savings Type"
 Description: "Customer-specific code for the type of third party savings"
-* value[x] only string
+* value[x] only CodeableConcept
 
 Extension:      UsualAndCustomaryAmount
 Id:             usual-and-customary-amount

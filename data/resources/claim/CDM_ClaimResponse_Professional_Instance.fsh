@@ -63,7 +63,7 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[4].category            = AdjudicationCategoryCodeSystem#third-party
 * item.adjudication[4].amount.currency     = CURRENCY#USD
 * item.adjudication[4].amount.value        = 0.00
-* item.adjudication[4].extension[savingsType].valueString = "Savings Type 1"
+* item.adjudication[4].extension[savingsType].valueCodeableConcept = http://acme-health.com/CodeSystem/local-savings-type#LocalSavingsType
 * item.adjudication[5].category            = AdjudicationCategoryCodeSystem#allowed
 * item.adjudication[5].amount.currency     = CURRENCY#USD
 * item.adjudication[5].amount.value        = 125.00
@@ -139,13 +139,13 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[28].reason.coding.system  = "http://acme-health.com/CodeSystem/local-discount-type"
 * item.adjudication[28].reason.coding.code    = #LocalDiscountType
 * item.adjudication[29].category              = AdjudicationCategoryCodeSystem#out-of-network-access-fee
-* item.adjudication[29].extension[ITSroutingNumber].valueString = "12345"
+* item.adjudication[29].extension[routingNumberCode].valueString = "12345"
 * item.adjudication[30].category              = AdjudicationCategoryCodeSystem#tax
 * item.adjudication[30].amount.currency     = CURRENCY#USD
 * item.adjudication[30].amount.value          = 1.00
 
 * item.extension[copayExclusion].valueCodeableConcept    = http://acme-health.com/CodeSystem/local-copay-exclusion#LocCopayExclusion
-* item.extension[numberOfUnitsAllowed].valueString       = "2 units"
+* item.extension[numberOfUnitsAllowed].valueInteger      = 2
 * item.extension[reinsuranceMetIndicator].valueString    = "Y"
 * item.extension[utilizationReview].valueCodeableConcept =  http://acme-health.com/CodeSystem/local-utilization-review#LocUtilizatinoReviewCd
 

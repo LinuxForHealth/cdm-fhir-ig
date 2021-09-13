@@ -17,9 +17,9 @@ Description:     "This resource provides the adjudication details from the proce
 * adjudication.extension[adjudicationDate] ^short      = "Date on which the payment status of the claim was adjudicated"
 * adjudication.extension[adjudicationDate] ^definition = "Date on which the payment status of the claim was adjudicated"
 
-* item.adjudication.extension contains ITSRoutingNumber named ITSroutingNumber 0..1
-* item.adjudication.extension[ITSroutingNumber] ^short      = "Customer-specific code for the ITS routing number" 
-* item.adjudication.extension[ITSroutingNumber] ^definition = "Customer-specific code for the ITS routing number" 
+* item.adjudication.extension contains RoutingNumberCode named routingNumberCode 0..1
+* item.adjudication.extension[routingNumberCode] ^short      = "Customer-specific code for the ITS routing number" 
+* item.adjudication.extension[routingNumberCode] ^definition = "Customer-specific code for the ITS routing number" 
 
 * item.adjudication.extension contains SavingsType named savingsType 0..1
 * item.adjudication.extension[savingsType] ^short      = "Customer-specific code for the type of third party savings" 
