@@ -14,6 +14,7 @@ Description:    "A provider issued list of professional services and products wh
 * identifier.type  from IdentifierTypeValueSet (extensible) 
 
 * type                    from ClaimTypeValueSet (extensible)
+* subType                 from WhClaimSubtypeValueSet (extensible)
 * supportingInfo.category from ClaimSupportingInfoCategoryValueSet (extensible)
 * supportingInfo.code     from ClaimSupportingInfoTypeValueSet (extensible)
 
