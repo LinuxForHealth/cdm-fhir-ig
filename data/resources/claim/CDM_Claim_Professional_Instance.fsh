@@ -60,7 +60,7 @@ Description:    "Sample of a CDM Professional Claim"
 * accident.type.coding        = WhPayerIndicatorsCodeSystem#N
 * accident.date               = "2017-06-25"
 
-* subType.coding              = ClaimSubtypeCodeSystem#emergency
+* subType.coding              = WhClaimSubtypeCodeSystem#emergency
 
 * item.sequence                                  = 1
 * item.productOrService.coding[0]                = HCPCS#G0438
