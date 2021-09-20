@@ -54,8 +54,8 @@ Description:    "Sample of a CDM Professional Claim"
 * insurance.identifier.system = "http://acme-health.com/INSABC"
 * insurance.identifier.value  = "PPOB"
 * insurance.coverage          = Reference(PrimaryPayerExample)
-* insurance[0].extension[crossoverIndicator].valueString          = "N"
-* insurance[0].extension[priorAuthorizationIndicator].valueString = "Y"
+* insurance.extension[crossoverIndicator].valueString          = "N"
+* insurance.extension[priorAuthorizationIndicator].valueString = "Y"
 
 * accident.type.coding        = WhPayerIndicatorsCodeSystem#N
 * accident.date               = "2017-06-25"
@@ -72,7 +72,7 @@ Description:    "Sample of a CDM Professional Claim"
 * item.locationCodeableConcept.coding[1]         = http://acme-health.com/CodeSystem/local-place-of-service#LocalPlcOfService
 * item.quantity.value                            = 1.00
 * item.quantity.extension[localNumberOfUnitsPerService].valueQuantity.value = 1.00
-* item.modifier.coding[0]                        = ProcedureModifierCodeSystem#A1
+* item.modifier.coding                           = ProcedureModifierCodeSystem#A1
 * item.bodySite.coding[0]                        = ADAToothCodeSystem#1
 * item.bodySite.coding[1]                        = ADAToothQuadrantCodeSystem#UR
 * item.subSite[0].coding                         = http://acme-health.com/CodeSystem/local-tooth-surface#LocalToothSurface1
@@ -83,23 +83,23 @@ Description:    "Sample of a CDM Professional Claim"
 * item.extension[nursingHomeIndicator].valueString        = "N"
 * item.extension[serviceBillDaysCount].valueUnsignedInt   = 20
 
-* supportingInfo[0].sequence             = 1
-* supportingInfo[0].category             = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[0].code                 = ClaimSupportingInfoTypeCodeSystem#network-provider-indicator
-* supportingInfo[0].valueString          = "Y"
+* supportingInfo.sequence             = 1
+* supportingInfo.category             = CLAIM-INFORMATION-CATEGORY#info
+* supportingInfo.code                 = ClaimSupportingInfoTypeCodeSystem#network-provider-indicator
+* supportingInfo.valueString          = "Y"
 
 * extension[aggregateClaimIndicator].valueString           = "N"
 * extension[claimSnapshotProviderName].valueString         = "Dr Smith"
 * extension[claimSnapshotProviderZipCode].valueString      = "79912"
-* extension[employeeBusinessUnit].valueCodeableConcept     = http://acme-health.com/CodeSystem/local-employee-business-unit#EmpBusUnit1
-* extension[employer].valueCodeableConcept                 = http://acme-health.com/CodeSystem/local-employer-code#EmployerCode1
-* extension[financialSystem].valueCodeableConcept          = http://acme-health.com/CodeSystem/local-financial-system#FinanceSys1
+* extension[employeeBusinessUnit].valueCodeableConcept     = http://acme-health.com/CodeSystem/local-employee-business-unit#EmpBusUnit
+* extension[employer].valueCodeableConcept                 = http://acme-health.com/CodeSystem/local-employer-code#EmployerCode
+* extension[financialSystem].valueCodeableConcept          = http://acme-health.com/CodeSystem/local-financial-system#FinanceSys
 * extension[claimCategory].valueCodeableConcept            = CLAIM-STATUS-CATEGORY#F1
 * extension[claimStatus].valueCodeableConcept              = CLAIM-STATUS#F1
 * extension[lastClaimIndicator].valueString                = "Y"
-* extension[participatingPlan].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-participating-plan#LocParticipatingPlan
+* extension[participatingPlan].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-participating-plan#LocalParticipatingPlan
 * extension[referralIndicator].valueString                 = "N"
-* extension[submissionType].valueCodeableConcept           = http://acme-health.com/CodeSystem/local-submission-type#SubmitType1
+* extension[submissionType].valueCodeableConcept           = http://acme-health.com/CodeSystem/local-submission-type#SubmitType
 * extension[whPayerPcpResponsibilityIndicator].valueString = "Y"
 
 * referral = Reference(CDMServiceRequestInstance)

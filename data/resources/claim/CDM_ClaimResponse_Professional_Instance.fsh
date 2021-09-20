@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "CDM Claim Response - Professional Example"
 Description:    "Sample of a CDM Professional Claim Response"
 
-* meta.source = "http://acme-health.com/WellnessMedicalCenter"
+* meta.source  = "http://acme-health.com/WellnessMedicalCenter"
 * meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-response"
 
 * meta.extension[tenantId].valueString         = "tenant7209"
@@ -59,7 +59,7 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[2].amount.currency     = CURRENCY#USD
 * item.adjudication[2].amount.value        = 0.00
 * item.adjudication[3].category            = AdjudicationCategoryCodeSystem#summary
-* item.adjudication[3].reason.coding[0]    = http://acme-health.com/CodeSystem/local-explanation-of-benefits#LocalEOB1
+* item.adjudication[3].reason.coding       = http://acme-health.com/CodeSystem/local-explanation-of-benefits#LocalEOB
 * item.adjudication[4].category            = AdjudicationCategoryCodeSystem#third-party
 * item.adjudication[4].amount.currency     = CURRENCY#USD
 * item.adjudication[4].amount.value        = 0.00
@@ -75,7 +75,7 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[7].amount.value        = 100.00
 * item.adjudication[7].reason.coding[0]    = REMIT-ADVICE-REMARK-CODE#M2
 * item.adjudication[7].reason.coding[1]    = REMIT-ADVICE-REMARK-CODE#N16
-* item.adjudication[7].reason.coding[2]    = http://acme-health.com/CodeSystem/local-explanation-of-benefits#LocalEOB2
+* item.adjudication[7].reason.coding[2]    = http://acme-health.com/CodeSystem/local-explanation-of-benefits#LocalEOB
 * item.adjudication[8].category            = AdjudicationCategoryCodeSystem#discount
 * item.adjudication[8].amount.currency     = CURRENCY#USD
 * item.adjudication[8].amount.value        = 40.00
@@ -104,9 +104,9 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[16].amount.currency    = CURRENCY#USD
 * item.adjudication[16].amount.value       = 0.00
 * item.adjudication[17].category           = AdjudicationCategoryCodeSystem#penalty
-* item.adjudication[17].reason.coding[0]   = http://acme-health.com/CodeSystem/local-penalty-type#LocPenaltyType
+* item.adjudication[17].reason.coding      = http://acme-health.com/CodeSystem/local-penalty-type#LocalPenaltyType
 * item.adjudication[18].category           = AdjudicationCategoryCodeSystem#withhold
-* item.adjudication[18].amount.currency     = CURRENCY#USD
+* item.adjudication[18].amount.currency    = CURRENCY#USD
 * item.adjudication[18].amount.value       = 0.00
 * item.adjudication[19].category           = AdjudicationCategoryCodeSystem#medicare-paid
 * item.adjudication[19].amount.currency    = CURRENCY#USD
@@ -126,13 +126,13 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[24].category              = AdjudicationCategoryCodeSystem#out-of-network-surcharge-fee
 * item.adjudication[24].amount.currency       = CURRENCY#USD
 * item.adjudication[24].amount.value          = 0.0
-* item.adjudication[25].category              = AdjudicationCategoryCodeSystem#excluded1
+* item.adjudication[25].category              = AdjudicationCategoryCodeSystem#excluded-reason
 * item.adjudication[25].reason.coding.system  = "http://acme-health.com/CodeSystem/local-excluded-reason"
 * item.adjudication[25].reason.coding.code    = #LocalExcludedReason1
-* item.adjudication[26].category              = AdjudicationCategoryCodeSystem#excluded2
+* item.adjudication[26].category              = AdjudicationCategoryCodeSystem#excluded-reason
 * item.adjudication[26].reason.coding.system  = "http://acme-health.com/CodeSystem/local-excluded-reason"
 * item.adjudication[26].reason.coding.code    = #LocalExcludedReason2
-* item.adjudication[27].category              = AdjudicationCategoryCodeSystem#excluded3
+* item.adjudication[27].category              = AdjudicationCategoryCodeSystem#excluded-reason
 * item.adjudication[27].reason.coding.system  = "http://acme-health.com/CodeSystem/local-excluded-reason"
 * item.adjudication[27].reason.coding.code    = #LocalExcludedReason3
 * item.adjudication[28].category              = AdjudicationCategoryCodeSystem#discount
@@ -141,13 +141,13 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[29].category              = AdjudicationCategoryCodeSystem#out-of-network-access-fee
 * item.adjudication[29].extension[routingNumberCode].valueString = "12345"
 * item.adjudication[30].category              = AdjudicationCategoryCodeSystem#tax
-* item.adjudication[30].amount.currency     = CURRENCY#USD
+* item.adjudication[30].amount.currency       = CURRENCY#USD
 * item.adjudication[30].amount.value          = 1.00
 
-* item.extension[copayExclusion].valueCodeableConcept    = http://acme-health.com/CodeSystem/local-copay-exclusion#LocCopayExclusion
+* item.extension[copayExclusion].valueCodeableConcept    = http://acme-health.com/CodeSystem/local-copay-exclusion#LocalCopayExclusion
 * item.extension[numberOfUnitsAllowed].valueInteger      = 2
 * item.extension[reinsuranceMetIndicator].valueString    = "Y"
-* item.extension[utilizationReview].valueCodeableConcept =  http://acme-health.com/CodeSystem/local-utilization-review#LocUtilizatinoReviewCd
+* item.extension[utilizationReview].valueCodeableConcept =  http://acme-health.com/CodeSystem/local-utilization-review#LocalUtilizationReviewCd
 
 * adjudication.category          = PaidInNetworkIndicatorCodeSystem#in-network
 * adjudication.reason.coding     = PaidInNetworkIndicatorCodeSystem#in-network
@@ -160,6 +160,6 @@ Description:    "Sample of a CDM Professional Claim Response"
 * payment.extension[claimAdjustmentType][0].valueCodeableConcept = WhPayerClaimAdjustmentTypeCodeSystem#1
 * payment.extension[claimAdjustmentType][1].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-adjustment-type#LocalClaimAdjType
 
-* extension[claimStatus].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-status#LocClaimStatus
+* extension[claimStatus].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-status#LocalClaimStatus
 * extension[daysToProcess].valueInteger       = 15
 
