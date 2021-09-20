@@ -1,4 +1,3 @@
-Alias: YES-NO  = http://terminology.hl7.org/CodeSystem/v2-0532
 Alias: ID-TYPE = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: RESOURCE-TYPE = 	http://hl7.org/fhir/resource-types
 

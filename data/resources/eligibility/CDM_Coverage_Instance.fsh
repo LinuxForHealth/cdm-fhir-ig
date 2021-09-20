@@ -28,25 +28,25 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[enrollmentPcp].valueString     = "EnrollmentPCP1"
 
 * extension[employeeStatus].valueCodeableConcept         = WhPayerEmployeeStatusCodeSystem#1
-* extension[employeeBusinessUnit].valueCodeableConcept   = http://acmehealth.com/CodeSystem/local-employee-business-unit#EmpBusUnit1
-* extension[jobClassCode].valueCodeableConcept           = http://acmehealth.com/CodeSystem/local-job-class-code#jobclass1 
+* extension[employeeBusinessUnit].valueCodeableConcept   = http://acme-health.com/CodeSystem/local-employee-business-unit#EmpBusUnit1
+* extension[jobClassCode].valueCodeableConcept           = http://acme-health.com/CodeSystem/local-job-class-code#jobclass1 
 * extension[salaryIndicator].valueString                 = "Y"
 * extension[unionWorkerIndicator].valueString            = "N"
 * extension[medicareIndicator].valueString               = "N"
 
-* class[0].type.coding  = http://acmehealth.com/CodeSystem/local-coverage-class#tier
+* class[0].type.coding  = http://acme-health.com/CodeSystem/local-coverage-class#tier
 * class[0].value        = "F"
 
 // Class indexes 1,2,3 are placeholders to prevent QA errors. 
 // Will re-evaluate for Professional and Facility claims
-* class[1].type.coding  = http://acmehealth.com/CodeSystem/local-coverage-class#tier
+* class[1].type.coding  = http://acme-health.com/CodeSystem/local-coverage-class#tier
 * class[1].value        = "F"
-* class[2].type.coding  = http://acmehealth.com/CodeSystem/local-coverage-class#tier
+* class[2].type.coding  = http://acme-health.com/CodeSystem/local-coverage-class#tier
 * class[2].value        = "F"
-* class[3].type.coding  = http://acmehealth.com/CodeSystem/local-coverage-class#tier
+* class[3].type.coding  = http://acme-health.com/CodeSystem/local-coverage-class#tier
 * class[3].value        = "F"
 
-* class[4].type.coding = http://acmehealth.com/CodeSystem/local-coverage-class#group
+* class[4].type.coding = http://acme-health.com/CodeSystem/local-coverage-class#group
 * class[4].value       = "Group1"
 
 * relationship.coding[0] = SUBSCRIBER-RELATIONSHIP#self

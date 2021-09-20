@@ -1,5 +1,5 @@
 Instance:       CDMClaimFacilityInstance
-InstanceOf:     CDMClaimFacility
+InstanceOf:     CDMClaim
 Usage:          #example
 Title:          "CDM Claim - Facility Example"
 Description:    "Sample of a CDM Facility Claim"
@@ -17,7 +17,7 @@ Description:    "Sample of a CDM Facility Claim"
 
 * identifier[0].use                = #official
 * identifier[0].type               = IdentifierTypeCodeSystem#SSRI
-* identifier[0].system             = "http://acmehealth.com/CodeSystem/local-claim-identifier"
+* identifier[0].system             = "http://acme-health.com/CodeSystem/local-claim-identifier"
 * identifier[0].value              = "000000000000000000019721078"
 * identifier[0].assigner.display   = "Acme Health - Wellness Medical Facility"
 
@@ -25,7 +25,7 @@ Description:    "Sample of a CDM Facility Claim"
 * status   = #active
 
 * type.coding[0]          = WhPayerClaimTypeCodeSystem#medical
-* type.coding[1].system   = "http://acmehealth.com/CodeSystem/local-claim-type"
+* type.coding[1].system   = "http://acme-health.com/CodeSystem/local-claim-type"
 * type.coding[1].code     = #Medical
 
 * use      = #claim

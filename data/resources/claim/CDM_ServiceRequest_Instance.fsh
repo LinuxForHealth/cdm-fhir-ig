@@ -21,10 +21,9 @@ Description:    "Sample of a CDM Service Request"
 * identifier[0].value              = "000000000000000000019721078"
 * identifier[0].assigner.display   = "Acme Health - Wellness Medical Center"
 
-
-* status   = #on-hold
-* intent   = #proposal
+* status   = #completed
+* intent   = #order
 * subject  = Reference(CDMPatientInstance)
 
-* category.coding.system = "http://ibm.com/fhir/cdm/CodeSystem/local-referral-type"
+* category.coding.system = "http://acme-health.com/CodeSystem/local-referral-type"
 * category.coding.code   = #localreferraltype

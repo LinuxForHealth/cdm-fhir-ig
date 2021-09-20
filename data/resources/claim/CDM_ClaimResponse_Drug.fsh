@@ -13,8 +13,8 @@ Description:    "This resource provides the adjudication details from the proces
 * item.extension[rxFormularyIndicator] ^definition = "An indicator that the prescription drug is included in the formulary"
 
 * item.extension contains RxPayTier named rxPayTier 0..1
-* item.extension[rxPayTier] ^short      = "Payment tier of the prescription drug"
-* item.extension[rxPayTier] ^definition = "Payment tier of the prescription drug"
+* item.extension[rxPayTier] ^short      = "Customer-specific code for the payment tier of the drug Claim"
+* item.extension[rxPayTier] ^definition = "Customer-specific code for the payment tier of the drug Claim"
 
 * item.extension contains RxSupplyIndicator named rxSupplyIndicator 0..1
 * item.extension[rxSupplyIndicator] ^short      = "An indicator of whether or not the drug claim is a medical supply (Y) or a drug (N)"

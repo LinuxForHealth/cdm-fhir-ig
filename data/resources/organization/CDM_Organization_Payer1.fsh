@@ -15,7 +15,7 @@ Description:    "Sample CDM Organization representing a payer"
 * name = "Payer 1"
 * active = true
 * type.coding[0] = ORGANIZATION-TYPE#pay
-* type.coding[1] = http://acme-health.com/CodeSystem/local-provider-type-claim#LocPayerType
+* type.coding[1] = http://acme-health.com/CodeSystem/local-provider-type#LocPayerType
 
 * address.use = #work
 * address.type = #physical

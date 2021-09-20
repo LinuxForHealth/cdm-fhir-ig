@@ -10,11 +10,19 @@ Title:          "Capitated Service Indicator"
 Description:    "Indicator that this service (encounter record) was capitated"
 * value[x] only string
 
+Extension:      ClaimCategory
+Id:             claim-category
+Title:          "Claim Category"
+Description:    "Standard HIPAA code for the category of the claim status"   
+* value[x] only CodeableConcept
+* valueCodeableConcept from CLAIM-STATUS-CATEGORY (extensible)
+
 Extension:      ClaimItemDetailClassification
 Id:             claim-item-detail-classification
 Title:          "Claim Item Detail Classification"
 Description:    "Classification of the information contained in this claim item detail section"    
 * value[x] only CodeableConcept
+* valueCodeableConcept from ClaimItemDetailClassificationValueSet (extensible)
 
 Extension:      ClaimSnapshotProviderName
 Id:             claim-snapshot-provider-name
@@ -28,10 +36,16 @@ Title:          "Claim Snapshot Provider Zip Code"
 Description:    "Original provider postal code, as reported on the claim"
 * value[x] only string
 
+Extension:      CompanyCode
+Id:             company-code
+Title:          "Company Code"
+Description:    "Company code of the subscriber as reported on the claim"    
+* value[x] only CodeableConcept
+
 Extension:      CompoundCode
 Id:             compound-code
 Title:          "Compound Code"
-Description:    "Indicator of whether the product is a compound drug or not"    
+Description:    "Customer-specific code for the compound of the drug"    
 * value[x] only CodeableConcept
 
 Extension:      CrossoverIndicator
@@ -63,20 +77,6 @@ Id:             fully-insured-indicator
 Title:          "Fully Insured Indicator"
 Description:    "Indicator that the claim was for a fully insured plan"
 * value[x] only string
-
-Extension:      ClaimCategory
-Id:             claim-category
-Title:          "Claim Category"
-Description:    "Standard HIPAA code for the category of the claim status"   
-* value[x] only CodeableConcept
-* valueCodeableConcept from CLAIM-STATUS-CATEGORY (extensible)
-
-Extension:      ClaimStatus
-Id:             claim-status
-Title:          "Claim Status"
-Description:    "Standard HIPAA code for the status of an entire claim"   
-* value[x] only CodeableConcept
-* valueCodeableConcept from CLAIM-STATUS (extensible)
 
 Extension:      LastClaimIndicator
 Id:             last-claim-indicator
@@ -112,9 +112,21 @@ Description:    "Indicator that the claim was for a nursing home patient"
 Extension:      ProcedureGroup
 Id:             procedure-group
 Title:          "Procedure Group"
-Description:    "Groups assigned to categorize related procedures"
+Description:    "Code assigned to categorize related procedures"
 * value[x] only CodeableConcept 
 * valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
+
+Extension:      ParticipatingPlan
+Id:             participating-plan
+Title:          "Participating Plan"
+Description:    "Customer-specific code for the participating plan"   
+* value[x] only CodeableConcept
+
+Extension:      PriorAuthorizationIndicator
+Id:             prior-authorization-indicator
+Title:          "Prior Authorization Indicator"
+Description:    "Indicator of prior authorization for the claim"
+* value[x] only string
 
 Extension:      ReferralIndicator
 Id:             referral-indicator
@@ -128,14 +140,27 @@ Title:          "RX Count"
 Description:    "Count of prescriptions for the drug claim"
 * value[x] only unsignedInt
 
-Extension:      SubmissionType
-Id:             submission-type
-Title:          "Submission Type"
-Description:    "Customer-specific code for the type of electronic submission"   
-* value[x] only CodeableConcept
+Extension:      ServiceBillDaysCount
+Id:             service-bill-days-count
+Title:          "Service Bill Days Count"
+Description:    "Number of days between the date of service and the date the claim was received"
+* value[x] only unsignedInt
 
 Extension:      WhPayerPcpResponsibilityIndicator
 Id:             wh-payer-pcp-responsibility-indicator
 Title:          "Health Data Connect PCP Responsibility Indicator"
 Description:    "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"
 * value[x] only string
+
+// Extensions that are also used in ClaimResponse
+Extension:      ClaimStatus
+Id:             claim-status
+Title:          "Claim Status"
+Description:    "Code for the status of a claim"   
+* value[x] only CodeableConcept
+
+Extension:      SubmissionType
+Id:             submission-type
+Title:          "Submission Type"
+Description:    "Customer-specific code for the type of electronic submission"   
+* value[x] only CodeableConcept
