@@ -2,7 +2,7 @@ Profile:        CDMExplanationOfBenefit
 Parent:         ExplanationOfBenefit
 Id:             cdm-explanation-of-benefit
 Title:          "CDM Explanation of Benefit"
-Description:    "This resource provides the list of professional services and products sent to an insurer for reimbursement along with the corresponding adjudication details. The CDMExplanationOfBenefit profile extends the base FHIR Claim resource with additional details."
+Description:    "This resource provides: the claim details; adjudication details from the processing of a Claim; and optionally account balance information, for informing the subscriber of the benefits provided. The CDMExplanationOfBenefit profile extends the base FHIR ExplanationOfBenefit resource with additional details."
 
 * contained 0..0
 * meta only ProcessMeta
@@ -15,21 +15,24 @@ Description:    "This resource provides the list of professional services and pr
 * identifier.type  from IdentifierTypeValueSet (extensible) 
 
 * type                    from ClaimTypeValueSet (extensible)
+* subType                 from WhClaimSubtypeValueSet (extensible)
 * supportingInfo.category from ClaimSupportingInfoCategoryValueSet (extensible)
 * supportingInfo.code     from ClaimSupportingInfoTypeValueSet (extensible)
 
 * careTeam.role           from ClaimCareTeamRoleValueSet (extensible)
 * careTeam.provider       only Reference(Practitioner or PractitionerRole or Organization)
 //Business rule to ensure the correct position of a provider on claim item against the CareTeam sequence
-* careTeam.sequence obeys explanationofbenefit-careteam-sequence-check
+* careTeam.sequence obeys explanation-of-benefit-careteam-sequence-check
 
 * diagnosis.extension contains MajorDiagnosticCategory named majorDiagnosticCategory 0..1
 * diagnosis.extension[majorDiagnosticCategory]  ^short      = "Body system or disease related groupings of clinical conditions, based on diagnosis codes"
 * diagnosis.extension[majorDiagnosticCategory]  ^definition = "Body system or disease related groupings of clinical conditions, based on diagnosis codes"
+* diagnosis.extension[majorDiagnosticCategory].valueCodeableConcept from WHPayerMajorDiagnosticCategoryValueSet (extensible)
 
 * procedure.extension contains ProcedureGroup named procedureGroup 0..1
-* procedure.extension[procedureGroup]  ^short       = "Groups assigned to categorize related procedures"
-* procedure.extension[procedureGroup]  ^definition  = "Groups assigned to categorize related procedures"
+* procedure.extension[procedureGroup]  ^short       = "Code assigned to categorize related procedures"
+* procedure.extension[procedureGroup]  ^definition  = "Code assigned to categorize related procedures"
+* procedure.extension[procedureGroup].valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
 
 //  .item section
 * item.adjudication.category from AdjudicationCategoryValueSet (example)
@@ -42,28 +45,24 @@ Description:    "This resource provides the list of professional services and pr
 * item.extension[claimResponseBenefitPlan] ^short      = "The benefit plan that covers the service rendered"
 * item.extension[claimResponseBenefitPlan] ^definition = "The benefit plan that covers the service rendered"
 
-* item.extension contains ClaimResponseItemStatus named claimResponseItemStatus 0..1
-* item.extension[claimResponseItemStatus].valueCodeableConcept from WHPayerClaimStatusValueSet (extensible)
-* item.extension[claimResponseItemStatus] ^short      = "The status of claim payment on claim item"
-* item.extension[claimResponseItemStatus] ^definition = "The status of claim payment on claim item"
-
 * item.extension contains CompoundCode named compoundCode 0..1
 * item.extension[compoundCode]  ^short      = "Indicator of whether the product is a compound drug or not"
 * item.extension[compoundCode]  ^definition = "Indicator of whether the product is a compound drug or not"
+
+* insurance.extension contains CrossoverIndicator named crossoverIndicator 0..1
+* insurance.extension[crossoverIndicator] ^short      = "Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare"
+* insurance.extension[crossoverIndicator] ^definition = "Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare"
+
 
 * item.quantity.extension contains LocalNumberOfUnitsPerService named localNumberOfUnitsPerService 0..1
 * item.quantity.extension[localNumberOfUnitsPerService] ^short      = "Customer-specific quantity of either services or units"
 * item.quantity.extension[localNumberOfUnitsPerService] ^definition = "Customer-specific quantity of either services or units"
 
-// .item.detail
-* item.detail.extension contains ClaimItemDetailClassification named claimItemDetailClassification 0..1
-* item.detail.extension[claimItemDetailClassification] ^short      = "Classification of the information contained in this claim item detail section"
-* item.detail.extension[claimItemDetailClassification] ^definition = "Classification of the information contained in this claim item detail section"
-
 // .payment extensions
 * payment.extension contains ClaimAdjustmentType named claimAdjustmentType 0..*
 * payment.extension[claimAdjustmentType] ^short      = "The code for the type of adjustment for the claim"
 * payment.extension[claimAdjustmentType] ^definition = "The code for the type of adjustment for the claim"
+* payment.extension[claimAdjustmentType].valueCodeableConcept from WhPayerClaimAdjustmentTypeValueSet (extensible)
 
 /////  Extensions at ROOT level in alphabetical order for ease!
 * extension contains ClaimSnapshotProviderName named claimSnapshotProviderName 0..1
@@ -73,10 +72,6 @@ Description:    "This resource provides the list of professional services and pr
 * extension contains ClaimSnapshotProviderZipCode named claimSnapshotProviderZipCode 0..1
 * extension[claimSnapshotProviderZipCode] ^short      = "The original provider postal code, as reported on the claim"
 * extension[claimSnapshotProviderZipCode] ^definition = "The original provider postal code, as reported on the claim"
-
-* extension contains ClaimStatus named claimStatus 0..1
-* extension[claimStatus] ^short      = "Custom code for the claim status"
-* extension[claimStatus] ^definition = "Custom code for the claim status"
 
 * extension contains EmployeeBusinessUnit named employeeBusinessUnit 0..1
 * extension[employeeBusinessUnit] ^short      = "The business unit of the subscriber as reported on the claim" 
