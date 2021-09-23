@@ -115,11 +115,11 @@ Title:          "Nursing Home Indicator"
 Description:    "Indicator that the claim was for a nursing home patient"
 * value[x] only string
 
-Extension:      ProcedureGroup
-Id:             procedure-group
-Title:          "Procedure Group"
-Description:    "Code assigned to categorize related procedures"
-* value[x] only CodeableConcept 
+Extension:      ProcedureGroup
+Id:             procedure-group
+Title:          "Procedure Group"
+Description:    "Code assigned to categorize related procedures"
+* value[x] only CodeableConcept 
 * valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
 
 Extension:      ParticipatingPlan

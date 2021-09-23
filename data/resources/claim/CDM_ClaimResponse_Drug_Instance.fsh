@@ -16,15 +16,17 @@ Description:    "Sample of a CDM Drug Claim Response"
 * meta.extension[sourceFileId].valueString     = "e00080779"
 
 * identifier[0].use              = #official
-* identifier[0].type             = IdentifierTypeCodeSystem#SSRI
-* identifier[0].system           = "http://acmehealth.com/CodeSystem/local-claim-identifier"
+* identifier[0].type             = IdentifierTypeCodeSystem#RXN
+* identifier[0].system           = "http://acme-health.com/CodeSystem/local-claim-identifier"
 * identifier[0].value            = "000000000000000000019721078"
 * identifier[0].assigner.display = "Acme Health - Wellness Center Pharmacy"
 
 * status            = #active
+* extension[claimStatus].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-status#LocClaimSts
+* extension[claimReceivedDate].valueDate      = "2017-06-01"
 
 * type.coding[0]    = WhPayerClaimTypeCodeSystem#pharmacy
-* type.coding[1]    = http://acmehealth.com/CodeSystem/local-claim-type#Pharmacy
+* type.coding[1]    = http://acme-health.com/CodeSystem/local-claim-type#Pharmacy
 
 * use      = #claim
 * patient  = Reference(CDMPatientInstance)
@@ -51,34 +53,49 @@ Description:    "Sample of a CDM Drug Claim Response"
 * item.adjudication[6].amount.value  = 5.00
 * item.adjudication[7].category      = AdjudicationCategoryCodeSystem#net-payment
 * item.adjudication[7].amount.value  = 0.00
-
-// Drug does not populate sequenctial indexes and 
-// QA errors occur if array entries are skipped so comment out
-//* item.adjudication[9].category      = AdjudicationCategoryCodeSystem#discount
-//* item.adjudication[9].amount.value  = 0.00
-//* item.adjudication[14].category     = AdjudicationCategoryCodeSystem#medicare-allowed
-//* item.adjudication[14].amount.value = 0.00
-//* item.adjudication[15].category     = AdjudicationCategoryCodeSystem#medicare-coinsurance
-//* item.adjudication[15].amount.value = 0.00
-//* item.adjudication[16].category     = AdjudicationCategoryCodeSystem#medicare-deductible
-//* item.adjudication[16].amount.value = 0.00
-//* item.adjudication[19].category     = AdjudicationCategoryCodeSystem#excess_copay
-//* item.adjudication[19].amount.value = 0.00
-//* item.adjudication[20].category     = AdjudicationCategoryCodeSystem#medicare-paid
-//* item.adjudication[20].amount.value = 0.00
+* item.adjudication[7].reason.coding[0] = REMIT-ADVICE-REMARK-CODE#M50 
+* item.adjudication[7].reason.coding[1] = REMIT-ADVICE-REMARK-CODE#N423 
+* item.adjudication[8].category      = AdjudicationCategoryCodeSystem#discount
+* item.adjudication[8].amount.value  = 0.00
+* item.adjudication[9].category      = AdjudicationCategoryCodeSystem#ffs-equivalent
+* item.adjudication[9].amount.value  = 0.00
+* item.adjudication[10].category      = AdjudicationCategoryCodeSystem#fully-insured-payment
+* item.adjudication[10].amount.value  = 0.00
+* item.adjudication[11].category      = AdjudicationCategoryCodeSystem#healthcare-reimbursement
+* item.adjudication[11].amount.value  = 0.00
+* item.adjudication[12].category      = AdjudicationCategoryCodeSystem#healthcare-savings-account
+* item.adjudication[12].amount.value  = 0.00
+* item.adjudication[13].category     = AdjudicationCategoryCodeSystem#medicare-allowed
+* item.adjudication[13].amount.value = 0.00
+* item.adjudication[14].category     = AdjudicationCategoryCodeSystem#medicare-coinsurance
+* item.adjudication[14].amount.value = 0.00
+* item.adjudication[15].category     = AdjudicationCategoryCodeSystem#medicare-deductible
+* item.adjudication[15].amount.value = 0.00
+* item.adjudication[16].category     = AdjudicationCategoryCodeSystem#patient-liability
+* item.adjudication[16].amount.value = 0.00
+* item.adjudication[17].category         = AdjudicationCategoryCodeSystem#penalty
+* item.adjudication[17].amount.value     = 1.00
+* item.adjudication[17].reason.coding[0] = http://acme-health.com/CodeSystem/local-penalty-type#LocPenaltyType
+* item.adjudication[18].category     = AdjudicationCategoryCodeSystem#excess_copay
+* item.adjudication[18].amount.value = 0.00
+* item.adjudication[19].category     = AdjudicationCategoryCodeSystem#medicare-paid
+* item.adjudication[19].amount.value = 0.00
 
 * item.extension[claimResponseItemStatus].valueCodeableConcept = WhPayerClaimStatusCodeSystem#P "Paid"
-* item.extension[claimResponseBenefitPlan].valueReference = Reference(CoverageDugExample)
+* item.extension[claimResponseBenefitPlan].valueReference = Reference(CoverageDrugExample)
 
-* item.extension[rxFormularyIndicator].valueString = "N"
-* item.extension[rxPayTier].valueCodeableConcept   = http://acmehealth.com/CodeSystem/local-rx-pay-tier#Tier1
-* item.extension[rxSupplyIndicator].valueString    = "N"
+* item.extension[rxFormularyIndicator].valueString     = "N"
+* item.extension[rxPayTier].valueCodeableConcept       = http://acme-health.com/CodeSystem/local-rx-pay-tier#Tier1
+* item.extension[rxSupplyIndicator].valueString        = "N"
+* item.extension[usualAndCustomaryAmount].valueDecimal = 0.00
 
-* adjudication.category          = PaidInNetworkIndicatorCodeSystem#paid-in-network
+* adjudication.category                    = PaidInNetworkIndicatorCodeSystem#in-network
+* adjudication.extension[adjudicationDate].valueDate = 2017-06-30
 
 * payment.date                   = "2017-07-20"
 * payment.type                   = PAYMENT-TYPE#complete
 * payment.amount.value           = 5.00
-* payment.adjustmentReason[0]    = http://acmehealth.com/CodeSystem/local-adjustment-reason#local-adj-reason
+* payment.adjustmentReason[0]    = http://acme-health.com/CodeSystem/local-adjustment-reason#local-adj-reason
 * payment.extension[claimAdjustmentType][0].valueCodeableConcept = WhPayerClaimAdjustmentTypeCodeSystem#1
-* payment.extension[claimAdjustmentType][1].valueCodeableConcept = http://acmehealth.com/CodeSystem/local-claim-adjustment-type#LocalClaimAdjType
+* payment.extension[claimAdjustmentType][1].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-adjustment-type#LocalClaimAdjType
+* payment.extension[dispositionReason][0].valueCodeableConcept  = http://acme-health.com/CodeSystem/local-disposition-reason#record-in-error-correct-and-resubmit
