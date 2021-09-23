@@ -14,11 +14,11 @@ Description:    "Sample of a CDM Explanation of Benefit for a pharmacy claim"
 * meta.extension[processRecordId].valueIdentifier.system  = "http://acme-health.com/WellnessCenterPharmacy"
 * meta.extension[processRecordId].valueIdentifier.value   = "7209_07869_e00080779_3938586_2516181_x2"
 
-* identifier[0].use                = #official
-* identifier[0].type               = IdentifierTypeCodeSystem#SSRI
-* identifier[0].system             = "http://acme-health.com/CodeSystem/local-eob-identifier"
-* identifier[0].value              = "000000000000000000019721078x2"
-* identifier[0].assigner.display   = "Acme Health - Wellness Center Pharmacy"
+* identifier.use                = #official
+* identifier.type               = IdentifierTypeCodeSystem#SSRI
+* identifier.system             = "http://acme-health.com/CodeSystem/local-eob-identifier"
+* identifier.value              = "000000000000000000019721078x2"
+* identifier.assigner.display   = "Acme Health - Wellness Center Pharmacy"
 
 * extension[snapshotAgeInYears].valueUnsignedInt   = 27
 * status   = #active
@@ -39,29 +39,30 @@ Description:    "Sample of a CDM Explanation of Benefit for a pharmacy claim"
 * insurance.focal             = true
 * insurance.coverage          = Reference(PrimaryPayerExample)
 
-* careTeam[0].sequence  = 1
-* careTeam[0].role      = ClaimCareTeamRoleCodeSystem#ordering
-* careTeam[0].provider  = Reference(DrKelly)
+* careTeam.sequence  = 1
+* careTeam.role      = ClaimCareTeamRoleCodeSystem#ordering
+* careTeam.provider  = Reference(DrKelly)
 
 * supportingInfo[0].sequence             = 1
 * supportingInfo[0].category             = CLAIM-INFORMATION-CATEGORY#dayssupply
 * supportingInfo[0].valueQuantity.value  = 28
 
+* supportingInfo[1].sequence             = 2
+* supportingInfo[1].category             = CLAIM-INFORMATION-CATEGORY#info
+* supportingInfo[1].code                 = NCPDPDispenseAsWrittenCodeSystem#0 "No Product Selection Indicated"
+* supportingInfo[1].valueString          = "0"
+
+* supportingInfo[2].sequence             = 3
+* supportingInfo[2].category             = CLAIM-INFORMATION-CATEGORY#info
+* supportingInfo[2].code                 = ClaimSupportingInfoTypeCodeSystem#refill-number
+* supportingInfo[2].valueQuantity.value  = 1
+
 * supportingInfo[3].sequence             = 4
 * supportingInfo[3].category             = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[3].code                 = NCPDPDispenseAsWrittenCodeSystem#0 "No Product Selection Indicated"
-* supportingInfo[3].valueString          = "0"
-
-* supportingInfo[4].sequence             = 5
-* supportingInfo[4].category             = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[4].code                 = ClaimSupportingInfoTypeCodeSystem#refill-number
-* supportingInfo[4].valueQuantity.value  = 1
-
-* supportingInfo[5].sequence             = 6
-* supportingInfo[5].category             = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[5].code                 = RxMailOrRetailCodeSystem#r
+* supportingInfo[3].code                 = RxMailOrRetailCodeSystem#r
 
 * item.sequence            = 1
+* item.careTeamSequence    = 1
 * item.productOrService    = NdcNoHyphensCodeSystem#69452015120
 * item.servicedDate        = "2017-06-18"
 * item.locationCodeableConcept[0]                 = CMS-PLACE-OF-SERVICE#01 "Pharmacy"
@@ -116,4 +117,3 @@ Description:    "Sample of a CDM Explanation of Benefit for a pharmacy claim"
 * item.detail[2].unitPrice.currency                                            = CURRENCY#USD
 
 * adjudication.category          = PaidInNetworkIndicatorCodeSystem#in-network
-
