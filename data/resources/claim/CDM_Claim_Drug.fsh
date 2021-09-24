@@ -8,6 +8,10 @@ Description:    "The CDMClaimDrug profile extends the base CDMClaim profile with
 * extension[rxCount] ^short      = "Count of prescriptions for the drug claim"
 * extension[rxCount] ^definition = "Count of prescriptions for the drug claim"
 
+* item.extension contains AverageWholesalePrice named averageWholesalePrice 0..1
+* item.extension[averageWholesalePrice]  ^short      = "The average wholesale price of this drug"
+* item.extension[averageWholesalePrice]  ^definition = "The average wholesale price of this drug"
+
 * item.extension contains CompoundCode named compoundCode 0..1
 * item.extension[compoundCode]  ^short      = "Customer-specific code for the compound of the drug"
 * item.extension[compoundCode]  ^definition = "Customer-specific code for the compound of the drug"
