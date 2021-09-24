@@ -44,7 +44,7 @@ Description:    "Sample of a CDM Professional Claim"
 
 // servicing provider
 * careTeam[1].sequence  = 2
-* careTeam[1].provider  = Reference(Payer1)
+* careTeam[1].provider  = Reference(Provider1)
 * careTeam[1].role      = ClaimCareTeamRoleCodeSystem#servicing
 * careTeam[1].qualification.coding.system = "http://acme-health.com/CodeSystem/local-specialty"
 * careTeam[1].qualification.coding.code   = #01

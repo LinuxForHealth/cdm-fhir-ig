@@ -104,6 +104,8 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[16].amount.currency    = CURRENCY#USD
 * item.adjudication[16].amount.value       = 0.00
 * item.adjudication[17].category           = AdjudicationCategoryCodeSystem#penalty
+* item.adjudication[17].amount.currency    = CURRENCY#USD
+* item.adjudication[17].amount.value       = 0.00
 * item.adjudication[17].reason.coding      = http://acme-health.com/CodeSystem/local-penalty-type#LocalPenaltyType
 * item.adjudication[18].category           = AdjudicationCategoryCodeSystem#withhold
 * item.adjudication[18].amount.currency    = CURRENCY#USD
@@ -162,4 +164,3 @@ Description:    "Sample of a CDM Professional Claim Response"
 
 * extension[claimStatus].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-status#LocalClaimStatus
 * extension[daysToProcess].valueInteger       = 15
-
