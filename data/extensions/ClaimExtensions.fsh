@@ -1,8 +1,20 @@
+Extension:      AdmitCount
+Id:             admit-count
+Title:          "Admit Count"
+Description:    "Used to determine which facility claims should be counted as inpatient admissions"
+* value[x] only integer
+
 Extension:      AggregateClaimIndicator
 Id:             aggregate-claim-indicator
 Title:          "Aggregate Claim Indicator"
 Description:    "Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"
 * value[x] only string
+
+Extension:      AverageWholesalePrice
+Id:             average-wholesale-price
+Title:          "Average wholesale price"
+Description:    "The average wholesale price charged by wholesalers for the specific drug"
+* value[x] only Money
 
 Extension:      CapitatedServiceIndicator
 Id:             capitated-service-indicator
@@ -90,11 +102,11 @@ Title:          "Local Number Of Units Per Service"
 Description:    "Customer-specific quantity of either services or units"
 * value[x] only Quantity
 
-Extension:      MajorDiagnosticCategory 
-Id:             major-diagnostic-category 
-Title:          "Major Diagnostic Category"
-Description:    "Body system or disease related groupings of clinical conditions, based on diagnosis codes" 
-* value[x] only CodeableConcept 
+Extension:      MajorDiagnosticCategory 
+Id:             major-diagnostic-category 
+Title:          "Major Diagnostic Category"
+Description:    "Body system or disease related groupings of clinical conditions, based on diagnosis codes" 
+* value[x] only CodeableConcept 
 * valueCodeableConcept from WHPayerMajorDiagnosticCategoryValueSet (extensible)
 
 Extension:      NetworkId
