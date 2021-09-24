@@ -17,7 +17,7 @@ Description:    "Sample of a CDM Service Request"
 
 * identifier[0].use                = #official
 * identifier[0].type               = IdentifierTypeCodeSystem#SSRI
-* identifier[0].system             = "http://acme-health.com/CodeSystem/local-identifier"
+* identifier[0].system             = "http://acme-health.com/CodeSystem/local-authorization-number"
 * identifier[0].value              = "000000000000000000019721078"
 * identifier[0].assigner.display   = "Acme Health - Wellness Medical Center"
 
