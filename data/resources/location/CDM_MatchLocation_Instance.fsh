@@ -15,7 +15,7 @@ Description:    "Sample of a matched location linked to multiple source location
 * meta.extension[processName].valueString = "Location Matching"
 * meta.extension[processVersion].valueString = "1.0"
 * meta.extension[processTimestamp].valueDateTime = "2020-02-12T03:01:00Z"
-* meta.tag = PrimaryOrSecondary#SECONDARY
+* meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier[0].use = #official
 * identifier[0].type = 	IdentifierTypeCodeSystem#MDI
