@@ -1,0 +1,433 @@
+{
+  "resourceType": "ExplanationOfBenefit",
+  "id": "CDMExplanationOfBenefitForAnalyticsDrugInstance",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "valueString": "tenant7209"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "valueString": "rgVCJnQBxvghkKTI8Hzzx2"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+        "valueString": "TREX"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id",
+        "valueString": "7209"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-record-id",
+        "valueIdentifier": {
+          "system": "http://acme-health.com/WellnessCenterPharmacy",
+          "value": "7209_07869_e00080779_3938586_2516181_x2"
+        }
+      }
+    ],
+    "source": "http://acme-health.com/WellnessCenterPharmacy",
+    "profile": [
+      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit-for-analytics"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Age In Years</b>: 27</p><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019721078x2 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type pharmacy}, {http://acme-health.com/CodeSystem/local-claim-type Pharmacy}\">Pharmacy; Pharmacy claims for goods and services</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-CDMPatientInstance.html\">Generated Summary: Source System Row Identifier: unencryp-id1234 (OFFICIAL), Source System Row Identifier: encryp-id1234 (SECONDARY), Medical record number: 1011110101 (OFFICIAL), Medical record number: 1011110101 (USUAL), Social Beneficiary Identifier: 0001223333 (OFFICIAL), Social Beneficiary Identifier: 1CA0CA0CC00 (OFFICIAL), Social Beneficiary Identifier: 987654321000 (OFFICIAL), Match Data Identifier: 7b78d6de-46cb-4fbb-930d-2a74e24b17fe (SECONDARY); active; Firstname McLastname ; , Phone: 216-345-2662, Phone: 216-555-2222, fmclastname@fakemail.com; gender: male; birthDate: 1990-01-04; deceased: Sep 28, 2020, 12:00:00 AM</a></p><p><b>created</b>: Jul 25, 2017, 10:31:00 PM</p><p><b>insurer</b>: <span></span></p><p><b>provider</b>: <a href=\"Practitioner-DrKelly.html\">Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com</a></p><p><b>priority</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span></p><p><b>outcome</b>: complete</p><h3>CareTeams</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Provider</b></td><td><b>Role</b></td></tr><tr><td>*</td><td>1</td><td><a href=\"Practitioner-DrKelly.html\">Generated Summary: Source System Row Identifier: 0d82c96d-98c5-46cf-911d-a41991601320 (OFFICIAL), Provider number: 1122334499 (OFFICIAL), Tax ID number: 123456789 (SECONDARY); Dr Debra R Kelly, MD; Phone: 214-555-2100, Fax: 214-555-2101, drkelly@kellyclinic.com</a></td><td><span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role ordering}\">Ordering provider</span></td></tr></table><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory dayssupply}\">dayssupply</span></p><p><b>value</b>: 28</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/ncpdp-dispense-as-written 0}\">No Product Selection Indicated</span></p><p><b>value</b>: 0</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 3</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type refill-number}\">Refill number</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 4</p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/claiminformationcategory info}\">Information</span></p><p><b>code</b>: <span title=\"Codes: {http://ibm.com/fhir/cdm/CodeSystem/rx-mail-or-retail r}\">Retail</span></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href=\"Coverage-PrimaryPayerExample.html\">Generated Summary: Source System Row Identifier: c35466d6-0d2b-4efa-8265-b9ac3f887e08 (OFFICIAL); status: active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ActCode PPO}\">preferred provider organization policy</span>; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/subscriber-relationship spouse}\">Spouse</span>; period: Jan 1, 2020, 12:00:00 AM --&gt; (ongoing); 1; network: Choice POS II</a></td></tr></table><blockquote><p><b>item</b></p><p><b>Capitated Service Indicator</b>: N</p><p><b>Average wholesale price</b>: </p></blockquote><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.Money not handled - should not be here</b></p></div>"
+  },
+  "extension": [
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years",
+      "valueUnsignedInt": 27
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "SSRI"
+          }
+        ]
+      },
+      "system": "http://acme-health.com/CodeSystem/local-eob-identifier",
+      "value": "000000000000000000019721078x2",
+      "assigner": {
+        "display": "Acme Health - Wellness Center Pharmacy"
+      }
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "system": "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type",
+        "code": "pharmacy"
+      },
+      {
+        "system": "http://acme-health.com/CodeSystem/local-claim-type",
+        "code": "Pharmacy"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/CDMPatientInstance"
+  },
+  "created": "2017-07-25T17:31:00-05:00",
+  "insurer": {
+    "type": "Organization",
+    "identifier": {
+      "system": "http://acme-health.com/payer1/payer",
+      "value": "Payer1"
+    }
+  },
+  "provider": {
+    "reference": "Practitioner/DrKelly"
+  },
+  "priority": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/processpriority",
+        "code": "normal"
+      }
+    ]
+  },
+  "outcome": "complete",
+  "careTeam": [
+    {
+      "sequence": 1,
+      "provider": {
+        "reference": "Practitioner/DrKelly"
+      },
+      "role": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role",
+            "code": "ordering"
+          }
+        ]
+      }
+    }
+  ],
+  "supportingInfo": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "dayssupply"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 28
+      }
+    },
+    {
+      "sequence": 2,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/ncpdp-dispense-as-written",
+            "code": "0",
+            "display": "No Product Selection Indicated"
+          }
+        ]
+      },
+      "valueString": "0"
+    },
+    {
+      "sequence": 3,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "code": "refill-number"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 1
+      }
+    },
+    {
+      "sequence": 4,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info"
+          }
+        ]
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/rx-mail-or-retail",
+            "code": "r"
+          }
+        ]
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "focal": true,
+      "coverage": {
+        "reference": "Coverage/PrimaryPayerExample"
+      }
+    }
+  ],
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/capitated-service-indicator",
+          "valueString": "N"
+        },
+        {
+          "url": "http://ibm.com/fhir/cdm/StructureDefinition/average-wholesale-price",
+          "valueMoney": {
+            "value": 2.88,
+            "currency": "USD"
+          }
+        }
+      ],
+      "sequence": 1,
+      "careTeamSequence": [
+        1
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens",
+            "code": "69452015120"
+          }
+        ]
+      },
+      "servicedDate": "2017-06-18",
+      "locationCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
+            "code": "01",
+            "display": "Pharmacy"
+          },
+          {
+            "system": "http://acme-health.com/CodeSystem/local-place-of-service",
+            "code": "LocalPlcOfService"
+          }
+        ]
+      },
+      "quantity": {
+        "value": 4,
+        "unit": "metric"
+      },
+      "adjudication": [
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "code": "coinsurance"
+              }
+            ]
+          },
+          "amount": {
+            "value": 0.48,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "code": "copay"
+              }
+            ]
+          },
+          "amount": {
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "code": "deductible"
+              }
+            ]
+          },
+          "amount": {
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "code": "third-party"
+              }
+            ]
+          },
+          "amount": {
+            "value": 0,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "code": "allowed"
+              }
+            ]
+          },
+          "amount": {
+            "value": 1.59,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "code": "net-payment"
+              }
+            ]
+          },
+          "amount": {
+            "value": 1.11,
+            "currency": "USD"
+          }
+        }
+      ],
+      "detail": [
+        {
+          "extension": [
+            {
+              "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-item-detail-classification",
+                    "code": "dispensing-fee"
+                  }
+                ]
+              }
+            }
+          ],
+          "sequence": 1,
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens",
+                "code": "69452015120"
+              }
+            ]
+          },
+          "unitPrice": {
+            "value": 0.45,
+            "currency": "USD"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-item-detail-classification",
+                    "code": "ingredient-cost"
+                  }
+                ]
+              }
+            }
+          ],
+          "sequence": 2,
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens",
+                "code": "69452015120"
+              }
+            ]
+          },
+          "unitPrice": {
+            "value": 1.14,
+            "currency": "USD"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-item-detail-classification",
+                    "code": "sales-tax"
+                  }
+                ]
+              }
+            }
+          ],
+          "sequence": 3,
+          "productOrService": {
+            "coding": [
+              {
+                "system": "http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens",
+                "code": "69452015120"
+              }
+            ]
+          },
+          "unitPrice": {
+            "value": 0,
+            "currency": "USD"
+          }
+        }
+      ]
+    }
+  ],
+  "adjudication": [
+    {
+      "category": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/paid-in-network-indicator",
+            "code": "in-network"
+          }
+        ]
+      }
+    }
+  ]
+}

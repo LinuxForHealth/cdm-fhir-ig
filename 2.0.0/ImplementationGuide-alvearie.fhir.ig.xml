@@ -11,7 +11,7 @@
   <name value="AlvearieFHIRImplementationGuide"/>
   <title value="Alvearie FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-09-21T12:28:41+00:00"/>
+  <date value="2021-09-28T19:40:31+00:00"/>
   <contact>
     <name value="Kim Kenna"/>
     <telecom>
@@ -370,6 +370,28 @@
       </reference>
       <name value="CDM Encounter"/>
       <description value="IBM Health Data Connect Common Data Model definition of what fields we currently define for an encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cdm-explanation-of-benefit"/>
+      </reference>
+      <name value="CDM Explanation of Benefit"/>
+      <description value="This resource provides: the claim details; adjudication details from the processing of a Claim; and optionally account balance information, for informing the subscriber of the benefits provided. The CDMExplanationOfBenefit profile extends the base FHIR ExplanationOfBenefit resource with additional details."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cdm-explanation-of-benefit-for-analytics"/>
+      </reference>
+      <name value="CDMExplanationOfBenefitForAnalytics"/>
+      <description value="The CDMExplanationOfBenefitForAnalytics profile extends the base CDMExplanationOfBenefit profile with additional details that are useful for analytics."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -875,6 +897,17 @@
       </reference>
       <name value="Attribution Code"/>
       <description value="FFV initiative attribution method code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/average-wholesale-price"/>
+      </reference>
+      <name value="Average wholesale price"/>
+      <description value="The average wholesale price charged by wholesalers for the specific drug"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4660,6 +4693,28 @@
       <name value="CDM Encounter Example"/>
       <description value="Sample encounter"/>
       <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExplanationOfBenefit"/>
+      </extension>
+      <reference>
+        <reference value="ExplanationOfBenefit/CDMExplanationOfBenefitForAnalyticsDrugInstance"/>
+      </reference>
+      <name value="CDM Explanation of Benefit - Pharmacy Example"/>
+      <description value="Sample of a CDM Explanation of Benefit for a pharmacy claim"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit-for-analytics"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ExplanationOfBenefit"/>
+      </extension>
+      <reference>
+        <reference value="ExplanationOfBenefit/CDMExplanationOfBenefitProfessionalInstance"/>
+      </reference>
+      <name value="CDM Explanation of Benefit - Professional Example"/>
+      <description value="Sample of a CDM Explanation of Benefit for a profession claim"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -93,6 +93,13 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/average-wholesale-price",
+      "title": "Average wholesale price",
+      "types": [
+        "Money"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/based-on-value",
       "title": "Based On Value",
       "types": [
@@ -2684,6 +2691,16 @@
         "title": "CDM Encounter"
       }
     ],
+    "ExplanationOfBenefit": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit",
+        "title": "CDM Explanation of Benefit"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit-for-analytics",
+        "title": "CDMExplanationOfBenefitForAnalytics"
+      }
+    ],
     "InsurancePlan": [
       {
         "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-insurance-plan",
@@ -2873,7 +2890,8 @@
       "Patient"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/adjudication-date": [
-      "ClaimResponse.adjudication"
+      "ClaimResponse.adjudication",
+      "ExplanationOfBenefit.adjudication"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/age-gender-group": [
       "Coverage"
@@ -2882,7 +2900,8 @@
       "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/aggregate-claim-indicator": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/assigned-practitioner": [
       "DetectedIssue",
@@ -2894,6 +2913,9 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/attribution-code": [
       "Contract"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/average-wholesale-price": [
+      "ExplanationOfBenefit.item"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/based-on-value": [
       "Extension"
     ],
@@ -2902,7 +2924,8 @@
       "Observation"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/capitated-service-indicator": [
-      "Claim.item"
+      "Claim.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-display-name": [
       "DetectedIssue"
@@ -2924,35 +2947,44 @@
       "OrganizationAffiliation"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-adjustment-type": [
-      "ClaimResponse.payment"
+      "ClaimResponse.payment",
+      "ExplanationOfBenefit.payment"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-category": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-group-identifier": [
       "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification": [
-      "Claim.item.detail"
+      "Claim.item.detail",
+      "ExplanationOfBenefit.item.detail"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-received-date": [
-      "ClaimResponse"
+      "ClaimResponse",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-response-benefit-plan": [
-      "ClaimResponse.item"
+      "ClaimResponse.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-response-item-status": [
-      "ClaimResponse.item"
+      "ClaimResponse.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-name": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/claim-status": [
       "Claim",
-      "ClaimResponse"
+      "ClaimResponse",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap": [
       "Communication",
@@ -3011,10 +3043,12 @@
       "CommunicationRequest"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/company-code": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/compound-code": [
-      "Claim.item"
+      "Claim.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/conversation-type": [
       "Communication",
@@ -3026,7 +3060,8 @@
       "Quantity"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/copay-exclusion": [
-      "ClaimResponse.item"
+      "ClaimResponse.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/county-code": [
       "Address",
@@ -3046,10 +3081,12 @@
       "Extension"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator": [
-      "Claim.insurance"
+      "Claim.insurance",
+      "ExplanationOfBenefit.insurance"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/days-to-process": [
-      "ClaimResponse"
+      "ClaimResponse",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/default-value": [
       "Library.parameter",
@@ -3062,7 +3099,8 @@
       "Extension"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/disposition-reason": [
-      "ClaimResponse.payment"
+      "ClaimResponse.payment",
+      "ExplanationOfBenefit.payment"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/documented-sex": [
       "Extension"
@@ -3078,7 +3116,8 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit": [
       "Claim",
-      "Coverage"
+      "Coverage",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/employee-count": [
       "Coverage"
@@ -3096,7 +3135,8 @@
       "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/employer": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state": [
       "Coverage.identifier",
@@ -3116,10 +3156,12 @@
       "Contract"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/financial-system": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/fully-insured-indicator": [
-      "Claim.item"
+      "Claim.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/hierarchy-version-date": [
       "OrganizationAffiliation",
@@ -3146,6 +3188,7 @@
       "Coverage.meta",
       "DetectedIssue.meta",
       "Encounter.meta",
+      "ExplanationOfBenefit.meta",
       "Location.meta",
       "MeasureReport.meta",
       "Meta",
@@ -3197,13 +3240,15 @@
       "Patient.communication"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/last-claim-indicator": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/legally-documented-sex": [
       "Patient"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service": [
-      "Claim.item.quantity"
+      "Claim.item.quantity",
+      "ExplanationOfBenefit.item.quantity"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/local-race-cd": [
       "Patient"
@@ -3212,7 +3257,8 @@
       "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/major-diagnostic-category": [
-      "Claim.diagnosis"
+      "Claim.diagnosis",
+      "ExplanationOfBenefit.diagnosis"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to": [
       "Extension",
@@ -3309,10 +3355,12 @@
       "Extension"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/number-of-units-allowed": [
-      "ClaimResponse.item"
+      "ClaimResponse.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/nursing-home-indicator": [
-      "Claim.item"
+      "Claim.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/offset-begin": [
       "Extension"
@@ -3333,7 +3381,8 @@
       "OrganizationAffiliation"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/participating-plan": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/path": [
       "Extension"
@@ -3348,7 +3397,8 @@
       "PractitionerRole"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/prior-authorization-indicator": [
-      "Claim.insurance"
+      "Claim.insurance",
+      "ExplanationOfBenefit.insurance"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/problem-clinical-course": [
       "Condition"
@@ -3360,7 +3410,8 @@
       "Condition"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/procedure-group": [
-      "Claim.procedure"
+      "Claim.procedure",
+      "ExplanationOfBenefit.procedure"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/procedure-modifier": [
       "Procedure"
@@ -3369,6 +3420,7 @@
       "Claim.meta",
       "ClaimResponse.meta",
       "Contract.meta",
+      "ExplanationOfBenefit.meta",
       "Meta",
       "OrganizationAffiliation.meta",
       "PractitionerRole.meta",
@@ -3381,6 +3433,7 @@
       "CommunicationRequest.meta",
       "Contract.meta",
       "DetectedIssue.meta",
+      "ExplanationOfBenefit.meta",
       "Location.meta",
       "Measure.meta",
       "MeasureReport.meta",
@@ -3413,6 +3466,7 @@
       "Claim.meta",
       "ClaimResponse.meta",
       "Contract.meta",
+      "ExplanationOfBenefit.meta",
       "Meta",
       "OrganizationAffiliation.meta",
       "PractitionerRole.meta",
@@ -3499,7 +3553,8 @@
       "Reference"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/referral-indicator": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/region-code": [
       "Address",
@@ -3507,10 +3562,12 @@
       "Patient.address"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/reimburse-type": [
-      "ClaimResponse.payment"
+      "ClaimResponse.payment",
+      "ExplanationOfBenefit.payment"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/reinsurance-met-indicator": [
-      "ClaimResponse.item"
+      "ClaimResponse.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/related-issue": [
       "DetectedIssue"
@@ -3519,25 +3576,31 @@
       "Observation"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/routing-number-code": [
-      "ClaimResponse.item.adjudication"
+      "ClaimResponse.item.adjudication",
+      "ExplanationOfBenefit.item.adjudication"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/rx-count": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/rx-formulary-indicator": [
-      "ClaimResponse.item"
+      "ClaimResponse.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/rx-pay-tier": [
-      "ClaimResponse.item"
+      "ClaimResponse.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/rx-supply-indicator": [
-      "ClaimResponse.item"
+      "ClaimResponse.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/salary-indicator": [
       "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/savings-type": [
-      "ClaimResponse.item.adjudication"
+      "ClaimResponse.item.adjudication",
+      "ExplanationOfBenefit.item.adjudication"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/score": [
       "Extension"
@@ -3557,7 +3620,8 @@
       "Communication"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/service-bill-days-count": [
-      "Claim.item"
+      "Claim.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth": [
       "Patient"
@@ -3570,7 +3634,8 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years": [
       "Claim",
-      "Coverage"
+      "Coverage",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/source-data-model-version": [
       "Contract.meta",
@@ -3630,7 +3695,8 @@
       "Patient"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/submission-type": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id": [
       "Appointment.meta",
@@ -3643,6 +3709,7 @@
       "Coverage.meta",
       "DetectedIssue.meta",
       "Encounter.meta",
+      "ExplanationOfBenefit.meta",
       "Location.meta",
       "MeasureReport.meta",
       "Meta",
@@ -3662,10 +3729,12 @@
       "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/usual-and-customary-amount": [
-      "ClaimResponse.item"
+      "ClaimResponse.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/utilization-review": [
-      "ClaimResponse.item"
+      "ClaimResponse.item",
+      "ExplanationOfBenefit.item"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-dental-coverage-indicator": [
       "InsurancePlan"
@@ -3680,7 +3749,8 @@
       "InsurancePlan"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-pcp-responsibility-indicator": [
-      "Claim"
+      "Claim",
+      "ExplanationOfBenefit"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-psych-coverage-indicator": [
       "InsurancePlan"
