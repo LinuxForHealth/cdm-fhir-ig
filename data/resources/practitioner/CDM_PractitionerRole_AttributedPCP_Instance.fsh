@@ -15,7 +15,7 @@ Usage:          #example
 * meta.extension[processName].valueString = "EngagementAttribution"
 * meta.extension[processVersion].valueString = "1.0"
 * meta.extension[processTimestamp].valueDateTime = "2020-02-14T03:18:00Z"
-* meta.tag = PrimaryOrSecondary#SECONDARY
+* meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier[0].use = #official
 * identifier[0].type = 	IdentifierTypeCodeSystem#DRI

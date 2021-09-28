@@ -14,7 +14,7 @@ Description:    "Example measure report containing individual measure results fo
 * meta.extension[processName].valueString = "Powersearch"
 * meta.extension[processVersion].valueString = "1.0"
 * meta.extension[processTimestamp].valueDateTime = "2020-02-12T02:01:00Z"
-* meta.tag = PrimaryOrSecondary#SECONDARY
+* meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier.type = ID-TYPE#RI
 * identifier.system = "http://ibm.com/fhir/cdm/quality-measure-report"

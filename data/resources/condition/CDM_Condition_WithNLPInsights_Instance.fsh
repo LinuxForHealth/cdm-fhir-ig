@@ -63,12 +63,15 @@ Description:    "Condition example where condition code is set from NLP derived 
 
 //* code.coding[0].extension[insightSummary][0].extension[insightId].valueIdentifier.system = "https://acme.com/nlp-processor/1.0"
 //* code.coding[0].extension[insightSummary][0].extension[insightId].valueIdentifier.value = "insight-1"
+//* code.coding[0].extension[insightSummary][0].extension[element-source-classificaiton].valueCode = ProcessMetaSourceClassification#derived
 //* code.coding[0].extension[insightSummary][0].extension[category][0].valueCodeableConcept = InsightCategoryCodeSystem#natural-language-processing
 //* code.coding[1].extension[insightSummary][0].extension[insightId].valueIdentifier.system = "https://acme.com/nlp-processor/1.0"
 //* code.coding[1].extension[insightSummary][0].extension[insightId].valueIdentifier.value = "insight-1"
+//* code.coding[1].extension[insightSummary][0].extension[element-source-classificaiton].valueCode = ProcessMetaSourceClassification#derived
 //* code.coding[1].extension[insightSummary][0].extension[category][0].valueCodeableConcept = InsightCategoryCodeSystem#natural-language-processing
 //* code.coding[2].extension[insightSummary][0].extension[insightId].valueIdentifier.system = "https://acme.com/nlp-processor/1.0"
 //* code.coding[2].extension[insightSummary][0].extension[insightId].valueIdentifier.value = "insight-1"
+//* code.coding[2].extension[insightSummary][0].extension[element-source-classificaiton].valueCode = ProcessMetaSourceClassification#derived
 //* code.coding[2].extension[insightSummary][0].extension[category][0].valueCodeableConcept = InsightCategoryCodeSystem#natural-language-processing
 
 Instance:   SourceDiagnosticReport-DiabetesMellitus
