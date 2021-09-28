@@ -95,8 +95,9 @@ Description:    "Sample of a CDM Explanation of Benefit for a pharmacy claim"
 * item.adjudication[5].amount.value        = 1.11
 * item.adjudication[5].amount.currency     = CURRENCY#USD
 
-* .item.extension[averageWholesalePrice].valueMoney.value         = 2.88
-* .item.extension[averageWholesalePrice].valueMoney.currency      = CURRENCY#USD
+* item.extension[capitatedServiceIndicator].valueString          = "N"
+* item.extension[averageWholesalePrice].valueMoney.value         = 2.88
+* item.extension[averageWholesalePrice].valueMoney.currency      = CURRENCY#USD
 
 * item.detail[0].sequence                                                      = 1
 * item.detail[0].productOrService                                              = NdcNoHyphensCodeSystem#69452015120
