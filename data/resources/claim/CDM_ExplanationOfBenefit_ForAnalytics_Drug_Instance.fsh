@@ -44,6 +44,7 @@ Description:    "Sample of a CDM Explanation of Benefit for a pharmacy claim"
 * careTeam.provider  = Reference(DrKelly)
 
 * supportingInfo[0].sequence             = 1
+
 * supportingInfo[0].category             = ClaimSupportingInfoCategoryCodeSystem#dayssupply
 * supportingInfo[0].valueQuantity.value  = 28
 
