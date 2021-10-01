@@ -173,8 +173,8 @@ Description:    "Date and time of the source event that triggers either the crea
 
 //NOTE: Defining this as a global extension that is intended to be able to be associated to any element in a resource to classify that 
 //      field's value as originating from a system or record or a derived source
-Extension:      ElementnSourceClassification
-Id:              element-source-classificaiton
+Extension:      ElementSourceClassification
+Id:              element-source-classification
 Title:          "Element Source Classification"
 Description:    "Classification of the origin of the data value associated to a given element in a FHIR resource. The intent is that this extension value should be populated with a code from the process-meta-source-classification valueset."
 * value[x] only code
