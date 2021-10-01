@@ -14,7 +14,7 @@ Description:    "Example of an engagement communication request to send an Outre
 * meta.extension[processName].valueString = "ATC"
 * meta.extension[processVersion].valueString = "1.0"
 * meta.extension[processTimestamp].valueDateTime = "2020-03-01T03:05:00Z"
-* meta.tag = PrimaryOrSecondary#SECONDARY
+* meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier[0].type = IdentifierTypeCodeSystem#DRI
 * identifier[0].system = "http://ibm.com/fhir/cdm/engagement-communication-request"

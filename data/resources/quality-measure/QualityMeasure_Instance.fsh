@@ -12,7 +12,7 @@ Description:    "Example measure containing criteria for measure rules"
 * meta.extension[processName].valueString = "Measure Authoring Tool (MAT)"
 * meta.extension[processVersion].valueString = "1.0"
 * meta.extension[processTimestamp].valueDateTime = "2020-01-01T00:00:00Z"
-* meta.tag = PrimaryOrSecondary#SECONDARY
+* meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier[0].type = 	ID-TYPE#RI
 * identifier[0].system = "http://ibm.com/fhir/cdm/quality-measure"
