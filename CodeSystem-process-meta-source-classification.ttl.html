@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>ALVEARIE.FHIR.IG\Primary or Secondary - TTL Representation - FHIR v4.0.1</title>
+    <title>ALVEARIE.FHIR.IG\Classification of the origin of data - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.383"}
-    h3,h4,h5,h6{--heading-prefix:"3.383"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.386"}
+    h3,h4,h5,h6{--heading-prefix:"3.386"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -98,7 +98,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Primary or Secondary</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Classification of the origin of data</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -122,20 +122,20 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="CodeSystem-process-meta-primary-or-secondary.html">Narrative Content</a>
+    <a href="CodeSystem-process-meta-source-classification.html">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="CodeSystem-process-meta-primary-or-secondary.xml.html">XML</a>
+      <a href="CodeSystem-process-meta-source-classification.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-process-meta-primary-or-secondary.json.html">JSON</a>
+      <a href="CodeSystem-process-meta-source-classification.json.html">JSON</a>
     </li>
   
 
@@ -154,9 +154,9 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Primary or Secondary - TTL Representation</h2>
+<h2 id="root">: Classification of the origin of data - TTL Representation</h2>
 
-<p><a href="CodeSystem-process-meta-primary-or-secondary.ttl" no-download="true">Raw ttl</a> | <a download="null" href="CodeSystem-process-meta-primary-or-secondary.ttl">Download</a></p>
+<p><a href="CodeSystem-process-meta-source-classification.ttl" no-download="true">Raw ttl</a> | <a download="null" href="CodeSystem-process-meta-source-classification.ttl">Download</a></p>
 
     <!-- insert intro if present -->
   
@@ -173,17 +173,17 @@
 
  a fhir:CodeSystem;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "process-meta-primary-or-secondary"];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "process-meta-source-classification"];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "generated" ];
-     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This code system http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;PRIMARY&lt;a name=\"process-meta-primary-or-secondary-PRIMARY\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Primary&lt;/td&gt;&lt;td&gt;Primary data originates from the source system or the data integrator.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;SECONDARY&lt;a name=\"process-meta-primary-or-secondary-SECONDARY\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Secondary&lt;/td&gt;&lt;td&gt;Secondary data is transalated or derived data produced by a data processor that aggregates, interprets, derives or in some other way processes and enhances the source data.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+     fhir:Narrative.div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This code system http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;system-of-record&lt;a name=\"process-meta-source-classification-system-of-record\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;System of record&lt;/td&gt;&lt;td&gt;Primary data that originates from the source system of record or the data integrator.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;derived&lt;a name=\"process-meta-source-classification-derived\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Derived&lt;/td&gt;&lt;td&gt;Derived data produced by a data processor that interprets, aggregates or in some other way enhances the source data.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   ];
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:CodeSystem.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary"];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:CodeSystem.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> "http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification"];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "2.0.0"];
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:CodeSystem.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "PrimaryOrSecondary"];
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:CodeSystem.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Primary or Secondary"];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:CodeSystem.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "ProcessMetaSourceClassification"];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:CodeSystem.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Classification of the origin of data"];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:CodeSystem.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "active"];
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-09-28T19:40:31+00:00"^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> "2021-10-01T15:07:10+00:00"^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:CodeSystem.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Kim Kenna" ];
@@ -199,19 +199,19 @@
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "email" ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "tegge@us.ibm.com" ]     ]
   ];
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:CodeSystem.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> "Identifies the origin of the data elements from primary or secondary systems"];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:CodeSystem.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> "Identifies the class of origin of the data elements"];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:CodeSystem.content</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "complete"];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">fhir:CodeSystem.count</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> "2"^^xsd:nonNegativeInteger];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:CodeSystem.concept</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "PRIMARY" ];
-     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Primary" ];
-     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:CodeSystem.concept.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Primary data originates from the source system or the data integrator." ]
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "system-of-record" ];
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "System of record" ];
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:CodeSystem.concept.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Primary data that originates from the source system of record or the data integrator." ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "SECONDARY" ];
-     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Secondary" ];
-     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:CodeSystem.concept.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Secondary data is transalated or derived data produced by a data processor that aggregates, interprets, derives or in some other way processes and enhances the source data." ]
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:CodeSystem.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> "derived" ];
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:CodeSystem.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Derived" ];
+     <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:CodeSystem.concept.definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> "Derived data produced by a data processor that interprets, aggregates or in some other way enhances the source data." ]
   ].
 
 # - ontology header ------------------------------------------------------------
@@ -250,7 +250,7 @@
 
       <div class="inner-wrapper">
         <p><a name="l501">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 28, 2021 19:40+0000">2021-09-28</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#2.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Oct 1, 2021 15:07+0000">2021-10-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

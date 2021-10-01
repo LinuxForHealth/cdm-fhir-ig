@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "source-classification-values"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-process-meta-primary-or-secondary.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-process-meta-source-classification.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/source-classification-values"];
   fhir:ValueSet.version [ fhir:value "2.0.0"];
   fhir:ValueSet.name [ fhir:value "SourceClassificationValueSet"];
-  fhir:ValueSet.title [ fhir:value "Primary or Secondary Value Set"];
+  fhir:ValueSet.title [ fhir:value "Source Classification Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-09-28T19:40:31+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-10-01T15:07:10+00:00"^^xsd:dateTime];
   fhir:ValueSet.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
@@ -35,11 +35,11 @@
        fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Source Classification Value Set"];
+  fhir:ValueSet.description [ fhir:value "Value set for classifying data origin"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification" ]
      ]
   ] .
 

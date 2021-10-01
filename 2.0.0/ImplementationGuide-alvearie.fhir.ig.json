@@ -10,7 +10,7 @@
   "name": "AlvearieFHIRImplementationGuide",
   "title": "Alvearie FHIR Implementation Guide",
   "status": "active",
-  "date": "2021-09-28T19:40:31+00:00",
+  "date": "2021-10-01T15:07:10+00:00",
   "contact": [
     {
       "name": "Kim Kenna",
@@ -1972,6 +1972,20 @@
         },
         "name": "Effective Period",
         "description": "Effective period.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/element-source-classification"
+        },
+        "name": "Element Source Classification",
+        "description": "Classification of the origin of the data value associated to a given element in a FHIR resource. The intent is that this extension value should be populated with a code from the process-meta-source-classification valueset.",
         "exampleBoolean": false
       },
       {
@@ -4910,8 +4924,8 @@
         "reference": {
           "reference": "ValueSet/source-classification-values"
         },
-        "name": "Primary or Secondary Value Set",
-        "description": "Source Classification Value Set",
+        "name": "Source Classification Value Set",
+        "description": "Value set for classifying data origin",
         "exampleBoolean": false
       },
       {
@@ -5664,20 +5678,6 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/process-meta-primary-or-secondary"
-        },
-        "name": "Primary or Secondary",
-        "description": "Identifies the origin of the data elements from primary or secondary systems",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
           "reference": "CodeSystem/procedure-modifier"
         },
         "name": "Procedure Modifier Codes",
@@ -5696,6 +5696,20 @@
         },
         "name": "Procedure Type Codes",
         "description": "Codes indicating the procedure type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/process-meta-source-classification"
+        },
+        "name": "Classification of the origin of data",
+        "description": "Identifies the class of origin of the data elements",
         "exampleBoolean": false
       },
       {

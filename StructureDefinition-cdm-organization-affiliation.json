@@ -20,7 +20,7 @@
   "name": "CDMOrganizationAffiliation",
   "title": "CDM Organization Affiliation",
   "status": "active",
-  "date": "2021-09-28T19:40:31+00:00",
+  "date": "2021-10-01T15:07:10+00:00",
   "contact": [
     {
       "name": "Kim Kenna",
@@ -1573,8 +1573,8 @@
         "id": "OrganizationAffiliation.meta.tag:SourceClassificationTag",
         "path": "OrganizationAffiliation.meta.tag",
         "sliceName": "SourceClassificationTag",
-        "short": "Identifies the origin of data elements in this FHIR resource, from either primary or secondary source systems",
-        "definition": "Identifies the origin of data elements in this FHIR resource, from either primary or secondary source systems",
+        "short": "Identifies the origin of this FHIR resource, from either a source system of record or derived from a process",
+        "definition": "Identifies the origin of this FHIR resource, from either a source system of record or derived from a process",
         "comment": "The tags can be updated without changing the stated version of the resource. The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.",
         "min": 0,
         "max": "1",
@@ -1725,7 +1725,7 @@
             "code": "uri"
           }
         ],
-        "patternUri": "http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary",
+        "patternUri": "http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification",
         "constraint": [
           {
             "key": "ele-1",

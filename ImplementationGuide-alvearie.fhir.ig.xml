@@ -11,7 +11,7 @@
   <name value="AlvearieFHIRImplementationGuide"/>
   <title value="Alvearie FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-09-28T19:40:31+00:00"/>
+  <date value="2021-10-01T15:07:10+00:00"/>
   <contact>
     <name value="Kim Kenna"/>
     <telecom>
@@ -1502,6 +1502,17 @@
       </reference>
       <name value="Effective Period"/>
       <description value="Effective period."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/element-source-classification"/>
+      </reference>
+      <name value="Element Source Classification"/>
+      <description value="Classification of the origin of the data value associated to a given element in a FHIR resource. The intent is that this extension value should be populated with a code from the process-meta-source-classification valueset."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3810,8 +3821,8 @@
       <reference>
         <reference value="ValueSet/source-classification-values"/>
       </reference>
-      <name value="Primary or Secondary Value Set"/>
-      <description value="Source Classification Value Set"/>
+      <name value="Source Classification Value Set"/>
+      <description value="Value set for classifying data origin"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4402,17 +4413,6 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/process-meta-primary-or-secondary"/>
-      </reference>
-      <name value="Primary or Secondary"/>
-      <description value="Identifies the origin of the data elements from primary or secondary systems"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
         <reference value="CodeSystem/procedure-modifier"/>
       </reference>
       <name value="Procedure Modifier Codes"/>
@@ -4428,6 +4428,17 @@
       </reference>
       <name value="Procedure Type Codes"/>
       <description value="Codes indicating the procedure type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/process-meta-source-classification"/>
+      </reference>
+      <name value="Classification of the origin of data"/>
+      <description value="Identifies the class of origin of the data elements"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
