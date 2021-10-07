@@ -37,7 +37,7 @@ Description:    "Sample CDM Practitioner ingested from a EMR or PMS system"
 * telecom[0].value = "972-678-8755"
 * telecom[0].extension[contactPointCountry].valueString = "1"
 * telecom[0].extension[contactPointExt].valueString = "567"
-* telecom[0].extension[telAddress].valueUrl = "tel:+119726788755;ext=567"
+* telecom[0].extension[telAddress].valueUrl = "tel:+19726788755;ext=567"
 
 * telecom[1].system = #fax
 * telecom[1].use = #work
