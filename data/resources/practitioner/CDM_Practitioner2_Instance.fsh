@@ -17,18 +17,18 @@ Description:    "Sample CDM Practitioner ingested from a EMR or PMS system"
 * name.suffix = "MD"
 * name.text = "Dr Samuel W Smith, MD"
 
-* identifier[0].use = #official
-* identifier[0].type = IdentifierTypeCodeSystem#PRN
-* identifier[0].system = "http://acme-health.com/emr1/practitioner"
-* identifier[0].value = "33449988771166"
-* identifier[0].assigner.display = "Acme Health PRN"
+* identifier.use = #official
+* identifier.type   = ID-TYPE#PRN
+* identifier.system = "http://hl7.org/fhir/sid/us-npi"
+* identifier.value = "33449988771166"
+* identifier.assigner.display = "Acme Health PRN"
 
 * address.use = #work
 * address.type = #physical
 * address.line = "200 W Park Drive"
 * address.city = "Irving"
 * address.state = "TX"
-* address.postalCode = " 75014"
+* address.postalCode = "75014"
 * address.country = "US"
 * address.district = "TX"
 
