@@ -32,32 +32,32 @@ Description:    "A provider issued list of professional services and products wh
 * procedure.extension[procedureGroup].valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
 
 * item.extension contains CapitatedServiceIndicator named capitatedServiceIndicator 0..1
-* item.extension[capitatedServiceIndicator] ^short      = "Indicator that this service (encounter record) was capitated" 
-* item.extension[capitatedServiceIndicator] ^definition = "Indicator that this service (encounter record) was capitated" 
+* item.extension[capitatedServiceIndicator] ^short      = "Indicates whether this service (encounter record) was capitated" 
+* item.extension[capitatedServiceIndicator] ^definition = "Indicates whether this service (encounter record) was capitated" 
 
 * item.extension contains FullyInsuredIndicator named fullyInsuredIndicator 0..1
-* item.extension[fullyInsuredIndicator] ^short      = "Indicator that the claim was for a fully insured plan"
-* item.extension[fullyInsuredIndicator] ^definition = "Indicator that the claim was for a fully insured plan"
+* item.extension[fullyInsuredIndicator] ^short      = "Indicates whether the claim was for a fully insured plan"
+* item.extension[fullyInsuredIndicator] ^definition = "Indicates whether the claim was for a fully insured plan"
 
 * item.extension contains NursingHomeIndicator named nursingHomeIndicator 0..1
-* item.extension[nursingHomeIndicator] ^short      = "Indicator that the claim was for a nursing home patient"
-* item.extension[nursingHomeIndicator] ^definition = "Indicator that the claim was for a nursing home patient"
+* item.extension[nursingHomeIndicator] ^short      = "Indicates whether the claim was for a nursing home patient"
+* item.extension[nursingHomeIndicator] ^definition = "Indicates whether the claim was for a nursing home patient"
 
 * item.extension contains ServiceBillDaysCount named serviceBillDaysCount 0..1
 * item.extension[serviceBillDaysCount] ^short      = "Number of days between the date of service and the date the claim was received"
 * item.extension[serviceBillDaysCount] ^definition = "Number of days between the date of service and the date the claim was received"
 
 * insurance.extension contains CrossoverIndicator named crossoverIndicator 0..1
-* insurance.extension[crossoverIndicator] ^short      = "Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare"
-* insurance.extension[crossoverIndicator] ^definition = "Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare"
+* insurance.extension[crossoverIndicator] ^short      = "Indicates whether the claim is a crossover claim where a portion is paid by Medicare"
+* insurance.extension[crossoverIndicator] ^definition = "Indicates whether the claim is a crossover claim where a portion is paid by Medicare"
 
 * insurance.extension contains PriorAuthorizationIndicator named priorAuthorizationIndicator 0..1
 * insurance.extension[priorAuthorizationIndicator] ^short      = "Indicator of prior authorization for the claim"
 * insurance.extension[priorAuthorizationIndicator] ^definition = "Indicator of prior authorization for the claim"
 
 * extension contains AggregateClaimIndicator named aggregateClaimIndicator 0..1
-* extension[aggregateClaimIndicator] ^short      = "Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"
-* extension[aggregateClaimIndicator] ^definition = "Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"
+* extension[aggregateClaimIndicator] ^short      = "Indicates whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"
+* extension[aggregateClaimIndicator] ^definition = "Indicates whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"
 
 * extension contains ClaimSnapshotProviderName named claimSnapshotProviderName 0..1
 * extension[claimSnapshotProviderName] ^short      = "Original provider name as reported on the claim"
@@ -94,8 +94,8 @@ Description:    "A provider issued list of professional services and products wh
 * extension[claimStatus].valueCodeableConcept from CLAIM-STATUS (extensible)
 
 * extension contains LastClaimIndicator named lastClaimIndicator 0..1
-* extension[lastClaimIndicator] ^short      = "Indicator that identifies whether this claim record is the last or most recent claim" 
-* extension[lastClaimIndicator] ^definition = "Indicator that identifies whether this claim record is the last or most recent claim"
+* extension[lastClaimIndicator] ^short      = "Indicates whether this claim record is the last or most recent claim" 
+* extension[lastClaimIndicator] ^definition = "Indicates whether this claim record is the last or most recent claim"
 
 * item.quantity.extension contains LocalNumberOfUnitsPerService named localNumberOfUnitsPerService 0..1
 * item.quantity.extension[localNumberOfUnitsPerService] ^short      = "Customer-specific quantity of either services or units"
@@ -106,8 +106,8 @@ Description:    "A provider issued list of professional services and products wh
 * extension[participatingPlan] ^definition = "Customer-specific code for the participating plan" 
 
 * extension contains ReferralIndicator named referralIndicator 0..1
-* extension[referralIndicator]  ^short      = "An indicator signifying the service resulted from a referral"
-* extension[referralIndicator]  ^definition = "An indicator signifying the service resulted from a referral"
+* extension[referralIndicator]  ^short      = "Indicator signifying the service resulted from a referral"
+* extension[referralIndicator]  ^definition = "Indicator signifying the service resulted from a referral"
 
 * extension contains SnapshotAgeInYears named snapshotAgeInYears 0..1
 * extension[snapshotAgeInYears] ^short      = "The age of the patient in years at the date of service"

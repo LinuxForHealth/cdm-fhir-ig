@@ -7,7 +7,7 @@ Description:    "Used to determine which facility claims should be counted as in
 Extension:      AggregateClaimIndicator
 Id:             aggregate-claim-indicator
 Title:          "Aggregate Claim Indicator"
-Description:    "Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"
+Description:    "Indicates whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"
 * value[x] only string
 
 Extension:      AverageWholesalePrice
@@ -19,7 +19,7 @@ Description:    "The average wholesale price charged by wholesalers for the spec
 Extension:      CapitatedServiceIndicator
 Id:             capitated-service-indicator
 Title:          "Capitated Service Indicator"
-Description:    "Indicator that this service (encounter record) was capitated"
+Description:    "Indicates whether this service (encounter record) was capitated"
 * value[x] only string
 
 Extension:      ClaimCategory
@@ -63,7 +63,7 @@ Description:    "Customer-specific code for the compound of the drug"
 Extension:      CrossoverIndicator
 Id:             crossover-indicator
 Title:          "Crossover Indicator"
-Description:    "Indicator specifying whether the claim is a crossover claim where a portion is paid by Medicare"
+Description:    "Indicates whether the claim is a crossover claim where a portion is paid by Medicare"
 * value[x] only string
 
 Extension:      EmployeeBusinessUnit
@@ -87,13 +87,13 @@ Description:    "Customer-specific code for the financial system"
 Extension:      FullyInsuredIndicator
 Id:             fully-insured-indicator
 Title:          "Fully Insured Indicator"
-Description:    "Indicator that the claim was for a fully insured plan"
+Description:    "Indicates whether the claim was for a fully insured plan"
 * value[x] only string
 
 Extension:      LastClaimIndicator
 Id:             last-claim-indicator
 Title:          "Last Claim Indicator"
-Description:    "Indicator that identifies whether this claim record is the last or most recent claim"   
+Description:    "Indicates whether this claim record is the last or most recent claim"   
 * value[x] only string
 
 Extension:      LocalNumberOfUnitsPerService
@@ -118,7 +118,7 @@ Description:    "Customer-specific identifier of the patient provider network in
 Extension:      NursingHomeIndicator
 Id:             nursing-home-indicator
 Title:          "Nursing Home Indicator"
-Description:    "Indicator that the claim was for a nursing home patient"
+Description:    "Indicates whether the claim was for a nursing home patient"
 * value[x] only string
 
 Extension:      ProcedureGroup

@@ -44,13 +44,13 @@ Description: "Customer-specific code for the ITS routing number"
 Extension:   ReinsuranceMetIndicator
 Id:          reinsurance-met-indicator
 Title:       "Reinsurance Met Indicator"
-Description: "Indicator that the reinsurance amount was met" 
+Description: "Indicates whether the reinsurance amount was met" 
 * value[x] only string
 
 Extension:   RxFormularyIndicator
 Id:          rx-formulary-indicator
 Title:       "Rx Formulary Indicator"
-Description: "An indicator that the prescription drug is included in the formulary" 
+Description: "Indicates whether the prescription drug is included in the formulary" 
 * value[x] only string
 
 Extension:   RxPayTier
@@ -62,7 +62,7 @@ Description: "Customer-specific code for the payment tier of the drug Claim"
 Extension:   RxSupplyIndicator
 Id:          rx-supply-indicator
 Title:       "Rx Supply Indicator"
-Description: "An indicator of whether or not the drug claim is a medical supply (Y) or a drug (N)"
+Description: "Indicates whether the drug claim is a medical supply (Y) or a drug (N)"
 * value[x] only string
 
 Extension:   ClaimResponseItemStatus
