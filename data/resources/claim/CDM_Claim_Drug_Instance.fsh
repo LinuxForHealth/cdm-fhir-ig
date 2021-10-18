@@ -101,6 +101,9 @@ Description:    "Sample of a CDM Drug Claim"
 * item[0].locationCodeableConcept.coding[1] = http://acme-health.com/CodeSystem/local-place-of-service#LocalPlcOfService
 * item[0].quantity.value                    = 30.00
 * item[0].net.value                         = 18.86
+* item[0].net.currency                      = CURRENCY#USD
+* item[0].extension[averageWholesalePrice].valueMoney.value    = 2.88
+* item[0].extension[averageWholesalePrice].valueMoney.currency = CURRENCY#USD
 * item[0].extension[compoundCode].valueCodeableConcept      = http://acme-health.com/CodeSystem/local-compound-code#CompoundCd1
 * item[0].extension[capitatedServiceIndicator].valueString  = "N"
 * item[0].extension[fullyInsuredIndicator].valueString      = "Y"

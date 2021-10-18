@@ -2,19 +2,20 @@ Instance:       Provider1
 InstanceOf:     CDMOrganization
 Usage:          #example
 Title:          "CDM Organization - Provider 1"
-Description:    "Sample CDM Organization representing a health care provider"
+Description:    "Sample CDM Organization representing a provider"
 
 * meta.source  = "http://acme-health.com/organization/provider"
 * meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
 
 * identifier[0].use    = #official
-* identifier[0].type   = ID-TYPE#NPI
+* identifier[0].type   = ID-TYPE#PRN
 * identifier[0].system = US-NPI
-* identifier[0].value  = "12345123450"
+* identifier[0].value  = "1122445599"
+* identifier[0].assigner.display = "cms.gov"
 
-* name = "Acme Health Care"
+* name = "Acme Health Organization"
 * active = true
-* type = WhPayerProviderTypeCodeSystem#1
+* type = WhPayerProviderTypeCodeSystem#204
 
 * address.use = #work
 * address.type = #physical

@@ -44,13 +44,13 @@ Description:    "Sample of a CDM Explanation of Benefit for a pharmacy claim"
 * careTeam.provider  = Reference(DrKelly)
 
 * supportingInfo[0].sequence             = 1
-* supportingInfo[0].category             = CLAIM-INFORMATION-CATEGORY#dayssupply
+
+* supportingInfo[0].category             = ClaimSupportingInfoCategoryCodeSystem#dayssupply
 * supportingInfo[0].valueQuantity.value  = 28
 
 * supportingInfo[1].sequence             = 2
 * supportingInfo[1].category             = CLAIM-INFORMATION-CATEGORY#info
 * supportingInfo[1].code                 = NCPDPDispenseAsWrittenCodeSystem#0 "No Product Selection Indicated"
-* supportingInfo[1].valueString          = "0"
 
 * supportingInfo[2].sequence             = 3
 * supportingInfo[2].category             = CLAIM-INFORMATION-CATEGORY#info

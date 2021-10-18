@@ -1,9 +1,14 @@
 Profile:        CDMExplanationOfBenefitForAnalytics
 Parent:         CDMExplanationOfBenefit
 Id:             cdm-explanation-of-benefit-for-analytics
+Title:          "CDM Explanation of Benefit for Analytics"
 Description:    "The CDMExplanationOfBenefitForAnalytics profile extends the base CDMExplanationOfBenefit profile with additional details that are useful for analytics."
 
 // EXTENSIONS at root level in alphabetical order
+* extension contains AdmitCount named admitCount 0..1
+* extension[admitCount] ^short      = "Used to determine which facility claims should be counted as inpatient admissions"
+* extension[admitCount] ^definition = "Used to determine which facility claims should be counted as inpatient admissions"
+
 * extension contains AggregateClaimIndicator named aggregateClaimIndicator 0..1
 * extension[aggregateClaimIndicator] ^short      = "Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"
 * extension[aggregateClaimIndicator] ^definition = "Indicator that identifies whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"

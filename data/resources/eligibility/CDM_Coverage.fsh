@@ -111,8 +111,8 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension contains    
     WhPayerSubscriberRelationshipCode named whPayerSubscriberRelationshipCode 0..1 and
     LocalSubscriberRelationshipCode named localSubscriberRelationshipCode 0..1
-* extension[whPayerSubscriberRelationshipCode] ^short      = "Health Data Connect standard code for the relationship of the member to the contract holder"
-* extension[whPayerSubscriberRelationshipCode] ^definition = "Health Data Connect standard code for the relationship of the member to the contract holder"
+* extension[whPayerSubscriberRelationshipCode] ^short      = "IBM® Health Data Connect standard code for the relationship of the member to the contract holder"
+* extension[whPayerSubscriberRelationshipCode] ^definition = "IBM® Health Data Connect standard code for the relationship of the member to the contract holder"
 * extension[localSubscriberRelationshipCode] ^short      = "Customer-specific code for the relationship of the member to the subscriber"
 * extension[localSubscriberRelationshipCode] ^definition = "Customer-specific code for the relationship of the member to the subscriber"
 

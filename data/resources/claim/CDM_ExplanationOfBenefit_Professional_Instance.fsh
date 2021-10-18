@@ -22,8 +22,8 @@ Description:    "Sample of a CDM Explanation of Benefit for a profession claim"
 
 * status                   = #active
 
-* type.coding[1].system    = "http://acme-health.com/CodeSystem/local-claim-type"
-* type.coding[1].code      = #MedicalClaimType
+* type.coding.system    = "http://acme-health.com/CodeSystem/local-claim-type"
+* type.coding.code      = #MedicalClaimType
 
 * use      = #claim
 * patient  = Reference(CDMPatientInstance)
