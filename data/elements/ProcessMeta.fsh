@@ -77,9 +77,9 @@ Description:    "Data lineage meta with process extensions"
 
 * tag contains SourceClassificationTag 0..1
 * tag[SourceClassificationTag].code from SourceClassificationValueSet (required)
-* tag[SourceClassificationTag].system = "http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary"
-* tag[SourceClassificationTag] ^short      = "Identifies the origin of data elements in this FHIR resource, from either primary or secondary source systems"
-* tag[SourceClassificationTag] ^definition = "Identifies the origin of data elements in this FHIR resource, from either primary or secondary source systems"
+* tag[SourceClassificationTag].system = "http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification"
+* tag[SourceClassificationTag] ^short      = "Identifies the origin of this FHIR resource, from either a source system of record or derived from a process"
+* tag[SourceClassificationTag] ^definition = "Identifies the origin of this FHIR resource, from either a source system of record or derived from a process"
 
 Extension:      IngestionBatchId
 Id:             ingestion-batch-id
@@ -171,15 +171,24 @@ Title:          "Source Event Timestamp"
 Description:    "Date and time of the source event that triggers either the creation or updating of this FHIR resource"
 * value[x] only dateTime
 
-CodeSystem:     PrimaryOrSecondary
-Id:             process-meta-primary-or-secondary
-Title:          "Primary or Secondary"
-Description:    "Identifies the origin of the data elements from primary or secondary systems"
-* #PRIMARY      "Primary"       "Primary data originates from the source system or the data integrator."
-* #SECONDARY    "Secondary"     "Secondary data is transalated or derived data produced by a data processor that aggregates, interprets, derives or in some other way processes and enhances the source data."
+//NOTE: Defining this as a global extension that is intended to be able to be associated to any element in a resource to classify that 
+//      field's value as originating from a system or record or a derived source
+Extension:      ElementSourceClassification
+Id:              element-source-classification
+Title:          "Element Source Classification"
+Description:    "Classification of the origin of the data value associated to a given element in a FHIR resource. The intent is that this extension value should be populated with a code from the process-meta-source-classification valueset."
+* value[x] only code
+
+
+CodeSystem:     ProcessMetaSourceClassification
+Id:             process-meta-source-classification
+Title:          "Classification of the origin of data"
+Description:    "Identifies the class of origin of the data elements"
+* #system-of-record      "System of record"       "Primary data that originates from the source system of record or the data integrator."
+* #derived    "Derived"     "Derived data produced by a data processor that interprets, aggregates or in some other way enhances the source data."
 
 ValueSet:       SourceClassificationValueSet
 Id:             source-classification-values
-Title:          "Primary or Secondary Value Set"
-Description:    "Source Classification Value Set"
-* codes from system PrimaryOrSecondary
+Title:          "Source Classification Value Set"
+Description:    "Value set for classifying data origin"
+* codes from system ProcessMetaSourceClassification
