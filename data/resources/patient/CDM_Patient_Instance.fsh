@@ -15,16 +15,14 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 * identifier[0].system = "http://acme-health.com/emr1/patient"
 * identifier[0].value = "unencryp-id1234"
 * identifier[0].assigner.display = "Acme Health - EMR1 (unencrypted)"
-* identifier[0].extension.url = "http://ibm.com/fhir/cdm/StructureDefinition/unencrypted-state"
-* identifier[0].extension.valueBoolean = false
+* identifier[0].extension[encryptedState].valueBoolean = false
 
 * identifier[1].use = #secondary
 * identifier[1].type = 	IdentifierTypeCodeSystem#SSRI
 * identifier[1].system = "http://acme-health.com/emr1/patient"
 * identifier[1].value = "encryp-id1234"
 * identifier[1].assigner.display = "Acme Health - EMR1 (encrpyted)"
-* identifier[1].extension.url = "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state"
-* identifier[1].extension.valueBoolean = true
+* identifier[1].extension[encryptedState].valueBoolean = true
 
 * identifier[2].use = #official
 * identifier[2].type = 	ID-TYPE#MR
@@ -41,7 +39,7 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 * identifier[4].use = #official
 * identifier[4].type.coding[0] = ID-TYPE#SB
 * identifier[4].type.coding[1] = ID-TYPE#SS
-* identifier[4].system = "http;//hl7.org/fhir/sid/us-ssn"
+* identifier[4].system = "http://hl7.org/fhir/sid/us-ssn"
 * identifier[4].value = "0001223333"
 * identifier[4].assigner.display = "ssa.gov"
 
@@ -66,9 +64,10 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 
 * active = true
 
-* name.given = "Firstname"
-* name.family = "McLastname"
-* birthDate = "1990-01-04"
+* name.given[0] = "Firstname"
+* name.given[1] = "Middlename"
+* name.family   = "McLastname"
+* birthDate     = "1990-01-04"
 
 * deceasedDateTime = "2020-09-28T00:00:00Z"
 
@@ -90,8 +89,15 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 * extension[usCoreRace].extension[text].valueString = "White"
 * extension[usCoreEthnicity].extension[ombCategory].valueCoding = ETHNICITY#2186-5 "Not Hispanic or Latino"
 * extension[usCoreEthnicity].extension[text].valueString = "Not Hispanic or Latino"
+* extension[ethnicity].valueCodeableConcept              = http://acme-health.com/CodeSystem/local-ethnicity-code#01
 
 * extension[localRaceCd].valueCodeableConcept = http://acme-health.com/CodeSystem/local-race-code#White
+
+* extension[patientCitizenship].valueCodeableConcept       = CITIZENSHIP#US
+* extension[citizenStatus].valueCodeableConcept            = http://acme-health.com/CodeSystem/local-citizen-status#LocalCitizenStatusCd
+* extension[memberImmigrationStatus].valueCodeableConcept  = http://acme-health.com/CodeSystem/local-immigration-status#LocalImmigrationStatusCd
+* extension[nonstandardLanguage].valueCodeableConcept      = http://acme-health.com/CodeSystem/local-nonstandard-language#E
+* extension[veteranIndicator].valueString                  = "N"
 
 * communication[0].language = LANGUAGE#en
 * communication[0].extension[languageRank].valuePositiveInt = 1
@@ -104,12 +110,14 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 * address.type = #both
 * address.period.start = "2000-01-01"
 * address.period.end = "2000-10-31"
-* address.postalCode = "12345"
+* address.postalCode = "43315"
 * address.country = "US"
 * address.state = "Ohio"
-* address.city = "Townington"
+* address.city = "Cardington"
 * address.extension[countyCode].valueCodeableConcept  = http://acme-health.com/CodeSystem/local-county-code#001
 * address.extension[regionCode].valueCodeableConcept  = http://acme-health.com/CodeSystem/local-region-code#MW
+* address.extension[latitude].valueString             =  "40-30'02'' N"
+* address.extension[longitude].valueString            = "082-53'37'' W"
 
 * telecom[0].system = #sms
 * telecom[0].use = #mobile
