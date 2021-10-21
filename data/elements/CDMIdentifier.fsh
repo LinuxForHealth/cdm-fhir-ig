@@ -4,11 +4,22 @@ Title:          "Encrypted State"
 Description:    "Encrypted state"
 * value[x] only boolean
 
+Extension:      SsiIndicator
+Id:             ssi-indicator
+Title:          "SSI Indicator"
+Description:    "Indicates if the person receives Supplemental Security Income (SSI) administered via the Social Security Administration (SSA)"
+* value[x] only string
+
 Profile:        CDMIdentifier
 Parent:         Identifier
 Id:             cdm-identifier
 Title:          "CDM Identifier"
-Description:    "CDM identifier with support for encrypted value"
+Description:    "CDM identifier with extensions"
+
 * extension contains EncryptedState named encryptedState 0..1
+* extension contains SsiIndicator named ssiIndicator 0..1 
+
 * extension[encryptedState] ^short      = "Used to indicate whether the identifier value is encrypted"
 * extension[encryptedState] ^definition = "Used to indicate whether the identifier value is encrypted"
+* extension[ssiIndicator] ^short      = "Indicates if the person receives Supplemental Security Income (SSI) administered via the Social Security Administration (SSA)"
+* extension[ssiIndicator] ^definition = "Indicates if the person receives Supplemental Security Income (SSI) administered via the Social Security Administration (SSA)"
