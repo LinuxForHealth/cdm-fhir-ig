@@ -13,7 +13,7 @@ Description:    "Sample CDM Organization representing a provider"
 * identifier[0].value  = "1122445599"
 * identifier[0].assigner.display = "cms.gov"
 
-* name = "Acme Health Organization"
+* name = "Dr Smith"
 * active = true
 * type = WhPayerProviderTypeCodeSystem#204
 
