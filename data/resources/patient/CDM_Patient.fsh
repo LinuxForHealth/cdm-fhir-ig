@@ -6,14 +6,18 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * contained 0..0
 * meta only ProcessMeta
 
+* identifier only CDMIdentifier
 * identifier 0..*
 * identifier.value 1..1
 * identifier.type from IdentifierTypeValueSet (extensible)
-* identifier only CDMIdentifier
 
 * communication.extension contains LanguageRank named languageRank 0..1
 * communication.extension[languageRank] ^short      = "Specify preferred order of language use (1 = highest)"
 * communication.extension[languageRank] ^definition = "Specify preferred order of language use (1 = highest)"
+
+* extension contains ethnicity named ethnicity 0..1
+* extension[ethnicity] ^short      = "Customer-specific code for the ethnicity of the person"
+* extension[ethnicity] ^definition = "Customer-specific code for the ethnicity of the person"
 
 * extension contains FamilyId named familyId 0..*
 * extension[familyId] ^short      = "The unique identifier for the subscriber (contract holder, employee) and the associated dependents"
@@ -39,6 +43,10 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * contact.address only CDMAddress
 * contact.telecom only CDMContactPoint
 
+* extension contains MemberImmigrationStatus named memberImmigrationStatus 0..1
+* extension[memberImmigrationStatus] ^short = "Customer-specific code for the immigration status of the patient"
+* extension[memberImmigrationStatus] ^short = "Customer-specific code for the immigration status of the patient"
+
 * extension contains StatusCode named statusCode 0..*
 * extension[statusCode].valueCodeableConcept from PatientStatusValueSet (example)
 * extension[statusCode] ^short      = "Customer-specific patient status codes"
@@ -54,6 +62,15 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * extension contains LocalRaceCd named localRaceCd 0..1
 * extension[localRaceCd] ^short      = "Customer-specific code for the race of the person"
 * extension[localRaceCd] ^definition = "Customer-specific code for the race of the person"
+
+* extension contains PatientCitizenship named patientCitizenship 0..*
+* extension[patientCitizenship].valueCodeableConcept from CitizenshipValueSet (extensible)
+* extension[patientCitizenship] ^short      = "Code to identify if the patient is a U.S. Citizen"
+* extension[patientCitizenship] ^definition = "Code to identify if the patient is a U.S. Citizen"
+
+* extension contains CitizenStatus named citizenStatus 0..1
+* extension[citizenStatus] ^short      = "Customer-specific code for the citizenship status of the patient"
+* extension[citizenStatus] ^definition = "Customer-specific code for the citizenship status of the patient"
 
 * extension contains SexAssignedAtBirth named sexAssignedAtBirth 0..1
 * extension[sexAssignedAtBirth].valueCodeableConcept from SexAssignedAtBirthValueSet (extensible)
@@ -90,3 +107,11 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * extension contains CommunicationOptOut named communicationOptOut 0..*
 * extension[communicationOptOut] ^short      = "Opt-out patient for communications by product and/or communication mode"
 * extension[communicationOptOut] ^definition = "Opt-out patient for communications by product and/or communication mode"
+
+* extension contains NonstandardLanguage named nonstandardLanguage 0..1
+* extension[nonstandardLanguage] ^short      = "Customer-specific code for the language of the patient"
+* extension[nonstandardLanguage] ^definition = "Customer-specific code for the language of the patient"
+
+* extension contains VeteranIndicator named veteranIndicator 0..1
+* extension[veteranIndicator] ^short      = "Indicates whether the individual served in the active military, naval, or air service"
+* extension[veteranIndicator] ^definition = "Indicates whether the individual served in the active military, naval, or air service"
