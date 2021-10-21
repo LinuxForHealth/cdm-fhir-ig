@@ -74,8 +74,8 @@ Description:     "This resource provides the adjudication details from the proce
 * item.extension[numberOfUnitsAllowed] ^definition = "Customer-specific quantity of services or units allowed"
 
 * item.extension contains ReinsuranceMetIndicator named reinsuranceMetIndicator 0..1
-* item.extension[reinsuranceMetIndicator] ^short      = "Indicates whether the reinsurance amount was met"
-* item.extension[reinsuranceMetIndicator] ^definition = "Indicates whether the reinsurance amount was met"
+* item.extension[reinsuranceMetIndicator] ^short      = "Indicator that the reinsurance amount was met"
+* item.extension[reinsuranceMetIndicator] ^definition = "Indicator that the reinsurance amount was met"
 
 * item.extension contains UtilizationReview named utilizationReview 0..1
 * item.extension[utilizationReview] ^short      = "Customer-specific code for the type of utilization review"
