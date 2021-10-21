@@ -56,7 +56,7 @@ Description:    "Sample of a CDM Drug Claim"
 
 * supportingInfo[2].sequence             = 3
 * supportingInfo[2].category             = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[2].code                 = NCPDPDispenseAsWrittenCodeSystem#8 "Generic Not Available"
+* supportingInfo[2].code                 = NCPDPDispenseAsWrittenCodeSystem#8 "8"
 
 * supportingInfo[3].sequence             = 4
 * supportingInfo[3].category             = CLAIM-INFORMATION-CATEGORY#info
@@ -101,7 +101,6 @@ Description:    "Sample of a CDM Drug Claim"
 * item[0].locationCodeableConcept.coding[1] = http://acme-health.com/CodeSystem/local-place-of-service#LocalPlcOfService
 * item[0].quantity.value                    = 30.00
 * item[0].net.value                         = 18.86
-* item[0].net.currency                      = CURRENCY#USD
 * item[0].extension[averageWholesalePrice].valueMoney.value    = 2.88
 * item[0].extension[averageWholesalePrice].valueMoney.currency = CURRENCY#USD
 * item[0].extension[compoundCode].valueCodeableConcept      = http://acme-health.com/CodeSystem/local-compound-code#CompoundCd1
