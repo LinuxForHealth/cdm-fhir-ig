@@ -52,8 +52,8 @@ Description:    "A provider issued list of professional services and products wh
 * insurance.extension[crossoverIndicator] ^definition = "Indicates whether the claim is a crossover claim where a portion is paid by Medicare"
 
 * insurance.extension contains PriorAuthorizationIndicator named priorAuthorizationIndicator 0..1
-* insurance.extension[priorAuthorizationIndicator] ^short      = "Indicator of prior authorization for the claim"
-* insurance.extension[priorAuthorizationIndicator] ^definition = "Indicator of prior authorization for the claim"
+* insurance.extension[priorAuthorizationIndicator] ^short      = "Indicates prior authorization for the claim"
+* insurance.extension[priorAuthorizationIndicator] ^definition = "Indicates prior authorization for the claim"
 
 * extension contains AggregateClaimIndicator named aggregateClaimIndicator 0..1
 * extension[aggregateClaimIndicator] ^short      = "Indicates whether this claim record is included in the adjustment processing of the aggregate build logic for admissions, episodes or DCGs"
@@ -106,8 +106,8 @@ Description:    "A provider issued list of professional services and products wh
 * extension[participatingPlan] ^definition = "Customer-specific code for the participating plan" 
 
 * extension contains ReferralIndicator named referralIndicator 0..1
-* extension[referralIndicator]  ^short      = "Indicator signifying the service resulted from a referral"
-* extension[referralIndicator]  ^definition = "Indicator signifying the service resulted from a referral"
+* extension[referralIndicator]  ^short      = "Indicates whether the service resulted from a referral"
+* extension[referralIndicator]  ^definition = "Indicates whether the service resulted from a referral"
 
 * extension contains SnapshotAgeInYears named snapshotAgeInYears 0..1
 * extension[snapshotAgeInYears] ^short      = "The age of the patient in years at the date of service"
@@ -118,8 +118,8 @@ Description:    "A provider issued list of professional services and products wh
 * extension[submissionType] ^definition = "Customer-specific code for the type of electronic submission"
 
 * extension contains WhPayerPcpResponsibilityIndicator named whPayerPcpResponsibilityIndicator 0..1
-* extension[whPayerPcpResponsibilityIndicator] ^short      =  "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"
-* extension[whPayerPcpResponsibilityIndicator] ^definition =  "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"
+* extension[whPayerPcpResponsibilityIndicator] ^short      =  "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim"
+* extension[whPayerPcpResponsibilityIndicator] ^definition =  "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim"
 
 //Business rule to ensure the correct position of a provider on claim item against the CareTeam sequence
 * careTeam.sequence obeys claim-careteam-sequence-check
