@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="process-meta-primary-or-secondary"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">PRIMARY<a name="process-meta-primary-or-secondary-PRIMARY"> </a></td><td>Primary</td><td>Primary data originates from the source system or the data integrator.</td></tr><tr><td style="white-space:nowrap">SECONDARY<a name="process-meta-primary-or-secondary-SECONDARY"> </a></td><td>Secondary</td><td>Secondary data is transalated or derived data produced by a data processor that aggregates, interprets, derives or in some other way processes and enhances the source data.</td></tr></table></div>
+  </text>
+  <url value="http://ibm.com/fhir/cdm/CodeSystem/process-meta-primary-or-secondary"/>
+  <version value="2.0.0"/>
+  <name value="PrimaryOrSecondary"/>
+  <title value="Primary or Secondary"/>
+  <status value="active"/>
+  <date value="2021-10-26T01:56:32+00:00"/>
+  <contact>
+    <name value="Kim Kenna"/>
+    <telecom>
+      <system value="email"/>
+      <value value="sloand@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Tom Eggebraaten"/>
+    <telecom>
+      <system value="email"/>
+      <value value="tegge@us.ibm.com"/>
+    </telecom>
+  </contact>
+  <description value="Identifies the origin of the data elements from primary or secondary systems"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="PRIMARY"/>
+    <display value="Primary"/>
+    <definition value="Primary data originates from the source system or the data integrator."/>
+  </concept>
+  <concept>
+    <code value="SECONDARY"/>
+    <display value="Secondary"/>
+    <definition value="Secondary data is transalated or derived data produced by a data processor that aggregates, interprets, derives or in some other way processes and enhances the source data."/>
+  </concept>
+</CodeSystem>
