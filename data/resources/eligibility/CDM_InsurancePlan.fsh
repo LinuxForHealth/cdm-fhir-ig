@@ -28,14 +28,6 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * plan.extension[acaMetalTier] ^short      = "Code for Affordable Care Act (ACA) metal tier of the associated plan"
 * plan.extension[acaMetalTier] ^definition = "Code for Affordable Care Act (ACA) metal tier of the associated plan"
 
-* plan.extension contains CostSharingReductionVariant named costSharingReductionVariant 0..1
-* plan.extension[costSharingReductionVariant] ^short      = "Customer-specific code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"
-* plan.extension[costSharingReductionVariant] ^definition = "Customer-specific code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"
-
-* plan.extension contains RatingArea named ratingArea 0..1
-* plan.extension[ratingArea] ^short      = "Customer-specific code for the geographic insurance rating area of the associated plan"
-* plan.extension[ratingArea] ^definition = "Customer-specific code for the geographic insurance rating area of the associated plan"
-
 * plan.extension contains CapitationArrangement named capitationArrangement 0..1
 * plan.extension[capitationArrangement] ^short      = "Code for the capitation arrangement"
 * plan.extension[capitationArrangement] ^definition = "Code for the capitation arrangement"
@@ -43,6 +35,18 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * plan.extension contains CarveOut named carveOut 0..1
 * plan.extension[carveOut] ^short      = "Code for the carveout group"
 * plan.extension[carveOut] ^definition = "Code for the carveout group"
+
+* plan.extension contains CostSharingReductionVariant named costSharingReductionVariant 0..1
+* plan.extension[costSharingReductionVariant] ^short      = "Customer-specific code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"
+* plan.extension[costSharingReductionVariant] ^definition = "Customer-specific code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"
+
+* plan.extension contains FundingArrangement named fundingArrangement 0..1
+* plan.extension[fundingArrangement] ^short      = "Customer-specific code for the funding arrangement"
+* plan.extension[fundingArrangement] ^definition = "Customer-specific code for the funding arrangement"
+
+* plan.extension contains RatingArea named ratingArea 0..1
+* plan.extension[ratingArea] ^short      = "Customer-specific code for the geographic insurance rating area of the associated plan"
+* plan.extension[ratingArea] ^definition = "Customer-specific code for the geographic insurance rating area of the associated plan"
 
 * extension contains DentalFullyInsuredIndicator named dentalFullyInsuredIndicator 0..1
 * extension[dentalFullyInsuredIndicator] ^short      = "Indicator of the fully insured dental coverage for the member or employee"
@@ -55,10 +59,6 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * extension contains ExchangePlanIndicator named exchangePlanIndicator 0..1
 * extension[exchangePlanIndicator] ^short      = "Indicator that identifies if the plan is available on a healthcare exchange marketplace"
 * extension[exchangePlanIndicator] ^definition = "Indicator that identifies if the plan is available on a healthcare exchange marketplace"
-
-* extension contains FundingArrangement named fundingArrangement 0..1
-* extension[fundingArrangement] ^short      = "Customer-specific code for the funding arrangement"
-* extension[fundingArrangement] ^definition = "Customer-specific code for the funding arrangement"
 
 * extension contains IndustryClassification named IndustryClassification 0..1
 * extension[IndustryClassification].valueCodeableConcept from WhPayerJobTitleValueSet (example)

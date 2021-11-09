@@ -202,15 +202,15 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * plan.extension[acaHealthInsuranceOversightSystemProduct].valueCodeableConcept = http://acme-health.com/CodeSystem/local-aca-health-insurance-oversight-system-product#LocalACAProductCd
 * plan.extension[acaMarketType].valueCodeableConcept                            = http://acme-health.com/CodeSystem/local-aca-market-type#LocalACAMarketTypeCd
 * plan.extension[acaMetalTier].valueCodeableConcept                             = http://acme-health.com/CodeSystem/local-aca-metal-tier#LocalACAMetalTierCd
-* plan.extension[costSharingReductionVariant].valueCodeableConcept              = http://acme-health.com/CodeSystem/local-cost-sharing-reduction-variant#LocalCostSharingCd
-* plan.extension[ratingArea].valueCodeableConcept                               = http://acme-health.com/CodeSystem/local-rating-area#LocalRatingArea
 * plan.extension[capitationArrangement].valueCodeableConcept                    = http://acme-health.com/CodeSystem/local-capitation-arrangement#LocalCapArrangement
 * plan.extension[carveOut].valueCodeableConcept                                 = http://acme-health.com/CodeSystem/local-carve-out#LocalCarveOutCode
+* plan.extension[costSharingReductionVariant].valueCodeableConcept              = http://acme-health.com/CodeSystem/local-cost-sharing-reduction-variant#LocalCostSharingCd
+* plan.extension[fundingArrangement].valueCodeableConcept                       = http://acme-health.com/CodeSystem/local-funding-arrangement#LocalFundArrangement
+* plan.extension[ratingArea].valueCodeableConcept                               = http://acme-health.com/CodeSystem/local-rating-area#LocalRatingArea
 
 * extension[dentalFullyInsuredIndicator].valueString     = "Y"
 * extension[drugFullyInsuredIndicator].valueString       = "Y"
 * extension[exchangePlanIndicator].valueString           = "N"
-* extension[fundingArrangement].valueCodeableConcept     = http://acme-health.com/CodeSystem/local-funding-arrangement#LocalFundArrangement
 * extension[IndustryClassification].valueCodeableConcept = NAICS#621112
 * extension[levelOfCare].valueCodeableConcept            = http://acme-health.com/CodeSystem/local-level-of-care#LocalLevelOfCare
 * extension[longtermCareDuration].valueInteger           = 36
