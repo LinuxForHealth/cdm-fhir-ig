@@ -152,7 +152,7 @@ Description:    "Customer-specific job grade code of the employee"
 Extension:      EmployeeJobLocation
 Id:             employee-job-location
 Title:          "Employee Job Location"
-Description:    "Customer-specific code for thephysical location where the employee works"
+Description:    "Customer-specific code for the physical location where the employee works"
 * value[x] only CodeableConcept
 
 Extension:      EmployeePayFrequency
