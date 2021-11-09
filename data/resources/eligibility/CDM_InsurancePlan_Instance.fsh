@@ -203,9 +203,9 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * plan.extension[acaMetalTier].valueCodeableConcept                             = http://acme-health.com/CodeSystem/local-aca-metal-tier#LocalACAMetalTierCd
 * plan.extension[costSharingReductionVariant].valueCodeableConcept              = http://acme-health.com/CodeSystem/local-cost-sharing-reduction-variant#LocalCostSharingCd
 * plan.extension[ratingArea].valueCodeableConcept                               = http://acme-health.com/CodeSystem/local-rating-area#LocalRatingArea
-* plan.extension[capitationArrangement].valueCodeableConcept  = http://acme-health.com/CodeSystem/local-capitation-arrangement#LocalCapArrangement
+* plan.extension[capitationArrangement].valueCodeableConcept                    = http://acme-health.com/CodeSystem/local-capitation-arrangement#LocalCapArrangement
+* plan.extension[carveOut].valueCodeableConcept                                 = http://acme-health.com/CodeSystem/local-carve-out#LocalCarveOutCode
 
-* extension[carveOut].valueCodeableConcept               = http://acme-health.com/CodeSystem/local-carve-out#LocalCarveOutCode
 * extension[dentalFullyInsuredIndicator].valueString     = "Y"
 * extension[drugFullyInsuredIndicator].valueString       = "Y"
 * extension[exchangePlanIndicator].valueString           = "N"

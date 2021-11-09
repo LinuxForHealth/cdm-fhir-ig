@@ -40,9 +40,9 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * plan.extension[capitationArrangement] ^short      = "Code for the capitation arrangement"
 * plan.extension[capitationArrangement] ^definition = "Code for the capitation arrangement"
 
-* extension contains CarveOut named carveOut 0..1
-* extension[carveOut] ^short      = "Code for the carveout group"
-* extension[carveOut] ^definition = "Code for the carveout group"
+* plan.extension contains CarveOut named carveOut 0..1
+* plan.extension[carveOut] ^short      = "Code for the carveout group"
+* plan.extension[carveOut] ^definition = "Code for the carveout group"
 
 * extension contains DentalFullyInsuredIndicator named dentalFullyInsuredIndicator 0..1
 * extension[dentalFullyInsuredIndicator] ^short      = "Indicator of the fully insured dental coverage for the member or employee"
