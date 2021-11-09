@@ -1,25 +1,25 @@
 Extension:      AcaHealthInsuranceOversightSystemPlan
 Id:             aca-health-insurance-oversight-system-plan
 Title:          "ACA Health Insurance Oversight System Plan"
-Description:    "Customer-specific code for Affordable Care Act (ACA) HIOS plan. The value is the combination of HIOS Issuer ID, Product ID, Component ID, and Cost Sharing Variant."
+Description:    "Code for Affordable Care Act (ACA) HIOS plan. The value is the combination of HIOS Issuer ID, Product ID, Component ID, and Cost Sharing Variant."
 * value[x] only CodeableConcept
 
 Extension:      AcaHealthInsuranceOversightSystemProduct
 Id:             aca-health-insurance-oversight-system-product
 Title:          "ACA Health Insurance Oversight System Product"
-Description:    "Customer-specific code for Affordable Care Act (ACA) HIOS product ID and component code of the associated plan"
+Description:    "Code for Affordable Care Act (ACA) HIOS product ID and component code of the associated plan"
 * value[x] only CodeableConcept
 
 Extension:      AcaMarketType
 Id:             aca-market-type
 Title:          "ACA Market Type"
-Description:    "Customer-specific code for Affordable Care Act (ACA) market type of the associated plan"
+Description:    "Code for Affordable Care Act (ACA) market type of the associated plan"
 * value[x] only CodeableConcept
 
 Extension:      AcaMetalTier
 Id:             aca-metal-tier
 Title:          "ACA Metal Tier"
-Description:    "Customer-specific code for Affordable Care Act (ACA) metal tier of the associated plan"
+Description:    "Code for Affordable Care Act (ACA) metal tier of the associated plan"
 * value[x] only CodeableConcept
 
 Extension:      CapitationArrangement

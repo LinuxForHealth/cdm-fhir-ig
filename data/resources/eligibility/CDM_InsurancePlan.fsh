@@ -13,20 +13,20 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * coverage.type from InsurancePlanTypeValueSet (extensible)
 
 * plan.extension contains AcaHealthInsuranceOversightSystemPlan named acaHealthInsuranceOversightSystemPlan 0..1
-* plan.extension[acaHealthInsuranceOversightSystemPlan] ^short      = "Customer-specific code for Affordable Care Act (ACA) HIOS plan"
-* plan.extension[acaHealthInsuranceOversightSystemPlan] ^definition = "Customer-specific code for Affordable Care Act (ACA) HIOS plan. The value is the combination of HIOS Issuer ID, Product ID, Component ID, and Cost Sharing Variant."
+* plan.extension[acaHealthInsuranceOversightSystemPlan] ^short      = "Code for Affordable Care Act (ACA) HIOS plan"
+* plan.extension[acaHealthInsuranceOversightSystemPlan] ^definition = "Code for Affordable Care Act (ACA) HIOS plan. The value is the combination of HIOS Issuer ID, Product ID, Component ID, and Cost Sharing Variant."
 
 * plan.extension contains AcaHealthInsuranceOversightSystemProduct named acaHealthInsuranceOversightSystemProduct 0..1
-* plan.extension[acaHealthInsuranceOversightSystemProduct] ^short      = "Customer-specific code for Affordable Care Act (ACA) HIOS product ID and component code of the associated plan"
-* plan.extension[acaHealthInsuranceOversightSystemProduct] ^definition = "Customer-specific code for Affordable Care Act (ACA) HIOS product ID and component code of the associated plan"
+* plan.extension[acaHealthInsuranceOversightSystemProduct] ^short      = "Code for Affordable Care Act (ACA) HIOS product ID and component code of the associated plan"
+* plan.extension[acaHealthInsuranceOversightSystemProduct] ^definition = "Code for Affordable Care Act (ACA) HIOS product ID and component code of the associated plan"
 
 * plan.extension contains AcaMarketType named acaMarketType 0..1
-* plan.extension[acaMarketType] ^short      = "Customer-specific code for Affordable Care Act (ACA) market type of the associated plan"
-* plan.extension[acaMarketType] ^definition = "Customer-specific code for Affordable Care Act (ACA) market type of the associated plan"
+* plan.extension[acaMarketType] ^short      = "Code for Affordable Care Act (ACA) market type of the associated plan"
+* plan.extension[acaMarketType] ^definition = "Code for Affordable Care Act (ACA) market type of the associated plan"
 
 * plan.extension contains AcaMetalTier named acaMetalTier 0..1
-* plan.extension[acaMetalTier] ^short      = "Customer-specific code for Affordable Care Act (ACA) metal tier of the associated plan"
-* plan.extension[acaMetalTier] ^definition = "Customer-specific code for Affordable Care Act (ACA) metal tier of the associated plan"
+* plan.extension[acaMetalTier] ^short      = "Code for Affordable Care Act (ACA) metal tier of the associated plan"
+* plan.extension[acaMetalTier] ^definition = "Code for Affordable Care Act (ACA) metal tier of the associated plan"
 
 * plan.extension contains CostSharingReductionVariant named costSharingReductionVariant 0..1
 * plan.extension[costSharingReductionVariant] ^short      = "Customer-specific code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"

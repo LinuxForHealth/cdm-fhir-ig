@@ -168,6 +168,7 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * coverage[8].type                 = INSURANCE-PLAN-TYPE#long-term
 * coverage[8].benefit.type         = INSURANCE-PLAN-TYPE#long-term
 
+* extension[WhPayerSubstanceAbuseAmbulatoryCoverageIndicator].valueString = "N"
 * type[9].coding                   = InsurancePlanTypeCodeSystem#substance-abuse-ambulatory
 * coverage[9].type                 = InsurancePlanTypeCodeSystem#substance-abuse-ambulatory
 * coverage[9].benefit.type         = InsurancePlanTypeCodeSystem#substance-abuse-ambulatory
@@ -219,4 +220,3 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * extension[shorttermCareWaitingPeriod].valueInteger     = 1
 * extension[visionFullyInsuredIndicator].valueString     = "Y"
 * extension[whPayerManagedCarePlanType].valueCodeableConcept              = http://acme-health.com/CodeSystem/local-managed-care-plan-type#LocalManagedCarePlan
-* extension[whPayerSubstanceAbuseAmbulatoryCoverageIndicator].valueString = "N"
