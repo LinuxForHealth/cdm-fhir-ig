@@ -36,9 +36,9 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * plan.extension[ratingArea] ^short      = "Customer-specific code for the geographic insurance rating area of the associated plan"
 * plan.extension[ratingArea] ^definition = "Customer-specific code for the geographic insurance rating area of the associated plan"
 
-* extension contains CapitationArrangement named capitationArrangement 0..1
-* extension[capitationArrangement] ^short      = "Code for the capitation arrangement"
-* extension[capitationArrangement] ^definition = "Code for the capitation arrangement"
+* plan.extension contains CapitationArrangement named capitationArrangement 0..1
+* plan.extension[capitationArrangement] ^short      = "Code for the capitation arrangement"
+* plan.extension[capitationArrangement] ^definition = "Code for the capitation arrangement"
 
 * extension contains CarveOut named carveOut 0..1
 * extension[carveOut] ^short      = "Code for the carveout group"
