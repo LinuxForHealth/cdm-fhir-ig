@@ -52,6 +52,12 @@ Title:          "Drug Fully Insured Indicator"
 Description:    "Indicator of the fully insured drug coverage for the member or employee"
 * value[x] only string
 
+Extension:      EnrollmentType
+Id:             enrollment-type
+Title:          "Enrollment Type"
+Description:    "Customer-specific code for the type of enrollment"
+* value[x] only CodeableConcept
+
 Extension:      ExchangePlanIndicator
 Id:             exchange-plan-indicator
 Title:          "Exchange Plan Indicator"

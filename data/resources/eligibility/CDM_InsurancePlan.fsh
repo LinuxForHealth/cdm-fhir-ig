@@ -56,6 +56,10 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * extension[drugFullyInsuredIndicator] ^short      = "Indicator of the fully insured drug coverage for the member or employee"
 * extension[drugFullyInsuredIndicator] ^definition = "Indicator of the fully insured drug coverage for the member or employee"
 
+* extension contains EnrollmentType named enrollmentType 0..1
+* extension[enrollmentType] ^short      = "Customer-specific code for the type of enrollment"
+* extension[enrollmentType] ^definition = "Customer-specific code for the type of enrollment"
+
 * extension contains ExchangePlanIndicator named exchangePlanIndicator 0..1
 * extension[exchangePlanIndicator] ^short      = "Indicator that identifies if the plan is available on a healthcare exchange marketplace"
 * extension[exchangePlanIndicator] ^definition = "Indicator that identifies if the plan is available on a healthcare exchange marketplace"

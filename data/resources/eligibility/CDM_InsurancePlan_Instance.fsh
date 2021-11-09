@@ -210,6 +210,7 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 
 * extension[dentalFullyInsuredIndicator].valueString     = "Y"
 * extension[drugFullyInsuredIndicator].valueString       = "Y"
+* extension[enrollmentType].valueCodeableConcept         = http://acme-health.com/CodeSystem/local-enrollment-type#LocalEnrollType
 * extension[exchangePlanIndicator].valueString           = "N"
 * extension[IndustryClassification].valueCodeableConcept = NAICS#621112
 * extension[levelOfCare].valueCodeableConcept            = http://acme-health.com/CodeSystem/local-level-of-care#LocalLevelOfCare
