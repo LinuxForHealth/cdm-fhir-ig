@@ -206,6 +206,7 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * plan.extension[carveOut].valueCodeableConcept                                 = http://acme-health.com/CodeSystem/local-carve-out#LocalCarveOutCode
 * plan.extension[costSharingReductionVariant].valueCodeableConcept              = http://acme-health.com/CodeSystem/local-cost-sharing-reduction-variant#LocalCostSharingCd
 * plan.extension[fundingArrangement].valueCodeableConcept                       = http://acme-health.com/CodeSystem/local-funding-arrangement#LocalFundArrangement
+* plan.extension[levelOfCare].valueCodeableConcept                             = http://acme-health.com/CodeSystem/local-level-of-care#LocalLevelOfCare
 * plan.extension[ratingArea].valueCodeableConcept                               = http://acme-health.com/CodeSystem/local-rating-area#LocalRatingArea
 
 * extension[dentalFullyInsuredIndicator].valueString     = "Y"
@@ -213,7 +214,6 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * extension[enrollmentType].valueCodeableConcept         = http://acme-health.com/CodeSystem/local-enrollment-type#LocalEnrollType
 * extension[exchangePlanIndicator].valueString           = "N"
 * extension[IndustryClassification].valueCodeableConcept = NAICS#621112
-* extension[levelOfCare].valueCodeableConcept            = http://acme-health.com/CodeSystem/local-level-of-care#LocalLevelOfCare
 * extension[longtermCareDuration].valueInteger           = 36
 * extension[longtermCareWaitingPeriod].valueInteger      = 90
 * extension[medicalFullyInsuredIndicator].valueString    = "Y"

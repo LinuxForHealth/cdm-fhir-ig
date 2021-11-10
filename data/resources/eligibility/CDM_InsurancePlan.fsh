@@ -44,6 +44,10 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * plan.extension[fundingArrangement] ^short      = "Customer-specific code for the funding arrangement"
 * plan.extension[fundingArrangement] ^definition = "Customer-specific code for the funding arrangement"
 
+* plan.extension contains LevelOfCare named levelOfCare 0..1 
+* plan.extension[levelOfCare] ^short      = "Customer-specific code for the level of care"
+* plan.extension[levelOfCare] ^definition = "Customer-specific code for the level of care"
+
 * plan.extension contains RatingArea named ratingArea 0..1
 * plan.extension[ratingArea] ^short      = "Customer-specific code for the geographic insurance rating area of the associated plan"
 * plan.extension[ratingArea] ^definition = "Customer-specific code for the geographic insurance rating area of the associated plan"
@@ -68,10 +72,6 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * extension[IndustryClassification].valueCodeableConcept from WhPayerJobTitleValueSet (example)
 * extension[IndustryClassification] ^short      = "The industry classification code which can be based on the North American Industry Classification System (NAICS)"
 * extension[IndustryClassification] ^definition = "The industry classification code which can be based on the North American Industry Classification System (NAICS)"
-
-* extension contains LevelOfCare named levelOfCare 0..1 
-* extension[levelOfCare] ^short      = "Customer-specific code for the level of care"
-* extension[levelOfCare] ^definition = "Customer-specific code for the level of care"
 
 * extension contains LongtermCareDuration named longtermCareDuration 0..1
 * extension[longtermCareDuration] ^short      = "Number of weeks for which the employee is eligible for long-term disability (LTD) benefits"
