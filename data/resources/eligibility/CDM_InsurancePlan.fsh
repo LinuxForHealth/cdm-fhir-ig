@@ -37,8 +37,8 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * plan.extension[carveOut] ^definition = "Code for the carveout group"
 
 * plan.extension contains CostSharingReductionVariant named costSharingReductionVariant 0..1
-* plan.extension[costSharingReductionVariant] ^short      = "Customer-specific code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"
-* plan.extension[costSharingReductionVariant] ^definition = "Customer-specific code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"
+* plan.extension[costSharingReductionVariant] ^short      = "Code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"
+* plan.extension[costSharingReductionVariant] ^definition = "Code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"
 
 * plan.extension contains FundingArrangement named fundingArrangement 0..1
 * plan.extension[fundingArrangement] ^short      = "Customer-specific code for the funding arrangement"
@@ -47,6 +47,14 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * plan.extension contains LevelOfCare named levelOfCare 0..1 
 * plan.extension[levelOfCare] ^short      = "Customer-specific code for the level of care"
 * plan.extension[levelOfCare] ^definition = "Customer-specific code for the level of care"
+
+* plan.extension contains LongtermCareDuration named longtermCareDuration 0..1
+* plan.extension[longtermCareDuration] ^short      = "Number of weeks for which the employee is eligible for long-term disability (LTD) benefits"
+* plan.extension[longtermCareDuration] ^definition = "Number of weeks for which the employee is eligible for long-term disability (LTD) benefits"
+
+* plan.extension contains LongtermCareWaitingPeriod named longtermCareWaitingPeriod 0..1
+* plan.extension[longtermCareWaitingPeriod] ^short      = "Elimination or waiting period for the long-term disability (LTD) benefit (for example, 90, 180 or 365 days)."
+* plan.extension[longtermCareWaitingPeriod] ^definition = "Elimination or waiting period for the long-term disability (LTD) benefit (for example, 90, 180 or 365 days). This is the amount of time between the first absent date and the coverage begin date."
 
 * plan.extension contains RatingArea named ratingArea 0..1
 * plan.extension[ratingArea] ^short      = "Customer-specific code for the geographic insurance rating area of the associated plan"
@@ -72,14 +80,6 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * extension[IndustryClassification].valueCodeableConcept from WhPayerJobTitleValueSet (example)
 * extension[IndustryClassification] ^short      = "The industry classification code which can be based on the North American Industry Classification System (NAICS)"
 * extension[IndustryClassification] ^definition = "The industry classification code which can be based on the North American Industry Classification System (NAICS)"
-
-* extension contains LongtermCareDuration named longtermCareDuration 0..1
-* extension[longtermCareDuration] ^short      = "Number of weeks for which the employee is eligible for long-term disability (LTD) benefits"
-* extension[longtermCareDuration] ^definition = "Number of weeks for which the employee is eligible for long-term disability (LTD) benefits"
-
-* extension contains LongtermCareWaitingPeriod named longtermCareWaitingPeriod 0..1
-* extension[longtermCareWaitingPeriod] ^short      = "Elimination or waiting period for the long-term disability (LTD) benefit (for example, 90, 180 or 365 days)."
-* extension[longtermCareWaitingPeriod] ^definition = "Elimination or waiting period for the long-term disability (LTD) benefit (for example, 90, 180 or 365 days). This is the amount of time between the first absent date and the coverage begin date."
 
 * extension contains MedicalFullyInsuredIndicator named medicalFullyInsuredIndicator 0..1
 * extension[medicalFullyInsuredIndicator] ^short      = "Indicator of the fully insured medical coverage for the member or employee"

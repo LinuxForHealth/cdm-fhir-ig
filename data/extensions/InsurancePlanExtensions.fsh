@@ -37,7 +37,7 @@ Description:    "Code for the carveout group"
 Extension:      CostSharingReductionVariant
 Id:             cost-sharing-reduction-variant
 Title:          "Cost Sharing Reduction Variant"
-Description:    "Customer-specific code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"
+Description:    "Code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"
 * value[x] only CodeableConcept
 
 Extension:      DentalFullyInsuredIndicator
