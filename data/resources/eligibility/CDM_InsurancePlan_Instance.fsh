@@ -94,8 +94,8 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * plan.specificCost[11].benefit[0].cost[0].value.value = 0.00
 
 * plan.specificCost[12].category                       = InsurancePlanCostCategoryCodeSystem#other
-* plan.specificCost[12].benefit[0].type[0]             = InsurancePlanBenefitTypeCodeSystem#monthly-premium-paid
-* plan.specificCost[12].benefit[0].cost[0].type[0]     = InsurancePlanBenefitTypeCodeSystem#monthly-premium-paid
+* plan.specificCost[12].benefit[0].type[0]             = InsurancePlanBenefitTypeCodeSystem#monthly-premium-billed
+* plan.specificCost[12].benefit[0].cost[0].type[0]     = InsurancePlanBenefitTypeCodeSystem#monthly-premium-billed
 * plan.specificCost[12].benefit[0].cost[0].value.value = 10.00
 
 * plan.specificCost[13].category                       = InsurancePlanCostCategoryCodeSystem#dental
