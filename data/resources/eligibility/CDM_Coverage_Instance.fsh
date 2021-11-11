@@ -84,7 +84,7 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[salaryIndicator].valueString                  = "Y"
 * extension[shortTermDisabilityBenefitRate].valueDecimal  = 30.00
 * extension[ssiStatus].valueCodeableConcept               = WhPayerSsiStatusCodeSystem#999
-* extension[tanfBenefit].valueCodeableConcept             = WhPayerTanfBenefitCodeSystem#9
+* extension[tanfBenefits].valueCodeableConcept            = WhPayerTanfBenefitCodeSystem#9
 * extension[totalDependentCount].valueInteger             = 1
 * extension[unionWorkerIndicator].valueString             = "N"
 

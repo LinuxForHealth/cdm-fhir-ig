@@ -336,10 +336,10 @@ Title:          "SSI Status"
 Description:    "Standard code of the Supplemental Security Income (SSI) status for the person"
 * value[x] only CodeableConcept
 
-Extension:      TanfBenefit
-Id:             tanf-benefit
-Title:          "TANF Benefit"
-Description:    "Standard code of the Temporary Assistance for Needy Families (TANF) benefit for the person"
+Extension:      TanfBenefits
+Id:             tanf-benefits
+Title:          "TANF Benefits"
+Description:    "Standard code of the Temporary Assistance for Needy Families (TANF) benefits for the person"
 * value[x] only CodeableConcept
 
 Extension:      UnencryptedSubscriberId
