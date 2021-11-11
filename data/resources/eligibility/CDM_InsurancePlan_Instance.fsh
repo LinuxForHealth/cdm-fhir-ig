@@ -210,6 +210,8 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * plan.extension[longtermCareDuration].valueInteger                             = 36
 * plan.extension[longtermCareWaitingPeriod].valueInteger                        = 90
 * plan.extension[ratingArea].valueCodeableConcept                               = http://acme-health.com/CodeSystem/local-rating-area#LocalRatingArea
+* plan.extension[shorttermCareDuration].valueInteger                            = 16
+* plan.extension[shorttermCareWaitingPeriod].valueInteger                       = 1
 
 * extension[dentalFullyInsuredIndicator].valueString     = "Y"
 * extension[drugFullyInsuredIndicator].valueString       = "Y"
@@ -217,7 +219,5 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * extension[exchangePlanIndicator].valueString           = "N"
 * extension[IndustryClassification].valueCodeableConcept = NAICS#621112
 * extension[medicalFullyInsuredIndicator].valueString    = "Y"
-* extension[shorttermCareDuration].valueInteger          = 16
-* extension[shorttermCareWaitingPeriod].valueInteger     = 1
 * extension[visionFullyInsuredIndicator].valueString     = "Y"
 * extension[whPayerManagedCarePlanType].valueCodeableConcept              = http://acme-health.com/CodeSystem/local-managed-care-plan-type#LocalManagedCarePlan

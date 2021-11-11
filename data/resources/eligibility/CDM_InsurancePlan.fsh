@@ -60,6 +60,14 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * plan.extension[ratingArea] ^short      = "Customer-specific code for the geographic insurance rating area of the associated plan"
 * plan.extension[ratingArea] ^definition = "Customer-specific code for the geographic insurance rating area of the associated plan"
 
+* plan.extension contains ShorttermCareDuration named shorttermCareDuration 0..1
+* plan.extension[shorttermCareDuration] ^short      = "Number of weeks for which the employee is eligible for short-term disability (STD) benefits"
+* plan.extension[shorttermCareDuration] ^definition = "Number of weeks for which the employee is eligible for short-term disability (STD) benefits"
+
+* plan.extension contains ShorttermCareWaitingPeriod named shorttermCareWaitingPeriod 0..1
+* plan.extension[shorttermCareWaitingPeriod] ^short      = "Elimination or waiting period for the short-term disability (STD) benefit (for example, 90, 180 or 365 days)."
+* plan.extension[shorttermCareWaitingPeriod] ^definition = "Elimination or waiting period for the short-term disability (STD) benefit (for example, 90, 180 or 365 days). This is the amount of time between the first absent date and the coverage begin date."
+
 * extension contains DentalFullyInsuredIndicator named dentalFullyInsuredIndicator 0..1
 * extension[dentalFullyInsuredIndicator] ^short      = "Indicator of the fully insured dental coverage for the member or employee"
 * extension[dentalFullyInsuredIndicator] ^definition = "Indicator of the fully insured dental coverage for the member or employee"
@@ -84,14 +92,6 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * extension contains MedicalFullyInsuredIndicator named medicalFullyInsuredIndicator 0..1
 * extension[medicalFullyInsuredIndicator] ^short      = "Indicator of the fully insured medical coverage for the member or employee"
 * extension[medicalFullyInsuredIndicator] ^definition = "Indicator of the fully insured medical coverage for the member or employee"
-
-* extension contains ShorttermCareDuration named shorttermCareDuration 0..1
-* extension[shorttermCareDuration] ^short      = "Number of weeks for which the employee is eligible for short-term disability (STD) benefits"
-* extension[shorttermCareDuration] ^definition = "Number of weeks for which the employee is eligible for short-term disability (STD) benefits"
-
-* extension contains ShorttermCareWaitingPeriod named shorttermCareWaitingPeriod 0..1
-* extension[shorttermCareWaitingPeriod] ^short      = "Elimination or waiting period for the short-term disability (STD) benefit (for example, 90, 180 or 365 days)."
-* extension[shorttermCareWaitingPeriod] ^definition = "Elimination or waiting period for the short-term disability (STD) benefit (for example, 90, 180 or 365 days). This is the amount of time between the first absent date and the coverage begin date."
 
 * extension contains VisionFullyInsuredIndicator named visionFullyInsuredIndicator 0..1
 * extension[visionFullyInsuredIndicator] ^short      = "Indicator of the fully insured vision coverage for the member or employee"
