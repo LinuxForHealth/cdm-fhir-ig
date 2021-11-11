@@ -85,7 +85,7 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
     EmployeeId named employeeId 0..* and
     EmployeeJobFamily named employeeJobFamily 0..1 and
     EmployeeJobGrade named employeeJobGrade 0..1 and
-    EmployeeJobLocation named employeeJobLocation 0..1 and
+    EmployeeJobLocation named employeeJobLocation 0..* and
     EmployeePayFrequency named employeePayFrequency 0..1 and
     EmployeePerformanceRating named employeePerformanceRating 0..1 and
     EmployeeShift named employeeShift 0..1 and
@@ -221,6 +221,10 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[memberEmployeeIndicator] ^short      = "Customer-specific code indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan"
 * extension[memberEmployeeIndicator] ^definition = "Customer-specific code indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan"
 
+* extension contains PlanEmployeeCode named planEmployeeCode 0..1
+* extension[planEmployeeCode] ^short      = "Customer-specific code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
+* extension[planEmployeeCode] ^definition = "Customer-specific code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
+
 * extension contains RegionCode named regionCode 0..1
 * extension[regionCode] ^short      = "Customer-specific code for the geographic region of the employee"
 * extension[regionCode] ^definition = "Customer-specific code for the geographic region of the employee"
@@ -228,10 +232,6 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension contains RestrictedBenefits named restrictedBenefits 0..1
 * extension[restrictedBenefits] ^short      = "Customer-specific code of the scope of Medicaid or CHIP benefits for a person"
 * extension[restrictedBenefits] ^definition = "Customer-specific code of the scope of Medicaid or CHIP benefits for a person"
-
-* extension contains PlanEmployeeCode named planEmployeeCode 0..1
-* extension[planEmployeeCode] ^short      = "Customer-specific code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
-* extension[planEmployeeCode] ^definition = "Customer-specific code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
 
 * extension contains  ShortTermDisabilityBenefitRate named shortTermDisabilityBenefitRate 0..1
 * extension[shortTermDisabilityBenefitRate] ^short      = "Short term disability (STD) benefit rate, expressed as a percentage of base wages or benefit amount (for example, 50.00%, 60.00%, 70.00%)"
@@ -242,10 +242,10 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[ssiStatus] ^short      = "Standard code of the Supplemental Security Income (SSI) status for the person"
 * extension[ssiStatus] ^definition = "Standard code of the Supplemental Security Income (SSI) status for the person"
 
-* extension contains TanfBenefit named tanfBenefit 0..1
-* extension[tanfBenefit].valueCodeableConcept from WhPayerTanfBenefitValueSet (extensible)
-* extension[tanfBenefit] ^short      = "Standard code of the Temporary Assistance for Needy Families (TANF) benefits for the person"
-* extension[tanfBenefit] ^definition = "Standard code of the Temporary Assistance for Needy Families (TANF) benefits for the person"
+* extension contains TanfBenefits named tanfBenefits 0..1
+* extension[tanfBenefits].valueCodeableConcept from WhPayerTanfBenefitValueSet (extensible)
+* extension[tanfBenefits] ^short      = "Standard code of the Temporary Assistance for Needy Families (TANF) benefits for the person"
+* extension[tanfBenefits] ^definition = "Standard code of the Temporary Assistance for Needy Families (TANF) benefits for the person"
 
 * extension contains TotalDependentCount named totalDependentCount 0..1
 * extension[totalDependentCount] ^short      = "Number of dependents covered by the group health medical plan"
