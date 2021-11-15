@@ -8,15 +8,16 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
 * meta.extension[sourceFileId].valueString     = "e00085555"
 
-* identifier.type                   = IdentifierTypeCodeSystem#SSRI
-* identifier.system                 = "http://acme-health.com/emr1/WellnessCenter"
-* identifier.value                  = "encryp-id1234"
-* identifier.extension[encryptedState].valueBoolean = true
+* identifier.use                 = #official
+* identifier.type                = IdentifierTypeCodeSystem#SSRI
+* identifier.system              = "http://acme-health.com/emr1/coverage"
+* identifier.value               = "c35466d6-0d2b-4efa-8265-b9ac3f887e08"
+* identifier.assigner.display    = "Acme Health - EMR1"
 * identifier.extension[ssiIndicator].valueString    = "N"
 
 * payor.type              = RESOURCE-TYPE#Organiation
 * payor.identifier.system = "http://acme-health.com/payer1/payer"
-* payor.identifier.value  = "encryp-id1234"
+* payor.identifier.value  = "PayerId09876"
 
 * beneficiary = Reference(CDMPatientInstance)
 
@@ -29,9 +30,6 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[snapshotAgeInYears].valueUnsignedInt = 21
 * period.start                                   = "2000-01-01"
 * period.end                                     = "2000-10-31"
-* identifier[0].value = "unencryp-id1234"
-* identifier[0].extension.url = "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state"
-* identifier[0].extension.valueBoolean = false
 
 * extension[cobraIndicator].valueString                  = "N"
 * extension[coverageMonth].valueDate                     = "2000-06-01"
