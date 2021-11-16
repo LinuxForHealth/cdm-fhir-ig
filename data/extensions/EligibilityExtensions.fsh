@@ -330,10 +330,16 @@ Title:          "Plan Employee Code"
 Description:    "Customer-specific code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
 * value[x] only string
 
+Extension:      SsiIndicator
+Id:             ssi-indicator
+Title:          "SSI Indicator"
+Description:    "Indicates if the person receives Supplemental Security Income (SSI) administered via the Social Security Administration (SSA), at the time of coverage"
+* value[x] only string
+
 Extension:      SsiStatus
 Id:             ssi-status
 Title:          "SSI Status"
-Description:    "Standard code of the Supplemental Security Income (SSI) status for the person"
+Description:    "Standard code of the Supplemental Security Income (SSI) status for the person, at the time of coverage"
 * value[x] only CodeableConcept
 
 Extension:      TanfBenefits

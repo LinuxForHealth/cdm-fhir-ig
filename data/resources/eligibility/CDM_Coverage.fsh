@@ -237,10 +237,14 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[shortTermDisabilityBenefitRate] ^short      = "Short term disability (STD) benefit rate, expressed as a percentage of base wages or benefit amount (for example, 50.00%, 60.00%, 70.00%)"
 * extension[shortTermDisabilityBenefitRate] ^definition = "Short term disability (STD) benefit rate, expressed as a percentage of base wages or benefit amount (for example, 50.00%, 60.00%, 70.00%)"
 
+* extension contains SsiIndicator named ssiIndicator 0..1
+* extension[ssiIndicator] ^short      = "Indicates if the person receives Supplemental Security Income (SSI) administered via the Social Security Administration (SSA), at the time of coverage"
+* extension[ssiIndicator] ^definition = "Indicates if the person receives Supplemental Security Income (SSI) administered via the Social Security Administration (SSA), at the time of coverage"
+
 * extension contains SsiStatus named ssiStatus 0..1
 * extension[ssiStatus].valueCodeableConcept from WhPayerSsiStatusValueSet (extensible)
-* extension[ssiStatus] ^short      = "Standard code of the Supplemental Security Income (SSI) status for the person"
-* extension[ssiStatus] ^definition = "Standard code of the Supplemental Security Income (SSI) status for the person"
+* extension[ssiStatus] ^short      = "Standard code of the Supplemental Security Income (SSI) status for the person, at the time of coverage"
+* extension[ssiStatus] ^definition = "Standard code of the Supplemental Security Income (SSI) status for the person, at the time of coverage"
 
 * extension contains TanfBenefits named tanfBenefits 0..1
 * extension[tanfBenefits].valueCodeableConcept from WhPayerTanfBenefitValueSet (extensible)

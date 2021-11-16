@@ -13,7 +13,6 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * identifier.system              = "http://acme-health.com/emr1/coverage"
 * identifier.value               = "c35466d6-0d2b-4efa-8265-b9ac3f887e08"
 * identifier.assigner.display    = "Acme Health - EMR1"
-* identifier.extension[ssiIndicator].valueString    = "N"
 
 * payor.type              = RESOURCE-TYPE#Organiation
 * payor.identifier.system = "http://acme-health.com/payer1/payer"
@@ -81,6 +80,7 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[employeeRetirementDate].valueDate             = "2099-12-31"
 * extension[salaryIndicator].valueString                  = "Y"
 * extension[shortTermDisabilityBenefitRate].valueDecimal  = 30.00
+* extension[ssiIndicator].valueString                     = "N"
 * extension[ssiStatus].valueCodeableConcept               = WhPayerSsiStatusCodeSystem#999
 * extension[tanfBenefits].valueCodeableConcept            = WhPayerTanfBenefitCodeSystem#9
 * extension[totalDependentCount].valueInteger             = 1
