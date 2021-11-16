@@ -14,9 +14,9 @@ Description:    "The unique identifier for the subscriber (contract holder, empl
 Id:             family-id
 * value[x] only Identifier
 
-Extension:      MemberImmigrationStatus
-Id:             member-immigration-status
-Title:          "Member Immigration Status"
+Extension:      ImmigrationStatus
+Id:             immigration-status
+Title:          "Immigration Status"
 Description:    "Customer-specific code for the immigration status of the person"
 * value[x] only CodeableConcept
 

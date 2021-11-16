@@ -43,9 +43,9 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * contact.address only CDMAddress
 * contact.telecom only CDMContactPoint
 
-* extension contains MemberImmigrationStatus named memberImmigrationStatus 0..1
-* extension[memberImmigrationStatus] ^short = "Customer-specific code for the immigration status of the patient"
-* extension[memberImmigrationStatus] ^short = "Customer-specific code for the immigration status of the patient"
+* extension contains ImmigrationStatus named immigrationStatus 0..1
+* extension[immigrationStatus] ^short = "Customer-specific code for the immigration status of the patient"
+* extension[immigrationStatus] ^short = "Customer-specific code for the immigration status of the patient"
 
 * extension contains StatusCode named statusCode 0..*
 * extension[statusCode].valueCodeableConcept from PatientStatusValueSet (example)

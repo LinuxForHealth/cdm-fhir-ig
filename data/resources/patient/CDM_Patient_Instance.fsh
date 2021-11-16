@@ -95,7 +95,7 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 
 * extension[patientCitizenship].valueCodeableConcept       = CITIZENSHIP#US
 * extension[citizenStatus].valueCodeableConcept            = http://acme-health.com/CodeSystem/local-citizen-status#LocalCitizenStatusCd
-* extension[memberImmigrationStatus].valueCodeableConcept  = http://acme-health.com/CodeSystem/local-immigration-status#LocalImmigrationStatusCd
+* extension[immigrationStatus].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-immigration-status#LocalImmigrationStatusCd
 * extension[nonstandardLanguage].valueCodeableConcept      = http://acme-health.com/CodeSystem/local-nonstandard-language#E
 * extension[veteranIndicator].valueString                  = "N"
 
