@@ -75,7 +75,7 @@ Description:    "Business unit of the subscriber as reported on the claim"
 Extension:      Employer
 Id:             employer
 Title:          "Employer"
-Description:    "Customer-specific code for the employer as reported on the claim record"    
+Description:    "Code for the employer as reported on the claim record"    
 * value[x] only CodeableConcept
 
 Extension:      FinancialSystem

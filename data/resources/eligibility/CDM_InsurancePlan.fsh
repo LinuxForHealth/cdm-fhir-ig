@@ -41,12 +41,12 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * plan.extension[costSharingReductionVariant] ^definition = "Code for Affordable Care Act (ACA) cost sharing reduction variant of the associated plan"
 
 * plan.extension contains FundingArrangement named fundingArrangement 0..1
-* plan.extension[fundingArrangement] ^short      = "Customer-specific code for the funding arrangement"
-* plan.extension[fundingArrangement] ^definition = "Customer-specific code for the funding arrangement"
+* plan.extension[fundingArrangement] ^short      = "Code for the funding arrangement"
+* plan.extension[fundingArrangement] ^definition = "Code for the funding arrangement"
 
 * plan.extension contains LevelOfCare named levelOfCare 0..1 
-* plan.extension[levelOfCare] ^short      = "Customer-specific code for the level of care"
-* plan.extension[levelOfCare] ^definition = "Customer-specific code for the level of care"
+* plan.extension[levelOfCare] ^short      = "Code for the level of care"
+* plan.extension[levelOfCare] ^definition = "Code for the level of care"
 
 * plan.extension contains LongtermCareDuration named longtermCareDuration 0..1
 * plan.extension[longtermCareDuration] ^short      = "Number of weeks for which the employee is eligible for long-term disability (LTD) benefits"
@@ -57,8 +57,8 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * plan.extension[longtermCareWaitingPeriod] ^definition = "Elimination or waiting period for the long-term disability (LTD) benefit (for example, 90, 180 or 365 days). This is the amount of time between the first absent date and the coverage begin date."
 
 * plan.extension contains RatingArea named ratingArea 0..1
-* plan.extension[ratingArea] ^short      = "Customer-specific code for the geographic insurance rating area of the associated plan"
-* plan.extension[ratingArea] ^definition = "Customer-specific code for the geographic insurance rating area of the associated plan"
+* plan.extension[ratingArea] ^short      = "Code for the geographic insurance rating area of the associated plan"
+* plan.extension[ratingArea] ^definition = "Code for the geographic insurance rating area of the associated plan"
 
 * plan.extension contains ShorttermCareDuration named shorttermCareDuration 0..1
 * plan.extension[shorttermCareDuration] ^short      = "Number of weeks for which the employee is eligible for short-term disability (STD) benefits"
@@ -77,8 +77,8 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * extension[drugFullyInsuredIndicator] ^definition = "Indicator of the fully insured drug coverage for the member or employee"
 
 * extension contains EnrollmentType named enrollmentType 0..1
-* extension[enrollmentType] ^short      = "Customer-specific code for the type of enrollment"
-* extension[enrollmentType] ^definition = "Customer-specific code for the type of enrollment"
+* extension[enrollmentType] ^short      = "Code for the type of enrollment"
+* extension[enrollmentType] ^definition = "Code for the type of enrollment"
 
 * extension contains ExchangePlanIndicator named exchangePlanIndicator 0..1
 * extension[exchangePlanIndicator] ^short      = "Indicator that identifies if the plan is available on a healthcare exchange marketplace"
@@ -86,8 +86,8 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 
 * extension contains IndustryClassification named IndustryClassification 0..1
 * extension[IndustryClassification].valueCodeableConcept from WhPayerJobTitleValueSet (example)
-* extension[IndustryClassification] ^short      = "The industry classification code which can be based on the North American Industry Classification System (NAICS)"
-* extension[IndustryClassification] ^definition = "The industry classification code which can be based on the North American Industry Classification System (NAICS)"
+* extension[IndustryClassification] ^short      = "Industry classification code which can be based on the North American Industry Classification System (NAICS)"
+* extension[IndustryClassification] ^definition = "Industry classification code which can be based on the North American Industry Classification System (NAICS)"
 
 * extension contains MedicalFullyInsuredIndicator named medicalFullyInsuredIndicator 0..1
 * extension[medicalFullyInsuredIndicator] ^short      = "Indicator of the fully insured medical coverage for the member or employee"

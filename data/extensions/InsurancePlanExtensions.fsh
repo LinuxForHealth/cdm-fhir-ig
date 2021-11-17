@@ -55,7 +55,7 @@ Description:    "Indicator of the fully insured drug coverage for the member or 
 Extension:      EnrollmentType
 Id:             enrollment-type
 Title:          "Enrollment Type"
-Description:    "Customer-specific code for the type of enrollment"
+Description:    "Code for the type of enrollment"
 * value[x] only CodeableConcept
 
 Extension:      ExchangePlanIndicator
@@ -67,19 +67,19 @@ Description:    "Indicator that identifies if the plan is available on a healthc
 Extension:      FundingArrangement
 Id:             funding-arrangement
 Title:          "Funding Arrangement"
-Description:    "Customer-specific code for the funding arrangement"
+Description:    "Code for the funding arrangement"
 * value[x] only CodeableConcept
 
 Extension:      IndustryClassification
 Id:             industry-classification
 Title:          "Industry Classification"
-Description:    "The industry classification code which can be based on the North American Industry Classification System (NAICS)"
+Description:    "Industry classification code which can be based on the North American Industry Classification System (NAICS)"
 * value[x] only CodeableConcept
 
 Extension:      LevelOfCare
 Id:             level-of-care
 Title:          "Level Of Care"
-Description:    "Customer-specific code for the level of care"
+Description:    "Code for the level of care"
 * value[x] only CodeableConcept
 
 Extension:      LongtermCareDuration
@@ -103,7 +103,7 @@ Description:    "Indicator of the fully insured medical coverage for the member 
 Extension:      RatingArea
 Id:             rating-area
 Title:          "Rating Area"
-Description:    "Customer-specific code for the geographic insurance rating area of the associated plan"
+Description:    "Code for the geographic insurance rating area of the associated plan"
 * value[x] only CodeableConcept
 
 Extension:      ShorttermCareDuration

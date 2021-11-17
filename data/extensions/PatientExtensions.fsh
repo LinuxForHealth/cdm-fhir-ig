@@ -5,7 +5,7 @@ Alias: PatientImportance = http://hl7.org/fhir/StructureDefinition/patient-impor
 Extension:      Ethnicity
 Id:             ethnicity
 Title:          "Ethnicity Code"
-Description:    "Customer-specific code for the ethnicity of the person"
+Description:    "Code for the ethnicity of the person"
 * value[x] only CodeableConcept
 
 Extension:      FamilyId
@@ -88,7 +88,7 @@ Description:    "Code to identify if the person is a U.S. Citizen"
 Extension:      NonstandardLanguage
 Id:             nonstandard-language
 Title:          "Nonstandard Language"
-Description:    "Customer-specific code for the language of the person"
+Description:    "Code for the language of the person"
 * value[x] only CodeableConcept
 
 Extension:      VeteranIndicator

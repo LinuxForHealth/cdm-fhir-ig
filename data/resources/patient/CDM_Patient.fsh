@@ -16,8 +16,8 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * communication.extension[languageRank] ^definition = "Specify preferred order of language use (1 = highest)"
 
 * extension contains ethnicity named ethnicity 0..1
-* extension[ethnicity] ^short      = "Customer-specific code for the ethnicity of the person"
-* extension[ethnicity] ^definition = "Customer-specific code for the ethnicity of the person"
+* extension[ethnicity] ^short      = "Code for the ethnicity of the person"
+* extension[ethnicity] ^definition = "Code for the ethnicity of the person"
 
 * extension contains FamilyId named familyId 0..*
 * extension[familyId] ^short      = "The unique identifier for the subscriber (contract holder, employee) and the associated dependents"
@@ -109,8 +109,8 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * extension[communicationOptOut] ^definition = "Opt-out patient for communications by product and/or communication mode"
 
 * extension contains NonstandardLanguage named nonstandardLanguage 0..1
-* extension[nonstandardLanguage] ^short      = "Customer-specific code for the language of the patient"
-* extension[nonstandardLanguage] ^definition = "Customer-specific code for the language of the patient"
+* extension[nonstandardLanguage] ^short      = "Code for the language of the patient"
+* extension[nonstandardLanguage] ^definition = "Code for the language of the patient"
 
 * extension contains VeteranIndicator named veteranIndicator 0..1
 * extension[veteranIndicator] ^short      = "Indicates whether the individual served in the active military, naval, or air service"

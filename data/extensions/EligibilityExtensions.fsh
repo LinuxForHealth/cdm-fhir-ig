@@ -13,19 +13,19 @@ Description:    "Indicator of Consolidated Omnibus Budget Reconciliation Act(COB
 Extension:      CoverageDays
 Id:             coverage-days
 Title:          "Coverage Days"
-Description:    "The number of covered days of eligibility"
+Description:    "Number of covered days of eligibility"
 * value[x] only unsignedInt
 
 Extension:      CoverageMonth
 Id:             coverage-month
 Title:          "Coverage Month"
-Description:    "The date which reflects the month of eligibility"
+Description:    "Date which reflects the month of eligibility"
 * value[x] only date
 
 Extension:      CoverageInsurancePlan
 Id:             coverage-insurance-plan
 Title:          "Coverage Insurance Plan"
-Description:    "A reference to the insurance plan for this coverage"
+Description:    "Reference to the insurance plan for this coverage"
 * value[x] only Reference
 * valueReference only Reference(InsurancePlan)
 
@@ -68,31 +68,31 @@ Description:    "Birthdate of the employee or contract holder. For security, t
 Extension:      EmployeeCompany
 Id:             employee-company
 Title:          "Employee Company"
-Description:    "Customer-specific code for the company of the employee"
+Description:    "Code for the company of the employee"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeCostCenter
 Id:             employee-cost-center
 Title:          "Employee Cost Center"
-Description:    "Customer-specific code for the cost center of the employee"
+Description:    "Code for the cost center of the employee"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeCount
 Id:             employee-count
 Title:          "Employee Count"
-Description:    "A flag of the employees in the eligibility record. Each employee is identified with a value of 1. All others are given values of 0."
+Description:    "Flag of the employees in the eligibility record. Each employee is identified with a value of 1. All others are given values of 0."
 * value[x] only unsignedInt
 
 Extension:      EmployeeDepartment
 Id:             employee-department
 Title:          "Employee Department"
-Description:    "Customer-specific code for the department of the employee"
+Description:    "Code for the department of the employee"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeDivision
 Id:             employee-division
 Title:          "Employee Division"
-Description:    "Customer-specific code for the division of the employee"
+Description:    "Code for the division of the employee"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeEducationLevel
@@ -110,43 +110,43 @@ Description:    "Indicator of whether the employee status is exempt or non-exemp
 Extension:      EmployeeFamilySize
 Id:             employee-family-size
 Title:          "Employee Family Size"
-Description:    "The total family size of the employee, whether or not dependents are insured or participating in any programs"
+Description:    "Total family size of the employee, whether or not dependents are insured or participating in any programs"
 * value[x] only integer
 
 Extension:      EmployeeFTECount
 Id:             employee-fte-count
 Title:          "Employee FTE Count"
-Description:    "The Full Time Equivalent calculation for the employee. Example 1: A full-time employee would have a value of 1. Example 2: A 20-hour per week employee would have a value of 0.5."
+Description:    "Full Time Equivalent calculation for the employee. Example 1: A full-time employee would have a value of 1. Example 2: A 20-hour per week employee would have a value of 0.5."
 * value[x] only decimal
 
 Extension:      EmployeeHireDate
 Id:             employee-hire-date
 Title:          "Employee Hire Date"
-Description:    "The first date of employment for the employee"
+Description:    "First date of employment for the employee"
 * value[x] only date
 
 Extension:      EmployeeId
 Id:             employee-id
 Title:          "Employee Id"
-Description:    "Customer-specific identifier for the employee"
+Description:    "Identifier for the employee"
 * value[x] only Identifier
 
 Extension:      EmployeeJobFamily
 Id:             employee-job-family
 Title:          "Employee Job Family"
-Description:    "Customer-specific code for the job family of the employee"
+Description:    "Code for the job family of the employee"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeJobGrade
 Id:             employee-job-grade
 Title:          "Employee Job Grade"
-Description:    "Customer-specific job grade code of the employee"
+Description:    "Code for the job grade of the employee"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeJobLocation
 Id:             employee-job-location
 Title:          "Employee Job Location"
-Description:    "Customer-specific code for the physical location where the employee works"
+Description:    "Code for the physical location where the employee works"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeJobTitle
@@ -158,19 +158,19 @@ Description:    "Job title of the employee"
 Extension:      EmployeeLaborUnion
 Id:             employee-labor-union
 Title:          "Employee Labor Union"
-Description:    "Customer-specific code for the labor union"
+Description:    "Code for the labor union of the employee"
 * value[x] only CodeableConcept
 
 Extension:      EmployeePayFrequency
 Id:             employee-pay-frequency
 Title:          "Employee Pay Frequency"
-Description:    "Customer-specific code indicating the frequency with which the employee is paid (e.g., daily, weekly, monthly)"
+Description:    "Code indicating the frequency with which the employee is paid (e.g., daily, weekly, monthly)"
 * value[x] only CodeableConcept
 
 Extension:      EmployeePerformanceRating
 Id:             employee-performance-rating
 Title:          "Employee Performance Rating"
-Description:    "Customer-specific code indicating the performance rating of the employee, assigned as of the last review period"
+Description:    "Code indicating the performance rating of the employee, assigned as of the last review period"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeRetirementDate
@@ -182,38 +182,38 @@ Description:    "Date of retirement for the employee or contract holder"
 Extension:      EmployeeShift
 Id:             employee-shift
 Title:          "Employee Shift"
-Description:    "Customer-specific code indicating the regular shift which the employee is scheduled to work (e.g., day, afternoon, midnight)"
+Description:    "Code indicating the regular shift which the employee is scheduled to work (e.g., day, afternoon, midnight)"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeStatus
 Id:             employee-status
 Title:          "Employee Status"
-Description:    "The code for the status of the employee"
+Description:    "Code for the status of the employee"
 * value[x] only CodeableConcept
 * valueCodeableConcept from WHPayerEmployeeStatusValueSet (example)
 
 Extension:      EmployeeSubBusinessUnit
 Id:             employee-sub-business-unit
 Title:          "Employee Sub Business Unit"
-Description:    "Customer-specific code of the sub business unit of the employee"
+Description:    "Code of the sub business unit of the employee"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeTerminationDate
 Id:             employee-termination-date
 Title:          "Employee Termination Date"
-Description:    "The last date of employment for the employee"
+Description:    "Last date of employment for the employee"
 * value[x] only date
 
 Extension:      EmployeeTerminationReason
 Id:             employee-termination-reason
 Title:          "Employee Termination Reason"
-Description:    "Customer-specific code indicating the reason for termination, if the employee was terminated (e.g., discharged, resigned)"
+Description:    "Code indicating the reason for employee termination, if the employee was terminated (e.g., discharged, resigned)"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeUnionId
 Id:             employee-union-id
 Title:          "Employee Union Id"
-Description:    "Customer-specific identification for the labor union member"
+Description:    "Identification for the labor union member"
 * value[x] only string
 
 Extension:      EmployeeWageAmount
@@ -225,7 +225,7 @@ Description:    "Wage amount of the employee for the time period represented by 
 Extension:      EmployeeWageBasis
 Id:             employee-wage-basis
 Title:          "Employee Wage Basis"
-Description:    "Customer-specific code indicating the basis on which the wages of the employee are calculated (e.g., hourly, daily, weekly, bimonthly, monthly, annually)"
+Description:    "Code indicating the basis on which the wages of the employee are calculated (e.g., hourly, daily, weekly, bimonthly, monthly, annually)"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeYearOfService
@@ -237,7 +237,7 @@ Description:    "Net credited service in years for the employee"
 Extension:      FamilyIncomeLevel
 Id:             family-income-level
 Title:          "Family Income Level"
-Description:    "Customer-specific code for the family income level of the person based on the Federal Poverty Level (FPL)"
+Description:    "Code for the family income level of the person based on the Federal Poverty Level (FPL)"
 * value[x] only CodeableConcept
 
 Extension:      JobClassCode
@@ -255,7 +255,7 @@ Description:    "5-digit zip code of the facility where the employee works"
 Extension:      LocalSubscriberRelationshipCode
 Id:             local-subscriber-relationship-code
 Title:          "Local Subscriber Relationship Code"
-Description:    "Customer-specific code for the relationship of the member to the subscriber"
+Description:    "Code for the relationship of the member to the subscriber"
 * value[x] only string
 
 Extension:      LongTermDisabilityBenefitRate
@@ -267,7 +267,7 @@ Description:    "Long term disability (LTD) benefit rate, expressed as a percent
 Extension:      MemberEmployeeIndicator
 Id:             member-employee-indicator
 Title:          "Member Employee Indicator"
-Description:    "Customer-specific code indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan"
+Description:    "Code indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan"
 * value[x] only CodeableConcept
 
 Extension:      MedicareCoverage
@@ -279,25 +279,25 @@ Description:    "Standard code for the type of Medicare coverage, if any, for th
 Extension:      MedicareIndicator
 Id:             medicare-indicator
 Title:          "Medicare Indicator"
-Description:    "An indicator of Medicare coverage for the member"
+Description:    "Indicator of Medicare coverage for the member"
 * value[x] only string
 
 Extension:      PlanEmployeeCode
 Id:             plan-employee-code
 Title:          "Plan Employee Code"
-Description:    "Customer-specific code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
+Description:    "Code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
 * value[x] only string
 
 Extension:      RestrictedBenefits
 Id:             restricted-benefits
 Title:          "Restricted Benefits"
-Description:    "Customer-specific code of the scope of Medicaid or CHIP benefits for a person"
+Description:    "Code of the scope of Medicaid or CHIP benefits for a person"
 * value[x] only CodeableConcept
 
 Extension:      SalaryIndicator
 Id:             salary-indicator
 Title:          "Salary Indicator"
-Description:    "An indicator of whether the employee status is salaried"
+Description:    "Indicator of whether the employee status is salaried"
 * value[x] only string
 
 Extension:      ShortTermDisabilityBenefitRate
@@ -339,7 +339,7 @@ Description:    "Unencrypted identifier of the family. This field must have limi
 Extension:      UnionWorkerIndicator
 Id:             union-worker-indicator
 Title:          "Union Worker Indicator"
-Description:    "An indicator that the contract holder (subscriber) belongs to a union"
+Description:    "Indicator that the contract holder (subscriber) belongs to a union"
 * value[x] only string
 
 Extension:      WhPayerRecordPopulationCount

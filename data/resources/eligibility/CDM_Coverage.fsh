@@ -43,16 +43,16 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[cobraIndicator] ^definition = "Indicator of Consolidated Omnibus Budget Reconciliation Act (COBRA) continuation for the person"
 
 * extension contains CoverageDays named coverageDays 0..1
-* extension[coverageDays] ^short      = "The number of covered days of eligibility"
-* extension[coverageDays] ^definition = "The number of covered days of eligibility"
+* extension[coverageDays] ^short      = "Number of covered days of eligibility"
+* extension[coverageDays] ^definition = "Number of covered days of eligibility"
 
 * extension contains CoverageMonth named coverageMonth 0..1
-* extension[coverageMonth] ^short      = "The date which reflects the month of eligibility"
-* extension[coverageMonth] ^definition = "The date which reflects the month of eligibility"
+* extension[coverageMonth] ^short      = "Date which reflects the month of eligibility"
+* extension[coverageMonth] ^definition = "Date which reflects the month of eligibility"
 
 * extension contains CoverageInsurancePlan named coverageInsurancePlan 0..1
-* extension[coverageInsurancePlan] ^short      = "The insurance plan providing coverage"
-* extension[coverageInsurancePlan] ^definition = "The insurance plan providing coverage"
+* extension[coverageInsurancePlan] ^short      = "Reference to the insurance plan for this coverage"
+* extension[coverageInsurancePlan] ^definition = "Reference to the insurance plan for this coverage"
 
 * extension contains DualEligibilityIndicator named dualEligibilityIndicator 0..1
 * extension[dualEligibilityIndicator] ^short      = "Indicator of dual eligibility for the Medicaid market"
@@ -97,44 +97,44 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
  * extension[employeeAverageScheduledHours] ^definition = "Average number of hours the employee is scheduled to work per day"
  * extension[employeeBirthDate] ^short      = "Birthdate of the employee or contract holder"
  * extension[employeeBirthDate] ^definition = "Birthdate of the employee or contract holder. For security, this field may be hidden or the value stored in this field should only contain the year."
- * extension[employeeCompany] ^short      = "Customer-specific code for the company of the employee"
- * extension[employeeCompany] ^definition = "Customer-specific code for the company of the employee"
- * extension[employeeCostCenter] ^short      = "Customer-specific code for the cost center of the employee"
- * extension[employeeCostCenter] ^definition = "Customer-specific code for the cost center of the employee"
- * extension[employeeCount] ^short      = "A flag of the employees in the eligibility record"
- * extension[employeeCount] ^definition = "A flag of the employees in the eligibility record. Each employee is identified with a value of 1. All others are given values of 0."
+ * extension[employeeCompany] ^short      = "Code for the company of the employee"
+ * extension[employeeCompany] ^definition = "Code for the company of the employee"
+ * extension[employeeCostCenter] ^short      = "Code for the cost center of the employee"
+ * extension[employeeCostCenter] ^definition = "Code for the cost center of the employee"
+ * extension[employeeCount] ^short      = "Flag of the employees in the eligibility record"
+ * extension[employeeCount] ^definition = "Flag of the employees in the eligibility record. Each employee is identified with a value of 1. All others are given values of 0."
  * extension[employeeBusinessUnit] ^short      = "Code for the business unit of the employee" 
  * extension[employeeBusinessUnit] ^definition = "Code for the business unit of the employee" 
- * extension[employeeDepartment] ^short      = "Customer-specific code for the department of the employee"
- * extension[employeeDepartment] ^definition = "Customer-specific code for the department of the employee"
- * extension[employeeDivision] ^short      = "Customer-specific code for the division of the employee"
- * extension[employeeDivision] ^definition = "Customer-specific code for the division of the employee"
+ * extension[employeeDepartment] ^short      = "Code for the department of the employee"
+ * extension[employeeDepartment] ^definition = "Code for the department of the employee"
+ * extension[employeeDivision] ^short      = "Code for the division of the employee"
+ * extension[employeeDivision] ^definition = "Code for the division of the employee"
  * extension[employeeExemptIndicator] ^short      = "Indicator of whether the employee status is exempt or non-exempt"
  * extension[employeeExemptIndicator] ^definition = "Indicator of whether the employee status is exempt or non-exempt"
- * extension[employeeFamilySize] ^short      = "The total family size of the employee, whether or not dependents are insured or participating in any programs"
- * extension[employeeFamilySize] ^definition = "The total family size of the employee, whether or not dependents are insured or participating in any programs"
- * extension[employeeFTECount] ^short      = "The Full Time Equivalent calculation for the employee"
- * extension[employeeFTECount] ^definition = "The Full Time Equivalent calculation for the employee. Example 1: A full-time employee would have a value of 1. Example 2: A 20-hour per week employee would have a value of 0.5."
- * extension[employeeId] ^short      = "Customer-specific identifier for the employee"
- * extension[employeeId] ^definition = "Customer-specific identifier for the employee"
- * extension[employeeJobFamily] ^short      = "Customer-specific code for the job family of the employee"
- * extension[employeeJobFamily] ^definition = "Customer-specific code for the job family of the employee"
- * extension[employeeJobGrade] ^short      = "Customer-specific job grade code of the employee"
- * extension[employeeJobGrade] ^definition = "Customer-specific job grade code of the employee"
- * extension[employeeJobLocation] ^short      = "Customer-specific code for the physical location where the employee works"
- * extension[employeeJobLocation] ^definition = "Customer-specific code for the physical location where the employee works"
- * extension[employeePayFrequency] ^short      = "Customer-specific code indicating the frequency with which the employee is paid (e.g., daily, weekly, monthly)"
- * extension[employeePayFrequency] ^definition = "Customer-specific code indicating the frequency with which the employee is paid (e.g., daily, weekly, monthly)"
- * extension[employeePerformanceRating] ^short      = "Customer-specific code indicating the performance rating of the employee, assigned as of the last review period"
- * extension[employeePerformanceRating] ^definition = "Customer-specific code indicating the performance rating of the employee, assigned as of the last review period"
- * extension[employeeShift] ^short      = "Customer-specific code indicating the regular shift which the employee is scheduled to work"
- * extension[employeeShift] ^definition = "Customer-specific code indicating the regular shift which the employee is scheduled to work (e.g., day, afternoon, midnight)"
- * extension[employeeSubBusinessUnit] ^short      = "Customer-specific code of the sub business unit of the employee"
- * extension[employeeSubBusinessUnit] ^definition = "Customer-specific code of the sub business unit of the employee"
- * extension[salaryIndicator] ^short       = "An indicator of whether the employee status is salaried"
- * extension[salaryIndicator] ^definition  = "An indicator of whether the employee status is salaried"
- * extension[unionWorkerIndicator] ^short      = "An indicator that the contract holder (subscriber) belongs to a union"
- * extension[unionWorkerIndicator] ^definition = "An indicator that the contract holder (subscriber) belongs to a union"
+ * extension[employeeFamilySize] ^short      = "Total family size of the employee, whether or not dependents are insured or participating in any programs"
+ * extension[employeeFamilySize] ^definition = "Total family size of the employee, whether or not dependents are insured or participating in any programs"
+ * extension[employeeFTECount] ^short      = "Full Time Equivalent calculation for the employee"
+ * extension[employeeFTECount] ^definition = "Full Time Equivalent calculation for the employee. Example 1: A full-time employee would have a value of 1. Example 2: A 20-hour per week employee would have a value of 0.5."
+ * extension[employeeId] ^short      = "Identifier for the employee"
+ * extension[employeeId] ^definition = "Identifier for the employee"
+ * extension[employeeJobFamily] ^short      = "Code for the job family of the employee"
+ * extension[employeeJobFamily] ^definition = "Code for the job family of the employee"
+ * extension[employeeJobGrade] ^short      = "Code for the job grade of the employee"
+ * extension[employeeJobGrade] ^definition = "Code for the job grade of the employee"
+ * extension[employeeJobLocation] ^short      = "Code for the physical location where the employee works"
+ * extension[employeeJobLocation] ^definition = "Code for the physical location where the employee works"
+ * extension[employeePayFrequency] ^short      = "Code indicating the frequency with which the employee is paid (e.g., daily, weekly, monthly)"
+ * extension[employeePayFrequency] ^definition = "Code indicating the frequency with which the employee is paid (e.g., daily, weekly, monthly)"
+ * extension[employeePerformanceRating] ^short      = "Code indicating the performance rating of the employee, assigned as of the last review period"
+ * extension[employeePerformanceRating] ^definition = "Code indicating the performance rating of the employee, assigned as of the last review period"
+ * extension[employeeShift] ^short      = "Code indicating the regular shift which the employee is scheduled to work"
+ * extension[employeeShift] ^definition = "Code indicating the regular shift which the employee is scheduled to work (e.g., day, afternoon, midnight)"
+ * extension[employeeSubBusinessUnit] ^short      = "Code of the sub business unit of the employee"
+ * extension[employeeSubBusinessUnit] ^definition = "Code of the sub business unit of the employee"
+ * extension[salaryIndicator] ^short       = "Indicator of whether the employee status is salaried"
+ * extension[salaryIndicator] ^definition  = "Indicator of whether the employee status is salaried"
+ * extension[unionWorkerIndicator] ^short      = "Indicator that the contract holder (subscriber) belongs to a union"
+ * extension[unionWorkerIndicator] ^definition = "Indicator that the contract holder (subscriber) belongs to a union"
 
 * extension contains EmployeeEducationLevel named employeeEducationLevel 0..1
 * extension[employeeEducationLevel].valueCodeableConcept from WhPayerEducationLevelValueSet (extensible)
@@ -146,12 +146,12 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
     EmployeeTerminationDate named employeeTerminationDate 0..* and
     EmployeeTerminationReason named employeeTerminationReason 0..*
     
-* extension[employeeHireDate] ^short      = "The first date of employment for the employee"
-* extension[employeeHireDate] ^definition = "The first date of employment for the employee"
-* extension[employeeTerminationDate] ^short      = "The last date of employment for the employee"
-* extension[employeeTerminationDate] ^definition = "The last date of employment for the employee"
-* extension[employeeTerminationReason] ^short      = "Customer-specific code indicating the reason for termination"
-* extension[employeeTerminationReason] ^definition = "Customer-specific code indicating the reason for termination, if the employee was terminated (e.g., discharged, resigned)"
+* extension[employeeHireDate] ^short      = "First date of employment for the employee"
+* extension[employeeHireDate] ^definition = "First date of employment for the employee"
+* extension[employeeTerminationDate] ^short      = "Last date of employment for the employee"
+* extension[employeeTerminationDate] ^definition = "Last date of employment for the employee"
+* extension[employeeTerminationReason] ^short      = "Code indicating the reason for employee termination"
+* extension[employeeTerminationReason] ^definition = "Code indicating the reason for employee termination, if the employee was terminated (e.g., discharged, resigned)"
 
 * extension contains EmployeeJobTitle named employeeJobTitle 0..1
 * extension[employeeJobTitle].valueCodeableConcept from WhPayerJobTitleValueSet (extensible)
@@ -159,8 +159,8 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[employeeJobTitle] ^definition = "Job title of the employee"
  
 * extension contains EmployeeLaborUnion named employeeLaborUnion 0..1
-* extension[employeeLaborUnion] ^short      = "Customer-specific code for the labor union"
-* extension[employeeLaborUnion] ^definition = "Customer-specific code for the labor union"
+* extension[employeeLaborUnion] ^short      = "Code for the labor union of the employee"
+* extension[employeeLaborUnion] ^definition = "Code for the labor union of the employee"
 
 * extension contains EmployeeRetirementDate named employeeRetirementDate 0..1
 * extension[employeeRetirementDate] ^short      = "Date of retirement for the employee or contract holder"
@@ -168,20 +168,20 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 
 * extension contains EmployeeStatus named employeeStatus 0..1
 * extension[employeeStatus].valueCodeableConcept from WHPayerEmployeeStatusValueSet (example)
-* extension[employeeStatus] ^short      = "The code for the status of the employee"
-* extension[employeeStatus] ^definition = "The code for the status of the employee"
+* extension[employeeStatus] ^short      = "Code for the status of the employee"
+* extension[employeeStatus] ^definition = "Code for the status of the employee"
 
 * extension contains EmployeeUnionId named employeeUnionId 0..1
-* extension[employeeUnionId] ^short      = "Customer-specific identification for the labor union member"
-* extension[employeeUnionId] ^definition = "Customer-specific identification for the labor union member"
+* extension[employeeUnionId] ^short      = "Identification for the labor union member"
+* extension[employeeUnionId] ^definition = "Identification for the labor union member"
 
 * extension contains EmployeeWageAmount named employeeWageAmount 0..1
 * extension[employeeWageAmount] ^short      =  "Wage amount of the employee for the time period represented by the Wage Basis field"
 * extension[employeeWageAmount] ^definition =  "Wage amount of the employee for the time period represented by the Wage Basis field"
 
 * extension contains EmployeeWageBasis named employeeWageBasis 0..1
-* extension[employeeWageBasis] ^short      =  "Customer-specific code indicating the basis on which the wages of the employee are calculated"
-* extension[employeeWageBasis] ^definition =  "Customer-specific code indicating the basis on which the wages of the employee are calculated (e.g., hourly, daily, weekly, bimonthly, monthly, annually)"
+* extension[employeeWageBasis] ^short      =  "Code indicating the basis on which the wages of the employee are calculated"
+* extension[employeeWageBasis] ^definition =  "Code indicating the basis on which the wages of the employee are calculated (e.g., hourly, daily, weekly, bimonthly, monthly, annually)"
 
 * extension contains EmployeeYearOfService named employeeYearOfService 0..1
 * extension[employeeYearOfService] ^short      = "Net credited service in years for the employee"
@@ -189,12 +189,12 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 
 // Note: Employer is defined in ClaimExtensions.fsh, with a different definition here
 * extension contains Employer named employer 0..1
-* extension[employer] ^short      = "Customer-specific code for the employer"
-* extension[employeeId] ^definition = "Customer-specific code for the employer"
+* extension[employer] ^short      = "Code for the employer"
+* extension[employer] ^definition = "Code for the employer"
  
 * extension contains FamilyIncomeLevel named familyIncomeLevel 0..1
-* extension[familyIncomeLevel] ^short      = "Customer-specific code for the family income level of the person based on the Federal Poverty Level (FPL)"
-* extension[familyIncomeLevel] ^definition = "Customer-specific code for the family income level of the person based on the Federal Poverty Level (FPL)"
+* extension[familyIncomeLevel] ^short      = "Code for the family income level of the person based on the Federal Poverty Level (FPL)"
+* extension[familyIncomeLevel] ^definition = "Code for the family income level of the person based on the Federal Poverty Level (FPL)"
 
 * extension contains JobClassCode named jobClassCode 0..1
 * extension[jobClassCode] ^short      = "Classifcation group of the job role of the employee, for example, Top Executives, Post-secondary teachers, and Engineers"
@@ -214,24 +214,24 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[medicareCoverage] ^definition = "Standard code for the type of Medicare coverage, if any, for the person"
 
 * extension contains MedicareIndicator named medicareIndicator 0..1
-* extension[medicareIndicator] ^short      = "An indicator of Medicare coverage for the member"
-* extension[medicareIndicator] ^definition = "An indicator of Medicare coverage for the member"
+* extension[medicareIndicator] ^short      = "Indicator of Medicare coverage for the member"
+* extension[medicareIndicator] ^definition = "Indicator of Medicare coverage for the member"
 
 * extension contains MemberEmployeeIndicator named memberEmployeeIndicator 0..1
-* extension[memberEmployeeIndicator] ^short      = "Customer-specific code indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan"
-* extension[memberEmployeeIndicator] ^definition = "Customer-specific code indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan"
+* extension[memberEmployeeIndicator] ^short      = "Code indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan"
+* extension[memberEmployeeIndicator] ^definition = "Code indicates whether the member is either an employee of the health plan, or the dependent of an employee of the health plan"
 
 * extension contains PlanEmployeeCode named planEmployeeCode 0..1
-* extension[planEmployeeCode] ^short      = "Customer-specific code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
-* extension[planEmployeeCode] ^definition = "Customer-specific code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
+* extension[planEmployeeCode] ^short      = "Code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
+* extension[planEmployeeCode] ^definition = "Code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
 
 * extension contains RegionCode named regionCode 0..1
 * extension[regionCode] ^short      = "Customer-specific code for the geographic region of the employee"
 * extension[regionCode] ^definition = "Customer-specific code for the geographic region of the employee"
 
 * extension contains RestrictedBenefits named restrictedBenefits 0..1
-* extension[restrictedBenefits] ^short      = "Customer-specific code of the scope of Medicaid or CHIP benefits for a person"
-* extension[restrictedBenefits] ^definition = "Customer-specific code of the scope of Medicaid or CHIP benefits for a person"
+* extension[restrictedBenefits] ^short      = "Code of the scope of Medicaid or CHIP benefits for a person"
+* extension[restrictedBenefits] ^definition = "Code of the scope of Medicaid or CHIP benefits for a person"
 
 * extension contains  ShortTermDisabilityBenefitRate named shortTermDisabilityBenefitRate 0..1
 * extension[shortTermDisabilityBenefitRate] ^short      = "Short term disability (STD) benefit rate, expressed as a percentage of base wages or benefit amount (for example, 50.00%, 60.00%, 70.00%)"
@@ -268,5 +268,5 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
     LocalSubscriberRelationshipCode named localSubscriberRelationshipCode 0..1
 * extension[whPayerSubscriberRelationshipCode] ^short      = "Health Data Connect standard code for the relationship of the member to the contract holder"
 * extension[whPayerSubscriberRelationshipCode] ^definition = "Health Data Connect standard code for the relationship of the member to the contract holder"
-* extension[localSubscriberRelationshipCode] ^short      = "Customer-specific code for the relationship of the member to the subscriber"
-* extension[localSubscriberRelationshipCode] ^definition = "Customer-specific code for the relationship of the member to the subscriber"
+* extension[localSubscriberRelationshipCode] ^short      = "Code for the relationship of the member to the subscriber"
+* extension[localSubscriberRelationshipCode] ^definition = "Code for the relationship of the member to the subscriber"
