@@ -172,8 +172,8 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[employeeStatus] ^definition = "The code for the status of the employee"
 
 * extension contains EmployeeUnionId named employeeUnionId 0..1
-* extension[employeeUnionId] ^short      = "Customer-specific identification for the labor union"
-* extension[employeeUnionId] ^definition = "Customer-specific identification for the labor union"
+* extension[employeeUnionId] ^short      = "Customer-specific identification for the labor union member"
+* extension[employeeUnionId] ^definition = "Customer-specific identification for the labor union member"
 
 * extension contains EmployeeWageAmount named employeeWageAmount 0..1
 * extension[employeeWageAmount] ^short      =  "Wage amount of the employee for the time period represented by the Wage Basis field"

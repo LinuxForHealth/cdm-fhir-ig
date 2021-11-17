@@ -249,7 +249,7 @@ Description:    "Date of retirement for the employee or contract holder"
 Extension:      EmployeeUnionId
 Id:             employee-union-id
 Title:          "Employee Union Id"
-Description:    "Customer-specific identification for the labor union"
+Description:    "Customer-specific identification for the labor union member"
 * value[x] only string
 
 Extension:      LongTermDisabilityBenefitRate

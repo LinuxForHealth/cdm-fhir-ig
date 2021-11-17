@@ -52,7 +52,7 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[employeeJobLocation].valueCodeableConcept.coding[1]    = http://acme-health.com/CodeSystem/local-geographic-job-location#CardingtonOhio
 * extension[employeeJobTitle].valueCodeableConcept.coding[0]       = http://acme-health.com/CodeSystem/local-employee-job-title#SoftwareEngineer
 * extension[employeeJobTitle].valueCodeableConcept.coding[1]       = STANDARD-OCCUPATION-CODE#15-1131
-* extension[employeeLaborUnion].valueCodeableConcept               = http://acme-health.com/CodeSystem/local-employee-labor-union#LocalEmpLaborUnionCd
+* extension[employeeLaborUnion].valueCodeableConcept               = http://acme-health.com/CodeSystem/local-employee-labor-union#LocalTeams377
 * extension[employeePayFrequency].valueCodeableConcept             = http://acme-health.com/CodeSystem/local-employee-pay-frequency#Monthly
 * extension[employeePerformanceRating].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-employee-performance-rating#Meets
 * extension[employeeShift].valueCodeableConcept                    = http://acme-health.com/CodeSystem/local-employee-shift#Day
@@ -64,7 +64,7 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[employeeWageAmount].valueDecimal                       = 46500.00
 * extension[employeeWageBasis].valueCodeableConcept                = http://acme-health.com/CodeSystem/local-employee-wage-basis#Annual
 * extension[employeeYearOfService].valueUnsignedInt                = 1
-* extension[employeeUnionId].valueString                           = "UnionId-407"
+* extension[employeeUnionId].valueString                           = "MemberUnionId-407"
 * extension[enrollmentPcpNameOnEnrollment].valueString    = "Dr Kelly"
 * extension[enrollmentPcpZipOnEnrollment].valueString     = "75014"
 * extension[enrollmentPcp].valueString                    = "EnrollmentPCP1"
