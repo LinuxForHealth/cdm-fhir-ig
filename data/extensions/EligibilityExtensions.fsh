@@ -10,48 +10,6 @@ Title:          "Cobra Indicator"
 Description:    "Indicator of Consolidated Omnibus Budget Reconciliation Act(COBRA) continuation for the person"
 * value[x] only string
 
-Extension:      EmployeeAverageScheduledHours
-Id:             employee-average-scheduled-hours
-Title:          "Employee Average Scheduled Hours"
-Description:    "Average number of hours the employee is scheduled to work per day"
-* value[x] only decimal
-
-Extension:      EmployeeBirthDate
-Id:             employee-birth-date
-Title:          "Employee Birth Date"
-Description:    "Birthdate of the employee or contract holder. For security, this field may be hidden or the value stored in this field should only contain the year"
-* value[x] only date
-
-Extension:      EmployeeCompany
-Id:             employee-company
-Title:          "Employee Company"
-Description:    "Customer-specific code for the company of the employee"
-* value[x] only CodeableConcept
-
-Extension:      EmployeeCostCenter
-Id:             employee-cost-center
-Title:          "Employee Cost Center"
-Description:    "Customer-specific code for the cost center of the employee"
-* value[x] only CodeableConcept
-
-Extension:      EmployeeDepartment
-Id:             employee-department
-Title:          "Employee Department"
-Description:    "Customer-specific code for the department of the employee"
-* value[x] only CodeableConcept
-
-Extension:      EmployeeDivision
-Id:             employee-division
-Title:          "Employee Division"
-Description:    "Customer-specific code for the division of the employee"
-* value[x] only CodeableConcept
-
-Extension:      EmployeeShift
-Id:             employee-shift
-Title:          "Employee Shift"
-Description:    "Customer-specific code indicating the regular shift which the employee is scheduled to work (e.g., day, afternoon, midnight)"
-* value[x] only CodeableConcept
-
 Extension:      CoverageDays
 Id:             coverage-days
 Title:          "Coverage Days"
@@ -95,11 +53,47 @@ Title:          "Enrollment PCP Zip On Enrollment"
 Description:    "Original primary care physician (PCP) zip code as reporting on the eligibility record"
 * value[x] only string
 
+Extension:      EmployeeAverageScheduledHours
+Id:             employee-average-scheduled-hours
+Title:          "Employee Average Scheduled Hours"
+Description:    "Average number of hours the employee is scheduled to work per day"
+* value[x] only decimal
+
+Extension:      EmployeeBirthDate
+Id:             employee-birth-date
+Title:          "Employee Birth Date"
+Description:    "Birthdate of the employee or contract holder. For security, this field may be hidden or the value stored in this field should only contain the year"
+* value[x] only date
+
+Extension:      EmployeeCompany
+Id:             employee-company
+Title:          "Employee Company"
+Description:    "Customer-specific code for the company of the employee"
+* value[x] only CodeableConcept
+
+Extension:      EmployeeCostCenter
+Id:             employee-cost-center
+Title:          "Employee Cost Center"
+Description:    "Customer-specific code for the cost center of the employee"
+* value[x] only CodeableConcept
+
 Extension:      EmployeeCount
 Id:             employee-count
 Title:          "Employee Count"
 Description:    "A flag of the employees in the eligibility record. Each employee is identified with a value of 1. All others are given values of 0."
 * value[x] only unsignedInt
+
+Extension:      EmployeeDepartment
+Id:             employee-department
+Title:          "Employee Department"
+Description:    "Customer-specific code for the department of the employee"
+* value[x] only CodeableConcept
+
+Extension:      EmployeeDivision
+Id:             employee-division
+Title:          "Employee Division"
+Description:    "Customer-specific code for the division of the employee"
+* value[x] only CodeableConcept
 
 Extension:      EmployeeEducationLevel
 Id:             employee-education-level
@@ -155,6 +149,18 @@ Title:          "Employee Job Location"
 Description:    "Customer-specific code for the physical location where the employee works"
 * value[x] only CodeableConcept
 
+Extension:      EmployeeJobTitle
+Id:             employee-job-title
+Title:          "Employee Job Title"
+Description:    "Job title of the employee"
+* value[x] only CodeableConcept
+
+Extension:      EmployeeLaborUnion
+Id:             employee-labor-union
+Title:          "Employee Labor Union"
+Description:    "Customer-specific code for the labor union"
+* value[x] only CodeableConcept
+
 Extension:      EmployeePayFrequency
 Id:             employee-pay-frequency
 Title:          "Employee Pay Frequency"
@@ -165,6 +171,18 @@ Extension:      EmployeePerformanceRating
 Id:             employee-performance-rating
 Title:          "Employee Performance Rating"
 Description:    "Customer-specific code indicating the performance rating of the employee, assigned as of the last review period"
+* value[x] only CodeableConcept
+
+Extension:      EmployeeRetirementDate
+Id:             employee-retirement-date
+Title:          "Employee Retirement Date"
+Description:    "Date of retirement for the employee or contract holder"
+* value[x] only date
+
+Extension:      EmployeeShift
+Id:             employee-shift
+Title:          "Employee Shift"
+Description:    "Customer-specific code indicating the regular shift which the employee is scheduled to work (e.g., day, afternoon, midnight)"
 * value[x] only CodeableConcept
 
 Extension:      EmployeeStatus
@@ -191,6 +209,12 @@ Id:             employee-termination-reason
 Title:          "Employee Termination Reason"
 Description:    "Customer-specific code indicating the reason for termination, if the employee was terminated (e.g., discharged, resigned)"
 * value[x] only CodeableConcept
+
+Extension:      EmployeeUnionId
+Id:             employee-union-id
+Title:          "Employee Union Id"
+Description:    "Customer-specific identification for the labor union member"
+* value[x] only string
 
 Extension:      EmployeeWageAmount
 Id:             employee-wage-amount
@@ -228,28 +252,10 @@ Title:          "Job Location Zipcode"
 Description:    "5-digit zip code of the facility where the employee works"
 * value[x] only string
 
-Extension:      EmployeeJobTitle
-Id:             employee-job-title
-Title:          "Employee Job Title"
-Description:    "Job title of the employee"
-* value[x] only CodeableConcept
-
-Extension:      EmployeeLaborUnion
-Id:             employee-labor-union
-Title:          "Employee Labor Union"
-Description:    "Customer-specific code for the labor union"
-* value[x] only CodeableConcept
-
-Extension:      EmployeeRetirementDate
-Id:             employee-retirement-date
-Title:          "Employee Retirement Date"
-Description:    "Date of retirement for the employee or contract holder"
-* value[x] only date
-
-Extension:      EmployeeUnionId
-Id:             employee-union-id
-Title:          "Employee Union Id"
-Description:    "Customer-specific identification for the labor union member"
+Extension:      LocalSubscriberRelationshipCode
+Id:             local-subscriber-relationship-code
+Title:          "Local Subscriber Relationship Code"
+Description:    "Customer-specific code for the relationship of the member to the subscriber"
 * value[x] only string
 
 Extension:      LongTermDisabilityBenefitRate
@@ -276,6 +282,12 @@ Title:          "Medicare Indicator"
 Description:    "An indicator of Medicare coverage for the member"
 * value[x] only string
 
+Extension:      PlanEmployeeCode
+Id:             plan-employee-code
+Title:          "Plan Employee Code"
+Description:    "Customer-specific code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
+* value[x] only string
+
 Extension:      RestrictedBenefits
 Id:             restricted-benefits
 Title:          "Restricted Benefits"
@@ -293,42 +305,6 @@ Id:             short-term-disability-benefit-rate
 Title:          "Short Term Disability Benefit Rate"
 Description:    "Short term disability (STD) benefit rate, expressed as a percentage of base wages or benefit amount (for example, 50.00%, 60.00%, 70.00%)"
 * value[x] only decimal
-
-Extension:      UnionWorkerIndicator
-Id:             union-worker-indicator
-Title:          "Union Worker Indicator"
-Description:    "An indicator that the contract holder (subscriber) belongs to a union"
-* value[x] only string
-
-Extension:      WhPayerRecordPopulationCount
-Id:             wh-payer-record-population-count
-Title:          "Health Data Connect Record Population Count"
-Description:    "Specifies whether the member should be counted as eligible for the coverage period"
-* value[x] only integer
-
-Extension:      LocalSubscriberRelationshipCode
-Id:             local-subscriber-relationship-code
-Title:          "Local Subscriber Relationship Code"
-Description:    "Customer-specific code for the relationship of the member to the subscriber"
-* value[x] only string
-
-Extension:      TotalDependentCount
-Id:             total-dependent-count
-Title:          "Total Dependent Count"
-Description:    "Number of dependents covered by the group health medical plan"
-* value[x] only integer
-
-Extension:      WhPayerSubscriberRelationshipCode
-Id:             wh-payer-subscriber-relationship
-Title:          "Health Data Connect Subscriber Relationship Code"
-Description:    "IBM® Health Data Connect standard code for the relationship of the member to the contract holder."
-* value[x] only string
-
-Extension:      PlanEmployeeCode
-Id:             plan-employee-code
-Title:          "Plan Employee Code"
-Description:    "Customer-specific code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
-* value[x] only string
 
 Extension:      SsiIndicator
 Id:             ssi-indicator
@@ -348,8 +324,32 @@ Title:          "TANF Benefits"
 Description:    "Standard code of the Temporary Assistance for Needy Families (TANF) benefits for the person"
 * value[x] only CodeableConcept
 
+Extension:      TotalDependentCount
+Id:             total-dependent-count
+Title:          "Total Dependent Count"
+Description:    "Number of dependents covered by the group health medical plan"
+* value[x] only integer
+
 Extension:      UnencryptedSubscriberId
 Id:             unencrytped-subscriberId
 Title:          "Unencrypted SubscriberId"
 Description:    "Unencrypted identifier of the family. This field must have limited access for security reasons."
+* value[x] only string
+
+Extension:      UnionWorkerIndicator
+Id:             union-worker-indicator
+Title:          "Union Worker Indicator"
+Description:    "An indicator that the contract holder (subscriber) belongs to a union"
+* value[x] only string
+
+Extension:      WhPayerRecordPopulationCount
+Id:             wh-payer-record-population-count
+Title:          "Health Data Connect Record Population Count"
+Description:    "Specifies whether the member should be counted as eligible for the coverage period"
+* value[x] only integer
+
+Extension:      WhPayerSubscriberRelationshipCode
+Id:             wh-payer-subscriber-relationship
+Title:          "Health Data Connect Subscriber Relationship Code"
+Description:    "IBM® Health Data Connect standard code for the relationship of the member to the contract holder."
 * value[x] only string
