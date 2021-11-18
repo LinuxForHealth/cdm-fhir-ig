@@ -318,6 +318,12 @@ Title:          "SSI Status"
 Description:    "Standard code of the Supplemental Security Income (SSI) status for the person, at the time of coverage"
 * value[x] only CodeableConcept
 
+Extension:      SubscriberIdEncrypted
+Id:             subscriberId-encrypted
+Title:          "SubscriberId Encrypted"
+Description:    "Encrypted identifier of the subscriber or family"
+* value[x] only string
+
 Extension:      TanfBenefits
 Id:             tanf-benefits
 Title:          "TANF Benefits"
@@ -329,12 +335,6 @@ Id:             total-dependent-count
 Title:          "Total Dependent Count"
 Description:    "Number of dependents covered by the group health medical plan"
 * value[x] only integer
-
-Extension:      UnencryptedSubscriberId
-Id:             unencrytped-subscriberId
-Title:          "Unencrypted SubscriberId"
-Description:    "Unencrypted identifier of the family. This field must have limited access for security reasons."
-* value[x] only string
 
 Extension:      UnionWorkerIndicator
 Id:             union-worker-indicator

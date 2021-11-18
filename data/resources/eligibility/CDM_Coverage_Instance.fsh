@@ -20,8 +20,8 @@ Description:        "Example of a coverage record for a patient beneficiary"
 
 * beneficiary = Reference(CDMPatientInstance)
 
-* subscriberId                                   = "encryp-familyid-98321"
-* extension[unencryptedSubscriberId].valueString = "FamilyId_0001"
+* subscriberId                                  = "FamilyId_0001"
+* extension[subscriberIdEncrypted].valueString = "p58299i3-3t5z-2hyg-7256-g2un4f887e08"
 
 * status = #active
 

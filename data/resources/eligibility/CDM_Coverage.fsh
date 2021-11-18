@@ -255,9 +255,9 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[totalDependentCount] ^short      = "Number of dependents covered by the group health medical plan"
 * extension[totalDependentCount] ^definition = "Number of dependents covered by the group health medical plan"
 
-* extension contains UnencryptedSubscriberId named unencryptedSubscriberId 0..1
-* extension[unencryptedSubscriberId] ^short      = "Unencrypted identifier of the family"
-* extension[unencryptedSubscriberId] ^definition = "Unencrypted identifier of the family. This field must have limited access for security reasons."
+* extension contains SubscriberIdEncrypted named subscriberIdEncrypted 0..1
+* extension[subscriberIdEncrypted] ^short      = "Encrypted identifier of the subscriber or family"
+* extension[subscriberIdEncrypted] ^definition = "Encrypted identifier of the subscriber or family"
 
 * extension contains WhPayerRecordPopulationCount named whPayerRecordPopulationCount 0..1
 * extension[whPayerRecordPopulationCount] ^short      = "Specifies whether the member should be counted as eligible for the coverage period"
