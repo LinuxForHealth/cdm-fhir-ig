@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/ValueSet/citizenship> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "citizenship"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/iso3166-1-2</code></li><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/iso3166-1-3</code></li><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/iso3166-1-N</code></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/citizenship"];
+  fhir:ValueSet.version [ fhir:value "5.0.0"];
+  fhir:ValueSet.name [ fhir:value "CitizenshipValueSet"];
+  fhir:ValueSet.title [ fhir:value "Citizenship Value Set"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-11-19T14:45:01+00:00"^^xsd:dateTime];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Citizenship status codes"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/ValueSet/iso3166-1-2" ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/ValueSet/iso3166-1-3" ]
+     ], [
+       fhir:index 2;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/ValueSet/iso3166-1-N" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/ValueSet/citizenship.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

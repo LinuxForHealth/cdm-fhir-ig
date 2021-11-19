@@ -1,0 +1,392 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Patient/CDMPatientDeceasedExample> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CDMPatientDeceasedExample"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.valueString [ fhir:value "99999" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-5555-23de2e189143" ]
+     ];
+     fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"CDMPatientDeceasedExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-patient.html\">CDM Patient</a></p></div><p><b>Sex Assigned At Birth</b>: Male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-sex-assigned-at-birth.html\">Sex Assigned At Birth Codes</a>#male)</span></p><p><b>genderIdentity</b>: Gender-neutral <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-gender-identity.html\">Gender Identity Codes</a>#gender-neutral)</span></p><p><b>Identified Pronouns</b>: they</p><p><b>Identified Pronouns</b>: ze</p><blockquote><p><b>Legally Documented Sex</b></p><p><b>value</b>: Male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-sex-assigned-at-birth.html\">Sex Assigned At Birth Codes</a>#male)</span></p><p><b>value</b>: Official document issued by a government, certifying identity and citizenship <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-legal-document-source.html\">Legal Document Source Codes</a>#passport)</span></p><p><b>value</b>: U.S. Federal Goverment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-legal-document-system.html\">Legal Document System Codes</a>#us-gov)</span></p></blockquote><p><b>SexualOrientation</b>: Asexual <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-sexual-orientation.html\">Sexual Orientation Codes</a>#asexual)</span></p><blockquote><p><b>US Core Race Extension</b></p><p><b>value</b>: White (Details: urn:oid:2.16.840.1.113883.6.238 code 2106-3 = 'White', stated as 'White')</p><p><b>value</b>: White</p></blockquote><blockquote><p><b>US Core Ethnicity Extension</b></p><p><b>value</b>: Not Hispanic or Latino (Details: urn:oid:2.16.840.1.113883.6.238 code 2186-5 = 'Not Hispanic or Latino', stated as 'Not Hispanic or Latino')</p><p><b>value</b>: Not Hispanic or Latino</p></blockquote><p><b>Local Race Code</b>: White <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-race-code#White)</span></p><p><b>Patient Citizenship</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#US)</span></p><p><b>Citizen Status</b>: LocalCitizenStatusCd <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-citizen-status#LocalCitizenStatusCd)</span></p><p><b>identifier</b>: Source System Row Identifier: unencryp-id5555 (OFFICIAL), Source System Row Identifier: encryp-id5555 (SECONDARY), Medical record number: 1011115555 (OFFICIAL), Social Beneficiary Identifier: 0001225555 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Firstname Lastname </p><p><b>telecom</b>: 216-248-5555(MOBILE), ph: 216-345-5555(HOME), ph: 216-555-5555(WORK), <a href=\"mailto:flastname@fakemail.com\">flastname@fakemail.com</a></p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1960-02-29</p><p><b>deceased</b>: Feb 28, 2020, 12:00:00 AM</p><p><b>address</b>: Cardington Ohio 43315 US (HOME)</p><p><b>maritalStatus</b>: Married <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-marital-status#Married)</span></p><h3>Communications</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Language</b></td></tr><tr><td>*</td><td></td><td>English <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-ietf3066.html\">Tags for the Identification of Languages</a>#en)</span></td></tr></table><p><b>generalPractitioner</b>: <a href=\"PractitionerRole-CDMPractitionerRole-EMR-PCP.html\">PractitionerRole/CDMPractitionerRole-EMR-PCP</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth" ];
+         fhir:Coding.code [ fhir:value "male" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-genderIdentity" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/gender-identity" ];
+         fhir:Coding.code [ fhir:value "gender-neutral" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/identified-pronouns" ];
+     fhir:Extension.valueString [ fhir:value "they" ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/identified-pronouns" ];
+     fhir:Extension.valueString [ fhir:value "ze" ]
+  ], [
+     fhir:index 4;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/documented-sex" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth" ];
+           fhir:Coding.code [ fhir:value "male" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/documented-source" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/legal-document-source" ];
+           fhir:Coding.code [ fhir:value "passport" ]
+         ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/documented-system" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/legal-document-system" ];
+           fhir:Coding.code [ fhir:value "us-gov" ]
+         ]
+       ]
+     ];
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/legally-documented-sex" ]
+  ], [
+     fhir:index 5;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/sexual-orientation" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/sexual-orientation" ];
+         fhir:Coding.code [ fhir:value "asexual" ]
+       ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "ombCategory" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
+         fhir:Coding.code [ fhir:value "2106-3" ];
+         fhir:Coding.display [ fhir:value "White" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "text" ];
+       fhir:Extension.valueString [ fhir:value "White" ]
+     ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race" ]
+  ], [
+     fhir:index 7;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "ombCategory" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.238" ];
+         fhir:Coding.code [ fhir:value "2186-5" ];
+         fhir:Coding.display [ fhir:value "Not Hispanic or Latino" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "text" ];
+       fhir:Extension.valueString [ fhir:value "Not Hispanic or Latino" ]
+     ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity" ]
+  ], [
+     fhir:index 8;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/local-race-cd" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://acme-health.com/CodeSystem/local-race-code" ];
+         fhir:Coding.code [ fhir:value "White" ]
+       ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-citizenship" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+         fhir:Coding.code [ fhir:value "US" ]
+       ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/citizen-status" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://acme-health.com/CodeSystem/local-citizen-status" ];
+         fhir:Coding.code [ fhir:value "LocalCitizenStatusCd" ]
+       ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state" ];
+       fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "SSRI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/emr1/patient" ];
+     fhir:Identifier.value [ fhir:value "unencryp-id5555" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Acme Health - EMR1 (unencrypted)" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state" ];
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ];
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "SSRI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/emr1/patient" ];
+     fhir:Identifier.value [ fhir:value "encryp-id5555" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Acme Health - EMR1 (encrpyted)" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "MR" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/patient-mrn" ];
+     fhir:Identifier.value [ fhir:value "1011115555" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Acme Health MRN" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "SB" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "SS" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-ssn" ];
+     fhir:Identifier.value [ fhir:value "0001225555" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "ssa.gov" ]
+     ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Lastname" ];
+     fhir:HumanName.given [
+       fhir:value "Firstname";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/contactpoint-country" ];
+       fhir:Extension.valueString [ fhir:value "1" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address" ];
+       fhir:Extension.valueUrl [ fhir:value "tel:+12162485555" ]
+     ];
+     fhir:ContactPoint.system [ fhir:value "sms" ];
+     fhir:ContactPoint.value [ fhir:value "216-248-5555" ];
+     fhir:ContactPoint.use [ fhir:value "mobile" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/contactpoint-country" ];
+       fhir:Extension.valueString [ fhir:value "1" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address" ];
+       fhir:Extension.valueUrl [ fhir:value "tel:+12163455555" ]
+     ];
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "216-345-5555" ];
+     fhir:ContactPoint.use [ fhir:value "home" ];
+     fhir:ContactPoint.rank [ fhir:value "2"^^xsd:positiveInteger ]
+  ], [
+     fhir:index 2;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/contactpoint-country" ];
+       fhir:Extension.valueString [ fhir:value "1" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/contactpoint-extension" ];
+       fhir:Extension.valueString [ fhir:value "123" ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address" ];
+       fhir:Extension.valueUrl [ fhir:value "tel:+12165555555;ext=123" ]
+     ];
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "216-555-5555" ];
+     fhir:ContactPoint.use [ fhir:value "work" ];
+     fhir:ContactPoint.rank [ fhir:value "4"^^xsd:positiveInteger ]
+  ], [
+     fhir:index 3;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "flastname@fakemail.com" ];
+     fhir:ContactPoint.use [ fhir:value "home" ];
+     fhir:ContactPoint.rank [ fhir:value "3"^^xsd:positiveInteger ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1960-02-29"^^xsd:date];
+  fhir:Patient.deceasedDateTime [ fhir:value "2020-02-28T00:00:00Z"^^xsd:dateTime];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/county-code" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://acme-health.com/CodeSystem/local-county-code" ];
+           fhir:Coding.code [ fhir:value "001" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/region-code" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://acme-health.com/CodeSystem/local-region-code" ];
+           fhir:Coding.code [ fhir:value "MW" ]
+         ]
+       ]
+     ];
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.city [ fhir:value "Cardington" ];
+     fhir:Address.state [ fhir:value "Ohio" ];
+     fhir:Address.postalCode [ fhir:value "43315" ];
+     fhir:Address.country [ fhir:value "US" ];
+     fhir:Address.period [
+       fhir:Period.start [ fhir:value "1989-01-01"^^xsd:date ];
+       fhir:Period.end [ fhir:value "2020-02-28"^^xsd:date ]
+     ]
+  ];
+  fhir:Patient.maritalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/local-marital-status" ];
+       fhir:Coding.code [ fhir:value "Married" ]
+     ]
+  ];
+  fhir:Patient.communication [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/language-rank" ];
+       fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+     ];
+     fhir:Patient.communication.language [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ];
+         fhir:Coding.code [ fhir:value "en" ]
+       ]
+     ]
+  ];
+  fhir:Patient.generalPractitioner [
+     fhir:index 0;
+     fhir:link <http://ibm.com/fhir/cdm/PractitionerRole/CDMPractitionerRole-EMR-PCP>;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/reference-code" ];
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/attribution-source" ];
+         fhir:Coding.code [ fhir:value "client-emr" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/reference-period" ];
+       fhir:Extension.valuePeriod [
+         fhir:Period.start [ fhir:value "2019-01-01"^^xsd:date ]
+       ]
+     ];
+     fhir:Reference.reference [ fhir:value "PractitionerRole/CDMPractitionerRole-EMR-PCP" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Patient/CDMPatientDeceasedExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

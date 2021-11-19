@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/wh-payer-ssi-status> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "wh-payer-ssi-status"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/wh-payer-ssi-status defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000<a name=\"wh-payer-ssi-status-000\"> </a></td><td>Not Applicable</td></tr><tr><td style=\"white-space:nowrap\">001<a name=\"wh-payer-ssi-status-001\"> </a></td><td>Supplemental Security Income (SSI)</td></tr><tr><td style=\"white-space:nowrap\">002<a name=\"wh-payer-ssi-status-002\"> </a></td><td>Supplemental Security Income (SSI) Eligible Spouse</td></tr><tr><td style=\"white-space:nowrap\">003<a name=\"wh-payer-ssi-status-003\"> </a></td><td>Supplemental Security Income (SSI) Pending</td></tr><tr><td style=\"white-space:nowrap\">999<a name=\"wh-payer-ssi-status-999\"> </a></td><td>Unknown</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-ssi-status"];
+  fhir:CodeSystem.version [ fhir:value "5.0.0"];
+  fhir:CodeSystem.name [ fhir:value "WhPayerSsiStatusCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Health Data Connect SSI Status Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-11-19T14:45:01+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Supplemental Security Income (SSI) status codes for the person"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "000" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Not Applicable" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Supplemental Security Income (SSI)" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Supplemental Security Income (SSI) Eligible Spouse" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Supplemental Security Income (SSI) Pending" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "999" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/wh-payer-ssi-status.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
