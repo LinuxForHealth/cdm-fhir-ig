@@ -55,7 +55,8 @@ Description:    "Sample of a CDM Facility Claim"
 * careTeam[3].sequence  = 4
 * careTeam[3].provider  = Reference(Provider1)
 * careTeam[3].role      = ClaimCareTeamRoleCodeSystem#servicing
-* careTeam[3].qualification.coding = http://acme-health.com/CodeSystem/local-specialty#01
+* careTeam[3].qualification.coding.system = "http://acme-health.com/CodeSystem/local-specialty"
+* careTeam[3].qualification.coding.code   = #01
 
 * accident.type.coding        = WhPayerIndicatorsCodeSystem#N
 * accident.date               = "1900-01-01"
@@ -97,7 +98,7 @@ Description:    "Sample of a CDM Facility Claim"
 * supportingInfo[5].category              = CLAIM-INFORMATION-CATEGORY#hospitalized
 * supportingInfo[5].code                  = ClaimSupportingInfoTypeCodeSystem#days-count
 * supportingInfo[5].valueQuantity.system  = UCUM-UNIT
-* supportingInfo[5].valueQuantity.code    = #d
+* supportingInfo[5].valueQuantity.unit    = "/d"
 * supportingInfo[5].valueQuantity.value   = 3
 
 * supportingInfo[6].sequence             = 7
@@ -120,30 +121,30 @@ Description:    "Sample of a CDM Facility Claim"
 
 * supportingInfo[10].sequence              = 11
 * supportingInfo[10].category              = CLAIM-INFORMATION-CATEGORY#hospitalized
-* supportingInfo[10].code                  = ClaimSupportingInfoTypeCodeSystem#days-covered
+* supportingInfo[10].code                  = ClaimSupportingInfoTypeCodeSystem#days-count
 * supportingInfo[10].valueQuantity.system  = UCUM-UNIT
-* supportingInfo[10].valueQuantity.code    = #d
+* supportingInfo[10].valueQuantity.unit    = "/d"
 * supportingInfo[10].valueQuantity.value   = 3
 
 * supportingInfo[11].sequence              = 12
 * supportingInfo[11].category              = CLAIM-INFORMATION-CATEGORY#hospitalized
 * supportingInfo[11].code                  = ClaimSupportingInfoTypeCodeSystem#days-not-covered
 * supportingInfo[11].valueQuantity.system  = UCUM-UNIT
-* supportingInfo[11].valueQuantity.code    = #d
+* supportingInfo[11].valueQuantity.unit    = "/d"
 * supportingInfo[11].valueQuantity.value   = 1
 
 * supportingInfo[12].sequence              = 13
 * supportingInfo[12].category              = CLAIM-INFORMATION-CATEGORY#hospitalized
 * supportingInfo[12].code                  = ClaimSupportingInfoTypeCodeSystem#days-long-term-care-recipient-on-leave
 * supportingInfo[12].valueQuantity.system  = UCUM-UNIT
-* supportingInfo[12].valueQuantity.code    = #d
+* supportingInfo[12].valueQuantity.unit    = "/d"
 * supportingInfo[12].valueQuantity.value   = 0
 
 * supportingInfo[13].sequence              = 14
 * supportingInfo[13].category              = CLAIM-INFORMATION-CATEGORY#hospitalized
 * supportingInfo[13].code                  = ClaimSupportingInfoTypeCodeSystem#newborn-length-of-stay
 * supportingInfo[13].valueQuantity.system  = UCUM-UNIT
-* supportingInfo[13].valueQuantity.code    = #d
+* supportingInfo[13].valueQuantity.unit    = "/d"
 * supportingInfo[13].valueQuantity.value   = 0
 
 * supportingInfo[14].sequence              = 15

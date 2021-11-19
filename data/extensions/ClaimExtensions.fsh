@@ -12,7 +12,7 @@ Description:    "Indicates whether this claim record is included in the adjustme
 
 Extension:      AverageWholesalePrice
 Id:             average-wholesale-price
-Title:          "Average wholesale price"
+Title:          "Average Wholesale Price"
 Description:    "The average wholesale price charged by wholesalers for the specific drug"
 * value[x] only Money
 
@@ -75,7 +75,7 @@ Description:    "Business unit of the subscriber as reported on the claim"
 Extension:      Employer
 Id:             employer
 Title:          "Employer"
-Description:    "Customer-specific code for the employer as reported on the claim record"    
+Description:    "Code for the employer as reported on the claim record"    
 * value[x] only CodeableConcept
 
 Extension:      FinancialSystem
@@ -121,11 +121,11 @@ Title:          "Nursing Home Indicator"
 Description:    "Indicates whether the claim was for a nursing home patient"
 * value[x] only string
 
-Extension:      ProcedureGroup
-Id:             procedure-group
-Title:          "Procedure Group"
-Description:    "Code assigned to categorize related procedures"
-* value[x] only CodeableConcept 
+Extension:      ProcedureGroup
+Id:             procedure-group
+Title:          "Procedure Group"
+Description:    "Code assigned to categorize related procedures"
+* value[x] only CodeableConcept 
 * valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
 
 Extension:      ParticipatingPlan
@@ -137,13 +137,13 @@ Description:    "Customer-specific code for the participating plan"
 Extension:      PriorAuthorizationIndicator
 Id:             prior-authorization-indicator
 Title:          "Prior Authorization Indicator"
-Description:    "Indicator of prior authorization for the claim"
+Description:    "Indicates prior authorization for the claim"
 * value[x] only string
 
 Extension:      ReferralIndicator
 Id:             referral-indicator
 Title:          "Referral Indicator"
-Description:    "Indicator signifying the service resulted from a referral"
+Description:    "Indicates whether the service resulted from a referral"
 * value[x] only string
 
 Extension:      RxCount
@@ -161,7 +161,7 @@ Description:    "Number of days between the date of service and the date the cla
 Extension:      WhPayerPcpResponsibilityIndicator
 Id:             wh-payer-pcp-responsibility-indicator
 Title:          "Health Data Connect PCP Responsibility Indicator"
-Description:    "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"
+Description:    "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim"
 * value[x] only string
 
 // Extensions that are also used in ClaimResponse

@@ -2,11 +2,23 @@ Alias: USCoreRace = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race
 Alias: USCoreEthnicity = http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity
 Alias: PatientImportance = http://hl7.org/fhir/StructureDefinition/patient-importance
 
+Extension:      Ethnicity
+Id:             ethnicity
+Title:          "Ethnicity Code"
+Description:    "Code for the ethnicity of the person"
+* value[x] only CodeableConcept
+
 Extension:      FamilyId
 Title:          "Family Id"
 Description:    "The unique identifier for the subscriber (contract holder, employee) and the associated dependents"
 Id:             family-id
 * value[x] only Identifier
+
+Extension:      ImmigrationStatus
+Id:             immigration-status
+Title:          "Immigration Status"
+Description:    "Customer-specific code for the immigration status of the person"
+* value[x] only CodeableConcept
 
 Extension:      StatusCode
 Id:             status-code
@@ -24,7 +36,7 @@ Description:    "Specify preferred order of language use (1 = highest)"
 Extension:      CommunicationOptOut
 Id:             communication-opt-out
 Title:          "Communication Opt-Out"
-Description:    "Opt-out patient for communications by product and/or mode."
+Description:    "Opt-out patient for communications by product and/or mode"
 * extension contains 
     CommunicationProduct named communicationProduct 0..1 and
     CommunicationMode named communicationMode 0..1 and
@@ -52,13 +64,13 @@ Description:    "Opt-out patient for communications by product and/or mode."
 Extension:      StatedReason
 Id:             stated-reason
 Title:          "Stated Reason"
-Description:    "Recorded reason specified by the recipient."
+Description:    "Recorded reason specified by the recipient"
 * value[x] only CodeableConcept
 
 Extension:      EffectivePeriod
 Id:             effective-period
 Title:          "Effective Period"
-Description:    "Effective period."
+Description:    "Effective period"
 * value[x] only Period
 
 Extension:      LocalRaceCd
@@ -66,3 +78,21 @@ Id:             local-race-cd
 Title:          "Local Race Code"
 Description:    "Customer-specific code for the race of the person"
 * value[x] only CodeableConcept
+
+Extension:      PatientCitizenship
+Id:             patient-citizenship
+Title:          "Patient Citizenship"
+Description:    "Code to identify if the person is a U.S. Citizen"
+* value[x] only CodeableConcept
+
+Extension:      NonstandardLanguage
+Id:             nonstandard-language
+Title:          "Nonstandard Language"
+Description:    "Code for the language of the person"
+* value[x] only CodeableConcept
+
+Extension:      VeteranIndicator
+Id:             veteran-indicator
+Title:          "Veteran Indicator"
+Description:    "Indicates whether the individual served in the active military, naval, or air service"
+* value[x] only string

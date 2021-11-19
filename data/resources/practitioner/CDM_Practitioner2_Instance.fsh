@@ -17,11 +17,11 @@ Description:    "Sample CDM Practitioner ingested from a EMR or PMS system"
 * name.suffix = "MD"
 * name.text = "Dr Samuel W Smith, MD"
 
-* identifier.use = #official
-* identifier.type   = ID-TYPE#PRN
-* identifier.system = "http://hl7.org/fhir/sid/us-npi"
-* identifier.value = "33449988771166"
-* identifier.assigner.display = "Acme Health PRN"
+* identifier[0].use = #official
+* identifier[0].type = ID-TYPE#PRN
+* identifier[0].system = "http://hl7.org/fhir/sid/us-npi"
+* identifier[0].value = "33449988771166"
+* identifier[0].assigner.display = "Acme Health PRN"
 
 * address.use = #work
 * address.type = #physical
@@ -37,7 +37,7 @@ Description:    "Sample CDM Practitioner ingested from a EMR or PMS system"
 * telecom[0].value = "972-678-8755"
 * telecom[0].extension[contactPointCountry].valueString = "1"
 * telecom[0].extension[contactPointExt].valueString = "567"
-* telecom[0].extension[telAddress].valueUrl = "tel:+19726788755;ext=567"
+* telecom[0].extension[telAddress].valueUrl = "tel:+119726788755;ext=567"
 
 * telecom[1].system = #fax
 * telecom[1].use = #work

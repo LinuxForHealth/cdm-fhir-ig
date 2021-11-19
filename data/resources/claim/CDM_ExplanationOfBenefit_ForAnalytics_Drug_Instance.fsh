@@ -50,7 +50,7 @@ Description:    "Sample of a CDM Explanation of Benefit for a pharmacy claim"
 
 * supportingInfo[1].sequence             = 2
 * supportingInfo[1].category             = CLAIM-INFORMATION-CATEGORY#info
-* supportingInfo[1].code                 = NCPDPDispenseAsWrittenCodeSystem#0 "No Product Selection Indicated"
+* supportingInfo[1].code                 = NCPDPDispenseAsWrittenCodeSystem#0 "0"
 
 * supportingInfo[2].sequence             = 3
 * supportingInfo[2].category             = CLAIM-INFORMATION-CATEGORY#info

@@ -18,7 +18,8 @@ Description:    "Sample CDM Organizationr representing a hospital ingested from 
 
 * name = "General Hospital"
 * active = true
-* type = ORGANIZATION-TYPE#prov 
+* type.coding[0] = ORGANIZATION-TYPE#prov
+* type.coding[1] = ORGANIZATION-SIC#6324 "Hospital and Medical Service Plans"
 
 * address.use = #work
 * address.type = #physical

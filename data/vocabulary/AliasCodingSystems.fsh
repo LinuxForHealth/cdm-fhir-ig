@@ -9,6 +9,9 @@ Alias: RACE = urn:oid:2.16.840.1.113883.6.238
 Alias: ETHNICITY = urn:oid:2.16.840.1.113883.6.238
 Alias: LANGUAGE = urn:ietf:bcp:47
 
+// PATIENT
+Alias: CITIZENSHIP       = urn:iso:std:iso:3166
+
 Alias: CURRENCY = urn:iso:std:iso:4217
 
 Alias: MEASURE-POPULATION = http://terminology.hl7.org/CodeSystem/measure-population
@@ -28,6 +31,7 @@ Alias: USAGE-CONTEXT-TYPE = http://terminology.hl7.org/CodeSystem/usage-context-
 Alias: DEFINITION-TOPIC = http://hl7.org/fhir/codesystem-definition-topic.html
 
 Alias: ORGANIZATION-TYPE = http://terminology.hl7.org/CodeSystem/organization-type
+Alias: ORGANIZATION-SIC  = http://terminology.hl7.org/CodeSystem/sic
 Alias: PRACTITIONER-ROLE = http://terminology.hl7.org/CodeSystem/practitioner-role
 Alias: US-NPI            = http://hl7.org/fhir/sid/us-npi
 
@@ -61,7 +65,7 @@ Alias: COVERAGE-CLASS           = http://terminology.hl7.org/CodeSystem/coverage
 Alias: NAICS                    = http://terminology.hl7.org/CodeSystem/naics
 Alias: INSURANCE-PLAN-TYPE      = http://terminology.hl7.org/CodeSystem/insurance-plan-type
 Alias: SUBSCRIBER-RELATIONSHIP  = http://terminology.hl7.org/CodeSystem/subscriber-relationship
-Alias: STANDARD-OCCUPATION-CODE = https://terminology.hl7.org/NamingSystem-soc.html
+Alias: STANDARD-OCCUPATION-CODE = http://terminology.hl7.org/CodeSystem/soc
 
 Alias: UCUM-UNIT = http://unitsofmeasure.org
 
