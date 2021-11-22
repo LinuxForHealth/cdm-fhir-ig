@@ -73,6 +73,7 @@ Description:    "Sample of a CDM Facility Claim Response"
 * item.adjudication[7].reason.coding[0]    = REMIT-ADVICE-REMARK-CODE#M2
 * item.adjudication[7].reason.coding[1]    = REMIT-ADVICE-REMARK-CODE#N16
 * item.adjudication[7].reason.coding[2]    = http://acme-health.com/CodeSystem/local-explanation-of-benefits#LocalEOB
+* item.adjudication[7].reason.coding[3]    = http://acme-health.com/CodeSystem/local-denied-reason#LocalDeniedReason
 * item.adjudication[8].category            = AdjudicationCategoryCodeSystem#discount
 * item.adjudication[8].amount.currency     = CURRENCY#USD
 * item.adjudication[8].amount.value        = 40.00

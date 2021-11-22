@@ -24,7 +24,7 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 * identifier[1].assigner.display = "Acme Health - EMR1 (encrpyted)"
 * identifier[1].extension[encryptedState].valueBoolean = true
 
-* identifier[2].use = #official
+* identifier[2].use = #secondary
 * identifier[2].type = 	ID-TYPE#MR
 * identifier[2].system = "http://acme-health.com/patient-mrn"
 * identifier[2].value = "1011110101"

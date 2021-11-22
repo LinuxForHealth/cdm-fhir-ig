@@ -25,11 +25,13 @@ Description:        "Example of a coverage record for a patient beneficiary"
 
 * status = #active
 
-* extension[ageGenderGroup].valueCodeableConcept = AgeGenderGroupCodeSystem#7
-* extension[snapshotAgeInYears].valueUnsignedInt = 21
-* period.start                                   = "2000-01-01"
-* period.end                                     = "2000-10-31"
+* extension[ageGenderGroup].valueCodeableConcept         = AgeGenderGroupCodeSystem#7
+* extension[snapshotAgeInYears].valueUnsignedInt         = 21
+* extension[employeeSnapshotAgeInYears].valueUnsignedInt = 21
+* period.start                                           = "2000-01-01"
+* period.end                                             = "2000-10-31"
 
+* extension[benefitStatus].valueCodeableConcept          = HipaaBenefitStatusCodeSystem#A
 * extension[cobraIndicator].valueString                  = "N"
 * extension[coverageMonth].valueDate                     = "2000-06-01"
 * extension[dualEligibilityIndicator].valueString        = "N"
@@ -44,6 +46,7 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[employeeEducationLevel].valueCodeableConcept.coding[1] = http://acme-health.com/CodeSystem/local-employee-education-level#AttendedCollege
 * extension[employeeExemptIndicator].valueString         = "N"
 * extension[employeeFamilySize].valueInteger             = 2
+* extension[employeeGender].valueCodeableConcept         = WhPayerGenderCodeSystem#M
 * extension[employeeHireDate].valueDate                  = "2000-01-01"
 * extension[employeeId].valueIdentifier.value            = "555555"
 * extension[employeeJobFamily].valueCodeableConcept      = http://acme-health.com/CodeSystem/local-employee-job-family#LocalEmpJobFamilyCd
@@ -55,8 +58,9 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[employeeLaborUnion].valueCodeableConcept               = http://acme-health.com/CodeSystem/local-employee-labor-union#LocalTeams377
 * extension[employeePayFrequency].valueCodeableConcept             = http://acme-health.com/CodeSystem/local-employee-pay-frequency#Monthly
 * extension[employeePerformanceRating].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-employee-performance-rating#Meets
+* extension[employeeRetirementDate].valueDate                      = "2099-12-31"
 * extension[employeeShift].valueCodeableConcept                    = http://acme-health.com/CodeSystem/local-employee-shift#Day
-* extension[employeeStatus].valueCodeableConcept.coding[0]         = http://ibm.com/fhir/cdm/CodeSystem/wh-payer-employee-status-code#1
+* extension[employeeStatus].valueCodeableConcept.coding[0]         = WhPayerEmployeeStatusCodeSystem#1
 * extension[employeeStatus].valueCodeableConcept.coding[1]         = http://acme-health.com/CodeSystem/local-employee-status#LocalEmpStatus
 * extension[employeeSubBusinessUnit].valueCodeableConcept          = http://acme-health.com/CodeSystem/local-employee-sub-business-unit#LocalEmpSubBusinessUnit
 * extension[employeeTerminationDate].valueDate                     = "2099-12-31"
@@ -70,14 +74,15 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[enrollmentPcp].valueString                    = "EnrollmentPCP1"
 * extension[employer].valueCodeableConcept                = http://acme-health.com/CodeSystem/local-employer#LocalEmployerCode
 * extension[familyIncomeLevel].valueCodeableConcept       = http://acme-health.com/CodeSystem/local-income-level#26500
+* extension[hipaaEmployeeStatus].valueCodeableConcept     = HipaaEmployeeStatusCodeSystem#AC
 * extension[jobClassCode].valueCodeableConcept            = http://acme-health.com/CodeSystem/local-job-class-code#jobclass
 * extension[jobLocationZipcode].valueString               = "43315"
 * extension[longTermDisabilityBenefitRate].valueDecimal   = 10.00
 * extension[medicareCoverage].valueCodeableConcept        = WhPayerMedicareCoverageCodeSystem#N
 * extension[medicareIndicator].valueString                = "N"
 * extension[memberEmployeeIndicator].valueCodeableConcept = http://acme-health.com/CodeSystem/local-member-employee-indicator#MemberEmployee
+* extension[relationship].valueCodeableConcept            = HipaaRelationshipCodeSystem#18
 * extension[restrictedBenefits].valueCodeableConcept      = http://acme-health.com/CodeSystem/local-restricted-benefits#LocalRestrictedBenefits
-* extension[employeeRetirementDate].valueDate             = "2099-12-31"
 * extension[salaryIndicator].valueString                  = "Y"
 * extension[shortTermDisabilityBenefitRate].valueDecimal  = 30.00
 * extension[ssiIndicator].valueString                     = "N"

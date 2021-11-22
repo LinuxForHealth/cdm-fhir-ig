@@ -86,12 +86,13 @@ Description:    "Sample of a CDM Drug Claim"
 * supportingInfo[7].code.coding.code      = #LocalRxRebate
 * supportingInfo[7].valueString           = "Generic"
 
-* insurance[0].sequence          = 1
-* insurance[0].focal             = true
-* insurance[0].identifier.system = "http://acme-health.com/insurer"
-* insurance[0].identifier.value  = "PPOB"
-* insurance[0].coverage          = Reference(CoverageDrugExample)
-* insurance[0].extension[crossoverIndicator].valueString = "N"
+* insurance.sequence          = 1
+* insurance.focal             = true
+* insurance.identifier.system = "http://acme-health.com/insurer"
+* insurance.identifier.value  = "PPOB"
+* insurance.coverage          = Reference(CoverageDrugExample)
+* insurance.extension[crossoverIndicator].valueString   = "N"
+* insurance.extension[lineOfBusiness].valueCodeableConcept = http://acme-health.com/CodeSystem/local-line-of-business#LocalLineOfBusiness
 
 * item[0].sequence            = 1
 * item[0].productOrService.coding[0]        = NdcNoHyphensCodeSystem#69452015120

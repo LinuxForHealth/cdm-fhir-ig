@@ -54,7 +54,9 @@ Description:    "Sample of a CDM Professional Claim"
 * insurance.identifier.system = "http://acme-health.com/INSABC"
 * insurance.identifier.value  = "PPOB"
 * insurance.coverage          = Reference(PrimaryPayerExample)
+* insurance.preAuthRef        = "Y" 
 * insurance.extension[crossoverIndicator].valueString          = "N"
+* insurance.extension[lineOfBusiness].valueCodeableConcept     = http://acme-health.com/CodeSystem/local-line-of-business#LocalLineOfBusiness
 * insurance.extension[priorAuthorizationIndicator].valueString = "Y"
 
 * accident.type.coding        = WhPayerIndicatorsCodeSystem#N
