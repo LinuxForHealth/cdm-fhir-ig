@@ -23,3 +23,9 @@ Id:             snapshot-age-in-years
 Title:          "Age In Years"
 Description:    "Age in years at the time of the event"
 * value[x] only unsignedInt
+
+Extension:      EmployeeSnapshotAgeInYears
+Id:             employee-snapshot-age-in-years
+Title:          "Employee Age In Years"
+Description:    "Age in years at the time of the event for the employee"
+* value[x] only unsignedInt
