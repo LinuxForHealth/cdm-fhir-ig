@@ -1,3 +1,9 @@
+Extension:      BenefitStatus
+Id:             benefit-status
+Title:          "Benefit Status"
+Description:    "HIPAA standard code for the benefit status"
+* value[x] only CodeableConcept
+
 Extension:      ClaimGroupIdentifier
 Id:             claim-group-identifier
 Title:          "Claim Group Identifier"
@@ -190,7 +196,6 @@ Id:             employee-status
 Title:          "Employee Status"
 Description:    "Code for the status of the employee"
 * value[x] only CodeableConcept
-* valueCodeableConcept from WHPayerEmployeeStatusValueSet (example)
 
 Extension:      EmployeeSubBusinessUnit
 Id:             employee-sub-business-unit
@@ -287,6 +292,12 @@ Id:             plan-employee-code
 Title:          "Plan Employee Code"
 Description:    "Code indicating whether the member is an employee of the health plan or the dependent of an employee of the health plan"
 * value[x] only string
+
+Extension:      Relationship
+Id:             relationship
+Title:          "Relationship"
+Description:    "HIPAA standard code for the relationship of the member to the contract holder"
+* value[x] only CodeableConcept
 
 Extension:      RestrictedBenefits
 Id:             restricted-benefits
