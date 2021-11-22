@@ -51,6 +51,10 @@ Description:    "A provider issued list of professional services and products wh
 * insurance.extension[crossoverIndicator] ^short      = "Indicates whether the claim is a crossover claim where a portion is paid by Medicare"
 * insurance.extension[crossoverIndicator] ^definition = "Indicates whether the claim is a crossover claim where a portion is paid by Medicare"
 
+* insurance.extension contains LineOfBusiness named lineOfBusiness 0..1
+* insurance.extension[lineOfBusiness] ^short      = "Customer-specific code for the line of business"
+* insurance.extension[lineOfBusiness] ^definition = "Customer-specific code for the line of business"
+
 * insurance.extension contains PriorAuthorizationIndicator named priorAuthorizationIndicator 0..1
 * insurance.extension[priorAuthorizationIndicator] ^short      = "Indicates prior authorization for the claim"
 * insurance.extension[priorAuthorizationIndicator] ^definition = "Indicates prior authorization for the claim"
