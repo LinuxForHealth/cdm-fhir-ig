@@ -63,3 +63,9 @@ Title:          "Documented System"
 Description:    "Source system or jurisdiction of the legal document"
 * value[x] only CodeableConcept
 * valueCodeableConcept from LegalDocumentSystemValueSet (extensible)
+
+Extension:      EmployeeGender
+Id:             employee-gender
+Title:          "Employee Gender"
+Description:    "Employee gender code"
+* value[x] only CodeableConcept
