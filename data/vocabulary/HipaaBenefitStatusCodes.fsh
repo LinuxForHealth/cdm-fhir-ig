@@ -4,7 +4,7 @@ Title:      "HIPAA Benefit Status Codes"
 Description: "HIPAA standard codes for the benefit status"
 * #A        "Active"               "Active benefit"
 * #C        "COBRA"                "Consolidated Omnibus Budget Reconciliation Act (COBRA) benefit"
-* #S        "Surviving Insured"    "Surviging insured benefit"
+* #S        "Surviving Insured"    "Surviving insured benefit"
 * #T        "TEFRA"                "Tax Equity and Fiscal Responsibility Act (TEFRA) benefit"
 
 ValueSet:       HipaaBenefitStatusValueSet
