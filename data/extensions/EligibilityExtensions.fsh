@@ -260,7 +260,7 @@ Description:    "5-digit zip code of the facility where the employee works"
 Extension:      LocalSubscriberRelationshipCode
 Id:             local-subscriber-relationship-code
 Title:          "Local Subscriber Relationship Code"
-Description:    "Code for the relationship of the member to the subscriber"
+Description:    "Code describing the relationship of the member to the subscriber"
 * value[x] only string
 
 Extension:      LongTermDisabilityBenefitRate
@@ -296,7 +296,7 @@ Description:    "Code indicating whether the member is an employee of the health
 Extension:      Relationship
 Id:             relationship
 Title:          "Relationship"
-Description:    "HIPAA standard code for the relationship of the member to the contract holder"
+Description:    "Code describing the relationship of the member to the contract holder"
 * value[x] only CodeableConcept
 
 Extension:      RestrictedBenefits
