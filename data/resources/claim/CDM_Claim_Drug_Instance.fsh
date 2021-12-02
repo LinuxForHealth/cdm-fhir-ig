@@ -94,35 +94,33 @@ Description:    "Sample of a CDM Drug Claim"
 * insurance.extension[crossoverIndicator].valueString   = "N"
 * insurance.extension[lineOfBusiness].valueCodeableConcept = http://acme-health.com/CodeSystem/local-line-of-business#LocalLineOfBusiness
 
-* item[0].sequence            = 1
-* item[0].productOrService.coding[0]        = NdcNoHyphensCodeSystem#69452015120
-* item[0].productOrService.coding[1]        = http://acme-health.com/CodeSystem/local-service-type#LocServiceType
-* item[0].servicedDate                      = "2017-06-18"
-* item[0].locationCodeableConcept.coding[0] = CMS-PLACE-OF-SERVICE#01 "Pharmacy"
-* item[0].locationCodeableConcept.coding[1] = http://acme-health.com/CodeSystem/local-place-of-service#LocalPlcOfService
-* item[0].quantity.value                    = 30.00
-* item[0].net.value                         = 18.86
-* item[0].extension[averageWholesalePrice].valueMoney.value    = 2.88
-* item[0].extension[averageWholesalePrice].valueMoney.currency = CURRENCY#USD
-* item[0].extension[compoundCode].valueCodeableConcept      = http://acme-health.com/CodeSystem/local-compound-code#CompoundCd1
-* item[0].extension[capitatedServiceIndicator].valueString  = "N"
-* item[0].extension[fullyInsuredIndicator].valueString      = "Y"
-* item[0].extension[nursingHomeIndicator].valueString       = "N"
+* item.sequence            = 1
+* item.productOrService.coding[0]        = NdcNoHyphensCodeSystem#69452015120
+* item.productOrService.coding[1]        = http://acme-health.com/CodeSystem/local-service-type#LocServiceType
+* item.servicedDate                      = "2017-06-18"
+* item.locationCodeableConcept.coding[0] = CMS-PLACE-OF-SERVICE#01 "Pharmacy"
+* item.locationCodeableConcept.coding[1] = http://acme-health.com/CodeSystem/local-place-of-service#LocalPlcOfService
+* item.quantity.value                    = 30.00
+* item.net.value                         = 18.86
+* item.extension[compoundCode].valueCodeableConcept      = http://acme-health.com/CodeSystem/local-compound-code#CompoundCd1
+* item.extension[capitatedServiceIndicator].valueString  = "N"
+* item.extension[fullyInsuredIndicator].valueString      = "Y"
+* item.extension[nursingHomeIndicator].valueString       = "N"
 
-* item[0].detail[0].sequence         = 1
-* item[0].detail[0].productOrService = NdcNoHyphensCodeSystem#69452015120
-* item[0].detail[0].extension[ClaimItemDetailClassification].valueCodeableConcept = ClaimItemDetailClassificationCodeSystem#dispensing-fee
-* item[0].detail[0].unitPrice.value  = 2.00
+* item.detail[0].sequence         = 1
+* item.detail[0].productOrService = NdcNoHyphensCodeSystem#69452015120
+* item.detail[0].extension[ClaimItemDetailClassification].valueCodeableConcept = ClaimItemDetailClassificationCodeSystem#dispensing-fee
+* item.detail[0].unitPrice.value  = 2.00
 
-* item[0].detail[1].sequence         = 2
-* item[0].detail[1].productOrService = NdcNoHyphensCodeSystem#69452015120
-* item[0].detail[1].extension[ClaimItemDetailClassification].valueCodeableConcept = ClaimItemDetailClassificationCodeSystem#ingredient-cost
-* item[0].detail[1].unitPrice.value  = 3.00
+* item.detail[1].sequence         = 2
+* item.detail[1].productOrService = NdcNoHyphensCodeSystem#69452015120
+* item.detail[1].extension[ClaimItemDetailClassification].valueCodeableConcept = ClaimItemDetailClassificationCodeSystem#ingredient-cost
+* item.detail[1].unitPrice.value  = 3.00
 
-* item[0].detail[2].sequence         = 3
-* item[0].detail[2].productOrService = NdcNoHyphensCodeSystem#69452015120
-* item[0].detail[2].extension[ClaimItemDetailClassification].valueCodeableConcept = ClaimItemDetailClassificationCodeSystem#sales-tax
-* item[0].detail[2].unitPrice.value  = 1.00
+* item.detail[2].sequence         = 3
+* item.detail[2].productOrService = NdcNoHyphensCodeSystem#69452015120
+* item.detail[2].extension[ClaimItemDetailClassification].valueCodeableConcept = ClaimItemDetailClassificationCodeSystem#sales-tax
+* item.detail[2].unitPrice.value  = 1.00
 
 * extension[aggregateClaimIndicator].valueString           = "N"
 * extension[claimSnapshotProviderName].valueString         = "Dr Smith"
