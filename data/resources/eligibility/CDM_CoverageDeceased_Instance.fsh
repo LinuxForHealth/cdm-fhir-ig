@@ -20,7 +20,7 @@ Description:        "Example of a coverage record for a deceased patient benefic
 * payor.identifier.extension.url          = "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state"
 * payor.identifier.extension.valueBoolean = true
 
-* beneficiary = Reference(CDMPatientDeceasedExample)
+* beneficiary = Reference(CDMPatientInstance)
 
 * subscriberId      = "encryp-familyid-98321"
 
@@ -37,7 +37,7 @@ Description:        "Example of a coverage record for a deceased patient benefic
 
 * extension[employeeCompany].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-employee-company#LocalEmpCompany
 * extension[employeeCostCenter].valueCodeableConcept     = http://acme-health.com/CodeSystem/local-employee-cost-center#LocalEmpCostCenter
-* extension[employeeStatus].valueCodeableConcept         = WhPayerEmployeeStatusCodeSystem#1
+* extension[employeeStatus].valueCodeableConcept         = WhPayerEmployeeStatusCodeSystem#3
 * extension[employeeBusinessUnit].valueCodeableConcept   = http://acme-health.com/CodeSystem/local-employee-business-unit#EmpBusUnit
 * extension[jobClassCode].valueCodeableConcept           = http://acme-health.com/CodeSystem/local-job-class-code#jobclass
 * extension[salaryIndicator].valueString                 = "Y"

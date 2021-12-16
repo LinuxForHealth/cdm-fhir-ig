@@ -60,8 +60,9 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[employeePerformanceRating].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-employee-performance-rating#Meets
 * extension[employeeRetirementDate].valueDate                      = "2099-12-31"
 * extension[employeeShift].valueCodeableConcept                    = http://acme-health.com/CodeSystem/local-employee-shift#Day
-* extension[employeeStatus].valueCodeableConcept.coding[0]         = WhPayerEmployeeStatusCodeSystem#1
-* extension[employeeStatus].valueCodeableConcept.coding[1]         = http://acme-health.com/CodeSystem/local-employee-status#LocalEmpStatus
+* extension[employeeStatus].valueCodeableConcept.coding[0]         = http://acme-health.com/CodeSystem/local-employee-status#LocalEmpStatus
+* extension[employeeStatus].valueCodeableConcept.coding[1]         = WhPayerEmployeeStatusCodeSystem#1
+* extension[employeeStatus].valueCodeableConcept.coding[2]         = HipaaEmployeeStatusCodeSystem#AC
 * extension[employeeSubBusinessUnit].valueCodeableConcept          = http://acme-health.com/CodeSystem/local-employee-sub-business-unit#LocalEmpSubBusinessUnit
 * extension[employeeTerminationDate].valueDate                     = "2099-12-31"
 * extension[employeeTerminationReason].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-termination-reason#NotTermed
@@ -74,14 +75,12 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[enrollmentPcp].valueString                    = "EnrollmentPCP1"
 * extension[employer].valueCodeableConcept                = http://acme-health.com/CodeSystem/local-employer#LocalEmployerCode
 * extension[familyIncomeLevel].valueCodeableConcept       = http://acme-health.com/CodeSystem/local-income-level#26500
-* extension[hipaaEmployeeStatus].valueCodeableConcept     = HipaaEmployeeStatusCodeSystem#AC
 * extension[jobClassCode].valueCodeableConcept            = http://acme-health.com/CodeSystem/local-job-class-code#jobclass
 * extension[jobLocationZipcode].valueString               = "43315"
 * extension[longTermDisabilityBenefitRate].valueDecimal   = 10.00
 * extension[medicareCoverage].valueCodeableConcept        = WhPayerMedicareCoverageCodeSystem#N
 * extension[medicareIndicator].valueString                = "N"
 * extension[memberEmployeeIndicator].valueCodeableConcept = http://acme-health.com/CodeSystem/local-member-employee-indicator#MemberEmployee
-* extension[relationship].valueCodeableConcept            = HipaaRelationshipCodeSystem#18
 * extension[restrictedBenefits].valueCodeableConcept      = http://acme-health.com/CodeSystem/local-restricted-benefits#LocalRestrictedBenefits
 * extension[salaryIndicator].valueString                  = "Y"
 * extension[shortTermDisabilityBenefitRate].valueDecimal  = 30.00
@@ -104,3 +103,4 @@ Description:        "Example of a coverage record for a patient beneficiary"
 
 * relationship.coding[0] = SUBSCRIBER-RELATIONSHIP#self
 * relationship.coding[1] = http://acme-health.com/CodeSystem/local-subscriber-relationship#LocalRelationship
+* relationship.coding[2] = HipaaRelationshipCodeSystem#18
