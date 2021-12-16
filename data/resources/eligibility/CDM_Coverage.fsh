@@ -181,14 +181,8 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[employeeRetirementDate] ^definition = "Date of retirement for the employee or contract holder"
 
 * extension contains EmployeeStatus named employeeStatus 0..1
-* extension[employeeStatus].valueCodeableConcept from WhPayerEmployeeStatusValueSet (extensible)
-* extension[employeeStatus] ^short      = "IBM® Health Data Connect standard code for the status of the employee"
-* extension[employeeStatus] ^definition = "IBM® Health Data Connect standard codd for the status of the employee"
-
-* extension contains EmployeeStatus named hipaaEmployeeStatus 0..1
-* extension[hipaaEmployeeStatus].valueCodeableConcept from HipaaEmployeeStatusValueSet (extensible)
-* extension[hipaaEmployeeStatus] ^short      = "HIPAA standard code for the employee status"
-* extension[hipaaEmployeeStatus] ^definition = "HIPAA standard code for the employee status"
+* extension[employeeStatus] ^short      = "Status of the employee based on one or more code systems"
+* extension[employeeStatus] ^definition = "Status of the employee based on one or more code systems. Example codes include HIPAA (HipaaEmployeeStatusCodeSystem), Payer (WhPayerEmployeeStatusCodeSystem) or customer-specific codes."
 
 * extension contains EmployeeUnionId named employeeUnionId 0..1
 * extension[employeeUnionId] ^short      = "Identification for the labor union member"
@@ -248,11 +242,6 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[regionCode] ^short      = "Customer-specific code for the geographic region of the employee"
 * extension[regionCode] ^definition = "Customer-specific code for the geographic region of the employee"
 
-* extension contains Relationship named relationship 0..1
-* extension[relationship].valueCodeableConcept from HipaaRelationshipValueSet (example)
-* extension[relationship] ^short      = "HIPAA standard code for the relationship of the member to the contract holder"
-* extension[relationship] ^definition = "HIPAA standard code for the relationship of the member to the contract holder"
-
 * extension contains RestrictedBenefits named restrictedBenefits 0..1
 * extension[restrictedBenefits] ^short      = "Code of the scope of Medicaid or CHIP benefits for a person"
 * extension[restrictedBenefits] ^definition = "Code of the scope of Medicaid or CHIP benefits for a person"
@@ -286,11 +275,3 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension contains WhPayerRecordPopulationCount named whPayerRecordPopulationCount 0..1
 * extension[whPayerRecordPopulationCount] ^short      = "Specifies whether the member should be counted as eligible for the coverage period"
 * extension[whPayerRecordPopulationCount] ^definition = "Specifies whether the member should be counted as eligible for the coverage period. A value of 1 is used to count the member as eligible for the coverage period. Else the value should be 0."
-
-* extension contains    
-    WhPayerSubscriberRelationshipCode named whPayerSubscriberRelationshipCode 0..1 and
-    LocalSubscriberRelationshipCode named localSubscriberRelationshipCode 0..1
-* extension[whPayerSubscriberRelationshipCode] ^short      = "Health Data Connect standard code for the relationship of the member to the contract holder"
-* extension[whPayerSubscriberRelationshipCode] ^definition = "Health Data Connect standard code for the relationship of the member to the contract holder"
-* extension[localSubscriberRelationshipCode] ^short      = "Code for the relationship of the member to the subscriber"
-* extension[localSubscriberRelationshipCode] ^definition = "Code for the relationship of the member to the subscriber"
