@@ -33,6 +33,7 @@ Description:    "Sample of a CDM Professional Claim Response"
 * insurer.identifier.system = "http://acme-health.com/payer1/payer"
 * insurer.identifier.value  = "Payer1"
 * outcome                   = #complete
+* preAuthRef                = "Y" 
 
 // itemSequence is only specified for source detailed fields
 * error[0].code.coding      = http://acme-health.com/CodeSystem/local-error-header#LocErrorHeader1
@@ -76,6 +77,7 @@ Description:    "Sample of a CDM Professional Claim Response"
 * item.adjudication[7].reason.coding[0]    = REMIT-ADVICE-REMARK-CODE#M2
 * item.adjudication[7].reason.coding[1]    = REMIT-ADVICE-REMARK-CODE#N16
 * item.adjudication[7].reason.coding[2]    = http://acme-health.com/CodeSystem/local-explanation-of-benefits#LocalEOB
+* item.adjudication[7].reason.coding[3]    = http://acme-health.com/CodeSystem/local-denied-reason#LocalDeniedReason
 * item.adjudication[8].category            = AdjudicationCategoryCodeSystem#discount
 * item.adjudication[8].amount.currency     = CURRENCY#USD
 * item.adjudication[8].amount.value        = 40.00

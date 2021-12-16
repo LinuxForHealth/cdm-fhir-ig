@@ -96,6 +96,12 @@ Title:          "Last Claim Indicator"
 Description:    "Indicates whether this claim record is the last or most recent claim"   
 * value[x] only string
 
+Extension:      LineOfBusiness
+Id:             line-of-business
+Title:          "Line Of Business"
+Description:    "Code for the line of business"   
+* value[x] only CodeableConcept
+
 Extension:      LocalNumberOfUnitsPerService
 Id:             local-number-of-units-per-service
 Title:          "Local Number Of Units Per Service"

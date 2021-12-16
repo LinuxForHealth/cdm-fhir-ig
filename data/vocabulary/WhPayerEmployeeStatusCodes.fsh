@@ -12,7 +12,7 @@ Description:    "IBM® Health Data Connect standard employee status value set fo
 * #8	"Surviving Spouse/Dependent"    "Surviving Spouse/Dependent"
 * #9	"Other/Unknown"                 "Other/Unknown"
  
-ValueSet:       WHPayerEmployeeStatusValueSet
+ValueSet:       WhPayerEmployeeStatusValueSet
 Id:             wh-payer-employee-status-code
 Title:          "Health Data Connect Employee Status Value Set"
 Description:    "IBM® Health Data Connect standard employee status value set for claims"

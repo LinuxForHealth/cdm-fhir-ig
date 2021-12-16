@@ -25,13 +25,14 @@ Description:    "Sample of a CDM Drug Coverage Claim"
 
 * status      = #active
 
-* extension[ageGenderGroup].valueCodeableConcept          = AgeGenderGroupCodeSystem#7
+* extension[ageGenderGroup].valueCodeableConcept           = AgeGenderGroupCodeSystem#7
 * extension[snapshotAgeInYears].valueUnsignedInt           = 21
 * extension[claimGroupIdentifier].valueString              = "claim group id"
 * extension[coverageMonth].valueDate                       = "2017-06-01"
 * extension[employeeCount].valueUnsignedInt                = 1
-* extension[whPayerSubscriberRelationshipCode].valueString = "2"
-* extension[employeeStatus].valueCodeableConcept           = WhPayerEmployeeStatusCodeSystem#1 "Active Full Time"
+* extension[employeeStatus].valueCodeableConcept           = WhPayerEmployeeStatusCodeSystem#1
 * extension[employeeHireDate].valueDate                    = "2017-01-30"
 * period.start                                             = "2017-06-01"
 * period.end                                               = "2017-06-30"
+
+* relationship.coding[0] = SUBSCRIBER-RELATIONSHIP#self

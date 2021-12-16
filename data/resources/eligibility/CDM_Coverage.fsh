@@ -20,6 +20,10 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[snapshotAgeInYears] ^short      = "The age of the person in years for the month of eligibility or service"
 * extension[snapshotAgeInYears] ^definition = "The age of the person in years for the month of eligibility or service"
 
+* extension contains EmployeeSnapshotAgeInYears named employeeSnapshotAgeInYears 0..1
+* extension[employeeSnapshotAgeInYears] ^short      = "The age of the employee in years for the month of eligibility or service"
+* extension[employeeSnapshotAgeInYears] ^definition = "The age of the employee in years for the month of eligibility or service"
+
 * extension contains AgeGroup named ageGroup 0..1
 * extension[ageGroup].valueCodeableConcept from AgeGroupValueSet (extensible)
 * extension[ageGroup] ^short      = "Standard code for age groupings"
@@ -33,6 +37,11 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension contains AttributedProviderReferenceWithPeriod named attributedProviderReferenceWithPeriod 0..1
 * extension[attributedProviderReferenceWithPeriod] ^short      = "Attributed provider reference with period"
 * extension[attributedProviderReferenceWithPeriod] ^definition = "Attributed provider reference with period"
+
+* extension contains BenefitStatus named benefitStatus 0..1
+* extension[benefitStatus].valueCodeableConcept from HipaaBenefitStatusValueSet (extensible)
+* extension[benefitStatus] ^short      = "HIPAA standard code for the benefit status"
+* extension[benefitStatus] ^definition = "HIPAA standard code for the benefit status"
 
 * extension contains ClaimGroupIdentifier named claimGroupIdentifier 0..1
 * extension[claimGroupIdentifier] ^short      = "Group ID of the plan member"
@@ -141,6 +150,11 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[employeeEducationLevel] ^short      = "Code indicating the highest level of education that the employee has completed"
 * extension[employeeEducationLevel] ^definition = "Code indicating the highest level of education that the employee has completed (e.g., not a high school graduate, high school graduate, some college, associates degree, bachelors degree, graduate degree)"
 
+* extension contains EmployeeGender named employeeGender 0..1
+* extension[employeeGender].valueCodeableConcept from WhPayerGenderValueSet (extensible)
+* extension[employeeGender] ^short      = "Employee gender code"
+* extension[employeeGender] ^definition = "Employee gender code"
+
 * extension contains 
     EmployeeHireDate named employeeHireDate 0..* and
     EmployeeTerminationDate named employeeTerminationDate 0..* and
@@ -167,9 +181,8 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[employeeRetirementDate] ^definition = "Date of retirement for the employee or contract holder"
 
 * extension contains EmployeeStatus named employeeStatus 0..1
-* extension[employeeStatus].valueCodeableConcept from WHPayerEmployeeStatusValueSet (example)
-* extension[employeeStatus] ^short      = "Code for the status of the employee"
-* extension[employeeStatus] ^definition = "Code for the status of the employee"
+* extension[employeeStatus] ^short      = "Status of the employee based on one or more code systems"
+* extension[employeeStatus] ^definition = "Status of the employee based on one or more code systems. Example codes include HIPAA (HipaaEmployeeStatusCodeSystem), Payer (WhPayerEmployeeStatusCodeSystem) or customer-specific codes."
 
 * extension contains EmployeeUnionId named employeeUnionId 0..1
 * extension[employeeUnionId] ^short      = "Identification for the labor union member"
@@ -262,11 +275,3 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension contains WhPayerRecordPopulationCount named whPayerRecordPopulationCount 0..1
 * extension[whPayerRecordPopulationCount] ^short      = "Specifies whether the member should be counted as eligible for the coverage period"
 * extension[whPayerRecordPopulationCount] ^definition = "Specifies whether the member should be counted as eligible for the coverage period. A value of 1 is used to count the member as eligible for the coverage period. Else the value should be 0."
-
-* extension contains    
-    WhPayerSubscriberRelationshipCode named whPayerSubscriberRelationshipCode 0..1 and
-    LocalSubscriberRelationshipCode named localSubscriberRelationshipCode 0..1
-* extension[whPayerSubscriberRelationshipCode] ^short      = "Health Data Connect standard code for the relationship of the member to the contract holder"
-* extension[whPayerSubscriberRelationshipCode] ^definition = "Health Data Connect standard code for the relationship of the member to the contract holder"
-* extension[localSubscriberRelationshipCode] ^short      = "Code for the relationship of the member to the subscriber"
-* extension[localSubscriberRelationshipCode] ^definition = "Code for the relationship of the member to the subscriber"

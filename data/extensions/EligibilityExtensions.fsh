@@ -1,3 +1,9 @@
+Extension:      BenefitStatus
+Id:             benefit-status
+Title:          "Benefit Status"
+Description:    "HIPAA standard code for the benefit status"
+* value[x] only CodeableConcept
+
 Extension:      ClaimGroupIdentifier
 Id:             claim-group-identifier
 Title:          "Claim Group Identifier"
@@ -188,9 +194,8 @@ Description:    "Code indicating the regular shift which the employee is sched
 Extension:      EmployeeStatus
 Id:             employee-status
 Title:          "Employee Status"
-Description:    "Code for the status of the employee"
+Description:    "Status of the employee based on one or more code systems. Example codes include HIPAA (HipaaEmployeeStatusCodeSystem), Payer (WhPayerEmployeeStatusCodeSystem) or customer-specific codes."
 * value[x] only CodeableConcept
-* valueCodeableConcept from WHPayerEmployeeStatusValueSet (example)
 
 Extension:      EmployeeSubBusinessUnit
 Id:             employee-sub-business-unit
@@ -250,12 +255,6 @@ Extension:      JobLocationZipcode
 Id:             job-location-zipcode
 Title:          "Job Location Zipcode"
 Description:    "5-digit zip code of the facility where the employee works"
-* value[x] only string
-
-Extension:      LocalSubscriberRelationshipCode
-Id:             local-subscriber-relationship-code
-Title:          "Local Subscriber Relationship Code"
-Description:    "Code for the relationship of the member to the subscriber"
 * value[x] only string
 
 Extension:      LongTermDisabilityBenefitRate
@@ -347,9 +346,3 @@ Id:             wh-payer-record-population-count
 Title:          "Health Data Connect Record Population Count"
 Description:    "Specifies whether the member should be counted as eligible for the coverage period"
 * value[x] only integer
-
-Extension:      WhPayerSubscriberRelationshipCode
-Id:             wh-payer-subscriber-relationship
-Title:          "Health Data Connect Subscriber Relationship Code"
-Description:    "IBM® Health Data Connect standard code for the relationship of the member to the contract holder."
-* value[x] only string
