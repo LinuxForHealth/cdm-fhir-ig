@@ -168,6 +168,27 @@
     "name": "GenderIdentityCodeSystem"
   },
   {
+    "id": "hipaa-benefit-status",
+    "type": "CodeSystem",
+    "url": "http://ibm.com/fhir/cdm/CodeSystem/hipaa-benefit-status",
+    "version": "5.0.0",
+    "name": "HipaaBenefitStatusCodeSystem"
+  },
+  {
+    "id": "hipaa-employee-status",
+    "type": "CodeSystem",
+    "url": "http://ibm.com/fhir/cdm/CodeSystem/hipaa-employee-status",
+    "version": "5.0.0",
+    "name": "HipaaEmployeeStatusCodeSystem"
+  },
+  {
+    "id": "hipaa-relationship",
+    "type": "CodeSystem",
+    "url": "http://ibm.com/fhir/cdm/CodeSystem/hipaa-relationship",
+    "version": "5.0.0",
+    "name": "HipaaRelationshipCodeSystem"
+  },
+  {
     "id": "identifier-type",
     "type": "CodeSystem",
     "url": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
@@ -413,6 +434,13 @@
     "name": "WhPayerEmployeeStatusCodeSystem"
   },
   {
+    "id": "wh-payer-gender",
+    "type": "CodeSystem",
+    "url": "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-gender",
+    "version": "5.0.0",
+    "name": "WhPayerGenderCodeSystem"
+  },
+  {
     "id": "wh-payer-indicators",
     "type": "CodeSystem",
     "url": "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-indicators",
@@ -606,6 +634,13 @@
     "url": "http://ibm.com/fhir/cdm/StructureDefinition/based-on-value",
     "version": "5.0.0",
     "name": "InsightBasedOnValue"
+  },
+  {
+    "id": "benefit-status",
+    "type": "StructureDefinition",
+    "url": "http://ibm.com/fhir/cdm/StructureDefinition/benefit-status",
+    "version": "5.0.0",
+    "name": "BenefitStatus"
   },
   {
     "id": "canonical-measure",
@@ -1378,6 +1413,13 @@
     "name": "EmployeeFTECount"
   },
   {
+    "id": "employee-gender",
+    "type": "StructureDefinition",
+    "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-gender",
+    "version": "5.0.0",
+    "name": "EmployeeGender"
+  },
+  {
     "id": "employee-hire-date",
     "type": "StructureDefinition",
     "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-hire-date",
@@ -1453,6 +1495,13 @@
     "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-shift",
     "version": "5.0.0",
     "name": "EmployeeShift"
+  },
+  {
+    "id": "employee-snapshot-age-in-years",
+    "type": "StructureDefinition",
+    "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-snapshot-age-in-years",
+    "version": "5.0.0",
+    "name": "EmployeeSnapshotAgeInYears"
   },
   {
     "id": "employee-status",
@@ -1917,6 +1966,13 @@
     "name": "LevelOfCare"
   },
   {
+    "id": "line-of-business",
+    "type": "StructureDefinition",
+    "url": "http://ibm.com/fhir/cdm/StructureDefinition/line-of-business",
+    "version": "5.0.0",
+    "name": "LineOfBusiness"
+  },
+  {
     "id": "local-number-of-units-per-service",
     "type": "StructureDefinition",
     "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service",
@@ -1929,13 +1985,6 @@
     "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-race-cd",
     "version": "5.0.0",
     "name": "LocalRaceCd"
-  },
-  {
-    "id": "local-subscriber-relationship-code",
-    "type": "StructureDefinition",
-    "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-subscriber-relationship-code",
-    "version": "5.0.0",
-    "name": "LocalSubscriberRelationshipCode"
   },
   {
     "id": "long-term-care-duration",
@@ -2946,13 +2995,6 @@
     "name": "WhPayerShorttermCareCoverageIndicator"
   },
   {
-    "id": "wh-payer-subscriber-relationship",
-    "type": "StructureDefinition",
-    "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-subscriber-relationship",
-    "version": "5.0.0",
-    "name": "WhPayerSubscriberRelationshipCode"
-  },
-  {
     "id": "wh-payer-substance-abuse-ambulatory-coverage-indicator",
     "type": "StructureDefinition",
     "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-substance-abuse-ambulatory-coverage-indicator",
@@ -3168,6 +3210,27 @@
     "url": "http://ibm.com/fhir/cdm/ValueSet/gender-identity",
     "version": "5.0.0",
     "name": "GenderIdentityValueSet"
+  },
+  {
+    "id": "hipaa-benefit-status",
+    "type": "ValueSet",
+    "url": "http://ibm.com/fhir/cdm/ValueSet/hipaa-benefit-status",
+    "version": "5.0.0",
+    "name": "HipaaBenefitStatusValueSet"
+  },
+  {
+    "id": "hipaa-employee-status",
+    "type": "ValueSet",
+    "url": "http://ibm.com/fhir/cdm/ValueSet/hipaa-employee-status",
+    "version": "5.0.0",
+    "name": "HipaaEmployeeStatusValueSet"
+  },
+  {
+    "id": "hipaa-relationship",
+    "type": "ValueSet",
+    "url": "http://ibm.com/fhir/cdm/ValueSet/hipaa-relationship",
+    "version": "5.0.0",
+    "name": "HipaaRelationshipValueSet"
   },
   {
     "id": "identifier-type",
@@ -3440,7 +3503,14 @@
     "type": "ValueSet",
     "url": "http://ibm.com/fhir/cdm/ValueSet/wh-payer-employee-status-code",
     "version": "5.0.0",
-    "name": "WHPayerEmployeeStatusValueSet"
+    "name": "WhPayerEmployeeStatusValueSet"
+  },
+  {
+    "id": "wh-payer-gender",
+    "type": "ValueSet",
+    "url": "http://ibm.com/fhir/cdm/ValueSet/wh-payer-gender",
+    "version": "5.0.0",
+    "name": "WhPayerGenderValueSet"
   },
   {
     "id": "wh-payer-indicators",

@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/hipaa-benefit-status> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hipaa-benefit-status"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/hipaa-benefit-status defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"hipaa-benefit-status-A\"> </a></td><td>Active</td><td>Active benefit</td></tr><tr><td style=\"white-space:nowrap\">C<a name=\"hipaa-benefit-status-C\"> </a></td><td>COBRA</td><td>Consolidated Omnibus Budget Reconciliation Act (COBRA) benefit</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"hipaa-benefit-status-S\"> </a></td><td>Surviving Insured</td><td>Surviving insured benefit</td></tr><tr><td style=\"white-space:nowrap\">T<a name=\"hipaa-benefit-status-T\"> </a></td><td>TEFRA</td><td>Tax Equity and Fiscal Responsibility Act (TEFRA) benefit</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/hipaa-benefit-status"];
+  fhir:CodeSystem.version [ fhir:value "5.0.0"];
+  fhir:CodeSystem.name [ fhir:value "HipaaBenefitStatusCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "HIPAA Benefit Status Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-12-16T17:36:56+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "HIPAA standard codes for the benefit status"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "A" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Active" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Active benefit" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "C" ];
+     fhir:CodeSystem.concept.display [ fhir:value "COBRA" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Consolidated Omnibus Budget Reconciliation Act (COBRA) benefit" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "S" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Surviving Insured" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Surviving insured benefit" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "T" ];
+     fhir:CodeSystem.concept.display [ fhir:value "TEFRA" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Tax Equity and Fiscal Responsibility Act (TEFRA) benefit" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/hipaa-benefit-status.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

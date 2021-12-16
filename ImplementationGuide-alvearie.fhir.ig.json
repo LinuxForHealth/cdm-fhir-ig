@@ -10,7 +10,7 @@
   "name": "AlvearieFHIRImplementationGuide",
   "title": "Alvearie FHIR Implementation Guide",
   "status": "active",
-  "date": "2021-11-19T14:45:01+00:00",
+  "date": "2021-12-16T17:36:56+00:00",
   "contact": [
     {
       "name": "Kim Kenna",
@@ -1324,6 +1324,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/benefit-status"
+        },
+        "name": "Benefit Status",
+        "description": "HIPAA standard code for the benefit status",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/canonical-measure"
         },
         "name": "CanonicalMeasure",
@@ -2374,6 +2388,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/employee-gender"
+        },
+        "name": "Employee Gender",
+        "description": "Employee gender code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/employee-hire-date"
         },
         "name": "Employee Hire Date",
@@ -2528,10 +2556,24 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/employee-snapshot-age-in-years"
+        },
+        "name": "Employee Age In Years",
+        "description": "Age in years at the time of the event for the employee",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/employee-status"
         },
         "name": "Employee Status",
-        "description": "Code for the status of the employee",
+        "description": "Status of the employee based on one or more code systems. Example codes include HIPAA (HipaaEmployeeStatusCodeSystem), Payer (WhPayerEmployeeStatusCodeSystem) or customer-specific codes.",
         "exampleBoolean": false
       },
       {
@@ -3452,6 +3494,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/line-of-business"
+        },
+        "name": "Line Of Business",
+        "description": "Code for the line of business",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/local-number-of-units-per-service"
         },
         "name": "Local Number Of Units Per Service",
@@ -3470,20 +3526,6 @@
         },
         "name": "Local Race Code",
         "description": "Customer-specific code for the race of the person",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/local-subscriber-relationship-code"
-        },
-        "name": "Local Subscriber Relationship Code",
-        "description": "Code for the relationship of the member to the subscriber",
         "exampleBoolean": false
       },
       {
@@ -5244,20 +5286,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/wh-payer-subscriber-relationship"
-        },
-        "name": "Health Data Connect Subscriber Relationship Code",
-        "description": "IBM® Health Data Connect standard code for the relationship of the member to the contract holder.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/wh-payer-substance-abuse-ambulatory-coverage-indicator"
         },
         "name": "Substance Abuse Ambulatory Coverage Indicator",
@@ -5668,6 +5696,48 @@
         },
         "name": "Gender Identity Value Set",
         "description": "Typically, gender identity codes are described in terms of masculinity and femininity. Gender identity is a social construct that varies, both across different cultures and over time. This value is often used for identity purposes, and should be collected directly from the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/hipaa-benefit-status"
+        },
+        "name": "HIPAA Benefit Status Value Set",
+        "description": "HIPAA standard value set for the benefit status",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/hipaa-employee-status"
+        },
+        "name": "HIPAA Employee Status Value Set",
+        "description": "HIPAA standard value set for the employee status",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/hipaa-relationship"
+        },
+        "name": "HIPAA Relationship Value Set",
+        "description": "HIPAA standard value set for the relationship of the member to the contract holder",
         "exampleBoolean": false
       },
       {
@@ -6112,20 +6182,6 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/wh-payer-employee-status-code"
-        },
-        "name": "Health Data Connect Employee Status Value Set",
-        "description": "IBM® Health Data Connect standard employee status value set for claims",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
           "reference": "ValueSet/wh-payer-major-diagnostic-category"
         },
         "name": "Major Diagnostic Category Value Set",
@@ -6228,6 +6284,34 @@
         },
         "name": "Health Data Connect Education Level Value Set",
         "description": "IBM® Health Data Connect standard value set for the education level",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/wh-payer-employee-status-code"
+        },
+        "name": "Health Data Connect Employee Status Value Set",
+        "description": "IBM® Health Data Connect standard employee status value set for claims",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/wh-payer-gender"
+        },
+        "name": "Health Data Connect Gender Value Set",
+        "description": "IBM® Health Data Connect gender value set",
         "exampleBoolean": false
       },
       {
@@ -6676,6 +6760,48 @@
         },
         "name": "Gender Identity Codes",
         "description": "Typically, gender identity codes are described in terms of masculinity and femininity. Gender identity is a social construct that varies, both across different cultures and over time. This value is often used for identity purposes, and should be collected directly from the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/hipaa-benefit-status"
+        },
+        "name": "HIPAA Benefit Status Codes",
+        "description": "HIPAA standard codes for the benefit status",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/hipaa-employee-status"
+        },
+        "name": "HIPAA Employee Status Codes",
+        "description": "HIPAA standard codes for the employee status",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/hipaa-relationship"
+        },
+        "name": "HIPAA Relationship Codes",
+        "description": "HIPAA standard codes for the relationship of the member to the contract holder",
         "exampleBoolean": false
       },
       {
@@ -7190,6 +7316,20 @@
           }
         ],
         "reference": {
+          "reference": "CodeSystem/wh-payer-gender"
+        },
+        "name": "Health Data Connect Gender Codes",
+        "description": "IBM® Health Data Connect gender code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
           "reference": "CodeSystem/wh-payer-indicators"
         },
         "name": "Health Data Connect Indicator Codes",
@@ -7642,6 +7782,20 @@
         },
         "name": "Coverage Deceased Example",
         "description": "Example of a coverage record for a deceased patient beneficiary",
+        "exampleCanonical": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/CoverageDependentExample"
+        },
+        "name": "Coverage Dependent Example",
+        "description": "Example of a coverage record for a child beneficiary",
         "exampleCanonical": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
       },
       {

@@ -26,7 +26,7 @@
   <name value="CDMClaimDrug"/>
   <title value="CDM Claim Drug"/>
   <status value="active"/>
-  <date value="2021-11-19T14:45:01+00:00"/>
+  <date value="2021-12-16T17:36:56+00:00"/>
   <contact>
     <name value="Kim Kenna"/>
     <telecom>
@@ -4028,6 +4028,49 @@
       <type>
         <code value="Extension"/>
         <profile value="http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Claim"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
+    </element>
+    <element id="Claim.insurance.extension:lineOfBusiness">
+      <path value="Claim.insurance.extension"/>
+      <sliceName value="lineOfBusiness"/>
+      <short value="Code for the line of business"/>
+      <definition value="Code for the line of business"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/line-of-business"/>
       </type>
       <condition value="ele-1"/>
       <constraint>

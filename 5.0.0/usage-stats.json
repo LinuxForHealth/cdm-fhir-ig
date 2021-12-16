@@ -142,6 +142,13 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/benefit-status",
+      "title": "Benefit Status",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure",
       "title": "CanonicalMeasure",
       "types": [
@@ -835,6 +842,13 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-gender",
+      "title": "Employee Gender",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-hire-date",
       "title": "Employee Hire Date",
       "types": [
@@ -912,10 +926,16 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-snapshot-age-in-years",
+      "title": "Employee Age In Years",
+      "types": [
+        "unsignedInt"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-status",
       "title": "Employee Status",
       "types": [
-        "CodeableConcept",
         "CodeableConcept"
       ]
     },
@@ -1870,6 +1890,13 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/line-of-business",
+      "title": "Line Of Business",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service",
       "title": "Local Number Of Units Per Service",
       "types": [
@@ -1881,13 +1908,6 @@
       "title": "Local Race Code",
       "types": [
         "CodeableConcept"
-      ]
-    },
-    {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-subscriber-relationship-code",
-      "title": "Local Subscriber Relationship Code",
-      "types": [
-        "string"
       ]
     },
     {
@@ -3126,13 +3146,6 @@
       ]
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-subscriber-relationship",
-      "title": "Health Data Connect Subscriber Relationship Code",
-      "types": [
-        "string"
-      ]
-    },
-    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-substance-abuse-ambulatory-coverage-indicator",
       "title": "Substance Abuse Ambulatory Coverage Indicator",
       "types": [
@@ -3491,6 +3504,9 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/based-on-value": [
       "Extension"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/benefit-status": [
+      "Coverage"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure": [
       "DetectedIssue",
       "Observation"
@@ -3749,6 +3765,9 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/employee-fte-count": [
       "Coverage"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/employee-gender": [
+      "Coverage"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/employee-hire-date": [
       "Coverage"
     ],
@@ -3780,6 +3799,9 @@
       "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/employee-shift": [
+      "Coverage"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/employee-snapshot-age-in-years": [
       "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/employee-status": [
@@ -3952,15 +3974,15 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/level-of-care": [
       "InsurancePlan.plan"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/line-of-business": [
+      "Claim.insurance"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service": [
       "Claim.item.quantity",
       "ExplanationOfBenefit.item.quantity"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/local-race-cd": [
       "Patient"
-    ],
-    "http://ibm.com/fhir/cdm/StructureDefinition/local-subscriber-relationship-code": [
-      "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/long-term-care-duration": [
       "InsurancePlan.plan"
@@ -4540,9 +4562,6 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-short-term-care-coverage-indicator": [
       "InsurancePlan"
-    ],
-    "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-subscriber-relationship": [
-      "Coverage"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-substance-abuse-ambulatory-coverage-indicator": [
       "InsurancePlan"

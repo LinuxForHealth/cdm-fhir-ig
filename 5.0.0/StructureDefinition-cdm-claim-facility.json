@@ -20,7 +20,7 @@
   "name": "CDMClaimFacility",
   "title": "CDM Claim Facility",
   "status": "active",
-  "date": "2021-11-19T14:45:01+00:00",
+  "date": "2021-12-16T17:36:56+00:00",
   "contact": [
     {
       "name": "Kim Kenna",
@@ -4990,6 +4990,60 @@
             "code": "Extension",
             "profile": [
               "http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Claim"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "Claim.insurance.extension:lineOfBusiness",
+        "path": "Claim.insurance.extension",
+        "sliceName": "lineOfBusiness",
+        "short": "Code for the line of business",
+        "definition": "Code for the line of business",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://ibm.com/fhir/cdm/StructureDefinition/line-of-business"
             ]
           }
         ],

@@ -11,7 +11,7 @@
   <name value="AlvearieFHIRImplementationGuide"/>
   <title value="Alvearie FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-11-19T14:45:01+00:00"/>
+  <date value="2021-12-16T17:36:56+00:00"/>
   <contact>
     <name value="Kim Kenna"/>
     <telecom>
@@ -992,6 +992,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/benefit-status"/>
+      </reference>
+      <name value="Benefit Status"/>
+      <description value="HIPAA standard code for the benefit status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/canonical-measure"/>
       </reference>
       <name value="CanonicalMeasure"/>
@@ -1817,6 +1828,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/employee-gender"/>
+      </reference>
+      <name value="Employee Gender"/>
+      <description value="Employee gender code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/employee-hire-date"/>
       </reference>
       <name value="Employee Hire Date"/>
@@ -1938,10 +1960,21 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/employee-snapshot-age-in-years"/>
+      </reference>
+      <name value="Employee Age In Years"/>
+      <description value="Age in years at the time of the event for the employee"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/employee-status"/>
       </reference>
       <name value="Employee Status"/>
-      <description value="Code for the status of the employee"/>
+      <description value="Status of the employee based on one or more code systems. Example codes include HIPAA (HipaaEmployeeStatusCodeSystem), Payer (WhPayerEmployeeStatusCodeSystem) or customer-specific codes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2664,6 +2697,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/line-of-business"/>
+      </reference>
+      <name value="Line Of Business"/>
+      <description value="Code for the line of business"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/local-number-of-units-per-service"/>
       </reference>
       <name value="Local Number Of Units Per Service"/>
@@ -2679,17 +2723,6 @@
       </reference>
       <name value="Local Race Code"/>
       <description value="Customer-specific code for the race of the person"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/local-subscriber-relationship-code"/>
-      </reference>
-      <name value="Local Subscriber Relationship Code"/>
-      <description value="Code for the relationship of the member to the subscriber"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4072,17 +4105,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/wh-payer-subscriber-relationship"/>
-      </reference>
-      <name value="Health Data Connect Subscriber Relationship Code"/>
-      <description value="IBM® Health Data Connect standard code for the relationship of the member to the contract holder."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/wh-payer-substance-abuse-ambulatory-coverage-indicator"/>
       </reference>
       <name value="Substance Abuse Ambulatory Coverage Indicator"/>
@@ -4406,6 +4428,39 @@
       </reference>
       <name value="Gender Identity Value Set"/>
       <description value="Typically, gender identity codes are described in terms of masculinity and femininity. Gender identity is a social construct that varies, both across different cultures and over time. This value is often used for identity purposes, and should be collected directly from the patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/hipaa-benefit-status"/>
+      </reference>
+      <name value="HIPAA Benefit Status Value Set"/>
+      <description value="HIPAA standard value set for the benefit status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/hipaa-employee-status"/>
+      </reference>
+      <name value="HIPAA Employee Status Value Set"/>
+      <description value="HIPAA standard value set for the employee status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/hipaa-relationship"/>
+      </reference>
+      <name value="HIPAA Relationship Value Set"/>
+      <description value="HIPAA standard value set for the relationship of the member to the contract holder"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4754,17 +4809,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/wh-payer-employee-status-code"/>
-      </reference>
-      <name value="Health Data Connect Employee Status Value Set"/>
-      <description value="IBM® Health Data Connect standard employee status value set for claims"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/wh-payer-major-diagnostic-category"/>
       </reference>
       <name value="Major Diagnostic Category Value Set"/>
@@ -4846,6 +4890,28 @@
       </reference>
       <name value="Health Data Connect Education Level Value Set"/>
       <description value="IBM® Health Data Connect standard value set for the education level"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/wh-payer-employee-status-code"/>
+      </reference>
+      <name value="Health Data Connect Employee Status Value Set"/>
+      <description value="IBM® Health Data Connect standard employee status value set for claims"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/wh-payer-gender"/>
+      </reference>
+      <name value="Health Data Connect Gender Value Set"/>
+      <description value="IBM® Health Data Connect gender value set"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -5198,6 +5264,39 @@
       </reference>
       <name value="Gender Identity Codes"/>
       <description value="Typically, gender identity codes are described in terms of masculinity and femininity. Gender identity is a social construct that varies, both across different cultures and over time. This value is often used for identity purposes, and should be collected directly from the patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/hipaa-benefit-status"/>
+      </reference>
+      <name value="HIPAA Benefit Status Codes"/>
+      <description value="HIPAA standard codes for the benefit status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/hipaa-employee-status"/>
+      </reference>
+      <name value="HIPAA Employee Status Codes"/>
+      <description value="HIPAA standard codes for the employee status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/hipaa-relationship"/>
+      </reference>
+      <name value="HIPAA Relationship Codes"/>
+      <description value="HIPAA standard codes for the relationship of the member to the contract holder"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -5601,6 +5700,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/wh-payer-gender"/>
+      </reference>
+      <name value="Health Data Connect Gender Codes"/>
+      <description value="IBM® Health Data Connect gender code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/wh-payer-indicators"/>
       </reference>
       <name value="Health Data Connect Indicator Codes"/>
@@ -5957,6 +6067,17 @@
       </reference>
       <name value="Coverage Deceased Example"/>
       <description value="Example of a coverage record for a deceased patient beneficiary"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/CoverageDependentExample"/>
+      </reference>
+      <name value="Coverage Dependent Example"/>
+      <description value="Example of a coverage record for a child beneficiary"/>
       <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"/>
     </resource>
     <resource>

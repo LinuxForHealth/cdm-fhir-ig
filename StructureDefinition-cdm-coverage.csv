@@ -32,6 +32,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The age of the person in years for the month of eligibility or service","The age of the person in years for the month of eligibility or service","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Coverage.extension","employeeSnapshotAgeInYears","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/employee-snapshot-age-in-years]]} {[]}
+","The age of the employee in years for the month of eligibility or service","The age of the employee in years for the month of eligibility or service","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Coverage.extension","ageGroup","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/age-group]]} {[]}
 ","Standard code for age groupings","Standard code for age groupings","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -44,6 +48,25 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Attributed provider reference with period","Attributed provider reference with period","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Coverage.extension","benefitStatus","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/benefit-status]]} {[]}
+","HIPAA standard code for the benefit status","HIPAA standard code for the benefit status","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Coverage.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Coverage.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Coverage.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://ibm.com/fhir/cdm/StructureDefinition/benefit-status""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Coverage.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Coverage.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"extensible","","http://ibm.com/fhir/cdm/ValueSet/hipaa-benefit-status","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
 "Coverage.extension","claimGroupIdentifier","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/claim-group-identifier]]} {[]}
 ","Group ID of the plan member","Group ID of the plan member. This ID associates the primary plan holder with any dependents.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -183,6 +206,25 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Coverage.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"extensible","","http://ibm.com/fhir/cdm/ValueSet/wh-payer-education-level","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
+"Coverage.extension","employeeGender","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/employee-gender]]} {[]}
+","Employee gender code","Employee gender code","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Coverage.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Coverage.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Coverage.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://ibm.com/fhir/cdm/StructureDefinition/employee-gender""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Coverage.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Coverage.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"extensible","","http://ibm.com/fhir/cdm/ValueSet/wh-payer-gender","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
 "Coverage.extension","employeeHireDate","","",0,*,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/employee-hire-date]]} {[]}
 ","First date of employment for the employee","First date of employment for the employee","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -223,7 +265,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Coverage.extension","employeeStatus","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/employee-status]]} {[]}
-","Code for the status of the employee","Code for the status of the employee","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Status of the employee based on one or more code systems","Status of the employee based on one or more code systems. Example codes include HIPAA (HipaaEmployeeStatusCodeSystem), Payer (WhPayerEmployeeStatusCodeSystem) or customer-specific codes.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Coverage.extension","employeeUnionId","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/employee-union-id]]} {[]}
@@ -357,14 +399,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Coverage.extension","whPayerRecordPopulationCount","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-record-population-count]]} {[]}
 ","Specifies whether the member should be counted as eligible for the coverage period","Specifies whether the member should be counted as eligible for the coverage period. A value of 1 is used to count the member as eligible for the coverage period. Else the value should be 0.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Coverage.extension","whPayerSubscriberRelationshipCode","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-subscriber-relationship]]} {[]}
-","Health Data Connect standard code for the relationship of the member to the contract holder","Health Data Connect standard code for the relationship of the member to the contract holder","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
-"Coverage.extension","localSubscriberRelationshipCode","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/local-subscriber-relationship-code]]} {[]}
-","Code for the relationship of the member to the subscriber","Code for the relationship of the member to the subscriber","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Coverage.modifierExtension","","extensions

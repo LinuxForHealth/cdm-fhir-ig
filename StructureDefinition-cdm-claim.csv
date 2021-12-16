@@ -377,6 +377,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Indicates whether the claim is a crossover claim where a portion is paid by Medicare","Indicates whether the claim is a crossover claim where a portion is paid by Medicare","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+"Claim.insurance.extension","lineOfBusiness","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/line-of-business]]} {[]}
+","Code for the line of business","Code for the line of business","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Claim.insurance.extension","priorAuthorizationIndicator","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/prior-authorization-indicator]]} {[]}
 ","Indicates prior authorization for the claim","Indicates prior authorization for the claim","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

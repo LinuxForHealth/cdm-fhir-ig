@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/hipaa-employee-status> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hipaa-employee-status"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/hipaa-employee-status defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">AC<a name=\"hipaa-employee-status-AC\"> </a></td><td>Active</td><td>Active employee</td></tr><tr><td style=\"white-space:nowrap\">AO<a name=\"hipaa-employee-status-AO\"> </a></td><td>Active Military Overseas</td><td>Active military overseas</td></tr><tr><td style=\"white-space:nowrap\">AU<a name=\"hipaa-employee-status-AU\"> </a></td><td>Active Military USA</td><td>Active military USA</td></tr><tr><td style=\"white-space:nowrap\">FT<a name=\"hipaa-employee-status-FT\"> </a></td><td>Full Time Active Employee</td><td>Full Time active employee</td></tr><tr><td style=\"white-space:nowrap\">L1<a name=\"hipaa-employee-status-L1\"> </a></td><td>Leave of Absence</td><td>Leave of absence</td></tr><tr><td style=\"white-space:nowrap\">PT<a name=\"hipaa-employee-status-PT\"> </a></td><td>Part Time Active Employee</td><td>Part-time active employee</td></tr><tr><td style=\"white-space:nowrap\">RT<a name=\"hipaa-employee-status-RT\"> </a></td><td>Retired</td><td>Retired</td></tr><tr><td style=\"white-space:nowrap\">TE<a name=\"hipaa-employee-status-TE\"> </a></td><td>Terminated</td><td>Terminated</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/hipaa-employee-status"];
+  fhir:CodeSystem.version [ fhir:value "5.0.0"];
+  fhir:CodeSystem.name [ fhir:value "HipaaEmployeeStatusCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "HIPAA Employee Status Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-12-16T17:36:56+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "HIPAA standard codes for the employee status"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "AC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Active" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Active employee" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "AO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Active Military Overseas" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Active military overseas" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "AU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Active Military USA" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Active military USA" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "FT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Full Time Active Employee" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Full Time active employee" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "L1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Leave of Absence" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Leave of absence" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "PT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Part Time Active Employee" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Part-time active employee" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "RT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Retired" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Retired" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "TE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Terminated" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Terminated" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/hipaa-employee-status.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

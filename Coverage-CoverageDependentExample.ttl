@@ -1,0 +1,156 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Coverage/CoverageDependentExample> a fhir:Coverage;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CoverageDependentExample"];
+  fhir:Resource.meta [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/source-file-id" ];
+       fhir:Extension.valueString [ fhir:value "e00083333" ]
+     ];
+     fhir:Meta.source [ fhir:value "http://acme-health.com/WellnessInsuranceCompany" ];
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"CoverageDependentExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/WellnessInsuranceCompany!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-coverage.html\">CDM Coverage</a></p></div><p><b>SubscriberId Encrypted</b>: p58299i3-3t5z-2hyg-7256-g2un4f887e08</p><p><b>Age and Gender Groups</b>: Males 10-14 yr <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-age-gender-group.html\">Age and Gender Group Codes</a>#4)</span></p><p><b>Age In Years</b>: 13</p><p><b>Benefit Status</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-hipaa-benefit-status.html\">HIPAA Benefit Status Codes</a>#A)</span></p><p><b>Coverage Month</b>: 2000-06-01</p><p><b>Enrollment PCP Name On Enrollment</b>: Dr Kelly</p><p><b>Enrollment PCP Zip On Enrollment</b>: 75014</p><p><b>Enrollment PCP</b>: EnrollmentPCP1</p><p><b>identifier</b>: Source System Row Identifier: c35466d6-0d2b-4efa-8265-b9ac3f887e08 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>subscriberId</b>: FamilyId_0001</p><p><b>beneficiary</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>relationship</b>: Child <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-subscriber-relationship.html\">SubscriberPolicyholder Relationship Codes</a>#child; <a href=\"CodeSystem-wh-payer-subscriber-relationship.html\">Health Data Connect Subscriber Relationship Codes</a>#childother)</span></p><p><b>period</b>: 2000-01-01 --&gt; 2000-10-31</p><p><b>payor</b>: <span></span></p><blockquote><p><b>class</b></p><p><b>type</b>: Election Tier <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-wh-payer-coverage-class.html\">Health Data Connect Coverage Class Codes</a>#election-tier)</span></p><p><b>value</b>: Family</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Group Type <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-wh-payer-coverage-class.html\">Health Data Connect Coverage Class Codes</a>#group-type)</span></p><p><b>value</b>: HMO</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Group <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-coverage-class.html\">Coverage Class Codes</a>#group)</span></p><p><b>value</b>: GR12345</p></blockquote></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/subscriberId-encrypted" ];
+     fhir:Extension.valueString [ fhir:value "p58299i3-3t5z-2hyg-7256-g2un4f887e08" ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/age-gender-group" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/age-gender-group" ];
+         fhir:Coding.code [ fhir:value "4" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years" ];
+     fhir:Extension.valueUnsignedInt [ fhir:value "13"^^xsd:nonNegativeInteger ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/benefit-status" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/hipaa-benefit-status" ];
+         fhir:Coding.code [ fhir:value "A" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/coverage-month" ];
+     fhir:Extension.valueDate [ fhir:value "2000-06-01"^^xsd:date ]
+  ], [
+     fhir:index 5;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/enrollment-pcp-name-on-enrollment" ];
+     fhir:Extension.valueString [ fhir:value "Dr Kelly" ]
+  ], [
+     fhir:index 6;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/enrollment-pcp-zip-on-enrollment" ];
+     fhir:Extension.valueString [ fhir:value "75014" ]
+  ], [
+     fhir:index 7;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/enrollment-pcp" ];
+     fhir:Extension.valueString [ fhir:value "EnrollmentPCP1" ]
+  ];
+  fhir:Coverage.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "SSRI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/emr1/coverage" ];
+     fhir:Identifier.value [ fhir:value "c35466d6-0d2b-4efa-8265-b9ac3f887e08" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Acme Health - EMR1" ]
+     ]
+  ];
+  fhir:Coverage.status [ fhir:value "active"];
+  fhir:Coverage.subscriberId [ fhir:value "FamilyId_0001"];
+  fhir:Coverage.beneficiary [
+     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
+  ];
+  fhir:Coverage.relationship [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/subscriber-relationship" ];
+       fhir:Coding.code [ fhir:value "child" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-subscriber-relationship" ];
+       fhir:Coding.code [ fhir:value "childother" ]
+     ]
+  ];
+  fhir:Coverage.period [
+     fhir:Period.start [ fhir:value "2000-01-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2000-10-31"^^xsd:date ]
+  ];
+  fhir:Coverage.payor [
+     fhir:index 0;
+     fhir:Reference.type [ fhir:value "Organiation" ];
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "http://acme-health.com/payer1/payer" ];
+       fhir:Identifier.value [ fhir:value "PayerId09876" ]
+     ]
+  ];
+  fhir:Coverage.class [
+     fhir:index 0;
+     fhir:Coverage.class.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-coverage-class" ];
+         fhir:Coding.code [ fhir:value "election-tier" ]
+       ]
+     ];
+     fhir:Coverage.class.value [ fhir:value "Family" ]
+  ], [
+     fhir:index 1;
+     fhir:Coverage.class.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-coverage-class" ];
+         fhir:Coding.code [ fhir:value "group-type" ]
+       ]
+     ];
+     fhir:Coverage.class.value [ fhir:value "HMO" ]
+  ], [
+     fhir:index 2;
+     fhir:Coverage.class.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/coverage-class" ];
+         fhir:Coding.code [ fhir:value "group" ]
+       ]
+     ];
+     fhir:Coverage.class.value [ fhir:value "GR12345" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/Coverage/CoverageDependentExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

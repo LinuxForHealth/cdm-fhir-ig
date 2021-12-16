@@ -1,0 +1,234 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/hipaa-relationship> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hipaa-relationship"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/hipaa-relationship defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"hipaa-relationship-01\"> </a></td><td>Spouse</td><td>Spouse</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"hipaa-relationship-03\"> </a></td><td>Father/Mother</td><td>Father/Mother</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"hipaa-relationship-04\"> </a></td><td>Grandfather/Grandmother</td><td>Grandfather/Grandmother</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"hipaa-relationship-05\"> </a></td><td>Grandson/Granddaughter</td><td>Grandson/Granddaughter</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"hipaa-relationship-06\"> </a></td><td>Uncle/Aunt</td><td>Uncle/Aunt</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"hipaa-relationship-07\"> </a></td><td>Nephew/Niece</td><td>Nephew/Niece</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"hipaa-relationship-08\"> </a></td><td>Cousin</td><td>Cousin</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"hipaa-relationship-09\"> </a></td><td>Adopted Child</td><td>Adopted dhild</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"hipaa-relationship-10\"> </a></td><td>Foster Child</td><td>Foster dhild</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"hipaa-relationship-11\"> </a></td><td>Son-in-law/Daughter-in-law</td><td>Son-in-law/Daughter-in-law</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"hipaa-relationship-12\"> </a></td><td>Brother-in-law/Sister-in-law</td><td>Brother-in-law/Sister-in-law</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"hipaa-relationship-13\"> </a></td><td>Father-in-law/Mother-in-law</td><td>Father-in-law/Mother-in-law</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"hipaa-relationship-14\"> </a></td><td>Brother/Sister</td><td>Brother/Sister</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"hipaa-relationship-15\"> </a></td><td>Ward</td><td>Ward</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"hipaa-relationship-17\"> </a></td><td>Stepson/Stepdaughter</td><td>Stepson/Stepdaughter</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"hipaa-relationship-18\"> </a></td><td>Self</td><td>Self</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"hipaa-relationship-19\"> </a></td><td>Child</td><td>Child</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"hipaa-relationship-20\"> </a></td><td>Employee</td><td>Employee</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"hipaa-relationship-21\"> </a></td><td>Unknown</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"hipaa-relationship-22\"> </a></td><td>Handicapped Dependent</td><td>Handicapped dependent</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"hipaa-relationship-23\"> </a></td><td>Sponsored Dependent</td><td>Sponsored dependent</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"hipaa-relationship-24\"> </a></td><td>Dependent/Minor Dependent</td><td>Dependent/Minor dependent</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"hipaa-relationship-25\"> </a></td><td>Ex-spouse</td><td>Ex-spouse</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"hipaa-relationship-26\"> </a></td><td>Guardian</td><td>Guardian</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"hipaa-relationship-29\"> </a></td><td>Significant Other</td><td>Significant other</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"hipaa-relationship-31\"> </a></td><td>Court Appointed Guardian</td><td>Court appointed guardian</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"hipaa-relationship-32\"> </a></td><td>Mother</td><td>Mother</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"hipaa-relationship-33\"> </a></td><td>Father</td><td>Father</td></tr><tr><td style=\"white-space:nowrap\">38<a name=\"hipaa-relationship-38\"> </a></td><td>Collateral Dependent</td><td>Collateral dependent</td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"hipaa-relationship-39\"> </a></td><td>Organ Donor</td><td>Organ donor</td></tr><tr><td style=\"white-space:nowrap\">40<a name=\"hipaa-relationship-40\"> </a></td><td>Cadaver Donor</td><td>Cadaver donor</td></tr><tr><td style=\"white-space:nowrap\">41<a name=\"hipaa-relationship-41\"> </a></td><td>Injured Plaintiff</td><td>Injured plaintiff</td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"hipaa-relationship-43\"> </a></td><td>Child Insured has No Finan Res</td><td>Child Insured has no financial Responsibility</td></tr><tr><td style=\"white-space:nowrap\">48<a name=\"hipaa-relationship-48\"> </a></td><td>Stepfather</td><td>Stepfather</td></tr><tr><td style=\"white-space:nowrap\">49<a name=\"hipaa-relationship-49\"> </a></td><td>Stepmother</td><td>Stepmother</td></tr><tr><td style=\"white-space:nowrap\">53<a name=\"hipaa-relationship-53\"> </a></td><td>Life Partner</td><td>Life partner</td></tr><tr><td style=\"white-space:nowrap\">G8<a name=\"hipaa-relationship-G8\"> </a></td><td>Other Relationship</td><td>Other relationship</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/hipaa-relationship"];
+  fhir:CodeSystem.version [ fhir:value "5.0.0"];
+  fhir:CodeSystem.name [ fhir:value "HipaaRelationshipCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "HIPAA Relationship Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-12-16T17:36:56+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "HIPAA standard codes for the relationship of the member to the contract holder"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "37"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "01" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spouse" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Spouse" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "03" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Father/Mother" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Father/Mother" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "04" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grandfather/Grandmother" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Grandfather/Grandmother" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "05" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Grandson/Granddaughter" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Grandson/Granddaughter" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "06" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Uncle/Aunt" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Uncle/Aunt" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "07" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nephew/Niece" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Nephew/Niece" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "08" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cousin" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cousin" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "09" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Adopted Child" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Adopted dhild" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Foster Child" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Foster dhild" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Son-in-law/Daughter-in-law" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Son-in-law/Daughter-in-law" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Brother-in-law/Sister-in-law" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Brother-in-law/Sister-in-law" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Father-in-law/Mother-in-law" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Father-in-law/Mother-in-law" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Brother/Sister" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Brother/Sister" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ward" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Ward" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "17" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Stepson/Stepdaughter" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Stepson/Stepdaughter" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "18" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Self" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Self" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "19" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Child" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Child" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "20" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Employee" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Employee" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "21" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Unknown" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "22" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Handicapped Dependent" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Handicapped dependent" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "23" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sponsored Dependent" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Sponsored dependent" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "24" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dependent/Minor Dependent" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dependent/Minor dependent" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "25" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ex-spouse" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Ex-spouse" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "26" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Guardian" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Guardian" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "29" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Significant Other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Significant other" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "31" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Court Appointed Guardian" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Court appointed guardian" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "32" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mother" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Mother" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "33" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Father" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Father" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "38" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Collateral Dependent" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Collateral dependent" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "39" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Organ Donor" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Organ donor" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "40" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cadaver Donor" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cadaver donor" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "41" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Injured Plaintiff" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Injured plaintiff" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "43" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Child Insured has No Finan Res" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Child Insured has no financial Responsibility" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "48" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Stepfather" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Stepfather" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "49" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Stepmother" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Stepmother" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "53" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Life Partner" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Life partner" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "G8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other Relationship" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other relationship" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/hipaa-relationship.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

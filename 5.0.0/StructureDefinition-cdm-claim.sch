@@ -586,6 +586,7 @@
     <sch:title>f:Claim/f:insurance</sch:title>
     <sch:rule context="f:Claim/f:insurance">
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/line-of-business']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/line-of-business': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/prior-authorization-indicator']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/prior-authorization-indicator': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -600,6 +601,8 @@
     <sch:rule context="f:Claim/f:insurance/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
