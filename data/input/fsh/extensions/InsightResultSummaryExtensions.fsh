@@ -10,11 +10,3 @@ Description:    "Value specific final insight results"
 * extension contains InsightConfidence named insightConfidence 0..*
 * extension[insightConfidence] ^short = "Confidence scoring details for the insight"
 * extension[insightConfidence] ^definition = "Confidence scoring details for the insight"
-
-
-Extension:      InsightValue
-Id:             insight-value
-Title:          "Insight Value"
-Description:    "Field value that this insight result pertains to."
-
-

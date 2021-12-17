@@ -21,7 +21,6 @@ Id:             insight-value
 Title:          "Insight Value"
 Description:    "Field value that this insight result pertains to."
 
-
 Extension:      InsightBasedOnValue
 Id:             based-on-value
 Title:          "Based On Value"
