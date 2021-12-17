@@ -125,4 +125,4 @@ Id:             episode-allowed-amount-total
 Title:          "Episode Allowed Amount Total (USD)"
 Description:    "Total allowed amount per episode, in USD"
 * value[x] only Money
-* valueMoney.currency = http://hl7.org/fhir/ValueSet/currencies#USD
+* valueMoney.currency = CURRENCY#USD
