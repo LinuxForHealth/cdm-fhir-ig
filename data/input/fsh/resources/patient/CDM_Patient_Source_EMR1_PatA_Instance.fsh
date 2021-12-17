@@ -16,11 +16,11 @@ Description:    "Sample of a matched source patient with reference to the match 
 * identifier[0].system = "http://acme-health.com/emr1/patient"
 * identifier[0].value = "a11bad95-a9df-4703-9691-b38bba13892d"
 
-* identifier[2].use = #secondary
-* identifier[2].type =  IdentifierTypeCodeSystem#MDI
-* identifier[2].system = "http://ibm.com/fhir/primary/patient-match-identifier"
-* identifier[2].value = "c82a8fce-11db-4396-b10c-1150abd1a222"
-* identifier[2].assigner.display = "IBM"
+* identifier[1].use = #secondary
+* identifier[1].type =  IdentifierTypeCodeSystem#MDI
+* identifier[1].system = "http://ibm.com/fhir/primary/patient-match-identifier"
+* identifier[1].value = "c82a8fce-11db-4396-b10c-1150abd1a222"
+* identifier[1].assigner.display = "IBM"
 
 * active = true
 
@@ -42,5 +42,5 @@ Description:    "Sample of a matched source patient with reference to the match 
 * telecom[1].use = #mobile
 * telecom[1].value = "214-555-6767"
 * telecom[1].rank = 1
-* telecom[0].extension[contactPointCountry].valueString = "1"
-* telecom[0].extension[telAddress].valueUrl = "tel:+12145556767"
+* telecom[1].extension[contactPointCountry].valueString = "1"
+* telecom[1].extension[telAddress].valueUrl = "tel:+12145556767"
