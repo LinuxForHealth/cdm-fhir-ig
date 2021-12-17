@@ -20,17 +20,17 @@ Description:    "CDM Patient example where data quality process has specified va
 
 //Insight scoring result for phone value of 555-000-5500
 * meta.extension[insight][0].extension[insight-result-summary][0].extension[insight-value][0].valueString = "555-000-5500"
-   * meta.extension[insight][0].extension[insight-result-summary][0].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].code = #INCONSISTENT_PHONE_AREA_CODE
-   * meta.extension[insight][0].extension[insight-result-summary][0].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].system = "www.claro.com/phone-number-insights"
-   * meta.extension[insight][0].extension[insight-result-summary][0].extension[insight-confidence][0].extension[score].valueDecimal = 0
-   * meta.extension[insight][0].extension[insight-result-summary][0].extension[insight-confidence][0].extension[description].valueString = "555 is not an area code in Chicago."
+* meta.extension[insight][0].extension[insight-result-summary][0].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].code = #INCONSISTENT_PHONE_AREA_CODE
+* meta.extension[insight][0].extension[insight-result-summary][0].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].system = "www.claro.com/phone-number-insights"
+* meta.extension[insight][0].extension[insight-result-summary][0].extension[insight-confidence][0].extension[score].valueDecimal = 0
+* meta.extension[insight][0].extension[insight-result-summary][0].extension[insight-confidence][0].extension[description].valueString = "555 is not an area code in Chicago."
 
 //Insight scoring result for phone value of 773-555-0100
 * meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-value][1].valueString = "773-555-0100"
-   * meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].code = #INCONSISTENT_PHONE_AREA_CODE
-   * meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].system = "www.claro.com/phone-number-insights"
-   * meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-confidence][0].extension[score].valueDecimal = 1
-   * meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-confidence][0].extension[description].valueString = "773 is a valid area code in Chicago."
+* meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].code = #INCONSISTENT_PHONE_AREA_CODE
+* meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].system = "www.claro.com/phone-number-insights"
+* meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-confidence][0].extension[score].valueDecimal = 1
+* meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-confidence][0].extension[description].valueString = "773 is a valid area code in Chicago."
 
 //phone value insight leverages address.city value from this same patient for its data quality assessment
 * meta.extension[insight][0].extension[insightDetail][0].extension[reference].valueReference = Reference(CDMPatientInstanceWithDataQualityInsights)

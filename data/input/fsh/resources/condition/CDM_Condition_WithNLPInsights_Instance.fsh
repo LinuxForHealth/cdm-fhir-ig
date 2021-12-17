@@ -31,13 +31,13 @@ Description:    "Condition example where condition code is set from NLP derived 
 * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[offsetEnd].valueInteger = 56
 
 //Two scoring results apply to this fragment
-     * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].code = #Diagnosis_Explicit_Score
-     * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].system = "http://ibm.com/fhir/cdm/CodeSystem/1.0/acd-confidence-method"
-     * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][0].extension[score].valueDecimal = 0.996
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].code = #Diagnosis_Explicit_Score
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].system = "http://ibm.com/fhir/cdm/CodeSystem/1.0/acd-confidence-method"
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][0].extension[score].valueDecimal = 0.996
 
-     * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][1].extension[method].valueCodeableConcept.coding[0].code = #Diagnosis_Family_History
-     * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][1].extension[method].valueCodeableConcept.coding[0].system = "http://ibm.com/fhir/cdm/CodeSystem/1.0/acd-confidence-method"
-     * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][1].extension[score].valueDecimal = 0.006
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][1].extension[method].valueCodeableConcept.coding[0].code = #Diagnosis_Family_History
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][1].extension[method].valueCodeableConcept.coding[0].system = "http://ibm.com/fhir/cdm/CodeSystem/1.0/acd-confidence-method"
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][1].extension[score].valueDecimal = 0.006
 
 //NOTE: Could also add a second span array element for the "no family history of type 1 or type 2 diabetes" text
 

@@ -79,14 +79,14 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[enrollmentPcpZipOnEnrollment] ^short      = "Original primary care physician (PCP) zip as reporting on the eligibility record"
 * extension[enrollmentPcpZipOnEnrollment] ^definition = "Original primary care physician (PCP) zip as reporting on the eligibility record"
 
-* extension contains 
+* extension contains
     EmployeeAverageScheduledHours named employeeAverageScheduledHours 0..1 and
     EmployeeBirthDate named employeeBirthDate 0..1 and
     EmployeeCompany named employeeCompany 0..1 and
     EmployeeCostCenter named employeeCostCenter 0..1 and
     EmployeeCount named employeeCount 0..1 and
     EmployeeBusinessUnit named employeeBusinessUnit 0..1 and
-    EmployeeDepartment named employeeDepartment 0..1 and 
+    EmployeeDepartment named employeeDepartment 0..1 and
     EmployeeDivision named employeeDivision 0..1 and
     EmployeeExemptIndicator named employeeExemptIndicator 0..1 and
     EmployeeFamilySize named employeeFamilySize 0..1 and
@@ -98,52 +98,52 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
     EmployeePayFrequency named employeePayFrequency 0..1 and
     EmployeePerformanceRating named employeePerformanceRating 0..1 and
     EmployeeShift named employeeShift 0..1 and
-    EmployeeSubBusinessUnit named employeeSubBusinessUnit 0..1 and 
+    EmployeeSubBusinessUnit named employeeSubBusinessUnit 0..1 and
     SalaryIndicator named salaryIndicator 0..1 and
     UnionWorkerIndicator named unionWorkerIndicator 0..1
 
- * extension[employeeAverageScheduledHours] ^short      = "Average number of hours the employee is scheduled to work per day"
- * extension[employeeAverageScheduledHours] ^definition = "Average number of hours the employee is scheduled to work per day"
- * extension[employeeBirthDate] ^short      = "Birthdate of the employee or contract holder"
- * extension[employeeBirthDate] ^definition = "Birthdate of the employee or contract holder. For security, this field may be hidden or the value stored in this field should only contain the year."
- * extension[employeeCompany] ^short      = "Code for the company of the employee"
- * extension[employeeCompany] ^definition = "Code for the company of the employee"
- * extension[employeeCostCenter] ^short      = "Code for the cost center of the employee"
- * extension[employeeCostCenter] ^definition = "Code for the cost center of the employee"
- * extension[employeeCount] ^short      = "Flag of the employees in the eligibility record"
- * extension[employeeCount] ^definition = "Flag of the employees in the eligibility record. Each employee is identified with a value of 1. All others are given values of 0."
- * extension[employeeBusinessUnit] ^short      = "Code for the business unit of the employee" 
- * extension[employeeBusinessUnit] ^definition = "Code for the business unit of the employee" 
- * extension[employeeDepartment] ^short      = "Code for the department of the employee"
- * extension[employeeDepartment] ^definition = "Code for the department of the employee"
- * extension[employeeDivision] ^short      = "Code for the division of the employee"
- * extension[employeeDivision] ^definition = "Code for the division of the employee"
- * extension[employeeExemptIndicator] ^short      = "Indicator of whether the employee status is exempt or non-exempt"
- * extension[employeeExemptIndicator] ^definition = "Indicator of whether the employee status is exempt or non-exempt"
- * extension[employeeFamilySize] ^short      = "Total family size of the employee, whether or not dependents are insured or participating in any programs"
- * extension[employeeFamilySize] ^definition = "Total family size of the employee, whether or not dependents are insured or participating in any programs"
- * extension[employeeFTECount] ^short      = "Full Time Equivalent calculation for the employee"
- * extension[employeeFTECount] ^definition = "Full Time Equivalent calculation for the employee. Example 1: A full-time employee would have a value of 1. Example 2: A 20-hour per week employee would have a value of 0.5."
- * extension[employeeId] ^short      = "Identifier for the employee"
- * extension[employeeId] ^definition = "Identifier for the employee"
- * extension[employeeJobFamily] ^short      = "Code for the job family of the employee"
- * extension[employeeJobFamily] ^definition = "Code for the job family of the employee"
- * extension[employeeJobGrade] ^short      = "Code for the job grade of the employee"
- * extension[employeeJobGrade] ^definition = "Code for the job grade of the employee"
- * extension[employeeJobLocation] ^short      = "Code for the physical location where the employee works"
- * extension[employeeJobLocation] ^definition = "Code for the physical location where the employee works"
- * extension[employeePayFrequency] ^short      = "Code indicating the frequency with which the employee is paid (e.g., daily, weekly, monthly)"
- * extension[employeePayFrequency] ^definition = "Code indicating the frequency with which the employee is paid (e.g., daily, weekly, monthly)"
- * extension[employeePerformanceRating] ^short      = "Code indicating the performance rating of the employee, assigned as of the last review period"
- * extension[employeePerformanceRating] ^definition = "Code indicating the performance rating of the employee, assigned as of the last review period"
- * extension[employeeShift] ^short      = "Code indicating the regular shift which the employee is scheduled to work"
- * extension[employeeShift] ^definition = "Code indicating the regular shift which the employee is scheduled to work (e.g., day, afternoon, midnight)"
- * extension[employeeSubBusinessUnit] ^short      = "Code of the sub business unit of the employee"
- * extension[employeeSubBusinessUnit] ^definition = "Code of the sub business unit of the employee"
- * extension[salaryIndicator] ^short       = "Indicator of whether the employee status is salaried"
- * extension[salaryIndicator] ^definition  = "Indicator of whether the employee status is salaried"
- * extension[unionWorkerIndicator] ^short      = "Indicator that the contract holder (subscriber) belongs to a union"
- * extension[unionWorkerIndicator] ^definition = "Indicator that the contract holder (subscriber) belongs to a union"
+* extension[employeeAverageScheduledHours] ^short      = "Average number of hours the employee is scheduled to work per day"
+* extension[employeeAverageScheduledHours] ^definition = "Average number of hours the employee is scheduled to work per day"
+* extension[employeeBirthDate] ^short      = "Birthdate of the employee or contract holder"
+* extension[employeeBirthDate] ^definition = "Birthdate of the employee or contract holder. For security, this field may be hidden or the value stored in this field should only contain the year."
+* extension[employeeCompany] ^short      = "Code for the company of the employee"
+* extension[employeeCompany] ^definition = "Code for the company of the employee"
+* extension[employeeCostCenter] ^short      = "Code for the cost center of the employee"
+* extension[employeeCostCenter] ^definition = "Code for the cost center of the employee"
+* extension[employeeCount] ^short      = "Flag of the employees in the eligibility record"
+* extension[employeeCount] ^definition = "Flag of the employees in the eligibility record. Each employee is identified with a value of 1. All others are given values of 0."
+* extension[employeeBusinessUnit] ^short      = "Code for the business unit of the employee" 
+* extension[employeeBusinessUnit] ^definition = "Code for the business unit of the employee" 
+* extension[employeeDepartment] ^short      = "Code for the department of the employee"
+* extension[employeeDepartment] ^definition = "Code for the department of the employee"
+* extension[employeeDivision] ^short      = "Code for the division of the employee"
+* extension[employeeDivision] ^definition = "Code for the division of the employee"
+* extension[employeeExemptIndicator] ^short      = "Indicator of whether the employee status is exempt or non-exempt"
+* extension[employeeExemptIndicator] ^definition = "Indicator of whether the employee status is exempt or non-exempt"
+* extension[employeeFamilySize] ^short      = "Total family size of the employee, whether or not dependents are insured or participating in any programs"
+* extension[employeeFamilySize] ^definition = "Total family size of the employee, whether or not dependents are insured or participating in any programs"
+* extension[employeeFTECount] ^short      = "Full Time Equivalent calculation for the employee"
+* extension[employeeFTECount] ^definition = "Full Time Equivalent calculation for the employee. Example 1: A full-time employee would have a value of 1. Example 2: A 20-hour per week employee would have a value of 0.5."
+* extension[employeeId] ^short      = "Identifier for the employee"
+* extension[employeeId] ^definition = "Identifier for the employee"
+* extension[employeeJobFamily] ^short      = "Code for the job family of the employee"
+* extension[employeeJobFamily] ^definition = "Code for the job family of the employee"
+* extension[employeeJobGrade] ^short      = "Code for the job grade of the employee"
+* extension[employeeJobGrade] ^definition = "Code for the job grade of the employee"
+* extension[employeeJobLocation] ^short      = "Code for the physical location where the employee works"
+* extension[employeeJobLocation] ^definition = "Code for the physical location where the employee works"
+* extension[employeePayFrequency] ^short      = "Code indicating the frequency with which the employee is paid (e.g., daily, weekly, monthly)"
+* extension[employeePayFrequency] ^definition = "Code indicating the frequency with which the employee is paid (e.g., daily, weekly, monthly)"
+* extension[employeePerformanceRating] ^short      = "Code indicating the performance rating of the employee, assigned as of the last review period"
+* extension[employeePerformanceRating] ^definition = "Code indicating the performance rating of the employee, assigned as of the last review period"
+* extension[employeeShift] ^short      = "Code indicating the regular shift which the employee is scheduled to work"
+* extension[employeeShift] ^definition = "Code indicating the regular shift which the employee is scheduled to work (e.g., day, afternoon, midnight)"
+* extension[employeeSubBusinessUnit] ^short      = "Code of the sub business unit of the employee"
+* extension[employeeSubBusinessUnit] ^definition = "Code of the sub business unit of the employee"
+* extension[salaryIndicator] ^short       = "Indicator of whether the employee status is salaried"
+* extension[salaryIndicator] ^definition  = "Indicator of whether the employee status is salaried"
+* extension[unionWorkerIndicator] ^short      = "Indicator that the contract holder (subscriber) belongs to a union"
+* extension[unionWorkerIndicator] ^definition = "Indicator that the contract holder (subscriber) belongs to a union"
 
 * extension contains EmployeeEducationLevel named employeeEducationLevel 0..1
 * extension[employeeEducationLevel].valueCodeableConcept from WhPayerEducationLevelValueSet (extensible)
