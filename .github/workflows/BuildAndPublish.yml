@@ -50,7 +50,6 @@ jobs:
           npm run build_snapshot
           npm run copy_snapshot
           npm run zip_snapshot
-          npm run copy_version
 
       - name: Deploy Github Pages (main push / merge only)
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
