@@ -23,7 +23,7 @@ Description:    "Example measure report containing individual measure results fo
 
 * status = #complete
 * type = #individual
-* subject = Reference(Patient1)
+* subject = Reference(CDMPatientInstance)
 * date = "2020-03-01T03:00:00Z"
 * extension[measureReportAssignedPractitioner].valueReference = Reference(CDMPractitionerRole-Attributed-PCP)
 * reporter = Reference(IBM)
@@ -77,11 +77,3 @@ Description:    "Example measure report containing individual measure results fo
 * extension[measureReportEvidence][1].extension[measureReportEvidenceValue].valueBoolean = true
 * extension[measureReportEvidence][2].extension[measureReportEvidenceText].valueString = "Patient had HbA1c test in meeasurement period"
 * extension[measureReportEvidence][2].extension[measureReportEvidenceValue].valueBoolean = false
-
-Instance:       Patient1
-InstanceOf:     Patient
-Usage:          #inline
-
-Instance:       IBM  
-InstanceOf:     Organization
-Usage:          #inline

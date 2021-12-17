@@ -45,16 +45,8 @@ Usage:          #inline
 * identifier.value = "4dee9608-e1e0-4653-9f75-b7bdb8d3a968"
 * identifier.assigner.display = "IBM"
 * status = #final
-* patient = Reference(Patient1)
+* patient = Reference(CDMPatientInstance)
 * identifiedPeriod.start = "2020-02-01"
 * identifiedPeriod.end = "2020-02-13"
 * extension[canonicalMeasure].valueCanonical = "Measure-QualityMeasureExample.html"
 * extension[measurePopulationId].valueId = "dm-hba1c-caregap-poor-control"
-
-Instance:       Patient1
-InstanceOf:     Patient
-Usage:          #inline
-
-Instance:   AttributedPractitioner2
-InstanceOf: PractitionerRole
-Usage:      #inline

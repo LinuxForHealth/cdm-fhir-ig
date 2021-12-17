@@ -90,7 +90,3 @@ Usage:          #inline
 Instance:       PoorControlCareGapPatientList
 InstanceOf:     PatientList
 Usage:          #inline
-
-Instance:       IBM
-InstanceOf:     Organization
-Usage:          #inline

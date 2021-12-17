@@ -23,7 +23,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 * status = #final
 * code = MeasurePopulationTypeCodeSystem#care-gap
 
-* subject = Reference(Patient1)
+* subject = Reference(CDMPatientInstance)
 * effectivePeriod.start = "2020-02-14"
 * effectivePeriod.end = "2020-02-28"
 
@@ -36,10 +36,6 @@ Description:    "Example of an observation indicating that the patient was in a 
 
 * extension[relatedObservation].valueReference = Reference(RelatedCareGapObservation)
 
-Instance:       Patient1
-InstanceOf:     Patient
-Usage:          #inline
-
 Instance:       RelatedCareGapObservation
 InstanceOf:     MeasurePopulationObservation
 Usage:          #inline
@@ -49,12 +45,8 @@ Usage:          #inline
 * identifier.assigner.display = "IBM"
 * status = #final
 * code = MeasurePopulationTypeCodeSystem#care-gap
-* subject = Reference(Patient1)
+* subject = Reference(CDMPatientInstance)
 * effectivePeriod.start = "2020-02-01"
 * effectivePeriod.end = "2020-02-13"
 * extension[canonicalMeasure].valueCanonical = "Measure-QualityMeasureExample.html"
 * extension[measurePopulationId].valueId = "dm-hba1c-caregap-poor-control"
-
-Instance:   AttributedPractitioner2
-InstanceOf: PractitionerRole
-Usage:      #inline

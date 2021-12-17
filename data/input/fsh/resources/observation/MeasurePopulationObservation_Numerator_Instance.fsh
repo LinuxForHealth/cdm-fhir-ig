@@ -23,7 +23,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 * status = #final
 * code = MEASURE-POPULATION#numerator
 
-* subject = Reference(Patient1)
+* subject = Reference(CDMPatientInstance)
 * effectivePeriod.start = "2020-02-14"
 * effectivePeriod.end = "2020-02-28"
 
@@ -33,9 +33,6 @@ Description:    "Example of an observation indicating that the patient was in a 
 
 * extension[relatedObservation].valueReference = Reference(RelatedDenominatorObservation)
 
-Instance:       Patient1
-InstanceOf:     Patient
-Usage:          #inline
 
 Instance:       RelatedNumeratorObservation
 InstanceOf:     MeasurePopulationObservation

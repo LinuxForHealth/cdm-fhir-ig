@@ -55,25 +55,13 @@ Description:    "Example of an engagement communication to send an Outreach text
 * extension[communicationTemplate].valueString = "dm-template"
 * extension[communicationRetryLimit].valueString = "5"
 
-* subject = Reference(Patient1)
+* subject = Reference(CDMPatientInstance)
 * about = Reference(CareGapDetectedIssueExample)
 
 * payload.contentString = "Our records indicate you are overdue for a medical appointment.  Please contact [PRACTIIONER-NAME] at [FACILITY-NAME], [FACILTY-PHONE] to schedule an appointment."
 * extension[communicationPayloadData].valueString = "{shortCode = '888-111'}"
 * extension[communicationVendor].valueReference = Reference(Genesis)
 
-* recipient = Reference(Patient1)
+* recipient = Reference(CDMPatientInstance)
 * sender = Reference(IBM)
-* extension[communicationVendor].valueReference = Reference(Genesis)
-
-Instance:       Patient1
-InstanceOf:     Patient
-Usage:          #inline
-
-Instance:       IBM
-InstanceOf:     Organization
-Usage:          #inline
-
-Instance:       Genesis
-InstanceOf:     Organization
-Usage:          #inline
+* extension[communicationVendor].valueReference = Reference(CommunicationVendor1)

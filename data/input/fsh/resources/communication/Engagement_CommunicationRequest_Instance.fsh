@@ -60,18 +60,6 @@ Description:    "Example of an engagement communication request to send an Outre
 * authoredOn = "2020-06-16T03:00:00Z"
 
 * requester = Reference(IBM)
-* recipient = Reference(Patient1)
+* recipient = Reference(CDMPatientInstance)
 * sender = Reference(IBM)
-* extension[communicationVendor].valueReference = Reference(Genesis)
-
-Instance:       Patient1
-InstanceOf:     Patient
-Usage:          #inline
-
-Instance:       IBM
-InstanceOf:     Organization
-Usage:          #inline
-
-Instance:       Genesis
-InstanceOf:     Organization
-Usage:          #inline
+* extension[communicationVendor].valueReference = Reference(CommunicationVendor1)
