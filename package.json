@@ -12,7 +12,7 @@
   "scripts": {
     "sushi": "sushi data",
     "sushi_snapshot": "sushi -s data",
-    "sync_build": "rsync -ah --delete-after --exclude 'fsh-generated' data/ build",
+    "sync_build": "rsync -ah --delete-after --exclude 'input-cache' data/ build",
     "ig_init": "npm run sync_build && cd build && yes | bash ./_updatePublisher.sh && bash ./_genonce.sh",
     "ig_init_cp": "cp -r data build/ && cd build && yes | bash ./_updatePublisher.sh && bash ./_genonce.sh",
     "ig_init_win": "xcopy data build\\ /i /y /q && cd build && _updatePublisher.bat && _genonce.bat",
