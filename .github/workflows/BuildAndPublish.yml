@@ -39,7 +39,7 @@ jobs:
       - name: Disable TCP/UDP offload before build 
         run:  |
           shopt -s expand_aliases
-          sudo alias ping2='echo'
+          alias ping2='echo'
           echo teesting echo v3
           ping2 testing ping2 v3
           sudo alias ping='echo'
