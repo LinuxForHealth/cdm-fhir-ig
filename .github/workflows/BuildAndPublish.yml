@@ -37,6 +37,8 @@ jobs:
 
       - name: Install Dependencies
         run:  |
+          apt_get update
+          apt-get install iputils-ping
           npm install
           gem install jekyll
 
