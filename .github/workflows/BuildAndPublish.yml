@@ -35,9 +35,11 @@ jobs:
           java-version: '11'
           distribution: 'adopt'          
 
+      # To preveent ping timeouts running publisher commands, see https://github.com/actions/virtual-environments/issues/1187
       - name: Disable TCP/UDP offload before build 
         run:  |
           sudo ethtool -K eth0 tx off rx off
+          ping tx.fhir.org -c 1
 
       - name: Install Dependencies
         run:  |
