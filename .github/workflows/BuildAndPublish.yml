@@ -38,10 +38,10 @@ jobs:
       # To preveent ping timeouts running publisher commands, see https://github.com/actions/virtual-environments/issues/1187
       - name: Disable TCP/UDP offload before build 
         run:  |
-          alias ping2='echo'
+          sudo alias ping2='echo'
           echo teesting echo v3
           ping2 testing ping2 v3
-          alias ping='echo'
+          sudo alias ping='echo'
           ping tx.fhir.org -c 1
 
       - name: Install Dependencies
