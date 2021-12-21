@@ -35,10 +35,12 @@ jobs:
           java-version: '11'
           distribution: 'adopt'          
 
+      - name: Disable TCP/UDP offload before build 
+        run:  |
+          sudo ethtool -K eth0 tx off rx off
+
       - name: Install Dependencies
         run:  |
-          apt-get update
-          apt-get install iputils-ping
           npm install
           gem install jekyll
 
