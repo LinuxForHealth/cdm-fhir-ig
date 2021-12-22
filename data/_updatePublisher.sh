@@ -37,10 +37,10 @@ case "$OSTYPE" in
 	*) echo "unknown: $OSTYPE"; exit 1 ;;
 esac
 
-if [ $? -ne 0 ] ; then
-  echo "Offline (or the terminology server is down), unable to update.  Exiting"
-  exit 1
-fi
+#if [ $? -ne 0 ] ; then
+#  echo "Offline (or the terminology server is down), unable to update.  Exiting"
+#  exit 1
+#fi
 
 if [ ! -d "$input_cache_path" ] ; then
   if [ $FORCE != true ]; then
