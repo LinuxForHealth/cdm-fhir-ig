@@ -21,7 +21,7 @@ Description:    "Sample clinical exam procedure"
 * code = SNOMED#5880005 "Clinical examination"
 
 * subject = Reference(CDMPatientInstance)
-* encounter = Reference(Encounter1)
+* encounter = Reference(CDMEncounterExample)
 
 * recorder = Reference(DrKelly)
 * asserter = Reference(DrKelly)
@@ -42,9 +42,3 @@ Description:    "Sample clinical exam procedure"
 * note.text = "Patient complained of pain in foot. Slight fracture suspected.  None found.  Blister looks fine, no infection."
 
 * performedDateTime = "2020-01-06T10:30:00Z"
-
-Instance:       Encounter1
-InstanceOf:     Encounter
-Usage:          #inline
-* status = 	ENCOUNTER-STATUS#finished
-* class = ENCOUNTER-CLASS#AMB

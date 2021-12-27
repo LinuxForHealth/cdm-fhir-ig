@@ -22,7 +22,7 @@ Description:    "Example of an detected issue indicating that the patient was in
 
 * status = #final
 
-* patient = Reference(Patient1)
+* patient = Reference(CDMPatientInstance)
 * identifiedPeriod.start = "2020-02-14"
 * identifiedPeriod.end = "2020-02-28"
 

@@ -43,7 +43,7 @@ Usage:          #inline
 * identifier.assigner.display = "IBM"
 * status = #final
 * code = MEASURE-POPULATION#numerator
-* subject = Reference(Patient1)
+* subject = Reference(CDMPatientInstance)
 * effectivePeriod.start = "2020-02-01"
 * effectivePeriod.end = "2020-02-13"
 * extension[canonicalMeasure].valueCanonical = "Measure-QualityMeasureExample.html"

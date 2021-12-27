@@ -47,8 +47,4 @@ Description:    "Sample encounter"
 * location.period.start = "2020-04-15T09:00:00Z"
 * location.period.end = "2020-04-15T09:15:00Z"
 
-* serviceProvider = Reference(Organization1)
-
-Instance:   Organization1
-InstanceOf: Organization
-Usage:      #inline
+* serviceProvider = Reference(GeneralHospital)

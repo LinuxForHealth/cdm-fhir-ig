@@ -17,16 +17,8 @@ Usage:          #example
 * identifier[0].assigner.display = "Acme Health - Claims Payment Center"
 
 * active = true
-* practitioner = Reference(DrJones)
-* location = Reference(JonesFamilyMedical)
+* practitioner = Reference(DrKelly)
+* location = Reference(KellyClinic)
 
 * code =  SNOMED#59058001 "General physician"
 * specialty = SNOMED#394814009 "General practice (specialty)"
-
-Instance:   DrJones
-InstanceOf: Practitioner
-Usage:      #inline
-
-Instance:   JonesFamilyMedical
-InstanceOf: Location
-Usage:      #inline

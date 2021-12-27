@@ -17,8 +17,8 @@ Usage:          #example
 * identifier[0].assigner.display = "Acme Health - EMR1"
 
 * active = true
-* practitioner = Reference(DrDoug)
-* location = Reference(DougFamilyMedical)
+* practitioner = Reference(DrKelly)
+* location = Reference(KellyClinic)
 
 * code =  SNOMED#59058001 "General physician"
 * specialty = SNOMED#394814009 "General practice (specialty)"
