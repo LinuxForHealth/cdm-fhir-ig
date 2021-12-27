@@ -27,7 +27,7 @@ Description:    "Sample observation showing a high blood pressure panel"
 
 * performer = Reference(CDMPractitionerRole-EMR-PCP)
 
-* interpretation = hOBSERVATION-INTERPRETATION#HH "Critical high"
+* interpretation = OBSERVATION-INTERPRETATION#HH "Critical high"
 * bodySite = SNOMED#368209003 "Right arm"
 
 * component[0].code = LOINC#8480-6 "Systolic blood pressure"
