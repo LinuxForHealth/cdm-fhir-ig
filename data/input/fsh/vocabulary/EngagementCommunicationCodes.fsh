@@ -1,5 +1,5 @@
 CodeSystem:     EngagementCommunicationRequestStatusReasonCodeSystem
-Id:             eng-communication-reqeust-status-reason
+Id:             eng-communication-request-status-reason
 Title:          "Engagement Communication Request Status Reason Codes"
 Description:    "Status codes detailing the reason and status history for an Engagement communication request."
 * ^caseSensitive = true
