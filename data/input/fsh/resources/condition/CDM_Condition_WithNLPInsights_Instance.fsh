@@ -21,9 +21,9 @@ Description:    "Condition example where condition code is set from NLP derived 
 * meta.extension[insight][0].extension[insightDetail][0].extension[referencePath].valueString = "conclusion"
 
 //The scoring results for this input document, pertain to the following values;
-* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[insight-value][0].valueCoding[0] = SNOMED#46635009  "Diabetes Mellitus, Insulin-Dependent"
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[insight-value][0].valueCoding[0] = SNOMED#46635009  "Diabetes mellitus type 1"
 * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[insight-value][1].valueCoding[0] = UMLS#C0011854  "Diabetes Mellitus, Insulin-Dependent"
-* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[insight-value][2].valueCoding[0] = LOINC#LP36797-6 "Diabetes Mellitus, Insulin-Dependent"   
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[insight-value][2].valueCoding[0] = LOINC#44877-9 "Insulin dependent diabetes mellitus [Presence]"
 
 //Each text fragment annotated and scored has individual scoring results
 * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[coveredText].valueString = "results consistent with insulin-dependent diabetes"
@@ -53,9 +53,9 @@ Description:    "Condition example where condition code is set from NLP derived 
 
 * category = CONDITION-CATEGORY#encounter-diagnosis
 
-* code.coding[0] = SNOMED#46635009  "Diabetes Mellitus, Insulin-Dependent"
+* code.coding[0] = SNOMED#46635009  "Diabetes mellitus type 1"
 * code.coding[1] = UMLS#C0011854  "Diabetes Mellitus, Insulin-Dependent"
-* code.coding[2] = LOINC#LP36797-6 "Diabetes Mellitus, Insulin-Dependent"
+* code.coding[2] = LOINC#44877-9 "Insulin dependent diabetes mellitus [Presence]"
 
 //NOTE: Commenting out the below section showing use of insight summary extension; This summary extension is meant to be used on any FHIR element.
 //However, in order to enable that to be validated by a FHIR profile we would need to define this as an extension on every FHIR element, thus 
