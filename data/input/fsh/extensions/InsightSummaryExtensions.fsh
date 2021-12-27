@@ -1,7 +1,7 @@
 Extension:        InsightSummary
 Id:             insight-summary
 Title:          "Insight Summary"
-Description:    "Summarizes the insight associated with the element that the insight summary extension is embedded in. The insight array element in the meta section of the resource with the same insight record id contains the full details on the insight. "
+Description:    "Summarizes the insight associated with the element that the insight summary extension is embedded in. The insight array element in the meta section of the resource with the same insight record id contains the full details on the insight."
 
 * extension contains InsightId named insightId 0..1 
 * extension[insightId] ^short = "ID for the insight."
