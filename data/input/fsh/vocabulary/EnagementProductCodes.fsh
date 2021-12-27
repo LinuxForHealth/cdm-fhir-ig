@@ -2,7 +2,7 @@ CodeSystem:     EngagementProductCodeSystem
 Id:             eng-product
 Title:          "Engagement Product Codes"
 Description:    "IBM Watson Health engagement products"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #campaign     "Campaign"      "Custom campaigns configured by customers in IBM® Phytel Coordinate"
 * #coordinate   "Coordinate"    "Coordinate communications"
 * #ihe          "IHE"           "IBM® Intelligent Health Engagement"

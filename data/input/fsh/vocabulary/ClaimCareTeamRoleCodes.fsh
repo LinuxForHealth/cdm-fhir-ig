@@ -2,7 +2,7 @@ CodeSystem:     ClaimCareTeamRoleCodeSystem
 Id:             claim-care-team-role
 Title:          "Claim Care Team Role Codes"
 Description:    "Code system that defines the function of a team member within a care team"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #admitting        "Admitting provider" 
 * #attending        "Attending provider" 
 * #billing          "Billing provider" 

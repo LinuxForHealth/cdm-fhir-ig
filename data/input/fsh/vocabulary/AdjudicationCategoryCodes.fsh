@@ -2,7 +2,7 @@ CodeSystem:     AdjudicationCategoryCodeSystem
 Id:             adjudication-category
 Title:          "Adjudication Category Codes"
 Description:    "Adjudication category codes for claims"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #allowed                      "Allowed Amount"                                         "The maximum amount allowed by the plan for payment"
 * #coinsurance                  "Coinsurance"                                            "The coinsurance paid by the subscriber as specified in the plan provision"
 * #copay                        "Copayment"                                              "The copayment paid by the subscriber, as specified in the plan provision"

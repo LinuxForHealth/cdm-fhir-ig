@@ -2,7 +2,7 @@ CodeSystem:     AppointmentCancellationReasonCodeSystem
 Id:             appointment-cancellation-reason
 Title:          "Appointment Cancellation Reason Codes"
 Description:    "Extended reasons for the cancellation of an appointment"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #deleted      "Deleted"       "Appointment was either logically deleted or physically deleted"
 * #rescheduled  "Rescheduled"   "Appointment was rescheduled"
 
