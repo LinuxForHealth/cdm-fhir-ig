@@ -37,7 +37,7 @@ Description:    "Example measure containing criteria for measure rules"
 * publisher = "IBM"
 * description = "Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period"
 
-* useContext.code = USAGE-CONTEXT-TYPE#clinical
+* useContext.code = USAGE-CONTEXT-TYPE#focus
 * useContext.valueCodeableConcept = SNOMED#73211009 "Diabetes mellitus (disorder)"
 
 * topic = DEFINITION-TOPIC#treatment
