@@ -28,7 +28,7 @@ Alias: MEASURE-IMPROVEMENT-NOTATION = http://terminology.hl7.org/CodeSystem/meas
 Alias: EXPRESSION-LANGUAGE = http://hl7.org/fhir/expression-language
 
 Alias: USAGE-CONTEXT-TYPE = http://terminology.hl7.org/CodeSystem/usage-context-type
-Alias: DEFINITION-TOPIC = http://hl7.org/fhir/codesystem-definition-topic.html
+Alias: DEFINITION-TOPIC = http://terminology.hl7.org/CodeSystem/definition-topic
 
 Alias: ORGANIZATION-TYPE = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: ORGANIZATION-SIC  = http://terminology.hl7.org/CodeSystem/sic
@@ -46,14 +46,17 @@ Alias: ENCOUNTER-STATUS = http://hl7.org/fhir/encounter-status
 Alias: ENCOUNTER-CLASS = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: ENCOUNTER-PRIORITY = http://terminology.hl7.org/CodeSystem/v3-ActPriority
 Alias: ENCOUNTER-DIAGNOSIS-USE = http://terminology.hl7.org/CodeSystem/diagnosis-role
+Alias: CLINICAL-STATUS = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: CLINICAL-VERIFICATION-STATUS = 	http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: CONDITION-CATEGORY = http://terminology.hl7.org/CodeSystem/condition-category
+
+// OBSERVATION
+Alias: OBSERVATION-CATEGORY   = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: OBSERVATION-INTERPRETATION   = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 
 // PROCEDURE
 Alias: EVENT-STATUS = http://hl7.org/fhir/event-status
 
-// CONDITION
-Alias: CLINICAL-STATUS = http://terminology.hl7.org/CodeSystem/condition-clinical
-Alias: CLINICAL-VERIFICATION-STATUS = 	http://terminology.hl7.org/CodeSystem/condition-ver-status
-Alias: CONDITION-CATEGORY = http://terminology.hl7.org/CodeSystem/condition-category
 
 // MATCHING
 Alias: MATCH-GRADE = http://terminology.hl7.org/CodeSystem/match-grade
@@ -92,3 +95,5 @@ Alias: NUBC-PATIENT-DISCHARGE     = https://www.nubc.org/patient-discharge
 Alias: NUBC-OCCURRENCE-CODE-CS    = http://terminology.hl7.org/CodeSystem/v2-0350
 Alias: CURRENCIES                 = https://www.hl7.org/fhir/valueset-currencies
 Alias: REMIT-ADVICE-REMARK-CODE   = https://x12.org/codes/remittance-advice-remark-codes
+
+
