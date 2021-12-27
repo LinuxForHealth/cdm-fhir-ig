@@ -2,7 +2,6 @@ CodeSystem:     EngagementCommunicationRequestStatusReasonCodeSystem
 Id:             eng-communication-request-status-reason
 Title:          "Engagement Communication Request Status Reason Codes"
 Description:    "Status codes detailing the reason and status history for an Engagement communication request."
-* ^caseSensitive = true
 * #mu-no-email-data                                 "Mode Unavailable - No email address"                               "Email mode unavailable because patient does not have a valid email address."
 * #mu-no-sms-data                                   "Mode Unavailable - No mobile phone"                                "SMS text mode unavailable because patient does not have a valid mobile phone number."
 * #mu-opt-out-email                                 "Mode Unavailable - Patient opt-out from email"                     "Email mode unavailable because patient has opted out of email communications."
@@ -61,8 +60,8 @@ Description:    "Status codes detailing the reason and status history for an Eng
 * #patient-inactive                                 "Not Processed - Patient is inactive"                               "CommunicationRequest not processed because the patient is marked as inactive in the source system of record."
 * #patient-vip                                      "Not Processed - VIP patient"                                       "CommunicationRequest not processed because patient is flagged with a VIP code that prevents communications."
 * #practitioner-care-gap-disabled	                "Not Processed - Practitioner care gap disabled	"                   "CommunicationRequest not processed because the attributed practitioner has the care gap disabled."
-* #ns-stalled-scheduler                             "Not Sent - Message has not gone out during the schedule period"    "CommunicationRequest not sent because the message was not send during the scheduled period."
-* #ns-user-remove-message                           "Not Sent - User removed the communication from message queue"      "CommunicationRequest not sent because the user remove the communication from the message queue."
+* #ns-stalled-scheduler                             "Not Sent - Message not sent during the schedule period"            "CommunicationRequest not sent because the message was not send during the scheduled period."
+* #ns-user-remove-message                           "Not Sent - User removed communication from message queue"          "CommunicationRequest not sent because the user remove the communication from the message queue."
 * #request-complete                                 "In-Process - Communication request complete"                       "Communication in-progress, FHIR CommunicationRequest completed and delivered to the communication engine"
 
 CodeSystem:     EngagementCommunicationStatusReasonCodeSystem
