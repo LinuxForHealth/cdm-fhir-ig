@@ -5,7 +5,7 @@ Usage:          #example
 Description:    "Condition example where condition code is set from NLP derived insights"
 
 * meta.source = "http://acme-health.com/emr"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
+* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition"
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189145"
 
