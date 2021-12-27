@@ -30,8 +30,8 @@ while [ "$#" -gt 0 ]; do
     shift
 done
 
-# Skip internet commection check for build-ci
-# Skipping this because ping doesn't function on the github action runners
+# Skip internet commection check for ci build
+# Skipping this because ping is disabled on the github action runners
 #echo "Checking internet connection"
 #case "$OSTYPE" in
 #	linux-gnu* ) ping tx.fhir.org -4 -c 1 -w 1000 >/dev/null ;;
