@@ -2,6 +2,7 @@ CodeSystem:     WhPayerSsiStatusCodeSystem
 Id:             wh-payer-ssi-status
 Title:          "Health Data Connect SSI Status Codes"
 Description:    "Supplemental Security Income (SSI) status codes for the person"
+* ^caseSensitive = false
 * #000     "Not Applicable"                                            ""
 * #001     "Supplemental Security Income (SSI)"                        ""
 * #002     "Supplemental Security Income (SSI) Eligible Spouse"        ""

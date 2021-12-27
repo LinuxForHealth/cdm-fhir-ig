@@ -2,6 +2,7 @@ CodeSystem: HipaaRelationshipCodeSystem
 Id:         hipaa-relationship
 Title:      "HIPAA Relationship Codes"
 Description: "HIPAA standard codes for the relationship of the member to the contract holder"
+* ^caseSensitive = false
 * #01        "Spouse"                             "Spouse"
 * #03        "Father/Mother"                      "Father/Mother"
 * #04        "Grandfather/Grandmother"            "Grandfather/Grandmother"

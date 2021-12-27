@@ -2,7 +2,7 @@ CodeSystem:     WHPayerProcedureGroupCodeSystem
 Id:             wh-payer-procedure-group
 Title:          "Health Data Connect Procedure Group Codes"
 Description:    "IBM® Health Data Connect standard procedure group codes"
-
+* ^caseSensitive = false
 * #1          "Incision & drainage of cyst"                 "Incision & drainage of cyst"
 * #2          "Acne surgery"                                "Acne surgery"
 * #3          "Nail debridement/avulsion"                   "Nail debridement/avulsion"

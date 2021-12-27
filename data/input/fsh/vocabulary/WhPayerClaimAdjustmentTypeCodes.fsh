@@ -2,6 +2,7 @@ CodeSystem:     WhPayerClaimAdjustmentTypeCodeSystem
 Id:             wh-payer-claim-adjustment-type
 Title:          "Health Data Connect Claim Adjustment Type Codes"
 Description:    "IBM® Health Data Connect standard codes for the type of adjustment for the claim"
+* ^caseSensitive = false
 * #1   "Adjustment (positive or negative adjustment)"                 "An adjustment is a claim line where one or more of the financial fields display the difference between the original amount and the final amount. Any financial not being adjusted should be zero as well as any quantity."
 * #2   "Void (void, reversal or back-out)"                            "A void is a claim line where all financials and quantities are negated"
 * #3   "Original or Replacement (original, resubmit or replacement)"  "An original or replacement claim line where all financials and quantities are positive and supplements a void claim line"	

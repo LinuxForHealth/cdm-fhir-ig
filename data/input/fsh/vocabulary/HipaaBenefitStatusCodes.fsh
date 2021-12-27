@@ -2,6 +2,7 @@ CodeSystem: HipaaBenefitStatusCodeSystem
 Id:         hipaa-benefit-status
 Title:      "HIPAA Benefit Status Codes"
 Description: "HIPAA standard codes for the benefit status"
+* ^caseSensitive = false
 * #A        "Active"               "Active benefit"
 * #C        "COBRA"                "Consolidated Omnibus Budget Reconciliation Act (COBRA) benefit"
 * #S        "Surviving Insured"    "Surviving insured benefit"

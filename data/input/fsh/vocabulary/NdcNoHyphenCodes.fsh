@@ -2,6 +2,7 @@ CodeSystem:     NdcNoHyphensCodeSystem
 Id:             ndc-no-hyphens
 Title:          "NDC No Hyphens Codes"
 Description:    "A common set of non-hyphenated National Drug Codes listed by the FDA (Food and Drug Administration). Non-hpyhenated codes are recieved for prescription drug claims.  Hyphenated NDC codes should also be included as an additional coding, when available."
+* ^caseSensitive = false
 * #00003089421	    "00003-0894-21"	    "ELIQUIS"
 * #00054327099      "00054-3270-99"     "FLUTICASONE PROPIONATE"
 * #00378395177	    "00378-3951-77"	    "ATORVASTATIN CALCIUM"

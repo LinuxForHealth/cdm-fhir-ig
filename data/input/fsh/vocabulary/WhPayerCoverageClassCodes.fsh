@@ -2,6 +2,7 @@ CodeSystem:     WhPayerCoverageClassCodeSystem
 Id:             wh-payer-coverage-class
 Title:          "Health Data Connect Coverage Class Codes"
 Description:    "IBM® Health Data Connect standard code for the coverage class"
+* ^caseSensitive = false
 * #election-tier    "Election Tier"       "Elected tier for coverage"
 * #group-type       "Group Type"          "Type of group for coverage"
 

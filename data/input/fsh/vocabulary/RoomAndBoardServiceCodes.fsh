@@ -2,6 +2,7 @@ CodeSystem:     RoomAndBoardServiceCodeSystem
 Id:             room-and-board-service
 Title:          "Room And Board Service Codes"
 Description:    "The code for the flag indicating the type of room and board services on a facility Claim"
+* ^caseSensitive = false
 * #1     "Room and Board"             ""
 * #2     "Mother and Newborn R&B"     ""
 * #3     "Nursery R&B"                ""

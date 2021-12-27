@@ -2,6 +2,7 @@ CodeSystem:     EngagementCommunicationRequestStatusReasonCodeSystem
 Id:             eng-communication-reqeust-status-reason
 Title:          "Engagement Communication Request Status Reason Codes"
 Description:    "Status codes detailing the reason and status history for an Engagement communication request."
+* ^caseSensitive = false
 * #mu-no-email-data                                 "Mode Unavailable - No email address"                               "Email mode unavailable because patient does not have a valid email address."
 * #mu-no-sms-data                                   "Mode Unavailable - No mobile phone"                                "SMS text mode unavailable because patient does not have a valid mobile phone number."
 * #mu-opt-out-email                                 "Mode Unavailable - Patient opt-out from email"                     "Email mode unavailable because patient has opted out of email communications."

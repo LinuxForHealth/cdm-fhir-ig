@@ -2,6 +2,7 @@ CodeSystem:     WhPayerClaimTypeCodeSystem
 Id:             wh-payer-claim-type
 Title:          "Health Data Connect Claim Type Codes"
 Description:    "IBM® Health Data Connect stanard codes for the coverage type under which the claim was paid"
+* ^caseSensitive = false
 * #medical          "Medical claim; Institutional/Professional unknown"                  ""
 * #institutional    "Institutional; Hospital, clinic and typically inpatient claims"    ""
 * #professional     "Professional; Typically, outpatient claims from Physician, Psychological, Chiropractor, Physiotherapy, Speech Pathology, rehabilitative, consulting"  ""

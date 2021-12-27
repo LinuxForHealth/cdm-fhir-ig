@@ -2,6 +2,7 @@ CodeSystem:     FFVScheduleCodeSystem
 Id:             ffv-schedule
 Title:          "Health Data Connect FFV Schedule Codes"
 Description:    "IBM® Health Data Connect fee for value initiative schedule codes"
+* ^caseSensitive = false
 * #monthly          "Monthly"
 * #quarterly        "Quarterly"
 * #biannually       "Biannually"

@@ -2,6 +2,7 @@ CodeSystem: HipaaEmployeeStatusCodeSystem
 Id:         hipaa-employee-status
 Title:      "HIPAA Employee Status Codes"
 Description: "HIPAA standard codes for the employee status"
+* ^caseSensitive = false
 * #AC            "Active"                     "Active employee"
 * #AO            "Active Military Overseas"   "Active military overseas"
 * #AU            "Active Military USA"        "Active military USA"

@@ -2,6 +2,7 @@ CodeSystem:     InsurancePlanTypeCodeSystem
 Id:             insurance-plan-type
 Title:          "Insurance Plan Type Codes"
 Description:    "The codes that indicates the specific benefit categories a member may have (medical, dental, vision, etc) based on benefit election."
+* ^caseSensitive = false
 * #hearing                     "Hearing"                      "Insurance plan type for hearing"
 * #lifeins                     "Life Insurance"               "Insurance plan type for lift insurance"
 * #substance-abuse-ambulatory  "Substance Abuse Ambulatory"   "Insurance plan type for ambulatory substance abuse"

@@ -2,6 +2,7 @@ CodeSystem:     ClaimSupportingInfoTypeCodeSystem
 Id:             claim-supporting-info-type
 Title:          "Claim Supporting Info Type Codes"
 Description:    "Supporting information type codes for claims"
+* ^caseSensitive = false
 * #acquired-condition-indicator            "Acquired Condition Indicator"          "An indicator if the patient on the  claim has a Health Care Acquired Condition"
 * #admission-hour                          "Admission hour"                        "Hour of medical facility admission, expressed in military time (00-23)"
 * #capitated-claim-indicator               "Capitated claim indicator"             "An indicator that all services on the claim were capitated services"

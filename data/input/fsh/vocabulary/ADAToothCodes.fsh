@@ -2,6 +2,7 @@ CodeSystem:     ADAToothCodeSystem
 Id:             ada-tooth
 Title:          "American Dental Association Tooth Numbering Code System"
 Description:    "Code system that defines a tooth"
+* ^caseSensitive = false
 * #1         "Upper Right Third Molar (Wisdom Tooth)"           ""
 * #10        "Upper Left Lateral Incisor"                       ""
 * #11        "Upper Left Canine (Cuspid)"                       ""

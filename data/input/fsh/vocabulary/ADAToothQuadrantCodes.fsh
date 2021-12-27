@@ -2,6 +2,7 @@ CodeSystem:     ADAToothQuadrantCodeSystem
 Id:             ada-tooth-quadrant
 Title:          "American Dental Association Tooth Quadrant Code System"
 Description:    "Code system that defines a tooth quadrant"
+* ^caseSensitive = false
 * #UR    "Upper right"       "Upper right"
 * #UL    "Upper left"        "Upper left"
 * #LR    "Lower right"       "Lower right"

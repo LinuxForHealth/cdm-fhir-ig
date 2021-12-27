@@ -2,6 +2,7 @@ CodeSystem:     WhPayerSubscriberRelationshipCodeSystem
 Id:             wh-payer-subscriber-relationship
 Title:          "Health Data Connect Subscriber Relationship Codes"
 Description:    "IBM® Health Data Connect subscriber relationship value set for the relationship of the member to the contract holder"
+* ^caseSensitive = false
 * #childother      "The beneficiary can only be identified as a child or other dependent of the Subscriber."   ""
  
 ValueSet:       WhPayerSubscriberRelationshipCodeValueSet

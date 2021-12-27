@@ -2,6 +2,7 @@ CodeSystem:     EngagementCommunicationModeCodeSystem
 Id:             eng-communication-mode
 Title:          "Engagement Communication Mode Codes"
 Description:    "Communication modes supported for Engagement communication"
+* ^caseSensitive = false
 * #phone        "Phone"     "Voice messaging by phone"
 * #sms          "Sms Text"  "SMS text messaging"
 * #email        "Email"     "Email messaging"

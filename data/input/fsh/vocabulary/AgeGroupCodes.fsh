@@ -2,6 +2,7 @@ CodeSystem:     AgeGroupCodeSystem
 Id:             age-group
 Title:          "Age Group Codes."
 Description:    "Age group codes for claims."
+* ^caseSensitive = false
 * #1	"< 1 yr"               "Ages < 1 year"
 * #2	"1-4 yr"               "Ages 1 to 4 years"
 * #3	"5-9 yr"               "Ages 5 to 9 years"

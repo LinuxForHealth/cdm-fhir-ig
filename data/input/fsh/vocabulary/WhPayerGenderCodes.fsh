@@ -2,8 +2,9 @@ CodeSystem:     WhPayerGenderCodeSystem
 Id:             wh-payer-gender
 Title:          "Health Data Connect Gender Codes"
 Description:    "IBM® Health Data Connect gender code"
-* #M    "Male"      "Male"
+* ^caseSensitive = false
 * #F    "Female"    "Female"
+* #M    "Male"      "Male"
 
 ValueSet:       WhPayerGenderValueSet
 Id:             wh-payer-gender

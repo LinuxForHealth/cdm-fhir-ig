@@ -2,6 +2,7 @@ CodeSystem:     WhPayerEducationLevelCodeSystem
 Id:             wh-payer-education-level
 Title:          "Health Data Connect Education Level Codes"
 Description:    "IBM® Health Data Connect standard code for the education level"
+* ^caseSensitive = false
 * #A    "Grade School or Less"              "Grade School or Less"
 * #B    "Some High School"                  "Some High School"
 * #C    "High School Graduate"              "High School Graduate"

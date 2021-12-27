@@ -2,6 +2,7 @@ CodeSystem:     AgeGenderGroupCodeSystem
 Id:             age-gender-group
 Title:          "Age and Gender Group Codes"
 Description:    "Standard codes for age and gender based on HEDIS cohort codes"
+* ^caseSensitive = false
 * #1	"Males < 1 yr"               ""
 * #2	"Males 1-4 yr"               ""
 * #3	"Males 5-9 yr"               ""

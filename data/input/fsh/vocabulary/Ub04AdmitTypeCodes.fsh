@@ -2,6 +2,7 @@ CodeSystem:     Ub04AdmitTypeCodeSystem
 Id:             ub04-admit-type
 Title:          "UB04 Admit Type Code System"
 Description:    "Codes for the UB04 admission type"
+* ^caseSensitive = false
 * #1      "Emergency"                   "The patient requires immediate medical intervention as a result of severe, life threatening or potentially disabling conditions. Generally, the patient is admitted through the emergency room."
 * #2      "Urgent"                      "The patient requires immediate attention for the care and treatment of a physical or mental disorder. Generally, the patient is admitted to the first available and suitable accommodation."
 * #3      "Elective"                    "The patient’s condition permits adequate time to schedule the availability of a suitable accommodation."

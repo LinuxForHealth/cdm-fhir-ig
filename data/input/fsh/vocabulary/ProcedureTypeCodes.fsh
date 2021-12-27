@@ -2,6 +2,7 @@ CodeSystem:     ProcedureTypeCodeSystem
 Id:             procedure-type
 Title:          "Procedure Type Codes"
 Description:    "Codes indicating the procedure type"
+* ^caseSensitive = false
 * #surgical        "surgical"                 ""
 
 ValueSet:       ProcedureTypeValueSet

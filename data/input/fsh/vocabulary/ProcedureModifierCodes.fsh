@@ -2,6 +2,7 @@ CodeSystem:     ProcedureModifierCodeSystem
 Id:             procedure-modifier
 Title:          "Procedure Modifier Codes"
 Description:    "Codes indicating the procedure modifiers"
+* ^caseSensitive = false
 * #A1        "Dressing for one wound"            ""
 * #A2        "Dressing for two wounds"           ""
 * #A3        "Dressing for three wounds"         ""

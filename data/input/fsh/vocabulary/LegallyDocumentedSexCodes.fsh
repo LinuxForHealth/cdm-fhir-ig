@@ -2,6 +2,7 @@ CodeSystem:     LegalDocumentSourceCodeSystem
 Id:             legal-document-source
 Title:          "Legal Document Source Codes"
 Description:    "Codes indicating the source of legal document used for identification"
+* ^caseSensitive = false
 * #drivers-license  "State or federally issued driver's license"
 * #passport         "Official document issued by a government, certifying identity and citizenship"
 * #gov-id           "State or federally issues identification card"
@@ -17,6 +18,7 @@ CodeSystem:     LegalDocumentSystemCodeSystem
 Id:             legal-document-system
 Title:          "Legal Document System Codes"
 Description:    "Codes indicating the system of legal document used for identification"
+* ^caseSensitive = false
 * #us-gov       "U.S. Federal Goverment"
 * #us-al-gov   "Alabama State Government"
 * #us-ak-gov   "Alaska State Government"
