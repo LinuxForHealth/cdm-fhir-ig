@@ -17,8 +17,8 @@ Description:    "Sample observation showing a high blood pressure panel"
 * identifier[0].assigner.display = "Acme Health - EMR1"
 
 * status = #final
-* category = http://terminology.hl7.org/CodeSystem/observation-category#??vital-signs
-* code = http://loinc.org#35094-2 "Blood pressure panel"
+* category = OBSERVATION-CATEGORY#vital-signs
+* code = LOINC#35094-2 "Blood pressure panel"
 
 * subject = Reference(CDMPatientInstance)
 
@@ -27,27 +27,27 @@ Description:    "Sample observation showing a high blood pressure panel"
 
 * performer = Reference(CDMPractitionerRole-EMR-PCP)
 
-* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#HH "Critical high"
+* interpretation = hOBSERVATION-INTERPRETATION#HH "Critical high"
 * bodySite = SNOMED#368209003 "Right arm"
 
-* component[0].code = http://loinc.org#8480-6 "Systolic blood pressure"
+* component[0].code = LOINC#8480-6 "Systolic blood pressure"
 * component[0].valueQuantity.value = 159
-* component[0].valueQuantity.unit = "mmHg"
+* component[0].valueQuantity.unit = "mm[Hg]"
 * component[0].valueQuantity.system = "http://unitsofmeasure.org"
 * component[0].valueQuantity.code = #mm[Hg]
 * component[0].valueQuantity.extension[convertedQuantity].valueQuantity.value = 159
-* component[0].valueQuantity.extension[convertedQuantity].valueQuantity.unit = "mmHg"
+* component[0].valueQuantity.extension[convertedQuantity].valueQuantity.unit = "mm[Hg]"
 * component[0].valueQuantity.extension[convertedQuantity].valueQuantity.system = "http://unitsofmeasure.org"
-* component[0].valueQuantity.extension[convertedQuantity].valueQuantity.code = #mmHg
-* component[0].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#HH "Critical high"
+* component[0].valueQuantity.extension[convertedQuantity].valueQuantity.code = #mm[Hg]
+* component[0].interpretation = OBSERVATION-INTERPRETATION#HH "Critical high"
 
-* component[1].code = http://loinc.org#8462-4 "Diastolic blood pressure"
+* component[1].code = LOINC#8462-4 "Diastolic blood pressure"
 * component[1].valueQuantity.value = 108
-* component[1].valueQuantity.unit = "mmHg"
-* component[1].valueQuantity.system = "http://unitsofmeasure.org"
+* component[1].valueQuantity.unit = "mm[Hg]"
+* component[1].valueQuantity.system = UCUM-UNIT
 * component[1].valueQuantity.code = #mm[Hg]
 * component[1].valueQuantity.extension[convertedQuantity].valueQuantity.value = 108
-* component[1].valueQuantity.extension[convertedQuantity].valueQuantity.unit = "mmHg"
-* component[1].valueQuantity.extension[convertedQuantity].valueQuantity.system = "http://unitsofmeasure.org"
-* component[1].valueQuantity.extension[convertedQuantity].valueQuantity.code = #mmHg
-* component[1].interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#HH "Critical high"
+* component[1].valueQuantity.extension[convertedQuantity].valueQuantity.unit = "mm[Hg]"
+* component[1].valueQuantity.extension[convertedQuantity].valueQuantity.system = UCUM-UNIT
+* component[1].valueQuantity.extension[convertedQuantity].valueQuantity.code = #mm[Hg]
+* component[1].interpretation =OBSERVATION-INTERPRETATION#HH "Critical high"
