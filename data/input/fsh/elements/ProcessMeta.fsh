@@ -179,11 +179,11 @@ Title:          "Element Source Classification"
 Description:    "Classification of the origin of the data value associated to a given element in a FHIR resource. The intent is that this extension value should be populated with a code from the process-meta-source-classification valueset."
 * value[x] only code
 
-
 CodeSystem:     ProcessMetaSourceClassification
 Id:             process-meta-source-classification
 Title:          "Classification of the origin of data"
 Description:    "Identifies the class of origin of the data elements"
+* ^caseSensitive = true
 * #system-of-record      "System of record"       "Primary data that originates from the source system of record or the data integrator."
 * #derived    "Derived"     "Derived data produced by a data processor that interprets, aggregates or in some other way enhances the source data."
 

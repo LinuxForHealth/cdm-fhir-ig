@@ -36,6 +36,7 @@ CodeSystem:     PatientImportanceCodeSystem
 Id:             patient-importance
 Title:          "Patient Importance Codes"
 Description:    "Patient status code examples"
+* ^caseSensitive = true
 * #bad-debt                 "Bad Debt"                                          "Patient is in collections or has uncollected or overdue payments on account"
 * #do-not-contact           "Do Not Contact"                                    "Patient is flagged to prevent automated communications"
 * #no-comm-health-reminder  "No Communication - Health Reminders"               "Patient is falgged to prevent the communication of health reminders"
