@@ -50,4 +50,4 @@ Description:    "Sample observation showing a high blood pressure panel"
 * component[1].valueQuantity.extension[convertedQuantity].valueQuantity.unit = "mm[Hg]"
 * component[1].valueQuantity.extension[convertedQuantity].valueQuantity.system = UCUM-UNIT
 * component[1].valueQuantity.extension[convertedQuantity].valueQuantity.code = #mm[Hg]
-* component[1].interpretation =OBSERVATION-INTERPRETATION#HH "Critical high"
+* component[1].interpretation = OBSERVATION-INTERPRETATION#HH "Critical high"
