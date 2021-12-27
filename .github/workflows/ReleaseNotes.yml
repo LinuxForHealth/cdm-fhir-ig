@@ -63,11 +63,10 @@ jobs:
 
       - name: Install Dependencies
         run:  |
-          apt-get update
-          apt-get install iputils-ping
           npm install
           gem install jekyll
           mvn clean install
+
 
       - name: Version Info
         run:  |
