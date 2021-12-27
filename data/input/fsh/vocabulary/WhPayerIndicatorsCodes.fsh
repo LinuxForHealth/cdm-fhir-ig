@@ -2,7 +2,7 @@ CodeSystem:     WhPayerIndicatorsCodeSystem
 Id:             wh-payer-indicators
 Title:          "Health Data Connect Indicator Codes"
 Description:    "IBM® Health Data Connect indicator type code"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #Y    "Yes"     "Positive indication"
 * #N    "No"      "Negative indication"
 * #E    "E"       "Unknown or exception indication. For example, Enrollment may not have any claims." 

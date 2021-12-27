@@ -2,7 +2,7 @@ CodeSystem:     PatientStatusCodeSystem
 Id:             patient-status
 Title:          "Patient Status Codes"
 Description:    "Patient status code examples"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #anonymous        "Anonymous"                 "Patient does not provide true identity or identification"
 * #asl              "American Sign Language"    "Patient communicates using American Sign Language"
 * #blind            "Blind"                     "Patient is blind or legally blind."

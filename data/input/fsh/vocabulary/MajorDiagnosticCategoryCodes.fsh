@@ -2,7 +2,7 @@ CodeSystem:     WHPayerMajorDiagnosticCategoryCodeSystem
 Id:             wh-payer-major-diagnostic-category
 Title:          "Health Data Connect Major Diagnostic Category Codes"
 Description:    "IBM® Health Data Connect standard major diagnostic category codes"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #0	"Missing/Invalid Diagnosis"     "Missing/Invalid Diagnosis"
 * #1	"Nervous"                       "Nervous"
 * #2	"Eye"                           "Eye"

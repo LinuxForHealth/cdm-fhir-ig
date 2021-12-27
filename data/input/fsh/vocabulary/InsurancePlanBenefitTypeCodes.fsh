@@ -2,7 +2,7 @@ CodeSystem:     InsurancePlanBenefitTypeCodeSystem
 Id:             insurance-plan-benefit-type
 Title:          "Insurance Plan Benefit Type Codes"
 Description:    "The codes that indicates the specific types of costs (admin fees, premiums, etc.) that may be tied to a member based on their Insurance plan cost category"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #administrative-fee          "Administrative Fee"              "Indicates the administrative fee for the component on the eligibility data"
 * #capitation-amount           "Capitation Amount"               "Indicates the pre-paid amount, on the eligibility data, paid to plans or providers under risk-based managed care contracts"
 * #employee-contribution       "Employee Contribution"           "Indicates the employee premium contribution for the component on the eligibility data"

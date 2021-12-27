@@ -2,14 +2,14 @@ CodeSystem: HipaaRelationshipCodeSystem
 Id:         hipaa-relationship
 Title:      "HIPAA Relationship Codes"
 Description: "HIPAA standard codes for the relationship of the member to the contract holder"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #01        "Spouse"                             "Spouse"
 * #03        "Father/Mother"                      "Father/Mother"
 * #04        "Grandfather/Grandmother"            "Grandfather/Grandmother"
 * #05        "Grandson/Granddaughter"             "Grandson/Granddaughter"
 * #06        "Uncle/Aunt"                         "Uncle/Aunt"
 * #07        "Nephew/Niece"                       "Nephew/Niece"
-* #08        "Cousin"                             "Cousin"                        
+* #08        "Cousin"                             "Cousin"
 * #09        "Adopted Child"                      "Adopted dhild"
 * #10        "Foster Child"                       "Foster dhild"
 * #11        "Son-in-law/Daughter-in-law"         "Son-in-law/Daughter-in-law"

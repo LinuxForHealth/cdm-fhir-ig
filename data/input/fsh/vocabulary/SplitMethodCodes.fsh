@@ -2,7 +2,7 @@ CodeSystem: SplitMethodCodeSystem
 Id:         split-method
 Title:      "Split Method Codes"
 Description: "Codes indicating methods used to identify matched entities to split"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #automated        "Automoted matching algorithm or model identified an invalid match"
 * #manual           "Manual split performed by a human"
 * #none             "No split performed or identifed"

@@ -2,7 +2,7 @@ CodeSystem:     NCPDPDispenseAsWrittenCodeSystem
 Id:             ncpdp-dispense-as-written
 Title:          "NCPDP Dispense As Written Codes"
 Description:    "The NCPDP industry standard description of how the product was dispensed."
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #0      "0"                 "No Product Selection Indicated"
 * #1	  "1"                 "Prescriber Required (no sub)"
 * #2	  "2"                 "Patient Requested Product"

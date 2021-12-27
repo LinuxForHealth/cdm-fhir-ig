@@ -2,7 +2,7 @@ CodeSystem:     RxMailOrRetailCodeSystem
 Id:             rx-mail-or-retail
 Title:          "Rx Mail Or Retail Codes"
 Description:    "IBM® Health Data Connect standard codes indicating the purchase place of the prescription."
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #m	"Mail Order"    "Mail Order"
 * #r	"Retail"        "Retail"
 

@@ -2,7 +2,7 @@ CodeSystem:     WhPayerEmployeeStatusCodeSystem
 Id:             wh-payer-employee-status-code
 Title:          "Health Data Connect Employee Status Codes"
 Description:    "IBM® Health Data Connect standard employee status value set for claims"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #1	"Active Full Time"              "Active Full Time"
 * #2	"Active Part-Time/Seasonal"     "Active Part-Time/Seasonal"
 * #3	"Early Retiree"                 "Early Retiree"

@@ -2,7 +2,7 @@ CodeSystem:     IdentifierTypeCodeSystem
 Id:             identifier-type
 Title:          "Identifier Type Codes"
 Description:    "Extended set of Identifier type code for IBM Health Data Connect Common Data Model resources"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #DRI      "Derived Resource Identifier"           "Business identifier for derived resources created by an internal IBM process"
 * #MDI      "Match Data Identifier"                 "Shared business identifier that is created to link matched resources during MDI match processing"
 * #RXN      "Prescription Number"                   "RX or prescription number for a drug"

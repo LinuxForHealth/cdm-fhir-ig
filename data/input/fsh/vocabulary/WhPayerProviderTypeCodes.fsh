@@ -2,7 +2,7 @@ CodeSystem:     WhPayerProviderTypeCodeSystem
 Id:             wh-payer-provider-type
 Title:          "Health Data Connect Provider Type Codes"
 Description:    "IBM® Health Data Connect standard provider type code as reported on the claim."
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #1    "Acute Care Hospital"                   ""
 * #5	"Ambulatory Surgery Centers"            ""
 * #6	"Urgent Care Facility"                  ""

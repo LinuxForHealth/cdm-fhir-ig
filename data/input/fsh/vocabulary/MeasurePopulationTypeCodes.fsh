@@ -2,7 +2,7 @@ CodeSystem:     MeasurePopulationTypeCodeSystem
 Id:             measure-population-type
 Title:          "Measure Population Type Codes"
 Description:    "IBM Watson Health measure population types"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #care-gap "Care Gap" "The care gap population contains patients and events that are non-compliant for the numerator, lacking the clinical action required to satisfy the conditions of the measure. These exclude pateints or events that are in exclusion or exception populations. The care gap is the primary focus for engagement."
 
 ValueSet:       MeasurePopulationTypeValueSet

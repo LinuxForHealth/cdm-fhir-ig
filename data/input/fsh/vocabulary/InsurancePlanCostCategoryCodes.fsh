@@ -2,7 +2,7 @@ CodeSystem:     InsurancePlanCostCategoryCodeSystem
 Id:             insurance-plan-cost-category
 Title:          "Insurance Plan Cost Category Codes"
 Description:    "The codes that indicates the specific benefit categories a member may have (medical, dental, vision, etc) based on benefit election."
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #drug                       "Drug"                       ""
 * #medical                    "Medical"                    ""
 * #other                      "Other"                      ""

@@ -2,7 +2,7 @@ CodeSystem:     WhPayerTanfBenefitCodeSystem
 Id:             wh-payer-tanf-benefit
 Title:          "Health Data Connect TANF Benefit codes"
 Description:    "Standard code of the Temporary Assistance for Needy Families (TANF) benefits for the person"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #0              "Not eligible for Medicaid"        ""           
 * #1              "Did not receive TANF benefits"    ""
 * #2              "Did receive TANF benefits"        ""

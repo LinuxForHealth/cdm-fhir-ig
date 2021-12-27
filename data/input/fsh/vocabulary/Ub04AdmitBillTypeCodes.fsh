@@ -2,7 +2,7 @@ CodeSystem:     Ub04AdmitBillTypeCodeSystem
 Id:             ub04-admit-bill-type
 Title:          "UB04 Admit Bill Type Code System"
 Description:    "Codes for the UB04 admission billing type"
-* ^caseSensitive = false
+* ^caseSensitive = true
 * #0110 "Hospital / Inpatient (Medicare Part A) / Nonpayment or Zero Claims"                      ""
 * #0111 "Hospital / Inpatient (Medicare Part A) / Admit Through Discharge Claim"                  ""
 * #0112 "Hospital / Inpatient (Medicare Part A) / Interim (First Claim)"                          ""
