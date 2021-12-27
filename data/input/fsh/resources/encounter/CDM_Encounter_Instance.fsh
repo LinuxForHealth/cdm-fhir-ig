@@ -20,7 +20,7 @@ Description:    "Sample encounter"
 
 * class = ENCOUNTER-CLASS#AMB "ambulatory"
 * type = SNOMED#270427003 "Patient-initiated encounter"
-* serviceType = SERVICE-TYPE#367 "Hypertension"
+* serviceType = SERVICE-TYPE#367
 
 * priority = ENCOUNTER-PRIORITY#R "routine"
 

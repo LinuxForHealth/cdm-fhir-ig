@@ -14,6 +14,8 @@ Description:    "This resource provides: the claim details; adjudication details
 * identifier.value 1..1
 * identifier.type  from IdentifierTypeValueSet (extensible) 
 
+* priority                from 	http://terminology.hl7.org/ValueSet/process-priority (example)
+
 * type                    from ClaimTypeValueSet (extensible)
 * subType                 from WhClaimSubtypeValueSet (extensible)
 * supportingInfo.category from ClaimSupportingInfoCategoryValueSet (extensible)

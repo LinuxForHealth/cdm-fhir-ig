@@ -17,9 +17,9 @@ Description:    "Sample appointment in booked status"
 * identifier[0].assigner.display = "Acme Health - EMR1"
 
 * status = #booked
-* serviceCategory = SERVICE-CATEGORY#17 "General Practice"
-* serviceType = SERVICE-TYPE#367 "Hypertension"
-* specialty =  SNOMED#394802001   "General medicine"
+* serviceCategory = http://terminology.hl7.org/CodeSystem/service-category#17
+* serviceType = http://terminology.hl7.org/CodeSystem/service-type#367
+* specialty =  SNOMED#394802001 "General medicine"
 * appointmentType = APPOINTMENT-TYPE#CHECKUP
 * reasonCode = SNOMED#1201005  "Benign essential hypertension" 
 
