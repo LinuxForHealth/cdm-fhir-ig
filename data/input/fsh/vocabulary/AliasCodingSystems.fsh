@@ -95,5 +95,3 @@ Alias: NUBC-PATIENT-DISCHARGE     = https://www.nubc.org/patient-discharge
 Alias: NUBC-OCCURRENCE-CODE-CS    = http://terminology.hl7.org/CodeSystem/v2-0350
 Alias: CURRENCIES                 = https://www.hl7.org/fhir/valueset-currencies
 Alias: REMIT-ADVICE-REMARK-CODE   = https://x12.org/codes/remittance-advice-remark-codes
-
-
