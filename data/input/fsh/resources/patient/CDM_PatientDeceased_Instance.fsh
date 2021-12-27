@@ -43,7 +43,7 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 * name.family          = "Lastname"
 * birthDate            = "1960-02-29"
 * deceasedDateTime     = "2020-02-28T00:00:00Z"
-* maritalStatus.coding = http://acme-health.com/CodeSystem/local-marital-status
+* maritalStatus.coding = http://acme-health.com/CodeSystem/local-marital-status#Married
 
 * gender = #male
 * extension[sexAssignedAtBirth].valueCodeableConcept = SexAssignedAtBirthCodeSystem#male
