@@ -19,7 +19,7 @@ Description:    "IBM Watson Health measure population types for qualiity measure
 * codes from system http://terminology.hl7.org/CodeSystem/measure-population
 * codes from system MeasurePopulationTypeCodeSystem
 * exclude MEASURE-POPULATION#measure-population
-* exclude MEASURE-POPULATION#measure-population-exlusion
+* exclude MEASURE-POPULATION#measure-population-exclusion
 * exclude MEASURE-POPULATION#measure-observation
 
 
