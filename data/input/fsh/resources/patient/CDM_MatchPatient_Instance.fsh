@@ -135,7 +135,7 @@ Description:    "Sample of a matched patient linked to multiple source patients,
 * extension[seeAlso][3].extension[matchDetail][2].extension[matchConfidenceScore].valueDecimal = 0.0
 // Adding this elememt by index on this one to avoid Sushi issue that causes dangling extension urls on other links within the same resource
 // This occurs when you use an extension in one element, but not in another sibling element on the same instance
-* extension[seeAlso][3].extension[6].url = "http://hl7.org/fhir/StructureDefinition/split-method"
+* extension[seeAlso][3].extension[6].url = "http://ibm.com/fhir/cdm/StructureDefinition/split-method"
 * extension[seeAlso][3].extension[6].valueCodeableConcept = MatchMethodCodeSystem#manual
 * extension[seeAlso][3].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
 * extension[seeAlso][3].extension[7].valueString = "IBM"
