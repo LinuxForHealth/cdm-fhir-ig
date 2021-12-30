@@ -81,7 +81,7 @@ Usage:          #example
 * extension[communicationOptOut][3].extension[communicationMode].valueCodeableConcept = EngagementCommunicationModeCodeSystem#sms
 * extension[communicationOptOut][3].extension[effectivePeriod].valuePeriod.start = "2020-01-01T00:00:00Z"
 //* extension[communicationOptOut][3].extension[communicationCareGap].valueString = "dm-hba1c-caregap-poor-control"
-* extension[communicationOptOut][3].extension[4].url = "http://hl7.org/fhir/StructureDefinition/communication-care-gap"
+* extension[communicationOptOut][3].extension[4].url = "http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap"
 * extension[communicationOptOut][3].extension[4].valueString = "dm-hba1c-caregap-poor-control"
 * extension[communicationOptOut][3].extension[5].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
 * extension[communicationOptOut][3].extension[5].valueString = "IBM"
