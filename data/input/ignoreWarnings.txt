@@ -4,12 +4,20 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
+# Some profiles are abstract and may not have concrete examples
+The Implementation Guide contains no examples for this profile
+The Implementation Guide contains no examples for this extension
+
 # X12 standard valuesets are not defined in a FHIR IG that can be validated by the FHIR IG Publisher
 ValueSet https://x12.org/codes/claim-status-codes not found by validator
 ValueSet https://x12.org/codes/claim-status-category-codes not found by validator
 Code System URI 'https://x12.org/codes/claim-status-category-codes' is unknown so the code cannot be validated
 Code System URI 'https://x12.org/codes/claim-status-codes' is unknown so the code cannot be validated
 Code System URI 'https://x12.org/codes/remittance-advice-remark-codes' is unknown so the code cannot be validated
+The valueSet reference https://x12.org/codes/claim-status-codes on element Claim.extension.valueCodeableConcept could not be resolved
+The valueSet reference https://x12.org/codes/claim-status-codes on element Claim.extension.value[x] could not be resolved
+The valueSet reference https://x12.org/codes/claim-status-category-codes on element Extension.valueCodeableConcept could not be resolved
+The valueSet reference https://x12.org/codes/claim-status-category-codes on element Extension.value[x] could not be resolved
 
 # CMS standard valuesets are not defined in a FHIR IG that can be validated by the FHIR IG Publisher
 Code System URI 'https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set' is unknown so the code cannot be validated
@@ -18,6 +26,8 @@ Code System URI 'https://www.cms.gov/icd10m/version37-fullcode-cms/fullcode_cms/
 # NUBC standard valuesets are not defined in a FHIR IG that can be validated by the FHIR IG Publisher
 Code System URI 'https://www.nubc.org/patient-discharge' is unknown so the code cannot be validated
 Code System URI 'https://www.nubc.org/RevenueCodes' is unknown so the code cannot be validated
+
+https://x12.org/codes/claim-status-code
 
 # AMA CPT standard valuesets are not defined in a FHIR IG that can be validated by the FHIR IG Publisher
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
@@ -70,6 +80,7 @@ Code System URI 'http://acme-health.com/CodeSystem/local-employer' is unknown so
 Code System URI 'http://acme-health.com/CodeSystem/local-enrollment-type' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-error-detail' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-error-header' is unknown so the code cannot be validated
+Code System URI 'http://acme-health.com/CodeSystem/local-ethnicity-code' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-exception-detail' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-exception-header' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-excluded-reason' is unknown so the code cannot be validated
@@ -80,13 +91,15 @@ Code System URI 'http://acme-health.com/CodeSystem/local-explanation-of-benefits
 Code System URI 'http://acme-health.com/CodeSystem/local-financial-system' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-funding-arrangement' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-geographic-job-location' is unknown so the code cannot be validated
+Code System URI 'http://acme-health.com/CodeSystem/local-immigration-status' is unknown so the code cannot be validated
+Code System URI 'http://acme-health.com/CodeSystem/local-income-level' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-job-class-code' is unknown so the code cannot be validated
-Code System URI 'http://acme-health.com/CodeSystem/local-member-employee-indicator' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-level-of-care' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-line-of-business' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-managed-care-plan-type' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-marital-status' is unknown so the code cannot be validated
-Code System URI 'http://acme-health.com/CodeSystem/local-income-level' is unknown so the code cannot be validated
+Code System URI 'http://acme-health.com/CodeSystem/local-member-employee-indicator' is unknown so the code cannot be validated
+Code System URI 'http://acme-health.com/CodeSystem/local-nonstandard-language' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-participating-plan' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-penalty-type' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-physical-job-location' is unknown so the code cannot be validated
@@ -94,6 +107,7 @@ Code System URI 'http://acme-health.com/CodeSystem/local-place-of-service' is un
 Code System URI 'http://acme-health.com/CodeSystem/local-provider-type' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-race-code' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-rating-area' is unknown so the code cannot be validated
+Code System URI 'http://acme-health.com/CodeSystem/local-referral-type' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-region-code' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-reimburse-type' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-restricted-benefits' is unknown so the code cannot be validated
