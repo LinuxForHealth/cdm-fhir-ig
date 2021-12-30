@@ -46,20 +46,20 @@ ValueSet:       PatientStatusValueSet
 Id:             patient-status
 Title:          "Patient Status Value Set"
 Description:    "Examples of customer-specific patient status codes"
-* codes from system http://terminology.hl7.org/ValueSet/v3-PatientImportance
+* codes from valueset http://terminology.hl7.org/ValueSet/v3-PatientImportance
 * codes from system PatientStatusCodeSystem
 
 ValueSet:       PatientImportanceValueSet
 Id:             patient-importance
 Title:          "Patient Importance Value Set"
 Description:    "Patient importance status codes derived from customer-specific code mappings, used to trigger or limit IBM Health Data Connect patient operations."
-* codes from system http://terminology.hl7.org/ValueSet/v3-PatientImportance
+* codes from valueset http://terminology.hl7.org/ValueSet/v3-PatientImportance
 * codes from system PatientImportanceCodeSystem
 
 ValueSet:       CitizenshipValueSet
 Id:             citizenship
 Title:          "Citizenship Value Set"
 Description:    "Citizenship status codes"
-* codes from system     http://hl7.org/fhir/ValueSet/iso3166-1-2
-* codes from system     http://hl7.org/fhir/ValueSet/iso3166-1-3
-* codes from system    	http://hl7.org/fhir/ValueSet/iso3166-1-N
+* codes from valueset http://hl7.org/fhir/ValueSet/iso3166-1-2
+* codes from valueset http://hl7.org/fhir/ValueSet/iso3166-1-3
+* codes from valueset http://hl7.org/fhir/ValueSet/iso3166-1-N
