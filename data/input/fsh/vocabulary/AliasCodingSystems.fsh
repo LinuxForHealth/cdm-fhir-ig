@@ -57,6 +57,8 @@ Alias: OBSERVATION-INTERPRETATION   = http://terminology.hl7.org/CodeSystem/v3-O
 // PROCEDURE
 Alias: EVENT-STATUS = http://hl7.org/fhir/event-status
 
+// MEDICATION
+Alias: MEDICATION-REQUEST-STATUS = http://hl7.org/fhir/CodeSystem/medicationrequest-status
 
 // MATCHING
 Alias: MATCH-GRADE = http://terminology.hl7.org/CodeSystem/match-grade
