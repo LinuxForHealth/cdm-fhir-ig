@@ -20,6 +20,7 @@ Extension:      InsightValue
 Id:             insight-value
 Title:          "Insight Value"
 Description:    "Field value that this insight result pertains to."
+* value[x] only boolean or string or integer or decimal or instant or time or date or dateTime or base64Binary or uri or Coding or CodeableConcept or Annotation or Ratio or Period or Range or Attachment or Quantity 
 
 Extension:      InsightBasedOnValue
 Id:             based-on-value
