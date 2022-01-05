@@ -52,7 +52,7 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * extension[statusCode] ^short      = "Customer-specific patient status codes"
 * extension[statusCode] ^definition = "Customer-specific patient status codes"
 
-* extension contains PatientImportance named patientImportance 0..*
+* extension contains PatientImportance named patientImportance 0..1
 * extension[patientImportance].valueCodeableConcept from PatientImportanceValueSet (extensible)
 * extension[patientImportance] ^short      = "The importance of the patient.  For example: VIP, DO-NOT-CONTACT, etc."
 * extension[patientImportance] ^definition = "The importance of the patient.  For example: VIP, DO-NOT-CONTACT, etc."

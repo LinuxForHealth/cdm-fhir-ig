@@ -30,8 +30,8 @@ Usage:          #example
 * extension[statusCode][1].valueCodeableConcept = PatientStatusCodeSystem#confidential
 * extension[statusCode][2].valueCodeableConcept = PatientStatusCodeSystem#test
 
-* extension[patientImportance][0].valueCodeableConcept = PatientImportanceCodeSystem#bad-debt
-* extension[patientImportance][1].valueCodeableConcept = PatientImportanceCodeSystem#do-not-contact
+* extension[patientImportance].valueCodeableConcept.coding[0] = PatientImportanceCodeSystem#bad-debt
+* extension[patientImportance].valueCodeableConcept.coding[1] = PatientImportanceCodeSystem#do-not-contact
 
 * gender = #male
 * extension[sexAssignedAtBirth].valueCodeableConcept = SexAssignedAtBirthCodeSystem#male
