@@ -27,10 +27,10 @@ Description:    "Example of an observation indicating that the patient was in a 
 * effectivePeriod.start = "2020-02-14"
 * effectivePeriod.end = "2020-02-28"
 
-* extension[canonicalMeasure].valueCanonical = "Measure-QualityMeasureExample.html"
+* extension[canonicalMeasure].valueCanonical = Canonical(QualityMeasureExample)
 * extension[measurePopulationId].valueId = "dm-hba1c-caregap-poor-control"
 * extension[assignedPractitioner][0].valueReference = Reference(CDMPractitionerRole-Attributed-PCP)
-* extension[assignedPractitioner][1].valueReference = Reference(AttributedPractitioner2)
+* extension[assignedPractitioner][1].valueReference = Reference(CDMPractitionerRole-EMR-PCP)
 
 * extension[careGapComplianceMet].valueBoolean = true
 
@@ -48,5 +48,5 @@ Usage:          #inline
 * subject = Reference(CDMPatientInstance)
 * effectivePeriod.start = "2020-02-01"
 * effectivePeriod.end = "2020-02-13"
-* extension[canonicalMeasure].valueCanonical = "Measure-QualityMeasureExample.html"
+* extension[canonicalMeasure].valueCanonical = Canonical(QualityMeasureExample)
 * extension[measurePopulationId].valueId = "dm-hba1c-caregap-poor-control"

@@ -31,7 +31,7 @@ Description:    "Example measure report containing individual measure results fo
 * period.start = "2020-01-01"
 * period.end = "2020-12-31"
 
-* measure = "Measure-QualityMeasureExample.html"
+* measure = Canonical(QualityMeasureExample)
 
 * improvementNotation = MEASURE-IMPROVEMENT-NOTATION#increase
 

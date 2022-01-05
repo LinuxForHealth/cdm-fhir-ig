@@ -19,6 +19,8 @@ Description:    "Example measure containing criteria for measure rules"
 * identifier[0].value = "8f3a1491-a07f-4860-8977-e7dac7398175"
 * identifier[0].assigner.display = "IBM"
 
+* url = "https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html"
+
 * version = "1.0"
 * name = "Diabetes_HbA1c_Test_Performed"
 * status = #active
@@ -42,7 +44,7 @@ Description:    "Example measure containing criteria for measure rules"
 
 * topic = DEFINITION-TOPIC#treatment
 
-* library = "Measure/Library"
+* library = "http://sample-measure-library.com/cql-library"
 
 * scoring = MEASURE-SCORING#proportion
 * type = MEASURE-TYPE#process

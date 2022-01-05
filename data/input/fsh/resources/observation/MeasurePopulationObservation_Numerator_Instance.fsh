@@ -27,7 +27,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 * effectivePeriod.start = "2020-02-14"
 * effectivePeriod.end = "2020-02-28"
 
-* extension[canonicalMeasure].valueCanonical = "Measure-QualityMeasureExample.html"
+* extension[canonicalMeasure].valueCanonical = Canonical(QualityMeasureExample)
 * extension[measurePopulationId].valueId = "dm-hba1c-num"
 * extension[assignedPractitioner].valueReference = Reference(CDMPractitionerRole-Attributed-PCP)
 
@@ -46,5 +46,5 @@ Usage:          #inline
 * subject = Reference(CDMPatientInstance)
 * effectivePeriod.start = "2020-02-01"
 * effectivePeriod.end = "2020-02-13"
-* extension[canonicalMeasure].valueCanonical = "Measure-QualityMeasureExample.html"
+* extension[canonicalMeasure].valueCanonical = Canonical(QualityMeasureExample)
 * extension[measurePopulationId].valueId = "dm-hba1c-num"

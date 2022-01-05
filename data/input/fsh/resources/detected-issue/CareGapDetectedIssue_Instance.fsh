@@ -26,27 +26,34 @@ Description:    "Example of an detected issue indicating that the patient was in
 * identifiedPeriod.start = "2020-02-14"
 * identifiedPeriod.end = "2020-02-28"
 
-* extension[canonicalMeasure].valueCanonical = "Measure-QualityMeasureExample.html"
+* extension[canonicalMeasure].valueCanonical = Canonical(QualityMeasureExample)
 * extension[measurePopulationId].valueId = "dm-hba1c-caregap-poor-control"
 * extension[assignedPractitioner][0].valueReference = Reference(CDMPractitionerRole-Attributed-PCP)
-* extension[assignedPractitioner][1].valueReference = Reference(AttributedPractitioner2)
-
+* extension[assignedPractitioner][1].valueReference = Reference(CDMPractitionerRole-EMR-PCP)
 * extension[careGapComplianceDisplayName].valueString = "HbA1c Test"
 * extension[careGapComplianceFrequency].valueString = "Once yearly"
 * extension[careGapComplianceMet].valueBoolean = true
-
 * extension[relatedIssue].valueReference = Reference(RelatedCareGapDetectedIssue)
 
 Instance:       RelatedCareGapDetectedIssue
 InstanceOf:     CareGapDetectedIssue
-Usage:          #inline
+Usage:          #example
+Title:          "Related Care Gap Detected Issue"
+Description:    "Example of a related care gap detected issue that has been resolved or reassigned to another provider."
 * identifier.type = IdentifierTypeCodeSystem#DRI
 * identifier.system = "http://ibm.com/fhir/cdm/care-gap-detected-issue"
 * identifier.value = "4dee9608-e1e0-4653-9f75-b7bdb8d3a968"
 * identifier.assigner.display = "IBM"
+
 * status = #final
 * patient = Reference(CDMPatientInstance)
 * identifiedPeriod.start = "2020-02-01"
 * identifiedPeriod.end = "2020-02-13"
-* extension[canonicalMeasure].valueCanonical = "Measure-QualityMeasureExample.html"
+
+* extension[canonicalMeasure].valueCanonical = Canonical(QualityMeasureExample)
 * extension[measurePopulationId].valueId = "dm-hba1c-caregap-poor-control"
+* extension[assignedPractitioner][0].valueReference = Reference(CDMPractitionerRole-EMR-PCP)
+* extension[careGapComplianceDisplayName].valueString = "HbA1c Test"
+* extension[careGapComplianceFrequency].valueString = "Once yearly"
+* extension[careGapComplianceMet].valueBoolean = true
+* extension[relatedIssue].valueReference = Reference(CareGapDetectedIssueExample)

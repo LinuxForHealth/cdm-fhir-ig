@@ -30,7 +30,7 @@ Description:    "Example measure report containing measure results for an attrib
 * period.start = "2020-01-01"
 * period.end = "2020-12-31"
 
-* measure = "Measure-QualityMeasureExample.html"
+* measure = Canonical(QualityMeasureExample)
 
 * improvementNotation = MEASURE-IMPROVEMENT-NOTATION#increase
 
