@@ -9,5 +9,5 @@ ValueSet:       WhPayerSubscriberRelationshipCodeValueSet
 Id:             wh-payer-subscriber-relationship
 Title:          "Health Data Connect Subscriber Relationship Value Set"
 Description:    "IBM® Health Data Connect subscriber relationship value set for the relationship of the member to the contract holder"
-* codes from system SUBSCRIBER-RELATIONSHIP
+* codes from system http://terminology.hl7.org/CodeSystem/subscriber-relationship
 * codes from system WhPayerSubscriberRelationshipCodeSystem
