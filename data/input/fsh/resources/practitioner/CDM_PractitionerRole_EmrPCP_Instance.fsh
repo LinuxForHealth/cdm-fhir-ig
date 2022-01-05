@@ -22,11 +22,3 @@ Usage:          #example
 
 * code =  SNOMED#59058001 "General physician"
 * specialty = SNOMED#394814009 "General practice (specialty)"
-
-Instance:   DrDoug
-InstanceOf: Practitioner
-Usage:      #inline
-
-Instance:   DougFamilyMedical
-InstanceOf: Location
-Usage:      #inline

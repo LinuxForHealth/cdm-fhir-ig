@@ -33,150 +33,117 @@ Description:    "Sample of a matched patient linked to multiple source patients,
 * extension[sexAssignedAtBirth].valueCodeableConcept = SexAssignedAtBirthCodeSystem#female
 
 // AUTOMATED HIGH CONFIDENCE MATCH 1 - EMR2 duplicate patient 1
-* extension[seeAlso][0].extension[matchSourceReference].valueReference = Reference(MatchedPatientSource-EMR2-PatA1)
+* extension[seeAlso][0].extension[matchSourceReference].valueReference = Reference(MatchedPatientSource-EMR2-PatientB)
 * extension[seeAlso][0].extension[matchMethod].valueCodeableConcept = MatchMethodCodeSystem#automated
 * extension[seeAlso][0].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][0].extension[matchConfidenceScore].valueDecimal = 100.0
 * extension[seeAlso][0].extension[matchPeriod].valuePeriod.start = "2020-02-12"
-* extension[seeAlso][0].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatA2)
+* extension[seeAlso][0].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatientC)
 * extension[seeAlso][0].extension[matchDetail][0].extension[matchCriteria].valueString = "Exact name match"
 * extension[seeAlso][0].extension[matchDetail][0].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][0].extension[matchDetail][0].extension[matchConfidenceScore].valueDecimal = 100.0
-* extension[seeAlso][0].extension[matchDetail][1].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatA2)
+* extension[seeAlso][0].extension[matchDetail][1].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatientC)
 * extension[seeAlso][0].extension[matchDetail][1].extension[matchCriteria].valueString = "Fuzzy match"
 * extension[seeAlso][0].extension[matchDetail][1].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][0].extension[matchDetail][1].extension[matchConfidenceScore].valueDecimal = 100.0
 /////
-* extension[seeAlso][0].extension[6].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][0].extension[6].valueString = "IBM"
-* extension[seeAlso][0].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
-* extension[seeAlso][0].extension[7].valueString = "Patient Match"
-* extension[seeAlso][0].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
-* extension[seeAlso][0].extension[8].valueString = "MDM"
-* extension[seeAlso][0].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-version"
-* extension[seeAlso][0].extension[9].valueString = "1.0"
-* extension[seeAlso][0].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
-* extension[seeAlso][0].extension[10].valueDateTime = "2020-01-01T03:01:00Z"
+* extension[seeAlso][0].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
+* extension[seeAlso][0].extension[7].valueString = "IBM"
+* extension[seeAlso][0].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
+* extension[seeAlso][0].extension[8].valueString = "Patient Match"
+* extension[seeAlso][0].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
+* extension[seeAlso][0].extension[9].valueString = "MDM"
+* extension[seeAlso][0].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-version"
+* extension[seeAlso][0].extension[10].valueString = "1.0"
+* extension[seeAlso][0].extension[11].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
+* extension[seeAlso][0].extension[11].valueDateTime = "2020-01-01T03:01:00Z"
 
 // AUTOMATED HIGH CONFIDENCE MATCH 2 - EMR2 duplicate patient 2
-* extension[seeAlso][1].extension[matchSourceReference].valueReference = Reference(MatchedPatientSource-EMR2-PatA1)
+* extension[seeAlso][1].extension[matchSourceReference].valueReference = Reference(MatchedPatientSource-EMR2-PatientB)
 * extension[seeAlso][1].extension[matchMethod].valueCodeableConcept = MatchMethodCodeSystem#automated
 * extension[seeAlso][1].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][1].extension[matchConfidenceScore].valueDecimal = 100.0
 * extension[seeAlso][1].extension[matchPeriod].valuePeriod.start = "2020-02-12"
-* extension[seeAlso][1].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatA2)
+* extension[seeAlso][1].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatientC)
 * extension[seeAlso][1].extension[matchDetail][0].extension[matchCriteria].valueString = "Exact name match"
 * extension[seeAlso][1].extension[matchDetail][0].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][1].extension[matchDetail][0].extension[matchConfidenceScore].valueDecimal = 100.0
-* extension[seeAlso][1].extension[matchDetail][1].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatA2)
+* extension[seeAlso][1].extension[matchDetail][1].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatientC)
 * extension[seeAlso][1].extension[matchDetail][1].extension[matchCriteria].valueString = "Fuzzy match"
 * extension[seeAlso][1].extension[matchDetail][1].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][1].extension[matchDetail][1].extension[matchConfidenceScore].valueDecimal = 100.0
 /////
-* extension[seeAlso][1].extension[6].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][1].extension[6].valueString = "IBM"
-* extension[seeAlso][1].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
-* extension[seeAlso][1].extension[7].valueString = "Patient Match"
-* extension[seeAlso][1].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
-* extension[seeAlso][1].extension[8].valueString = "MDM"
-* extension[seeAlso][1].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-version"
-* extension[seeAlso][1].extension[9].valueString = "1.0"
-* extension[seeAlso][1].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
-* extension[seeAlso][1].extension[10].valueDateTime = "2020-01-01T03:01:00Z"
+* extension[seeAlso][1].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
+* extension[seeAlso][1].extension[7].valueString = "IBM"
+* extension[seeAlso][1].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
+* extension[seeAlso][1].extension[8].valueString = "Patient Match"
+* extension[seeAlso][1].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
+* extension[seeAlso][1].extension[9].valueString = "MDM"
+* extension[seeAlso][1].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-version"
+* extension[seeAlso][1].extension[10].valueString = "1.0"
+* extension[seeAlso][1].extension[11].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
+* extension[seeAlso][1].extension[11].valueDateTime = "2020-01-01T03:01:00Z"
 
 // MANUAL MATCH BY CUSTOMER VIA WEB PORTAL - EMR1
-* extension[seeAlso][2].extension[matchSourceReference].valueReference = Reference(MatchedPatientSource-EMR1)
+* extension[seeAlso][2].extension[matchSourceReference].valueReference = Reference(MatchedPatientSource-EMR1-PatientA)
 * extension[seeAlso][2].extension[matchMethod].valueCodeableConcept = MatchMethodCodeSystem#manual
 * extension[seeAlso][2].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][2].extension[matchConfidenceScore].valueDecimal = 100.0
 * extension[seeAlso][2].extension[matchPeriod].valuePeriod.start = "2020-04-18"
-* extension[seeAlso][2].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatA1)
+* extension[seeAlso][2].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatientB)
 * extension[seeAlso][2].extension[matchDetail][0].extension[matchCriteria].valueString = "Exact name match"
 * extension[seeAlso][2].extension[matchDetail][0].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certainly-not
 * extension[seeAlso][2].extension[matchDetail][0].extension[matchConfidenceScore].valueDecimal = 0.0
-* extension[seeAlso][2].extension[matchDetail][1].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatA1)
+* extension[seeAlso][2].extension[matchDetail][1].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatientB)
 * extension[seeAlso][2].extension[matchDetail][1].extension[matchCriteria].valueString = "Fuzzy match"
 * extension[seeAlso][2].extension[matchDetail][1].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#possible
 * extension[seeAlso][2].extension[matchDetail][1].extension[matchConfidenceScore].valueDecimal = 70.0
-* extension[seeAlso][2].extension[matchDetail][2].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatA1)
+* extension[seeAlso][2].extension[matchDetail][2].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR2-PatientB)
 * extension[seeAlso][2].extension[matchDetail][2].extension[matchCriteria].valueString = "Manual User Match"
 * extension[seeAlso][2].extension[matchDetail][2].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][2].extension[matchDetail][2].extension[matchConfidenceScore].valueDecimal = 100.0
 /////
-* extension[seeAlso][2].extension[6].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][2].extension[6].valueString = "IBM"
-* extension[seeAlso][2].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
-* extension[seeAlso][2].extension[7].valueString = "Manual Patient Match"
-* extension[seeAlso][2].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
-* extension[seeAlso][2].extension[8].valueString = "Web Portal"
-* extension[seeAlso][2].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-version"
-* extension[seeAlso][2].extension[9].valueString = "1.0"
-* extension[seeAlso][2].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
-* extension[seeAlso][2].extension[10].valueDateTime = "2020-04-18T10:35:01Z"
+* extension[seeAlso][2].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
+* extension[seeAlso][2].extension[8].valueString = "IBM"
+* extension[seeAlso][2].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
+* extension[seeAlso][2].extension[9].valueString = "Manual Patient Match"
+* extension[seeAlso][2].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
+* extension[seeAlso][2].extension[10].valueString = "Web Portal"
+* extension[seeAlso][2].extension[11].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-version"
+* extension[seeAlso][2].extension[11].valueString = "1.0"
+* extension[seeAlso][2].extension[12].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
+* extension[seeAlso][2].extension[12].valueDateTime = "2020-04-18T10:35:01Z"
 
 // LOW CONFINDENCE MATCH WITH MANUAL SPLIT BY CUSTOMER VIA WEB PORTAL - AllScripts
-* extension[seeAlso][3].extension[matchSourceReference].valueReference = Reference(MatchedPatientSource-EMR3-PatA)
+* extension[seeAlso][3].extension[matchSourceReference].valueReference = Reference(MatchedPatientSource-EMR3-PatientD)
 * extension[seeAlso][3].extension[matchMethod].valueCodeableConcept = MatchMethodCodeSystem#manual
 * extension[seeAlso][3].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certainly-not
 * extension[seeAlso][3].extension[matchConfidenceScore].valueDecimal = 0.0
 * extension[seeAlso][3].extension[matchPeriod].valuePeriod.start = "2020-04-14"
 * extension[seeAlso][3].extension[matchPeriod].valuePeriod.end = "2020-04-18"
-* extension[seeAlso][3].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR1-PatA1)
+* extension[seeAlso][3].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR1-PatientA)
 * extension[seeAlso][3].extension[matchDetail][0].extension[matchCriteria].valueString = "Exact name match"
 * extension[seeAlso][3].extension[matchDetail][0].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certainly-not
 * extension[seeAlso][3].extension[matchDetail][0].extension[matchConfidenceScore].valueDecimal = 0.0
-* extension[seeAlso][3].extension[matchDetail][1].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR1-PatA1)
+* extension[seeAlso][3].extension[matchDetail][1].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR1-PatientA)
 * extension[seeAlso][3].extension[matchDetail][1].extension[matchCriteria].valueString = "Fuzzy match"
 * extension[seeAlso][3].extension[matchDetail][1].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#probable
 * extension[seeAlso][3].extension[matchDetail][1].extension[matchConfidenceScore].valueDecimal = 80.0
-* extension[seeAlso][3].extension[matchDetail][2].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR1-PatA1)
+* extension[seeAlso][3].extension[matchDetail][2].extension[matchComparedTo].valueReference = Reference(MatchedPatientSource-EMR1-PatientA)
 * extension[seeAlso][3].extension[matchDetail][2].extension[matchCriteria].valueString = "Manual User Split"
 * extension[seeAlso][3].extension[matchDetail][2].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certainly-not
 * extension[seeAlso][3].extension[matchDetail][2].extension[matchConfidenceScore].valueDecimal = 0.0
 // Adding this elememt by index on this one to avoid Sushi issue that causes dangling extension urls on other links within the same resource
 // This occurs when you use an extension in one element, but not in another sibling element on the same instance
-* extension[seeAlso][3].extension[6].url = "http://ibm.com/fhir/cdm/StructureDefinition/split-method"
-* extension[seeAlso][3].extension[6].valueCodeableConcept = MatchMethodCodeSystem#manual
-* extension[seeAlso][3].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][3].extension[7].valueString = "IBM"
-* extension[seeAlso][3].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
-* extension[seeAlso][3].extension[8].valueString = "Manual Patient Split"
-* extension[seeAlso][3].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
-* extension[seeAlso][3].extension[9].valueString = "Web Portal"
-* extension[seeAlso][3].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-version"
-* extension[seeAlso][3].extension[10].valueString = "1.0"
-* extension[seeAlso][3].extension[11].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
-* extension[seeAlso][3].extension[11].valueDateTime = "2020-04-18T10:36:02Z"
-
-Instance:   MatchedPatientSource-EMR2-PatA1
-InstanceOf: CDMPatient
-Usage:      #inline
-* meta.source = "http://acme-health.com/emr2"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
-
-* identifier[0].use = #official
-* identifier[0].type = 	IdentifierTypeCodeSystem#SSRI
-* identifier[0].system = "http://acme-health.com/emr2/patient"
-* identifier[0].value = "a1621a3b-4875-475e-bca4-9d565a0091f7"
-
-Instance:   MatchedPatientSource-EMR2-PatA2
-InstanceOf: CDMPatient
-Usage:      #inline
-* meta.source = "http://acme-health.com/emr2"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
-
-* identifier[0].use = #official
-* identifier[0].type = 	IdentifierTypeCodeSystem#SSRI
-* identifier[0].system = "http://acme-health.com/emr2/patient"
-* identifier[0].value = "a21d96b1f-6a43-462e-948b-8497c93006c5"
-
-Instance:   MatchedPatientSource-EMR3-PatA
-InstanceOf: CDMPatient
-Usage:      #inline
-* meta.source = "http://acme-health.com/emr3"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
-
-* identifier[0].use = #official
-* identifier[0].type = 	IdentifierTypeCodeSystem#SSRI
-* identifier[0].system = "http://acme-health.com/emr3/patient"
-* identifier[0].value = "a16ecf9c-f74e-4110-ba3d-223d5a9f9a97"
+* extension[seeAlso][3].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/split-method"
+* extension[seeAlso][3].extension[8].valueCodeableConcept = MatchMethodCodeSystem#manual
+* extension[seeAlso][3].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
+* extension[seeAlso][3].extension[9].valueString = "IBM"
+* extension[seeAlso][3].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
+* extension[seeAlso][3].extension[10].valueString = "Manual Patient Split"
+* extension[seeAlso][3].extension[11].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
+* extension[seeAlso][3].extension[11].valueString = "Web Portal"
+* extension[seeAlso][3].extension[12].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-version"
+* extension[seeAlso][3].extension[12].valueString = "1.0"
+* extension[seeAlso][3].extension[13].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
+* extension[seeAlso][3].extension[13].valueDateTime = "2020-04-18T10:36:02Z"

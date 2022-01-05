@@ -1,10 +1,10 @@
-Instance:       MatchedPractitionerSource-EMR1-DrA
+Instance:       MatchedPractitionerSource-EMR2-PractitionerB
 InstanceOf:     CDMPractitioner
 Usage:          #example
-Title:          "Matched Practitioner Source - EMR1 - DrA"
+Title:          "Matched Practitioner Source - EMR2 Practitioner B"
 Description:    "Sample of a matched source practitioner with mpi guid identifier and reference to the match practitioner"
 
-* meta.source = "http://acme-health.com/emr1"
+* meta.source = "http://acme-health.com/emr2"
 * meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner"
 
 * meta.extension[tenantId].valueString = "99999"
@@ -13,8 +13,8 @@ Description:    "Sample of a matched source practitioner with mpi guid identifie
 * identifier[0].use = #official
 * identifier[0].type = IdentifierTypeCodeSystem#SSRI
 * identifier[0].system = "http://acme-health.com/emr1/practitioner"
-* identifier[0].value = "a1a1e510d-bdbc-46ed-9af8-031152e2ffa5"
-* identifier[0].assigner.display = "Acme Health - EMR1"
+* identifier[0].value = "providerB"
+* identifier[0].assigner.display = "Acme Health - EMR2"
 
 * identifier[1].use = #official
 * identifier[1].type = ID-TYPE#PRN

@@ -35,7 +35,7 @@ Usage:          #example
 * generalPractitioner[0].extension[referenceCode].valueCoding = AttributionSourceCodeSystem#client-emr
 * generalPractitioner[0].extension[referencePeriod].valuePeriod.start = "2019-01-01"
 // Expired claims enrollment pcp
-* generalPractitioner[1] = Reference(EnrollmentPCP1)
+* generalPractitioner[1] = Reference(CDMPractitionerRole-Enrollment)
 * generalPractitioner[1].extension[referenceCode].valueCoding = AttributionSourceCodeSystem#enrollment
 * generalPractitioner[1].extension[referencePeriod].valuePeriod.start = "2019-01-01"
 * generalPractitioner[1].extension[referencePeriod].valuePeriod.end = "2019-12-31"
@@ -50,7 +50,7 @@ Usage:          #example
 * generalPractitioner[1].extension[6].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
 * generalPractitioner[1].extension[6].valueDateTime = "2020-01-01T03:01:00Z"
 // Current claims enrollment
-* generalPractitioner[2] = Reference(EnrollmentPCP2)
+* generalPractitioner[2] = Reference(CDMPractitionerRole-Enrollment)
 * generalPractitioner[2].extension[referenceCode].valueCoding = AttributionSourceCodeSystem#enrollment
 * generalPractitioner[2].extension[referencePeriod].valuePeriod.start = "2020-01-01"
 * generalPractitioner[2].extension[2].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
@@ -64,7 +64,7 @@ Usage:          #example
 * generalPractitioner[2].extension[6].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
 * generalPractitioner[2].extension[6].valueDateTime = "2020-01-01T03:01:00Z"
 // Imputed pcp for Advantage
-* generalPractitioner[3] = Reference(AdvImputedPCP)
+* generalPractitioner[3] = Reference(CDMPractitionerRole-Advantage-Imputed-PCP)
 * generalPractitioner[3].extension[referenceCode][0].valueCoding = AttributionSourceCodeSystem#imputed
 * generalPractitioner[3].extension[referenceCode][1].valueCoding = AttributionProductCodeSystem#advantage
 * generalPractitioner[3].extension[referencePeriod].valuePeriod.start = "2020-02-14"
@@ -110,15 +110,3 @@ Usage:          #example
 * generalPractitioner[5].extension[7].valueString = "1.0"
 * generalPractitioner[5].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
 * generalPractitioner[5].extension[8].valueDateTime = "2020-02-14T03:18:00Z"
-
-Instance:   EnrollmentPCP1
-InstanceOf: PractitionerRole
-Usage:      #inline
-
-Instance:   EnrollmentPCP2
-InstanceOf: PractitionerRole
-Usage:      #inline
-
-Instance:   AdvImputedPCP
-InstanceOf: PractitionerRole
-Usage:      #inline

@@ -26,8 +26,3 @@ Usage:          #example
 * active = true
 * practitioner = Reference(DrKelly)
 * location = Reference(KellyClinic)
-
-Instance:   AttributedPractitioner2
-InstanceOf: PractitionerRole
-Usage:      #inline
-

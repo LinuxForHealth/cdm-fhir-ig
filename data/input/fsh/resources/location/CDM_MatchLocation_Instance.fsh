@@ -32,12 +32,12 @@ Description:    "Sample of a matched location linked to multiple source location
 * name = "Match Family Clinic"
 
 // AUTOMATED HIGH CONFIDENCE MATCH 1 - EMR2
-* extension[seeAlso][0].extension[matchSourceReference].valueReference = Reference(MatchedLocationSource-EMR1-LocA)
+* extension[seeAlso][0].extension[matchSourceReference].valueReference = Reference(MatchedLocationSource-EMR1-LocationA)
 * extension[seeAlso][0].extension[matchMethod].valueCodeableConcept = MatchMethodCodeSystem#automated
 * extension[seeAlso][0].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][0].extension[matchConfidenceScore].valueDecimal = 100.0
 * extension[seeAlso][0].extension[matchPeriod].valuePeriod.start = "2020-02-12"
-* extension[seeAlso][0].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedLocationSource-EMR2-LocA)
+* extension[seeAlso][0].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedLocationSource-EMR2-LocationB)
 * extension[seeAlso][0].extension[matchDetail][0].extension[matchCriteria].valueString = "TIN match"
 * extension[seeAlso][0].extension[matchDetail][0].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][0].extension[matchDetail][0].extension[matchConfidenceScore].valueDecimal = 100.0
@@ -54,12 +54,12 @@ Description:    "Sample of a matched location linked to multiple source location
 * extension[seeAlso][0].extension[10].valueDateTime = "2020-01-01T03:01:00Z"
 
 // AUTOMATED HIGH CONFIDENCE MATCH 2 - EMR1
-* extension[seeAlso][1].extension[matchSourceReference].valueReference = Reference(MatchedLocationSource-EMR1-LocA)
+* extension[seeAlso][1].extension[matchSourceReference].valueReference = Reference(MatchedLocationSource-EMR1-LocationA)
 * extension[seeAlso][1].extension[matchMethod].valueCodeableConcept = MatchMethodCodeSystem#automated
 * extension[seeAlso][1].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][1].extension[matchConfidenceScore].valueDecimal = 100.0
 * extension[seeAlso][1].extension[matchPeriod].valuePeriod.start = "2020-02-12"
-* extension[seeAlso][1].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedLocationSource-EMR2-LocA)
+* extension[seeAlso][1].extension[matchDetail][0].extension[matchComparedTo].valueReference = Reference(MatchedLocationSource-EMR2-LocationB)
 * extension[seeAlso][1].extension[matchDetail][0].extension[matchCriteria].valueString = "TIN match"
 * extension[seeAlso][1].extension[matchDetail][0].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][1].extension[matchDetail][0].extension[matchConfidenceScore].valueDecimal = 100.0
@@ -74,15 +74,3 @@ Description:    "Sample of a matched location linked to multiple source location
 * extension[seeAlso][1].extension[9].valueString = "1.0"
 * extension[seeAlso][1].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
 * extension[seeAlso][1].extension[10].valueDateTime = "2020-01-01T03:01:00Z"
-
-Instance:   MatchedLocationSource-EMR2-LocA
-InstanceOf: CDMLocation
-Usage:      #inline
-* meta.source = "http://acme-health.com/emr2"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-location"
-* identifier[0].use = #official
-* identifier[0].type = IdentifierTypeCodeSystem#SSRI
-* identifier[0].system = "http://acme-health.com/emr1/location"
-* identifier[0].value = "b250c256-9d52-4ef2-bb0a-d54e9dc05709"
-* identifier[0].assigner.display = "Acme Health - EMR2"
-* name = "Match Family Clinic"

@@ -1,7 +1,7 @@
-Instance:       CDMPractitionerRole-Payer
+Instance:       CDMPractitionerRole-Enrollment
 InstanceOf:     CDMPractitionerRole
 Title:          "CDM PractitionerRole - Payer"
-Description:    "Sample CDM PractitionerRole ingested from Payer system"
+Description:    "Sample CDM PractitionerRole ingested from Enrollment or Payer system"
 Usage:          #example
 
 * meta.source = "http://acme-health.com/payment"

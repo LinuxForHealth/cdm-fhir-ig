@@ -49,7 +49,7 @@ Description:    "Example of an engagement communication request to send an Outre
 * extension[communicationTemplate].valueString = "dm-template"
 * extension[communicationRetryLimit].valueString = "5"
 
-* subject = Reference(CDMPatient)
+* subject = Reference(CDMPatientInstance)
 * about = Reference(CareGapDetectedIssueExample)
 
 * payload.contentString = "Our records indicate you are overdue for a medical appointment.  Please contact [PRACTIIONER-NAME] at [FACILITY-NAME], [FACILTY-PHONE] to schedule an appointment."
