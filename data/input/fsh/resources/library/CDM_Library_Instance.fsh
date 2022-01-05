@@ -10,40 +10,48 @@ Description:    "Sample library entry for CMS146, including example default para
 * identifier[0].value = "CMS146"
 * identifier[0].assigner.display = "IBM"
 
+* name = "Sample_Cql_Logic_Library"
+
 * version = "2.0.0"
-* title = "Appropriate Testing for Children with Pharyngitis"
+* title = "Sample CQL Logic Library"
 * status = #draft
   
 * type = LIBRARY-TYPE#logic-library
 * date = "2015-07-22"
-* description = "Logic for CMS 146: Appropriate Testing for Children with Pharyngitis"
-  
+* description = "Sample library for sample measures used to illustrate Alvearie IG usage"
 * relatedArtifact.type = #depends-on
 * relatedArtifact.resource = "Library/library-quick-model-definition"
+* relatedArtifact.display = "Example link to a related artifact"
 
 * dataRequirement[0].type = #Patient
 
 * dataRequirement[1].type = #Condition
 * dataRequirement[1].codeFilter[0].path = "category"
-* dataRequirement[1].codeFilter[0].code.code = #diagnosis
+* dataRequirement[1].codeFilter[0].code.system = CONDITION-CATEGORY
+* dataRequirement[1].codeFilter[0].code.code = #encounter-diagnosis
 * dataRequirement[1].codeFilter[1].path = "clinicalStatus"
-* dataRequirement[1].codeFilter[1].code.code = #confirmed
+* dataRequirement[1].codeFilter[1].code.system = CLINICAL-STATUS
+* dataRequirement[1].codeFilter[1].code.code = #active
 * dataRequirement[1].codeFilter[2].path = "code"
 * dataRequirement[1].codeFilter[2].valueSet = "urn:oid:2.16.840.1.113883.3.464.1003.102.12.1011"
 
 * dataRequirement[2].type = #Condition
 * dataRequirement[2].codeFilter[0].path = "category"
-* dataRequirement[2].codeFilter[0].code.code = #diagnosis
+* dataRequirement[2].codeFilter[0].code.system = CONDITION-CATEGORY
+* dataRequirement[2].codeFilter[0].code.code = #encounter-diagnosis
 * dataRequirement[2].codeFilter[1].path = "clinicalStatus"
-* dataRequirement[2].codeFilter[1].code.code = #confirmed
+* dataRequirement[2].codeFilter[1].code.system = CLINICAL-STATUS
+* dataRequirement[2].codeFilter[1].code.code = #active
 * dataRequirement[2].codeFilter[2].path = "code"
 * dataRequirement[2].codeFilter[2].valueSet = "urn:oid:2.16.840.1.113883.3.464.1003.102.12.1012"
 
 * dataRequirement[3].type = #Encounter
 * dataRequirement[3].codeFilter[0].path = "status"
+* dataRequirement[3].codeFilter[0].code.system = ENCOUNTER-STATUS 
 * dataRequirement[3].codeFilter[0].code.code = #finished
 * dataRequirement[3].codeFilter[1].path = "class"
-* dataRequirement[3].codeFilter[1].code.code = #ambulatory
+* dataRequirement[3].codeFilter[1].code.system = ENCOUNTER-CLASS 
+* dataRequirement[3].codeFilter[1].code.code = #AMB
 * dataRequirement[3].codeFilter[2].path = "type"
 * dataRequirement[3].codeFilter[2].valueSet = "urn:oid:2.16.840.1.113883.3.464.1003.101.12.1061"
 
@@ -57,6 +65,7 @@ Description:    "Sample library entry for CMS146, including example default para
 
 * dataRequirement[6].type = #MedicationRequest
 * dataRequirement[6].codeFilter[0].path = "status"
+* dataRequirement[6].codeFilter[0].code.system = MEDICATION-REQUEST-STATUS 
 * dataRequirement[6].codeFilter[0].code.code = #active
 * dataRequirement[6].codeFilter[1].path = "medication.code"
 * dataRequirement[6].codeFilter[1].valueSet = "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001"
