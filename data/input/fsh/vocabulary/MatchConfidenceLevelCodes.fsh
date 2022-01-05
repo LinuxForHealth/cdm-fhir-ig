@@ -9,5 +9,6 @@ ValueSet:       MatchConfidenceLevelValueSet
 Id:             match-confidence-level
 Title:          "Match Confidence Level Code System"
 Description:    "Codes indicating confidence level of matched entities"
-* codes from system MatchConfidenceLevelCodeSystem
 * codes from system http://terminology.hl7.org/CodeSystem/match-grade
+* codes from system MatchConfidenceLevelCodeSystem
+
