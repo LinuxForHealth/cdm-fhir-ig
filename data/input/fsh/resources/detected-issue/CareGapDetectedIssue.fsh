@@ -4,6 +4,13 @@ Id:             care-gap-detected-issue
 Title:          "Care Gap Detected Issue"
 Description:    "Detected issues to record a history of open and closed care gaps identified for a patient over time."
 
+* identifier contains
+    Derived 0..1 
+* identifier[Derived].use = #official
+* identifier[Derived].type = IdentifierTypeCodeSystem#DRI
+* identifier[Derived].system 1..1
+* identifier[Derived].value 1..1
+
 * code 0..0
 * severity 0..0
 * author 0..0

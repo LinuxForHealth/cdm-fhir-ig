@@ -23,7 +23,8 @@ Description:      "IBM Health Data Connect Common Data Model definition of what 
 * identifier contains
       Source 0..1 and   // SSRI 
       NPI 0..1 and      // NPI as PRN type
-      Tax 0..1          // TIN
+      Tax 0..1 and      // TIN
+      MDI 0..1          // MDI
 * identifier[Source].use = #official
 * identifier[Source].type = IdentifierTypeCodeSystem#SSRI
 * identifier[Source].system 1..1
@@ -36,6 +37,10 @@ Description:      "IBM Health Data Connect Common Data Model definition of what 
 * identifier[Tax].type = ID-TYPE#TAX
 * identifier[Tax].system 1..1
 * identifier[Tax].value 1..1
+* identifier[MDI].use = #secondary
+* identifier[MDI].type = IdentifierTypeCodeSystem#MDI
+* identifier[MDI].system 1..1
+* identifier[MDI].value 1..1
 
 * address only CDMAddress
 * telecom only CDMContactPoint

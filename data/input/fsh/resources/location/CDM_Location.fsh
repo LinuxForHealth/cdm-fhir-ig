@@ -23,7 +23,8 @@ Description:      "IBM Health Data Connect Common Data Model definition of what 
 * identifier contains
       Source 0..1 and   // SSRI
       Tax 0..1 and      // TAX
-      NPI 0..1          // NPI
+      NPI 0..1 and      // NPI
+      MDI 0..1          // MDI
 * identifier[Source].use = #official
 * identifier[Source].type = IdentifierTypeCodeSystem#SSRI
 * identifier[Source].system 1..1
@@ -36,6 +37,10 @@ Description:      "IBM Health Data Connect Common Data Model definition of what 
 * identifier[NPI].type = ID-TYPE#NPI
 * identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[NPI].value 1..1
+* identifier[MDI].use = #secondary
+* identifier[MDI].type = IdentifierTypeCodeSystem#MDI
+* identifier[MDI].system 1..1
+* identifier[MDI].value 1..1
 
 * name 1..1
 
