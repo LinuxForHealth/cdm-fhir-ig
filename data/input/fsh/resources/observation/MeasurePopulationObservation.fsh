@@ -4,6 +4,13 @@ Id:             measure-population-observation
 Title:          "Measure Population Observation"
 Description:    "Observation created by IBM Health Data Connect to record measure populations for a patient over time"
 
+* identifier contains
+    Derived 0..1 
+* identifier[Derived].use = #official
+* identifier[Derived].type = IdentifierTypeCodeSystem#DRI
+* identifier[Derived].system 1..1
+* identifier[Derived].value 1..1
+
 * basedOn 0..0
 * partOf 0..0
 * category 0..0

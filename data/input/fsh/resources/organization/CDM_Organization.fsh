@@ -22,20 +22,20 @@ Description:      "IBM Health Data Connect Common Data Model definition of what 
 * identifier ^slicing.discriminator.path = "type"
 * identifier contains
       Source 0..1 and   // SSRI
-      Tax 0..1 and      // TAX
-      NPI 0..1          // NPI
+      NPI 0..1 and      // NPI as PRN type
+      Tax 0..1          // TAX
 * identifier[Source].use = #official
 * identifier[Source].type = IdentifierTypeCodeSystem#SSRI
 * identifier[Source].system 1..1
 * identifier[Source].value 1..1
+* identifier[NPI].use = #secondary
+* identifier[NPI].type = ID-TYPE#PRN
+* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
+* identifier[NPI].value 1..1
 * identifier[Tax].use = #secondary
 * identifier[Tax].type = ID-TYPE#TAX 
 * identifier[Tax].system 1..1
 * identifier[Tax].value 1..1
-* identifier[NPI].use = #secondary
-* identifier[NPI].type = ID-TYPE#NPI
-* identifier[NPI].system = "http://hl7.org/fhir/sid/us-npi"
-* identifier[NPI].value 1..1
 
 * name 1..1 
 

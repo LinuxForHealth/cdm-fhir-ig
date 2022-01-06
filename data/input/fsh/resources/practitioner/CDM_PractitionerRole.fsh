@@ -21,11 +21,16 @@ Description:      "IBM Health Data Connect Common Data Model definition of what 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
 * identifier contains
-      Source 0..1 
+      Source 0..1 and 
+      Derived 0..1
 * identifier[Source].use = #official
 * identifier[Source].type = IdentifierTypeCodeSystem#SSRI
 * identifier[Source].system 1..1
 * identifier[Source].value 1..1
+* identifier[Derived].use = #official
+* identifier[Derived].type = IdentifierTypeCodeSystem#DRI
+* identifier[Derived].system 1..1
+* identifier[Derived].value 1..1
 
 * practitioner 1..1
 * specialty ^slicing.ordered = false
