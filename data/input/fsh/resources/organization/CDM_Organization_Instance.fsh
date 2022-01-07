@@ -19,7 +19,11 @@ Description:    "Sample CDM Organizationr representing a hospital ingested from 
 * name = "General Hospital"
 * active = true
 * type.coding[0] = ORGANIZATION-TYPE#prov
-* type.coding[1] = ORGANIZATION-SIC#6324 "Hospital and Medical Service Plans"
+
+// We get weird QA errors on the IG when using the HL7 code system urls on SERVICE-CATEGORY and SERVICE-TYPE
+// Not sure why, but using the OID's in examples instead prevents us from getting these odd warning messsages
+// * type.coding[1] = ORGANIZATION-SIC#6324 "Hospital and Medical Service Plans"
+* type.coding[1] = ORGANIZATION-SIC-OID#6324 "Hospital and Medical Service Plans"
 
 * address.use = #work
 * address.type = #physical

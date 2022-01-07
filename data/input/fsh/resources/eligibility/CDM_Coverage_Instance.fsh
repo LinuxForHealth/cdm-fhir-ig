@@ -53,8 +53,13 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[employeeJobGrade].valueCodeableConcept       = http://acme-health.com/CodeSystem/local-employee-job-grade#LocalEmpJobGradeCd
 * extension[employeeJobLocation].valueCodeableConcept.coding[0]    = http://acme-health.com/CodeSystem/local-physical-job-location#EmpJobLocationCd
 * extension[employeeJobLocation].valueCodeableConcept.coding[1]    = http://acme-health.com/CodeSystem/local-geographic-job-location#CardingtonOhio
+
 * extension[employeeJobTitle].valueCodeableConcept.coding[0]       = http://acme-health.com/CodeSystem/local-employee-job-title#SoftwareEngineer
-* extension[employeeJobTitle].valueCodeableConcept.coding[1]       = STANDARD-OCCUPATION-CODE#15-1131
+// We get weird QA errors on the IG when using the HL7 code system urls on SERVICE-CATEGORY and SERVICE-TYPE
+// Not sure why, but using the OID's in examples instead prevents us from getting these odd warning messsages
+//* extension[employeeJobTitle].valueCodeableConcept.coding[1]       = STANDARD-OCCUPATION-CODE#15-1131
+* extension[employeeJobTitle].valueCodeableConcept.coding[1]       = STANDARD-OCCUPATION-CODE-OID#15-1131
+
 * extension[employeeLaborUnion].valueCodeableConcept               = http://acme-health.com/CodeSystem/local-employee-labor-union#LocalTeams377
 * extension[employeePayFrequency].valueCodeableConcept             = http://acme-health.com/CodeSystem/local-employee-pay-frequency#Monthly
 * extension[employeePerformanceRating].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-employee-performance-rating#Meets
