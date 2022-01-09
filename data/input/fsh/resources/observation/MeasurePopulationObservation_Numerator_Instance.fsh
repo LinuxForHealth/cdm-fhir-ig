@@ -13,7 +13,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 * meta.extension[processType].valueString = "Cohorting"
 * meta.extension[processName].valueString = "Powersearch"
 * meta.extension[processVersion].valueString = "1.0"
-* meta.extension[processTimestamp].valueDateTime = "2020-02-12T02:01:00Z"
+* meta.extension[processTimestamp].valueDateTime = "2020-02-28T02:01:00Z"
 
 * identifier.type = IdentifierTypeCodeSystem#DRI
 * identifier.system = "http://ibm.com/fhir/cdm/measure-population-observation"
@@ -29,22 +29,40 @@ Description:    "Example of an observation indicating that the patient was in a 
 
 * extension[canonicalMeasure].valueCanonical = Canonical(QualityMeasureExample)
 * extension[measurePopulationId].valueId = "dm-hba1c-num"
-* extension[assignedPractitioner].valueReference = Reference(CDMPractitionerRole-Attributed-PCP)
+* extension[assignedPractitioner][0].valueReference = Reference(CDMPractitionerRole-Attributed-PCP)
+* extension[assignedPractitioner][1].valueReference = Reference(CDMPractitionerRole-EMR-PCP)
 
-* extension[relatedObservation].valueReference = Reference(RelatedDenominatorObservation)
-
+* extension[relatedObservation].valueReference = Reference(RelatedNumeratorObservation)
 
 Instance:       RelatedNumeratorObservation
 InstanceOf:     MeasurePopulationObservation
-Usage:          #inline
+Usage:          #example
+Title:          "Measure Population Observation - Related Numerator Example"
+Description:    "Example of an observation indicating that the patient was in a related numerator over a period of time"
+
+* meta.source = "http://ibm.com/fhir/engagement-measure-cohort"
+* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/measure-population-observation"
+
+* meta.extension[tenantId].valueString = "99999"
+* meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
+* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processType].valueString = "Cohorting"
+* meta.extension[processName].valueString = "Powersearch"
+* meta.extension[processVersion].valueString = "1.0"
+* meta.extension[processTimestamp].valueDateTime = "2020-02-13T02:01:00Z"
+
 * identifier.type = IdentifierTypeCodeSystem#DRI
 * identifier.system = "http://ibm.com/fhir/cdm/measure-population-observation"
-* identifier.value = "57070138-72dd-4973-a52d-5c05812c6856"
+* identifier.value = "6b23568b-dccf-4546-b099-6fb8ec3c84e8"
 * identifier.assigner.display = "IBM"
+
 * status = #final
 * code = MEASURE-POPULATION#numerator
+
 * subject = Reference(CDMPatientInstance)
 * effectivePeriod.start = "2020-02-01"
 * effectivePeriod.end = "2020-02-13"
+
 * extension[canonicalMeasure].valueCanonical = Canonical(QualityMeasureExample)
 * extension[measurePopulationId].valueId = "dm-hba1c-num"
+* extension[assignedPractitioner][0].valueReference = Reference(CDMPractitionerRole-EMR-PCP)
