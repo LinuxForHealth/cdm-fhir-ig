@@ -19,3 +19,5 @@ Description:    "A quality measure report with an organizational focus"
 * group.population[Denominator].subjectResults only Reference(PatientList)
 * group.population[Numerator].subjectResults 0..1
 * group.population[Numerator].subjectResults only Reference(PatientList)
+* group.population[CareGap].subjectResults 0..1
+* group.population[CareGap].subjectResults only Reference(PatientList)

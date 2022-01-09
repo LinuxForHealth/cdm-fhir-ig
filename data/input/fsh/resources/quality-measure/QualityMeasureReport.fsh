@@ -24,24 +24,29 @@ Description:      "An abstract quality measure report profile. This profile serv
 * group.population ^slicing.discriminator.path = "code"
 * group.population contains
       InitialPopulation 1..1 and
+      Denominator 1..1 and 
       Numerator 1..1 and
-      Denominator 1..1 
+      CareGap 0..*
 
-* group.population[InitialPopulation].code from MeasurePopulationTypeValueSet (extensible)
-* group.population[Numerator].code from MeasurePopulationTypeValueSet (extensible)
-* group.population[Denominator].code from MeasurePopulationTypeValueSet (extensible)
+* group.population[InitialPopulation].code from QualityMeasurePopulationTypeValueSet (extensible)
+* group.population[Denominator].code from QualityMeasurePopulationTypeValueSet (extensible)
+* group.population[Numerator].code from QualityMeasurePopulationTypeValueSet (extensible)
+* group.population[CareGap].code from QualityMeasurePopulationTypeValueSet (extensible)
 
 * group.population[InitialPopulation].code = MEASURE-POPULATION#initial-population
 * group.population[Denominator].code = MEASURE-POPULATION#denominator
 * group.population[Numerator].code = MEASURE-POPULATION#numerator
+* group.population[CareGap].code = MeasurePopulationTypeCodeSystem#care-gap
 
 * group.population[InitialPopulation] 1..1
-* group.population[Numerator] 1..1
 * group.population[Denominator] 1..1
+* group.population[Numerator] 1..1
+* group.population[CareGap] 0..*
 
-* group.population[InitialPopulation] 1..1
-* group.population[Denominator].count 1..1
-* group.population[Numerator].count 1..1
+* group.population[InitialPopulation].count 0..1
+* group.population[Denominator].count 0..1
+* group.population[Numerator].count 0..1
+* group.population[CareGap].count 0..1
 
 * extension contains MeasureParameterValue named measureParameterValue 0..*
 * extension[measureParameterValue] ^short      = "Measure parameter value used to generate the measure report"

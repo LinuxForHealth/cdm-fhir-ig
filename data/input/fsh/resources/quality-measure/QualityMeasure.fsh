@@ -29,18 +29,22 @@ Description:    "The quality measure profile is limited to measures with proport
 * group.population contains
       InitialPopulation 1..1 and 
       Numerator 1..1 and
-      Denominator 1..1
+      Denominator 1..1 and
+      CareGap 0..* 
 * group.population[InitialPopulation].code from MeasurePopulationTypeValueSet (extensible)
 * group.population[Numerator].code from MeasurePopulationTypeValueSet (extensible)
 * group.population[Denominator].code from MeasurePopulationTypeValueSet (extensible)
+* group.population[CareGap].code from MeasurePopulationTypeValueSet (extensible)
 
 * group.population[InitialPopulation].code = MEASURE-POPULATION#initial-population
 * group.population[Denominator].code = MEASURE-POPULATION#denominator
 * group.population[Numerator].code = MEASURE-POPULATION#numerator
+* group.population[CareGap].code = MeasurePopulationTypeCodeSystem#care-gap
 
 * group.population[InitialPopulation] 1..1
 * group.population[Numerator] 1..1
 * group.population[Denominator] 1..1
+* group.population[CareGap] 0..*
 
 * extension contains MeasureParameter named measureParameter 0..*
 * extension[measureParameter] ^short      = "Defined parameter options implemented by the measure"

@@ -17,5 +17,7 @@ Description:    "A quality measure report focused on practitioner performance"
 // All patients could be in initial-population only, leaving a numerator / denomintor of zero
 * group.population[Denominator].subjectResults 1..1
 * group.population[Denominator].subjectResults only Reference(PatientList)
-* group.population[Numerator].subjectResults 0..1
+* group.population[Numerator].subjectResults 1..1
 * group.population[Numerator].subjectResults only Reference(PatientList)
+* group.population[CareGap].subjectResults 0..1
+* group.population[CareGap].subjectResults only Reference(PatientList)

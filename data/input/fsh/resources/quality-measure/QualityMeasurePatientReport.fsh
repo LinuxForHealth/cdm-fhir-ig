@@ -11,6 +11,7 @@ Description:    "A quality measure report focused on a single patient"
 
 * group.population[Denominator].subjectResults 0..0
 * group.population[Numerator].subjectResults 0..0
+* group.population[CareGap].subjectResults 0..0
 
 // Removed, some patients may be in in inital-population only, leaving denominator / numerator of zero
 // * group.population[Denominator].count = 1
