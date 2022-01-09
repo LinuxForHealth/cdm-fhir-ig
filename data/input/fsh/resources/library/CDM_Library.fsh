@@ -3,6 +3,7 @@ Parent:         Library
 Id:             cdm-library
 Title:          "CDM Library"
 Description:    "IBM Health Data Connect Common Data Model definition of what fields we currently define for a library"
+
 * contained 0..0
 * meta only ProcessMeta
 
@@ -15,4 +16,3 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * identifier.type from IdentifierTypeValueSet (extensible)
 
 * parameter only ParameterDefinitionWithDefault
-

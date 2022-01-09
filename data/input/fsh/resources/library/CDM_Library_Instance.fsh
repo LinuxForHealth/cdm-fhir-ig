@@ -6,22 +6,23 @@ Description:    "Sample library entry for CMS146, including example default para
 
 * identifier[0].use = #official
 * identifier[0].type = 	IdentifierTypeCodeSystem#SSRI
-* identifier[0].system = "http://ibm.com/fhir/cdm/cql-library-measure"
-* identifier[0].value = "CMS146"
+* identifier[0].system = "http://ibm.com/fhir/cdm/cql-library"
+* identifier[0].value = "sample-library-CMS146"
 * identifier[0].assigner.display = "IBM"
 
-* name = "Sample_Cql_Logic_Library"
+* name = "CMS146_Sample_Cql_Logic_Library"
 
-* version = "2.0.0"
-* title = "Sample CQL Logic Library"
+* version = "1.0.0"
+* title = "Sample CQL Logic Library for CMS146"
 * status = #draft
   
 * type = LIBRARY-TYPE#logic-library
 * date = "2015-07-22"
-* description = "Sample library for sample measures used to illustrate Alvearie IG usage"
+* description = "Sample CMS146 library for sample measures used to illustrate Alvearie IG usage"
 * relatedArtifact.type = #depends-on
-* relatedArtifact.resource = "Library/library-quick-model-definition"
-* relatedArtifact.display = "Example link to a related artifact"
+
+* relatedArtifact.resource = "https://www.hl7.org/fhir/library-fhir-helpers.html"
+* relatedArtifact.display = "FHIR Helpers"
 
 * dataRequirement[0].type = #Patient
 
@@ -71,7 +72,7 @@ Description:    "Sample library entry for CMS146, including example default para
 * dataRequirement[6].codeFilter[1].valueSet = "urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001"
 
 * content[0].contentType = #text/cql
-* content[0].url = "library-cms146-example-content.cql"
+* content[0].title = "CMS146 Example CQL"
 
 * parameter[0].name = #measurePeriod
 * parameter[0].use = #out
