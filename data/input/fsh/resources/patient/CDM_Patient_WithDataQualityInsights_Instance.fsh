@@ -26,7 +26,7 @@ Description:    "CDM Patient example where data quality process has specified va
 * meta.extension[insight][0].extension[insight-result-summary][0].extension[insight-confidence][0].extension[description].valueString = "555 is not an area code in Chicago."
 
 //Insight scoring result for phone value of 773-555-0100
-* meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-value][1].valueString = "773-555-0100"
+* meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-value][0].valueString = "773-555-0100"
 * meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].code = #INCONSISTENT_PHONE_AREA_CODE
 * meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].system = "http://www.claro.com/phone-number-insights"
 * meta.extension[insight][0].extension[insight-result-summary][1].extension[insight-confidence][0].extension[score].valueDecimal = 1
