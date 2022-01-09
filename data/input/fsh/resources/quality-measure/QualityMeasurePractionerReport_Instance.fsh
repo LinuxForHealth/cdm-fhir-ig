@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "Quality Measure Report Example - Practitioner"
 Description:    "Example measure report containing measure results for an attributed practitioner"
 
-// Adding inline resourcse as a contained resource for references
+// Adding inline resourcse as contained resources for references
 // The contained resources and inline examples are not represented as examples in the IG
 // This trick prevents QA broken link errors im the IG, without having to have too many examples
 * contained[0] = Patient1
@@ -70,7 +70,7 @@ Description:    "Example measure report containing measure results for an attrib
 //* group.population[2].count = 3
 //* group.population[3].count = 1
 
-// Measure score value isrequired for proportion measures
+// Measure score value is required for proportion measures
 * group.measureScore.value = 0.75
 
 * extension[measureParameterValue][0].valueParameterDefinition.name = #measurePeriod

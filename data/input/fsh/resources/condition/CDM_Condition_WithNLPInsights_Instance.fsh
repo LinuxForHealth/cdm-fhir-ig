@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "Condition Instance With NLP Insights"
 Description:    "Condition example where condition code is set from NLP derived insights"
 
-// Adding inline examples as contained resources
+// Adding inline resourcse as contained resources for references
 // This prevents broken link errors on the example while also allowing inline references to
 // that the referenced element does not show up in the final IG
 * contained[0] = SourceDiagnosticReport-DiabetesMellitus
@@ -82,8 +82,6 @@ Description:    "Condition example where condition code is set from NLP derived 
 Instance:       SourceDiagnosticReport-DiabetesMellitus
 InstanceOf:     DiagnosticReport
 Usage:          #inline
-Title:          "Source Diagnostic Report - Diabetes Mellitus"
-Description:    "Diagnostic report example used as evidence for derived NLP derived insights"
 * status = #final
 * id = "insight-reference-123456-01"
 * code = LOINC#10451-3

@@ -51,7 +51,7 @@ Description:    "Example measure report containing individual measure results fo
 * group.population[3].code = MeasurePopulationTypeCodeSystem#care-gap
 * group.population[3].count = 1
 
-// Measure score value isrequired for proportion measures
+// Measure score value is required for proportion measures
 * group.measureScore.value = 0.0
 
 * extension[measureParameterValue][0].valueParameterDefinition.name = #measurePeriod
