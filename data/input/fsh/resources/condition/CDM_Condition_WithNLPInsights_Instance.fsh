@@ -1,8 +1,13 @@
 Instance:       ConditionInstanceWithNLPInsights
 InstanceOf:     CDMCondition
-Title:          "NLP Derived Insights"
 Usage:          #example
+Title:          "Condition Instance With NLP Insights"
 Description:    "Condition example where condition code is set from NLP derived insights"
+
+// Adding inline examples as contained resources
+// This prevents broken link errors on the example while also allowing inline references to
+// that the referenced element does not show up in the final IG
+* contained[0] = SourceDiagnosticReport-DiabetesMellitus
 
 * meta.source = "http://acme-health.com/emr"
 * meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition"
@@ -74,9 +79,11 @@ Description:    "Condition example where condition code is set from NLP derived 
 //* code.coding[2].extension[insightSummary][0].extension[element-source-classificaiton].valueCode = ProcessMetaSourceClassification#derived
 //* code.coding[2].extension[insightSummary][0].extension[category][0].valueCodeableConcept = InsightCategoryCodeSystem#natural-language-processing
 
-Instance:   SourceDiagnosticReport-DiabetesMellitus
-InstanceOf: DiagnosticReport
-Usage:      #inline
+Instance:       SourceDiagnosticReport-DiabetesMellitus
+InstanceOf:     DiagnosticReport
+Usage:          #inline
+Title:          "Source Diagnostic Report - Diabetes Mellitus"
+Description:    "Diagnostic report example used as evidence for derived NLP derived insights"
 * status = #final
 * id = "insight-reference-123456-01"
 * code = LOINC#10451-3

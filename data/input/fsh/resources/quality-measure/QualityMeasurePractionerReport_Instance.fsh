@@ -4,6 +4,19 @@ Usage:          #example
 Title:          "Quality Measure Report Example - Practitioner"
 Description:    "Example measure report containing measure results for an attributed practitioner"
 
+// Adding inline resourcse as a contained resource for references
+// The contained resources and inline examples are not represented as examples in the IG
+// This trick prevents QA broken link errors im the IG, without having to have too many examples
+* contained[0] = Patient1
+* contained[1] = Patient2
+* contained[2] = Patient3
+* contained[3] = Patient4
+* contained[4] = Patient5
+* contained[5] = InitialPopulationPatientList
+* contained[6] = DenominatorPatientList
+* contained[7] = NumeratorPatientList
+* contained[8] = CareGapPatientList
+
 * meta.source = "http://ibm.com/fhir/measure-cohort"
 * meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report-practitioner"
 
@@ -36,28 +49,29 @@ Description:    "Example measure report containing measure results for an attrib
 
 * group.population[0].id = "dm-hba1c-initial-pop"
 * group.population[0].code = MEASURE-POPULATION#initial-population
-* group.population[0].count = 22
-* group.population[0].subjectResults = Reference(DenominatorPatientList)
+* group.population[0].subjectResults = Reference(InitialPopulationPatientList)
 
 * group.population[1].id = "dm-hba1c-den"
 * group.population[1].code = MEASURE-POPULATION#denominator
-* group.population[1].count = 20
 * group.population[1].subjectResults = Reference(DenominatorPatientList)
 
 * group.population[2].id = "dm-hba1c-num"
 * group.population[2].code = MEASURE-POPULATION#numerator
-* group.population[2].count = 16
 * group.population[2].subjectResults = Reference(NumeratorPatientList)
 
-* group.population[3].id = "dm-hba1c-caregap-controlled"
-* group.population[3].code = MeasurePopulationTypeCodeSystem#care-gap
-* group.population[3].count = 3
-* group.population[3].subjectResults = Reference(ControlledCareGapPatientList)
+* group.population[3][0].id = "dm-hba1c-caregap"
+* group.population[3][0].code = MeasurePopulationTypeCodeSystem#care-gap
+* group.population[3][0].subjectResults = Reference(CareGapPatientList)
 
-* group.population[4].id = "dm-hba1c-caregap-poor-control"
-* group.population[4].code = MeasurePopulationTypeCodeSystem#care-gap
-* group.population[4].count = 1
-* group.population[4].subjectResults = Reference(PoorControlCareGapPatientList)
+// We should not have both a count and subjectResult list
+// You shoould include one or the other
+//* group.population[0].count = 5
+//* group.population[1].count = 4
+//* group.population[2].count = 3
+//* group.population[3].count = 1
+
+// Masure score value isrequired for proportion measures
+* group.measureScore.value = 0.75
 
 * extension[measureParameterValue][0].valueParameterDefinition.name = #measurePeriod
 * extension[measureParameterValue][0].valueParameterDefinition.use = #out
@@ -75,18 +89,59 @@ Description:    "Example measure report containing measure results for an attrib
 * extension[measureParameterValue][2].valueParameterDefinition.type = #string
 * extension[measureParameterValue][2].valueParameterDefinition.extension[parameterValue].valueString = "Once yearly"
 
-Instance:       DenominatorPatientList
-InstanceOf:     PatientList
+Instance:       InitialPopulationPatientList
+InstanceOf:     List
 Usage:          #inline
+* status = #current
+* mode = #working
+* entry[0].item = Reference(Patient1)
+* entry[1].item = Reference(Patient2)
+* entry[2].item = Reference(Patient3)
+* entry[3].item = Reference(Patient4)
+* entry[4].item = Reference(Patient5)
+
+Instance:       DenominatorPatientList
+InstanceOf:     List
+Usage:          #inline
+* status = #current
+* mode = #working
+* entry[0].item = Reference(Patient1)
+* entry[1].item = Reference(Patient2)
+* entry[2].item = Reference(Patient3)
+* entry[3].item = Reference(Patient4)
 
 Instance:       NumeratorPatientList
 InstanceOf:     PatientList
 Usage:          #inline
+* status = #current
+* mode = #working
+* entry[0].item = Reference(Patient1)
+* entry[1].item = Reference(Patient2)
+* entry[2].item = Reference(Patient3)
 
-Instance:       ControlledCareGapPatientList
+Instance:       CareGapPatientList
 InstanceOf:     PatientList
 Usage:          #inline
+* status = #current
+* mode = #working
+* entry[0].item = Reference(Patient4)
 
-Instance:       PoorControlCareGapPatientList
-InstanceOf:     PatientList
+Instance:       Patient1
+InstanceOf:     Patient
+Usage:          #inline
+
+Instance:       Patient2
+InstanceOf:     Patient
+Usage:          #inline
+
+Instance:       Patient3
+InstanceOf:     Patient
+Usage:          #inline
+
+Instance:       Patient4
+InstanceOf:     Patient
+Usage:          #inline
+
+Instance:       Patient5
+InstanceOf:     Patient
 Usage:          #inline
