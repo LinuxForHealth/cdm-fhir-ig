@@ -6,9 +6,14 @@
 
 # Some profiles are abstract and may not have concrete examples
 The Implementation Guide contains no examples for this profile
+The Implementation Guide contains no explicitly linked examples for this profile
+The Implementation Guide contains no examples for this data type profile
 The Implementation Guide contains no examples for this extension
 
-# X12 standard valuesets are not defined in a FHIR IG that can be validated by the FHIR IG Publisher
+# There is not an actual libaray available to to validate cql expressions in the IG examples
+The Library http://sample-measure-library.com/cql-library could not be resolved, so expression validation may not be correct
+
+# X12 standard valuesets are not defined in a FHIR IG, therefore cannot be validated by the FHIR IG Publisher
 ValueSet https://x12.org/codes/claim-status-codes not found by validator
 ValueSet https://x12.org/codes/claim-status-category-codes not found by validator
 Code System URI 'https://x12.org/codes/claim-status-category-codes' is unknown so the code cannot be validated
@@ -19,26 +24,38 @@ The valueSet reference https://x12.org/codes/claim-status-codes on element Claim
 The valueSet reference https://x12.org/codes/claim-status-category-codes on element Extension.valueCodeableConcept could not be resolved
 The valueSet reference https://x12.org/codes/claim-status-category-codes on element Extension.value[x] could not be resolved
 
-# CMS standard valuesets are not defined in a FHIR IG that can be validated by the FHIR IG Publisher
+# CMS standard code systems are not defined in a FHIR IG, therefore cannot be validated by the FHIR IG Publisher
 Code System URI 'https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set' is unknown so the code cannot be validated
 Code System URI 'https://www.cms.gov/icd10m/version37-fullcode-cms/fullcode_cms/P0002.html' is unknown so the code cannot be validated
+Error from server: Unable to provide support for code system https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set
+Error from server: Unable to provide support for code system https://www.cms.gov/icd10m/version37-fullcode-cms/fullcode_cms/P0002.html
+[Unable to determine whether the provided codes are in the value set http://ibm.com/fhir/cdm/ValueSet/service-delivery-location-type because the value set or a code system it depends on is not known to the validator, Code System URI 'https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set' is unknown so the code cannot be validated]
 
-# NUBC standard valuesets are not defined in a FHIR IG that can be validated by the FHIR IG Publisher
+# NUBC standard code systems are not defined in a FHIR IG, therefore cannot be validated by the FHIR IG Publisher
 Code System URI 'https://www.nubc.org/patient-discharge' is unknown so the code cannot be validated
 Code System URI 'https://www.nubc.org/RevenueCodes' is unknown so the code cannot be validated
 
-https://x12.org/codes/claim-status-code
-
-# AMA CPT standard valuesets are not defined in a FHIR IG that can be validated by the FHIR IG Publisher
+# AMA CPT standard valuesets are not defined in a FHIR IG, therefore cannot be validated by the FHIR IG Publisher
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 
-# OTHER standard valuesets are not defined in a FHIR IG that can be validated by the FHIR IG Publisher
+# URN and OID code systems cannot be validated by the FHIR IG Publisher
+Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated
+Code System URI 'urn:ietf:bcp:47' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.4.642.3.516' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.4.642.3.518' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.6.232' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.6.243' is unknown so the code cannot be validated
+Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.6.243
+
+# Other standard code systems that cannot be validated by the FHIR IG Publisher
 Code System URI 'https://oidref.com/2.16.840.1.113883.6.285' is unknown so the code cannot be validated
 Code System URI 'http://terminology.hl7.org/CodeSystem/naics' is unknown so the code cannot be validated
 Code System URI 'http://terminology.hl7.org/CodeSystem/umls' is unknown so the code cannot be validated
 Code System URI 'http://terminology.hl7.org/CodeSystem/soc' is unknown so the code cannot be validated
+Error from server: Unable to provide support for code system https://oidref.com/2.16.840.1.113883.6.285
+Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/soc
 
-# Examples of client-specific valuesets are not inculded in the IG and cannot be validated
+# Client-specific code systems used in examples cannot be validated by the FHIR IG Publisher
 Code System URI 'http://acme-health.com/CodeSystem/local-aca-health-insurance-oversight-system-plan' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-aca-health-insurance-oversight-system-product' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-aca-market-type' is unknown so the code cannot be validated
@@ -122,8 +139,18 @@ Code System URI 'http://acme-health.com/CodeSystem/local-termination-reason' is 
 Code System URI 'http://acme-health.com/CodeSystem/local-tooth-surface' is unknown so the code cannot be validated
 Code System URI 'http://acme-health.com/CodeSystem/local-utilization-review' is unknown so the code cannot be validated
 
+# Claro codes used for NLP insights are unknown to FHIR and cannot be validated by the FHIR IG Publisher
+Code System URI 'http://www.claro.com/phone-number-insights' is unknown so the code cannot be validated
+
 # Some identifiers recommended on FHIR R4 Known Identifier Systems page do not validated
 URL value 'http://hl7.org/fhir/sid/us-mbi' does not resolve
 
-# [Unable to determine whether the provided codes are in the value set http://ibm.com/fhir/cdm/ValueSet/wh-payer-job-title-code because the value set or a code system it depends on is not known to the validator, Code System URI 'http://terminology.hl7.org/CodeSystem/soc' is unknown so the code cannot be validated]
-# CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+# Undeclared process-meta extensions are used to demonstrate process metadata supported in matching profiles
+This element does not match any known slice defined in the profile http://ibm.com/fhir/cdm/StructureDefinition/see-also
+This element does not match any known slice defined in the profile http://ibm.com/fhir/cdm/StructureDefinition/cdm-match-location
+This element does not match any known slice defined in the profile http://ibm.com/fhir/cdm/StructureDefinition/cdm-match-patient
+This element does not match any known slice defined in the profile http://ibm.com/fhir/cdm/StructureDefinition/cdm-match-practitioner 
+
+# Undeclared process-meta extensions are used to demonstrate process metadata supported
+This element does not match any known slice defined in the profile http://ibm.com/fhir/cdm/StructureDefinition/communication-opt-out
+This element does not match any known slice defined in the profile http://ibm.com/fhir/cdm/StructureDefinition/reference-with-code-and-period
