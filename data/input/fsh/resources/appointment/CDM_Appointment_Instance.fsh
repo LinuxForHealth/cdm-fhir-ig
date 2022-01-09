@@ -19,7 +19,7 @@ Description:    "Sample appointment in booked status"
 * status = #booked
 
 // We get weird QA errors on the IG when using the HL7 code system urls on SERVICE-CATEGORY and SERVICE-TYPE
-// Not sure why, but using the OID's in examples instead prevents us from getting these odd warning messsages
+// Using code system OID's in examples instead prevents us from getting these odd warning messsages
 //* serviceCategory = SERVICE-CATEGORY#17
 //* serviceType = SERVICE-TYPE#367
 * serviceCategory = SERVICE-CATEGORY-OID#17

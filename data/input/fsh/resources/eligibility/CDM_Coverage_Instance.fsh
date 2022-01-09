@@ -55,8 +55,8 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[employeeJobLocation].valueCodeableConcept.coding[1]    = http://acme-health.com/CodeSystem/local-geographic-job-location#CardingtonOhio
 
 * extension[employeeJobTitle].valueCodeableConcept.coding[0]       = http://acme-health.com/CodeSystem/local-employee-job-title#SoftwareEngineer
-// We get weird QA errors on the IG when using the HL7 code system urls on SERVICE-CATEGORY and SERVICE-TYPE
-// Not sure why, but using the OID's in examples instead prevents us from getting these odd warning messsages
+// We get weird QA errors on the IG when using the HL7 code system urls on SIC codes
+// Using code system OID's in examples instead prevents us from getting these odd warning messsages
 //* extension[employeeJobTitle].valueCodeableConcept.coding[1]       = STANDARD-OCCUPATION-CODE#15-1131
 * extension[employeeJobTitle].valueCodeableConcept.coding[1]       = STANDARD-OCCUPATION-CODE-OID#15-1131
 

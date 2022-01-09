@@ -21,8 +21,8 @@ Description:    "Sample encounter"
 * class = ENCOUNTER-CLASS#AMB "ambulatory"
 * type = SNOMED#270427003 "Patient-initiated encounter"
 
-// We get weird QA errors on the IG when using the HL7 code system urls on SERVICE-CATEGORY and SERVICE-TYPE
-// Not sure why, but using the OID's in examples instead prevents us from getting these odd warning messsages
+// We get weird QA errors on the IG when using the HL7 code system urls on SERVICE-TYPE
+// Using code system OID's in examples instead prevents us from getting these odd warning messsages
 //* serviceType = SERVICE-TYPE#367
 * serviceType = SERVICE-TYPE-OID#367
 
