@@ -70,7 +70,7 @@ Description:    "Example measure report containing measure results for an attrib
 //* group.population[2].count = 3
 //* group.population[3].count = 1
 
-// Masure score value isrequired for proportion measures
+// Measure score value isrequired for proportion measures
 * group.measureScore.value = 0.75
 
 * extension[measureParameterValue][0].valueParameterDefinition.name = #measurePeriod

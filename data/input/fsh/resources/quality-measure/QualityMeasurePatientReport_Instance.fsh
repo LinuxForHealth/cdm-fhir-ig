@@ -47,13 +47,12 @@ Description:    "Example measure report containing individual measure results fo
 * group.population[2].code = MEASURE-POPULATION#numerator
 * group.population[2].count = 0
 
-* group.population[3].id = "dm-hba1c-caregap-controlled"
+* group.population[3].id = "dm-hba1c-caregap"
 * group.population[3].code = MeasurePopulationTypeCodeSystem#care-gap
-* group.population[3].count = 0
+* group.population[3].count = 1
 
-* group.population[4].id = "dm-hba1c-caregap-poor-control"
-* group.population[4].code = MeasurePopulationTypeCodeSystem#care-gap
-* group.population[4].count = 1
+// Measure score value isrequired for proportion measures
+* group.measureScore.value = 0.0
 
 * extension[measureParameterValue][0].valueParameterDefinition.name = #measurePeriod
 * extension[measureParameterValue][0].valueParameterDefinition.use = #out
