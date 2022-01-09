@@ -3,7 +3,10 @@ Parent:         QualityMeasureReport
 Id:             quality-measure-report-practitioner
 Title:          "Practitioner Quality Measure Report"
 Description:    "A quality measure report focused on practitioner performance"
-* contained 0..0
+
+// // Adding inline resources as contained resources for references
+// Also expecting the cohort engine to return contained lists for offline storage
+* contained 0..*
 * meta only ProcessMeta
 
 * subject only Reference(Practitioner or PractitionerRole)

@@ -3,6 +3,9 @@ Parent:           MeasureReport
 Id:               quality-measure-report
 Title:            "Quality Measure Report"
 Description:      "An abstract quality measure report profile. This profile serves as the base for organizational, practitioner, and patient-focused quality measure reports."
+
+// Adding inline resources as contained resources for references
+// Also expecting the cohort engine to return contained lists for offline storage
 * contained 0..*
 * meta only ProcessMeta
 

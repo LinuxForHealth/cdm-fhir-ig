@@ -3,7 +3,8 @@ Parent:         Condition
 Id:             cdm-condition
 Title:          "CDM Condition"
 Description:    "IBM Health Data Connect Common Data Model definition of what fields we currently define for a condition"
-// Adding inline resourcse as contained resources for references
+
+// Adding inline resources as contained resources for references
 * contained 0..*
 * meta only ProcessMeta
 

@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "Quality Measure Report Example - Practitioner"
 Description:    "Example measure report containing measure results for an attributed practitioner"
 
-// Adding inline resourcse as contained resources for references
+// Adding inline resources as contained resources for references
 // The contained resources and inline examples are not represented as examples in the IG
 // This trick prevents QA broken link errors im the IG, without having to have too many examples
 * contained[0] = Patient1

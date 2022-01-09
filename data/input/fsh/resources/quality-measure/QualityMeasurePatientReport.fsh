@@ -3,7 +3,8 @@ Parent:         QualityMeasureReport
 Id:             quality-measure-report-patient
 Title:          "Patient Quality Measure Report"
 Description:    "A quality measure report focused on a single patient"
-* contained 0..*
+// Not exepecting contained elements on measure reports for individual patients
+* contained 0..0
 * meta only ProcessMeta
 
 * group.population[InitialPopulation].subjectResults 0..0
