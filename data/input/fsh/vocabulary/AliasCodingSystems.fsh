@@ -31,15 +31,25 @@ Alias: USAGE-CONTEXT-TYPE = http://terminology.hl7.org/CodeSystem/usage-context-
 Alias: DEFINITION-TOPIC = http://terminology.hl7.org/CodeSystem/definition-topic
 
 Alias: ORGANIZATION-TYPE = http://terminology.hl7.org/CodeSystem/organization-type
-Alias: ORGANIZATION-SIC  = http://terminology.hl7.org/CodeSystem/sic
+
+// We get weird QA errors on the IG when using the HL7 code system urls on SERVICE-CATEGORY and SERVICE-TYPE
+// Not sure why, but using the OID's in examples instead prevents us from getting these odd warning messsages
+Alias: ORGANIZATION-SIC = http://terminology.hl7.org/CodeSystem/sic
+Alias: ORGANIZATION-SIC-OID = urn:oid:2.16.840.1.113883.6.232
+
 Alias: PRACTITIONER-ROLE = http://terminology.hl7.org/CodeSystem/practitioner-role
 Alias: US-NPI            = http://hl7.org/fhir/sid/us-npi
 
 // APPOINTMENT
 Alias: APPOINTMENT-TYPE = http://terminology.hl7.org/CodeSystem/v2-0276
 Alias: PARTICIPANT-TYPE = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
+
+// We get weird QA errors on the IG when using the HL7 code system urls on SERVICE-CATEGORY and SERVICE-TYPE
+// Not sure why, but using the OID's in examples instead prevents us from getting these odd warning messsages
 Alias: SERVICE-CATEGORY = http://terminology.hl7.org/CodeSystem/service-category
 Alias: SERVICE-TYPE = http://terminology.hl7.org/CodeSystem/service-type
+Alias: SERVICE-CATEGORY-OID = urn:oid:2.16.840.1.113883.4.642.3.516
+Alias: SERVICE-TYPE-OID = urn:oid:2.16.840.1.113883.4.642.3.518
 
 // ENCOUNTER & CONDITION
 Alias: ENCOUNTER-STATUS = http://hl7.org/fhir/encounter-status
@@ -70,7 +80,12 @@ Alias: COVERAGE-CLASS           = http://terminology.hl7.org/CodeSystem/coverage
 Alias: NAICS                    = http://terminology.hl7.org/CodeSystem/naics
 Alias: INSURANCE-PLAN-TYPE      = http://terminology.hl7.org/CodeSystem/insurance-plan-type
 Alias: SUBSCRIBER-RELATIONSHIP  = http://terminology.hl7.org/CodeSystem/subscriber-relationship
+
+// We get weird QA errors on the IG when using the HL7 code system urls on SERVICE-CATEGORY and SERVICE-TYPE
+// Not sure why, but using the OID's in examples instead prevents us from getting these odd warning messsages
 Alias: STANDARD-OCCUPATION-CODE = http://terminology.hl7.org/CodeSystem/soc
+Alias: STANDARD-OCCUPATION-CODE-OID = urn:oid:2.16.840.1.113883.6.243
+
 
 Alias: UCUM-UNIT = http://unitsofmeasure.org
 
