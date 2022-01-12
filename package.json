@@ -5,6 +5,9 @@
   "url": "http://alvearie.github.io/alvearie-fhir-ig",
   "title": "Alvearie FHIR Implementation Guide",
   "description": "Alvearie FHIR Profiles",
+  "dependencies": {
+    "node": "^16.13.1"
+  },
   "devDependencies": {
     "fsh-sushi": "^2.2.3",
     "mkdirp": "^1.0.4"
@@ -14,7 +17,7 @@
     "sushi_snapshot": "sushi -s data",
     "sync_build": "rsync -ah --delete-after --exclude 'input-cache' data/ build",
     "ig_init": "npm run sync_build && cd build && yes | bash ./_updatePublisher.sh && bash ./_genonce.sh",
-    "ig_init_win": "xcopy data build\\ /i /y /q && cd build && _updatePublisher.bat && _genonce.bat",
+    "ig_init_win": "xcopy data build\\ /i /y /q /s && cd build && _updatePublisher.bat && _genonce.bat",
     "ig": "npm run sync_build && cd build && sh ./_genonce.sh -tx",
     "ig_win": "xcopy data build /i /y /q && cd build && _genonce.bat",
     "build_snapshot": "mkdirp src/main/resources/com/ibm/fhir/cdm && tar -C src/main/resources/com/ibm/fhir/cdm/ -xf build/output/package.tgz && mvn clean install",
@@ -25,7 +28,7 @@
     "all": "npm run sushi && npm run ig_init && npm run build_snapshot && npm run copy_snapshot && npm run zip_snapshot",
     "all_win_cmd": "npm run sushi && npm run ig_init_win && npm run build_snapshot && npm run copy_snapshot_win && npm run zip_snapshot_win",
     "all_win_bash": "npm run sushi && npm run ig_init && npm run build_snapshot && npm run copy_snapshot_win && npm run zip_snapshot_win"
-},
+  },
   "language": "en",
   "author": "Alvearie Team",
   "maintainers": [
