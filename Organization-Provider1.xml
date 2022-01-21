@@ -3,24 +3,58 @@
 <Organization xmlns="http://hl7.org/fhir">
   <id value="Provider1"/>
   <meta>
-    <source value="http://acme-health.com/organization/provider"/>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+      <valueString value="99999"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+      <valueString value="b069a545-9506-40c6-8498-23de2e189143"/>
+    </extension>
+    <source value="http://acme-health.com/emr1/provider-organization"/>
     <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Provider1" </p><p style="margin-bottom: 0px">Information Source: http://acme-health.com/organization/provider!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cdm-organization.html">CDM Organization</a></p></div><p><b>identifier</b>: Provider number: 1122445599 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Internal Medicine <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-provider-type.html">Health Data Connect Provider Type Codes</a>#204)</span></p><p><b>name</b>: Dr Smith</p><p><b>telecom</b>: ph: 915-555-6000(WORK), fax: 915-555-6001(WORK)</p><p><b>address</b>: 100 Mesa Drive El Paso TX 79912 US (WORK)</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "Provider1" </p><p style="margin-bottom: 0px">Information Source: http://acme-health.com/emr1/provider-organization!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cdm-organization.html">CDM Organization</a></p></div><p><b>identifier</b>: Source System Row Identifier: 7a44c7b9-da71-4138-a48c-48b94163bbd3 (OFFICIAL), National provider identifier: 1122445599 (SECONDARY), Tax ID number: 123444222 (SECONDARY)</p><p><b>active</b>: true</p><p><b>type</b>: Internal Medicine <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-provider-type.html">Health Data Connect Provider Type Codes</a>#204)</span></p><p><b>name</b>: Dr Smith</p><p><b>telecom</b>: ph: 915-555-6000(WORK), fax: 915-555-6001(WORK)</p><p><b>address</b>: 100 Mesa Drive El Paso TX 79912 US (WORK)</p></div>
   </text>
   <identifier>
     <use value="official"/>
     <type>
       <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <code value="SSRI"/>
+      </coding>
+    </type>
+    <system value="http://acme-health.com/emr1/provier-organization"/>
+    <value value="7a44c7b9-da71-4138-a48c-48b94163bbd3"/>
+    <assigner>
+      <display value="Acme Health - EMR1"/>
+    </assigner>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <type>
+      <coding>
         <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="PRN"/>
+        <code value="NPI"/>
       </coding>
     </type>
     <system value="http://hl7.org/fhir/sid/us-npi"/>
     <value value="1122445599"/>
     <assigner>
       <display value="cms.gov"/>
+    </assigner>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="TAX"/>
+      </coding>
+    </type>
+    <system value="urn:oid:2.16.840.1.113883.4.4"/>
+    <value value="123444222"/>
+    <assigner>
+      <display value="irs.gov"/>
     </assigner>
   </identifier>
   <active value="true"/>

@@ -1,0 +1,73 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "CDMPractitionerRole-Enrollment",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "valueString": "tenant7209"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "valueString": "rgVCJnQBxvghkKTI8Hzz"
+      }
+    ],
+    "source": "http://acme-health.com/payment",
+    "profile": [
+      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner-role"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"CDMPractitionerRole-Enrollment\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/payment!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-practitioner-role.html\">CDM Practitioner Role</a></p></div><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019723078 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><p><b>code</b>: General physician <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#59058001)</span></p><p><b>specialty</b>: General practice (specialty) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394814009)</span></p><p><b>location</b>: <a href=\"Location-KellyClinic.html\">Location/KellyClinic</a> \"Kelly Clinic\"</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "SSRI"
+          }
+        ]
+      },
+      "system": "http://acme-health.com/payment/practitioner-role",
+      "value": "000000000000000000019723078",
+      "assigner": {
+        "display": "Acme Health - Claims Payment Center"
+      }
+    }
+  ],
+  "active": true,
+  "practitioner": {
+    "reference": "Practitioner/DrKelly"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "59058001",
+          "display": "General physician"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "394814009",
+          "display": "General practice (specialty)"
+        }
+      ]
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/KellyClinic"
+    }
+  ]
+}

@@ -7,26 +7,26 @@
 </div></div>
   </text>
   <url value="http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig"/>
-  <version value="5.0.0"/>
+  <version value="6.0.0"/>
   <name value="AlvearieFHIRImplementationGuide"/>
   <title value="Alvearie FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2021-12-16T17:36:56+00:00"/>
+  <date value="2022-01-21T20:46:54+00:00"/>
+  <publisher value="Alvearie Team"/>
   <contact>
-    <name value="Kim Kenna"/>
+    <name value="Alvearie Team"/>
     <telecom>
-      <system value="email"/>
-      <value value="sloand@us.ibm.com"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Tom Eggebraaten"/>
-    <telecom>
-      <system value="email"/>
-      <value value="tegge@us.ibm.com"/>
+      <system value="url"/>
+      <value value="https://www.ibm.com/watson-health/project-alvearie"/>
     </telecom>
   </contact>
   <description value="Alvearie FHIR Profiles"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <packageId value="alvearie.fhir.ig"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -49,12 +49,20 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="CI Build"/>
+        <valueString value="draft"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
         <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
       </extension>
       <extension url="value">
         <valueString value="false"/>
@@ -130,14 +138,6 @@
       </extension>
       <extension url="value">
         <valueString value="template-page-md.html"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -567,6 +567,7 @@
         <reference value="StructureDefinition/cdm-practitioner-role"/>
       </reference>
       <name value="CDM Practitioner Role"/>
+      <description value="IBM Health Data Connect Common Data Model definition of what fields we currently define for a practitioner role"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -809,17 +810,6 @@
       </reference>
       <name value="Reference With Period"/>
       <description value="A reference with a period defining the time period in which the reference is valid"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:complex-type"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/work-address"/>
-      </reference>
-      <name value="Work Address"/>
-      <description value="Physical work location or business address with CDM address extensions"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2590,7 +2580,7 @@
         <reference value="StructureDefinition/insight-summary"/>
       </reference>
       <name value="Insight Summary"/>
-      <description value="Summarizes the insight associated with the element that the insight summary extension is embedded in. The insight array element in the meta section of the resource with the same insight record id contains the full details on the insight. "/>
+      <description value="Summarizes the insight associated with the element that the insight summary extension is embedded in. The insight array element in the meta section of the resource with the same insight record id contains the full details on the insight."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -5183,7 +5173,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/eng-communication-reqeust-status-reason"/>
+        <reference value="CodeSystem/eng-communication-request-status-reason"/>
       </reference>
       <name value="Engagement Communication Request Status Reason Codes"/>
       <description value="Status codes detailing the reason and status history for an Engagement communication request."/>
@@ -5986,6 +5976,17 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
+        <reference value="PractitionerRole/CDMPractitionerRole-Advantage-Imputed-PCP"/>
+      </reference>
+      <name value="CDM Practitioner Role - Advantage Imputed PCP"/>
+      <description value="Sample imputed PCP created from Advantage Suite"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
         <reference value="PractitionerRole/CDMPractitionerRole-Attributed-PCP"/>
       </reference>
       <name value="CDM Practitioner Role - Attributed PCP"/>
@@ -6008,10 +6009,10 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
-        <reference value="PractitionerRole/CDMPractitionerRole-Payer"/>
+        <reference value="PractitionerRole/CDMPractitionerRole-Enrollment"/>
       </reference>
-      <name value="CDM PractitionerRole - Payer"/>
-      <description value="Sample CDM PractitionerRole ingested from Payer system"/>
+      <name value="CDM PractitionerRole - Enrollment"/>
+      <description value="Sample CDM PractitionerRole ingested from Enrollment or Payer system"/>
       <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner-role"/>
     </resource>
     <resource>
@@ -6049,14 +6050,25 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/CommunicationVendor1"/>
+      </reference>
+      <name value="CDM Oganization - Communication Vendor 1"/>
+      <description value="Sample CDM Organization representing a communication vendor"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
         <reference value="Condition/ConditionInstanceWithNLPInsights"/>
       </reference>
-      <name value="NLP Derived Insights"/>
+      <name value="Condition Instance With NLP Insights"/>
       <description value="Condition example where condition code is set from NLP derived insights"/>
-      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -6192,6 +6204,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/IBM"/>
+      </reference>
+      <name value="CDM Oganization - IBM"/>
+      <description value="Sample CDM Organization representing IBM"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="InsurancePlan"/>
       </extension>
       <reference>
@@ -6228,9 +6251,20 @@
         <valueString value="Location"/>
       </extension>
       <reference>
-        <reference value="Location/MatchedLocationSource-EMR1-LocA"/>
+        <reference value="Location/MatchedLocationSource-EMR1-LocationA"/>
       </reference>
-      <name value="Matched Location Source - EMR1 - Location A"/>
+      <name value="Matched Location Source - EMR1 Location A"/>
+      <description value="Sample of a matched source location with mpi guid identifier and reference to the match location"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/MatchedLocationSource-EMR2-LocationB"/>
+      </reference>
+      <name value="Matched Location Source - EMR2 Location B"/>
       <description value="Sample of a matched source location with mpi guid identifier and reference to the match location"/>
       <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-location"/>
     </resource>
@@ -6250,10 +6284,43 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/MatchedPatientSource-EMR1-PatA"/>
+        <reference value="Patient/MatchedPatientSource-EMR1-PatientA"/>
       </reference>
-      <name value="Matched Patient Source - EMR1 - Patient A"/>
-      <description value="Sample of a matched source patient with reference to the match patient"/>
+      <name value="Matched Patient Source Example - EMR1 Patient A"/>
+      <description value="Sample of a matched source patient with reference to the match patient. Used to demonstrate patient matching."/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/MatchedPatientSource-EMR2-PatientB"/>
+      </reference>
+      <name value="Matched Patient Source Example - EMR2 Patient B"/>
+      <description value="Sample of a matched source patient with reference to the match patient. Used to demonstrate patient matching."/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/MatchedPatientSource-EMR2-PatientC"/>
+      </reference>
+      <name value="Matched Patient Source Example - EMR2 Patient C"/>
+      <description value="Sample of a matched source patient with reference to the match patient. Used to demonstrate patient matching."/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/MatchedPatientSource-EMR3-PatientD"/>
+      </reference>
+      <name value="Matched Patient Source Example - EMR3 Patient D"/>
+      <description value="Sample of a matched source patient with a reference to the a different match patient due to a fuzzy low-confidence match and a manaul user split. Used to demonstrate patient matching."/>
       <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
     </resource>
     <resource>
@@ -6272,9 +6339,20 @@
         <valueString value="Practitioner"/>
       </extension>
       <reference>
-        <reference value="Practitioner/MatchedPractitionerSource-EMR1-DrA"/>
+        <reference value="Practitioner/MatchedPractitionerSource-EMR1-PractitionerA"/>
       </reference>
-      <name value="Matched Practitioner Source - EMR1 - DrA"/>
+      <name value="Matched Practitioner Source - EMR1 Practitioner A"/>
+      <description value="Sample of a matched source practitioner with mpi guid identifier and reference to the match practitioner"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/MatchedPractitionerSource-EMR2-PractitionerB"/>
+      </reference>
+      <name value="Matched Practitioner Source - EMR2 Practitioner B"/>
       <description value="Sample of a matched source practitioner with mpi guid identifier and reference to the match practitioner"/>
       <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner"/>
     </resource>
@@ -6409,6 +6487,39 @@
       <name value="Quality Measure Report Example - Practitioner"/>
       <description value="Example measure report containing measure results for an attributed practitioner"/>
       <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DetectedIssue"/>
+      </extension>
+      <reference>
+        <reference value="DetectedIssue/RelatedCareGapDetectedIssue"/>
+      </reference>
+      <name value="Related Care Gap Detected Issue"/>
+      <description value="Example of a related care gap detected issue that has been resolved or reassigned to another provider."/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/care-gap-detected-issue"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RelatedCareGapObservation"/>
+      </reference>
+      <name value="Measure Population Observation - Related Care Gap Example"/>
+      <description value="Example of an observation indicating that the patient was in a related care gap over a period of time"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/measure-population-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/RelatedNumeratorObservation"/>
+      </reference>
+      <name value="Measure Population Observation - Related Numerator Example"/>
+      <description value="Example of an observation indicating that the patient was in a related numerator over a period of time"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/measure-population-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DetectedIssue xmlns="http://hl7.org/fhir">
+  <id value="RelatedCareGapDetectedIssue"/>
+  <meta>
+    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/care-gap-detected-issue"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "RelatedCareGapDetectedIssue" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-care-gap-detected-issue.html">Care Gap Detected Issue</a></p></div><p><b>CanonicalMeasure</b>: <a href="Measure-QualityMeasureExample.html">Diabetes_HbA1c_Test_Performed</a></p><p><b>Measure Population Id</b>: dm-hba1c-caregap-poor-control</p><p><b>Assigned Practitioner</b>: <a href="PractitionerRole-CDMPractitionerRole-EMR-PCP.html">PractitionerRole/CDMPractitionerRole-EMR-PCP</a></p><p><b>CareGapComplianceEventDisplayName</b>: HbA1c Test</p><p><b>CareGapComplianceFrequency</b>: Once yearly</p><p><b>CareGapComplianceMet</b>: true</p><p><b>RelatedIssue</b>: <a href="DetectedIssue-CareGapDetectedIssueExample.html">DetectedIssue/CareGapDetectedIssueExample</a></p><p><b>identifier</b>: Derived Resource Identifier: 4dee9608-e1e0-4653-9f75-b7bdb8d3a968</p><p><b>status</b>: final</p><p><b>patient</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>identified</b>: 2020-02-01 --&gt; 2020-02-13</p></div>
+  </text>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure">
+    <valueCanonical value="https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-population-id">
+    <valueId value="dm-hba1c-caregap-poor-control"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/assigned-practitioner">
+    <valueReference>
+      <reference value="PractitionerRole/CDMPractitionerRole-EMR-PCP"/>
+    </valueReference>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-display-name">
+    <valueString value="HbA1c Test"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-frequency">
+    <valueString value="Once yearly"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-met">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/related-issue">
+    <valueReference>
+      <reference value="DetectedIssue/CareGapDetectedIssueExample"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <code value="DRI"/>
+      </coding>
+    </type>
+    <system value="http://ibm.com/fhir/cdm/care-gap-detected-issue"/>
+    <value value="4dee9608-e1e0-4653-9f75-b7bdb8d3a968"/>
+    <assigner>
+      <display value="IBM"/>
+    </assigner>
+  </identifier>
+  <status value="final"/>
+  <patient>
+    <reference value="Patient/CDMPatientInstance"/>
+  </patient>
+  <identifiedPeriod>
+    <start value="2020-02-01"/>
+    <end value="2020-02-13"/>
+  </identifiedPeriod>
+</DetectedIssue>

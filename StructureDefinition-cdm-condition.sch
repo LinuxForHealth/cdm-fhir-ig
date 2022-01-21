@@ -12,7 +12,6 @@
   <sch:pattern>
     <sch:title>f:Condition</sch:title>
     <sch:rule context="f:Condition">
-      <sch:assert test="count(f:contained) &lt;= 0">contained: maximum cardinality of 'contained' is 0</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-type']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-type': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-priority']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-priority': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-clinical-course']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-clinical-course': maximum cardinality of 'extension' is 1</sch:assert>

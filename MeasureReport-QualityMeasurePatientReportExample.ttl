@@ -157,10 +157,13 @@
   ];
   fhir:MeasureReport.status [ fhir:value "complete"];
   fhir:MeasureReport.type [ fhir:value "individual"];
-  fhir:MeasureReport.measure [ fhir:value "Measure-QualityMeasureExample.html"];
+  fhir:MeasureReport.measure [
+     fhir:value "https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html";
+     fhir:link <https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html>
+  ];
   fhir:MeasureReport.subject [
-     fhir:link <http://ibm.com/fhir/cdm/Patient/Patient1>;
-     fhir:Reference.reference [ fhir:value "Patient/Patient1" ]
+     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
   ];
   fhir:MeasureReport.date [ fhir:value "2020-03-01T03:00:00Z"^^xsd:dateTime];
   fhir:MeasureReport.reporter [
@@ -215,18 +218,7 @@
        fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
      ], [
        fhir:index 3;
-       fhir:Element.id [ fhir:value "dm-hba1c-caregap-controlled" ];
-       fhir:MeasureReport.group.population.code [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/measure-population-type" ];
-           fhir:Coding.code [ fhir:value "care-gap" ]
-         ]
-       ];
-       fhir:MeasureReport.group.population.count [ fhir:value "0"^^xsd:integer ]
-     ], [
-       fhir:index 4;
-       fhir:Element.id [ fhir:value "dm-hba1c-caregap-poor-control" ];
+       fhir:Element.id [ fhir:value "dm-hba1c-caregap" ];
        fhir:MeasureReport.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
@@ -235,6 +227,9 @@
          ]
        ];
        fhir:MeasureReport.group.population.count [ fhir:value "1"^^xsd:integer ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ]
      ]
   ] .
 

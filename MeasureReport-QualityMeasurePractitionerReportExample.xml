@@ -34,6 +34,130 @@
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "QualityMeasurePractitionerReportExample" </p><p style="margin-bottom: 0px">Information Source: http://ibm.com/fhir/measure-cohort!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-quality-measure-report-practitioner.html">Practitioner Quality Measure Report</a></p><p style="margin-bottom: 0px">Tag: <span title="{http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification}">http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification</span></p></div><p><b>MeasureParameterValue</b>: </p><p><b style="color: maroon">Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here</b></p></div>
   </text>
+  <contained>
+    <Patient>
+      <id value="Patient1"/>
+    </Patient>
+  </contained>
+  <contained>
+    <Patient>
+      <id value="Patient2"/>
+    </Patient>
+  </contained>
+  <contained>
+    <Patient>
+      <id value="Patient3"/>
+    </Patient>
+  </contained>
+  <contained>
+    <Patient>
+      <id value="Patient4"/>
+    </Patient>
+  </contained>
+  <contained>
+    <Patient>
+      <id value="Patient5"/>
+    </Patient>
+  </contained>
+  <contained>
+    <List>
+      <id value="InitialPopulationPatientList"/>
+      <status value="current"/>
+      <mode value="working"/>
+      <entry>
+        <item>
+          <reference value="#Patient1"/>
+        </item>
+      </entry>
+      <entry>
+        <item>
+          <reference value="#Patient2"/>
+        </item>
+      </entry>
+      <entry>
+        <item>
+          <reference value="#Patient3"/>
+        </item>
+      </entry>
+      <entry>
+        <item>
+          <reference value="#Patient4"/>
+        </item>
+      </entry>
+      <entry>
+        <item>
+          <reference value="#Patient5"/>
+        </item>
+      </entry>
+    </List>
+  </contained>
+  <contained>
+    <List>
+      <id value="DenominatorPatientList"/>
+      <status value="current"/>
+      <mode value="working"/>
+      <entry>
+        <item>
+          <reference value="#Patient1"/>
+        </item>
+      </entry>
+      <entry>
+        <item>
+          <reference value="#Patient2"/>
+        </item>
+      </entry>
+      <entry>
+        <item>
+          <reference value="#Patient3"/>
+        </item>
+      </entry>
+      <entry>
+        <item>
+          <reference value="#Patient4"/>
+        </item>
+      </entry>
+    </List>
+  </contained>
+  <contained>
+    <List>
+      <id value="NumeratorPatientList"/>
+      <meta>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+      </meta>
+      <status value="current"/>
+      <mode value="working"/>
+      <entry>
+        <item>
+          <reference value="#Patient1"/>
+        </item>
+      </entry>
+      <entry>
+        <item>
+          <reference value="#Patient2"/>
+        </item>
+      </entry>
+      <entry>
+        <item>
+          <reference value="#Patient3"/>
+        </item>
+      </entry>
+    </List>
+  </contained>
+  <contained>
+    <List>
+      <id value="CareGapPatientList"/>
+      <meta>
+        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+      </meta>
+      <status value="current"/>
+      <mode value="working"/>
+      <entry>
+        <item>
+          <reference value="#Patient4"/>
+        </item>
+      </entry>
+    </List>
+  </contained>
   <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value">
     <valueParameterDefinition>
       <extension url="http://ibm.com/fhir/cdm/StructureDefinition/parameter-value">
@@ -82,7 +206,7 @@
   </identifier>
   <status value="complete"/>
   <type value="subject-list"/>
-  <measure value="Measure-QualityMeasureExample.html"/>
+  <measure value="https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html"/>
   <subject>
     <reference value="PractitionerRole/CDMPractitionerRole-Attributed-PCP"/>
   </subject>
@@ -108,9 +232,8 @@
           <code value="initial-population"/>
         </coding>
       </code>
-      <count value="22"/>
       <subjectResults>
-        <reference value="List/DenominatorPatientList"/>
+        <reference value="#InitialPopulationPatientList"/>
       </subjectResults>
     </population>
     <population id="dm-hba1c-den">
@@ -120,9 +243,8 @@
           <code value="denominator"/>
         </coding>
       </code>
-      <count value="20"/>
       <subjectResults>
-        <reference value="List/DenominatorPatientList"/>
+        <reference value="#DenominatorPatientList"/>
       </subjectResults>
     </population>
     <population id="dm-hba1c-num">
@@ -132,34 +254,23 @@
           <code value="numerator"/>
         </coding>
       </code>
-      <count value="16"/>
       <subjectResults>
-        <reference value="List/NumeratorPatientList"/>
+        <reference value="#NumeratorPatientList"/>
       </subjectResults>
     </population>
-    <population id="dm-hba1c-caregap-controlled">
+    <population id="dm-hba1c-caregap">
       <code>
         <coding>
           <system value="http://ibm.com/fhir/cdm/CodeSystem/measure-population-type"/>
           <code value="care-gap"/>
         </coding>
       </code>
-      <count value="3"/>
       <subjectResults>
-        <reference value="List/ControlledCareGapPatientList"/>
+        <reference value="#CareGapPatientList"/>
       </subjectResults>
     </population>
-    <population id="dm-hba1c-caregap-poor-control">
-      <code>
-        <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/measure-population-type"/>
-          <code value="care-gap"/>
-        </coding>
-      </code>
-      <count value="1"/>
-      <subjectResults>
-        <reference value="List/PoorControlCareGapPatientList"/>
-      </subjectResults>
-    </population>
+    <measureScore>
+      <value value="0.75"/>
+    </measureScore>
   </group>
 </MeasureReport>

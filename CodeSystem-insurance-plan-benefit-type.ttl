@@ -13,29 +13,22 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">administrative-fee<a name=\"insurance-plan-benefit-type-administrative-fee\"> </a></td><td>Administrative Fee</td><td>Indicates the administrative fee for the component on the eligibility data</td></tr><tr><td style=\"white-space:nowrap\">capitation-amount<a name=\"insurance-plan-benefit-type-capitation-amount\"> </a></td><td>Capitation Amount</td><td>Indicates the pre-paid amount, on the eligibility data, paid to plans or providers under risk-based managed care contracts</td></tr><tr><td style=\"white-space:nowrap\">employee-contribution<a name=\"insurance-plan-benefit-type-employee-contribution\"> </a></td><td>Employee Contribution</td><td>Indicates the employee premium contribution for the component on the eligibility data</td></tr><tr><td style=\"white-space:nowrap\">non-claim-payment<a name=\"insurance-plan-benefit-type-non-claim-payment\"> </a></td><td>Non Claim Payment</td><td>Indicates the miscellaneous other non-claim payments on the eligibility data, not included in Administrative Fee, Capitation Amount, HMO Premium or Employee Contribution Amount</td></tr><tr><td style=\"white-space:nowrap\">monthly-premium-billed<a name=\"insurance-plan-benefit-type-monthly-premium-billed\"> </a></td><td>Monthly Premium Billed</td><td>Indicates the monthly premium billed for the component on the eligibility data</td></tr><tr><td style=\"white-space:nowrap\">monthly-premium-paid<a name=\"insurance-plan-benefit-type-monthly-premium-paid\"> </a></td><td>Monthly Premium Paid</td><td>Indicates the monthly premium paid for the component on the eligibility data</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insurance-plan-benefit-type"];
-  fhir:CodeSystem.version [ fhir:value "5.0.0"];
+  fhir:CodeSystem.version [ fhir:value "6.0.0"];
   fhir:CodeSystem.name [ fhir:value "InsurancePlanBenefitTypeCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "Insurance Plan Benefit Type Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-12-16T17:36:56+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.contact [
+  fhir:CodeSystem.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Alvearie Team"];
+  fhir:CodeSystem.description [ fhir:value "The codes that indicates the specific types of costs (admin fees, premiums, etc.) that may be tied to a member based on their Insurance plan cost category"];
+  fhir:CodeSystem.jurisdiction [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
-     fhir:ContactDetail.telecom [
+     fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:CodeSystem.description [ fhir:value "The codes that indicates the specific types of costs (admin fees, premiums, etc.) that may be tied to a member based on their Insurance plan cost category"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [

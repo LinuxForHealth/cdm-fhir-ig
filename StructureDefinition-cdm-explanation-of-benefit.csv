@@ -28,11 +28,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.extension","claimReceivedDate","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/claim-received-date]]} {[]}
 ","Date the claim was received","Date the claim was received","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ExplanationOfBenefit.extension","employer","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/employer]]} {[]}
 ","Customer-specific code for the employer as reported on the claim record","Customer-specific code for the employer as reported on the claim record","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ExplanationOfBenefit.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -98,7 +98,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Party responsible for the claim","The provider which is responsible for the claim, predetermination or preauthorization.","Typically this field would be 1..1 where this party is responsible for the claim but not necessarily professionally responsible for the provision of the individual products and services listed below.","","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.provider",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.source"
 "ExplanationOfBenefit.priority","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Desired processing urgency","The provider-required urgency of processing the request. Typical values include: stat, routine deferred.","If a claim processor is unable to complete the processing as per the priority then they should generate and error and not process the request.","The provider may need to indicate their processing requirements so that the processor can indicate if they are unable to comply.","","","","","","","",,"example","The timeliness with which processing is required: stat, normal, deferred.","http://terminology.hl7.org/CodeSystem/processpriority","",,,,"ExplanationOfBenefit.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Desired processing urgency","The provider-required urgency of processing the request. Typical values include: stat, routine deferred.","If a claim processor is unable to complete the processing as per the priority then they should generate and error and not process the request.","The provider may need to indicate their processing requirements so that the processor can indicate if they are unable to comply.","","","","","","","",,"example","","http://terminology.hl7.org/ValueSet/process-priority","",,,,"ExplanationOfBenefit.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.priority"
 "ExplanationOfBenefit.fundsReserveRequested","","Fund pre-allocation
 ","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -199,7 +199,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "ExplanationOfBenefit.careTeam.sequence","","","",1,1,"","","","positiveInt {[]} {[]}
 ","Order of care team","A number to uniquely identify care team entries.","","Necessary to maintain the order of the care team and provide a mechanism to link individuals to claim details.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.careTeam.sequence",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-explanation-of-benefit-careteam-sequence-check:Sequence number on ExplanationOfBenefit CareTeam must match the CareTeam sequence number on the item. {explanationofbenefit.careTeam.sequence = explanationofbenefit.item.careTeamSequence}"
+"
 "ExplanationOfBenefit.careTeam.provider","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Practitioner or organization","Member of the team who provided the product or service.","","Often a regulatory requirement to specify the responsible provider.","","","","","","","",,,,,"",,,,"ExplanationOfBenefit.careTeam.provider",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.actor"
@@ -368,11 +368,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.item.extension","claimResponseItemStatus","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/claim-response-item-status]]} {[]}
 ","The status of claim payment on claim item","The status of claim payment on claim item","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ExplanationOfBenefit.item.extension","serviceBillDaysCount","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/service-bill-days-count]]} {[]}
 ","Number of days between the date of service and the date the claim was received","Number of days between the date of service and the date the claim was received","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ExplanationOfBenefit.item.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -428,7 +428,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "ExplanationOfBenefit.item.quantity.extension","localNumberOfUnitsPerService","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service]]} {[]}
 ","Customer-specific quantity of either services or units","Customer-specific quantity of either services or units","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ExplanationOfBenefit.item.quantity.value","","","",0,1,"","","Y","decimal {[]} {[]}
 ","Numerical value (with implicit precision)","The value of the measured amount. The value includes an implicit precision in the presentation of the value.","The implicit precision in the value should always be honored. Monetary values have their own rules for handling precision (refer to standard accounting text books).","Precision is handled implicitly in almost all cases of measurement.","","","","","","","",,,,,"",,,,"Quantity.value",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","SN.2  / CQ - N/A","PQ.value, CO.value, MO.value, IVL.high or IVL.low depending on the value"
@@ -760,7 +760,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ExplanationOfBenefit.adjudication.extension","adjudicationDate","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/adjudication-date]]} {[]}
 ","Date on which the payment status of the claim was adjudicated","Date on which the payment status of the claim was adjudicated","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ExplanationOfBenefit.adjudication.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.

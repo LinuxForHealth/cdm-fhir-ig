@@ -13,29 +13,22 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/er-or-observation-room-service defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"er-or-observation-room-service-1\"> </a></td><td>Emergency Room</td><td>Indicates an ER revenue code (0450-0459) is present on a facility claim line for a given claim</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"er-or-observation-room-service-2\"> </a></td><td>Observation Room</td><td>Indicates an Observation Room revenue code (0762) is present on a facility claim line for a given claim</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"er-or-observation-room-service-3\"> </a></td><td>ER and Observation Room</td><td>Indicates and ER and Observation Room revenue code (0450-0459, 0762) is present facility claim lines for a given claim</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/er-or-observation-room-service"];
-  fhir:CodeSystem.version [ fhir:value "5.0.0"];
+  fhir:CodeSystem.version [ fhir:value "6.0.0"];
   fhir:CodeSystem.name [ fhir:value "ErOrObservationRoomServiceCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "Er Or Observation Room Service Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-12-16T17:36:56+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.contact [
+  fhir:CodeSystem.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Alvearie Team"];
+  fhir:CodeSystem.description [ fhir:value "Er Or Observation Room Service codes for claims"];
+  fhir:CodeSystem.jurisdiction [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
-     fhir:ContactDetail.telecom [
+     fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:CodeSystem.description [ fhir:value "Er Or Observation Room Service codes for claims"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [

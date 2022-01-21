@@ -111,9 +111,9 @@
   </identifier>
   <status value="complete"/>
   <type value="individual"/>
-  <measure value="Measure-QualityMeasureExample.html"/>
+  <measure value="https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html"/>
   <subject>
-    <reference value="Patient/Patient1"/>
+    <reference value="Patient/CDMPatientInstance"/>
   </subject>
   <date value="2020-03-01T03:00:00Z"/>
   <reporter>
@@ -157,16 +157,7 @@
       </code>
       <count value="0"/>
     </population>
-    <population id="dm-hba1c-caregap-controlled">
-      <code>
-        <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/measure-population-type"/>
-          <code value="care-gap"/>
-        </coding>
-      </code>
-      <count value="0"/>
-    </population>
-    <population id="dm-hba1c-caregap-poor-control">
+    <population id="dm-hba1c-caregap">
       <code>
         <coding>
           <system value="http://ibm.com/fhir/cdm/CodeSystem/measure-population-type"/>
@@ -175,5 +166,8 @@
       </code>
       <count value="1"/>
     </population>
+    <measureScore>
+      <value value="0"/>
+    </measureScore>
   </group>
 </MeasureReport>

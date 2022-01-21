@@ -52,8 +52,7 @@
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/reference" ];
            fhir:Extension.valueReference [
-             fhir:link <http://ibm.com/fhir/cdm/DiagnosticReport/insight-reference-123456-01>;
-             fhir:Reference.reference [ fhir:value "DiagnosticReport/insight-reference-123456-01" ]
+             fhir:Reference.reference [ fhir:value "#insight-reference-123456-01" ]
            ]
          ], [
            fhir:index 1;
@@ -68,7 +67,7 @@
                a sct:46635009;
                fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
                fhir:Coding.code [ fhir:value "46635009" ];
-               fhir:Coding.display [ fhir:value "Diabetes Mellitus, Insulin-Dependent" ]
+               fhir:Coding.display [ fhir:value "Diabetes mellitus type 1" ]
              ]
            ], [
              fhir:index 1;
@@ -82,10 +81,10 @@
              fhir:index 2;
              fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-value" ];
              fhir:Extension.valueCoding [
-               a loinc:LP36797-6;
+               a loinc:44877-9;
                fhir:Coding.system [ fhir:value "http://loinc.org" ];
-               fhir:Coding.code [ fhir:value "LP36797-6" ];
-               fhir:Coding.display [ fhir:value "Diabetes Mellitus, Insulin-Dependent" ]
+               fhir:Coding.code [ fhir:value "44877-9" ];
+               fhir:Coding.display [ fhir:value "Insulin dependent diabetes mellitus [Presence]" ]
              ]
            ], [
              fhir:index 3;
@@ -148,14 +147,29 @@
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient";
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient>
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ConditionInstanceWithNLPInsights\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-patient.html\">CDM Patient</a></p></div><p><b>identifier</b>: Source System Row Identifier: 46706977-907b-453a-87bc-76002d7076ef (OFFICIAL)</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Diabetes Mellitus, Insulin-Dependent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#46635009; <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C0011854; <a href=\"https://loinc.org/\">LOINC</a>#LP36797-6)</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"ConditionInstanceWithNLPInsights\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-condition.html\">CDM Condition</a></p></div><p><b>identifier</b>: Source System Row Identifier: 46706977-907b-453a-87bc-76002d7076ef (OFFICIAL)</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Diabetes mellitus type 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#46635009; <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C0011854 \"Diabetes Mellitus, Insulin-Dependent\"; <a href=\"https://loinc.org/\">LOINC</a>#44877-9 \"Insulin dependent diabetes mellitus [Presence]\")</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:DiagnosticReport;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "insight-reference-123456-01" ];
+     fhir:DiagnosticReport.status [ fhir:value "final" ];
+     fhir:DiagnosticReport.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:10451-3;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "10451-3" ]
+       ]
+     ];
+     fhir:DiagnosticReport.conclusion [ fhir:value "Patient exhibits results consistent with insulin-dependent diabetes despite no family history of type 1 or type 2 diabetes." ]
   ];
   fhir:Condition.identifier [
      fhir:index 0;
@@ -201,7 +215,7 @@
        a sct:46635009;
        fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
        fhir:Coding.code [ fhir:value "46635009" ];
-       fhir:Coding.display [ fhir:value "Diabetes Mellitus, Insulin-Dependent" ]
+       fhir:Coding.display [ fhir:value "Diabetes mellitus type 1" ]
      ], [
        fhir:index 1;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/umls" ];
@@ -209,10 +223,10 @@
        fhir:Coding.display [ fhir:value "Diabetes Mellitus, Insulin-Dependent" ]
      ], [
        fhir:index 2;
-       a loinc:LP36797-6;
+       a loinc:44877-9;
        fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "LP36797-6" ];
-       fhir:Coding.display [ fhir:value "Diabetes Mellitus, Insulin-Dependent" ]
+       fhir:Coding.code [ fhir:value "44877-9" ];
+       fhir:Coding.display [ fhir:value "Insulin dependent diabetes mellitus [Presence]" ]
      ]
   ];
   fhir:Condition.subject [

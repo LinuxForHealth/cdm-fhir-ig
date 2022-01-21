@@ -13,29 +13,22 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/gender-identity defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"gender-identity-female\"> </a></td><td>Female</td></tr><tr><td style=\"white-space:nowrap\">gender-neutral<a name=\"gender-identity-gender-neutral\"> </a></td><td>Gender-neutral</td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"gender-identity-male\"> </a></td><td>Male</td></tr><tr><td style=\"white-space:nowrap\">non-binary<a name=\"gender-identity-non-binary\"> </a></td><td>Non-binary</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"gender-identity-other\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"gender-identity-unknown\"> </a></td><td>Unknown</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/gender-identity"];
-  fhir:CodeSystem.version [ fhir:value "5.0.0"];
+  fhir:CodeSystem.version [ fhir:value "6.0.0"];
   fhir:CodeSystem.name [ fhir:value "GenderIdentityCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "Gender Identity Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-12-16T17:36:56+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.contact [
+  fhir:CodeSystem.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Alvearie Team"];
+  fhir:CodeSystem.description [ fhir:value "Typically, gender identity codes are described in terms of masculinity and femininity. Gender identity is a social construct that varies, both across different cultures and over time. This value is often used for identity purposes, and should be collected directly from the patient."];
+  fhir:CodeSystem.jurisdiction [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
-     fhir:ContactDetail.telecom [
+     fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:CodeSystem.description [ fhir:value "Typically, gender identity codes are described in terms of masculinity and femininity. Gender identity is a social construct that varies, both across different cultures and over time. This value is often used for identity purposes, and should be collected directly from the patient."];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [

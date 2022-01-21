@@ -47,6 +47,135 @@
     "status": "extensions",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"QualityMeasurePractitionerReportExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://ibm.com/fhir/measure-cohort!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-quality-measure-report-practitioner.html\">Practitioner Quality Measure Report</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification}\">http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification</span></p></div><p><b>MeasureParameterValue</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here</b></p></div>"
   },
+  "contained": [
+    {
+      "resourceType": "Patient",
+      "id": "Patient1"
+    },
+    {
+      "resourceType": "Patient",
+      "id": "Patient2"
+    },
+    {
+      "resourceType": "Patient",
+      "id": "Patient3"
+    },
+    {
+      "resourceType": "Patient",
+      "id": "Patient4"
+    },
+    {
+      "resourceType": "Patient",
+      "id": "Patient5"
+    },
+    {
+      "resourceType": "List",
+      "id": "InitialPopulationPatientList",
+      "status": "current",
+      "mode": "working",
+      "entry": [
+        {
+          "item": {
+            "reference": "#Patient1"
+          }
+        },
+        {
+          "item": {
+            "reference": "#Patient2"
+          }
+        },
+        {
+          "item": {
+            "reference": "#Patient3"
+          }
+        },
+        {
+          "item": {
+            "reference": "#Patient4"
+          }
+        },
+        {
+          "item": {
+            "reference": "#Patient5"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "List",
+      "id": "DenominatorPatientList",
+      "status": "current",
+      "mode": "working",
+      "entry": [
+        {
+          "item": {
+            "reference": "#Patient1"
+          }
+        },
+        {
+          "item": {
+            "reference": "#Patient2"
+          }
+        },
+        {
+          "item": {
+            "reference": "#Patient3"
+          }
+        },
+        {
+          "item": {
+            "reference": "#Patient4"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "List",
+      "id": "NumeratorPatientList",
+      "meta": {
+        "profile": [
+          "http://ibm.com/fhir/cdm/StructureDefinition/patient-list"
+        ]
+      },
+      "status": "current",
+      "mode": "working",
+      "entry": [
+        {
+          "item": {
+            "reference": "#Patient1"
+          }
+        },
+        {
+          "item": {
+            "reference": "#Patient2"
+          }
+        },
+        {
+          "item": {
+            "reference": "#Patient3"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "List",
+      "id": "CareGapPatientList",
+      "meta": {
+        "profile": [
+          "http://ibm.com/fhir/cdm/StructureDefinition/patient-list"
+        ]
+      },
+      "status": "current",
+      "mode": "working",
+      "entry": [
+        {
+          "item": {
+            "reference": "#Patient4"
+          }
+        }
+      ]
+    }
+  ],
   "extension": [
     {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value",
@@ -113,7 +242,7 @@
   ],
   "status": "complete",
   "type": "subject-list",
-  "measure": "Measure-QualityMeasureExample.html",
+  "measure": "https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html",
   "subject": {
     "reference": "PractitionerRole/CDMPractitionerRole-Attributed-PCP"
   },
@@ -146,9 +275,8 @@
               }
             ]
           },
-          "count": 22,
           "subjectResults": {
-            "reference": "List/DenominatorPatientList"
+            "reference": "#InitialPopulationPatientList"
           }
         },
         {
@@ -161,9 +289,8 @@
               }
             ]
           },
-          "count": 20,
           "subjectResults": {
-            "reference": "List/DenominatorPatientList"
+            "reference": "#DenominatorPatientList"
           }
         },
         {
@@ -176,13 +303,12 @@
               }
             ]
           },
-          "count": 16,
           "subjectResults": {
-            "reference": "List/NumeratorPatientList"
+            "reference": "#NumeratorPatientList"
           }
         },
         {
-          "id": "dm-hba1c-caregap-controlled",
+          "id": "dm-hba1c-caregap",
           "code": {
             "coding": [
               {
@@ -191,27 +317,14 @@
               }
             ]
           },
-          "count": 3,
           "subjectResults": {
-            "reference": "List/ControlledCareGapPatientList"
-          }
-        },
-        {
-          "id": "dm-hba1c-caregap-poor-control",
-          "code": {
-            "coding": [
-              {
-                "system": "http://ibm.com/fhir/cdm/CodeSystem/measure-population-type",
-                "code": "care-gap"
-              }
-            ]
-          },
-          "count": 1,
-          "subjectResults": {
-            "reference": "List/PoorControlCareGapPatientList"
+            "reference": "#CareGapPatientList"
           }
         }
-      ]
+      ],
+      "measureScore": {
+        "value": 0.75
+      }
     }
   ]
 }

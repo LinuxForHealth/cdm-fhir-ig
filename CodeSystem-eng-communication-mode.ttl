@@ -10,59 +10,52 @@
   fhir:Resource.id [ fhir:value "eng-communication-mode"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/eng-communication-mode defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">phone<a name=\"eng-communication-mode-phone\"> </a></td><td>Phone</td><td>Voice messaging by phone</td></tr><tr><td style=\"white-space:nowrap\">sms<a name=\"eng-communication-mode-sms\"> </a></td><td>Sms Text</td><td>SMS text messaging</td></tr><tr><td style=\"white-space:nowrap\">email<a name=\"eng-communication-mode-email\"> </a></td><td>Email</td><td>Email messaging</td></tr><tr><td style=\"white-space:nowrap\">mail<a name=\"eng-communication-mode-mail\"> </a></td><td>Mail</td><td>Postal mail messaging</td></tr><tr><td style=\"white-space:nowrap\">chat<a name=\"eng-communication-mode-chat\"> </a></td><td>Chat</td><td>Conversational chat messaging</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/eng-communication-mode defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">chat<a name=\"eng-communication-mode-chat\"> </a></td><td>Chat</td><td>Conversational chat messaging</td></tr><tr><td style=\"white-space:nowrap\">email<a name=\"eng-communication-mode-email\"> </a></td><td>Email</td><td>Email messaging</td></tr><tr><td style=\"white-space:nowrap\">mail<a name=\"eng-communication-mode-mail\"> </a></td><td>Mail</td><td>Postal mail messaging</td></tr><tr><td style=\"white-space:nowrap\">phone<a name=\"eng-communication-mode-phone\"> </a></td><td>Phone</td><td>Voice messaging by phone</td></tr><tr><td style=\"white-space:nowrap\">sms<a name=\"eng-communication-mode-sms\"> </a></td><td>Sms Text</td><td>SMS text messaging</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-communication-mode"];
-  fhir:CodeSystem.version [ fhir:value "5.0.0"];
+  fhir:CodeSystem.version [ fhir:value "6.0.0"];
   fhir:CodeSystem.name [ fhir:value "EngagementCommunicationModeCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "Engagement Communication Mode Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-12-16T17:36:56+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.contact [
+  fhir:CodeSystem.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Alvearie Team"];
+  fhir:CodeSystem.description [ fhir:value "Communication modes supported for Engagement communication"];
+  fhir:CodeSystem.jurisdiction [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
-     fhir:ContactDetail.telecom [
+     fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:CodeSystem.description [ fhir:value "Communication modes supported for Engagement communication"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "phone" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Phone" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Voice messaging by phone" ]
+     fhir:CodeSystem.concept.code [ fhir:value "chat" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chat" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Conversational chat messaging" ]
   ], [
      fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "sms" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Sms Text" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "SMS text messaging" ]
-  ], [
-     fhir:index 2;
      fhir:CodeSystem.concept.code [ fhir:value "email" ];
      fhir:CodeSystem.concept.display [ fhir:value "Email" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Email messaging" ]
   ], [
-     fhir:index 3;
+     fhir:index 2;
      fhir:CodeSystem.concept.code [ fhir:value "mail" ];
      fhir:CodeSystem.concept.display [ fhir:value "Mail" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Postal mail messaging" ]
   ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "phone" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Phone" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Voice messaging by phone" ]
+  ], [
      fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "chat" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Chat" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Conversational chat messaging" ]
+     fhir:CodeSystem.concept.code [ fhir:value "sms" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sms Text" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "SMS text messaging" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

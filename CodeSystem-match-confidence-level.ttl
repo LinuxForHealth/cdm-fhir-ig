@@ -13,29 +13,22 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/match-confidence-level defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">no-match<a name=\"match-confidence-level-no-match\"> </a></td><td>This record is not likely to be a match.  This record should ONLY be matched when another match is used to identify the match or if a human has intervened to specify a match.</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-confidence-level"];
-  fhir:CodeSystem.version [ fhir:value "5.0.0"];
+  fhir:CodeSystem.version [ fhir:value "6.0.0"];
   fhir:CodeSystem.name [ fhir:value "MatchConfidenceLevelCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "Match Confidence Level Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-12-16T17:36:56+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.contact [
+  fhir:CodeSystem.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Alvearie Team"];
+  fhir:CodeSystem.description [ fhir:value "Codes indicating confidence level of matched entities"];
+  fhir:CodeSystem.jurisdiction [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
-     fhir:ContactDetail.telecom [
+     fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:CodeSystem.description [ fhir:value "Codes indicating confidence level of matched entities"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [

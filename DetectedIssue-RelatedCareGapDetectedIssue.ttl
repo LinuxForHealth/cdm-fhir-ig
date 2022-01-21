@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/DetectedIssue/RelatedCareGapDetectedIssue> a fhir:DetectedIssue;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "RelatedCareGapDetectedIssue"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-detected-issue";
+       fhir:index 0;
+       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/care-gap-detected-issue>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"RelatedCareGapDetectedIssue\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-care-gap-detected-issue.html\">Care Gap Detected Issue</a></p></div><p><b>CanonicalMeasure</b>: <a href=\"Measure-QualityMeasureExample.html\">Diabetes_HbA1c_Test_Performed</a></p><p><b>Measure Population Id</b>: dm-hba1c-caregap-poor-control</p><p><b>Assigned Practitioner</b>: <a href=\"PractitionerRole-CDMPractitionerRole-EMR-PCP.html\">PractitionerRole/CDMPractitionerRole-EMR-PCP</a></p><p><b>CareGapComplianceEventDisplayName</b>: HbA1c Test</p><p><b>CareGapComplianceFrequency</b>: Once yearly</p><p><b>CareGapComplianceMet</b>: true</p><p><b>RelatedIssue</b>: <a href=\"DetectedIssue-CareGapDetectedIssueExample.html\">DetectedIssue/CareGapDetectedIssueExample</a></p><p><b>identifier</b>: Derived Resource Identifier: 4dee9608-e1e0-4653-9f75-b7bdb8d3a968</p><p><b>status</b>: final</p><p><b>patient</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>identified</b>: 2020-02-01 --&gt; 2020-02-13</p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure" ];
+     fhir:Extension.valueCanonical [
+       fhir:value "https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html";
+       fhir:link <https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html>
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-population-id" ];
+     fhir:Extension.valueId [ fhir:value "dm-hba1c-caregap-poor-control" ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/assigned-practitioner" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://ibm.com/fhir/cdm/PractitionerRole/CDMPractitionerRole-EMR-PCP>;
+       fhir:Reference.reference [ fhir:value "PractitionerRole/CDMPractitionerRole-EMR-PCP" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-display-name" ];
+     fhir:Extension.valueString [ fhir:value "HbA1c Test" ]
+  ], [
+     fhir:index 4;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-frequency" ];
+     fhir:Extension.valueString [ fhir:value "Once yearly" ]
+  ], [
+     fhir:index 5;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-met" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 6;
+     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/related-issue" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://ibm.com/fhir/cdm/DetectedIssue/CareGapDetectedIssueExample>;
+       fhir:Reference.reference [ fhir:value "DetectedIssue/CareGapDetectedIssueExample" ]
+     ]
+  ];
+  fhir:DetectedIssue.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "DRI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://ibm.com/fhir/cdm/care-gap-detected-issue" ];
+     fhir:Identifier.value [ fhir:value "4dee9608-e1e0-4653-9f75-b7bdb8d3a968" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "IBM" ]
+     ]
+  ];
+  fhir:DetectedIssue.status [ fhir:value "final"];
+  fhir:DetectedIssue.patient [
+     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
+  ];
+  fhir:DetectedIssue.identifiedPeriod [
+     fhir:Period.start [ fhir:value "2020-02-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-02-13"^^xsd:date ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/DetectedIssue/RelatedCareGapDetectedIssue.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

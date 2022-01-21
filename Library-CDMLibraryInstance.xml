@@ -6,7 +6,7 @@
     <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-library"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Related Artifacts</h2><table class="grid"><tr><td>depends-on</td><td><code>Library/library-quick-model-definition</code></td></tr></table><h2>Parameters</h2><table class="grid"><tr><td>measurePeriod</td><td>out</td><td></td><td></td><td>Period</td></tr><tr><td>complianceDisplayName</td><td>out</td><td></td><td></td><td>string</td></tr><tr><td>complianceFrequency</td><td>out</td><td></td><td></td><td>string</td></tr></table><h2>Data Requirements</h2><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>category</td><td>One of these codes: [not stated] diagnosis: diagnosis</td></tr><tr><td>clinicalStatus</td><td>One of these codes: [not stated] confirmed: confirmed</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1011</td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>category</td><td>One of these codes: [not stated] diagnosis: diagnosis</td></tr><tr><td>clinicalStatus</td><td>One of these codes: [not stated] confirmed: confirmed</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1012</td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>status</td><td>One of these codes: [not stated] finished: finished</td></tr><tr><td>class</td><td>One of these codes: [not stated] ambulatory: ambulatory</td></tr><tr><td>type</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.101.12.1061</td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>diagnosis</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.198.12.1012</td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medication.html">Medication</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001</td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>status</td><td>One of these codes: [not stated] active: active</td></tr><tr><td>medication.code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001</td></tr></table><h2>Contents</h2><p><code><a href="library-cms146-example-content.cql">library-cms146-example-content.cql</a></code> (<code>text/cql</code>)</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Related Artifacts</h2><table class="grid"><tr><td>depends-on</td><td>FHIR Helpers</td><td><code>https://www.hl7.org/fhir/library-fhir-helpers.html</code></td></tr></table><h2>Parameters</h2><table class="grid"><tr><td>measurePeriod</td><td>out</td><td></td><td></td><td>Period</td></tr><tr><td>complianceDisplayName</td><td>out</td><td></td><td></td><td>string</td></tr><tr><td>complianceFrequency</td><td>out</td><td></td><td></td><td>string</td></tr></table><h2>Data Requirements</h2><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>category</td><td>One of these codes: <a href="http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html#encounter-diagnosis">http://terminology.hl7.org/CodeSystem/condition-category</a> encounter-diagnosis: Encounter Diagnosis</td></tr><tr><td>clinicalStatus</td><td>One of these codes: <a href="http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html#active">http://terminology.hl7.org/CodeSystem/condition-clinical</a> active: Active</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1011</td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>category</td><td>One of these codes: <a href="http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html#encounter-diagnosis">http://terminology.hl7.org/CodeSystem/condition-category</a> encounter-diagnosis: Encounter Diagnosis</td></tr><tr><td>clinicalStatus</td><td>One of these codes: <a href="http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html#active">http://terminology.hl7.org/CodeSystem/condition-clinical</a> active: Active</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1012</td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>status</td><td>One of these codes: <a href="http://hl7.org/fhir/R4/codesystem-encounter-status.html#finished">http://hl7.org/fhir/encounter-status</a> finished: Finished</td></tr><tr><td>class</td><td>One of these codes: <a href="http://terminology.hl7.org/3.0.0/CodeSystem-v3-ActCode.html#AMB">http://terminology.hl7.org/CodeSystem/v3-ActCode</a> AMB: ambulatory</td></tr><tr><td>type</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.101.12.1061</td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>diagnosis</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.198.12.1012</td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medication.html">Medication</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001</td></tr></table><table class="grid"><tr><td colspan="2"><b>Type</b>: <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr><tr style="background-color: #efefef"><td>Filter</td><td>Value</td></tr><tr><td>status</td><td>One of these codes: <a href="http://hl7.org/fhir/R4/codesystem-medicationrequest-status.html#active">http://hl7.org/fhir/CodeSystem/medicationrequest-status</a> active: Active</td></tr><tr><td>medication.code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001</td></tr></table><h2>Contents</h2><p>CMS146 Example CQL: <code>No Content</code> (<code>text/cql</code>)</p></div>
   </text>
   <url value="http://ibm.com/fhir/cdm/Library/CDMLibraryInstance"/>
   <identifier>
@@ -17,14 +17,15 @@
         <code value="SSRI"/>
       </coding>
     </type>
-    <system value="http://ibm.com/fhir/cdm/cql-library-measure"/>
-    <value value="CMS146"/>
+    <system value="http://ibm.com/fhir/cdm/cql-library"/>
+    <value value="sample-library-CMS146"/>
     <assigner>
       <display value="IBM"/>
     </assigner>
   </identifier>
-  <version value="5.0.0"/>
-  <title value="Appropriate Testing for Children with Pharyngitis"/>
+  <version value="6.0.0"/>
+  <name value="CMS146_Sample_Cql_Logic_Library"/>
+  <title value="Sample CQL Logic Library for CMS146"/>
   <status value="draft"/>
   <type>
     <coding>
@@ -33,24 +34,18 @@
     </coding>
   </type>
   <date value="2015-07-22"/>
-  <contact>
-    <name value="Kim Kenna"/>
-    <telecom>
-      <system value="email"/>
-      <value value="sloand@us.ibm.com"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Tom Eggebraaten"/>
-    <telecom>
-      <system value="email"/>
-      <value value="tegge@us.ibm.com"/>
-    </telecom>
-  </contact>
-  <description value="Logic for CMS 146: Appropriate Testing for Children with Pharyngitis"/>
+  <publisher value="Alvearie Team"/>
+  <description value="Sample CMS146 library for sample measures used to illustrate Alvearie IG usage"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <relatedArtifact>
     <type value="depends-on"/>
-    <resource value="Library/library-quick-model-definition"/>
+    <display value="FHIR Helpers"/>
+    <resource value="https://www.hl7.org/fhir/library-fhir-helpers.html"/>
   </relatedArtifact>
   <parameter>
     <name value="measurePeriod"/>
@@ -81,13 +76,15 @@
     <codeFilter>
       <path value="category"/>
       <code>
-        <code value="diagnosis"/>
+        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+        <code value="encounter-diagnosis"/>
       </code>
     </codeFilter>
     <codeFilter>
       <path value="clinicalStatus"/>
       <code>
-        <code value="confirmed"/>
+        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+        <code value="active"/>
       </code>
     </codeFilter>
     <codeFilter>
@@ -100,13 +97,15 @@
     <codeFilter>
       <path value="category"/>
       <code>
-        <code value="diagnosis"/>
+        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+        <code value="encounter-diagnosis"/>
       </code>
     </codeFilter>
     <codeFilter>
       <path value="clinicalStatus"/>
       <code>
-        <code value="confirmed"/>
+        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+        <code value="active"/>
       </code>
     </codeFilter>
     <codeFilter>
@@ -119,13 +118,15 @@
     <codeFilter>
       <path value="status"/>
       <code>
+        <system value="http://hl7.org/fhir/encounter-status"/>
         <code value="finished"/>
       </code>
     </codeFilter>
     <codeFilter>
       <path value="class"/>
       <code>
-        <code value="ambulatory"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="AMB"/>
       </code>
     </codeFilter>
     <codeFilter>
@@ -152,6 +153,7 @@
     <codeFilter>
       <path value="status"/>
       <code>
+        <system value="http://hl7.org/fhir/CodeSystem/medicationrequest-status"/>
         <code value="active"/>
       </code>
     </codeFilter>
@@ -162,6 +164,6 @@
   </dataRequirement>
   <content>
     <contentType value="text/cql"/>
-    <url value="library-cms146-example-content.cql"/>
+    <title value="CMS146 Example CQL"/>
   </content>
 </Library>

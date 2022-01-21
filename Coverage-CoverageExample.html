@@ -1,38 +1,38 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>ALVEARIE.FHIR.IG\Coverage Example - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-<link rel="stylesheet" href="assets/css/alvearie.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/alvearie.css" rel="stylesheet"/>
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -40,41 +40,40 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.537"}
-    h3,h4,h5,h6{--heading-prefix:"3.537"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
+    <style type="text/css">h2{--heading-prefix:"3.538"}
+    h3,h4,h5,h6{--heading-prefix:"3.538"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a no-external="true" id="alvearie-logo">
-    <img src="assets/images/alvearieLogo.png" alt="Alvearie" style="float:left" height="60"/>
+  <a id="alvearie-logo" no-external="true">
+    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>5.0.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
-<ul class="nav navbar-nav">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifacts Summary</a></li>
@@ -82,36 +81,36 @@
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-      <li><a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
+      <li><a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a></li>
     </ul>
   </li>
 </ul>
 
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Coverage Example</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Coverage Example</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v5.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
   
 
@@ -159,26 +158,26 @@
 
 
 
-    <!-- insert intro if present -->
+  <!-- insert intro if present -->
   
 
 
 
-  <div><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "CoverageExample" </p><p style="margin-bottom: 0px">Information Source: http://acme-health.com/WellnessInsuranceCompany!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cdm-coverage.html">CDM Coverage</a></p></div><p><b>SubscriberId Encrypted</b>: p58299i3-3t5z-2hyg-7256-g2un4f887e08</p><p><b>Age and Gender Groups</b>: Males 20-24 yr <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-age-gender-group.html">Age and Gender Group Codes</a>#7)</span></p><p><b>Age In Years</b>: 21</p><p><b>Employee Age In Years</b>: 21</p><p><b>Benefit Status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-hipaa-benefit-status.html">HIPAA Benefit Status Codes</a>#A)</span></p><p><b>Cobra Indicator</b>: N</p><p><b>Coverage Month</b>: 2000-06-01</p><p><b>Dual Eligibility Indicator</b>: N</p><p><b>Employee Average Scheduled Hours</b>: 35.5</p><p><b>Employee Birth Date</b>: 1990-01-01</p><p><b>Employee Business Unit</b>: EmpBusUnit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-business-unit#EmpBusUnit)</span></p><p><b>Employee Company</b>: LocalEmpCompany <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-company#LocalEmpCompany)</span></p><p><b>Employee Cost Center</b>: LocalEmpCostCenter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-cost-center#LocalEmpCostCenter)</span></p><p><b>Employee Department</b>: LocalEmpDepartment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-department#LocalEmpDepartment)</span></p><p><b>Employee Division</b>: LocalEmpDivision <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-division#LocalEmpDivision)</span></p><p><b>Employee Education Level</b>: Some College <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-education-level.html">Health Data Connect Education Level Codes</a>#D; local-employee-education-level#AttendedCollege)</span></p><p><b>Employee Exempt Indicator</b>: N</p><p><b>Employee Family Size</b>: 2</p><p><b>Employee Gender</b>: Male <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-gender.html">Health Data Connect Gender Codes</a>#M)</span></p><p><b>Employee Hire Date</b>: 2000-01-01</p><p><b>Employee Id</b>: id: 555555</p><p><b>Employee Job Family</b>: LocalEmpJobFamilyCd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-job-family#LocalEmpJobFamilyCd)</span></p><p><b>Employee Job Grade</b>: LocalEmpJobGradeCd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-job-grade#LocalEmpJobGradeCd)</span></p><p><b>Employee Job Location</b>: EmpJobLocationCd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-physical-job-location#EmpJobLocationCd; local-geographic-job-location#CardingtonOhio)</span></p><p><b>Employee Job Title</b>: SoftwareEngineer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-job-title#SoftwareEngineer; <a href="http://terminology.hl7.org/3.0.0/CodeSystem-soc.html">Standard Occupation Code</a>#15-1131)</span></p><p><b>Employee Labor Union</b>: LocalTeams377 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-labor-union#LocalTeams377)</span></p><p><b>Employee Pay Frequency</b>: Monthly <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-pay-frequency#Monthly)</span></p><p><b>Employee Performance Rating</b>: Meets <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-performance-rating#Meets)</span></p><p><b>Employee Retirement Date</b>: 2099-12-31</p><p><b>Employee Shift</b>: Day <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-shift#Day)</span></p><p><b>Employee Status</b>: LocalEmpStatus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-status#LocalEmpStatus; <a href="CodeSystem-wh-payer-employee-status-code.html">Health Data Connect Employee Status Codes</a>#1; <a href="CodeSystem-hipaa-employee-status.html">HIPAA Employee Status Codes</a>#AC)</span></p><p><b>Employee Sub Business Unit</b>: LocalEmpSubBusinessUnit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-sub-business-unit#LocalEmpSubBusinessUnit)</span></p><p><b>Employee Termination Date</b>: 2099-12-31</p><p><b>Employee Termination Reason</b>: NotTermed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-termination-reason#NotTermed)</span></p><p><b>Employee Wage Amount</b>: 46500</p><p><b>Employee Wage Basis</b>: Annual <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-wage-basis#Annual)</span></p><p><b>Employee Year Of Service</b>: 1</p><p><b>Employee Union Id</b>: MemberUnionId-407</p><p><b>Enrollment PCP Name On Enrollment</b>: Dr Kelly</p><p><b>Enrollment PCP Zip On Enrollment</b>: 75014</p><p><b>Enrollment PCP</b>: EnrollmentPCP1</p><p><b>Employer</b>: LocalEmployerCode <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employer#LocalEmployerCode)</span></p><p><b>Family Income Level</b>: 26500 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-income-level#26500)</span></p><p><b>Job Class Code</b>: jobclass <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-job-class-code#jobclass)</span></p><p><b>Job Location Zipcode</b>: 43315</p><p><b>Long Term Disability Benefit Rate</b>: 10</p><p><b>Medicare Coverage</b>: Not Eligible for Medicare <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-medicare-coverage.html">Health Data Connect Medicare Coverage Codes</a>#N)</span></p><p><b>Medicare Indicator</b>: N</p><p><b>Member Employee Indicator</b>: MemberEmployee <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-member-employee-indicator#MemberEmployee)</span></p><p><b>Restricted Benefits</b>: LocalRestrictedBenefits <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-restricted-benefits#LocalRestrictedBenefits)</span></p><p><b>Salary Indicator</b>: Y</p><p><b>Short Term Disability Benefit Rate</b>: 30</p><p><b>SSI Indicator</b>: N</p><p><b>SSI Status</b>: Unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-ssi-status.html">Health Data Connect SSI Status Codes</a>#999)</span></p><p><b>TANF Benefits</b>: TANF status is unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-tanf-benefit.html">Health Data Connect TANF Benefit codes</a>#9)</span></p><p><b>Total Dependent Count</b>: 1</p><p><b>Union Worker Indicator</b>: N</p><p><b>identifier</b>: Source System Row Identifier: c35466d6-0d2b-4efa-8265-b9ac3f887e08 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>subscriberId</b>: FamilyId_0001</p><p><b>beneficiary</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>relationship</b>: Self <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-subscriber-relationship.html">SubscriberPolicyholder Relationship Codes</a>#self; local-subscriber-relationship#LocalRelationship; <a href="CodeSystem-hipaa-relationship.html">HIPAA Relationship Codes</a>#18)</span></p><p><b>period</b>: 2000-01-01 --&gt; 2000-10-31</p><p><b>payor</b>: <span></span></p><blockquote><p><b>class</b></p><p><b>type</b>: Election Tier <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-coverage-class.html">Health Data Connect Coverage Class Codes</a>#election-tier)</span></p><p><b>value</b>: Family</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Election Tier <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-coverage-class.html">Health Data Connect Coverage Class Codes</a>#election-tier)</span></p><p><b>value</b>: dental employee only</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Election Tier <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-coverage-class.html">Health Data Connect Coverage Class Codes</a>#election-tier)</span></p><p><b>value</b>: vision employee only</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Group Type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-coverage-class.html">Health Data Connect Coverage Class Codes</a>#group-type)</span></p><p><b>value</b>: HMO</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Group <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-coverage-class.html">Coverage Class Codes</a>#group)</span></p><p><b>value</b>: GR12345</p></blockquote></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource &quot;CoverageExample&quot; </p><p style="margin-bottom: 0px">Information Source: http://acme-health.com/WellnessInsuranceCompany!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cdm-coverage.html">CDM Coverage</a></p></div><p><b>SubscriberId Encrypted</b>: p58299i3-3t5z-2hyg-7256-g2un4f887e08</p><p><b>Age and Gender Groups</b>: Males 20-24 yr <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-age-gender-group.html">Age and Gender Group Codes</a>#7)</span></p><p><b>Age In Years</b>: 21</p><p><b>Employee Age In Years</b>: 21</p><p><b>Benefit Status</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-hipaa-benefit-status.html">HIPAA Benefit Status Codes</a>#A)</span></p><p><b>Cobra Indicator</b>: N</p><p><b>Coverage Month</b>: 2000-06-01</p><p><b>Dual Eligibility Indicator</b>: N</p><p><b>Employee Average Scheduled Hours</b>: 35.5</p><p><b>Employee Birth Date</b>: 1990-01-01</p><p><b>Employee Business Unit</b>: EmpBusUnit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-business-unit#EmpBusUnit)</span></p><p><b>Employee Company</b>: LocalEmpCompany <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-company#LocalEmpCompany)</span></p><p><b>Employee Cost Center</b>: LocalEmpCostCenter <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-cost-center#LocalEmpCostCenter)</span></p><p><b>Employee Department</b>: LocalEmpDepartment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-department#LocalEmpDepartment)</span></p><p><b>Employee Division</b>: LocalEmpDivision <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-division#LocalEmpDivision)</span></p><p><b>Employee Education Level</b>: Some College <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-education-level.html">Health Data Connect Education Level Codes</a>#D; local-employee-education-level#AttendedCollege)</span></p><p><b>Employee Exempt Indicator</b>: N</p><p><b>Employee Family Size</b>: 2</p><p><b>Employee Gender</b>: Male <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-gender.html">Health Data Connect Gender Codes</a>#M)</span></p><p><b>Employee Hire Date</b>: 2000-01-01</p><p><b>Employee Id</b>: id: 555555</p><p><b>Employee Job Family</b>: LocalEmpJobFamilyCd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-job-family#LocalEmpJobFamilyCd)</span></p><p><b>Employee Job Grade</b>: LocalEmpJobGradeCd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-job-grade#LocalEmpJobGradeCd)</span></p><p><b>Employee Job Location</b>: EmpJobLocationCd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-physical-job-location#EmpJobLocationCd; local-geographic-job-location#CardingtonOhio)</span></p><p><b>Employee Job Title</b>: SoftwareEngineer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-job-title#SoftwareEngineer; unknown#15-1131)</span></p><p><b>Employee Labor Union</b>: LocalTeams377 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-labor-union#LocalTeams377)</span></p><p><b>Employee Pay Frequency</b>: Monthly <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-pay-frequency#Monthly)</span></p><p><b>Employee Performance Rating</b>: Meets <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-performance-rating#Meets)</span></p><p><b>Employee Retirement Date</b>: 2099-12-31</p><p><b>Employee Shift</b>: Day <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-shift#Day)</span></p><p><b>Employee Status</b>: LocalEmpStatus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-status#LocalEmpStatus; <a href="CodeSystem-wh-payer-employee-status-code.html">Health Data Connect Employee Status Codes</a>#1; <a href="CodeSystem-hipaa-employee-status.html">HIPAA Employee Status Codes</a>#AC)</span></p><p><b>Employee Sub Business Unit</b>: LocalEmpSubBusinessUnit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-sub-business-unit#LocalEmpSubBusinessUnit)</span></p><p><b>Employee Termination Date</b>: 2099-12-31</p><p><b>Employee Termination Reason</b>: NotTermed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-termination-reason#NotTermed)</span></p><p><b>Employee Wage Amount</b>: 46500</p><p><b>Employee Wage Basis</b>: Annual <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-wage-basis#Annual)</span></p><p><b>Employee Year Of Service</b>: 1</p><p><b>Employee Union Id</b>: MemberUnionId-407</p><p><b>Enrollment PCP Name On Enrollment</b>: Dr Kelly</p><p><b>Enrollment PCP Zip On Enrollment</b>: 75014</p><p><b>Enrollment PCP</b>: EnrollmentPCP1</p><p><b>Employer</b>: LocalEmployerCode <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employer#LocalEmployerCode)</span></p><p><b>Family Income Level</b>: 26500 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-income-level#26500)</span></p><p><b>Job Class Code</b>: jobclass <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-job-class-code#jobclass)</span></p><p><b>Job Location Zipcode</b>: 43315</p><p><b>Long Term Disability Benefit Rate</b>: 10</p><p><b>Medicare Coverage</b>: Not Eligible for Medicare <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-medicare-coverage.html">Health Data Connect Medicare Coverage Codes</a>#N)</span></p><p><b>Medicare Indicator</b>: N</p><p><b>Member Employee Indicator</b>: MemberEmployee <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-member-employee-indicator#MemberEmployee)</span></p><p><b>Restricted Benefits</b>: LocalRestrictedBenefits <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-restricted-benefits#LocalRestrictedBenefits)</span></p><p><b>Salary Indicator</b>: Y</p><p><b>Short Term Disability Benefit Rate</b>: 30</p><p><b>SSI Indicator</b>: N</p><p><b>SSI Status</b>: Unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-ssi-status.html">Health Data Connect SSI Status Codes</a>#999)</span></p><p><b>TANF Benefits</b>: TANF status is unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-tanf-benefit.html">Health Data Connect TANF Benefit codes</a>#9)</span></p><p><b>Total Dependent Count</b>: 1</p><p><b>Union Worker Indicator</b>: N</p><p><b>identifier</b>: Source System Row Identifier: c35466d6-0d2b-4efa-8265-b9ac3f887e08 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>subscriberId</b>: FamilyId_0001</p><p><b>beneficiary</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> &quot; MCLASTNAME&quot;</p><p><b>relationship</b>: Self <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-subscriber-relationship.html">SubscriberPolicyholder Relationship Codes</a>#self; local-subscriber-relationship#LocalRelationship; <a href="CodeSystem-hipaa-relationship.html">HIPAA Relationship Codes</a>#18)</span></p><p><b>period</b>: 2000-01-01 --&gt; 2000-10-31</p><p><b>payor</b>: <span/></p><blockquote><p><b>class</b></p><p><b>type</b>: Election Tier <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-coverage-class.html">Health Data Connect Coverage Class Codes</a>#election-tier)</span></p><p><b>value</b>: Family</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Election Tier <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-coverage-class.html">Health Data Connect Coverage Class Codes</a>#election-tier)</span></p><p><b>value</b>: dental employee only</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Election Tier <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-coverage-class.html">Health Data Connect Coverage Class Codes</a>#election-tier)</span></p><p><b>value</b>: vision employee only</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Group Type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-coverage-class.html">Health Data Connect Coverage Class Codes</a>#group-type)</span></p><p><b>value</b>: HMO</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Group <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-coverage-class.html">Coverage Class Codes</a>#group)</span></p><p><b>value</b>: GR12345</p></blockquote></div>
 
-    <!-- insert notes if present -->
+  <!-- insert notes if present -->
   
 
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -188,47 +187,48 @@
     });
   </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="l771">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="sloand@us.ibm.com"></a>.  Package alvearie.fhir.ig#5.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 16, 2021 17:36+0000">2021-12-16</span>
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-          
+          </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
-  <!-- feedback form - Google forms -->
-  <!-- v0.1, 2021-01-09 -->
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
 
 
 
-  <!-- / feedback form -->
+<!-- / feedback form  -->
 
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+

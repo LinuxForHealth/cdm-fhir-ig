@@ -22,16 +22,16 @@
       <valueString value="1.0"/>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp">
-      <valueDateTime value="2020-02-12T02:01:00Z"/>
+      <valueDateTime value="2020-02-28T02:01:00Z"/>
     </extension>
     <source value="http://ibm.com/fhir/engagement-measure-cohort"/>
     <profile value="http://ibm.com/fhir/cdm/StructureDefinition/measure-population-observation"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "NumeratorObservationExample" </p><p style="margin-bottom: 0px">Information Source: http://ibm.com/fhir/engagement-measure-cohort!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-measure-population-observation.html">Measure Population Observation</a></p></div><p><b>CanonicalMeasure</b>: <code>Measure-QualityMeasureExample.html</code></p><p><b>Measure Population Id</b>: dm-hba1c-num</p><p><b>Assigned Practitioner</b>: <a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html">PractitionerRole/CDMPractitionerRole-Attributed-PCP</a></p><p><b>RelatedObservation</b>: <a href="RelatedDenominatorObservation">RelatedDenominatorObservation</a></p><p><b>identifier</b>: Derived Resource Identifier: 9591c85d-2f90-4586-b76d-be8e8ab2a719</p><p><b>status</b>: final</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-measure-population.html">MeasurePopulationType</a>#numerator)</span></p><p><b>subject</b>: <a href="Patient/Patient1">Patient/Patient1</a></p><p><b>effective</b>: 2020-02-14 --&gt; 2020-02-28</p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "NumeratorObservationExample" </p><p style="margin-bottom: 0px">Information Source: http://ibm.com/fhir/engagement-measure-cohort!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-measure-population-observation.html">Measure Population Observation</a></p></div><p><b>CanonicalMeasure</b>: <a href="Measure-QualityMeasureExample.html">Diabetes_HbA1c_Test_Performed</a></p><p><b>Measure Population Id</b>: dm-hba1c-num</p><p><b>Assigned Practitioner</b>: <a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html">PractitionerRole/CDMPractitionerRole-Attributed-PCP</a></p><p><b>Assigned Practitioner</b>: <a href="PractitionerRole-CDMPractitionerRole-EMR-PCP.html">PractitionerRole/CDMPractitionerRole-EMR-PCP</a></p><p><b>RelatedObservation</b>: <a href="Observation-RelatedNumeratorObservation.html">Observation/RelatedNumeratorObservation</a></p><p><b>identifier</b>: Derived Resource Identifier: 9591c85d-2f90-4586-b76d-be8e8ab2a719</p><p><b>status</b>: final</p><p><b>code</b>: Numerator <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.0.0/CodeSystem-measure-population.html">MeasurePopulationType</a>#numerator)</span></p><p><b>subject</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>effective</b>: 2020-02-14 --&gt; 2020-02-28</p></div>
   </text>
   <extension url="http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure">
-    <valueCanonical value="Measure-QualityMeasureExample.html"/>
+    <valueCanonical value="https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html"/>
   </extension>
   <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-population-id">
     <valueId value="dm-hba1c-num"/>
@@ -41,9 +41,14 @@
       <reference value="PractitionerRole/CDMPractitionerRole-Attributed-PCP"/>
     </valueReference>
   </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/assigned-practitioner">
+    <valueReference>
+      <reference value="PractitionerRole/CDMPractitionerRole-EMR-PCP"/>
+    </valueReference>
+  </extension>
   <extension url="http://ibm.com/fhir/cdm/StructureDefinition/related-observation">
     <valueReference>
-      <reference value="RelatedDenominatorObservation"/>
+      <reference value="Observation/RelatedNumeratorObservation"/>
     </valueReference>
   </extension>
   <identifier>
@@ -67,7 +72,7 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/Patient1"/>
+    <reference value="Patient/CDMPatientInstance"/>
   </subject>
   <effectivePeriod>
     <start value="2020-02-14"/>

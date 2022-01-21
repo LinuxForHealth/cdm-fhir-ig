@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Related Artifacts</h2><table class=\"grid\"><tr><td>depends-on</td><td><code>Library/library-quick-model-definition</code></td></tr></table><h2>Parameters</h2><table class=\"grid\"><tr><td>measurePeriod</td><td>out</td><td></td><td></td><td>Period</td></tr><tr><td>complianceDisplayName</td><td>out</td><td></td><td></td><td>string</td></tr><tr><td>complianceFrequency</td><td>out</td><td></td><td></td><td>string</td></tr></table><h2>Data Requirements</h2><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>category</td><td>One of these codes: [not stated] diagnosis: diagnosis</td></tr><tr><td>clinicalStatus</td><td>One of these codes: [not stated] confirmed: confirmed</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1011</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>category</td><td>One of these codes: [not stated] diagnosis: diagnosis</td></tr><tr><td>clinicalStatus</td><td>One of these codes: [not stated] confirmed: confirmed</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1012</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>status</td><td>One of these codes: [not stated] finished: finished</td></tr><tr><td>class</td><td>One of these codes: [not stated] ambulatory: ambulatory</td></tr><tr><td>type</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.101.12.1061</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/diagnosticreport.html\">DiagnosticReport</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>diagnosis</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.198.12.1012</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/medication.html\">Medication</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>status</td><td>One of these codes: [not stated] active: active</td></tr><tr><td>medication.code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001</td></tr></table><h2>Contents</h2><p><code><a href=\"library-cms146-example-content.cql\">library-cms146-example-content.cql</a></code> (<code>text/cql</code>)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Related Artifacts</h2><table class=\"grid\"><tr><td>depends-on</td><td>FHIR Helpers</td><td><code>https://www.hl7.org/fhir/library-fhir-helpers.html</code></td></tr></table><h2>Parameters</h2><table class=\"grid\"><tr><td>measurePeriod</td><td>out</td><td></td><td></td><td>Period</td></tr><tr><td>complianceDisplayName</td><td>out</td><td></td><td></td><td>string</td></tr><tr><td>complianceFrequency</td><td>out</td><td></td><td></td><td>string</td></tr></table><h2>Data Requirements</h2><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>category</td><td>One of these codes: <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html#encounter-diagnosis\">http://terminology.hl7.org/CodeSystem/condition-category</a> encounter-diagnosis: Encounter Diagnosis</td></tr><tr><td>clinicalStatus</td><td>One of these codes: <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html#active\">http://terminology.hl7.org/CodeSystem/condition-clinical</a> active: Active</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1011</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>category</td><td>One of these codes: <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-category.html#encounter-diagnosis\">http://terminology.hl7.org/CodeSystem/condition-category</a> encounter-diagnosis: Encounter Diagnosis</td></tr><tr><td>clinicalStatus</td><td>One of these codes: <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-condition-clinical.html#active\">http://terminology.hl7.org/CodeSystem/condition-clinical</a> active: Active</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1012</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>status</td><td>One of these codes: <a href=\"http://hl7.org/fhir/R4/codesystem-encounter-status.html#finished\">http://hl7.org/fhir/encounter-status</a> finished: Finished</td></tr><tr><td>class</td><td>One of these codes: <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-ActCode.html#AMB\">http://terminology.hl7.org/CodeSystem/v3-ActCode</a> AMB: ambulatory</td></tr><tr><td>type</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.101.12.1061</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/diagnosticreport.html\">DiagnosticReport</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>diagnosis</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.198.12.1012</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/medication.html\">Medication</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Type</b>: <a href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a></td></tr><tr style=\"background-color: #efefef\"><td>Filter</td><td>Value</td></tr><tr><td>status</td><td>One of these codes: <a href=\"http://hl7.org/fhir/R4/codesystem-medicationrequest-status.html#active\">http://hl7.org/fhir/CodeSystem/medicationrequest-status</a> active: Active</td></tr><tr><td>medication.code</td><td>In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001</td></tr></table><h2>Contents</h2><p>CMS146 Example CQL: <code>No Content</code> (<code>text/cql</code>)</p></div>"
   ];
   fhir:Library.url [ fhir:value "http://ibm.com/fhir/cdm/Library/CDMLibraryInstance"];
   fhir:Library.identifier [
@@ -30,14 +30,15 @@
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "http://ibm.com/fhir/cdm/cql-library-measure" ];
-     fhir:Identifier.value [ fhir:value "CMS146" ];
+     fhir:Identifier.system [ fhir:value "http://ibm.com/fhir/cdm/cql-library" ];
+     fhir:Identifier.value [ fhir:value "sample-library-CMS146" ];
      fhir:Identifier.assigner [
        fhir:Reference.display [ fhir:value "IBM" ]
      ]
   ];
-  fhir:Library.version [ fhir:value "5.0.0"];
-  fhir:Library.title [ fhir:value "Appropriate Testing for Children with Pharyngitis"];
+  fhir:Library.version [ fhir:value "6.0.0"];
+  fhir:Library.name [ fhir:value "CMS146_Sample_Cql_Logic_Library"];
+  fhir:Library.title [ fhir:value "Sample CQL Logic Library for CMS146"];
   fhir:Library.status [ fhir:value "draft"];
   fhir:Library.type [
      fhir:CodeableConcept.coding [
@@ -47,30 +48,23 @@
      ]
   ];
   fhir:Library.date [ fhir:value "2015-07-22"^^xsd:date];
-  fhir:Library.contact [
+  fhir:Library.publisher [ fhir:value "Alvearie Team"];
+  fhir:Library.description [ fhir:value "Sample CMS146 library for sample measures used to illustrate Alvearie IG usage"];
+  fhir:Library.jurisdiction [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
-     fhir:ContactDetail.telecom [
+     fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:Library.description [ fhir:value "Logic for CMS 146: Appropriate Testing for Children with Pharyngitis"];
   fhir:Library.relatedArtifact [
      fhir:index 0;
      fhir:RelatedArtifact.type [ fhir:value "depends-on" ];
+     fhir:RelatedArtifact.display [ fhir:value "FHIR Helpers" ];
      fhir:RelatedArtifact.resource [
-       fhir:value "Library/library-quick-model-definition";
-       fhir:link <http://ibm.com/fhir/cdm/Library/library-quick-model-definition>
+       fhir:value "https://www.hl7.org/fhir/library-fhir-helpers.html";
+       fhir:link <https://www.hl7.org/fhir/library-fhir-helpers.html>
      ]
   ];
   fhir:Library.parameter [
@@ -110,14 +104,16 @@
        fhir:DataRequirement.codeFilter.path [ fhir:value "category" ];
        fhir:DataRequirement.codeFilter.code [
          fhir:index 0;
-         fhir:Coding.code [ fhir:value "diagnosis" ]
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ];
+         fhir:Coding.code [ fhir:value "encounter-diagnosis" ]
        ]
      ], [
        fhir:index 1;
        fhir:DataRequirement.codeFilter.path [ fhir:value "clinicalStatus" ];
        fhir:DataRequirement.codeFilter.code [
          fhir:index 0;
-         fhir:Coding.code [ fhir:value "confirmed" ]
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
+         fhir:Coding.code [ fhir:value "active" ]
        ]
      ], [
        fhir:index 2;
@@ -132,14 +128,16 @@
        fhir:DataRequirement.codeFilter.path [ fhir:value "category" ];
        fhir:DataRequirement.codeFilter.code [
          fhir:index 0;
-         fhir:Coding.code [ fhir:value "diagnosis" ]
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ];
+         fhir:Coding.code [ fhir:value "encounter-diagnosis" ]
        ]
      ], [
        fhir:index 1;
        fhir:DataRequirement.codeFilter.path [ fhir:value "clinicalStatus" ];
        fhir:DataRequirement.codeFilter.code [
          fhir:index 0;
-         fhir:Coding.code [ fhir:value "confirmed" ]
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
+         fhir:Coding.code [ fhir:value "active" ]
        ]
      ], [
        fhir:index 2;
@@ -154,6 +152,7 @@
        fhir:DataRequirement.codeFilter.path [ fhir:value "status" ];
        fhir:DataRequirement.codeFilter.code [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/encounter-status" ];
          fhir:Coding.code [ fhir:value "finished" ]
        ]
      ], [
@@ -161,7 +160,8 @@
        fhir:DataRequirement.codeFilter.path [ fhir:value "class" ];
        fhir:DataRequirement.codeFilter.code [
          fhir:index 0;
-         fhir:Coding.code [ fhir:value "ambulatory" ]
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+         fhir:Coding.code [ fhir:value "AMB" ]
        ]
      ], [
        fhir:index 2;
@@ -192,6 +192,7 @@
        fhir:DataRequirement.codeFilter.path [ fhir:value "status" ];
        fhir:DataRequirement.codeFilter.code [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/CodeSystem/medicationrequest-status" ];
          fhir:Coding.code [ fhir:value "active" ]
        ]
      ], [
@@ -203,7 +204,7 @@
   fhir:Library.content [
      fhir:index 0;
      fhir:Attachment.contentType [ fhir:value "text/cql" ];
-     fhir:Attachment.url [ fhir:value "library-cms146-example-content.cql" ]
+     fhir:Attachment.title [ fhir:value "CMS146 Example CQL" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

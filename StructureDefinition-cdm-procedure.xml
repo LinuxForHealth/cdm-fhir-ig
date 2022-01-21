@@ -28,26 +28,19 @@
     <valueCode value="patient"/>
   </extension>
   <url value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-procedure"/>
-  <version value="5.0.0"/>
+  <version value="6.0.0"/>
   <name value="CDMProcedure"/>
   <title value="CDM Procedure"/>
   <status value="active"/>
-  <date value="2021-12-16T17:36:56+00:00"/>
-  <contact>
-    <name value="Kim Kenna"/>
-    <telecom>
-      <system value="email"/>
-      <value value="sloand@us.ibm.com"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Tom Eggebraaten"/>
-    <telecom>
-      <system value="email"/>
-      <value value="tegge@us.ibm.com"/>
-    </telecom>
-  </contact>
+  <date value="2022-01-21T20:46:54+00:00"/>
+  <publisher value="Alvearie Team"/>
   <description value="IBM Health Data Connect Common Data Model definition of what fields we currently define for a procedure"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>
@@ -400,17 +393,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="Procedure.modifierExtension">
       <path value="Procedure.modifierExtension"/>

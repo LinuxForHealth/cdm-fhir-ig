@@ -13,29 +13,22 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/diagnosis-present-on-admission defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"diagnosis-present-on-admission-1\"> </a></td><td>Exempt from POA Reporting</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"diagnosis-present-on-admission-N\"> </a></td><td>No, not present at admission</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"diagnosis-present-on-admission-U\"> </a></td><td>Insufficient Documentation</td></tr><tr><td style=\"white-space:nowrap\">W<a name=\"diagnosis-present-on-admission-W\"> </a></td><td>Clinically Undetermined</td></tr><tr><td style=\"white-space:nowrap\">Y<a name=\"diagnosis-present-on-admission-Y\"> </a></td><td>Yes, present ad admission</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/diagnosis-present-on-admission"];
-  fhir:CodeSystem.version [ fhir:value "5.0.0"];
+  fhir:CodeSystem.version [ fhir:value "6.0.0"];
   fhir:CodeSystem.name [ fhir:value "DiagnosisPresentOnAdmissionCodeSystem"];
   fhir:CodeSystem.title [ fhir:value "Diagnosis Present On Admission Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-12-16T17:36:56+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.contact [
+  fhir:CodeSystem.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Alvearie Team"];
+  fhir:CodeSystem.description [ fhir:value "The Present On Admission (POA) code for diagnosis codes on an inpatient acute care facility Claim"];
+  fhir:CodeSystem.jurisdiction [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
-     fhir:ContactDetail.telecom [
+     fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:CodeSystem.description [ fhir:value "The Present On Admission (POA) code for diagnosis codes on an inpatient acute care facility Claim"];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [

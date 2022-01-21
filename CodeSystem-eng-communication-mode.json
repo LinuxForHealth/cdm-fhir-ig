@@ -3,47 +3,34 @@
   "id": "eng-communication-mode",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/eng-communication-mode defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">phone<a name=\"eng-communication-mode-phone\"> </a></td><td>Phone</td><td>Voice messaging by phone</td></tr><tr><td style=\"white-space:nowrap\">sms<a name=\"eng-communication-mode-sms\"> </a></td><td>Sms Text</td><td>SMS text messaging</td></tr><tr><td style=\"white-space:nowrap\">email<a name=\"eng-communication-mode-email\"> </a></td><td>Email</td><td>Email messaging</td></tr><tr><td style=\"white-space:nowrap\">mail<a name=\"eng-communication-mode-mail\"> </a></td><td>Mail</td><td>Postal mail messaging</td></tr><tr><td style=\"white-space:nowrap\">chat<a name=\"eng-communication-mode-chat\"> </a></td><td>Chat</td><td>Conversational chat messaging</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/eng-communication-mode defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">chat<a name=\"eng-communication-mode-chat\"> </a></td><td>Chat</td><td>Conversational chat messaging</td></tr><tr><td style=\"white-space:nowrap\">email<a name=\"eng-communication-mode-email\"> </a></td><td>Email</td><td>Email messaging</td></tr><tr><td style=\"white-space:nowrap\">mail<a name=\"eng-communication-mode-mail\"> </a></td><td>Mail</td><td>Postal mail messaging</td></tr><tr><td style=\"white-space:nowrap\">phone<a name=\"eng-communication-mode-phone\"> </a></td><td>Phone</td><td>Voice messaging by phone</td></tr><tr><td style=\"white-space:nowrap\">sms<a name=\"eng-communication-mode-sms\"> </a></td><td>Sms Text</td><td>SMS text messaging</td></tr></table></div>"
   },
   "url": "http://ibm.com/fhir/cdm/CodeSystem/eng-communication-mode",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "name": "EngagementCommunicationModeCodeSystem",
   "title": "Engagement Communication Mode Codes",
   "status": "active",
-  "date": "2021-12-16T17:36:56+00:00",
-  "contact": [
+  "date": "2022-01-21T20:46:54+00:00",
+  "publisher": "Alvearie Team",
+  "description": "Communication modes supported for Engagement communication",
+  "jurisdiction": [
     {
-      "name": "Kim Kenna",
-      "telecom": [
+      "coding": [
         {
-          "system": "email",
-          "value": "sloand@us.ibm.com"
-        }
-      ]
-    },
-    {
-      "name": "Tom Eggebraaten",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "tegge@us.ibm.com"
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
         }
       ]
     }
   ],
-  "description": "Communication modes supported for Engagement communication",
+  "caseSensitive": true,
   "content": "complete",
   "count": 5,
   "concept": [
     {
-      "code": "phone",
-      "display": "Phone",
-      "definition": "Voice messaging by phone"
-    },
-    {
-      "code": "sms",
-      "display": "Sms Text",
-      "definition": "SMS text messaging"
+      "code": "chat",
+      "display": "Chat",
+      "definition": "Conversational chat messaging"
     },
     {
       "code": "email",
@@ -56,9 +43,14 @@
       "definition": "Postal mail messaging"
     },
     {
-      "code": "chat",
-      "display": "Chat",
-      "definition": "Conversational chat messaging"
+      "code": "phone",
+      "display": "Phone",
+      "definition": "Voice messaging by phone"
+    },
+    {
+      "code": "sms",
+      "display": "Sms Text",
+      "definition": "SMS text messaging"
     }
   ]
 }

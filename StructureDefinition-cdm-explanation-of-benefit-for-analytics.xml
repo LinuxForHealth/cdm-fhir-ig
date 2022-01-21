@@ -67,26 +67,19 @@
     <valueCode value="patient"/>
   </extension>
   <url value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit-for-analytics"/>
-  <version value="5.0.0"/>
+  <version value="6.0.0"/>
   <name value="CDMExplanationOfBenefitForAnalytics"/>
   <title value="CDM Explanation of Benefit for Analytics"/>
   <status value="active"/>
-  <date value="2021-12-16T17:36:56+00:00"/>
-  <contact>
-    <name value="Kim Kenna"/>
-    <telecom>
-      <system value="email"/>
-      <value value="sloand@us.ibm.com"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Tom Eggebraaten"/>
-    <telecom>
-      <system value="email"/>
-      <value value="tegge@us.ibm.com"/>
-    </telecom>
-  </contact>
+  <date value="2022-01-21T20:46:54+00:00"/>
+  <publisher value="Alvearie Team"/>
   <description value="The CDMExplanationOfBenefitForAnalytics profile extends the base CDMExplanationOfBenefit profile with additional details that are useful for analytics."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>
@@ -436,17 +429,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:employer">
       <path value="ExplanationOfBenefit.extension"/>
@@ -479,17 +464,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:admitCount">
       <path value="ExplanationOfBenefit.extension"/>
@@ -525,14 +502,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:aggregateClaimIndicator">
       <path value="ExplanationOfBenefit.extension"/>
@@ -568,14 +537,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:claimCategory">
       <path value="ExplanationOfBenefit.extension"/>
@@ -611,14 +572,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:claimStatus">
       <path value="ExplanationOfBenefit.extension"/>
@@ -654,14 +607,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:claimSnapshotProviderName">
       <path value="ExplanationOfBenefit.extension"/>
@@ -697,14 +642,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:claimSnapshotProviderZipCode">
       <path value="ExplanationOfBenefit.extension"/>
@@ -740,14 +677,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:companyCode">
       <path value="ExplanationOfBenefit.extension"/>
@@ -783,14 +712,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:daysToProcess">
       <path value="ExplanationOfBenefit.extension"/>
@@ -826,14 +747,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:employeeBusinessUnit">
       <path value="ExplanationOfBenefit.extension"/>
@@ -869,14 +782,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:financialSystem">
       <path value="ExplanationOfBenefit.extension"/>
@@ -912,14 +817,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:lastClaimIndicator">
       <path value="ExplanationOfBenefit.extension"/>
@@ -955,14 +852,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:participatingPlan">
       <path value="ExplanationOfBenefit.extension"/>
@@ -998,14 +887,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:referralIndicator">
       <path value="ExplanationOfBenefit.extension"/>
@@ -1041,14 +922,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:snapshotAgeInYears">
       <path value="ExplanationOfBenefit.extension"/>
@@ -1084,14 +957,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:submissionType">
       <path value="ExplanationOfBenefit.extension"/>
@@ -1127,14 +992,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:whPayerPcpResponsibilityIndicator">
       <path value="ExplanationOfBenefit.extension"/>
@@ -1170,14 +1027,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.extension:rxCount">
       <path value="ExplanationOfBenefit.extension"/>
@@ -1213,14 +1062,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.modifierExtension">
       <path value="ExplanationOfBenefit.modifierExtension"/>
@@ -2007,12 +1848,8 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ProcessPriority"/>
-        </extension>
         <strength value="example"/>
-        <description value="The timeliness with which processing is required: stat, normal, deferred."/>
-        <valueSet value="http://terminology.hl7.org/CodeSystem/processpriority"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/process-priority"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2986,13 +2823,6 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <constraint>
-        <key value="explanation-of-benefit-careteam-sequence-check"/>
-        <severity value="warning"/>
-        <human value="Sequence number on ExplanationOfBenefit CareTeam must match the CareTeam sequence number on the item."/>
-        <expression value="explanationofbenefit.careTeam.sequence = explanationofbenefit.item.careTeamSequence"/>
-        <source value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
-      </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
@@ -3576,17 +3406,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.diagnosis.modifierExtension">
       <path value="ExplanationOfBenefit.diagnosis.modifierExtension"/>
@@ -3926,17 +3748,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.procedure.modifierExtension">
       <path value="ExplanationOfBenefit.procedure.modifierExtension"/>
@@ -4289,17 +4103,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.insurance.extension:priorAuthorizationIndicator">
       <path value="ExplanationOfBenefit.insurance.extension"/>
@@ -4332,17 +4138,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.insurance.modifierExtension">
       <path value="ExplanationOfBenefit.insurance.modifierExtension"/>
@@ -4822,17 +4620,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:serviceBillDaysCount">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -4865,17 +4655,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:averageWholesalePrice">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -4911,14 +4693,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:capitatedServiceIndicator">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -4954,14 +4728,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:fullyInsuredIndicator">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -4997,14 +4763,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:nursingHomeIndicator">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -5040,14 +4798,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:compoundCode">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -5083,14 +4833,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:claimResponseBenefitPlan">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -5126,14 +4868,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:copayExclusion">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -5169,14 +4903,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:numberOfUnitsAllowed">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -5212,14 +4938,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:reinsuranceMetIndicator">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -5255,14 +4973,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:utilizationReview">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -5298,14 +5008,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:usualAndCustomaryAmount">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -5341,14 +5043,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:rxFormularyIndicator">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -5384,14 +5078,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:rxPayTier">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -5427,14 +5113,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.extension:rxSupplyIndicator">
       <path value="ExplanationOfBenefit.item.extension"/>
@@ -5470,14 +5148,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.modifierExtension">
       <path value="ExplanationOfBenefit.item.modifierExtension"/>
@@ -6041,14 +5711,6 @@
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.quantity.value">
       <path value="ExplanationOfBenefit.item.quantity.value"/>
@@ -6591,17 +6253,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.adjudication.extension:savingsType">
       <path value="ExplanationOfBenefit.item.adjudication.extension"/>
@@ -6634,17 +6288,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.adjudication.modifierExtension">
       <path value="ExplanationOfBenefit.item.adjudication.modifierExtension"/>
@@ -6934,17 +6580,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.item.detail.modifierExtension">
       <path value="ExplanationOfBenefit.item.detail.modifierExtension"/>
@@ -9418,17 +9056,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/ExplanationOfBenefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.adjudication.modifierExtension">
       <path value="ExplanationOfBenefit.adjudication.modifierExtension"/>
@@ -9928,17 +9558,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.payment.extension:dispositionReason">
       <path value="ExplanationOfBenefit.payment.extension"/>
@@ -9971,17 +9593,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.payment.extension:reimburseType">
       <path value="ExplanationOfBenefit.payment.extension"/>
@@ -10014,17 +9628,9 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
-        <source value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>
-      <mapping>
-        <identity value="rim"/>
-        <map value="n/a"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="N/A"/>
-      </mapping>
     </element>
     <element id="ExplanationOfBenefit.payment.modifierExtension">
       <path value="ExplanationOfBenefit.payment.modifierExtension"/>

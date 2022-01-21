@@ -3,38 +3,35 @@
   "id": "attribution-code-system",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">client-emr-pcp<a name=\"attribution-code-system-client-emr-pcp\"> </a></td><td>Client EMR PCP</td><td>Primary care physician recorded in a client's PMS or EMR system</td></tr><tr><td style=\"white-space:nowrap\">eng-attr-pcp<a name=\"attribution-code-system-eng-attr-pcp\"> </a></td><td>Engagement Attributed PCP</td><td>Primary care physician attributed by the Engagement pipeline</td></tr><tr><td style=\"white-space:nowrap\">eng-attr-specialist<a name=\"attribution-code-system-eng-attr-specialist\"> </a></td><td>Engagement Attributed Specialist</td><td>Specialist physician attributed by the Engagement pipeline</td></tr><tr><td style=\"white-space:nowrap\">enrollment<a name=\"attribution-code-system-enrollment\"> </a></td><td>Enrollment</td><td>Practitioner provided on the eligibility record</td></tr><tr><td style=\"white-space:nowrap\">adv-imputed-pcp<a name=\"attribution-code-system-adv-imputed-pcp\"> </a></td><td>Advantage Imputed PCP</td><td>Primary care physician imputed by the Advantage pipeline</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">adv-imputed-pcp<a name=\"attribution-code-system-adv-imputed-pcp\"> </a></td><td>Advantage Imputed PCP</td><td>Primary care physician imputed by the Advantage pipeline</td></tr><tr><td style=\"white-space:nowrap\">client-emr-pcp<a name=\"attribution-code-system-client-emr-pcp\"> </a></td><td>Client EMR PCP</td><td>Primary care physician recorded in a client's PMS or EMR system</td></tr><tr><td style=\"white-space:nowrap\">eng-attr-pcp<a name=\"attribution-code-system-eng-attr-pcp\"> </a></td><td>Engagement Attributed PCP</td><td>Primary care physician attributed by the Engagement pipeline</td></tr><tr><td style=\"white-space:nowrap\">eng-attr-specialist<a name=\"attribution-code-system-eng-attr-specialist\"> </a></td><td>Engagement Attributed Specialist</td><td>Specialist physician attributed by the Engagement pipeline</td></tr><tr><td style=\"white-space:nowrap\">enrollment<a name=\"attribution-code-system-enrollment\"> </a></td><td>Enrollment</td><td>Practitioner provided on the eligibility record</td></tr></table></div>"
   },
   "url": "http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "name": "AttributionCodeSystem",
   "title": "Attribution Codes",
   "status": "active",
-  "date": "2021-12-16T17:36:56+00:00",
-  "contact": [
+  "date": "2022-01-21T20:46:54+00:00",
+  "publisher": "Alvearie Team",
+  "description": "Types of attribution used to associate a patient to a provider",
+  "jurisdiction": [
     {
-      "name": "Kim Kenna",
-      "telecom": [
+      "coding": [
         {
-          "system": "email",
-          "value": "sloand@us.ibm.com"
-        }
-      ]
-    },
-    {
-      "name": "Tom Eggebraaten",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "tegge@us.ibm.com"
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
         }
       ]
     }
   ],
-  "description": "Types of attribution used to associate a patient to a provider",
+  "caseSensitive": true,
   "content": "complete",
   "count": 5,
   "concept": [
+    {
+      "code": "adv-imputed-pcp",
+      "display": "Advantage Imputed PCP",
+      "definition": "Primary care physician imputed by the Advantage pipeline"
+    },
     {
       "code": "client-emr-pcp",
       "display": "Client EMR PCP",
@@ -54,11 +51,6 @@
       "code": "enrollment",
       "display": "Enrollment",
       "definition": "Practitioner provided on the eligibility record"
-    },
-    {
-      "code": "adv-imputed-pcp",
-      "display": "Advantage Imputed PCP",
-      "definition": "Primary care physician imputed by the Advantage pipeline"
     }
   ]
 }

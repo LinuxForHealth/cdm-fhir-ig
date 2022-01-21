@@ -10,39 +10,31 @@
   fhir:Resource.id [ fhir:value "match-confidence-level"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-match-confidence-level.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/match-confidence-level</code></a></li><li>Include all codes defined in <code>http://hl7.org/fhir/ValueSet/match-grade</code></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-match-grade.html\"><code>http://terminology.hl7.org/CodeSystem/match-grade</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-match-confidence-level.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/match-confidence-level</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/match-confidence-level"];
-  fhir:ValueSet.version [ fhir:value "5.0.0"];
+  fhir:ValueSet.version [ fhir:value "6.0.0"];
   fhir:ValueSet.name [ fhir:value "MatchConfidenceLevelValueSet"];
   fhir:ValueSet.title [ fhir:value "Match Confidence Level Code System"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-12-16T17:36:56+00:00"^^xsd:dateTime];
-  fhir:ValueSet.contact [
+  fhir:ValueSet.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Alvearie Team"];
+  fhir:ValueSet.description [ fhir:value "Codes indicating confidence level of matched entities"];
+  fhir:ValueSet.jurisdiction [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
-     fhir:ContactDetail.telecom [
+     fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Codes indicating confidence level of matched entities"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-confidence-level" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ]
      ], [
        fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/ValueSet/match-grade" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-confidence-level" ]
      ]
   ] .
 

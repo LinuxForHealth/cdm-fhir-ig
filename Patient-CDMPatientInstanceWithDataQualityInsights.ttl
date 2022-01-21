@@ -34,7 +34,7 @@
          fhir:index 2;
          fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/source-id" ];
          fhir:Extension.valueIdentifier [
-           fhir:Identifier.system [ fhir:value "www.claro.com/analytics/phone-validator" ];
+           fhir:Identifier.system [ fhir:value "http://www.claro.com/analytics/phone-validator" ];
            fhir:Identifier.value [ fhir:value "watson-md" ]
          ]
        ], [
@@ -65,7 +65,7 @@
              fhir:Extension.valueCodeableConcept [
                fhir:CodeableConcept.coding [
                  fhir:index 0;
-                 fhir:Coding.system [ fhir:value "www.claro.com/phone-number-insights" ];
+                 fhir:Coding.system [ fhir:value "http://www.claro.com/phone-number-insights" ];
                  fhir:Coding.code [ fhir:value "INCONSISTENT_PHONE_AREA_CODE" ]
                ]
              ]
@@ -85,20 +85,17 @@
          fhir:index 6;
          fhir:Element.extension [
            fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-value" ]
-         ], [
-           fhir:index 1;
            fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-value" ];
            fhir:Extension.valueString [ fhir:value "773-555-0100" ]
          ], [
-           fhir:index 2;
+           fhir:index 1;
            fhir:Element.extension [
              fhir:index 0;
              fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/method" ];
              fhir:Extension.valueCodeableConcept [
                fhir:CodeableConcept.coding [
                  fhir:index 0;
-                 fhir:Coding.system [ fhir:value "www.claro.com/phone-number-insights" ];
+                 fhir:Coding.system [ fhir:value "http://www.claro.com/phone-number-insights" ];
                  fhir:Coding.code [ fhir:value "INCONSISTENT_PHONE_AREA_CODE" ]
                ]
              ]

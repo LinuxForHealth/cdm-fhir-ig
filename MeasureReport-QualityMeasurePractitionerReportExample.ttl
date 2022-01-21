@@ -54,6 +54,134 @@
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"QualityMeasurePractitionerReportExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://ibm.com/fhir/measure-cohort!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-quality-measure-report-practitioner.html\">Practitioner Quality Measure Report</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification}\">http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification</span></p></div><p><b>MeasureParameterValue</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here</b></p></div>"
   ];
+  fhir:DomainResource.contained [
+     a fhir:Patient;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "Patient1" ]
+  ], [
+     a fhir:Patient;
+     fhir:index 1;
+     fhir:Resource.id [ fhir:value "Patient2" ]
+  ], [
+     a fhir:Patient;
+     fhir:index 2;
+     fhir:Resource.id [ fhir:value "Patient3" ]
+  ], [
+     a fhir:Patient;
+     fhir:index 3;
+     fhir:Resource.id [ fhir:value "Patient4" ]
+  ], [
+     a fhir:Patient;
+     fhir:index 4;
+     fhir:Resource.id [ fhir:value "Patient5" ]
+  ], [
+     a fhir:List;
+     fhir:index 5;
+     fhir:Resource.id [ fhir:value "InitialPopulationPatientList" ];
+     fhir:List.status [ fhir:value "current" ];
+     fhir:List.mode [ fhir:value "working" ];
+     fhir:List.entry [
+       fhir:index 0;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient1" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient2" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient3" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient4" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient5" ]
+       ]
+     ]
+  ], [
+     a fhir:List;
+     fhir:index 6;
+     fhir:Resource.id [ fhir:value "DenominatorPatientList" ];
+     fhir:List.status [ fhir:value "current" ];
+     fhir:List.mode [ fhir:value "working" ];
+     fhir:List.entry [
+       fhir:index 0;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient1" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient2" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient3" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient4" ]
+       ]
+     ]
+  ], [
+     a fhir:List;
+     fhir:index 7;
+     fhir:Resource.id [ fhir:value "NumeratorPatientList" ];
+     fhir:Resource.meta [
+       fhir:Meta.profile [
+         fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+         fhir:index 0;
+         fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+       ]
+     ];
+     fhir:List.status [ fhir:value "current" ];
+     fhir:List.mode [ fhir:value "working" ];
+     fhir:List.entry [
+       fhir:index 0;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient1" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient2" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient3" ]
+       ]
+     ]
+  ], [
+     a fhir:List;
+     fhir:index 8;
+     fhir:Resource.id [ fhir:value "CareGapPatientList" ];
+     fhir:Resource.meta [
+       fhir:Meta.profile [
+         fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+         fhir:index 0;
+         fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+       ]
+     ];
+     fhir:List.status [ fhir:value "current" ];
+     fhir:List.mode [ fhir:value "working" ];
+     fhir:List.entry [
+       fhir:index 0;
+       fhir:List.entry.item [
+         fhir:Reference.reference [ fhir:value "#Patient4" ]
+       ]
+     ]
+  ];
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value" ];
@@ -114,7 +242,10 @@
   ];
   fhir:MeasureReport.status [ fhir:value "complete"];
   fhir:MeasureReport.type [ fhir:value "subject-list"];
-  fhir:MeasureReport.measure [ fhir:value "Measure-QualityMeasureExample.html"];
+  fhir:MeasureReport.measure [
+     fhir:value "https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html";
+     fhir:link <https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html>
+  ];
   fhir:MeasureReport.subject [
      fhir:link <http://ibm.com/fhir/cdm/PractitionerRole/CDMPractitionerRole-Attributed-PCP>;
      fhir:Reference.reference [ fhir:value "PractitionerRole/CDMPractitionerRole-Attributed-PCP" ]
@@ -147,10 +278,8 @@
            fhir:Coding.code [ fhir:value "initial-population" ]
          ]
        ];
-       fhir:MeasureReport.group.population.count [ fhir:value "22"^^xsd:integer ];
        fhir:MeasureReport.group.population.subjectResults [
-         fhir:link <http://ibm.com/fhir/cdm/List/DenominatorPatientList>;
-         fhir:Reference.reference [ fhir:value "List/DenominatorPatientList" ]
+         fhir:Reference.reference [ fhir:value "#InitialPopulationPatientList" ]
        ]
      ], [
        fhir:index 1;
@@ -162,10 +291,8 @@
            fhir:Coding.code [ fhir:value "denominator" ]
          ]
        ];
-       fhir:MeasureReport.group.population.count [ fhir:value "20"^^xsd:integer ];
        fhir:MeasureReport.group.population.subjectResults [
-         fhir:link <http://ibm.com/fhir/cdm/List/DenominatorPatientList>;
-         fhir:Reference.reference [ fhir:value "List/DenominatorPatientList" ]
+         fhir:Reference.reference [ fhir:value "#DenominatorPatientList" ]
        ]
      ], [
        fhir:index 2;
@@ -177,14 +304,12 @@
            fhir:Coding.code [ fhir:value "numerator" ]
          ]
        ];
-       fhir:MeasureReport.group.population.count [ fhir:value "16"^^xsd:integer ];
        fhir:MeasureReport.group.population.subjectResults [
-         fhir:link <http://ibm.com/fhir/cdm/List/NumeratorPatientList>;
-         fhir:Reference.reference [ fhir:value "List/NumeratorPatientList" ]
+         fhir:Reference.reference [ fhir:value "#NumeratorPatientList" ]
        ]
      ], [
        fhir:index 3;
-       fhir:Element.id [ fhir:value "dm-hba1c-caregap-controlled" ];
+       fhir:Element.id [ fhir:value "dm-hba1c-caregap" ];
        fhir:MeasureReport.group.population.code [
          fhir:CodeableConcept.coding [
            fhir:index 0;
@@ -192,26 +317,12 @@
            fhir:Coding.code [ fhir:value "care-gap" ]
          ]
        ];
-       fhir:MeasureReport.group.population.count [ fhir:value "3"^^xsd:integer ];
        fhir:MeasureReport.group.population.subjectResults [
-         fhir:link <http://ibm.com/fhir/cdm/List/ControlledCareGapPatientList>;
-         fhir:Reference.reference [ fhir:value "List/ControlledCareGapPatientList" ]
+         fhir:Reference.reference [ fhir:value "#CareGapPatientList" ]
        ]
-     ], [
-       fhir:index 4;
-       fhir:Element.id [ fhir:value "dm-hba1c-caregap-poor-control" ];
-       fhir:MeasureReport.group.population.code [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/measure-population-type" ];
-           fhir:Coding.code [ fhir:value "care-gap" ]
-         ]
-       ];
-       fhir:MeasureReport.group.population.count [ fhir:value "1"^^xsd:integer ];
-       fhir:MeasureReport.group.population.subjectResults [
-         fhir:link <http://ibm.com/fhir/cdm/List/PoorControlCareGapPatientList>;
-         fhir:Reference.reference [ fhir:value "List/PoorControlCareGapPatientList" ]
-       ]
+     ];
+     fhir:MeasureReport.group.measureScore [
+       fhir:Quantity.value [ fhir:value "0.75"^^xsd:decimal ]
      ]
   ] .
 

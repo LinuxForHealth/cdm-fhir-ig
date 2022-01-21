@@ -13,29 +13,21 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-v3-RoleCode.html\"><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.0.0/CodeSystem-CMSPlaceofServiceCodes.html\"><code>https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/service-delivery-location-type"];
-  fhir:ValueSet.version [ fhir:value "5.0.0"];
+  fhir:ValueSet.version [ fhir:value "6.0.0"];
   fhir:ValueSet.name [ fhir:value "ServiceDeliveryLocationTypeValueSet"];
   fhir:ValueSet.title [ fhir:value "Service Delivery Location Type ValueSet"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-12-16T17:36:56+00:00"^^xsd:dateTime];
-  fhir:ValueSet.contact [
+  fhir:ValueSet.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Alvearie Team"];
+  fhir:ValueSet.description [ fhir:value "Codes describing a role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.  This extended valueset includes the standard HL7 FHIR codes plus CMS Place of Service Codes."];
+  fhir:ValueSet.jurisdiction [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
-     fhir:ContactDetail.telecom [
+     fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Codes describing a role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.  This extended valueset includes the standard HL7 FHIR codes plus CMS Place of Service Codes."];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

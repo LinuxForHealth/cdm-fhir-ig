@@ -82,7 +82,7 @@
        fhir:ParameterDefinition.type [ fhir:value "string" ]
      ]
   ];
-  fhir:Measure.url [ fhir:value "http://ibm.com/fhir/cdm/Measure/QualityMeasureExample"];
+  fhir:Measure.url [ fhir:value "https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html"];
   fhir:Measure.identifier [
      fhir:index 0;
      fhir:Identifier.type [
@@ -98,7 +98,7 @@
        fhir:Reference.display [ fhir:value "IBM" ]
      ]
   ];
-  fhir:Measure.version [ fhir:value "5.0.0"];
+  fhir:Measure.version [ fhir:value "6.0.0"];
   fhir:Measure.name [ fhir:value "Diabetes_HbA1c_Test_Performed"];
   fhir:Measure.status [ fhir:value "active"];
   fhir:Measure.subjectCodeableConcept [
@@ -109,22 +109,14 @@
      ]
   ];
   fhir:Measure.date [ fhir:value "2020-01-01"^^xsd:date];
-  fhir:Measure.publisher [ fhir:value "IBM"];
+  fhir:Measure.publisher [ fhir:value "Alvearie Team"];
   fhir:Measure.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Kim Kenna" ];
+     fhir:ContactDetail.name [ fhir:value "Clinical Informatics" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "sloand@us.ibm.com" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.name [ fhir:value "Tom Eggebraaten" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "tegge@us.ibm.com" ]
+       fhir:ContactPoint.value [ fhir:value "ClinicalInformatics@us.ibm.com" ]
      ]
   ];
   fhir:Measure.description [ fhir:value "Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period"];
@@ -132,7 +124,7 @@
      fhir:index 0;
      fhir:UsageContext.code [
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/usage-context-type" ];
-       fhir:Coding.code [ fhir:value "clinical" ]
+       fhir:Coding.code [ fhir:value "focus" ]
      ];
      fhir:UsageContext.valueCodeableConcept [
        fhir:CodeableConcept.coding [
@@ -144,6 +136,14 @@
        ]
      ]
   ];
+  fhir:Measure.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
   fhir:Measure.approvalDate [ fhir:value "2020-01-01"^^xsd:date];
   fhir:Measure.lastReviewDate [ fhir:value "2020-01-01"^^xsd:date];
   fhir:Measure.effectivePeriod [
@@ -153,14 +153,14 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/codesystem-definition-topic.html" ];
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/definition-topic" ];
        fhir:Coding.code [ fhir:value "treatment" ]
      ]
   ];
   fhir:Measure.library [
-     fhir:value "Measure/Library";
+     fhir:value "http://sample-measure-library.com/cql-library";
      fhir:index 0;
-     fhir:link <http://ibm.com/fhir/cdm/Measure/Library>
+     fhir:link <http://sample-measure-library.com/cql-library>
   ];
   fhir:Measure.scoring [
      fhir:CodeableConcept.coding [

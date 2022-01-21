@@ -9,7 +9,16 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Provider1"];
   fhir:Resource.meta [
-     fhir:Meta.source [ fhir:value "http://acme-health.com/organization/provider" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.valueString [ fhir:value "99999" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
+     ];
+     fhir:Meta.source [ fhir:value "http://acme-health.com/emr1/provider-organization" ];
      fhir:Meta.profile [
        fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization";
        fhir:index 0;
@@ -18,7 +27,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Provider1\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/organization/provider!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-organization.html\">CDM Organization</a></p></div><p><b>identifier</b>: Provider number: 1122445599 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Internal Medicine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-wh-payer-provider-type.html\">Health Data Connect Provider Type Codes</a>#204)</span></p><p><b>name</b>: Dr Smith</p><p><b>telecom</b>: ph: 915-555-6000(WORK), fax: 915-555-6001(WORK)</p><p><b>address</b>: 100 Mesa Drive El Paso TX 79912 US (WORK)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"Provider1\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1/provider-organization!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-organization.html\">CDM Organization</a></p></div><p><b>identifier</b>: Source System Row Identifier: 7a44c7b9-da71-4138-a48c-48b94163bbd3 (OFFICIAL), National provider identifier: 1122445599 (SECONDARY), Tax ID number: 123444222 (SECONDARY)</p><p><b>active</b>: true</p><p><b>type</b>: Internal Medicine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-wh-payer-provider-type.html\">Health Data Connect Provider Type Codes</a>#204)</span></p><p><b>name</b>: Dr Smith</p><p><b>telecom</b>: ph: 915-555-6000(WORK), fax: 915-555-6001(WORK)</p><p><b>address</b>: 100 Mesa Drive El Paso TX 79912 US (WORK)</p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
@@ -26,14 +35,44 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.code [ fhir:value "SSRI" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://acme-health.com/emr1/provier-organization" ];
+     fhir:Identifier.value [ fhir:value "7a44c7b9-da71-4138-a48c-48b94163bbd3" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "Acme Health - EMR1" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
          fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
-         fhir:Coding.code [ fhir:value "PRN" ]
+         fhir:Coding.code [ fhir:value "NPI" ]
        ]
      ];
      fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-npi" ];
      fhir:Identifier.value [ fhir:value "1122445599" ];
      fhir:Identifier.assigner [
        fhir:Reference.display [ fhir:value "cms.gov" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "TAX" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.4.4" ];
+     fhir:Identifier.value [ fhir:value "123444222" ];
+     fhir:Identifier.assigner [
+       fhir:Reference.display [ fhir:value "irs.gov" ]
      ]
   ];
   fhir:Organization.active [ fhir:value "true"^^xsd:boolean];

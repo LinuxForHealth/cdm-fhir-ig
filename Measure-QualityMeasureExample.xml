@@ -55,7 +55,7 @@
       <type value="string"/>
     </valueParameterDefinition>
   </extension>
-  <url value="http://ibm.com/fhir/cdm/Measure/QualityMeasureExample"/>
+  <url value="https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html"/>
   <identifier>
     <type>
       <coding>
@@ -69,7 +69,7 @@
       <display value="IBM"/>
     </assigner>
   </identifier>
-  <version value="5.0.0"/>
+  <version value="6.0.0"/>
   <name value="Diabetes_HbA1c_Test_Performed"/>
   <status value="active"/>
   <subjectCodeableConcept>
@@ -79,26 +79,19 @@
     </coding>
   </subjectCodeableConcept>
   <date value="2020-01-01"/>
-  <publisher value="IBM"/>
+  <publisher value="Alvearie Team"/>
   <contact>
-    <name value="Kim Kenna"/>
+    <name value="Clinical Informatics"/>
     <telecom>
       <system value="email"/>
-      <value value="sloand@us.ibm.com"/>
-    </telecom>
-  </contact>
-  <contact>
-    <name value="Tom Eggebraaten"/>
-    <telecom>
-      <system value="email"/>
-      <value value="tegge@us.ibm.com"/>
+      <value value="ClinicalInformatics@us.ibm.com"/>
     </telecom>
   </contact>
   <description value="Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period"/>
   <useContext>
     <code>
       <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
-      <code value="clinical"/>
+      <code value="focus"/>
     </code>
     <valueCodeableConcept>
       <coding>
@@ -108,6 +101,12 @@
       </coding>
     </valueCodeableConcept>
   </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
   <approvalDate value="2020-01-01"/>
   <lastReviewDate value="2020-01-01"/>
   <effectivePeriod>
@@ -115,11 +114,11 @@
   </effectivePeriod>
   <topic>
     <coding>
-      <system value="http://hl7.org/fhir/codesystem-definition-topic.html"/>
+      <system value="http://terminology.hl7.org/CodeSystem/definition-topic"/>
       <code value="treatment"/>
     </coding>
   </topic>
-  <library value="Measure/Library"/>
+  <library value="http://sample-measure-library.com/cql-library"/>
   <scoring>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/measure-scoring"/>

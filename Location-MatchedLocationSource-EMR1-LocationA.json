@@ -1,0 +1,75 @@
+{
+  "resourceType": "Location",
+  "id": "MatchedLocationSource-EMR1-LocationA",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "valueString": "99999"
+      },
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "valueString": "b069a545-9506-40c6-8498-23de2e189143"
+      }
+    ],
+    "source": "http://acme-health.com/emr1",
+    "profile": [
+      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-location"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"MatchedLocationSource-EMR1-LocationA\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-location.html\">CDM Location</a></p></div><p><b>identifier</b>: Source System Row Identifier: locationA (OFFICIAL), Tax ID number: 222333789 (SECONDARY), Match Data Identifier: 7610613e-2ecb-4cf5-815c-42a9589b2245 (SECONDARY)</p><p><b>name</b>: Match Family Clinic</p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "SSRI"
+          }
+        ]
+      },
+      "system": "http://acme-health.com/emr1/location",
+      "value": "locationA",
+      "assigner": {
+        "display": "Acme Health - EMR1"
+      }
+    },
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "TAX"
+          }
+        ]
+      },
+      "system": "urn:oid:2.16.840.1.113883.4.4",
+      "value": "222333789",
+      "assigner": {
+        "display": "irs.gov"
+      }
+    },
+    {
+      "use": "secondary",
+      "type": {
+        "coding": [
+          {
+            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "code": "MDI"
+          }
+        ]
+      },
+      "system": "http://ibm.com/fhir/primary/location-match-identifier",
+      "value": "7610613e-2ecb-4cf5-815c-42a9589b2245",
+      "assigner": {
+        "display": "IBM"
+      }
+    }
+  ],
+  "name": "Match Family Clinic"
+}
