@@ -1,6 +1,7 @@
 Profile:          CDMPractitionerRole
 Parent:           PractitionerRole
 Id:               cdm-practitioner-role
+Title:            "CDM Practitioner Role"
 Description:      "IBM Health Data Connect Common Data Model definition of what fields we currently define for a practitioner role"
 
 * contained 0..0
