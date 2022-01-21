@@ -125,5 +125,3 @@ Description:    "A provider issued list of professional services and products wh
 * extension[whPayerPcpResponsibilityIndicator] ^short      =  "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim"
 * extension[whPayerPcpResponsibilityIndicator] ^definition =  "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim"
 
-//Business rule to ensure the correct position of a provider on claim item against the CareTeam sequence
-* careTeam.sequence obeys claim-careteam-sequence-check

@@ -23,8 +23,6 @@ Description:    "This resource provides: the claim details; adjudication details
 
 * careTeam.role           from ClaimCareTeamRoleValueSet (extensible)
 * careTeam.provider       only Reference(Practitioner or PractitionerRole or Organization)
-//Business rule to ensure the correct position of a provider on claim item against the CareTeam sequence
-* careTeam.sequence obeys explanation-of-benefit-careteam-sequence-check
 
 * item.adjudication.category from AdjudicationCategoryValueSet (example)
 

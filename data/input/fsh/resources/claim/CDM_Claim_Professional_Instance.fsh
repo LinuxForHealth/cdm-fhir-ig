@@ -65,6 +65,7 @@ Description:    "Sample of a CDM Professional Claim"
 * subType.coding              = WhClaimSubtypeCodeSystem#emergency
 
 * item.sequence                                  = 1
+* item.careTeamSequence                          = 2
 * item.productOrService.coding[0]                = HCPCS#G0438
 * item.productOrService.text                     = "Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit"
 * item.productOrService.coding[1]                = http://acme-health.com/CodeSystem/local-service-type#LocalServiceType

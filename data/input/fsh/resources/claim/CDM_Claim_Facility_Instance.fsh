@@ -187,6 +187,7 @@ Description:    "Sample of a CDM Facility Claim"
 * extension[whPayerPcpResponsibilityIndicator].valueString = "N"
 
 * item.sequence                           = 1
+* item.careTeamSequence                   = 2
 * item.servicedDate                       = "2017-06-02"
 * item.locationCodeableConcept.coding[0]  = CMS-PLACE-OF-SERVICE#11 "Office" 
 * item.locationCodeableConcept.coding[1]  = http://acme-health.com/CodeSystem/local-place-of-service#LocalPlcOfService

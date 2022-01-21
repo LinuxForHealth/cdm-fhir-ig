@@ -94,7 +94,8 @@ Description:    "Sample of a CDM Drug Claim"
 * insurance.extension[crossoverIndicator].valueString   = "N"
 * insurance.extension[lineOfBusiness].valueCodeableConcept = http://acme-health.com/CodeSystem/local-line-of-business#LocalLineOfBusiness
 
-* item.sequence            = 1
+* item.sequence                          = 1
+* item.careTeamSequence                  = 1
 * item.productOrService.coding[0]        = NdcNoHyphensCodeSystem#69452015120
 * item.productOrService.coding[1]        = http://acme-health.com/CodeSystem/local-service-type#LocServiceType
 * item.servicedDate                      = "2017-06-18"
