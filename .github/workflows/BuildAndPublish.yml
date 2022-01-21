@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-publish:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Runner Info
         run: |
@@ -33,12 +33,19 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
-          distribution: 'adopt'          
+          distribution: 'adopt'
 
       - name: Install Dependencies
         run:  |
           npm install
           gem install jekyll
+
+      - name: Version Info
+        run:  |
+          java -version
+          npm --version
+          jekyll --version
+          mvn --version
 
       - name: Build IG
         run:  |
@@ -50,7 +57,6 @@ jobs:
           npm run build_snapshot
           npm run copy_snapshot
           npm run zip_snapshot
-          npm run copy_version
 
       - name: Deploy Github Pages (main push / merge only)
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'

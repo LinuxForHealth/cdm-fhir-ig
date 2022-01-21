@@ -67,6 +67,14 @@ jobs:
           gem install jekyll
           mvn clean install
 
+
+      - name: Version Info
+        run:  |
+          java -version
+          npm --version
+          jekyll --version
+          mvn --version
+
       - name: Build IG
         run:  |
           npm run sushi

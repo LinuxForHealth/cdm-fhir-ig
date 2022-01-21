@@ -138,6 +138,5 @@ IG releases and version numbers should be modified as follows:
 Changes must be made to the following files to version the IG. This will ensure the automated releases work correctly, and is displayed top of the IG web site after it is published.
 
 - package.json (root folder)
-- data/package.json
-- data/config.yaml
-
+- data/sushi-config.yaml
+- data/package.json (obsolete, don't need to do this one anymore)
