@@ -17,7 +17,7 @@ Description:    "Sample CDM Organization representing a provider"
 * identifier[0].assigner.display = "Acme Health - EMR1"
 
 * identifier[1].use    = #secondary
-* identifier[1].type   = ID-TYPE#PRN
+* identifier[1].type   = ID-TYPE#NPI
 * identifier[1].system = "http://hl7.org/fhir/sid/us-npi"
 * identifier[1].value  = "1122445599"
 * identifier[1].assigner.display = "cms.gov"
