@@ -1,6 +1,6 @@
 Instance:       CDMPractitionerRole-Enrollment
 InstanceOf:     CDMPractitionerRole
-Title:          "CDM PractitionerRole - Payer"
+Title:          "CDM PractitionerRole - Enrollment"
 Description:    "Sample CDM PractitionerRole ingested from Enrollment or Payer system"
 Usage:          #example
 
