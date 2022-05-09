@@ -2,14 +2,14 @@ Instance:       EngagementCommunicationRequestExample
 InstanceOf:     EngagementCommunicationRequest
 Usage:          #example
 Title:          "Engagement Communication Request Example"
-Description:    "Example of an engagement communication request to send an Outreach text to a patient concerning a care gap"
+Description:    "Example of an engagement communication request to send a SMS text to a patient concerning a care gap"
 
 * meta.source = "http://ibm.com/fhir/engagement"
 * meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/engagement-communication-request"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
-* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Engagement Communication"
 * meta.extension[processName].valueString = "ATC"
 * meta.extension[processVersion].valueString = "1.0"
@@ -19,7 +19,7 @@ Description:    "Example of an engagement communication request to send an Outre
 * identifier[0].type = IdentifierTypeCodeSystem#DRI
 * identifier[0].system = "http://ibm.com/fhir/cdm/engagement-communication-request"
 * identifier[0].value = "0bd930b0-e2fc-4967-957d-a6719ecde9b4"
-* identifier[0].assigner.display = "IBM"
+* identifier[0].assigner.display = "HDC"
 
 * status = #completed
 * statusReason = EngagementCommunicationRequestStatusReasonCodeSystem#request-complete "In-Process - Communication request complete"
@@ -59,7 +59,7 @@ Description:    "Example of an engagement communication request to send an Outre
 * occurrencePeriod.end = "2020-06-16T20:00:00Z"
 * authoredOn = "2020-06-16T03:00:00Z"
 
-* requester = Reference(IBM)
+* requester = Reference(HDC)
 * recipient = Reference(CDMPatientInstance)
-* sender = Reference(IBM)
+* sender = Reference(HDC)
 * extension[communicationVendor].valueReference = Reference(CommunicationVendor1)

@@ -1,7 +1,7 @@
 CodeSystem:     WhPayerEmployeeStatusCodeSystem
 Id:             wh-payer-employee-status-code
 Title:          "Health Data Connect Employee Status Codes"
-Description:    "IBM® Health Data Connect standard employee status value set for claims"
+Description:    "Health Data Connect standard employee status value set for claims"
 * ^caseSensitive = true
 * #1	"Active Full Time"              "Active Full Time"
 * #2	"Active Part-Time/Seasonal"     "Active Part-Time/Seasonal"
@@ -16,5 +16,5 @@ Description:    "IBM® Health Data Connect standard employee status value set fo
 ValueSet:       WhPayerEmployeeStatusValueSet
 Id:             wh-payer-employee-status-code
 Title:          "Health Data Connect Employee Status Value Set"
-Description:    "IBM® Health Data Connect standard employee status value set for claims"
+Description:    "Health Data Connect standard employee status value set for claims"
 * codes from system WhPayerEmployeeStatusCodeSystem

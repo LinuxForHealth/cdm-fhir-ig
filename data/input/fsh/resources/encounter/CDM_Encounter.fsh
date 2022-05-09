@@ -2,7 +2,7 @@ Profile:        CDMEncounter
 Parent:         Encounter
 Id:             cdm-encounter
 Title:          "CDM Encounter"
-Description:    "IBM Health Data Connect Common Data Model definition of what fields we currently define for an encounter"
+Description:    "Health Data Connect Common Data Model definition of what fields we currently define for an encounter"
 * contained 0..0
 * meta only ProcessMeta
 

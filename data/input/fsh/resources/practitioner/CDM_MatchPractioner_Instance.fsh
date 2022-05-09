@@ -10,7 +10,7 @@ Description:    "Sample of a matched practitioner linked to multiple source prac
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
 
-* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Matching"
 * meta.extension[processName].valueString = "Practitioner Matching"
 * meta.extension[processVersion].valueString = "1.0"
@@ -21,7 +21,7 @@ Description:    "Sample of a matched practitioner linked to multiple source prac
 * identifier[0].type = 	IdentifierTypeCodeSystem#MDI
 * identifier[0].system = "http://ibm.com/fhir/primary/practitioner-match-identifier"
 * identifier[0].value = "e65bdcac-6e50-4353-8faa-dc147a603468"
-* identifier[0].assigner.display = "IBM"
+* identifier[0].assigner.display = "HDC"
 
 * identifier[1].use = #official
 * identifier[1].type = ID-TYPE#PRN
@@ -52,7 +52,7 @@ Description:    "Sample of a matched practitioner linked to multiple source prac
 * extension[seeAlso][0].extension[matchDetail][1].extension[matchConfidenceScore].valueDecimal = 100.0
 ////
 * extension[seeAlso][0].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][0].extension[7].valueString = "IBM"
+* extension[seeAlso][0].extension[7].valueString = "HDC"
 * extension[seeAlso][0].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
 * extension[seeAlso][0].extension[8].valueString = "Practitioner Match"
 * extension[seeAlso][0].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
@@ -78,7 +78,7 @@ Description:    "Sample of a matched practitioner linked to multiple source prac
 * extension[seeAlso][1].extension[matchDetail][1].extension[matchConfidenceScore].valueDecimal = 100.0
 ////
 * extension[seeAlso][1].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][1].extension[7].valueString = "IBM"
+* extension[seeAlso][1].extension[7].valueString = "HDC"
 * extension[seeAlso][1].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
 * extension[seeAlso][1].extension[8].valueString = "Practitioner Match"
 * extension[seeAlso][1].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"

@@ -26,7 +26,7 @@ Description:    "Sample of a matched source practitioner with mpi guid identifie
 * identifier[2].type = 	IdentifierTypeCodeSystem#MDI
 * identifier[2].system = "http://ibm.com/fhir/primary/practitioner-match-identifier"
 * identifier[2].value = "e65bdcac-6e50-4353-8faa-dc147a603468"
-* identifier[2].assigner.display = "IBM"
+* identifier[2].assigner.display = "HDC"
 
 * name.given = "Rosemary"
 * name.given[1] = "B"

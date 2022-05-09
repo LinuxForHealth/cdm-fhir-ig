@@ -1,8 +1,8 @@
-### About FHIR and IBM Health Data Connect
+### About FHIR and Whole Health Data Connect
 
 The Fast Healthcare Interoperability Resource (**FHIR**) is a standard for healthcare data exchange, published by the [Health Level Seven International](http://www.hl7.org/) (HL7®) standards organization. 
 
-To build upon FHIR standards,  [IBM® Watson Health](https://www.ibm.com/watson-health) has developed **IBM® Health Data Connect**. This Common Data Model Implementation Guide supports Health Data Connect data interoperability for a cross-section of healthcare use cases, and refers to the model defined by this implementation guide as the IBM Health Data Connect Common Data Model. 
+To build upon FHIR standards, Whole Health Data Connect is a Common Data Model Implementation Guide designed to support data interoperability for a cross-section of healthcare use cases, and refers to the model defined by this implementation guide as the Health Data Connect Common Data Model. 
 
 
 ### About the Common Data Model
@@ -20,7 +20,6 @@ This Implementation Guide is an extensive data reference. As a recommended launc
 ### License
 
 FHIR® is the registered trademark of HL7 and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
-IBM and the IBM logo are trademarks of International Business Machines Corporation, registered in many jurisdictions worldwide. Other product and service names might be trademarks of IBM or other companies. A current list of IBM trademarks is available on [https://ibm.com/trademark](https://ibm.com/trademark).
 
 ### Release History
 

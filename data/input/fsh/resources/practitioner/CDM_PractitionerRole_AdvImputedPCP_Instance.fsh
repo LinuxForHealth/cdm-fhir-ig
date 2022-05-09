@@ -10,7 +10,7 @@ Usage:          #example
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
 
-* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Attribution"
 * meta.extension[processName].valueString = "AdvantageAtrribution"
 * meta.extension[processVersion].valueString = "1.0"
@@ -21,7 +21,7 @@ Usage:          #example
 * identifier[0].type = 	IdentifierTypeCodeSystem#DRI
 * identifier[0].system = "http://ibm.com/fhir/cdm/advantage-imputed-pcp"
 * identifier[0].value = "3cce418a-1006-4914-90b5-70bd3d3af1d8"
-* identifier[0].assigner.display = "IBM Advantage Suite"
+* identifier[0].assigner.display = "HDC"
 
 * active = true
 * practitioner = Reference(DrKelly)

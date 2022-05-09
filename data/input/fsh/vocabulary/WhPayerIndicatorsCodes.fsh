@@ -1,7 +1,7 @@
 CodeSystem:     WhPayerIndicatorsCodeSystem
 Id:             wh-payer-indicators
 Title:          "Health Data Connect Indicator Codes"
-Description:    "IBM® Health Data Connect indicator type code"
+Description:    "Health Data Connect indicator type code"
 * ^caseSensitive = true
 * #Y    "Yes"     "Positive indication"
 * #N    "No"      "Negative indication"
@@ -10,5 +10,5 @@ Description:    "IBM® Health Data Connect indicator type code"
 ValueSet:       WhPayerIndicatorsValueSet
 Id:             wh-payer-indicators
 Title:          "Health Data Connect Indicator Value Set"
-Description:    "IBM® Health Data Connect indicator type value set"
+Description:    "Health Data Connect indicator type value set"
 * codes from system WhPayerIndicatorsCodeSystem

@@ -2,7 +2,7 @@ Profile:          CDMLocation
 Parent:           Location
 Id:               cdm-location
 Title:            "CDM Location"
-Description:      "IBM Health Data Connect Common Data Model definition of what fields we currently define for a location"
+Description:      "Health Data Connect Common Data Model definition of what fields we currently define for a location"
 * contained 0..0
 * meta only ProcessMeta
 

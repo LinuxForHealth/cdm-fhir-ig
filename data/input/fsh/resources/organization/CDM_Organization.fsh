@@ -2,7 +2,7 @@ Profile:          CDMOrganization
 Parent:           Organization
 Id:               cdm-organization
 Title:            "CDM Organization"
-Description:      "IBM Health Data Connect Common Data Model definition of what fields we currently define for a organization"
+Description:      "Health Data Connect Common Data Model definition of what fields we currently define for a organization"
 * contained 0..0
 * meta only ProcessMeta
 

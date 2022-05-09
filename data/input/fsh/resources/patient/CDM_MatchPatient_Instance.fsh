@@ -10,7 +10,7 @@ Description:    "Sample of a matched patient linked to multiple source patients,
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
 
-* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Matching"
 * meta.extension[processName].valueString = "Patient Matching"
 * meta.extension[processVersion].valueString = "1.0"
@@ -21,7 +21,7 @@ Description:    "Sample of a matched patient linked to multiple source patients,
 * identifier[0].type = 	IdentifierTypeCodeSystem#MDI
 * identifier[0].system = "http://ibm.com/fhir/primary/patient-match-identifier"
 * identifier[0].value = "c82a8fce-11db-4396-b10c-1150abd1a222"
-* identifier[0].assigner.display = "IBM"
+* identifier[0].assigner.display = "HDC"
 
 * active = true
 
@@ -48,7 +48,7 @@ Description:    "Sample of a matched patient linked to multiple source patients,
 * extension[seeAlso][0].extension[matchDetail][1].extension[matchConfidenceScore].valueDecimal = 100.0
 /////
 * extension[seeAlso][0].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][0].extension[7].valueString = "IBM"
+* extension[seeAlso][0].extension[7].valueString = "HDC"
 * extension[seeAlso][0].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
 * extension[seeAlso][0].extension[8].valueString = "Patient Match"
 * extension[seeAlso][0].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
@@ -74,7 +74,7 @@ Description:    "Sample of a matched patient linked to multiple source patients,
 * extension[seeAlso][1].extension[matchDetail][1].extension[matchConfidenceScore].valueDecimal = 100.0
 /////
 * extension[seeAlso][1].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][1].extension[7].valueString = "IBM"
+* extension[seeAlso][1].extension[7].valueString = "HDC"
 * extension[seeAlso][1].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
 * extension[seeAlso][1].extension[8].valueString = "Patient Match"
 * extension[seeAlso][1].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
@@ -104,7 +104,7 @@ Description:    "Sample of a matched patient linked to multiple source patients,
 * extension[seeAlso][2].extension[matchDetail][2].extension[matchConfidenceScore].valueDecimal = 100.0
 /////
 * extension[seeAlso][2].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][2].extension[8].valueString = "IBM"
+* extension[seeAlso][2].extension[8].valueString = "HDC"
 * extension[seeAlso][2].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
 * extension[seeAlso][2].extension[9].valueString = "Manual Patient Match"
 * extension[seeAlso][2].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
@@ -138,7 +138,7 @@ Description:    "Sample of a matched patient linked to multiple source patients,
 * extension[seeAlso][3].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/split-method"
 * extension[seeAlso][3].extension[8].valueCodeableConcept = MatchMethodCodeSystem#manual
 * extension[seeAlso][3].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][3].extension[9].valueString = "IBM"
+* extension[seeAlso][3].extension[9].valueString = "HDC"
 * extension[seeAlso][3].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
 * extension[seeAlso][3].extension[10].valueString = "Manual Patient Split"
 * extension[seeAlso][3].extension[11].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"

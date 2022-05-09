@@ -3,7 +3,7 @@ Profile:          CDMObservation
 Parent:           Observation
 Id:               cdm-observation
 Title:            "CDM Observation"
-Description:      "IBM Health Data Connect Common Data Model definition of what fields we currently define for an observation"
+Description:      "Health Data Connect Common Data Model definition of what fields we currently define for an observation"
 * contained 0..0
 * meta only ProcessMeta
 

@@ -8,7 +8,7 @@ Description:    "Sample library entry for CMS146, including example default para
 * identifier[0].type = 	IdentifierTypeCodeSystem#SSRI
 * identifier[0].system = "http://ibm.com/fhir/cdm/cql-library"
 * identifier[0].value = "sample-library-CMS146"
-* identifier[0].assigner.display = "IBM"
+* identifier[0].assigner.display = "HDC"
 
 * name = "CMS146_Sample_Cql_Logic_Library"
 

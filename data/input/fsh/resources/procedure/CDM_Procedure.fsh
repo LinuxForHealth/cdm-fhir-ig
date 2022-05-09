@@ -2,7 +2,7 @@ Profile:        CDMProcedure
 Parent:         Procedure
 Id:             cdm-procedure
 Title:          "CDM Procedure"
-Description:    "IBM Health Data Connect Common Data Model definition of what fields we currently define for a procedure"
+Description:    "Health Data Connect Common Data Model definition of what fields we currently define for a procedure"
 * contained 0..0
 * meta only ProcessMeta
 

@@ -1,7 +1,7 @@
 CodeSystem:     WhClaimSubtypeCodeSystem
 Id:             wh-claim-subtype
 Title:          "Health Data Connect Claim Subtype Codes"
-Description:    "IBM® Health Data Connect standard codes for the claim subtypes used to further define the claim type"
+Description:    "Health Data Connect standard codes for the claim subtypes used to further define the claim type"
 * ^caseSensitive = true
 * #emergency      "Emergency"      "An indicator that this claim was an emergency"
 * #inpatient      "Inpatient"      "Claims for inpatient institutional admissions"
@@ -11,5 +11,5 @@ Description:    "IBM® Health Data Connect standard codes for the claim subtypes
 ValueSet:       WhClaimSubtypeValueSet
 Id:             wh-claim-subtype
 Title:          "Health Data Connect Claim Subtype Value Set"
-Description:    "IBM® Health Data Connect value set for the claim subtypes used to further define the claim type"
+Description:    "Health Data Connect value set for the claim subtypes used to further define the claim type"
 * codes from system WhClaimSubtypeCodeSystem

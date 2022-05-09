@@ -1,7 +1,7 @@
 CodeSystem:     WHPayerMajorDiagnosticCategoryCodeSystem
 Id:             wh-payer-major-diagnostic-category
 Title:          "Health Data Connect Major Diagnostic Category Codes"
-Description:    "IBM® Health Data Connect standard major diagnostic category codes"
+Description:    "Health Data Connect standard major diagnostic category codes"
 * ^caseSensitive = true
 * #0	"Missing/Invalid Diagnosis"     "Missing/Invalid Diagnosis"
 * #1	"Nervous"                       "Nervous"
@@ -33,5 +33,5 @@ Description:    "IBM® Health Data Connect standard major diagnostic category co
 ValueSet:       WHPayerMajorDiagnosticCategoryValueSet
 Id:             wh-payer-major-diagnostic-category
 Title:          "Major Diagnostic Category Value Set"
-Description:    "IBM® Health Data Connect standard value set containing major diagnostic category codes"
+Description:    "Health Data Connect standard value set containing major diagnostic category codes"
 * codes from system WHPayerMajorDiagnosticCategoryCodeSystem

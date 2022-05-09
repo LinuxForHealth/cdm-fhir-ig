@@ -1,7 +1,7 @@
 CodeSystem:     WHPayerProcedureGroupCodeSystem
 Id:             wh-payer-procedure-group
 Title:          "Health Data Connect Procedure Group Codes"
-Description:    "IBM® Health Data Connect standard procedure group codes"
+Description:    "Health Data Connect standard procedure group codes"
 * ^caseSensitive = true
 * #1          "Incision & drainage of cyst"                 "Incision & drainage of cyst"
 * #2          "Acne surgery"                                "Acne surgery"
@@ -203,5 +203,5 @@ Description:    "IBM® Health Data Connect standard procedure group codes"
 ValueSet:       WHPayerProcedureGroupValueSet
 Id:             wh-payer-procedure-group
 Title:          "Procedure Group Value Set"
-Description:    "IBM® Health Data Connect standard value set containing procedure group codes"
+Description:    "Health Data Connect standard value set containing procedure group codes"
 * codes from system WHPayerProcedureGroupCodeSystem

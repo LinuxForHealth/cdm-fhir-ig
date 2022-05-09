@@ -2,7 +2,7 @@ Profile:        MeasurePopulationObservation
 Parent:         CDMObservation
 Id:             measure-population-observation
 Title:          "Measure Population Observation"
-Description:    "Observation created by IBM Health Data Connect to record measure populations for a patient over time"
+Description:    "Observation created by Health Data Connect to record measure populations for a patient over time"
 
 * identifier contains
     Derived 0..1 

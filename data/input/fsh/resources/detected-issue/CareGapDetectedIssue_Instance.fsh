@@ -9,7 +9,7 @@ Description:    "Example of an detected issue indicating that the patient was in
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
-* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Cohorting"
 * meta.extension[processName].valueString = "Powersearch"
 * meta.extension[processVersion].valueString = "1.0"
@@ -18,7 +18,7 @@ Description:    "Example of an detected issue indicating that the patient was in
 * identifier.type = IdentifierTypeCodeSystem#DRI
 * identifier.system = "http://ibm.com/fhir/cdm/care-gap-detected-issue"
 * identifier.value = "d90a8ceb-6f1a-4bc6-8d2a-8c00e6ea8a3e"
-* identifier.assigner.display = "IBM"
+* identifier.assigner.display = "HDC"
 
 * status = #final
 
@@ -43,7 +43,7 @@ Description:    "Example of a related care gap detected issue that has been reso
 * identifier.type = IdentifierTypeCodeSystem#DRI
 * identifier.system = "http://ibm.com/fhir/cdm/care-gap-detected-issue"
 * identifier.value = "4dee9608-e1e0-4653-9f75-b7bdb8d3a968"
-* identifier.assigner.display = "IBM"
+* identifier.assigner.display = "HDC"
 
 * status = #final
 * patient = Reference(CDMPatientInstance)

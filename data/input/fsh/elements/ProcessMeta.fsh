@@ -18,11 +18,11 @@ Description:    "Data lineage meta with process extensions"
 
 * extension contains ProcessOrganization named processOrganization 0..1 
 * extension[processOrganization] ^short      = "The organizing entity that owns the process that has produced the data held in the FHIR resource or element"
-* extension[processOrganization] ^definition = "The organizing entity that owns the process that has produced the data held in the FHIR resource or element. Example: If an IBM analytic service has been the producer, the process-organization value is IBM."
+* extension[processOrganization] ^definition = "The organizing entity that owns the process that has produced the data held in the FHIR resource or element. Example: If an analytic service has been the producer, the process-organization value should reflect the organaization reponsible for the service."
 
 * extension contains ProcessName named processName 0..1 
 * extension[processName] ^short      = "The name of the process or service that has produced the data held in the FHIR resource or element"
-* extension[processName] ^definition = "The name of the process or service that has produced the data held in the FHIR resource or element. Example: If an IBM analytic service has been the producer, use the process-name as the name of that analytic service."
+* extension[processName] ^definition = "The name of the process or service that has produced the data held in the FHIR resource or element. Example: If an analytic service has been the producer, use the process-name as the name of that analytic service."
 
 * extension contains ProcessVersion named processVersion 0..1 
 * extension[processVersion] ^short      = "The version of either the process or the service that has produced the data held in the FHIR resource or element"
@@ -102,13 +102,13 @@ Description:    "The ID of the client as recorded in the data producer or data i
 Extension:      ProcessOrganization
 Id:             process-organization
 Title:          "Process Organization"
-Description:    "The organizing entity that owns the process that has produced the data held in the FHIR resource or element. Example: If an IBM analytic service has been the producer, set the process-organization value to IBM."
+Description:    "The organizing entity that owns the process that has produced the data held in the FHIR resource or element. Example: If an analytic service has been the producer, the process-organization value should reflect the organaization reponsible for the service."
 * value[x] only string
 
 Extension:      ProcessName
 Id:             process-name
 Title:          "Process Name"
-Description:    "The name of the process or service that has produced the data held in the FHIR resource or element. Example: If an IBM analytic service has been the producer, use the process-name as the name of that analytic service."
+Description:    "The name of the process or service that has produced the data held in the FHIR resource or element. Example: If an analytic service has been the producer, use the process-name as the name of that analytic service."
 * value[x] only string
 
 Extension:      ProcessVersion
