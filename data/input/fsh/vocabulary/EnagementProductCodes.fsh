@@ -1,4 +1,3 @@
-/*
 CodeSystem:     EngagementProductCodeSystem
 Id:             eng-product
 Title:          "Engagement Product Codes"
@@ -11,6 +10,5 @@ Description:    "Health Data Connect engagement products"
 ValueSet:       EngagementProductValueSet
 Id:             eng-product
 Title:          "Engagement Product Value Set"
-Description:    ""Health Data Connect engagement products"
+Description:    "Health Data Connect engagement products"
 * codes from system EngagementProductCodeSystem
-*/

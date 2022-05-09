@@ -29,7 +29,7 @@ Description:    "Example of an engagement communication request to send a SMS te
 * priority = #routine
 * category = COMMUNICATION-CATEGORY#notification
 
-* extension[communicationProduct].valueCodeableConcept = EngagementProductCodeSystem#ihe
+* extension[communicationProduct].valueCodeableConcept = EngagementProductCodeSystem#care-gap
 * extension[conversationType].valueCodeableConcept = EngagementConversationTypeCodeSystem#gap-in-care 
 * extension[communicationOnBehalfOf].valueReference = Reference(CDMPractitionerRole-Attributed-PCP)
 

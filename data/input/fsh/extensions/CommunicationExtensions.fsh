@@ -45,7 +45,7 @@ Description:    "Mode of communication (phone | sms | email | mail | chat)"
 Extension:      ConversationType
 Id:             conversation-type
 Title:          "Conversation Type"
-Description:    "Type of conversation, used for ihe chat communications"
+Description:    "Type of conversation, used for chat communications"
 * value[x] only CodeableConcept
 * valueCodeableConcept from EngagementConversationTypeValueSet (extensible)
 
