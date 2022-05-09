@@ -66,7 +66,7 @@ Usage:          #example
 // Imputed pcp for Advantage
 * generalPractitioner[3] = Reference(CDMPractitionerRole-Imputed-PCP)
 * generalPractitioner[3].extension[referenceCode][0].valueCoding = AttributionSourceCodeSystem#imputed
-* generalPractitioner[3].extension[referenceCode][1].valueCoding = AttributionProductCodeSystem#care-gap
+* generalPractitioner[3].extension[referenceCode][1].valueCoding = AttributionProductCodeSystem#engagement
 * generalPractitioner[3].extension[referencePeriod].valuePeriod.start = "2020-02-14"
 * generalPractitioner[3].extension[3].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
 * generalPractitioner[3].extension[3].valueString = "HDC"
