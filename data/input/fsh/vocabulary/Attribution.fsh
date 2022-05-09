@@ -5,8 +5,8 @@ Description:    "Types of attribution used to associate a patient to a provider"
 * ^caseSensitive = true
 * #adv-imputed-pcp      "Advantage Imputed PCP"             "Primary care physician imputed by the Advantage pipeline"
 * #client-emr-pcp       "Client EMR PCP"                    "Primary care physician recorded in a client's PMS or EMR system"
-* #eng-attr-pcp         "Engagement Attributed PCP"         "Primary care physician attributed by the Engagement pipeline"
-* #eng-attr-specialist  "Engagement Attributed Specialist"  "Specialist physician attributed by the Engagement pipeline"
+* #eng-attr-pcp         "Engagement Attributed PCP"         "Primary care physician attributed by the patient engagement pipeline"
+* #eng-attr-specialist  "Engagement Attributed Specialist"  "Specialist physician attributed by the patient engagement pipeline"
 * #enrollment           "Enrollment"                        "Practitioner provided on the eligibility record"
 
 ValueSet:       AttributionCodeValueSet
@@ -37,8 +37,8 @@ Id:             attribution-product
 Title:          "Attribution Product Codes"
 Description:    "Product that associate a patient to a practitioner"
 * ^caseSensitive = true
-* #advantage          "Advantage Suite"                     "Primary care physician imputed by the Advantage pipeline"
-* #engagement         "Engagement"                          "Practitioner attributed by the Engagement pipeline"
+* #advantage        "Advantage Suite"                     "Primary care physician imputed by the Advantage pipeline"
+* #engagement       "Engagement"                          "Practitioner attributed by the Engagement pipeline"
 
 ValueSet:       AttributionProductValueSet
 Id:             attribution-product
