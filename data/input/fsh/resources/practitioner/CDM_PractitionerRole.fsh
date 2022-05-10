@@ -33,7 +33,7 @@ Description:      "Health Data Connect Common Data Model definition of what fiel
 * identifier[Derived].system 1..1
 * identifier[Derived].value 1..1
 
-* practitioner 1..1
+* practitioner 0..1
 * specialty ^slicing.ordered = false
 * specialty ^slicing.description = "Slice based on provider role code"
 * specialty ^slicing.rules = #open
