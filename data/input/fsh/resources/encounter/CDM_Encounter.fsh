@@ -28,3 +28,7 @@ Description:    "Health Data Connect Common Data Model definition of what fields
 * identifier[Source].value 1..1
 
 * class from EncounterClassValueSet (extensible)
+
+* extension contains Insured named insured 0..*
+* extension[insured] ^short      = "Insurance context for the encounter"
+* extension[insured] ^definition = "Insurance context for the encounter"
