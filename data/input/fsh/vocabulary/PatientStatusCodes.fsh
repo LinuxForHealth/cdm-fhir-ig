@@ -52,7 +52,7 @@ Description:    "Examples of customer-specific patient status codes"
 ValueSet:       PatientImportanceValueSet
 Id:             patient-importance
 Title:          "Patient Importance Value Set"
-Description:    "Patient importance status codes derived from customer-specific code mappings, used to trigger or limit IBM Health Data Connect patient operations."
+Description:    "Patient importance status codes derived from customer-specific code mappings, used to trigger or limit Health Data Connect patient operations."
 * codes from valueset http://terminology.hl7.org/ValueSet/v3-PatientImportance
 * codes from system PatientImportanceCodeSystem
 

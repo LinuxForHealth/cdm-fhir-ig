@@ -2,7 +2,7 @@ Profile:          CDMPractitionerRole
 Parent:           PractitionerRole
 Id:               cdm-practitioner-role
 Title:            "CDM Practitioner Role"
-Description:      "IBM Health Data Connect Common Data Model definition of what fields we currently define for a practitioner role"
+Description:      "Health Data Connect Common Data Model definition of what fields we currently define for a practitioner role"
 
 * contained 0..0
 * meta only ProcessMeta
@@ -33,7 +33,7 @@ Description:      "IBM Health Data Connect Common Data Model definition of what 
 * identifier[Derived].system 1..1
 * identifier[Derived].value 1..1
 
-* practitioner 1..1
+* practitioner 0..1
 * specialty ^slicing.ordered = false
 * specialty ^slicing.description = "Slice based on provider role code"
 * specialty ^slicing.rules = #open
@@ -72,15 +72,14 @@ Description:      "IBM Health Data Connect Common Data Model definition of what 
 * code[Standard].coding contains
      NUCCTaxonomy 0..1 and
      NUCCType 0..1 and
-     IBMType 0..1
+     HDCType 0..1
 * code[Standard].coding[NUCCTaxonomy].system = "http://nucc.org/provider-taxonomy"
 * code[Standard].coding[NUCCTaxonomy].code 1..1
 * code[Standard].coding[NUCCType].system = "http://ibm.com/fhir/cdm/nucc-provider-taxonomy-type"
 * code[Standard].coding[NUCCType].code 1..1
-* code[Standard].coding[IBMType].system = "http://ibm.com/fhir/cdm/wh-payer-provider-type"
-* code[Standard].coding[IBMType].code 1..1
-* code[Standard].coding[IBMType].code from  WhPractitionerRoleTypeValueSet (preferred)
+* code[Standard].coding[HDCType].system = "http://ibm.com/fhir/cdm/wh-payer-provider-type"
+* code[Standard].coding[HDCType].code 1..1
+* code[Standard].coding[HDCType].code from  WhPractitionerRoleTypeValueSet (preferred)
 * code[NonStandard].text 1..1
 
 * telecom only CDMContactPoint
-

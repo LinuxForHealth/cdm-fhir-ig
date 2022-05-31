@@ -3,7 +3,7 @@
 ## Introduction
 
 
-To build upon FHIR standards, IBM® Watson Health has developed IBM® Health Data Connect. This Common Data Model Implementation Guide supports Health Data Connect data interoperability for a cross-section of healthcare use cases, and refers to the model defined by this implementation guide as the IBM Health Data Connect Common Data Model.
+To build upon FHIR standards, this Whole Health Common Data Model Implementation Guide supports Health Data Connect data interoperability for a cross-section of healthcare use cases, and refers to the model defined by this implementation guide as the Health Data Connect Common Data Model.
 
 The Common Data Model extends the industry-standard, base FHIR specification to support the data model requirements needed by healthcare data platform base capabilities, for example, data lineage and resource matching. In addition, the Common Data Model adds elements to support higher-level value that can be driven by a healthcare data platform, including claims data enrichment, care gap analytics, and patient engagement.
 
@@ -92,7 +92,6 @@ You must have git configured for signed-by commmits.  See [CONTRIBUTING.md](CONT
 ## License
 
 FHIR® is the registered trademark of HL7 and is used with the permission of HL7. Use of the FHIR trademark does not constitute endorsement of this product by HL7.
-IBM and the IBM logo are trademarks of International Business Machines Corporation, registered in many jurisdictions worldwide. Other product and service names might be trademarks of IBM or other companies. A current list of IBM trademarks is available on [https://ibm.com/trademark](https://ibm.com/trademark).
 
 ## Release History
 

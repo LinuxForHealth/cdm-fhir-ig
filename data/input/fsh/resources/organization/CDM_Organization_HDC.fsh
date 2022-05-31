@@ -1,8 +1,8 @@
-Instance:       IBM
+Instance:       HDC
 InstanceOf:     CDMOrganization
 Usage:          #example
-Title:          "CDM Oganization - IBM"
-Description:    "Sample CDM Organization representing IBM"
+Title:          "CDM Oganization - HDC"
+Description:    "Sample CDM Organization representing Health Data Connect"
 
 * meta.source = "http://ibm.com/wffh/platform"
 * meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
@@ -10,8 +10,8 @@ Description:    "Sample CDM Organization representing IBM"
 * identifier[0].use = #official
 * identifier[0].type = IdentifierTypeCodeSystem#SSRI
 * identifier[0].system = "http://ibm.com/wffh/organization"
-* identifier[0].value = "IBM"
+* identifier[0].value = "HDC"
 
-* name = "IBM"
+* name = "HDC"
 * active = true
 * type = ORGANIZATION-TYPE#bus

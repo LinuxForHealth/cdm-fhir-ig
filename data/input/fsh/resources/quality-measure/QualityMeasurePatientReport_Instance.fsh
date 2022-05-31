@@ -9,7 +9,7 @@ Description:    "Example measure report containing individual measure results fo
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
-* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Cohorting"
 * meta.extension[processName].valueString = "Powersearch"
 * meta.extension[processVersion].valueString = "1.0"
@@ -19,14 +19,14 @@ Description:    "Example measure report containing individual measure results fo
 * identifier.type = ID-TYPE#RI
 * identifier.system = "http://ibm.com/fhir/cdm/quality-measure-report"
 * identifier.value = "de25d288-120e-47c1-bb76-caac8bc3f439"
-* identifier.assigner.display = "IBM"
+* identifier.assigner.display = "HDC"
 
 * status = #complete
 * type = #individual
 * subject = Reference(CDMPatientInstance)
 * date = "2020-03-01T03:00:00Z"
 * extension[measureReportAssignedPractitioner].valueReference = Reference(CDMPractitionerRole-Attributed-PCP)
-* reporter = Reference(IBM)
+* reporter = Reference(HDC)
 
 * period.start = "2020-01-01"
 * period.end = "2020-12-31"

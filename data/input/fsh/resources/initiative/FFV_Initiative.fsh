@@ -4,7 +4,7 @@ Profile:          FFVInitiative
 Parent:           Contract
 Id:               ffv-initative-resource
 Title:            "Fee for Value Initative"
-Description:      "IBM Health Data Connect Common Data Model definition of what fields we currently define for an FFV initiative record"
+Description:      "Health Data Connect Common Data Model definition of what fields we currently define for an FFV initiative record"
 * contained 0..0
 * meta only ProcessMeta
 

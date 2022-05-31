@@ -27,6 +27,6 @@ Description:    "Sample of a matched source location with mpi guid identifier an
 * identifier[2].type = IdentifierTypeCodeSystem#MDI
 * identifier[2].system = "http://ibm.com/fhir/primary/location-match-identifier"
 * identifier[2].value = "7610613e-2ecb-4cf5-815c-42a9589b2245"
-* identifier[2].assigner.display = "IBM"
+* identifier[2].assigner.display = "HDC"
 
 * name = "Match Family Clinic"

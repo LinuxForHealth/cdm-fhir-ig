@@ -1,7 +1,7 @@
 CodeSystem:     WhPayerClaimTypeCodeSystem
 Id:             wh-payer-claim-type
 Title:          "Health Data Connect Claim Type Codes"
-Description:    "IBM® Health Data Connect stanard codes for the coverage type under which the claim was paid"
+Description:    "Health Data Connect stanard codes for the coverage type under which the claim was paid"
 * ^caseSensitive = true
 * #medical          "Medical claim; Institutional/Professional unknown"                  ""
 * #institutional    "Institutional; Hospital, clinic and typically inpatient claims"    ""
@@ -27,5 +27,5 @@ Description:    "IBM® Health Data Connect stanard codes for the coverage type u
 ValueSet:       ClaimTypeValueSet
 Id:             claim-type
 Title:          "Claim Type Value Set"
-Description:    "IBM Health Data Connect standard value set for the coverage type under which the claim was paid"
+Description:    "Health Data Connect standard value set for the coverage type under which the claim was paid"
 * codes from system WhPayerClaimTypeCodeSystem

@@ -1,7 +1,7 @@
 CodeSystem:     WhPayerMedicareCoverageCodeSystem
 Id:             wh-payer-medicare-coverage
 Title:          "Health Data Connect Medicare Coverage Codes"
-Description:    "IBM® Health Data Connect standard code for the type of Medicare coverage, if any, for the person"
+Description:    "Health Data Connect standard code for the type of Medicare coverage, if any, for the person"
 * ^caseSensitive = true
 * #2          "Both Parts A and B"           "Both Parts A and B"
 * #3          "Parts A, B and D"             "Parts A, B and D"
@@ -15,5 +15,5 @@ Description:    "IBM® Health Data Connect standard code for the type of Medicar
 ValueSet:       WhPayerMedicareCoverageValueSet
 Id:             wh-payer-medicare-coverage
 Title:          "Health Data Connect Medicare Coverage Value Set"
-Description:    "IBM® Health Data Connect standard value set for the type of Medicare coverage, if any, for the person"
+Description:    "Health Data Connect standard value set for the type of Medicare coverage, if any, for the person"
 * codes from system WhPayerMedicareCoverageCodeSystem

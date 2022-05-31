@@ -20,7 +20,7 @@ Usage:          #example
 * identifier[1].type =  IdentifierTypeCodeSystem#MDI
 * identifier[1].system = "http://ibm.com/fhir/primary/patient-match-identifier"
 * identifier[1].value = "4fd6049c-59c5-4c7b-81b1-88869044535d"
-* identifier[1].assigner.display = "IBM"
+* identifier[1].assigner.display = "HDC"
 
 * name.given = "Norm"
 * name.family = "Peterson"

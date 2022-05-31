@@ -9,7 +9,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
-* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Cohorting"
 * meta.extension[processName].valueString = "Powersearch"
 * meta.extension[processVersion].valueString = "1.0"
@@ -18,7 +18,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 * identifier.type = IdentifierTypeCodeSystem#DRI
 * identifier.system = "http://ibm.com/fhir/cdm/measure-population-observation"
 * identifier.value = "9591c85d-2f90-4586-b76d-be8e8ab2a719"
-* identifier.assigner.display = "IBM"
+* identifier.assigner.display = "HDC"
 
 * status = #final
 * code = MEASURE-POPULATION#numerator
@@ -45,7 +45,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
-* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Cohorting"
 * meta.extension[processName].valueString = "Powersearch"
 * meta.extension[processVersion].valueString = "1.0"
@@ -54,7 +54,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 * identifier.type = IdentifierTypeCodeSystem#DRI
 * identifier.system = "http://ibm.com/fhir/cdm/measure-population-observation"
 * identifier.value = "6b23568b-dccf-4546-b099-6fb8ec3c84e8"
-* identifier.assigner.display = "IBM"
+* identifier.assigner.display = "HDC"
 
 * status = #final
 * code = MEASURE-POPULATION#numerator

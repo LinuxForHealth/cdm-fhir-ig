@@ -1,7 +1,7 @@
 CodeSystem:     FFVScheduleCodeSystem
 Id:             ffv-schedule
 Title:          "Health Data Connect FFV Schedule Codes"
-Description:    "IBM® Health Data Connect fee for value initiative schedule codes"
+Description:    "Health Data Connect fee for value initiative schedule codes"
 * ^caseSensitive = true
 * #monthly          "Monthly"
 * #quarterly        "Quarterly"
@@ -12,5 +12,5 @@ Description:    "IBM® Health Data Connect fee for value initiative schedule cod
 ValueSet:       FFVScheduleValueSet
 Id:             ffv-schedule
 Title:          "Health Data Connect FFV Schedule Value Set"
-Description:    "IBM® Health Data Connect valuset defining fee for value initiative schedule codes"
+Description:    "Health Data Connect valuset defining fee for value initiative schedule codes"
 * codes from system FFVScheduleCodeSystem

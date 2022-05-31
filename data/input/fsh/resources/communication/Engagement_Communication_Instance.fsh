@@ -2,14 +2,14 @@ Instance:       EngagementCommunicationExample
 InstanceOf:     EngagementCommunication
 Usage:          #example
 Title:          "Engagement Communication Example"
-Description:    "Example of an engagement communication to send an Outreach text to a patient concerning a care gap"
+Description:    "Example of an engagement communication to send a SMS text to a patient concerning a care gap"
 
 * meta.source = "http://ibm.com/fhir/engagement"
 * meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/engagement-communication"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
-* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Engagement Communication"
 * meta.extension[processName].valueString = "ATC"
 * meta.extension[processVersion].valueString = "1.0"
@@ -19,7 +19,7 @@ Description:    "Example of an engagement communication to send an Outreach text
 * identifier.type = IdentifierTypeCodeSystem#DRI
 * identifier.system = "http://ibm.com/fhir/cdm/engagement-communication"
 * identifier.value = "de25d288-120e-47c1-bb76-caac8bc3f439"
-* identifier.assigner.display = "IBM"
+* identifier.assigner.display = "HDC"
 
 * basedOn = Reference(EngagementCommunicationRequestExample)
 
@@ -34,7 +34,7 @@ Description:    "Example of an engagement communication to send an Outreach text
 * priority = #routine
 * category = COMMUNICATION-CATEGORY#notification
 
-* extension[communicationProduct].valueCodeableConcept = EngagementProductCodeSystem#ihe
+* extension[communicationProduct].valueCodeableConcept = EngagementProductCodeSystem#care-gap
 * extension[conversationType].valueCodeableConcept = EngagementConversationTypeCodeSystem#gap-in-care
 * extension[communicationOnBehalfOf].valueReference = Reference(CDMPractitionerRole-Attributed-PCP)
 
@@ -63,5 +63,5 @@ Description:    "Example of an engagement communication to send an Outreach text
 * extension[communicationVendor].valueReference = Reference(Genesis)
 
 * recipient = Reference(CDMPatientInstance)
-* sender = Reference(IBM)
+* sender = Reference(HDC)
 * extension[communicationVendor].valueReference = Reference(CommunicationVendor1)

@@ -2,7 +2,7 @@ Profile:        CDMCarePlan
 Parent:         CarePlan
 Id:             cdm-careplan
 Title:          "CDM CarePlan"
-Description:    "IBM Health Data Connect Common Data Model definition of what fields we currently define for a care plan"
+Description:    "Health Data Connect Common Data Model definition of what fields we currently define for a care plan"
 * contained 0..0
 * meta only ProcessMeta
 

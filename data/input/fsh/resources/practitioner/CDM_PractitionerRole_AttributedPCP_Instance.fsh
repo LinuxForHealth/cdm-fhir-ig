@@ -10,7 +10,7 @@ Usage:          #example
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
 
-* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Attribution"
 * meta.extension[processName].valueString = "EngagementAttribution"
 * meta.extension[processVersion].valueString = "1.0"
@@ -21,7 +21,7 @@ Usage:          #example
 * identifier[0].type = 	IdentifierTypeCodeSystem#DRI
 * identifier[0].system = "http://ibm.com/fhir/cdm/engagement-attributed-pcp"
 * identifier[0].value = "dd914419-12db-4367-aa93-5c7930510e19"
-* identifier[0].assigner.display = "IBM"
+* identifier[0].assigner.display = "HDC"
 
 * active = true
 * practitioner = Reference(DrKelly)

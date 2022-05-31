@@ -1,16 +1,14 @@
 CodeSystem:     EngagementProductCodeSystem
 Id:             eng-product
 Title:          "Engagement Product Codes"
-Description:    "IBM Watson Health engagement products"
+Description:    "Health Data Connect engagement products"
 * ^caseSensitive = true
-* #campaign     "Campaign"      "Custom campaigns configured by customers in IBM® Phytel Coordinate"
-* #coordinate   "Coordinate"    "Coordinate communications"
-* #ihe          "IHE"           "IBM® Intelligent Health Engagement"
-* #outreach     "Outreach"      "Automated outreach communications based on care gaps"
-* #remind       "Remind"        "Automated appointment reminders"
+* #campaign             "Campaign"      "Custom campaigns configured for patient engagment"
+* #care-gap             "Care Gap"      "Automated comminications based on cohorting and patient care gaps"
+* #appt-reminder        "Remind"        "Automated appointment reminders"
 
 ValueSet:       EngagementProductValueSet
 Id:             eng-product
 Title:          "Engagement Product Value Set"
-Description:    "IBM Watson Health engagement products"
+Description:    "Health Data Connect engagement products"
 * codes from system EngagementProductCodeSystem

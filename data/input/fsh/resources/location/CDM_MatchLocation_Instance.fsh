@@ -10,7 +10,7 @@ Description:    "Sample of a matched location linked to multiple source location
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
 
-* meta.extension[processOrganization].valueString = "IBM"
+* meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Matching"
 * meta.extension[processName].valueString = "Location Matching"
 * meta.extension[processVersion].valueString = "1.0"
@@ -21,7 +21,7 @@ Description:    "Sample of a matched location linked to multiple source location
 * identifier[0].type = 	IdentifierTypeCodeSystem#MDI
 * identifier[0].system = "http://ibm.com/fhir/primary/location-match-identifier"
 * identifier[0].value = "7610613e-2ecb-4cf5-815c-42a9589b2245"
-* identifier[0].assigner.display = "IBM"
+* identifier[0].assigner.display = "HDC"
 
 * identifier[1].use = #secondary
 * identifier[1].type = ID-TYPE#TAX
@@ -43,7 +43,7 @@ Description:    "Sample of a matched location linked to multiple source location
 * extension[seeAlso][0].extension[matchDetail][0].extension[matchConfidenceScore].valueDecimal = 100.0
 ////
 * extension[seeAlso][0].extension[6].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][0].extension[6].valueString = "IBM"
+* extension[seeAlso][0].extension[6].valueString = "HDC"
 * extension[seeAlso][0].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
 * extension[seeAlso][0].extension[7].valueString = "Location Match"
 * extension[seeAlso][0].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
@@ -65,7 +65,7 @@ Description:    "Sample of a matched location linked to multiple source location
 * extension[seeAlso][1].extension[matchDetail][0].extension[matchConfidenceScore].valueDecimal = 100.0
 ////
 * extension[seeAlso][1].extension[6].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
-* extension[seeAlso][1].extension[6].valueString = "IBM"
+* extension[seeAlso][1].extension[6].valueString = "HDC"
 * extension[seeAlso][1].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
 * extension[seeAlso][1].extension[7].valueString = "Location Match"
 * extension[seeAlso][1].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"

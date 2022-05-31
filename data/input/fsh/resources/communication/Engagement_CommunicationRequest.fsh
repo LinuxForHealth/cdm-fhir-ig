@@ -25,8 +25,8 @@ Description:    "This profile is a record of an engagement request for a communi
 
 * extension contains ConversationType named conversationType 0..1
 * extension[conversationType].valueCodeableConcept from EngagementConversationTypeValueSet (extensible)
-* extension[conversationType] ^short      = "Type of conversation, used for ihe chat communications"
-* extension[conversationType] ^definition = "Type of conversation, used for ihe chat communications"
+* extension[conversationType] ^short      = "Type of conversation, used for chat communications"
+* extension[conversationType] ^definition = "Type of conversation, used for chat communications"
 
 * extension contains CommunicationReengagement named communicationReengagement 0..1
 * extension[communicationReengagement] ^short      = "Sequence for subsequent communication attempts to reengage the patient"

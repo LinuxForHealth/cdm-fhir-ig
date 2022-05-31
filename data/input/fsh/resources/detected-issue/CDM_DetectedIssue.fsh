@@ -2,7 +2,7 @@ Profile:        CDMDetectedIssue
 Parent:         DetectedIssue
 Id:             cdm-detected-issue
 Title:          "CDM Detected Issue"
-Description:    "IBM Health Data Connect Common Data Model definition of what fields we currently define for a detected issue"
+Description:    "Health Data Connect Common Data Model definition of what fields we currently define for a detected issue"
 * contained 0..0
 * meta only ProcessMeta
 

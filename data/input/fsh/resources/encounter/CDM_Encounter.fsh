@@ -2,7 +2,7 @@ Profile:        CDMEncounter
 Parent:         Encounter
 Id:             cdm-encounter
 Title:          "CDM Encounter"
-Description:    "IBM Health Data Connect Common Data Model definition of what fields we currently define for an encounter"
+Description:    "Health Data Connect Common Data Model definition of what fields we currently define for an encounter"
 * contained 0..0
 * meta only ProcessMeta
 
@@ -28,3 +28,7 @@ Description:    "IBM Health Data Connect Common Data Model definition of what fi
 * identifier[Source].value 1..1
 
 * class from EncounterClassValueSet (extensible)
+
+* extension contains Insured named insured 0..*
+* extension[insured] ^short      = "Insurance context for the encounter"
+* extension[insured] ^definition = "Insurance context for the encounter"

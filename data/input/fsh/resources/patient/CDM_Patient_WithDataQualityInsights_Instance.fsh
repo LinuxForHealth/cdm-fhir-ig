@@ -11,10 +11,10 @@ Description:    "CDM Patient example where data quality process has specified va
 
 //header for phone insights
 * meta.extension[insight][0].extension[path].valueString = "contact.telecom.value(where system = 'phone')"
-* meta.extension[insight][0].extension[insightId].valueIdentifier.system = "http://www.claro.com/insights"
+* meta.extension[insight][0].extension[insightId].valueIdentifier.system = "http://www.acme.com/insights"
 * meta.extension[insight][0].extension[insightId].valueIdentifier.value = "data-state-id-2"
-* meta.extension[insight][0].extension[sourceId].valueIdentifier.system = "http://www.claro.com/analytics/phone-validator"
-* meta.extension[insight][0].extension[sourceId].valueIdentifier.value = "watson-md"
+* meta.extension[insight][0].extension[sourceId].valueIdentifier.system = "http://www.acme.com/analytics/phone-validator"
+* meta.extension[insight][0].extension[sourceId].valueIdentifier.value = "coyote-md"
 * meta.extension[insight][0].extension[detected].valueDateTime = "2020-01-01T03:01:00Z"
 * meta.extension[insight][0].extension[category].valueCodeableConcept = InsightCategoryCodeSystem#data-quality
 

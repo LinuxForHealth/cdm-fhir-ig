@@ -1,7 +1,7 @@
 CodeSystem:     WhPayerProviderTypeCodeSystem
 Id:             wh-payer-provider-type
 Title:          "Health Data Connect Provider Type Codes"
-Description:    "IBM® Health Data Connect standard provider type code as reported on the claim."
+Description:    "Health Data Connect standard provider type code as reported on the claim."
 * ^caseSensitive = true
 * #1    "Acute Care Hospital"                   ""
 * #5	"Ambulatory Surgery Centers"            ""
@@ -142,13 +142,13 @@ Description:    "IBM® Health Data Connect standard provider type code as report
 ValueSet:       WhOrganizationTypeValueSet
 Id:             wh-organization-type
 Title:          "WH Organization Value Set"
-Description:    "IBM Health Data Connect standard values for organization type"
+Description:    "Health Data Connect standard values for organization type"
 * codes from system WhPayerProviderTypeCodeSystem
 * codes from system ORGANIZATION-TYPE
 
 ValueSet:       WhPractitionerRoleTypeValueSet
 Id:             wh-practitioner-role-type
 Title:          "WH Practitioner Role Type Value Set"
-Description:    "IBM Health Data Connect standard values for practitioner role type"
+Description:    "Health Data Connect standard values for practitioner role type"
 * codes from system WhPayerProviderTypeCodeSystem
 * codes from system PRACTITIONER-ROLE

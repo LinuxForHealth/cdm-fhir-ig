@@ -2,7 +2,7 @@ Profile:        CDMPerson
 Parent:         Person
 Id:             cdm-person
 Title:          "CDM Person"
-Description:    "IBM Health Data Connect Common Data Model definition of what fields we currently define for a person"
+Description:    "Health Data Connect Common Data Model definition of what fields we currently define for a person"
 * contained 0..0
 * meta only ProcessMeta
 
