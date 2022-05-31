@@ -13,7 +13,7 @@
     <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "MatchedPatientSource-EMR2-PatientB" </p><p style="margin-bottom: 0px">Information Source: http://acme-health.com/emr1!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cdm-patient.html">CDM Patient</a></p></div><p><b>Sex Assigned At Birth</b>: Female <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-sex-assigned-at-birth.html">Sex Assigned At Birth Codes</a>#female)</span></p><p><b>identifier</b>: Source System Row Identifier: emr2-patientB (OFFICIAL), Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Maggie Match </p><p><b>telecom</b>: 214-555-6767(MOBILE)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1990-01-04</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Maggie Match </b> female, DoB: 1990-01-04 ( Source System Row Identifier: emr2-patientB (OFFICIAL))</p></div>
   </text>
   <extension url="http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth">
     <valueCodeableConcept>
@@ -45,7 +45,7 @@
     <system value="http://ibm.com/fhir/primary/patient-match-identifier"/>
     <value value="c82a8fce-11db-4396-b10c-1150abd1a222"/>
     <assigner>
-      <display value="IBM"/>
+      <display value="HDC"/>
     </assigner>
   </identifier>
   <active value="true"/>

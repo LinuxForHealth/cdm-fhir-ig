@@ -42,20 +42,34 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.523"}
-    h3,h4,h5,h6{--heading-prefix:"3.523"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.528"}
+    h3,h4,h5,h6{--heading-prefix:"3.528"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
   <a id="alvearie-logo" no-external="true">
-    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
+    <!-- 
+    // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -112,7 +126,9 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
 
 
 
@@ -156,6 +172,19 @@
 
 
 <h2 id="root">: CDM Patient - Communication Opt-Out - XML Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="Patient-CDMPatientInstance-CommOptOut.xml" no-download="true">Raw xml</a> | <a href="Patient-CDMPatientInstance-CommOptOut.xml" download>Download</a></p>
 
@@ -180,8 +209,8 @@
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient&quot;/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Resource &quot;CDMPatientInstance-CommOptOut&quot; &lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Information Source: http://acme-health.com/emr1!&lt;/p&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-cdm-patient.html&quot;&gt;CDM Patient&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Sex Assigned At Birth&lt;/b&gt;: Male &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-sex-assigned-at-birth.html&quot;&gt;Sex Assigned At Birth Codes&lt;/a&gt;#male)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Communication Opt-Out&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Global opt-out example: all products, all communication modes, all conversation types &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-opt-out-reason.html&quot;&gt;Engagement Opt-Out Reason Codes&lt;/a&gt;#other)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2020-01-01T00:00:00Z --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IBM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Patient Portal&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IHE&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2020-01-01T13:01:00Z&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Communication Opt-Out&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Product-specific opt-out example: IHE only, all modes, health reminders only) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-opt-out-reason.html&quot;&gt;Engagement Opt-Out Reason Codes&lt;/a&gt;#other)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IHE &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-product.html&quot;&gt;Engagement Product Codes&lt;/a&gt;#ihe)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Health reminders associated with a gap in care &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-conversation-type.html&quot;&gt;Engagement Conversation Type Codes&lt;/a&gt;#gap-in-care)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2020-01-01T00:00:00Z --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IBM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Patient Portal&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IHE&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2020-01-01T13:01:00Z&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Communication Opt-Out&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Product-specific opt-out example: IHE only, all modes, appointment reminders only) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-opt-out-reason.html&quot;&gt;Engagement Opt-Out Reason Codes&lt;/a&gt;#other)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IHE &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-product.html&quot;&gt;Engagement Product Codes&lt;/a&gt;#ihe)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Reminders for upcoming appointments &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-conversation-type.html&quot;&gt;Engagement Conversation Type Codes&lt;/a&gt;#appointment-reminder)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2020-01-01T00:00:00Z --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IBM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Patient Portal&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IHE&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2020-01-01T13:01:00Z&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Communication Opt-Out&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Product-specific opt-out example: IHE only, sms text only, limited to one care gap) &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-opt-out-reason.html&quot;&gt;Engagement Opt-Out Reason Codes&lt;/a&gt;#other)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IHE &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-product.html&quot;&gt;Engagement Product Codes&lt;/a&gt;#ihe)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Sms Text &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-communication-mode.html&quot;&gt;Engagement Communication Mode Codes&lt;/a&gt;#sms)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2020-01-01T00:00:00Z --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: dm-hba1c-caregap-poor-control&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IBM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Patient Portal&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IHE&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2020-01-01T13:01:00Z&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;Communication Opt-Out&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: TEMPORARY product-specific opt-out example: IHE only, all modes, all conversation types, all care gaps &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-opt-out-reason.html&quot;&gt;Engagement Opt-Out Reason Codes&lt;/a&gt;#other)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IHE &lt;span style=&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki&quot;&gt; (&lt;a href=&quot;CodeSystem-eng-product.html&quot;&gt;Engagement Product Codes&lt;/a&gt;#ihe)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2020-01-01T00:00:00Z --&amp;gt; 2020-03-30T00:00:00Z&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IBM&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Patient Portal&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: IHE&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2020-01-01T13:01:00Z&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Source System Row Identifier: 1c1751b9-fc28-4615-b09e-f594649dc7bf (OFFICIAL), Match Data Identifier: 82587288-b8d8-4c3a-a3a6-4f3ba901cc7e (SECONDARY)&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Frasier Crane &lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: male&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1955-02-21&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Frasier Crane &lt;/b&gt; male, DoB: 1955-02-21 ( Source System Row Identifier: 1c1751b9-fc28-4615-b09e-f594649dc7bf (OFFICIAL))&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth&quot;&gt;
@@ -212,13 +241,13 @@
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-organization&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IBM&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HDC&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-type&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient Portal&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-name&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IHE&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;care-gap&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-version&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0&quot;/&gt;
@@ -237,7 +266,7 @@
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;other&quot;/&gt;
         &lt;/coding&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Product-specific opt-out example: IHE only, all modes, health reminders only)&quot;/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Product-specific opt-out example: care-gap only, all modes, health reminders only)&quot;/&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
@@ -245,7 +274,7 @@
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/eng-product&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ihe&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;care-gap&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
@@ -267,13 +296,13 @@
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-organization&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IBM&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HDC&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-type&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient Portal&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-name&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IHE&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;care-gap&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-version&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0&quot;/&gt;
@@ -292,7 +321,7 @@
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;other&quot;/&gt;
         &lt;/coding&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Product-specific opt-out example: IHE only, all modes, appointment reminders only)&quot;/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Product-specific opt-out example: care-gap only, all modes, appointment reminders only)&quot;/&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
@@ -300,7 +329,7 @@
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/eng-product&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ihe&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;care-gap&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
@@ -322,13 +351,13 @@
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-organization&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IBM&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HDC&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-type&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient Portal&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-name&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IHE&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;care-gap&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-version&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0&quot;/&gt;
@@ -347,7 +376,7 @@
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;other&quot;/&gt;
         &lt;/coding&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Product-specific opt-out example: IHE only, sms text only, limited to one care gap)&quot;/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Product-specific opt-out example: care-gap only, sms text only, limited to one care gap)&quot;/&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
@@ -355,7 +384,7 @@
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/eng-product&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ihe&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;care-gap&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
@@ -381,13 +410,13 @@
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-organization&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IBM&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HDC&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-type&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient Portal&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-name&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IHE&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;care-gap&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-version&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0&quot;/&gt;
@@ -406,7 +435,7 @@
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;other&quot;/&gt;
         &lt;/coding&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TEMPORARY product-specific opt-out example: IHE only, all modes, all conversation types, all care gaps&quot;/&gt;
+              <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TEMPORARY product-specific opt-out example: care-gap only, all modes, all conversation types, all care gaps&quot;/&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
@@ -414,7 +443,7 @@
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/eng-product&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ihe&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;care-gap&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
@@ -427,13 +456,13 @@
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-organization&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IBM&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HDC&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-type&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient Portal&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-name&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IHE&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;care-gap&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/process-version&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1.0&quot;/&gt;
@@ -468,7 +497,7 @@
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/primary/patient-match-identifier&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;82587288-b8d8-4c3a-a3a6-4f3ba901cc7e&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;IBM&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HDC&quot;/&gt;
     &lt;/assigner&gt;
   &lt;/identifier&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>&gt;
@@ -507,7 +536,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -532,6 +561,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

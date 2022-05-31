@@ -16,13 +16,13 @@
     }
   ],
   "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-population-observation",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "name": "MeasurePopulationObservation",
   "title": "Measure Population Observation",
   "status": "active",
-  "date": "2022-01-21T20:46:54+00:00",
+  "date": "2022-05-31T20:10:14+00:00",
   "publisher": "Alvearie Team",
-  "description": "Observation created by IBM Health Data Connect to record measure populations for a patient over time",
+  "description": "Observation created by Health Data Connect to record measure populations for a patient over time",
   "jurisdiction": [
     {
       "coding": [
@@ -2830,7 +2830,7 @@
             "human": "Must have at least a low or a high or text",
             "expression": "low.exists() or high.exists() or text.exists()",
             "xpath": "(exists(f:low) or exists(f:high)or exists(f:text))",
-            "source": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-observation"
+            "source": "http://hl7.org/fhir/StructureDefinition/Observation"
           }
         ],
         "isModifier": false,

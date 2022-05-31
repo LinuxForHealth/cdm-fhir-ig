@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/insured-category> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "insured-category"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/insured-category defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">PRIVATE<a name=\"insured-category-PRIVATE\"> </a></td><td>Private</td><td>Private</td></tr><tr><td style=\"white-space:nowrap\">MEDICARE<a name=\"insured-category-MEDICARE\"> </a></td><td>Medicare</td><td>Medicare</td></tr><tr><td style=\"white-space:nowrap\">RESEARCH<a name=\"insured-category-RESEARCH\"> </a></td><td>Research</td><td>Research</td></tr><tr><td style=\"white-space:nowrap\">DENTAL<a name=\"insured-category-DENTAL\"> </a></td><td>Dental</td><td>Dental</td></tr><tr><td style=\"white-space:nowrap\">MEDICAID<a name=\"insured-category-MEDICAID\"> </a></td><td>Medicaid</td><td>Medicaid</td></tr><tr><td style=\"white-space:nowrap\">OTHERPUBLIC<a name=\"insured-category-OTHERPUBLIC\"> </a></td><td>Other Public</td><td>Other Public</td></tr><tr><td style=\"white-space:nowrap\">OTHER<a name=\"insured-category-OTHER\"> </a></td><td>Other</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">UNKNOWN<a name=\"insured-category-UNKNOWN\"> </a></td><td>Unknown</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\">SELFPAY<a name=\"insured-category-SELFPAY\"> </a></td><td>Self Pay</td><td>Self Pay</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insured-category"];
+  fhir:CodeSystem.version [ fhir:value "6.1.0"];
+  fhir:CodeSystem.name [ fhir:value "InsuredCategoryCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Insured Category Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-05-31T20:10:14+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Alvearie Team"];
+  fhir:CodeSystem.description [ fhir:value "Code system that defines a category of insurance"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "9"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "PRIVATE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Private" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Private" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "MEDICARE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicare" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Medicare" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "RESEARCH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Research" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Research" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "DENTAL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dental" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "MEDICAID" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicaid" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Medicaid" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "OTHERPUBLIC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other Public" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other Public" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "OTHER" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "UNKNOWN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unknown" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Unknown" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "SELFPAY" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Self Pay" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Self Pay" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://ibm.com/fhir/cdm/CodeSystem/insured-category.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

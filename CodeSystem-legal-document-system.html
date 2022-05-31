@@ -40,20 +40,34 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.470"}
-    h3,h4,h5,h6{--heading-prefix:"3.470"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.475"}
+    h3,h4,h5,h6{--heading-prefix:"3.475"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
   <a id="alvearie-logo" no-external="true">
-    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
+    <!-- 
+    // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -110,8 +124,10 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
+
+
 
 
 
@@ -150,30 +166,55 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">CodeSystem: Legal Document System Codes</h2>
+  <h2 id="root">CodeSystem: Legal Document System Codes
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ibm.com/fhir/cdm/CodeSystem/legal-document-system<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/CodeSystem/legal-document-system"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">6.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/CodeSystem/legal-document-system|6.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-05-31
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">LegalDocumentSystemCodeSystem</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Codes indicating the system of legal document used for identification</p>
+
+</p>
 
   <!-- insert intro if present -->
   
 
-
-
-  <p>
-    <b>Summary</b>
-  </p>
-
-  <table class="grid">
-<tbody>
-<tr><td>Defining URL:</td><td>http://ibm.com/fhir/cdm/CodeSystem/legal-document-system</td></tr>
- <tr><td>Version:</td><td>6.0.0</td></tr>
- <tr><td>Name:</td><td>LegalDocumentSystemCodeSystem</td></tr>
- <tr><td>Title:</td><td>Legal Document System Codes</td></tr>
- <tr><td>Status:</td><td>Active as of 1/21/22, 8:46 PM</td></tr>
- <tr><td>Definition:</td><td><p>Codes indicating the system of legal document used for identification</p>
-</td></tr>
- <tr><td>Publisher:</td><td>Alvearie Team</td></tr>
- <tr><td>Content:</td><td>Complete: All the concepts defined by the code system are included in the code system resource</td></tr>
- <tr><td>Source Resource:</td><td><a href="CodeSystem-legal-document-system.xml.html">XML</a> / <a href="CodeSystem-legal-document-system.json.html">JSON</a> / <a href="CodeSystem-legal-document-system.ttl.html">Turtle</a></td></tr>
-</tbody></table>
 
 
   <p>
@@ -187,6 +228,8 @@
 
 
   <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/legal-document-system defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">us-gov<a name="legal-document-system-us-gov"> </a></td><td>U.S. Federal Goverment</td></tr><tr><td style="white-space:nowrap">us-al-gov<a name="legal-document-system-us-al-gov"> </a></td><td>Alabama State Government</td></tr><tr><td style="white-space:nowrap">us-ak-gov<a name="legal-document-system-us-ak-gov"> </a></td><td>Alaska State Government</td></tr><tr><td style="white-space:nowrap">us-az-gov<a name="legal-document-system-us-az-gov"> </a></td><td>Arizona State Government</td></tr><tr><td style="white-space:nowrap">us-ar-gov<a name="legal-document-system-us-ar-gov"> </a></td><td>Arkansas State Government</td></tr><tr><td style="white-space:nowrap">us-ca-gov<a name="legal-document-system-us-ca-gov"> </a></td><td>California State Government</td></tr><tr><td style="white-space:nowrap">us-co-gov<a name="legal-document-system-us-co-gov"> </a></td><td>Colorado State Government</td></tr><tr><td style="white-space:nowrap">us-ct-gov<a name="legal-document-system-us-ct-gov"> </a></td><td>Connecticut State Government</td></tr><tr><td style="white-space:nowrap">us-de-gov<a name="legal-document-system-us-de-gov"> </a></td><td>Deleware State Government</td></tr><tr><td style="white-space:nowrap">us-dc-gov<a name="legal-document-system-us-dc-gov"> </a></td><td>Distict Of Columbia</td></tr><tr><td style="white-space:nowrap">us-fl-gov<a name="legal-document-system-us-fl-gov"> </a></td><td>Florida State Government</td></tr><tr><td style="white-space:nowrap">us-ga-gov<a name="legal-document-system-us-ga-gov"> </a></td><td>Georgia State Government</td></tr><tr><td style="white-space:nowrap">us-hi-gov<a name="legal-document-system-us-hi-gov"> </a></td><td>Hawaii State Government</td></tr><tr><td style="white-space:nowrap">us-id-gov<a name="legal-document-system-us-id-gov"> </a></td><td>Idaho State Government</td></tr><tr><td style="white-space:nowrap">us-il-gov<a name="legal-document-system-us-il-gov"> </a></td><td>Illinois State Government</td></tr><tr><td style="white-space:nowrap">us-in-gov<a name="legal-document-system-us-in-gov"> </a></td><td>Indiana State Government</td></tr><tr><td style="white-space:nowrap">us-ia-gov<a name="legal-document-system-us-ia-gov"> </a></td><td>Iowa State Government</td></tr><tr><td style="white-space:nowrap">us-ks-gov<a name="legal-document-system-us-ks-gov"> </a></td><td>Kansas State Government</td></tr><tr><td style="white-space:nowrap">us-ky-gov<a name="legal-document-system-us-ky-gov"> </a></td><td>Kentucky State Government</td></tr><tr><td style="white-space:nowrap">us-la-gov<a name="legal-document-system-us-la-gov"> </a></td><td>Louisianna State Government</td></tr><tr><td style="white-space:nowrap">us-me-gov<a name="legal-document-system-us-me-gov"> </a></td><td>Maine State Government</td></tr><tr><td style="white-space:nowrap">us-md-gov<a name="legal-document-system-us-md-gov"> </a></td><td>Maryland State Government</td></tr><tr><td style="white-space:nowrap">us-ma-gov<a name="legal-document-system-us-ma-gov"> </a></td><td>Massachusetts State Government</td></tr><tr><td style="white-space:nowrap">us-mi-gov<a name="legal-document-system-us-mi-gov"> </a></td><td>Michigan State Government</td></tr><tr><td style="white-space:nowrap">us-mn-gov<a name="legal-document-system-us-mn-gov"> </a></td><td>Minnesota State Government</td></tr><tr><td style="white-space:nowrap">us-ms-gov<a name="legal-document-system-us-ms-gov"> </a></td><td>Mississippi State Government</td></tr><tr><td style="white-space:nowrap">us-mo-gov<a name="legal-document-system-us-mo-gov"> </a></td><td>Missouri State Government</td></tr><tr><td style="white-space:nowrap">us-mt-gov<a name="legal-document-system-us-mt-gov"> </a></td><td>Montana State Government</td></tr><tr><td style="white-space:nowrap">us-ne-gov<a name="legal-document-system-us-ne-gov"> </a></td><td>Nebraska State Government</td></tr><tr><td style="white-space:nowrap">us-nv-gov<a name="legal-document-system-us-nv-gov"> </a></td><td>Nevada State Government</td></tr><tr><td style="white-space:nowrap">us-nh-gov<a name="legal-document-system-us-nh-gov"> </a></td><td>New Hampshire State Government</td></tr><tr><td style="white-space:nowrap">us-nj-gov<a name="legal-document-system-us-nj-gov"> </a></td><td>New Jersey State Government</td></tr><tr><td style="white-space:nowrap">us-nm-gov<a name="legal-document-system-us-nm-gov"> </a></td><td>New Mexico State Government</td></tr><tr><td style="white-space:nowrap">us-ny-gov<a name="legal-document-system-us-ny-gov"> </a></td><td>New York State Government</td></tr><tr><td style="white-space:nowrap">us-nc-gov<a name="legal-document-system-us-nc-gov"> </a></td><td>North Carolina State Government</td></tr><tr><td style="white-space:nowrap">us-nd-gov<a name="legal-document-system-us-nd-gov"> </a></td><td>North Dakota State Government</td></tr><tr><td style="white-space:nowrap">us-ok-gov<a name="legal-document-system-us-ok-gov"> </a></td><td>Oklahoma State Government</td></tr><tr><td style="white-space:nowrap">us-or-gov<a name="legal-document-system-us-or-gov"> </a></td><td>Oregon State Government</td></tr><tr><td style="white-space:nowrap">us-pa-gov<a name="legal-document-system-us-pa-gov"> </a></td><td>Pennsylvania State Government</td></tr><tr><td style="white-space:nowrap">us-ri-gov<a name="legal-document-system-us-ri-gov"> </a></td><td>Rhode Island State Government</td></tr><tr><td style="white-space:nowrap">us-sc-gov<a name="legal-document-system-us-sc-gov"> </a></td><td>South Carolina State Government</td></tr><tr><td style="white-space:nowrap">us-tn-gov<a name="legal-document-system-us-tn-gov"> </a></td><td>Tennessee State Government</td></tr><tr><td style="white-space:nowrap">us-tx-gov<a name="legal-document-system-us-tx-gov"> </a></td><td>Texas State Government</td></tr><tr><td style="white-space:nowrap">us-ut-gov<a name="legal-document-system-us-ut-gov"> </a></td><td>Utah State Government</td></tr><tr><td style="white-space:nowrap">us-vt-gov<a name="legal-document-system-us-vt-gov"> </a></td><td>Vermont State Government</td></tr><tr><td style="white-space:nowrap">us-va-gov<a name="legal-document-system-us-va-gov"> </a></td><td>Virginia State Government</td></tr><tr><td style="white-space:nowrap">us-wa-gov<a name="legal-document-system-us-wa-gov"> </a></td><td>Washington State Government</td></tr><tr><td style="white-space:nowrap">us-wv-gov<a name="legal-document-system-us-wv-gov"> </a></td><td>West Virginia State Government</td></tr><tr><td style="white-space:nowrap">us-wi-gov<a name="legal-document-system-us-wi-gov"> </a></td><td>Wisconsin State Government</td></tr><tr><td style="white-space:nowrap">us-wy-gov<a name="legal-document-system-us-wy-gov"> </a></td><td>Wyoming State Government</td></tr><tr><td style="white-space:nowrap">us-other<a name="legal-document-system-us-other"> </a></td><td>Other</td></tr></table></div>
+
+  
 
   <!-- insert notes if present -->
   
@@ -217,7 +260,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -242,6 +285,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

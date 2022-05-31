@@ -13,7 +13,7 @@
     <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "CDMPatientInstance-Attributed" </p><p style="margin-bottom: 0px">Information Source: http://acme-health.com/emr1!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cdm-patient.html">CDM Patient</a></p></div><p><b>Sex Assigned At Birth</b>: Male <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-sex-assigned-at-birth.html">Sex Assigned At Birth Codes</a>#male)</span></p><p><b>identifier</b>: Source System Row Identifier: 1fe85e9a-a19f-463c-b8cf-2b649c1740b6 (OFFICIAL), Match Data Identifier: a491127b-2e01-452f-ba3c-0cc93e986e8c (SECONDARY)</p><p><b>name</b>: Sam Malone </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1947-12-29</p><p><b>generalPractitioner</b>: </p><ul><li><a href="PractitionerRole-CDMPractitionerRole-EMR-PCP.html">PractitionerRole/CDMPractitionerRole-EMR-PCP</a></li><li><a href="PractitionerRole-CDMPractitionerRole-Enrollment.html">PractitionerRole/CDMPractitionerRole-Enrollment</a></li><li><a href="PractitionerRole-CDMPractitionerRole-Enrollment.html">PractitionerRole/CDMPractitionerRole-Enrollment</a></li><li><a href="PractitionerRole-CDMPractitionerRole-Advantage-Imputed-PCP.html">PractitionerRole/CDMPractitionerRole-Advantage-Imputed-PCP</a></li><li><a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html">PractitionerRole/CDMPractitionerRole-Attributed-PCP</a></li><li><a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html">PractitionerRole/CDMPractitionerRole-Attributed-PCP</a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Sam Malone </b> male, DoB: 1947-12-29 ( Source System Row Identifier: 1fe85e9a-a19f-463c-b8cf-2b649c1740b6 (OFFICIAL))</p></div>
   </text>
   <extension url="http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth">
     <valueCodeableConcept>
@@ -48,7 +48,7 @@
     <system value="http://ibm.com/fhir/primary/patient-match-identifier"/>
     <value value="a491127b-2e01-452f-ba3c-0cc93e986e8c"/>
     <assigner>
-      <display value="IBM"/>
+      <display value="HDC"/>
     </assigner>
   </identifier>
   <name>
@@ -85,7 +85,7 @@
       </valuePeriod>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
-      <valueString value="IBM"/>
+      <valueString value="HDC"/>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
       <valueString value="Practitioner Attribution"/>
@@ -114,7 +114,7 @@
       </valuePeriod>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
-      <valueString value="IBM"/>
+      <valueString value="HDC"/>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
       <valueString value="Practitioner Attribution"/>
@@ -140,7 +140,7 @@
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
         <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-product"/>
-        <code value="advantage"/>
+        <code value="engagement"/>
       </valueCoding>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-period">
@@ -149,7 +149,7 @@
       </valuePeriod>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
-      <valueString value="IBM"/>
+      <valueString value="HDC"/>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
       <valueString value="Practitioner Attribution"/>
@@ -163,7 +163,7 @@
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp">
       <valueDateTime value="2020-02-14T03:12:00Z"/>
     </extension>
-    <reference value="PractitionerRole/CDMPractitionerRole-Advantage-Imputed-PCP"/>
+    <reference value="CDMPractitionerRole-Imputed-PCP"/>
   </generalPractitioner>
   <generalPractitioner>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
@@ -191,7 +191,7 @@
       </valuePeriod>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
-      <valueString value="IBM"/>
+      <valueString value="HDC"/>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
       <valueString value="Practitioner Attribution"/>
@@ -233,7 +233,7 @@
       </valuePeriod>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
-      <valueString value="IBM"/>
+      <valueString value="HDC"/>
     </extension>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
       <valueString value="Practitioner Attribution"/>

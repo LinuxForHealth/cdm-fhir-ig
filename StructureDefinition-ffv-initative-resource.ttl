@@ -22,13 +22,13 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ffv-initative-resource"];
-  fhir:StructureDefinition.version [ fhir:value "6.0.0"];
+  fhir:StructureDefinition.version [ fhir:value "6.1.0"];
   fhir:StructureDefinition.name [ fhir:value "FFVInitiative"];
   fhir:StructureDefinition.title [ fhir:value "Fee for Value Initative"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-31T20:10:14+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Alvearie Team"];
-  fhir:StructureDefinition.description [ fhir:value "IBM Health Data Connect Common Data Model definition of what fields we currently define for an FFV initiative record"];
+  fhir:StructureDefinition.description [ fhir:value "Health Data Connect Common Data Model definition of what fields we currently define for an FFV initiative record"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -476,7 +476,7 @@
        fhir:ElementDefinition.path [ fhir:value "Contract.meta.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "processOrganization" ];
        fhir:ElementDefinition.short [ fhir:value "The organizing entity that owns the process that has produced the data held in the FHIR resource or element" ];
-       fhir:ElementDefinition.definition [ fhir:value "The organizing entity that owns the process that has produced the data held in the FHIR resource or element. Example: If an IBM analytic service has been the producer, the process-organization value is IBM." ];
+       fhir:ElementDefinition.definition [ fhir:value "The organizing entity that owns the process that has produced the data held in the FHIR resource or element. Example: If an analytic service has been the producer, the process-organization value should reflect the organaization reponsible for the service." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -524,7 +524,7 @@
        fhir:ElementDefinition.path [ fhir:value "Contract.meta.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "processName" ];
        fhir:ElementDefinition.short [ fhir:value "The name of the process or service that has produced the data held in the FHIR resource or element" ];
-       fhir:ElementDefinition.definition [ fhir:value "The name of the process or service that has produced the data held in the FHIR resource or element. Example: If an IBM analytic service has been the producer, use the process-name as the name of that analytic service." ];
+       fhir:ElementDefinition.definition [ fhir:value "The name of the process or service that has produced the data held in the FHIR resource or element. Example: If an analytic service has been the producer, use the process-name as the name of that analytic service." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [

@@ -10,11 +10,11 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://ibm.com/fhir/cdm/StructureDefinition/ethnicity"/>
-  <version value="6.0.0"/>
+  <version value="6.1.0"/>
   <name value="Ethnicity"/>
   <title value="Ethnicity Code"/>
   <status value="active"/>
-  <date value="2022-01-21T20:46:54+00:00"/>
+  <date value="2022-05-31T20:10:14+00:00"/>
   <publisher value="Alvearie Team"/>
   <description value="Code for the ethnicity of the person"/>
   <jurisdiction>
@@ -64,7 +64,7 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>

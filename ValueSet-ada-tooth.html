@@ -40,20 +40,34 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.360"}
-    h3,h4,h5,h6{--heading-prefix:"3.360"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.363"}
+    h3,h4,h5,h6{--heading-prefix:"3.363"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
   <a id="alvearie-logo" no-external="true">
-    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
+    <!-- 
+    // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -110,8 +124,10 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
+
+
 
 
 
@@ -150,22 +166,50 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: American Dental Association Tooth Numbering Value Set</h2>
-  <p>
-    <b>Summary</b>
-  </p>
-  <table class="grid">
-<tbody>
-<tr><td>Defining URL:</td><td>http://ibm.com/fhir/cdm/ValueSet/ada-tooth</td></tr>
- <tr><td>Version:</td><td>6.0.0</td></tr>
- <tr><td>Name:</td><td>ADAToothValueSet</td></tr>
- <tr><td>Title:</td><td>American Dental Association Tooth Numbering Value Set</td></tr>
- <tr><td>Status:</td><td>Active as of 1/21/22, 8:46 PM</td></tr>
- <tr><td>Definition:</td><td><p>Value set that defines a tooth</p>
-</td></tr>
- <tr><td>Publisher:</td><td>Alvearie Team</td></tr>
- <tr><td>Source Resource:</td><td><a href="ValueSet-ada-tooth.xml.html">XML</a> / <a href="ValueSet-ada-tooth.json.html">JSON</a> / <a href="ValueSet-ada-tooth.ttl.html">Turtle</a></td></tr>
-</tbody></table>
+  <h2 id="root">ValueSet: American Dental Association Tooth Numbering Value Set
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ibm.com/fhir/cdm/ValueSet/ada-tooth<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ValueSet/ada-tooth"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">6.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ValueSet/ada-tooth|6.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-05-31
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ADAToothValueSet</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Value set that defines a tooth</p>
+
+</p>
 
 
   <p>
@@ -190,7 +234,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 52 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-ada-tooth.html">American Dental Association Tooth Numbering Code System v6.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="CodeSystem-ada-tooth.html"><code>http://ibm.com/fhir/cdm/CodeSystem/ada-tooth</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-1"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-1">1</a></td><td>Upper Right Third Molar (Wisdom Tooth)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-10"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-10">10</a></td><td>Upper Left Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-11"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-11">11</a></td><td>Upper Left Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-12"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-12">12</a></td><td>Upper Left First Premolar (First Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-13"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-13">13</a></td><td>Upper Left Second Premolar (Second Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-14"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-14">14</a></td><td>Upper Left First Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-15"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-15">15</a></td><td>Upper Left Second Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-16"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-16">16</a></td><td>Upper Left Third Molar (Wisdom Tooth)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-17"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-17">17</a></td><td>Lower Left Third Molar (Wisdom Tooth)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-18"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-18">18</a></td><td>Lower Left Second Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-19"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-19">19</a></td><td>Lower Left First Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-2"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-2">2</a></td><td>Upper Right Second Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-20"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-20">20</a></td><td>Lower Left Second Premolar (Second Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-21"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-21">21</a></td><td>Lower Left First Premolar (First Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-22"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-22">22</a></td><td>Lower Left Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-23"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-23">23</a></td><td>Lower Left Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-24"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-24">24</a></td><td>Lower Left Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-25"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-25">25</a></td><td>Lower Right Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-26"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-26">26</a></td><td>Lower Right Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-27"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-27">27</a></td><td>Lower Right Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-28"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-28">28</a></td><td>Lower Right First Premolar (First Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-29"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-29">29</a></td><td>Lower Right Second Premolar (Second Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-3"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-3">3</a></td><td>Upper Right First Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-30"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-30">30</a></td><td>Lower Right First Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-31"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-31">31</a></td><td>Lower Right Second Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-32"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-32">32</a></td><td>Lower Right Third Molar (Wisdom Tooth)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-4"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-4">4</a></td><td>Upper Right Second Premolar (Second Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-5"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-5">5</a></td><td>Upper Right First Premolar (First Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-6"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-6">6</a></td><td>Upper Right Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-7"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-7">7</a></td><td>Upper Right Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-8"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-8">8</a></td><td>Upper Right Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-9"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-9">9</a></td><td>Upper Left Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-A"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-A">A</a></td><td>Upper Right Second Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-B"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-B">B</a></td><td>Upper Right First Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-C"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-C">C</a></td><td>Upper Right Primary Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-D"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-D">D</a></td><td>Upper Right Primary Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-E"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-E">E</a></td><td>Upper Right Primary Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-F"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-F">F</a></td><td>Upper Left Primary Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-G"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-G">G</a></td><td>Upper Left Primary Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-H"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-H">H</a></td><td>Upper Left Primary Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-I"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-I">I</a></td><td>Upper Left First Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-J"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-J">J</a></td><td>Upper Left Second Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-K"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-K">K</a></td><td>Lower Left Second Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-L"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-L">L</a></td><td>Lower Left First Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-M"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-M">M</a></td><td>Lower Left Primary Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-N"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-N">N</a></td><td>Lower Left Primary Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-O"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-O">O</a></td><td>Lower Left Primary Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-P"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-P">P</a></td><td>Lower Right Primary Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-Q"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-Q">Q</a></td><td>Lower Right Primary Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-R"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-R">R</a></td><td>Lower Right Primary Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-S"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-S">S</a></td><td>Lower Right First Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-T"> </a><a href="CodeSystem-ada-tooth.html#ada-tooth-T">T</a></td><td>Lower Right Second Primary Molar</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 52 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-ada-tooth.html">American Dental Association Tooth Numbering Code System v6.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="CodeSystem-ada-tooth.html"><code>http://ibm.com/fhir/cdm/CodeSystem/ada-tooth</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-1"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-1">1</a></td><td>Upper Right Third Molar (Wisdom Tooth)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-10"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-10">10</a></td><td>Upper Left Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-11"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-11">11</a></td><td>Upper Left Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-12"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-12">12</a></td><td>Upper Left First Premolar (First Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-13"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-13">13</a></td><td>Upper Left Second Premolar (Second Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-14"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-14">14</a></td><td>Upper Left First Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-15"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-15">15</a></td><td>Upper Left Second Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-16"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-16">16</a></td><td>Upper Left Third Molar (Wisdom Tooth)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-17"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-17">17</a></td><td>Lower Left Third Molar (Wisdom Tooth)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-18"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-18">18</a></td><td>Lower Left Second Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-19"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-19">19</a></td><td>Lower Left First Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-2"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-2">2</a></td><td>Upper Right Second Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-20"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-20">20</a></td><td>Lower Left Second Premolar (Second Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-21"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-21">21</a></td><td>Lower Left First Premolar (First Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-22"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-22">22</a></td><td>Lower Left Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-23"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-23">23</a></td><td>Lower Left Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-24"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-24">24</a></td><td>Lower Left Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-25"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-25">25</a></td><td>Lower Right Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-26"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-26">26</a></td><td>Lower Right Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-27"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-27">27</a></td><td>Lower Right Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-28"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-28">28</a></td><td>Lower Right First Premolar (First Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-29"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-29">29</a></td><td>Lower Right Second Premolar (Second Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-3"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-3">3</a></td><td>Upper Right First Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-30"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-30">30</a></td><td>Lower Right First Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-31"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-31">31</a></td><td>Lower Right Second Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-32"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-32">32</a></td><td>Lower Right Third Molar (Wisdom Tooth)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-4"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-4">4</a></td><td>Upper Right Second Premolar (Second Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-5"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-5">5</a></td><td>Upper Right First Premolar (First Bicuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-6"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-6">6</a></td><td>Upper Right Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-7"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-7">7</a></td><td>Upper Right Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-8"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-8">8</a></td><td>Upper Right Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-9"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-9">9</a></td><td>Upper Left Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-A"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-A">A</a></td><td>Upper Right Second Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-B"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-B">B</a></td><td>Upper Right First Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-C"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-C">C</a></td><td>Upper Right Primary Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-D"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-D">D</a></td><td>Upper Right Primary Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-E"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-E">E</a></td><td>Upper Right Primary Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-F"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-F">F</a></td><td>Upper Left Primary Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-G"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-G">G</a></td><td>Upper Left Primary Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-H"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-H">H</a></td><td>Upper Left Primary Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-I"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-I">I</a></td><td>Upper Left First Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-J"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-J">J</a></td><td>Upper Left Second Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-K"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-K">K</a></td><td>Lower Left Second Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-L"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-L">L</a></td><td>Lower Left First Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-M"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-M">M</a></td><td>Lower Left Primary Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-N"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-N">N</a></td><td>Lower Left Primary Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-O"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-O">O</a></td><td>Lower Left Primary Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-P"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-P">P</a></td><td>Lower Right Primary Central Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-Q"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-Q">Q</a></td><td>Lower Right Primary Lateral Incisor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-R"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-R">R</a></td><td>Lower Right Primary Canine (Cuspid)</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-S"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-S">S</a></td><td>Lower Right First Primary Molar</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-T"> </a>  <a href="CodeSystem-ada-tooth.html#ada-tooth-T">T</a></td><td>Lower Right Second Primary Molar</td></tr></table></div>
 
   <hr/>
   <p>
@@ -224,6 +268,8 @@
     </tr>
   </table>
 
+  
+
   <!-- insert notes if present -->
   
 
@@ -253,7 +299,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -278,6 +324,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

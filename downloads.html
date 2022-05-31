@@ -48,12 +48,24 @@
 
 <div id="hl7-nav">
   <a no-external="true" id="alvearie-logo">
-    <img src="assets/images/alvearieLogo.png" alt="Alvearie" style="float:left" height="60"/>
+      <!-- // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/> -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img src="assets/images/usa.svg" alt="United States of America flag" title="United States of America" height="16"/>
+
+
+            </span>
+          </p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -117,9 +129,12 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Downloads</h2>
   
+
+
+
 
 
 
@@ -135,7 +150,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <ul>
   <li>
-    <p><strong><a name="l255">​</a><a href="ig-common-data-model-6.0.0-SNAPSHOT.jar">Snapshot v6.0.0 JAR (ig-common-data-model-6.0.0-SNAPSHOT.jar)</a></strong><br/>
+    <p><strong><a name="l261">​</a><a href="ig-common-data-model-6.1.0-SNAPSHOT.jar">Snapshot v6.1.0 JAR (ig-common-data-model-6.1.0-SNAPSHOT.jar)</a></strong><br/>
 Download and copy this Java JAR file to an IBM FHIR Server to make Alvearie profiles available to the FHIR Registry for profile validation.  See <a href="https://ibm.github.io/FHIR/guides/FHIRValidationGuide">IBM FHIR Server documentation</a> for more details.</p>
   </li>
   <li>
@@ -182,7 +197,7 @@ Tar archive containing all assets used by the FHIR publisher to build the site</
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -207,6 +222,8 @@ Tar archive containing all assets used by the FHIR publisher to build the site</
   <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
   <script src="assets/js/respond.min.js" type="text/javascript"> </script>
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

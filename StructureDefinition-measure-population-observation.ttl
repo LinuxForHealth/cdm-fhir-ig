@@ -22,13 +22,13 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-population-observation"];
-  fhir:StructureDefinition.version [ fhir:value "6.0.0"];
+  fhir:StructureDefinition.version [ fhir:value "6.1.0"];
   fhir:StructureDefinition.name [ fhir:value "MeasurePopulationObservation"];
   fhir:StructureDefinition.title [ fhir:value "Measure Population Observation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-31T20:10:14+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Alvearie Team"];
-  fhir:StructureDefinition.description [ fhir:value "Observation created by IBM Health Data Connect to record measure populations for a patient over time"];
+  fhir:StructureDefinition.description [ fhir:value "Observation created by Health Data Connect to record measure populations for a patient over time"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -3025,8 +3025,8 @@
          fhir:ElementDefinition.constraint.expression [ fhir:value "low.exists() or high.exists() or text.exists()" ];
          fhir:ElementDefinition.constraint.xpath [ fhir:value "(exists(f:low) or exists(f:high)or exists(f:text))" ];
          fhir:ElementDefinition.constraint.source [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-observation";
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-observation>
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Observation";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];

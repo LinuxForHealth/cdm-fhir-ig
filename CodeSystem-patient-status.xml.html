@@ -42,20 +42,34 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.479"}
-    h3,h4,h5,h6{--heading-prefix:"3.479"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.484"}
+    h3,h4,h5,h6{--heading-prefix:"3.484"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
   <a id="alvearie-logo" no-external="true">
-    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
+    <!-- 
+    // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -112,7 +126,9 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
 
 
 
@@ -156,6 +172,21 @@
 
 
 <h2 id="root">: Patient Status Codes - XML Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-05-31
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="CodeSystem-patient-status.xml" no-download="true">Raw xml</a> | <a href="CodeSystem-patient-status.xml" download>Download</a></p>
 
@@ -173,11 +204,11 @@
     &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This code system http://ibm.com/fhir/cdm/CodeSystem/patient-status defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;anonymous&lt;a name=&quot;patient-status-anonymous&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anonymous&lt;/td&gt;&lt;td&gt;Patient does not provide true identity or identification&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;asl&lt;a name=&quot;patient-status-asl&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;American Sign Language&lt;/td&gt;&lt;td&gt;Patient communicates using American Sign Language&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;blind&lt;a name=&quot;patient-status-blind&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blind&lt;/td&gt;&lt;td&gt;Patient is blind or legally blind.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;blood-refusal&lt;a name=&quot;patient-status-blood-refusal&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blood Refusal&lt;/td&gt;&lt;td&gt;Patient refuses blood products and transfusions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;charity&lt;a name=&quot;patient-status-charity&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Charity&lt;/td&gt;&lt;td&gt;Patient is pro-bono or charity-care patient&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;chronic-pain&lt;a name=&quot;patient-status-chronic-pain&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chronic Pain&lt;/td&gt;&lt;td&gt;Patient is under treatment for chronic pain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;collection&lt;a name=&quot;patient-status-collection&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Collections&lt;/td&gt;&lt;td&gt;Patient has uncollected debt or account in collection status&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;committed&lt;a name=&quot;patient-status-committed&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Committed&lt;/td&gt;&lt;td&gt;Patient is committed to a mental institution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;confidential&lt;a name=&quot;patient-status-confidential&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Confidential&lt;/td&gt;&lt;td&gt;Patient has special privacy concerns&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;da-victim&lt;a name=&quot;patient-status-da-victim&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Domestic Abuse Victim&lt;/td&gt;&lt;td&gt;Patient is a victim of domestic abuse or violence at home&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;deactivated&lt;a name=&quot;patient-status-deactivated&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deactivated&lt;/td&gt;&lt;td&gt;Patient has been deactivated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;dismissed&lt;a name=&quot;patient-status-dismissed&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dismissed&lt;/td&gt;&lt;td&gt;Patient has been dismissed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;drug-seeking&lt;a name=&quot;patient-status-drug-seeking&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug Seeking&lt;/td&gt;&lt;td&gt;Patient has exhibited drug seeking behavior&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;esrd&lt;a name=&quot;patient-status-esrd&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ESRD&lt;/td&gt;&lt;td&gt;Patient is in treatment for End Stage Renal Disease&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;fraud&lt;a name=&quot;patient-status-fraud&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fraud&lt;/td&gt;&lt;td&gt;Patient has a history of identity theft or fraud&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;fraud-victim&lt;a name=&quot;patient-status-fraud-victim&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fraud Victim&lt;/td&gt;&lt;td&gt;Patient is a victim of identity theft or fraud&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;hearing-impaired&lt;a name=&quot;patient-status-hearing-impaired&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hearing Impaired&lt;/td&gt;&lt;td&gt;Patient is deaf or hearing impaired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;heart&lt;a name=&quot;patient-status-heart&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Heart&lt;/td&gt;&lt;td&gt;Patient is a structural heart patient&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;incarcerated&lt;a name=&quot;patient-status-incarcerated&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Incarcerated&lt;/td&gt;&lt;td&gt;Patient is incarcerated in a state or federal prison&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;no-show&lt;a name=&quot;patient-status-no-show&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No Show&lt;/td&gt;&lt;td&gt;Patient has a history of repeatedly missing appointments&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;non-compliant&lt;a name=&quot;patient-status-non-compliant&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Non-Compliant&lt;/td&gt;&lt;td&gt;Patient is non-compliant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;sarscov2&lt;a name=&quot;patient-status-sarscov2&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SARS-CoV-2&lt;/td&gt;&lt;td&gt;Patient is exhibiting symptomps of SARS-CoV-2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;service-animal&lt;a name=&quot;patient-status-service-animal&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Service Animal&lt;/td&gt;&lt;td&gt;Patient has a service animal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;support-person&lt;a name=&quot;patient-status-support-person&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Support Person&lt;/td&gt;&lt;td&gt;Patient has a support person or assistant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;test&lt;a name=&quot;patient-status-test&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Test&lt;/td&gt;&lt;td&gt;Patient is a test patient used for training, system demonstration, or testing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;transferred&lt;a name=&quot;patient-status-transferred&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transferred&lt;/td&gt;&lt;td&gt;Patient has transferred to another location or pactitioner&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;violence&lt;a name=&quot;patient-status-violence&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Violence&lt;/td&gt;&lt;td&gt;Patient has a history of violent behavior&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;vision-impaired&lt;a name=&quot;patient-status-vision-impaired&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vision Impaired&lt;/td&gt;&lt;td&gt;Patient is has low-vision or other serious vision impairment&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/patient-status&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;6.0.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;6.1.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;PatientStatusCodeSystem&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient Status Codes&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-01-21T20:46:54+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2022-05-31T20:10:14+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Alvearie Team&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Patient status code examples&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>&gt;
@@ -364,7 +395,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -389,6 +420,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

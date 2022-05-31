@@ -22,13 +22,13 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition"];
-  fhir:StructureDefinition.version [ fhir:value "6.0.0"];
+  fhir:StructureDefinition.version [ fhir:value "6.1.0"];
   fhir:StructureDefinition.name [ fhir:value "CDMCondition"];
   fhir:StructureDefinition.title [ fhir:value "CDM Condition"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-31T20:10:14+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Alvearie Team"];
-  fhir:StructureDefinition.description [ fhir:value "IBM Health Data Connect Common Data Model definition of what fields we currently define for a condition"];
+  fhir:StructureDefinition.description [ fhir:value "Health Data Connect Common Data Model definition of what fields we currently define for a condition"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -2533,7 +2533,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Stage SHALL have summary or assessment" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "summary.exists() or assessment.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:summary) or exists(f:assessment)" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:summary) or exists(f:assessment)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Condition";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
+         ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
@@ -2888,7 +2892,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "evidence SHALL have code or details" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "code.exists() or detail.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:code) or exists(f:detail)" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:code) or exists(f:detail)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Condition";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
+         ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];

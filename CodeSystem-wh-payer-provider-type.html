@@ -40,20 +40,34 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.504"}
-    h3,h4,h5,h6{--heading-prefix:"3.504"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.509"}
+    h3,h4,h5,h6{--heading-prefix:"3.509"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
   <a id="alvearie-logo" no-external="true">
-    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
+    <!-- 
+    // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -110,8 +124,10 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
+
+
 
 
 
@@ -150,30 +166,55 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">CodeSystem: Health Data Connect Provider Type Codes</h2>
+  <h2 id="root">CodeSystem: Health Data Connect Provider Type Codes
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ibm.com/fhir/cdm/CodeSystem/wh-payer-provider-type<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/CodeSystem/wh-payer-provider-type"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">6.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/CodeSystem/wh-payer-provider-type|6.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-05-31
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">WhPayerProviderTypeCodeSystem</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Health Data Connect standard provider type code as reported on the claim.</p>
+
+</p>
 
   <!-- insert intro if present -->
   
 
-
-
-  <p>
-    <b>Summary</b>
-  </p>
-
-  <table class="grid">
-<tbody>
-<tr><td>Defining URL:</td><td>http://ibm.com/fhir/cdm/CodeSystem/wh-payer-provider-type</td></tr>
- <tr><td>Version:</td><td>6.0.0</td></tr>
- <tr><td>Name:</td><td>WhPayerProviderTypeCodeSystem</td></tr>
- <tr><td>Title:</td><td>Health Data Connect Provider Type Codes</td></tr>
- <tr><td>Status:</td><td>Active as of 1/21/22, 8:46 PM</td></tr>
- <tr><td>Definition:</td><td><p>IBM® Health Data Connect standard provider type code as reported on the claim.</p>
-</td></tr>
- <tr><td>Publisher:</td><td>Alvearie Team</td></tr>
- <tr><td>Content:</td><td>Complete: All the concepts defined by the code system are included in the code system resource</td></tr>
- <tr><td>Source Resource:</td><td><a href="CodeSystem-wh-payer-provider-type.xml.html">XML</a> / <a href="CodeSystem-wh-payer-provider-type.json.html">JSON</a> / <a href="CodeSystem-wh-payer-provider-type.ttl.html">Turtle</a></td></tr>
-</tbody></table>
 
 
   <p>
@@ -188,6 +229,8 @@
 
 
   <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/wh-payer-provider-type defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="wh-payer-provider-type-1"> </a></td><td>Acute Care Hospital</td></tr><tr><td style="white-space:nowrap">5<a name="wh-payer-provider-type-5"> </a></td><td>Ambulatory Surgery Centers</td></tr><tr><td style="white-space:nowrap">6<a name="wh-payer-provider-type-6"> </a></td><td>Urgent Care Facility</td></tr><tr><td style="white-space:nowrap">10<a name="wh-payer-provider-type-10"> </a></td><td>Birthing Center</td></tr><tr><td style="white-space:nowrap">15<a name="wh-payer-provider-type-15"> </a></td><td>Treatment Center</td></tr><tr><td style="white-space:nowrap">20<a name="wh-payer-provider-type-20"> </a></td><td>Mental Health/Chemical Dep NEC</td></tr><tr><td style="white-space:nowrap">21<a name="wh-payer-provider-type-21"> </a></td><td>Mental Health Facilities</td></tr><tr><td style="white-space:nowrap">22<a name="wh-payer-provider-type-22"> </a></td><td>Chemical Depend Treatment Ctr</td></tr><tr><td style="white-space:nowrap">23<a name="wh-payer-provider-type-23"> </a></td><td>Mental Hlth/Chem Dep Day Care</td></tr><tr><td style="white-space:nowrap">25<a name="wh-payer-provider-type-25"> </a></td><td>Rehabilitation Facilities</td></tr><tr><td style="white-space:nowrap">30<a name="wh-payer-provider-type-30"> </a></td><td>Longterm Care (NEC)</td></tr><tr><td style="white-space:nowrap">31<a name="wh-payer-provider-type-31"> </a></td><td>Extended Care Facility</td></tr><tr><td style="white-space:nowrap">32<a name="wh-payer-provider-type-32"> </a></td><td>Geriatric Hospital</td></tr><tr><td style="white-space:nowrap">33<a name="wh-payer-provider-type-33"> </a></td><td>Convalescent Care Facility</td></tr><tr><td style="white-space:nowrap">34<a name="wh-payer-provider-type-34"> </a></td><td>Intermediate Care Facility</td></tr><tr><td style="white-space:nowrap">35<a name="wh-payer-provider-type-35"> </a></td><td>Residential Treatment Center</td></tr><tr><td style="white-space:nowrap">36<a name="wh-payer-provider-type-36"> </a></td><td>Continuing Care Retirement Com</td></tr><tr><td style="white-space:nowrap">37<a name="wh-payer-provider-type-37"> </a></td><td>Day/Night Care Center</td></tr><tr><td style="white-space:nowrap">38<a name="wh-payer-provider-type-38"> </a></td><td>Hospice Facility</td></tr><tr><td style="white-space:nowrap">40<a name="wh-payer-provider-type-40"> </a></td><td>Other Facility (NEC)</td></tr><tr><td style="white-space:nowrap">41<a name="wh-payer-provider-type-41"> </a></td><td>Infirmary</td></tr><tr><td style="white-space:nowrap">42<a name="wh-payer-provider-type-42"> </a></td><td>Special Care Facility (NEC)</td></tr><tr><td style="white-space:nowrap">100<a name="wh-payer-provider-type-100"> </a></td><td>Dentist - MD &amp; DDS</td></tr><tr><td style="white-space:nowrap">105<a name="wh-payer-provider-type-105"> </a></td><td>Dental Specialist</td></tr><tr><td style="white-space:nowrap">120<a name="wh-payer-provider-type-120"> </a></td><td>Chiropractor/DCM</td></tr><tr><td style="white-space:nowrap">130<a name="wh-payer-provider-type-130"> </a></td><td>Podiatry</td></tr><tr><td style="white-space:nowrap">140<a name="wh-payer-provider-type-140"> </a></td><td>Pain Mgmt/Pain Medicine</td></tr><tr><td style="white-space:nowrap">145<a name="wh-payer-provider-type-145"> </a></td><td>Pediatric Anesthesiology</td></tr><tr><td style="white-space:nowrap">150<a name="wh-payer-provider-type-150"> </a></td><td>Anesthesiology</td></tr><tr><td style="white-space:nowrap">160<a name="wh-payer-provider-type-160"> </a></td><td>Nuclear Medicine</td></tr><tr><td style="white-space:nowrap">170<a name="wh-payer-provider-type-170"> </a></td><td>Pathology</td></tr><tr><td style="white-space:nowrap">175<a name="wh-payer-provider-type-175"> </a></td><td>Pediatric Pathology</td></tr><tr><td style="white-space:nowrap">180<a name="wh-payer-provider-type-180"> </a></td><td>Radiology</td></tr><tr><td style="white-space:nowrap">185<a name="wh-payer-provider-type-185"> </a></td><td>Pediatric Radiology</td></tr><tr><td style="white-space:nowrap">200<a name="wh-payer-provider-type-200"> </a></td><td>Medical Doctor - MD</td></tr><tr><td style="white-space:nowrap">202<a name="wh-payer-provider-type-202"> </a></td><td>Osteopathic Medicine</td></tr><tr><td style="white-space:nowrap">204<a name="wh-payer-provider-type-204"> </a></td><td>Internal Medicine</td></tr><tr><td style="white-space:nowrap">206<a name="wh-payer-provider-type-206"> </a></td><td>Multi-Specialty Physician Group</td></tr><tr><td style="white-space:nowrap">208<a name="wh-payer-provider-type-208"> </a></td><td>Proctology</td></tr><tr><td style="white-space:nowrap">210<a name="wh-payer-provider-type-210"> </a></td><td>Urology</td></tr><tr><td style="white-space:nowrap">215<a name="wh-payer-provider-type-215"> </a></td><td>Dermatology</td></tr><tr><td style="white-space:nowrap">220<a name="wh-payer-provider-type-220"> </a></td><td>Emergency Medicine</td></tr><tr><td style="white-space:nowrap">225<a name="wh-payer-provider-type-225"> </a></td><td>Hospitalist</td></tr><tr><td style="white-space:nowrap">227<a name="wh-payer-provider-type-227"> </a></td><td>Palliative Medicine</td></tr><tr><td style="white-space:nowrap">230<a name="wh-payer-provider-type-230"> </a></td><td>Allergy &amp; Immunology</td></tr><tr><td style="white-space:nowrap">240<a name="wh-payer-provider-type-240"> </a></td><td>Family Practice</td></tr><tr><td style="white-space:nowrap">245<a name="wh-payer-provider-type-245"> </a></td><td>Geriatric Medicine</td></tr><tr><td style="white-space:nowrap">250<a name="wh-payer-provider-type-250"> </a></td><td>Cardiovascular Disease/Cardiology,etc.</td></tr><tr><td style="white-space:nowrap">260<a name="wh-payer-provider-type-260"> </a></td><td>Neurology</td></tr><tr><td style="white-space:nowrap">265<a name="wh-payer-provider-type-265"> </a></td><td>Critical Care Medicine</td></tr><tr><td style="white-space:nowrap">270<a name="wh-payer-provider-type-270"> </a></td><td>Endocrinology &amp; Metabolism</td></tr><tr><td style="white-space:nowrap">275<a name="wh-payer-provider-type-275"> </a></td><td>Gastroenterology</td></tr><tr><td style="white-space:nowrap">280<a name="wh-payer-provider-type-280"> </a></td><td>Hematology</td></tr><tr><td style="white-space:nowrap">285<a name="wh-payer-provider-type-285"> </a></td><td>Infectious Disease</td></tr><tr><td style="white-space:nowrap">290<a name="wh-payer-provider-type-290"> </a></td><td>Nephrology</td></tr><tr><td style="white-space:nowrap">295<a name="wh-payer-provider-type-295"> </a></td><td>Pulmonary Disease</td></tr><tr><td style="white-space:nowrap">300<a name="wh-payer-provider-type-300"> </a></td><td>Rheumatology</td></tr><tr><td style="white-space:nowrap">320<a name="wh-payer-provider-type-320"> </a></td><td>Obstetrics &amp; Gynecology</td></tr><tr><td style="white-space:nowrap">325<a name="wh-payer-provider-type-325"> </a></td><td>Genetics</td></tr><tr><td style="white-space:nowrap">330<a name="wh-payer-provider-type-330"> </a></td><td>Ophthalmology</td></tr><tr><td style="white-space:nowrap">340<a name="wh-payer-provider-type-340"> </a></td><td>Otolaryngology</td></tr><tr><td style="white-space:nowrap">350<a name="wh-payer-provider-type-350"> </a></td><td>Physical Medicine &amp; Rehabilitation</td></tr><tr><td style="white-space:nowrap">355<a name="wh-payer-provider-type-355"> </a></td><td>Plastic Surgery/Maxillofacial Surgery</td></tr><tr><td style="white-space:nowrap">360<a name="wh-payer-provider-type-360"> </a></td><td>Preventative Medicine</td></tr><tr><td style="white-space:nowrap">365<a name="wh-payer-provider-type-365"> </a></td><td>Psychiatry</td></tr><tr><td style="white-space:nowrap">380<a name="wh-payer-provider-type-380"> </a></td><td>Oncology</td></tr><tr><td style="white-space:nowrap">400<a name="wh-payer-provider-type-400"> </a></td><td>Pediatrician</td></tr><tr><td style="white-space:nowrap">410<a name="wh-payer-provider-type-410"> </a></td><td>Pediatric Specialist</td></tr><tr><td style="white-space:nowrap">413<a name="wh-payer-provider-type-413"> </a></td><td>Pediatric Nephrology</td></tr><tr><td style="white-space:nowrap">415<a name="wh-payer-provider-type-415"> </a></td><td>Pediatric Ophthalmology</td></tr><tr><td style="white-space:nowrap">418<a name="wh-payer-provider-type-418"> </a></td><td>Pediatric Orthopaedics</td></tr><tr><td style="white-space:nowrap">420<a name="wh-payer-provider-type-420"> </a></td><td>Pediatric Otolaryngology</td></tr><tr><td style="white-space:nowrap">423<a name="wh-payer-provider-type-423"> </a></td><td>Pediatric Critical Care Medicine</td></tr><tr><td style="white-space:nowrap">425<a name="wh-payer-provider-type-425"> </a></td><td>Pediatric Pulmonology</td></tr><tr><td style="white-space:nowrap">428<a name="wh-payer-provider-type-428"> </a></td><td>Pediatric Emergency Medicine</td></tr><tr><td style="white-space:nowrap">430<a name="wh-payer-provider-type-430"> </a></td><td>Pediatric Allergy &amp; Immunology</td></tr><tr><td style="white-space:nowrap">433<a name="wh-payer-provider-type-433"> </a></td><td>Pediatric Endocrinology</td></tr><tr><td style="white-space:nowrap">435<a name="wh-payer-provider-type-435"> </a></td><td>Neonatal-Perinatal Medicine</td></tr><tr><td style="white-space:nowrap">438<a name="wh-payer-provider-type-438"> </a></td><td>Pediatric Gastroenterology</td></tr><tr><td style="white-space:nowrap">440<a name="wh-payer-provider-type-440"> </a></td><td>Pediatric Cardiology</td></tr><tr><td style="white-space:nowrap">443<a name="wh-payer-provider-type-443"> </a></td><td>Pediatric Hematology-Oncology</td></tr><tr><td style="white-space:nowrap">448<a name="wh-payer-provider-type-448"> </a></td><td>Pediatric Infectious Diseases</td></tr><tr><td style="white-space:nowrap">450<a name="wh-payer-provider-type-450"> </a></td><td>Pediatric Rheumatology</td></tr><tr><td style="white-space:nowrap">453<a name="wh-payer-provider-type-453"> </a></td><td>Sports Medicine</td></tr><tr><td style="white-space:nowrap">455<a name="wh-payer-provider-type-455"> </a></td><td>Pediatric Urology</td></tr><tr><td style="white-space:nowrap">458<a name="wh-payer-provider-type-458"> </a></td><td>Child Psychiatry</td></tr><tr><td style="white-space:nowrap">460<a name="wh-payer-provider-type-460"> </a></td><td>Pediatric Medical Toxicology</td></tr><tr><td style="white-space:nowrap">500<a name="wh-payer-provider-type-500"> </a></td><td>Surgeon</td></tr><tr><td style="white-space:nowrap">505<a name="wh-payer-provider-type-505"> </a></td><td>Surgical Specialist (NEC)</td></tr><tr><td style="white-space:nowrap">510<a name="wh-payer-provider-type-510"> </a></td><td>Colon &amp; Rectal Surgery</td></tr><tr><td style="white-space:nowrap">520<a name="wh-payer-provider-type-520"> </a></td><td>Neurological Surgery</td></tr><tr><td style="white-space:nowrap">530<a name="wh-payer-provider-type-530"> </a></td><td>Orthopaedic Surgery</td></tr><tr><td style="white-space:nowrap">535<a name="wh-payer-provider-type-535"> </a></td><td>Abdominal Surgery</td></tr><tr><td style="white-space:nowrap">540<a name="wh-payer-provider-type-540"> </a></td><td>Cardiovascular Surgery</td></tr><tr><td style="white-space:nowrap">545<a name="wh-payer-provider-type-545"> </a></td><td>Dermatologic Surgery</td></tr><tr><td style="white-space:nowrap">550<a name="wh-payer-provider-type-550"> </a></td><td>General Vascular Surgery</td></tr><tr><td style="white-space:nowrap">555<a name="wh-payer-provider-type-555"> </a></td><td>Head and Neck Surgery</td></tr><tr><td style="white-space:nowrap">560<a name="wh-payer-provider-type-560"> </a></td><td>Pediatric Surgery</td></tr><tr><td style="white-space:nowrap">565<a name="wh-payer-provider-type-565"> </a></td><td>Surgical Critical Care</td></tr><tr><td style="white-space:nowrap">570<a name="wh-payer-provider-type-570"> </a></td><td>Transplant Surgery</td></tr><tr><td style="white-space:nowrap">575<a name="wh-payer-provider-type-575"> </a></td><td>Traumatic Surgery</td></tr><tr><td style="white-space:nowrap">580<a name="wh-payer-provider-type-580"> </a></td><td>Cardiothoracic Surgery</td></tr><tr><td style="white-space:nowrap">585<a name="wh-payer-provider-type-585"> </a></td><td>Thoracic Surgery</td></tr><tr><td style="white-space:nowrap">805<a name="wh-payer-provider-type-805"> </a></td><td>Dental Technician</td></tr><tr><td style="white-space:nowrap">810<a name="wh-payer-provider-type-810"> </a></td><td>Dietitian</td></tr><tr><td style="white-space:nowrap">815<a name="wh-payer-provider-type-815"> </a></td><td>Medical Technician</td></tr><tr><td style="white-space:nowrap">820<a name="wh-payer-provider-type-820"> </a></td><td>Midwife</td></tr><tr><td style="white-space:nowrap">822<a name="wh-payer-provider-type-822"> </a></td><td>Nursing Services</td></tr><tr><td style="white-space:nowrap">824<a name="wh-payer-provider-type-824"> </a></td><td>Psychiatric Nurse</td></tr><tr><td style="white-space:nowrap">825<a name="wh-payer-provider-type-825"> </a></td><td>Nurse Practitioner</td></tr><tr><td style="white-space:nowrap">827<a name="wh-payer-provider-type-827"> </a></td><td>Nurse Anesthetist</td></tr><tr><td style="white-space:nowrap">830<a name="wh-payer-provider-type-830"> </a></td><td>Optometrist</td></tr><tr><td style="white-space:nowrap">835<a name="wh-payer-provider-type-835"> </a></td><td>Optician</td></tr><tr><td style="white-space:nowrap">840<a name="wh-payer-provider-type-840"> </a></td><td>Pharmacist</td></tr><tr><td style="white-space:nowrap">845<a name="wh-payer-provider-type-845"> </a></td><td>Physician Assistant</td></tr><tr><td style="white-space:nowrap">850<a name="wh-payer-provider-type-850"> </a></td><td>Therapy</td></tr><tr><td style="white-space:nowrap">853<a name="wh-payer-provider-type-853"> </a></td><td>Therapists</td></tr><tr><td style="white-space:nowrap">855<a name="wh-payer-provider-type-855"> </a></td><td>Therapists</td></tr><tr><td style="white-space:nowrap">857<a name="wh-payer-provider-type-857"> </a></td><td>Renal Dialysis Therapy</td></tr><tr><td style="white-space:nowrap">860<a name="wh-payer-provider-type-860"> </a></td><td>Psychologist</td></tr><tr><td style="white-space:nowrap">865<a name="wh-payer-provider-type-865"> </a></td><td>Acupuncturist</td></tr><tr><td style="white-space:nowrap">870<a name="wh-payer-provider-type-870"> </a></td><td>Spiritual Healers</td></tr><tr><td style="white-space:nowrap">900<a name="wh-payer-provider-type-900"> </a></td><td>Health Educator/Agency</td></tr><tr><td style="white-space:nowrap">905<a name="wh-payer-provider-type-905"> </a></td><td>Transportation</td></tr><tr><td style="white-space:nowrap">910<a name="wh-payer-provider-type-910"> </a></td><td>Health Resort</td></tr><tr><td style="white-space:nowrap">915<a name="wh-payer-provider-type-915"> </a></td><td>Hearing Labs</td></tr><tr><td style="white-space:nowrap">920<a name="wh-payer-provider-type-920"> </a></td><td>Home Health Organiz/Agency</td></tr><tr><td style="white-space:nowrap">925<a name="wh-payer-provider-type-925"> </a></td><td>Imaging Center</td></tr><tr><td style="white-space:nowrap">930<a name="wh-payer-provider-type-930"> </a></td><td>Laboratory</td></tr><tr><td style="white-space:nowrap">935<a name="wh-payer-provider-type-935"> </a></td><td>Pharmacy</td></tr><tr><td style="white-space:nowrap">940<a name="wh-payer-provider-type-940"> </a></td><td>Supply Center</td></tr><tr><td style="white-space:nowrap">945<a name="wh-payer-provider-type-945"> </a></td><td>Vision Center</td></tr><tr><td style="white-space:nowrap">950<a name="wh-payer-provider-type-950"> </a></td><td>Public Health Agency</td></tr><tr><td style="white-space:nowrap">955<a name="wh-payer-provider-type-955"> </a></td><td>Unknown Clinic</td></tr><tr><td style="white-space:nowrap">960<a name="wh-payer-provider-type-960"> </a></td><td>Case Manager</td></tr></table></div>
+
+  
 
   <!-- insert notes if present -->
   
@@ -218,7 +261,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -243,6 +286,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

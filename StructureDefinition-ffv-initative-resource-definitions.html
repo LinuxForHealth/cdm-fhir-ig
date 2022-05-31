@@ -52,12 +52,26 @@
 
 <div id="hl7-nav">
   <a id="alvearie-logo" no-external="true">
-    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
+    <!-- 
+    // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -114,8 +128,9 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
+
 
 
 
@@ -187,6 +202,21 @@
 
 <a name="root"> </a>
 <h2 id="root">Resource Profile: FFVInitiative - Detailed Descriptions</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-05-31
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p>Definitions for the ffv-initative-resource resource profile.</p>
 
@@ -258,7 +288,7 @@
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Contract.meta.extension:processOrganization"> </a></a><span style="color: grey">9.</span> <b>Contract.meta.extension:processOrganization</b><a href="#Contract.meta.extension:processOrganization" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>processOrganization</td></tr>
-  <tr><td>Definition</td><td><p>The organizing entity that owns the process that has produced the data held in the FHIR resource or element. Example: If an IBM analytic service has been the producer, the process-organization value is IBM.</p>
+  <tr><td>Definition</td><td><p>The organizing entity that owns the process that has produced the data held in the FHIR resource or element. Example: If an analytic service has been the producer, the process-organization value should reflect the organaization reponsible for the service.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-process-organization.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/process-organization]]">ProcessOrganization</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>)</td></tr>
@@ -266,7 +296,7 @@
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Contract.meta.extension:processName"> </a></a><span style="color: grey">10.</span> <b>Contract.meta.extension:processName</b><a href="#Contract.meta.extension:processName" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>processName</td></tr>
-  <tr><td>Definition</td><td><p>The name of the process or service that has produced the data held in the FHIR resource or element. Example: If an IBM analytic service has been the producer, use the process-name as the name of that analytic service.</p>
+  <tr><td>Definition</td><td><p>The name of the process or service that has produced the data held in the FHIR resource or element. Example: If an analytic service has been the producer, use the process-name as the name of that analytic service.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-process-name.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/process-name]]">ProcessName</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>)</td></tr>
@@ -379,7 +409,7 @@
   <tr><td>Definition</td><td><p>Value of extension - must be one of a constrained set of the data types (see <a href="http://hl7.org/fhir/R4/extensibility.html">Extensibility</a> for a list).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.0.0/ValueSet-v2-0003.html">hl7VS-eventTypeCode</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.1.0/ValueSet-v2-0003.html">hl7VS-eventTypeCode</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/R4/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -397,7 +427,7 @@
   <tr><td>Definition</td><td><p>References element level insight results pertaining to the data in this resource instance.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-insight.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/insight]]">Insight</a>)  (Extension Type: Choice of: <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">base64Binary</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">canonical</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">decimal</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">markdown</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#oid">oid</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">positiveInt</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#time">time</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">unsignedInt</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#url">url</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#uuid">uuid</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Annotation">Annotation</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Attachment">Attachment</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Count">Count</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Distance">Distance</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Duration">Duration</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName">HumanName</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Money">Money</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Ratio">Ratio</a>, <a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#SampledData">SampledData</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Signature">Signature</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Timing">Timing</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail">ContactDetail</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#Contributor">Contributor</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#DataRequirement">DataRequirement</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Expression">Expression</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition">ParameterDefinition</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#RelatedArtifact">RelatedArtifact</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#TriggerDefinition">TriggerDefinition</a>, <a href="http://hl7.org/fhir/R4/metadatatypes.html#UsageContext">UsageContext</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Dosage">Dosage</a>, <a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="StructureDefinition-insight.html" title="[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/insight]]">Insight</a>)  (Complex Extension)</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Contract.meta.versionId"> </a><span style="color: grey">27.</span> <b>Contract.meta.versionId</b><a href="#Contract.meta.versionId" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
@@ -557,9 +587,9 @@ Codes that represent various types of tags, commonly workflow-related; e.g. &quo
   <tr><td>Definition</td><td><p>The base language in which the resource is written.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a><br/><a style="font-weight:bold" title="Max Value Set Extension" href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html">Max Binding</a>: <a href="http://hl7.org/fhir/R4/valueset-all-languages.html">AllLanguages</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
 A human language.</p>
-</td></tr>
+<table class="grid"><tr><td style="font-size: 11px"><b>Additional Bindings</b></td><td style="font-size: 11px">Purpose</td></tr><tr><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/valueset-all-languages.html" title="http://hl7.org/fhir/ValueSet/all-languages">AllLanguages</a></td><td style="font-size: 11px"><a href="http://hl7.org/fhir/R4/extension-elementdefinition-maxvalueset.html" title="A required binding, for use when the binding strength is 'extensible' or 'preferred'">Max Binding</a></td></tr></table></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
   <tr><td>Comments</td><td><p>Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).</p>
 </td></tr>
@@ -1451,7 +1481,7 @@ Detailed codes for the types of contract provisions.</p>
   <tr><td>Definition</td><td><p>Type of choice made by accepting party with respect to an offer made by an offeror/ grantee.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/3.0.0/ValueSet-v3-ActConsentDirective.html">ActConsentDirective</a>; other codes may be used where these codes are not suitable
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-ActConsentDirective.html">ActConsentDirective</a>; other codes may be used where these codes are not suitable
 The type of decision made by a grantor with respect to an offer made by a grantee.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -1988,7 +2018,7 @@ Detailed codes for the contract actor role.</p>
   <tr><td>Definition</td><td><p>Reason or purpose for the action stipulated by this Contract Provision.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.0.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a>
 Detailed codes for the contract action reason.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -2085,7 +2115,7 @@ Codes for the role of the action performer.</p>
   <tr><td>Definition</td><td><p>Rationale for the action to be performed or not performed. Describes why the action is permitted or prohibited.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.0.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-PurposeOfUse.html">PurposeOfUse</a>
 Detailed codes for the contract action reason.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -2431,7 +2461,7 @@ List of parties who may be signing.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -2456,6 +2486,8 @@ List of parties who may be signing.</p>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

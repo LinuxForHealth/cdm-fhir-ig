@@ -40,20 +40,34 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.359"}
-    h3,h4,h5,h6{--heading-prefix:"3.359"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.362"}
+    h3,h4,h5,h6{--heading-prefix:"3.362"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
   <a id="alvearie-logo" no-external="true">
-    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
+    <!-- 
+    // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -110,8 +124,10 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
+
+
 
 
 
@@ -150,22 +166,50 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: American Dental Association Tooth Quadrant Value Set</h2>
-  <p>
-    <b>Summary</b>
-  </p>
-  <table class="grid">
-<tbody>
-<tr><td>Defining URL:</td><td>http://ibm.com/fhir/cdm/ValueSet/ada-tooth-quadrant</td></tr>
- <tr><td>Version:</td><td>6.0.0</td></tr>
- <tr><td>Name:</td><td>ADAToothQuadrantValueSet</td></tr>
- <tr><td>Title:</td><td>American Dental Association Tooth Quadrant Value Set</td></tr>
- <tr><td>Status:</td><td>Active as of 1/21/22, 8:46 PM</td></tr>
- <tr><td>Definition:</td><td><p>Value set that defines a tooth quadrant</p>
-</td></tr>
- <tr><td>Publisher:</td><td>Alvearie Team</td></tr>
- <tr><td>Source Resource:</td><td><a href="ValueSet-ada-tooth-quadrant.xml.html">XML</a> / <a href="ValueSet-ada-tooth-quadrant.json.html">JSON</a> / <a href="ValueSet-ada-tooth-quadrant.ttl.html">Turtle</a></td></tr>
-</tbody></table>
+  <h2 id="root">ValueSet: American Dental Association Tooth Quadrant Value Set
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ibm.com/fhir/cdm/ValueSet/ada-tooth-quadrant<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ValueSet/ada-tooth-quadrant"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">6.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ValueSet/ada-tooth-quadrant|6.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-05-31
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ADAToothQuadrantValueSet</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Value set that defines a tooth quadrant</p>
+
+</p>
 
 
   <p>
@@ -190,7 +234,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 4 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-ada-tooth-quadrant.html">American Dental Association Tooth Quadrant Code System v6.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="CodeSystem-ada-tooth-quadrant.html"><code>http://ibm.com/fhir/cdm/CodeSystem/ada-tooth-quadrant</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-quadrant-UR"> </a><a href="CodeSystem-ada-tooth-quadrant.html#ada-tooth-quadrant-UR">UR</a></td><td>Upper right</td><td>Upper right</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-quadrant-UL"> </a><a href="CodeSystem-ada-tooth-quadrant.html#ada-tooth-quadrant-UL">UL</a></td><td>Upper left</td><td>Upper left</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-quadrant-LR"> </a><a href="CodeSystem-ada-tooth-quadrant.html#ada-tooth-quadrant-LR">LR</a></td><td>Lower right</td><td>Lower right</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-quadrant-LL"> </a><a href="CodeSystem-ada-tooth-quadrant.html#ada-tooth-quadrant-LL">LL</a></td><td>Lower left</td><td>Lower left</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 4 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-ada-tooth-quadrant.html">American Dental Association Tooth Quadrant Code System v6.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="CodeSystem-ada-tooth-quadrant.html"><code>http://ibm.com/fhir/cdm/CodeSystem/ada-tooth-quadrant</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-quadrant-UR"> </a>  <a href="CodeSystem-ada-tooth-quadrant.html#ada-tooth-quadrant-UR">UR</a></td><td>Upper right</td><td>Upper right</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-quadrant-UL"> </a>  <a href="CodeSystem-ada-tooth-quadrant.html#ada-tooth-quadrant-UL">UL</a></td><td>Upper left</td><td>Upper left</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-quadrant-LR"> </a>  <a href="CodeSystem-ada-tooth-quadrant.html#ada-tooth-quadrant-LR">LR</a></td><td>Lower right</td><td>Lower right</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-ada-tooth-quadrant-LL"> </a>  <a href="CodeSystem-ada-tooth-quadrant.html#ada-tooth-quadrant-LL">LL</a></td><td>Lower left</td><td>Lower left</td></tr></table></div>
 
   <hr/>
   <p>
@@ -224,6 +268,8 @@
     </tr>
   </table>
 
+  
+
   <!-- insert notes if present -->
   
 
@@ -253,7 +299,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -278,6 +324,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

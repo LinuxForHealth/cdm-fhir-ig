@@ -40,20 +40,34 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.363"}
-    h3,h4,h5,h6{--heading-prefix:"3.363"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.366"}
+    h3,h4,h5,h6{--heading-prefix:"3.366"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
   <a id="alvearie-logo" no-external="true">
-    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
+    <!-- 
+    // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -110,8 +124,10 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
+
+
 
 
 
@@ -150,22 +166,50 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: Age Group Value Set</h2>
-  <p>
-    <b>Summary</b>
-  </p>
-  <table class="grid">
-<tbody>
-<tr><td>Defining URL:</td><td>http://ibm.com/fhir/cdm/ValueSet/age-group</td></tr>
- <tr><td>Version:</td><td>6.0.0</td></tr>
- <tr><td>Name:</td><td>AgeGroupValueSet</td></tr>
- <tr><td>Title:</td><td>Age Group Value Set</td></tr>
- <tr><td>Status:</td><td>Active as of 1/21/22, 8:46 PM</td></tr>
- <tr><td>Definition:</td><td><p>Age group value set for claims.</p>
-</td></tr>
- <tr><td>Publisher:</td><td>Alvearie Team</td></tr>
- <tr><td>Source Resource:</td><td><a href="ValueSet-age-group.xml.html">XML</a> / <a href="ValueSet-age-group.json.html">JSON</a> / <a href="ValueSet-age-group.ttl.html">Turtle</a></td></tr>
-</tbody></table>
+  <h2 id="root">ValueSet: Age Group Value Set
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ibm.com/fhir/cdm/ValueSet/age-group<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ValueSet/age-group"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">6.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ValueSet/age-group|6.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-05-31
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">AgeGroupValueSet</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Age group value set for claims.</p>
+
+</p>
 
 
   <p>
@@ -192,7 +236,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 18 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-age-group.html">Age Group Codes. v6.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="CodeSystem-age-group.html"><code>http://ibm.com/fhir/cdm/CodeSystem/age-group</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-1"> </a><a href="CodeSystem-age-group.html#age-group-1">1</a></td><td>&lt; 1 yr</td><td>Ages &lt; 1 year</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-2"> </a><a href="CodeSystem-age-group.html#age-group-2">2</a></td><td>1-4 yr</td><td>Ages 1 to 4 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-3"> </a><a href="CodeSystem-age-group.html#age-group-3">3</a></td><td>5-9 yr</td><td>Ages 5 to 9 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-4"> </a><a href="CodeSystem-age-group.html#age-group-4">4</a></td><td>10-14 yr</td><td>Ages 10 to 14 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-5"> </a><a href="CodeSystem-age-group.html#age-group-5">5</a></td><td>15-17 yr</td><td>Ages 15 to 17 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-6"> </a><a href="CodeSystem-age-group.html#age-group-6">6</a></td><td>18-19 yr</td><td>Ages 18 to 19 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-7"> </a><a href="CodeSystem-age-group.html#age-group-7">7</a></td><td>20-24 yr</td><td>Ages 20 to 24 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-8"> </a><a href="CodeSystem-age-group.html#age-group-8">8</a></td><td>25-29 yr</td><td>Ages 25 to 29 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-9"> </a><a href="CodeSystem-age-group.html#age-group-9">9</a></td><td>30-34 yr</td><td>Ages 30 to 34 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-10"> </a><a href="CodeSystem-age-group.html#age-group-10">10</a></td><td>35-39 yr</td><td>Ages 35 to 39 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-11"> </a><a href="CodeSystem-age-group.html#age-group-11">11</a></td><td>40-44 yr</td><td>Ages 40 to 44 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-12"> </a><a href="CodeSystem-age-group.html#age-group-12">12</a></td><td>45-49 yr</td><td>Ages 45 to 49 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-13"> </a><a href="CodeSystem-age-group.html#age-group-13">13</a></td><td>50-54 yr</td><td>Ages 50 to 54 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-14"> </a><a href="CodeSystem-age-group.html#age-group-14">14</a></td><td>55-59 yr</td><td>Ages 55 to 59 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-15"> </a><a href="CodeSystem-age-group.html#age-group-15">15</a></td><td>60-64 yr</td><td>Ages 60 to 64 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-16"> </a><a href="CodeSystem-age-group.html#age-group-16">16</a></td><td>65-74 yr</td><td>Ages 65 to 74 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-17"> </a><a href="CodeSystem-age-group.html#age-group-17">17</a></td><td>75-84 yr</td><td>Ages 75 to 84 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-18"> </a><a href="CodeSystem-age-group.html#age-group-18">18</a></td><td>85+ yr</td><td>Ages 85 years and up</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 18 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-age-group.html">Age Group Codes. v6.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="CodeSystem-age-group.html"><code>http://ibm.com/fhir/cdm/CodeSystem/age-group</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-1"> </a>  <a href="CodeSystem-age-group.html#age-group-1">1</a></td><td>&lt; 1 yr</td><td>Ages &lt; 1 year</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-2"> </a>  <a href="CodeSystem-age-group.html#age-group-2">2</a></td><td>1-4 yr</td><td>Ages 1 to 4 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-3"> </a>  <a href="CodeSystem-age-group.html#age-group-3">3</a></td><td>5-9 yr</td><td>Ages 5 to 9 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-4"> </a>  <a href="CodeSystem-age-group.html#age-group-4">4</a></td><td>10-14 yr</td><td>Ages 10 to 14 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-5"> </a>  <a href="CodeSystem-age-group.html#age-group-5">5</a></td><td>15-17 yr</td><td>Ages 15 to 17 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-6"> </a>  <a href="CodeSystem-age-group.html#age-group-6">6</a></td><td>18-19 yr</td><td>Ages 18 to 19 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-7"> </a>  <a href="CodeSystem-age-group.html#age-group-7">7</a></td><td>20-24 yr</td><td>Ages 20 to 24 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-8"> </a>  <a href="CodeSystem-age-group.html#age-group-8">8</a></td><td>25-29 yr</td><td>Ages 25 to 29 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-9"> </a>  <a href="CodeSystem-age-group.html#age-group-9">9</a></td><td>30-34 yr</td><td>Ages 30 to 34 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-10"> </a>  <a href="CodeSystem-age-group.html#age-group-10">10</a></td><td>35-39 yr</td><td>Ages 35 to 39 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-11"> </a>  <a href="CodeSystem-age-group.html#age-group-11">11</a></td><td>40-44 yr</td><td>Ages 40 to 44 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-12"> </a>  <a href="CodeSystem-age-group.html#age-group-12">12</a></td><td>45-49 yr</td><td>Ages 45 to 49 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-13"> </a>  <a href="CodeSystem-age-group.html#age-group-13">13</a></td><td>50-54 yr</td><td>Ages 50 to 54 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-14"> </a>  <a href="CodeSystem-age-group.html#age-group-14">14</a></td><td>55-59 yr</td><td>Ages 55 to 59 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-15"> </a>  <a href="CodeSystem-age-group.html#age-group-15">15</a></td><td>60-64 yr</td><td>Ages 60 to 64 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-16"> </a>  <a href="CodeSystem-age-group.html#age-group-16">16</a></td><td>65-74 yr</td><td>Ages 65 to 74 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-17"> </a>  <a href="CodeSystem-age-group.html#age-group-17">17</a></td><td>75-84 yr</td><td>Ages 75 to 84 years</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-age-group-18"> </a>  <a href="CodeSystem-age-group.html#age-group-18">18</a></td><td>85+ yr</td><td>Ages 85 years and up</td></tr></table></div>
 
   <hr/>
   <p>
@@ -226,6 +270,8 @@
     </tr>
   </table>
 
+  
+
   <!-- insert notes if present -->
   
 
@@ -255,7 +301,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -280,6 +326,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

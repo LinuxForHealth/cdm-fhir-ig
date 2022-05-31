@@ -42,20 +42,34 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.496"}
-    h3,h4,h5,h6{--heading-prefix:"3.496"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.501"}
+    h3,h4,h5,h6{--heading-prefix:"3.501"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
   <a id="alvearie-logo" no-external="true">
-    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
+    <!-- 
+    // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -112,7 +126,9 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
 
 
 
@@ -156,6 +172,21 @@
 
 
 <h2 id="root">: Health Data Connect Claim Type Codes - JSON Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2022-05-31
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
 
 <p><a href="CodeSystem-wh-payer-claim-type.json" no-download="true">Raw json</a> | <a href="CodeSystem-wh-payer-claim-type.json" download>Download</a></p>
 
@@ -173,13 +204,13 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;medical&lt;a name=\&quot;wh-payer-claim-type-medical\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Medical claim; Institutional/Professional unknown&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;institutional&lt;a name=\&quot;wh-payer-claim-type-institutional\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Institutional; Hospital, clinic and typically inpatient claims&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;professional&lt;a name=\&quot;wh-payer-claim-type-professional\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Professional; Typically, outpatient claims from Physician, Psychological, Chiropractor, Physiotherapy, Speech Pathology, rehabilitative, consulting&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pharmacy&lt;a name=\&quot;wh-payer-claim-type-pharmacy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pharmacy; Pharmacy claims for goods and services&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;oral&lt;a name=\&quot;wh-payer-claim-type-oral\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oral; Dental, Denture and Hygiene claims&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vision&lt;a name=\&quot;wh-payer-claim-type-vision\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vision; Vision claims for professional services and products such as glasses and contact lenses&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hearing&lt;a name=\&quot;wh-payer-claim-type-hearing\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hearing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lifeins&lt;a name=\&quot;wh-payer-claim-type-lifeins\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Life Insurance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ltd&lt;a name=\&quot;wh-payer-claim-type-ltd\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Long Term Disability (LTD)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;std&lt;a name=\&quot;wh-payer-claim-type-std\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Short Term Disability (STD)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;absentee&lt;a name=\&quot;wh-payer-claim-type-absentee\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Absentee&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;workercomp&lt;a name=\&quot;wh-payer-claim-type-workercomp\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Worker's Compensation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;capitation&lt;a name=\&quot;wh-payer-claim-type-capitation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Capitation Payment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;adminfee&lt;a name=\&quot;wh-payer-claim-type-adminfee\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Administrative Fee&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;premium&lt;a name=\&quot;wh-payer-claim-type-premium\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Premium Payment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emppremcont&lt;a name=\&quot;wh-payer-claim-type-emppremcont\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Employee Premium Contribution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;premiuminc&lt;a name=\&quot;wh-payer-claim-type-premiuminc\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Premium Income (Revenue)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;eap&lt;a name=\&quot;wh-payer-claim-type-eap\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Employee Assistance (EAP)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hra&lt;a name=\&quot;wh-payer-claim-type-hra\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Health Risk Appraisal (HRA)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;other&lt;a name=\&quot;wh-payer-claim-type-other\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "6.0.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "6.1.0",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "WhPayerClaimTypeCodeSystem",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Health Data Connect Claim Type Codes",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-01-21T20:46:54+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-05-31T20:10:14+00:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Alvearie Team",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "IBM® Health Data Connect stanard codes for the coverage type under which the claim was paid",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Health Data Connect stanard codes for the coverage type under which the claim was paid",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">jurisdiction</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
@@ -305,7 +336,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -330,6 +361,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

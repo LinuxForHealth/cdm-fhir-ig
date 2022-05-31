@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AlvearieFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig</pre><div><p>Alvearie FHIR Profiles</p>\n</div></div>"
   },
   "url": "http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "name": "AlvearieFHIRImplementationGuide",
   "title": "Alvearie FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-01-21T20:46:54+00:00",
+  "date": "2022-05-31T20:10:14+00:00",
   "publisher": "Alvearie Team",
   "contact": [
     {
@@ -40,6 +40,12 @@
     "4.0.1"
   ],
   "dependsOn": [
+    {
+      "id": "hl7tx",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "packageId": "hl7.terminology.r4",
+      "version": "3.1.0"
+    },
     {
       "id": "hl7_fhir_us_core",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
@@ -308,6 +314,45 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "fmm-definition"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "propagate-status"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludelogbinaryformat"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
     "resource": [
@@ -336,7 +381,7 @@
           "reference": "StructureDefinition/cdm-appointment"
         },
         "name": "CDM Appointment",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for an appointment",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for an appointment",
         "exampleBoolean": false
       },
       {
@@ -350,7 +395,7 @@
           "reference": "StructureDefinition/cdm-careplan"
         },
         "name": "CDM CarePlan",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a care plan",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a care plan",
         "exampleBoolean": false
       },
       {
@@ -434,7 +479,7 @@
           "reference": "StructureDefinition/cdm-communication"
         },
         "name": "CDM Communication",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a communication",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a communication",
         "exampleBoolean": false
       },
       {
@@ -462,7 +507,7 @@
           "reference": "StructureDefinition/cdm-communication-request"
         },
         "name": "CDM CommunicationRequest",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a communication request",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a communication request",
         "exampleBoolean": false
       },
       {
@@ -476,7 +521,7 @@
           "reference": "StructureDefinition/cdm-condition"
         },
         "name": "CDM Condition",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a condition",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a condition",
         "exampleBoolean": false
       },
       {
@@ -518,7 +563,7 @@
           "reference": "StructureDefinition/cdm-detected-issue"
         },
         "name": "CDM Detected Issue",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a detected issue",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a detected issue",
         "exampleBoolean": false
       },
       {
@@ -532,7 +577,7 @@
           "reference": "StructureDefinition/cdm-eligibility"
         },
         "name": "CDM Eligibility",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for an eligibility record",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for an eligibility record",
         "exampleBoolean": false
       },
       {
@@ -546,7 +591,7 @@
           "reference": "StructureDefinition/cdm-encounter"
         },
         "name": "CDM Encounter",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for an encounter",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for an encounter",
         "exampleBoolean": false
       },
       {
@@ -602,7 +647,7 @@
           "reference": "StructureDefinition/cdm-insurance-plan"
         },
         "name": "CDM Insurance Plan",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for an insurance plan",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for an insurance plan",
         "exampleBoolean": false
       },
       {
@@ -616,7 +661,7 @@
           "reference": "StructureDefinition/cdm-library"
         },
         "name": "CDM Library",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a library",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a library",
         "exampleBoolean": false
       },
       {
@@ -630,7 +675,7 @@
           "reference": "StructureDefinition/cdm-location"
         },
         "name": "CDM Location",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a location",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a location",
         "exampleBoolean": false
       },
       {
@@ -686,7 +731,7 @@
           "reference": "StructureDefinition/cdm-observation"
         },
         "name": "CDM Observation",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for an observation",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for an observation",
         "exampleBoolean": false
       },
       {
@@ -700,7 +745,7 @@
           "reference": "StructureDefinition/cdm-organization"
         },
         "name": "CDM Organization",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a organization",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a organization",
         "exampleBoolean": false
       },
       {
@@ -714,7 +759,7 @@
           "reference": "StructureDefinition/cdm-organization-affiliation"
         },
         "name": "CDM Organization Affiliation",
-        "description": "IBM® Health Data Connect organization affiliation with versioned hierarchy levels used to relate parent and child organizations",
+        "description": "Health Data Connect organization affiliation with versioned hierarchy levels used to relate parent and child organizations",
         "exampleBoolean": false
       },
       {
@@ -728,7 +773,7 @@
           "reference": "StructureDefinition/cdm-patient"
         },
         "name": "CDM Patient",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a patient",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a patient",
         "exampleBoolean": false
       },
       {
@@ -742,7 +787,7 @@
           "reference": "StructureDefinition/cdm-person"
         },
         "name": "CDM Person",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a person",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a person",
         "exampleBoolean": false
       },
       {
@@ -756,7 +801,7 @@
           "reference": "StructureDefinition/cdm-practitioner"
         },
         "name": "CDM Practitioner",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a practitioner",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a practitioner",
         "exampleBoolean": false
       },
       {
@@ -770,7 +815,7 @@
           "reference": "StructureDefinition/cdm-practitioner-bundle"
         },
         "name": "CDM Practitioner Bundle",
-        "description": "IBM® Health Data Connect bundle used to package Common Data Model practitioner resources for data ingestion",
+        "description": "Health Data Connect bundle used to package Common Data Model practitioner resources for data ingestion",
         "exampleBoolean": false
       },
       {
@@ -784,7 +829,7 @@
           "reference": "StructureDefinition/cdm-practitioner-role"
         },
         "name": "CDM Practitioner Role",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a practitioner role",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a practitioner role",
         "exampleBoolean": false
       },
       {
@@ -798,7 +843,7 @@
           "reference": "StructureDefinition/cdm-procedure"
         },
         "name": "CDM Procedure",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for a procedure",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for a procedure",
         "exampleBoolean": false
       },
       {
@@ -868,7 +913,7 @@
           "reference": "StructureDefinition/ffv-initative-resource"
         },
         "name": "Fee for Value Initative",
-        "description": "IBM Health Data Connect Common Data Model definition of what fields we currently define for an FFV initiative record",
+        "description": "Health Data Connect Common Data Model definition of what fields we currently define for an FFV initiative record",
         "exampleBoolean": false
       },
       {
@@ -896,7 +941,7 @@
           "reference": "StructureDefinition/measure-population-observation"
         },
         "name": "Measure Population Observation",
-        "description": "Observation created by IBM Health Data Connect to record measure populations for a patient over time",
+        "description": "Observation created by Health Data Connect to record measure populations for a patient over time",
         "exampleBoolean": false
       },
       {
@@ -1890,7 +1935,7 @@
           "reference": "StructureDefinition/conversation-type"
         },
         "name": "Conversation Type",
-        "description": "Type of conversation, used for ihe chat communications",
+        "description": "Type of conversation, used for chat communications",
         "exampleBoolean": false
       },
       {
@@ -3385,6 +3430,48 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/insured"
+        },
+        "name": "Insured",
+        "description": "Container for elements providing insurance context",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/insured-category"
+        },
+        "name": "Insured Category",
+        "description": "Category of insurance",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/insured-rank"
+        },
+        "name": "Insured Rank",
+        "description": "Ordered rank to associate with an insurance option within a particular context (such as an Encounter)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/job-class-code"
         },
         "name": "Job Class Code",
@@ -4200,7 +4287,7 @@
           "reference": "StructureDefinition/process-name"
         },
         "name": "Process Name",
-        "description": "The name of the process or service that has produced the data held in the FHIR resource or element. Example: If an IBM analytic service has been the producer, use the process-name as the name of that analytic service.",
+        "description": "The name of the process or service that has produced the data held in the FHIR resource or element. Example: If an analytic service has been the producer, use the process-name as the name of that analytic service.",
         "exampleBoolean": false
       },
       {
@@ -4214,7 +4301,7 @@
           "reference": "StructureDefinition/process-organization"
         },
         "name": "Process Organization",
-        "description": "The organizing entity that owns the process that has produced the data held in the FHIR resource or element. Example: If an IBM analytic service has been the producer, set the process-organization value to IBM.",
+        "description": "The organizing entity that owns the process that has produced the data held in the FHIR resource or element. Example: If an analytic service has been the producer, the process-organization value should reflect the organaization reponsible for the service.",
         "exampleBoolean": false
       },
       {
@@ -5530,7 +5617,7 @@
           "reference": "ValueSet/claim-type"
         },
         "name": "Claim Type Value Set",
-        "description": "IBM Health Data Connect standard value set for the coverage type under which the claim was paid",
+        "description": "Health Data Connect standard value set for the coverage type under which the claim was paid",
         "exampleBoolean": false
       },
       {
@@ -5642,7 +5729,7 @@
           "reference": "ValueSet/eng-product"
         },
         "name": "Engagement Product Value Set",
-        "description": "IBM Watson Health engagement products",
+        "description": "Health Data Connect engagement products",
         "exampleBoolean": false
       },
       {
@@ -5670,7 +5757,7 @@
           "reference": "ValueSet/ffv-schedule"
         },
         "name": "Health Data Connect FFV Schedule Value Set",
-        "description": "IBM® Health Data Connect valuset defining fee for value initiative schedule codes",
+        "description": "Health Data Connect valuset defining fee for value initiative schedule codes",
         "exampleBoolean": false
       },
       {
@@ -5740,7 +5827,7 @@
           "reference": "ValueSet/identifier-type"
         },
         "name": "Identifier Type Value Set",
-        "description": "Extended set of identifier type codes from FHIR HL7 and extended IBM Health Data Connect Common Data Model resource identifiers",
+        "description": "Extended set of identifier type codes from FHIR HL7 and extended Health Data Connect Common Data Model resource identifiers",
         "exampleBoolean": false
       },
       {
@@ -5797,6 +5884,20 @@
         },
         "name": "Insurance Plan Type Value Set",
         "description": "The value set that indicates the specific benefit categories a member may have (medical, dental, vision, etc) based on benefit election.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/insured-category"
+        },
+        "name": "Insured Category Value Set",
+        "description": "Value set that defines a category of insurance",
         "exampleBoolean": false
       },
       {
@@ -5866,7 +5967,7 @@
           "reference": "ValueSet/measure-population-type"
         },
         "name": "Measure Population Type Value Set",
-        "description": "IBM Watson Health measure population types",
+        "description": "Health Data Connect measure population types",
         "exampleBoolean": false
       },
       {
@@ -5936,7 +6037,7 @@
           "reference": "ValueSet/patient-importance"
         },
         "name": "Patient Importance Value Set",
-        "description": "Patient importance status codes derived from customer-specific code mappings, used to trigger or limit IBM Health Data Connect patient operations.",
+        "description": "Patient importance status codes derived from customer-specific code mappings, used to trigger or limit Health Data Connect patient operations.",
         "exampleBoolean": false
       },
       {
@@ -6006,7 +6107,7 @@
           "reference": "ValueSet/quality-measure-population-type"
         },
         "name": "Quality Measure Population Type Value Set",
-        "description": "IBM Watson Health measure population types for qualiity measures",
+        "description": "Health Data Connect measure population types for qualiity measures",
         "exampleBoolean": false
       },
       {
@@ -6020,7 +6121,7 @@
           "reference": "ValueSet/quality-measure-scoring"
         },
         "name": "Quality Measure Scoring Value Set",
-        "description": "IBM Watson Health measure scoring methods for qualiity measures",
+        "description": "Health Data Connect measure scoring methods for qualiity measures",
         "exampleBoolean": false
       },
       {
@@ -6048,7 +6149,7 @@
           "reference": "ValueSet/rx-mail-or-retail"
         },
         "name": "Rx Mail Or Retail Value Set",
-        "description": "IBM® Health Data Connect standard value set indicating the purchase place of the prescription.",
+        "description": "Health Data Connect standard value set indicating the purchase place of the prescription.",
         "exampleBoolean": false
       },
       {
@@ -6160,7 +6261,7 @@
           "reference": "ValueSet/wh-payer-claim-status"
         },
         "name": "Health Data Connect Claim Status Codes Value Set",
-        "description": "IBM® Health Data Connect  standard value set for the payment status of the claim.",
+        "description": "Health Data Connect  standard value set for the payment status of the claim.",
         "exampleBoolean": false
       },
       {
@@ -6174,7 +6275,7 @@
           "reference": "ValueSet/wh-payer-major-diagnostic-category"
         },
         "name": "Major Diagnostic Category Value Set",
-        "description": "IBM® Health Data Connect standard value set containing major diagnostic category codes",
+        "description": "Health Data Connect standard value set containing major diagnostic category codes",
         "exampleBoolean": false
       },
       {
@@ -6188,7 +6289,7 @@
           "reference": "ValueSet/wh-payer-procedure-group"
         },
         "name": "Procedure Group Value Set",
-        "description": "IBM® Health Data Connect standard value set containing procedure group codes",
+        "description": "Health Data Connect standard value set containing procedure group codes",
         "exampleBoolean": false
       },
       {
@@ -6202,7 +6303,7 @@
           "reference": "ValueSet/wh-claim-subtype"
         },
         "name": "Health Data Connect Claim Subtype Value Set",
-        "description": "IBM® Health Data Connect value set for the claim subtypes used to further define the claim type",
+        "description": "Health Data Connect value set for the claim subtypes used to further define the claim type",
         "exampleBoolean": false
       },
       {
@@ -6216,7 +6317,7 @@
           "reference": "ValueSet/wh-diagnosis-type"
         },
         "name": "Health Data Connect Diagnosis Type Value Set",
-        "description": "IBM® Health Data Connect value set for the diagnosis codes on a claim",
+        "description": "Health Data Connect value set for the diagnosis codes on a claim",
         "exampleBoolean": false
       },
       {
@@ -6230,7 +6331,7 @@
           "reference": "ValueSet/wh-organization-type"
         },
         "name": "WH Organization Value Set",
-        "description": "IBM Health Data Connect standard values for organization type",
+        "description": "Health Data Connect standard values for organization type",
         "exampleBoolean": false
       },
       {
@@ -6244,7 +6345,7 @@
           "reference": "ValueSet/wh-payer-claim-adjustment-type"
         },
         "name": "Health Data Connect Claim Adjustment Type Value Set",
-        "description": "IBM® Health Data Connect standard value set for the type of adjustment for the claim",
+        "description": "Health Data Connect standard value set for the type of adjustment for the claim",
         "exampleBoolean": false
       },
       {
@@ -6258,7 +6359,7 @@
           "reference": "ValueSet/wh-payer-coverage-class"
         },
         "name": "Health Data Connect Coverage Class Value Set",
-        "description": "IBM® Health Data Connect standard value set for the coverage class",
+        "description": "Health Data Connect standard value set for the coverage class",
         "exampleBoolean": false
       },
       {
@@ -6272,7 +6373,7 @@
           "reference": "ValueSet/wh-payer-education-level"
         },
         "name": "Health Data Connect Education Level Value Set",
-        "description": "IBM® Health Data Connect standard value set for the education level",
+        "description": "Health Data Connect standard value set for the education level",
         "exampleBoolean": false
       },
       {
@@ -6286,7 +6387,7 @@
           "reference": "ValueSet/wh-payer-employee-status-code"
         },
         "name": "Health Data Connect Employee Status Value Set",
-        "description": "IBM® Health Data Connect standard employee status value set for claims",
+        "description": "Health Data Connect standard employee status value set for claims",
         "exampleBoolean": false
       },
       {
@@ -6300,7 +6401,7 @@
           "reference": "ValueSet/wh-payer-gender"
         },
         "name": "Health Data Connect Gender Value Set",
-        "description": "IBM® Health Data Connect gender value set",
+        "description": "Health Data Connect gender value set",
         "exampleBoolean": false
       },
       {
@@ -6314,7 +6415,7 @@
           "reference": "ValueSet/wh-payer-indicators"
         },
         "name": "Health Data Connect Indicator Value Set",
-        "description": "IBM® Health Data Connect indicator type value set",
+        "description": "Health Data Connect indicator type value set",
         "exampleBoolean": false
       },
       {
@@ -6328,7 +6429,7 @@
           "reference": "ValueSet/wh-payer-job-title-code"
         },
         "name": "Health Data Connect Job Title Value Set",
-        "description": "IBM® Health Data Connect value set for the job title, based on Bureau of Labor Statistics, Standard Occupational Classification (SOC) system.",
+        "description": "Health Data Connect value set for the job title, based on Bureau of Labor Statistics, Standard Occupational Classification (SOC) system.",
         "exampleBoolean": false
       },
       {
@@ -6342,7 +6443,7 @@
           "reference": "ValueSet/wh-payer-medicare-coverage"
         },
         "name": "Health Data Connect Medicare Coverage Value Set",
-        "description": "IBM® Health Data Connect standard value set for the type of Medicare coverage, if any, for the person",
+        "description": "Health Data Connect standard value set for the type of Medicare coverage, if any, for the person",
         "exampleBoolean": false
       },
       {
@@ -6356,7 +6457,7 @@
           "reference": "ValueSet/medication-knowledge-cost-type"
         },
         "name": "Health Data Connect Medication Knowledge Cost Type Value Set",
-        "description": "IBM® Health Data Connect medication knowledge cost type value set",
+        "description": "Health Data Connect medication knowledge cost type value set",
         "exampleBoolean": false
       },
       {
@@ -6384,7 +6485,7 @@
           "reference": "ValueSet/wh-payer-subscriber-relationship"
         },
         "name": "Health Data Connect Subscriber Relationship Value Set",
-        "description": "IBM® Health Data Connect subscriber relationship value set for the relationship of the member to the contract holder",
+        "description": "Health Data Connect subscriber relationship value set for the relationship of the member to the contract holder",
         "exampleBoolean": false
       },
       {
@@ -6412,7 +6513,7 @@
           "reference": "ValueSet/wh-practitioner-role-type"
         },
         "name": "WH Practitioner Role Type Value Set",
-        "description": "IBM Health Data Connect standard values for practitioner role type",
+        "description": "Health Data Connect standard values for practitioner role type",
         "exampleBoolean": false
       },
       {
@@ -6706,7 +6807,7 @@
           "reference": "CodeSystem/eng-product"
         },
         "name": "Engagement Product Codes",
-        "description": "IBM Watson Health engagement products",
+        "description": "Health Data Connect engagement products",
         "exampleBoolean": false
       },
       {
@@ -6734,7 +6835,7 @@
           "reference": "CodeSystem/ffv-schedule"
         },
         "name": "Health Data Connect FFV Schedule Codes",
-        "description": "IBM® Health Data Connect fee for value initiative schedule codes",
+        "description": "Health Data Connect fee for value initiative schedule codes",
         "exampleBoolean": false
       },
       {
@@ -6804,7 +6905,7 @@
           "reference": "CodeSystem/identifier-type"
         },
         "name": "Identifier Type Codes",
-        "description": "Extended set of Identifier type code for IBM Health Data Connect Common Data Model resources",
+        "description": "Extended set of Identifier type code for Health Data Connect Common Data Model resources",
         "exampleBoolean": false
       },
       {
@@ -6861,6 +6962,20 @@
         },
         "name": "Insurance Plan Type Codes",
         "description": "The codes that indicates the specific benefit categories a member may have (medical, dental, vision, etc) based on benefit election.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/insured-category"
+        },
+        "name": "Insured Category Code System",
+        "description": "Code system that defines a category of insurance",
         "exampleBoolean": false
       },
       {
@@ -6930,7 +7045,7 @@
           "reference": "CodeSystem/measure-population-type"
         },
         "name": "Measure Population Type Codes",
-        "description": "IBM Watson Health measure population types",
+        "description": "Health Data Connect measure population types",
         "exampleBoolean": false
       },
       {
@@ -7084,7 +7199,7 @@
           "reference": "CodeSystem/rx-mail-or-retail"
         },
         "name": "Rx Mail Or Retail Codes",
-        "description": "IBM® Health Data Connect standard codes indicating the purchase place of the prescription.",
+        "description": "Health Data Connect standard codes indicating the purchase place of the prescription.",
         "exampleBoolean": false
       },
       {
@@ -7168,7 +7283,7 @@
           "reference": "CodeSystem/wh-payer-major-diagnostic-category"
         },
         "name": "Health Data Connect Major Diagnostic Category Codes",
-        "description": "IBM® Health Data Connect standard major diagnostic category codes",
+        "description": "Health Data Connect standard major diagnostic category codes",
         "exampleBoolean": false
       },
       {
@@ -7182,7 +7297,7 @@
           "reference": "CodeSystem/wh-payer-procedure-group"
         },
         "name": "Health Data Connect Procedure Group Codes",
-        "description": "IBM® Health Data Connect standard procedure group codes",
+        "description": "Health Data Connect standard procedure group codes",
         "exampleBoolean": false
       },
       {
@@ -7196,7 +7311,7 @@
           "reference": "CodeSystem/wh-claim-subtype"
         },
         "name": "Health Data Connect Claim Subtype Codes",
-        "description": "IBM® Health Data Connect standard codes for the claim subtypes used to further define the claim type",
+        "description": "Health Data Connect standard codes for the claim subtypes used to further define the claim type",
         "exampleBoolean": false
       },
       {
@@ -7210,7 +7325,7 @@
           "reference": "CodeSystem/wh-diagnosis-type"
         },
         "name": "Health Data Connect Diagnosis Type Codes",
-        "description": "IBM® Health Data Connect standard codes for the diagnosis codes on a claim",
+        "description": "Health Data Connect standard codes for the diagnosis codes on a claim",
         "exampleBoolean": false
       },
       {
@@ -7224,7 +7339,7 @@
           "reference": "CodeSystem/wh-payer-claim-adjustment-type"
         },
         "name": "Health Data Connect Claim Adjustment Type Codes",
-        "description": "IBM® Health Data Connect standard codes for the type of adjustment for the claim",
+        "description": "Health Data Connect standard codes for the type of adjustment for the claim",
         "exampleBoolean": false
       },
       {
@@ -7238,7 +7353,7 @@
           "reference": "CodeSystem/wh-payer-claim-status"
         },
         "name": "Health Data Connect Claim Status Codes",
-        "description": "IBM® Health Data Connect standard code for the payment status of the claim.",
+        "description": "Health Data Connect standard code for the payment status of the claim.",
         "exampleBoolean": false
       },
       {
@@ -7252,7 +7367,7 @@
           "reference": "CodeSystem/wh-payer-claim-type"
         },
         "name": "Health Data Connect Claim Type Codes",
-        "description": "IBM® Health Data Connect stanard codes for the coverage type under which the claim was paid",
+        "description": "Health Data Connect stanard codes for the coverage type under which the claim was paid",
         "exampleBoolean": false
       },
       {
@@ -7266,7 +7381,7 @@
           "reference": "CodeSystem/wh-payer-coverage-class"
         },
         "name": "Health Data Connect Coverage Class Codes",
-        "description": "IBM® Health Data Connect standard code for the coverage class",
+        "description": "Health Data Connect standard code for the coverage class",
         "exampleBoolean": false
       },
       {
@@ -7280,7 +7395,7 @@
           "reference": "CodeSystem/wh-payer-education-level"
         },
         "name": "Health Data Connect Education Level Codes",
-        "description": "IBM® Health Data Connect standard code for the education level",
+        "description": "Health Data Connect standard code for the education level",
         "exampleBoolean": false
       },
       {
@@ -7294,7 +7409,7 @@
           "reference": "CodeSystem/wh-payer-employee-status-code"
         },
         "name": "Health Data Connect Employee Status Codes",
-        "description": "IBM® Health Data Connect standard employee status value set for claims",
+        "description": "Health Data Connect standard employee status value set for claims",
         "exampleBoolean": false
       },
       {
@@ -7308,7 +7423,7 @@
           "reference": "CodeSystem/wh-payer-gender"
         },
         "name": "Health Data Connect Gender Codes",
-        "description": "IBM® Health Data Connect gender code",
+        "description": "Health Data Connect gender code",
         "exampleBoolean": false
       },
       {
@@ -7322,7 +7437,7 @@
           "reference": "CodeSystem/wh-payer-indicators"
         },
         "name": "Health Data Connect Indicator Codes",
-        "description": "IBM® Health Data Connect indicator type code",
+        "description": "Health Data Connect indicator type code",
         "exampleBoolean": false
       },
       {
@@ -7336,7 +7451,7 @@
           "reference": "CodeSystem/wh-payer-medicare-coverage"
         },
         "name": "Health Data Connect Medicare Coverage Codes",
-        "description": "IBM® Health Data Connect standard code for the type of Medicare coverage, if any, for the person",
+        "description": "Health Data Connect standard code for the type of Medicare coverage, if any, for the person",
         "exampleBoolean": false
       },
       {
@@ -7350,7 +7465,7 @@
           "reference": "CodeSystem/medication-knowledge-cost-type"
         },
         "name": "Health Data Connect Medication Knowledge Cost Type Codes",
-        "description": "IBM® Health Data Connect medication knowledge cost type code",
+        "description": "Health Data Connect medication knowledge cost type code",
         "exampleBoolean": false
       },
       {
@@ -7364,7 +7479,7 @@
           "reference": "CodeSystem/wh-payer-provider-type"
         },
         "name": "Health Data Connect Provider Type Codes",
-        "description": "IBM® Health Data Connect standard provider type code as reported on the claim.",
+        "description": "Health Data Connect standard provider type code as reported on the claim.",
         "exampleBoolean": false
       },
       {
@@ -7392,7 +7507,7 @@
           "reference": "CodeSystem/wh-payer-subscriber-relationship"
         },
         "name": "Health Data Connect Subscriber Relationship Codes",
-        "description": "IBM® Health Data Connect subscriber relationship value set for the relationship of the member to the contract holder",
+        "description": "Health Data Connect subscriber relationship value set for the relationship of the member to the contract holder",
         "exampleBoolean": false
       },
       {
@@ -7896,7 +8011,7 @@
           "reference": "Communication/EngagementCommunicationExample"
         },
         "name": "Engagement Communication Example",
-        "description": "Example of an engagement communication to send an Outreach text to a patient concerning a care gap",
+        "description": "Example of an engagement communication to send a SMS text to a patient concerning a care gap",
         "exampleCanonical": "http://ibm.com/fhir/cdm/StructureDefinition/engagement-communication"
       },
       {
@@ -7910,7 +8025,7 @@
           "reference": "CommunicationRequest/EngagementCommunicationRequestExample"
         },
         "name": "Engagement Communication Request Example",
-        "description": "Example of an engagement communication request to send an Outreach text to a patient concerning a care gap",
+        "description": "Example of an engagement communication request to send a SMS text to a patient concerning a care gap",
         "exampleCanonical": "http://ibm.com/fhir/cdm/StructureDefinition/engagement-communication-request"
       },
       {
@@ -7963,10 +8078,10 @@
           }
         ],
         "reference": {
-          "reference": "Organization/IBM"
+          "reference": "Organization/HDC"
         },
-        "name": "CDM Oganization - IBM",
-        "description": "Sample CDM Organization representing IBM",
+        "name": "CDM Oganization - HDC",
+        "description": "Sample CDM Organization representing Health Data Connect",
         "exampleCanonical": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
       },
       {

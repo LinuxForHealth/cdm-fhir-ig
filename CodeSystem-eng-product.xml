@@ -3,16 +3,16 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="eng-product"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/eng-product defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">campaign<a name="eng-product-campaign"> </a></td><td>Campaign</td><td>Custom campaigns configured by customers in IBM® Phytel Coordinate</td></tr><tr><td style="white-space:nowrap">coordinate<a name="eng-product-coordinate"> </a></td><td>Coordinate</td><td>Coordinate communications</td></tr><tr><td style="white-space:nowrap">ihe<a name="eng-product-ihe"> </a></td><td>IHE</td><td>IBM® Intelligent Health Engagement</td></tr><tr><td style="white-space:nowrap">outreach<a name="eng-product-outreach"> </a></td><td>Outreach</td><td>Automated outreach communications based on care gaps</td></tr><tr><td style="white-space:nowrap">remind<a name="eng-product-remind"> </a></td><td>Remind</td><td>Automated appointment reminders</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://ibm.com/fhir/cdm/CodeSystem/eng-product defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">campaign<a name="eng-product-campaign"> </a></td><td>Campaign</td><td>Custom campaigns configured for patient engagment</td></tr><tr><td style="white-space:nowrap">care-gap<a name="eng-product-care-gap"> </a></td><td>Care Gap</td><td>Automated comminications based on cohorting and patient care gaps</td></tr><tr><td style="white-space:nowrap">appt-reminder<a name="eng-product-appt-reminder"> </a></td><td>Remind</td><td>Automated appointment reminders</td></tr></table></div>
   </text>
   <url value="http://ibm.com/fhir/cdm/CodeSystem/eng-product"/>
-  <version value="6.0.0"/>
+  <version value="6.1.0"/>
   <name value="EngagementProductCodeSystem"/>
   <title value="Engagement Product Codes"/>
   <status value="active"/>
-  <date value="2022-01-21T20:46:54+00:00"/>
+  <date value="2022-05-31T20:10:14+00:00"/>
   <publisher value="Alvearie Team"/>
-  <description value="IBM Watson Health engagement products"/>
+  <description value="Health Data Connect engagement products"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -21,29 +21,19 @@
   </jurisdiction>
   <caseSensitive value="true"/>
   <content value="complete"/>
-  <count value="5"/>
+  <count value="3"/>
   <concept>
     <code value="campaign"/>
     <display value="Campaign"/>
-    <definition value="Custom campaigns configured by customers in IBM® Phytel Coordinate"/>
+    <definition value="Custom campaigns configured for patient engagment"/>
   </concept>
   <concept>
-    <code value="coordinate"/>
-    <display value="Coordinate"/>
-    <definition value="Coordinate communications"/>
+    <code value="care-gap"/>
+    <display value="Care Gap"/>
+    <definition value="Automated comminications based on cohorting and patient care gaps"/>
   </concept>
   <concept>
-    <code value="ihe"/>
-    <display value="IHE"/>
-    <definition value="IBM® Intelligent Health Engagement"/>
-  </concept>
-  <concept>
-    <code value="outreach"/>
-    <display value="Outreach"/>
-    <definition value="Automated outreach communications based on care gaps"/>
-  </concept>
-  <concept>
-    <code value="remind"/>
+    <code value="appt-reminder"/>
     <display value="Remind"/>
     <definition value="Automated appointment reminders"/>
   </concept>

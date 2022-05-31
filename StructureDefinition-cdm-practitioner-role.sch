@@ -13,7 +13,6 @@
     <sch:title>f:PractitionerRole</sch:title>
     <sch:rule context="f:PractitionerRole">
       <sch:assert test="count(f:contained) &lt;= 0">contained: maximum cardinality of 'contained' is 0</sch:assert>
-      <sch:assert test="count(f:practitioner) &gt;= 1">practitioner: minimum cardinality of 'practitioner' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

@@ -40,20 +40,34 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.395"}
-    h3,h4,h5,h6{--heading-prefix:"3.395"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.399"}
+    h3,h4,h5,h6{--heading-prefix:"3.399"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
   <a id="alvearie-logo" no-external="true">
-    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
+    <!-- 
+    // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -110,8 +124,10 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
+
+
 
 
 
@@ -150,22 +166,50 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: Match Confidence Level Code System</h2>
-  <p>
-    <b>Summary</b>
-  </p>
-  <table class="grid">
-<tbody>
-<tr><td>Defining URL:</td><td>http://ibm.com/fhir/cdm/ValueSet/match-confidence-level</td></tr>
- <tr><td>Version:</td><td>6.0.0</td></tr>
- <tr><td>Name:</td><td>MatchConfidenceLevelValueSet</td></tr>
- <tr><td>Title:</td><td>Match Confidence Level Code System</td></tr>
- <tr><td>Status:</td><td>Active as of 1/21/22, 8:46 PM</td></tr>
- <tr><td>Definition:</td><td><p>Codes indicating confidence level of matched entities</p>
-</td></tr>
- <tr><td>Publisher:</td><td>Alvearie Team</td></tr>
- <tr><td>Source Resource:</td><td><a href="ValueSet-match-confidence-level.xml.html">XML</a> / <a href="ValueSet-match-confidence-level.json.html">JSON</a> / <a href="ValueSet-match-confidence-level.ttl.html">Turtle</a></td></tr>
-</tbody></table>
+  <h2 id="root">ValueSet: Match Confidence Level Code System
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ibm.com/fhir/cdm/ValueSet/match-confidence-level<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ValueSet/match-confidence-level"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">6.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ValueSet/match-confidence-level|6.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-05-31
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">MatchConfidenceLevelValueSet</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Codes indicating confidence level of matched entities</p>
+
+</p>
 
 
   <p>
@@ -186,13 +230,13 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/3.0.0/CodeSystem-match-grade.html"><code>http://terminology.hl7.org/CodeSystem/match-grade</code></a></li><li>Include all codes defined in <a href="CodeSystem-match-confidence-level.html"><code>http://ibm.com/fhir/cdm/CodeSystem/match-confidence-level</code></a></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/3.1.0/CodeSystem-match-grade.html"><code>http://terminology.hl7.org/CodeSystem/match-grade</code></a></li><li>Include all codes defined in <a href="CodeSystem-match-confidence-level.html"><code>http://ibm.com/fhir/cdm/CodeSystem/match-confidence-level</code></a></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 5 concepts</p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="http://terminology.hl7.org/3.0.0/CodeSystem-match-grade.html">MatchGrade v0.1.0 (CodeSystem)</a></li><li><a href="CodeSystem-match-confidence-level.html">Match Confidence Level Codes v6.0.0 (CodeSystem)</a></li></ul></div><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-match-grade-certain"> </a><a href="http://terminology.hl7.org/3.0.0/CodeSystem-match-grade.html#match-grade-certain">certain</a></td><td>http://terminology.hl7.org/CodeSystem/match-grade</td><td>Certain Match</td><td>This record meets the matching criteria to be automatically considered as a full match.</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-match-grade-probable"> </a><a href="http://terminology.hl7.org/3.0.0/CodeSystem-match-grade.html#match-grade-probable">probable</a></td><td>http://terminology.hl7.org/CodeSystem/match-grade</td><td>Probable Match</td><td>This record is a close match, but not a certain match. Additional review (e.g. by a human) may be required before using this as a match.</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-match-grade-possible"> </a><a href="http://terminology.hl7.org/3.0.0/CodeSystem-match-grade.html#match-grade-possible">possible</a></td><td>http://terminology.hl7.org/CodeSystem/match-grade</td><td>Possible Match</td><td>This record may be a matching one. Additional review (e.g. by a human) SHOULD be performed before using this as a match.</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-match-grade-certainly-not"> </a><a href="http://terminology.hl7.org/3.0.0/CodeSystem-match-grade.html#match-grade-certainly-not">certainly-not</a></td><td>http://terminology.hl7.org/CodeSystem/match-grade</td><td>Certainly Not a Match</td><td>This record is known not to be a match. Note that usually non-matching records are not returned, but in some cases records previously or likely considered as a match may specifically be negated by the matching engine.</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-match-confidence-level-no-match"> </a><a href="CodeSystem-match-confidence-level.html#match-confidence-level-no-match">no-match</a></td><td>http://ibm.com/fhir/cdm/CodeSystem/match-confidence-level</td><td>This record is not likely to be a match.  This record should ONLY be matched when another match is used to identify the match or if a human has intervened to specify a match.</td><td/></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 5 concepts</p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-match-grade.html">MatchGrade v0.1.0 (CodeSystem)</a></li><li><a href="CodeSystem-match-confidence-level.html">Match Confidence Level Codes v6.1.0 (CodeSystem)</a></li></ul></div><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-match-grade-certain"> </a>  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-match-grade.html#match-grade-certain">certain</a></td><td>http://terminology.hl7.org/CodeSystem/match-grade</td><td>Certain Match</td><td>This record meets the matching criteria to be automatically considered as a full match.</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-match-grade-probable"> </a>  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-match-grade.html#match-grade-probable">probable</a></td><td>http://terminology.hl7.org/CodeSystem/match-grade</td><td>Probable Match</td><td>This record is a close match, but not a certain match. Additional review (e.g. by a human) may be required before using this as a match.</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-match-grade-possible"> </a>  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-match-grade.html#match-grade-possible">possible</a></td><td>http://terminology.hl7.org/CodeSystem/match-grade</td><td>Possible Match</td><td>This record may be a matching one. Additional review (e.g. by a human) SHOULD be performed before using this as a match.</td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-match-grade-certainly-not"> </a>  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-match-grade.html#match-grade-certainly-not">certainly-not</a></td><td>http://terminology.hl7.org/CodeSystem/match-grade</td><td>Certainly Not a Match</td><td>This record is known not to be a match. Note that usually non-matching records are not returned, but in some cases records previously or likely considered as a match may specifically be negated by the matching engine.</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-match-confidence-level-no-match"> </a>  <a href="CodeSystem-match-confidence-level.html#match-confidence-level-no-match">no-match</a></td><td>http://ibm.com/fhir/cdm/CodeSystem/match-confidence-level</td><td>This record is not likely to be a match.  This record should ONLY be matched when another match is used to identify the match or if a human has intervened to specify a match.</td><td/></tr></table></div>
 
   <hr/>
   <p>
@@ -226,6 +270,8 @@
     </tr>
   </table>
 
+  
+
   <!-- insert notes if present -->
   
 
@@ -255,7 +301,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -280,6 +326,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

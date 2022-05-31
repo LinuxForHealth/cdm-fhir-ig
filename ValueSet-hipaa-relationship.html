@@ -40,20 +40,34 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.387"}
-    h3,h4,h5,h6{--heading-prefix:"3.387"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.390"}
+    h3,h4,h5,h6{--heading-prefix:"3.390"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
   <a id="alvearie-logo" no-external="true">
-    <img height="60" alt="Alvearie" src="assets/images/alvearieLogo.png" style="float:left"/>
+    <!-- 
+    // New logo image reference should go here
+    // Place image in data/alvearie-template/content/assets/images folder
+    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span><br/>6.0.0 - draft</p>
+          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">6.1.0 - draft
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -110,8 +124,10 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
+
+
 
 
 
@@ -150,22 +166,50 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">ValueSet: HIPAA Relationship Value Set</h2>
-  <p>
-    <b>Summary</b>
-  </p>
-  <table class="grid">
-<tbody>
-<tr><td>Defining URL:</td><td>http://ibm.com/fhir/cdm/ValueSet/hipaa-relationship</td></tr>
- <tr><td>Version:</td><td>6.0.0</td></tr>
- <tr><td>Name:</td><td>HipaaRelationshipValueSet</td></tr>
- <tr><td>Title:</td><td>HIPAA Relationship Value Set</td></tr>
- <tr><td>Status:</td><td>Active as of 1/21/22, 8:46 PM</td></tr>
- <tr><td>Definition:</td><td><p>HIPAA standard value set for the relationship of the member to the contract holder</p>
-</td></tr>
- <tr><td>Publisher:</td><td>Alvearie Team</td></tr>
- <tr><td>Source Resource:</td><td><a href="ValueSet-hipaa-relationship.xml.html">XML</a> / <a href="ValueSet-hipaa-relationship.json.html">JSON</a> / <a href="ValueSet-hipaa-relationship.ttl.html">Turtle</a></td></tr>
-</tbody></table>
+  <h2 id="root">ValueSet: HIPAA Relationship Value Set
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ibm.com/fhir/cdm/ValueSet/hipaa-relationship<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ValueSet/hipaa-relationship"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">6.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ValueSet/hipaa-relationship|6.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2022-05-31
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">HipaaRelationshipValueSet</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>HIPAA standard value set for the relationship of the member to the contract holder</p>
+
+</p>
 
 
   <p>
@@ -190,7 +234,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 37 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-hipaa-relationship.html">HIPAA Relationship Codes v6.0.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="CodeSystem-hipaa-relationship.html"><code>http://ibm.com/fhir/cdm/CodeSystem/hipaa-relationship</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-01"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-01">01</a></td><td>Spouse</td><td>Spouse</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-03"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-03">03</a></td><td>Father/Mother</td><td>Father/Mother</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-04"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-04">04</a></td><td>Grandfather/Grandmother</td><td>Grandfather/Grandmother</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-05"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-05">05</a></td><td>Grandson/Granddaughter</td><td>Grandson/Granddaughter</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-06"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-06">06</a></td><td>Uncle/Aunt</td><td>Uncle/Aunt</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-07"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-07">07</a></td><td>Nephew/Niece</td><td>Nephew/Niece</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-08"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-08">08</a></td><td>Cousin</td><td>Cousin</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-09"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-09">09</a></td><td>Adopted Child</td><td>Adopted dhild</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-10"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-10">10</a></td><td>Foster Child</td><td>Foster dhild</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-11"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-11">11</a></td><td>Son-in-law/Daughter-in-law</td><td>Son-in-law/Daughter-in-law</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-12"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-12">12</a></td><td>Brother-in-law/Sister-in-law</td><td>Brother-in-law/Sister-in-law</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-13"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-13">13</a></td><td>Father-in-law/Mother-in-law</td><td>Father-in-law/Mother-in-law</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-14"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-14">14</a></td><td>Brother/Sister</td><td>Brother/Sister</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-15"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-15">15</a></td><td>Ward</td><td>Ward</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-17"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-17">17</a></td><td>Stepson/Stepdaughter</td><td>Stepson/Stepdaughter</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-18"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-18">18</a></td><td>Self</td><td>Self</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-19"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-19">19</a></td><td>Child</td><td>Child</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-20"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-20">20</a></td><td>Employee</td><td>Employee</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-21"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-21">21</a></td><td>Unknown</td><td>Unknown</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-22"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-22">22</a></td><td>Handicapped Dependent</td><td>Handicapped dependent</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-23"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-23">23</a></td><td>Sponsored Dependent</td><td>Sponsored dependent</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-24"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-24">24</a></td><td>Dependent/Minor Dependent</td><td>Dependent/Minor dependent</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-25"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-25">25</a></td><td>Ex-spouse</td><td>Ex-spouse</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-26"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-26">26</a></td><td>Guardian</td><td>Guardian</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-29"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-29">29</a></td><td>Significant Other</td><td>Significant other</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-31"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-31">31</a></td><td>Court Appointed Guardian</td><td>Court appointed guardian</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-32"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-32">32</a></td><td>Mother</td><td>Mother</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-33"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-33">33</a></td><td>Father</td><td>Father</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-38"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-38">38</a></td><td>Collateral Dependent</td><td>Collateral dependent</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-39"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-39">39</a></td><td>Organ Donor</td><td>Organ donor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-40"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-40">40</a></td><td>Cadaver Donor</td><td>Cadaver donor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-41"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-41">41</a></td><td>Injured Plaintiff</td><td>Injured plaintiff</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-43"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-43">43</a></td><td>Child Insured has No Finan Res</td><td>Child Insured has no financial Responsibility</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-48"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-48">48</a></td><td>Stepfather</td><td>Stepfather</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-49"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-49">49</a></td><td>Stepmother</td><td>Stepmother</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-53"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-53">53</a></td><td>Life Partner</td><td>Life partner</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-G8"> </a><a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-G8">G8</a></td><td>Other Relationship</td><td>Other relationship</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 37 concepts</p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-hipaa-relationship.html">HIPAA Relationship Codes v6.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href="CodeSystem-hipaa-relationship.html"><code>http://ibm.com/fhir/cdm/CodeSystem/hipaa-relationship</code></a></p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-01"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-01">01</a></td><td>Spouse</td><td>Spouse</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-03"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-03">03</a></td><td>Father/Mother</td><td>Father/Mother</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-04"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-04">04</a></td><td>Grandfather/Grandmother</td><td>Grandfather/Grandmother</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-05"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-05">05</a></td><td>Grandson/Granddaughter</td><td>Grandson/Granddaughter</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-06"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-06">06</a></td><td>Uncle/Aunt</td><td>Uncle/Aunt</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-07"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-07">07</a></td><td>Nephew/Niece</td><td>Nephew/Niece</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-08"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-08">08</a></td><td>Cousin</td><td>Cousin</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-09"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-09">09</a></td><td>Adopted Child</td><td>Adopted dhild</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-10"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-10">10</a></td><td>Foster Child</td><td>Foster dhild</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-11"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-11">11</a></td><td>Son-in-law/Daughter-in-law</td><td>Son-in-law/Daughter-in-law</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-12"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-12">12</a></td><td>Brother-in-law/Sister-in-law</td><td>Brother-in-law/Sister-in-law</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-13"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-13">13</a></td><td>Father-in-law/Mother-in-law</td><td>Father-in-law/Mother-in-law</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-14"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-14">14</a></td><td>Brother/Sister</td><td>Brother/Sister</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-15"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-15">15</a></td><td>Ward</td><td>Ward</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-17"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-17">17</a></td><td>Stepson/Stepdaughter</td><td>Stepson/Stepdaughter</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-18"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-18">18</a></td><td>Self</td><td>Self</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-19"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-19">19</a></td><td>Child</td><td>Child</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-20"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-20">20</a></td><td>Employee</td><td>Employee</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-21"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-21">21</a></td><td>Unknown</td><td>Unknown</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-22"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-22">22</a></td><td>Handicapped Dependent</td><td>Handicapped dependent</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-23"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-23">23</a></td><td>Sponsored Dependent</td><td>Sponsored dependent</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-24"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-24">24</a></td><td>Dependent/Minor Dependent</td><td>Dependent/Minor dependent</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-25"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-25">25</a></td><td>Ex-spouse</td><td>Ex-spouse</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-26"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-26">26</a></td><td>Guardian</td><td>Guardian</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-29"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-29">29</a></td><td>Significant Other</td><td>Significant other</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-31"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-31">31</a></td><td>Court Appointed Guardian</td><td>Court appointed guardian</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-32"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-32">32</a></td><td>Mother</td><td>Mother</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-33"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-33">33</a></td><td>Father</td><td>Father</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-38"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-38">38</a></td><td>Collateral Dependent</td><td>Collateral dependent</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-39"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-39">39</a></td><td>Organ Donor</td><td>Organ donor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-40"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-40">40</a></td><td>Cadaver Donor</td><td>Cadaver donor</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-41"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-41">41</a></td><td>Injured Plaintiff</td><td>Injured plaintiff</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-43"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-43">43</a></td><td>Child Insured has No Finan Res</td><td>Child Insured has no financial Responsibility</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-48"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-48">48</a></td><td>Stepfather</td><td>Stepfather</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-49"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-49">49</a></td><td>Stepmother</td><td>Stepmother</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-53"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-53">53</a></td><td>Life Partner</td><td>Life partner</td></tr><tr><td style="white-space:nowrap"><a name="http---ibm.com-fhir-cdm-CodeSystem-hipaa-relationship-G8"> </a>  <a href="CodeSystem-hipaa-relationship.html#hipaa-relationship-G8">G8</a></td><td>Other Relationship</td><td>Other relationship</td></tr></table></div>
 
   <hr/>
   <p>
@@ -224,6 +268,8 @@
     </tr>
   </table>
 
+  
+
   <!-- insert notes if present -->
   
 
@@ -253,7 +299,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 21, 2022 20:46+0000">2022-01-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 31, 2022 20:10+0000">2022-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -278,6 +324,8 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   

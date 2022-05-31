@@ -22,13 +22,13 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-careplan"];
-  fhir:StructureDefinition.version [ fhir:value "6.0.0"];
+  fhir:StructureDefinition.version [ fhir:value "6.1.0"];
   fhir:StructureDefinition.name [ fhir:value "CDMCarePlan"];
   fhir:StructureDefinition.title [ fhir:value "CDM CarePlan"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-01-21T20:46:54+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-31T20:10:14+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Alvearie Team"];
-  fhir:StructureDefinition.description [ fhir:value "IBM Health Data Connect Common Data Model definition of what fields we currently define for a care plan"];
+  fhir:StructureDefinition.description [ fhir:value "Health Data Connect Common Data Model definition of what fields we currently define for a care plan"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -2020,7 +2020,11 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Provide a reference or detail, not both" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "detail.empty() or reference.empty()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:detail)) or not(exists(f:reference))" ]
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(f:detail)) or not(exists(f:reference))" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/CarePlan";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/CarePlan>
+         ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
