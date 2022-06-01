@@ -9,6 +9,7 @@ Description:    "Extended set of Identifier type code for Health Data Connect Co
 * #SSRI     "Source System Row Identifier"          "Represents the primary id from the original source system"
 * #ADKEY    "Advantage Database Key"                "Advantage Database Key"
 * #CUSTKEY  "Advantage customer key"                "Advantage customer key"
+* #TKN      "Token identifier"                      "Data tokenization service token"
 
 ValueSet:       IdentifierTypeValueSet
 Id:             identifier-type
