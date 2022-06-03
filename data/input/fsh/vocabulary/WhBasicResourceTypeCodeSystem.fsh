@@ -10,6 +10,6 @@ ValueSet:       WhBasicResourceTypeValueSet
 Id:             wh-basic-resource-type
 Title:          "Health Data Connect Basic Resource Value Set"
 Description:    "Health Data Connect value set for the basic resource type"
+* codes from system http://terminology.hl7.org/CodeSystem/basic-resource-type
 * codes from system WhBasicResourceTypeCodeSystem
-* codes from system BASIC-RESOURCE-TYPE
 
