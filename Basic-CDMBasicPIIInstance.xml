@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="CDMBasicPIIInstance"/>
+  <meta>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+      <valueString value="tenant12345"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+      <valueString value="zgVCJnQBxvshkKBI8Hzz"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-name">
+      <valueString value="HDP"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-client-id">
+      <valueString value="1234"/>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-record-id">
+      <valueIdentifier>
+        <system value="http://ibm.com/AppicationA"/>
+        <value value="7209_07869_e00080779_3938586_2516181"/>
+      </valueIdentifier>
+    </extension>
+    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/source-file-id">
+      <valueString value="e00014543"/>
+    </extension>
+    <source value="http://ibm.com/ApplicationA"/>
+    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-basic"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "CDMBasicPIIInstance" </p><p style="margin-bottom: 0px">Information Source: http://ibm.com/ApplicationA!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cdm-basic.html">CDM Basic</a></p></div><p><b>identifier</b>: Token identifier: 2d86c4246a3c1eb516628bf324w6b9b3 (OFFICIAL)</p><p><b>code</b>: Patient Tokens <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-basic-resource-type.html">Health Data Connect Basic Resource Type Codes</a>#patient-tokens)</span></p><p><b>subject</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>created</b>: 2017-07-25</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <code value="TKN"/>
+      </coding>
+    </type>
+    <system value="http://ibm.com/CodeSystem/local-pii-identifier"/>
+    <value value="2d86c4246a3c1eb516628bf324w6b9b3"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://ibm.com/fhir/cdm/CodeSystem/wh-basic-resource-type"/>
+      <code value="patient-tokens"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/CDMPatientInstance"/>
+  </subject>
+  <created value="2017-07-25"/>
+</Basic>

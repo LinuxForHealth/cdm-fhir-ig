@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig"/>
-  <version value="6.1.0"/>
+  <version value="6.1.1"/>
   <name value="AlvearieFHIRImplementationGuide"/>
   <title value="Alvearie FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-05-31T20:10:14+00:00"/>
+  <date value="2022-06-06T15:56:40+00:00"/>
   <publisher value="Alvearie Team"/>
   <contact>
     <name value="Alvearie Team"/>
@@ -245,6 +245,17 @@
       </reference>
       <name value="CDM Appointment"/>
       <description value="Health Data Connect Common Data Model definition of what fields we currently define for an appointment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cdm-basic"/>
+      </reference>
+      <name value="CDM Basic"/>
+      <description value="Basic is a special type of resource that doesn't correspond to a specific pre-defined HL7 concept. The CDMBasic profile extends the base FHIR Basic resource with support for additional code types."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4894,6 +4905,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/wh-basic-resource-type"/>
+      </reference>
+      <name value="Health Data Connect Basic Resource Value Set"/>
+      <description value="Health Data Connect value set for the basic resource type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/wh-claim-subtype"/>
       </reference>
       <name value="Health Data Connect Claim Subtype Value Set"/>
@@ -5686,6 +5708,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/wh-basic-resource-type"/>
+      </reference>
+      <name value="Health Data Connect Basic Resource Type Codes"/>
+      <description value="Health Data Connect standard codes for the basic resource type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/wh-claim-subtype"/>
       </reference>
       <name value="Health Data Connect Claim Subtype Codes"/>
@@ -5867,6 +5900,17 @@
       <name value="CDM Appointment Example"/>
       <description value="Sample appointment in booked status"/>
       <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <reference>
+        <reference value="Basic/CDMBasicPIIInstance"/>
+      </reference>
+      <name value="CDM Claim - Basic Resource Example"/>
+      <description value="Sample of a CDM Basic Resource with PII token"/>
+      <exampleCanonical value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-basic"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -1,6 +1,6 @@
 {
   "package": "alvearie.fhir.ig",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
   "extensions": [
@@ -3077,6 +3077,12 @@
         "title": "CDM Appointment"
       }
     ],
+    "Basic": [
+      {
+        "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-basic",
+        "title": "CDM Basic"
+      }
+    ],
     "CarePlan": [
       {
         "url": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-careplan",
@@ -3790,6 +3796,7 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id": [
       "Appointment.meta",
+      "Basic.meta",
       "Claim.meta",
       "ClaimResponse.meta",
       "Communication.meta",
@@ -4069,6 +4076,7 @@
       "Procedure"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id": [
+      "Basic.meta",
       "Claim.meta",
       "ClaimResponse.meta",
       "Contract.meta",
@@ -4079,6 +4087,7 @@
       "ServiceRequest.meta"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/process-name": [
+      "Basic.meta",
       "Claim.meta",
       "ClaimResponse.meta",
       "Communication.meta",
@@ -4115,6 +4124,7 @@
       "PractitionerRole.meta"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/process-record-id": [
+      "Basic.meta",
       "Claim.meta",
       "ClaimResponse.meta",
       "Contract.meta",
@@ -4320,6 +4330,7 @@
       "PractitionerRole.meta"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/source-file-id": [
+      "Basic.meta",
       "Claim.meta",
       "ClaimResponse.meta",
       "Contract.meta",
@@ -4377,6 +4388,7 @@
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id": [
       "Appointment.meta",
+      "Basic.meta",
       "Claim.meta",
       "ClaimResponse.meta",
       "Communication.meta",

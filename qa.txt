@@ -3,9 +3,10 @@
 
 err = 29, warn = 0, info = 7
 IG Publisher Version: 1.1.121
-Generated Tue May 31 20:17:09 UTC 2022. FHIR version 4.0.1 for alvearie.fhir.ig#6.1.0 (canonical = http://ibm.com/fhir/cdm)
+Generated Mon Jun 06 16:04:40 UTC 2022. FHIR version 4.0.1 for alvearie.fhir.ig#6.1.1 (canonical = http://ibm.com/fhir/cdm)
  Build Errors : 2 / 0 / 0
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/Appointment-AppointmentExample : 0 / 0 / 3
+ /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/Basic-CDMBasicPIIInstance : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/Claim-CDMClaimDrugInstance : 0 / 2 / 17
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/Claim-CDMClaimFacilityInstance : 0 / 2 / 19
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/Claim-CDMClaimProfessionalInstance : 0 / 2 / 17
@@ -67,6 +68,7 @@ Generated Tue May 31 20:17:09 UTC 2022. FHIR version 4.0.1 for alvearie.fhir.ig#
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/CodeSystem-split-method : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/CodeSystem-ub04-admit-bill-type : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/CodeSystem-ub04-admit-type : 0 / 0 / 1
+ /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/CodeSystem-wh-basic-resource-type : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/CodeSystem-wh-claim-subtype : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/CodeSystem-wh-diagnosis-type : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/CodeSystem-wh-payer-claim-adjustment-type : 0 / 0 / 1
@@ -176,6 +178,7 @@ Generated Tue May 31 20:17:09 UTC 2022. FHIR version 4.0.1 for alvearie.fhir.ig#
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/StructureDefinition-category : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/StructureDefinition-cdm-address : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/StructureDefinition-cdm-appointment : 0 / 0 / 1
+ /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/StructureDefinition-cdm-basic : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/StructureDefinition-cdm-careplan : 0 / 1 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/StructureDefinition-cdm-claim : 0 / 2 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/StructureDefinition-cdm-claim-drug : 0 / 1 / 1
@@ -569,6 +572,7 @@ Generated Tue May 31 20:17:09 UTC 2022. FHIR version 4.0.1 for alvearie.fhir.ig#
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/ValueSet-split-method : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/ValueSet-ub04-admit-bill-type : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/ValueSet-ub04-admit-type : 0 / 0 / 1
+ /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/ValueSet-wh-basic-resource-type : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/ValueSet-wh-claim-subtype : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/ValueSet-wh-diagnosis-type : 0 / 0 / 1
  /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/fsh-generated/resources/ValueSet-wh-organization-type : 0 / 0 / 1
@@ -590,8 +594,9 @@ Generated Tue May 31 20:17:09 UTC 2022. FHIR version 4.0.1 for alvearie.fhir.ig#
 </table>
 == n/a ==
 ERROR: /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/output/ValueSet-citizenship.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 233, column 472: The link 'null' for "http://hl7.org/fhir/ValueSet/iso3166-1-N" cannot be resolved
-ERROR: /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/output/downloads.html#/html/body/div/div/div/div/div/ul/li/p/strong/a at Line 155, column 17: The link 'ig-common-data-model-6.1.0-SNAPSHOT.jar' for "Snapshot v6.1.0 JAR (ig-common-data-model-6.1.0-SNAPSHOT.jar)" cannot be resolved
+ERROR: /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/output/downloads.html#/html/body/div/div/div/div/div/ul/li/p/strong/a at Line 155, column 17: The link 'ig-common-data-model-6.1.1-SNAPSHOT.jar' for "Snapshot v6.1.1 JAR (ig-common-data-model-6.1.1-SNAPSHOT.jar)" cannot be resolved
 == fsh-generated/resources/Appointment-AppointmentExample.json ==
+== fsh-generated/resources/Basic-CDMBasicPIIInstance.json ==
 == fsh-generated/resources/Claim-CDMClaimDrugInstance.json ==
 == fsh-generated/resources/Claim-CDMClaimFacilityInstance.json ==
 == fsh-generated/resources/Claim-CDMClaimProfessionalInstance.json ==
@@ -653,6 +658,7 @@ ERROR: /home/runner/work/alvearie-fhir-ig/alvearie-fhir-ig/build/output/download
 == fsh-generated/resources/CodeSystem-split-method.json ==
 == fsh-generated/resources/CodeSystem-ub04-admit-bill-type.json ==
 == fsh-generated/resources/CodeSystem-ub04-admit-type.json ==
+== fsh-generated/resources/CodeSystem-wh-basic-resource-type.json ==
 == fsh-generated/resources/CodeSystem-wh-claim-subtype.json ==
 == fsh-generated/resources/CodeSystem-wh-diagnosis-type.json ==
 == fsh-generated/resources/CodeSystem-wh-payer-claim-adjustment-type.json ==
@@ -797,6 +803,7 @@ ERROR: PractitionerRole/CDMPractitionerRole-Enrollment: PractitionerRole.special
 == fsh-generated/resources/StructureDefinition-category.json ==
 == fsh-generated/resources/StructureDefinition-cdm-address.json ==
 == fsh-generated/resources/StructureDefinition-cdm-appointment.json ==
+== fsh-generated/resources/StructureDefinition-cdm-basic.json ==
 == fsh-generated/resources/StructureDefinition-cdm-careplan.json ==
 == fsh-generated/resources/StructureDefinition-cdm-claim.json ==
 == fsh-generated/resources/StructureDefinition-cdm-claim-drug.json ==
@@ -1191,6 +1198,7 @@ INFORMATION: StructureDefinition/ffv-initative-resource: StructureDefinition.sna
 == fsh-generated/resources/ValueSet-split-method.json ==
 == fsh-generated/resources/ValueSet-ub04-admit-bill-type.json ==
 == fsh-generated/resources/ValueSet-ub04-admit-type.json ==
+== fsh-generated/resources/ValueSet-wh-basic-resource-type.json ==
 == fsh-generated/resources/ValueSet-wh-claim-subtype.json ==
 == fsh-generated/resources/ValueSet-wh-diagnosis-type.json ==
 == fsh-generated/resources/ValueSet-wh-organization-type.json ==

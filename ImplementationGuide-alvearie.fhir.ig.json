@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AlvearieFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig</pre><div><p>Alvearie FHIR Profiles</p>\n</div></div>"
   },
   "url": "http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "name": "AlvearieFHIRImplementationGuide",
   "title": "Alvearie FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-05-31T20:10:14+00:00",
+  "date": "2022-06-06T15:56:40+00:00",
   "publisher": "Alvearie Team",
   "contact": [
     {
@@ -382,6 +382,20 @@
         },
         "name": "CDM Appointment",
         "description": "Health Data Connect Common Data Model definition of what fields we currently define for an appointment",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/cdm-basic"
+        },
+        "name": "CDM Basic",
+        "description": "Basic is a special type of resource that doesn't correspond to a specific pre-defined HL7 concept. The CDMBasic profile extends the base FHIR Basic resource with support for additional code types.",
         "exampleBoolean": false
       },
       {
@@ -6300,6 +6314,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/wh-basic-resource-type"
+        },
+        "name": "Health Data Connect Basic Resource Value Set",
+        "description": "Health Data Connect value set for the basic resource type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/wh-claim-subtype"
         },
         "name": "Health Data Connect Claim Subtype Value Set",
@@ -7308,6 +7336,20 @@
           }
         ],
         "reference": {
+          "reference": "CodeSystem/wh-basic-resource-type"
+        },
+        "name": "Health Data Connect Basic Resource Type Codes",
+        "description": "Health Data Connect standard codes for the basic resource type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
           "reference": "CodeSystem/wh-claim-subtype"
         },
         "name": "Health Data Connect Claim Subtype Codes",
@@ -7537,6 +7579,20 @@
         "name": "CDM Appointment Example",
         "description": "Sample appointment in booked status",
         "exampleCanonical": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-appointment"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Basic"
+          }
+        ],
+        "reference": {
+          "reference": "Basic/CDMBasicPIIInstance"
+        },
+        "name": "CDM Claim - Basic Resource Example",
+        "description": "Sample of a CDM Basic Resource with PII token",
+        "exampleCanonical": "http://ibm.com/fhir/cdm/StructureDefinition/cdm-basic"
       },
       {
         "extension": [
