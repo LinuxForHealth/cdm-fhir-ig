@@ -39,7 +39,10 @@ Description:    "Sample encounter"
 * period.start = "2020-04-15T09:00:00Z"
 * period.end = "2020-04-15T09:15:00Z"
 
+* extension[claimType].valueCodeableConcept =  WhPayerClaimTypeCodeSystem#financial
+
 * reasonCode = SNOMED#1201005  "Benign essential hypertension" 
+* reasonReference = Reference(CDMProcedureExample)
 
 * diagnosis.condition = Reference(CDMConditionExample)
 * diagnosis.use = ENCOUNTER-DIAGNOSIS-USE#billing "Billing"

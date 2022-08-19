@@ -1,3 +1,9 @@
+Extension:      ClaimType
+Id:             claim-type
+Title:          "Claim Type"
+Description:    "Type of claim determined from the clinical source and not adjudicated claim"
+* value[x] only CodeableConcept
+
 Extension:      InsuredRank
 Id:             insured-rank
 Title:          "Insured Rank"

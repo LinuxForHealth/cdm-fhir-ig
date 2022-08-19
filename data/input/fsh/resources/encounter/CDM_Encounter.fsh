@@ -29,6 +29,13 @@ Description:    "Health Data Connect Common Data Model definition of what fields
 
 * class from EncounterClassValueSet (extensible)
 
+* extension contains ClaimType named claimType 0..1
+* extension[claimType].valueCodeableConcept from ClaimTypeValueSet (extensible)
+* extension[claimType] ^short      = "Type of claim determined from the clinical source and not adjudicated claim"
+* extension[claimType] ^definition = "Type of claim determined from the clinical source and not adjudicated claim"
+
 * extension contains Insured named insured 0..*
 * extension[insured] ^short      = "Insurance context for the encounter"
 * extension[insured] ^definition = "Insurance context for the encounter"
+
+* reasonReference only ReferenceWithReasonAndSequence
