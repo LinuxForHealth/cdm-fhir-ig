@@ -1,3 +1,9 @@
+Extension:      ConditionDiseaseCourse
+Id:             condition-disease-course
+Title:          "Condition Disease Course"
+Description:    "Clinical course of the disease (how the disease behaves over time), such as acute versus chronic"
+* value[x] only CodeableConcept
+
 Extension:      ProblemType
 Id:             problem-type
 Title:          "Problem Type"
