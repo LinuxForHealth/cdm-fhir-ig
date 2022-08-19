@@ -53,29 +53,29 @@ Description:    "Example measure containing criteria for measure rules"
 
 * improvementNotation = MEASURE-IMPROVEMENT-NOTATION#increase
 
-* group.population[0].id = "dm-hba1c-initial-pop"
-* group.population[0].code = MEASURE-POPULATION#initial-population
-* group.population[0].description = "Patients 18-75 years of age with diabetes"
-* group.population[0].criteria.language = EXPRESSION-LANGUAGE#text/cql
-* group.population[0].criteria.expression = "DmHbA1cTest.InInitialPopulation"
+* group.population[InitialPopulation].id = "dm-hba1c-initial-pop"
+* group.population[InitialPopulation].code = MEASURE-POPULATION#initial-population
+* group.population[InitialPopulation].description = "Patients 18-75 years of age with diabetes"
+* group.population[InitialPopulation].criteria.language = EXPRESSION-LANGUAGE#text/cql
+* group.population[InitialPopulation].criteria.expression = "DmHbA1cTest.InInitialPopulation"
 
-* group.population[1].id = "dm-hba1c-den"
-* group.population[1].code = MEASURE-POPULATION#denominator
-* group.population[1].description = "Patients 18-75 years of age with diabetes with a visit during the measurement period"
-* group.population[1].criteria.language = EXPRESSION-LANGUAGE#text/cql
-* group.population[1].criteria.expression = "DmHbA1cTest.InDenominator"
+* group.population[Denominator].id = "dm-hba1c-den"
+* group.population[Denominator].code = MEASURE-POPULATION#denominator
+* group.population[Denominator].description = "Patients 18-75 years of age with diabetes with a visit during the measurement period"
+* group.population[Denominator].criteria.language = EXPRESSION-LANGUAGE#text/cql
+* group.population[Denominator].criteria.expression = "DmHbA1cTest.InDenominator"
 
-* group.population[2].id = "dm-hba1c-num"
-* group.population[2].code = MEASURE-POPULATION#numerator
-* group.population[2].description = "Patients who have had HbA1c test within the measurement period"
-* group.population[2].criteria.language = 	EXPRESSION-LANGUAGE#text/cql
-* group.population[2].criteria.expression = "DmHbA1cTest.InNumerator"
+* group.population[Numerator].id = "dm-hba1c-num"
+* group.population[Numerator].code = MEASURE-POPULATION#numerator
+* group.population[Numerator].description = "Patients who have had HbA1c test within the measurement period"
+* group.population[Numerator].criteria.language = 	EXPRESSION-LANGUAGE#text/cql
+* group.population[Numerator].criteria.expression = "DmHbA1cTest.InNumerator"
 
-* group.population[3].id = "dm-hba1c-caregap-controlled"
-* group.population[3].code = MeasurePopulationTypeCodeSystem#care-gap
-* group.population[3].description = "DM Control - Low Risk"
-* group.population[3].criteria.language = 	http://hl7.org/fhir/expression-language#text/cql
-* group.population[3].criteria.expression = "DmHbA1cTest.InDmControlled"
+* group.population[CareGap].id = "dm-hba1c-caregap-controlled"
+* group.population[CareGap].code = MeasurePopulationTypeCodeSystem#care-gap
+* group.population[CareGap].description = "DM Control - Low Risk"
+* group.population[CareGap].criteria.language = 	http://hl7.org/fhir/expression-language#text/cql
+* group.population[CareGap].criteria.expression = "DmHbA1cTest.InDmControlled"
 
 * group.population[4].id = "dm-hba1c-caregap-poor-control"
 * group.population[4].code = MeasurePopulationTypeCodeSystem#care-gap

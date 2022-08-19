@@ -35,21 +35,21 @@ Description:    "Example measure report containing individual measure results fo
 
 * improvementNotation = MEASURE-IMPROVEMENT-NOTATION#increase
 
-* group.population[0].id = "dm-hba1c-initial-pop"
-* group.population[0].code = MEASURE-POPULATION#initial-population
-* group.population[0].count = 1
+* group.population[InitialPopulation].id = "dm-hba1c-initial-pop"
+* group.population[InitialPopulation].code = MEASURE-POPULATION#initial-population
+* group.population[InitialPopulation].count = 1
 
-* group.population[1].id = "dm-hba1c-den"
-* group.population[1].code = MEASURE-POPULATION#denominator
-* group.population[1].count = 1
+* group.population[Denominator].id = "dm-hba1c-den"
+* group.population[Denominator].code = MEASURE-POPULATION#denominator
+* group.population[Denominator].count = 1
 
-* group.population[2].id = "dm-hba1c-num"
-* group.population[2].code = MEASURE-POPULATION#numerator
-* group.population[2].count = 0
+* group.population[Numerator].id = "dm-hba1c-num"
+* group.population[Numerator].code = MEASURE-POPULATION#numerator
+* group.population[Numerator].count = 0
 
-* group.population[3].id = "dm-hba1c-caregap"
-* group.population[3].code = MeasurePopulationTypeCodeSystem#care-gap
-* group.population[3].count = 1
+* group.population[CareGap].id = "dm-hba1c-caregap"
+* group.population[CareGap].code = MeasurePopulationTypeCodeSystem#care-gap
+* group.population[CareGap].count = 1
 
 // Measure score value is required for proportion measures
 * group.measureScore.value = 0.0
