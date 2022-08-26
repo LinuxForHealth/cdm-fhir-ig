@@ -38,4 +38,4 @@ Description:    "Health Data Connect Common Data Model definition of what fields
 * extension[insured] ^short      = "Insurance context for the encounter"
 * extension[insured] ^definition = "Insurance context for the encounter"
 
-* reasonReference only ReferenceWithReasonAndSequence
+* reasonReference only ReferenceWithSequence

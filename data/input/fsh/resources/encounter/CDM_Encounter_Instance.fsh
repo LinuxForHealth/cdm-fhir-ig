@@ -43,6 +43,7 @@ Description:    "Sample encounter"
 
 * reasonCode = SNOMED#1201005  "Benign essential hypertension" 
 * reasonReference = Reference(CDMProcedureExample)
+* reasonReference.extension[referenceSequence].valuePositiveInt = 1
 
 * diagnosis.condition = Reference(CDMConditionExample)
 * diagnosis.use = ENCOUNTER-DIAGNOSIS-USE#billing "Billing"
