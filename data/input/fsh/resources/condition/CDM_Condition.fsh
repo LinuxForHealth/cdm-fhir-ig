@@ -42,10 +42,6 @@ Description:    "Health Data Connect Common Data Model definition of what fields
 * extension[problemPriority] ^short      = "Problem priority code"
 * extension[problemPriority] ^definition = "Problem priority code"
 
-* extension contains ProblemClinicalCourse named problemClinicalCourse 0..1
-* extension[problemClinicalCourse] ^short      = "Problem clinical course code"
-* extension[problemClinicalCourse] ^definition = "Problem clinical course code"
-
 * extension contains RecorderFacility named recorderFacility 0..1 
 * extension[recorderFacility] ^short      = "Facility where condition was recorded"
 * extension[recorderFacility] ^definition = "Facility where condition was recorded"
