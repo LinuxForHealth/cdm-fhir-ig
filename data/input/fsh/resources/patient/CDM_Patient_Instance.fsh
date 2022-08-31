@@ -146,4 +146,4 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 
 * extension[snapshotAgeInWeeks].valueUnsignedInt   = 3
 * extension[snapshotAgeInMonths].valueUnsignedInt  = 1
-* extension[snapshotAgeCalculated].valueDate      = "1990-01-25"
+* extension[snapshotAgeCalculated].valueDateTime   = "1990-01-25T00:00:00.000Z"
