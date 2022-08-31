@@ -34,7 +34,7 @@ Extension:      SnapshotAgeCalculated
 Id:             snapshot-age-calculated
 Title:          "Snapshot Age Calculated"
 Description:    "Date indicating when the age fields were calculated"
-* value[x] only date
+* value[x] only dateTime
 
 Extension:      EmployeeSnapshotAgeInYears
 Id:             employee-snapshot-age-in-years
