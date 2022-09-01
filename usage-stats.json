@@ -1,6 +1,6 @@
 {
   "package": "alvearie.fhir.ig",
-  "version": "6.1.1",
+  "version": "7.0.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
   "extensions": [
@@ -301,6 +301,13 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-type",
+      "title": "Claim Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/cobra-indicator",
       "title": "Cobra Indicator",
       "types": [
@@ -522,6 +529,14 @@
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/compound-code",
       "title": "Compound Code",
       "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/condition-disease-course",
+      "title": "Condition Disease Course",
+      "types": [
+        "CodeableConcept",
         "CodeableConcept"
       ]
     },
@@ -2240,13 +2255,6 @@
       ]
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/problem-clinical-course",
-      "title": "Problem Clinical Course",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/problem-priority",
       "title": "Problem Priority",
       "types": [
@@ -2392,6 +2400,13 @@
       "title": "Reference Period",
       "types": [
         "Period"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/reference-sequence",
+      "title": "Reference Sequence",
+      "types": [
+        "positiveInt"
       ]
     },
     {
@@ -2719,15 +2734,29 @@
       ]
     },
     {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-calculated",
+      "title": "Snapshot Age Calculated",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-months",
-      "title": "Snapshot Age in months",
+      "title": "Snapshot Age in Months",
+      "types": [
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-weeks",
+      "title": "Snapshot Age in Weeks",
       "types": [
         "unsignedInt"
       ]
     },
     {
       "url": "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years",
-      "title": "Age In Years",
+      "title": "Snapshot Age In Years",
       "types": [
         "unsignedInt"
       ]
@@ -3480,6 +3509,9 @@
       "ClaimResponse",
       "ExplanationOfBenefit"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/claim-type": [
+      "Encounter"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/cobra-indicator": [
       "Coverage"
     ],
@@ -3546,6 +3578,9 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/compound-code": [
       "Claim.item",
       "ExplanationOfBenefit.item"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/condition-disease-course": [
+      "Condition"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/conversation-type": [
       "Communication",
@@ -4059,9 +4094,6 @@
       "Claim.insurance",
       "ExplanationOfBenefit.insurance"
     ],
-    "http://ibm.com/fhir/cdm/StructureDefinition/problem-clinical-course": [
-      "Condition"
-    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/problem-priority": [
       "Condition"
     ],
@@ -4214,6 +4246,10 @@
       "Patient.generalPractitioner",
       "Reference"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/reference-sequence": [
+      "Encounter.reasonReference",
+      "Reference"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/referral-indicator": [
       "Claim",
       "ExplanationOfBenefit"
@@ -4303,8 +4339,15 @@
     "http://ibm.com/fhir/cdm/StructureDefinition/short-term-disability-benefit-rate": [
       "Coverage"
     ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-calculated": [
+      "Patient"
+    ],
     "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-months": [
-      "Coverage"
+      "Coverage",
+      "Patient"
+    ],
+    "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-weeks": [
+      "Patient"
     ],
     "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years": [
       "Claim",

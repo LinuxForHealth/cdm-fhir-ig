@@ -25,6 +25,25 @@ anonymous resourcescontained resources","",0,0,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Encounter.extension:claimType","Encounter.extension","claimType","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/claim-type]]} {[]}
+","Type of claim determined from the clinical source and not adjudicated claim","Type of claim determined from the clinical source and not adjudicated claim","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Encounter.extension:claimType.id","Encounter.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Encounter.extension:claimType.extension","Encounter.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Encounter.extension:claimType.url","Encounter.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://ibm.com/fhir/cdm/StructureDefinition/claim-type""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
+"Encounter.extension:claimType.value[x]","Encounter.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
+"Encounter.extension:claimType.value[x]:valueCodeableConcept","Encounter.extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"extensible","","http://ibm.com/fhir/cdm/ValueSet/claim-type","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A"
 "Encounter.extension:insured","Encounter.extension","insured","","",0,*,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/insured]]} {[]}
 ","Insurance context for the encounter","Insurance context for the encounter","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -202,10 +221,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Admission diagnosis","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Coded reason the encounter takes place","Reason the encounter takes place, expressed as a code. For admissions, this can be used for a coded admission diagnosis.","For systems that need to know which was the primary diagnosis, these will be marked with the standard extension primaryDiagnosis (which is a sequence value rather than a flag, 1 = primary diagnosis).","","","","","","","","",,"preferred","Reason why the encounter takes place.","http://hl7.org/fhir/ValueSet/encounter-reason","",,,,"Encounter.reasonCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.reasonCode",".reasonCode","FiveWs.why[x]","EVN-4 / PV2-3 (note: PV2-3 is nominally constrained to inpatient admissions; HL7 v2 makes no vocabulary suggestions for PV2-3; would not expect PV2 segment or PV2-3 to be in use in all implementations )"
-"Encounter.reasonReference","Encounter.reasonReference","","Indication
-Admission diagnosis","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Procedure], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation]]}
-","Reason the encounter takes place (reference)","Reason the encounter takes place, expressed as a code. For admissions, this can be used for a coded admission diagnosis.","For systems that need to know which was the primary diagnosis, these will be marked with the standard extension primaryDiagnosis (which is a sequence value rather than a flag, 1 = primary diagnosis).","","","","","","","","",,,,,"",,,,"Encounter.reasonReference",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Event.reasonCode",".reasonCode","FiveWs.why[x]","EVN-4 / PV2-3 (note: PV2-3 is nominally constrained to inpatient admissions; HL7 v2 makes no vocabulary suggestions for PV2-3; would not expect PV2 segment or PV2-3 to be in use in all implementations )"
+"Encounter.reasonReference","Encounter.reasonReference","","","",0,*,"","","Y","Reference {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/reference-with-sequence]]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Procedure], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation]]}
+","A reference from one resource to another","A reference from one resource to another.","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.","","","","","","","","",,,,,"",,,,"Encounter.reasonReference",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
 "Encounter.diagnosis","Encounter.diagnosis","","","",0,*,"","","Y","BackboneElement {[]} {[]}
 ","The list of diagnosis relevant to this encounter","The list of diagnosis relevant to this encounter.","","","","","","","","","",,,,,"",,,,"Encounter.diagnosis",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=RSON]"

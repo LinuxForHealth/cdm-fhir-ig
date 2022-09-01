@@ -146,6 +146,15 @@
   <extension url="http://ibm.com/fhir/cdm/StructureDefinition/veteran-indicator">
     <valueString value="N"/>
   </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-weeks">
+    <valueUnsignedInt value="3"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-months">
+    <valueUnsignedInt value="1"/>
+  </extension>
+  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-calculated">
+    <valueDateTime value="1990-01-25T00:00:00.000Z"/>
+  </extension>
   <identifier>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state">
       <valueBoolean value="false"/>
@@ -328,7 +337,6 @@
   </telecom>
   <gender value="male"/>
   <birthDate value="1990-01-04"/>
-  <deceasedDateTime value="2020-09-28T00:00:00Z"/>
   <address>
     <extension url="http://ibm.com/fhir/cdm/StructureDefinition/county-code">
       <valueCodeableConcept>

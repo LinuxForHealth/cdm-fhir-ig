@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig"/>
-  <version value="6.1.1"/>
+  <version value="7.0.0"/>
   <name value="AlvearieFHIRImplementationGuide"/>
   <title value="Alvearie FHIR Implementation Guide"/>
   <status value="active"/>
-  <date value="2022-06-06T15:56:40+00:00"/>
+  <date value="2022-09-01T20:48:10+00:00"/>
   <publisher value="Alvearie Team"/>
   <contact>
     <name value="Alvearie Team"/>
@@ -854,6 +854,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/reference-with-sequence"/>
+      </reference>
+      <name value="Reference With Sequence"/>
+      <description value="A reference with an optional sequence defining the order in which the reference is considered"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1264,6 +1275,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/claim-type"/>
+      </reference>
+      <name value="Claim Type"/>
+      <description value="Type of claim determined from the clinical source and not adjudicated claim"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/cobra-indicator"/>
       </reference>
       <name value="Cobra Indicator"/>
@@ -1466,6 +1488,17 @@
       </reference>
       <name value="Compound Code"/>
       <description value="Customer-specific code for the compound of the drug"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-disease-course"/>
+      </reference>
+      <name value="Condition Disease Course"/>
+      <description value="Clinical course of the disease (how the disease behaves over time), such as acute versus chronic"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3255,17 +3288,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/problem-clinical-course"/>
-      </reference>
-      <name value="Problem Clinical Course"/>
-      <description value="Problem clinical course code"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/problem-priority"/>
       </reference>
       <name value="Problem Priority"/>
@@ -3479,6 +3501,17 @@
       </reference>
       <name value="Reference Period"/>
       <description value="A time period in which the reference is valid"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/reference-sequence"/>
+      </reference>
+      <name value="Reference Sequence"/>
+      <description value="Ordered rank of the reference. This can apply to any of the referenced resources. For example, Procedure ranked as 1, 2,3, etc."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3750,10 +3783,32 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/snapshot-age-calculated"/>
+      </reference>
+      <name value="Snapshot Age Calculated"/>
+      <description value="Date indicating when the age fields were calculated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/snapshot-age-in-months"/>
       </reference>
-      <name value="Snapshot Age in months"/>
+      <name value="Snapshot Age in Months"/>
       <description value="Age in months at the time of the event"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/snapshot-age-in-weeks"/>
+      </reference>
+      <name value="Snapshot Age in Weeks"/>
+      <description value="Age in weeks at the time of the event"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3763,7 +3818,7 @@
       <reference>
         <reference value="StructureDefinition/snapshot-age-in-years"/>
       </reference>
-      <name value="Age In Years"/>
+      <name value="Snapshot Age In Years"/>
       <description value="Age in years at the time of the event"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -4927,6 +4982,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/wh-condition-course"/>
+      </reference>
+      <name value="Health Data Connect Condition Course  Value Set"/>
+      <description value="Health Data Connect value set for clinical course of a disease (how the disease behaves over time)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/wh-diagnosis-type"/>
       </reference>
       <name value="Health Data Connect Diagnosis Type Value Set"/>
@@ -5723,6 +5789,17 @@
       </reference>
       <name value="Health Data Connect Claim Subtype Codes"/>
       <description value="Health Data Connect standard codes for the claim subtypes used to further define the claim type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/wh-condition-course"/>
+      </reference>
+      <name value="Health Data Connect Condition Course Codes"/>
+      <description value="Health Data Connect codes for clinical course of a disease (how the disease behaves over time). These are part of SNOMED course parent concept (288524001)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

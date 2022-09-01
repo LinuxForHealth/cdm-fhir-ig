@@ -45,7 +45,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"QualityMeasureExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://ibm.com/fhir/quality-measure!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-quality-measure.html\">Quality Measure</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification}\">http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification</span></p></div><p><b>Measure Parameter</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Measure</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Measure \"QualityMeasureExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://ibm.com/fhir/quality-measure!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-quality-measure.html\">Quality Measure</a></p><p style=\"margin-bottom: 0px\">Tag: <span title=\"{http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification}\">http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification</span></p></div><p><b>Measure Parameter</b>: </p><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here</b></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -98,7 +98,7 @@
        fhir:Reference.display [ fhir:value "HDC" ]
      ]
   ];
-  fhir:Measure.version [ fhir:value "6.1.1"];
+  fhir:Measure.version [ fhir:value "7.0.0"];
   fhir:Measure.name [ fhir:value "Diabetes_HbA1c_Test_Performed"];
   fhir:Measure.status [ fhir:value "active"];
   fhir:Measure.subjectCodeableConcept [
@@ -204,21 +204,6 @@
        ]
      ], [
        fhir:index 1;
-       fhir:Element.id [ fhir:value "dm-hba1c-den" ];
-       fhir:Measure.group.population.code [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
-           fhir:Coding.code [ fhir:value "denominator" ]
-         ]
-       ];
-       fhir:Measure.group.population.description [ fhir:value "Patients 18-75 years of age with diabetes with a visit during the measurement period" ];
-       fhir:Measure.group.population.criteria [
-         fhir:Expression.language [ fhir:value "text/cql" ];
-         fhir:Expression.expression [ fhir:value "DmHbA1cTest.InDenominator" ]
-       ]
-     ], [
-       fhir:index 2;
        fhir:Element.id [ fhir:value "dm-hba1c-num" ];
        fhir:Measure.group.population.code [
          fhir:CodeableConcept.coding [
@@ -231,6 +216,21 @@
        fhir:Measure.group.population.criteria [
          fhir:Expression.language [ fhir:value "text/cql" ];
          fhir:Expression.expression [ fhir:value "DmHbA1cTest.InNumerator" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.id [ fhir:value "dm-hba1c-den" ];
+       fhir:Measure.group.population.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ];
+           fhir:Coding.code [ fhir:value "denominator" ]
+         ]
+       ];
+       fhir:Measure.group.population.description [ fhir:value "Patients 18-75 years of age with diabetes with a visit during the measurement period" ];
+       fhir:Measure.group.population.criteria [
+         fhir:Expression.language [ fhir:value "text/cql" ];
+         fhir:Expression.expression [ fhir:value "DmHbA1cTest.InDenominator" ]
        ]
      ], [
        fhir:index 3;

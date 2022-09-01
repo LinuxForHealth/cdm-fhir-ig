@@ -12,9 +12,9 @@
   <sch:pattern>
     <sch:title>f:Condition</sch:title>
     <sch:rule context="f:Condition">
+      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/condition-disease-course']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/condition-disease-course': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-type']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-type': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-priority']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-priority': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-clinical-course']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/problem-clinical-course': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/recorder-facility']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/recorder-facility': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

@@ -59,7 +59,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">6.1.1 - draft
+            <span style="display:inline-block;">7.0.0 - draft
 
 
 
@@ -131,7 +131,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v6.1.1). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v7.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -700,6 +700,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A reference with a period defining the time period in which the reference is valid</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reference-with-sequence.html"
+                     title="StructureDefinition/reference-with-sequence">Reference With Sequence</a>
+               </td>
+               <td>
+<p>A reference with an optional sequence defining the order in which the reference is considered</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -1047,6 +1056,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-claim-type.html"
+                     title="StructureDefinition/claim-type">Claim Type</a>
+               </td>
+               <td>
+<p>Type of claim determined from the clinical source and not adjudicated claim</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-cobra-indicator.html"
                      title="StructureDefinition/cobra-indicator">Cobra Indicator</a>
                </td>
@@ -1224,6 +1242,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Customer-specific code for the compound of the drug</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-condition-disease-course.html"
+                     title="StructureDefinition/condition-disease-course">Condition Disease Course</a>
+               </td>
+               <td>
+<p>Clinical course of the disease (how the disease behaves over time), such as acute versus chronic</p>
 </td>
             </tr>
             <tr>
@@ -2684,15 +2711,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-problem-clinical-course.html"
-                     title="StructureDefinition/problem-clinical-course">Problem Clinical Course</a>
-               </td>
-               <td>
-<p>Problem clinical course code</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-problem-priority.html"
                      title="StructureDefinition/problem-priority">Problem Priority</a>
                </td>
@@ -2869,6 +2887,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>A time period in which the reference is valid</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-reference-sequence.html"
+                     title="StructureDefinition/reference-sequence">Reference Sequence</a>
+               </td>
+               <td>
+<p>Ordered rank of the reference. This can apply to any of the referenced resources. For example, Procedure ranked as 1, 2,3, etc.</p>
 </td>
             </tr>
             <tr>
@@ -3089,8 +3116,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-snapshot-age-calculated.html"
+                     title="StructureDefinition/snapshot-age-calculated">Snapshot Age Calculated</a>
+               </td>
+               <td>
+<p>Date indicating when the age fields were calculated</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-snapshot-age-in-months.html"
-                     title="StructureDefinition/snapshot-age-in-months">Snapshot Age in months</a>
+                     title="StructureDefinition/snapshot-age-in-months">Snapshot Age in Months</a>
                </td>
                <td>
 <p>Age in months at the time of the event</p>
@@ -3098,8 +3134,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-snapshot-age-in-weeks.html"
+                     title="StructureDefinition/snapshot-age-in-weeks">Snapshot Age in Weeks</a>
+               </td>
+               <td>
+<p>Age in weeks at the time of the event</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-snapshot-age-in-years.html"
-                     title="StructureDefinition/snapshot-age-in-years">Age In Years</a>
+                     title="StructureDefinition/snapshot-age-in-years">Snapshot Age In Years</a>
                </td>
                <td>
 <p>Age in years at the time of the event</p>
@@ -4044,6 +4089,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-wh-condition-course.html"
+                     title="ValueSet/wh-condition-course">Health Data Connect Condition Course  Value Set</a>
+               </td>
+               <td>
+<p>Health Data Connect value set for clinical course of a disease (how the disease behaves over time)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-wh-diagnosis-type.html"
                      title="ValueSet/wh-diagnosis-type">Health Data Connect Diagnosis Type Value Set</a>
                </td>
@@ -4699,6 +4753,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Health Data Connect standard codes for the claim subtypes used to further define the claim type</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-wh-condition-course.html"
+                     title="CodeSystem/wh-condition-course">Health Data Connect Condition Course Codes</a>
+               </td>
+               <td>
+<p>Health Data Connect codes for clinical course of a disease (how the disease behaves over time). These are part of SNOMED course parent concept (288524001).</p>
 </td>
             </tr>
             <tr>
@@ -5496,7 +5559,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#6.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 6, 2022 15:56+0000">2022-06-06</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#7.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 1, 2022 20:48+0000">2022-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>AlvearieFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig</pre><div><p>Alvearie FHIR Profiles</p>\n</div></div>"
   },
   "url": "http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig",
-  "version": "6.1.1",
+  "version": "7.0.0",
   "name": "AlvearieFHIRImplementationGuide",
   "title": "Alvearie FHIR Implementation Guide",
   "status": "active",
-  "date": "2022-06-06T15:56:40+00:00",
+  "date": "2022-09-01T20:48:10+00:00",
   "publisher": "Alvearie Team",
   "contact": [
     {
@@ -1158,6 +1158,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/reference-with-sequence"
+        },
+        "name": "Reference With Sequence",
+        "description": "A reference with an optional sequence defining the order in which the reference is considered",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -1680,6 +1694,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/claim-type"
+        },
+        "name": "Claim Type",
+        "description": "Type of claim determined from the clinical source and not adjudicated claim",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/cobra-indicator"
         },
         "name": "Cobra Indicator",
@@ -1936,6 +1964,20 @@
         },
         "name": "Compound Code",
         "description": "Customer-specific code for the compound of the drug",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/condition-disease-course"
+        },
+        "name": "Condition Disease Course",
+        "description": "Clinical course of the disease (how the disease behaves over time), such as acute versus chronic",
         "exampleBoolean": false
       },
       {
@@ -4214,20 +4256,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/problem-clinical-course"
-        },
-        "name": "Problem Clinical Course",
-        "description": "Problem clinical course code",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/problem-priority"
         },
         "name": "Problem Priority",
@@ -4498,6 +4526,20 @@
         },
         "name": "Reference Period",
         "description": "A time period in which the reference is valid",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/reference-sequence"
+        },
+        "name": "Reference Sequence",
+        "description": "Ordered rank of the reference. This can apply to any of the referenced resources. For example, Procedure ranked as 1, 2,3, etc.",
         "exampleBoolean": false
       },
       {
@@ -4844,10 +4886,38 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/snapshot-age-calculated"
+        },
+        "name": "Snapshot Age Calculated",
+        "description": "Date indicating when the age fields were calculated",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/snapshot-age-in-months"
         },
-        "name": "Snapshot Age in months",
+        "name": "Snapshot Age in Months",
         "description": "Age in months at the time of the event",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/snapshot-age-in-weeks"
+        },
+        "name": "Snapshot Age in Weeks",
+        "description": "Age in weeks at the time of the event",
         "exampleBoolean": false
       },
       {
@@ -4860,7 +4930,7 @@
         "reference": {
           "reference": "StructureDefinition/snapshot-age-in-years"
         },
-        "name": "Age In Years",
+        "name": "Snapshot Age In Years",
         "description": "Age in years at the time of the event",
         "exampleBoolean": false
       },
@@ -6342,6 +6412,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/wh-condition-course"
+        },
+        "name": "Health Data Connect Condition Course  Value Set",
+        "description": "Health Data Connect value set for clinical course of a disease (how the disease behaves over time)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/wh-diagnosis-type"
         },
         "name": "Health Data Connect Diagnosis Type Value Set",
@@ -7354,6 +7438,20 @@
         },
         "name": "Health Data Connect Claim Subtype Codes",
         "description": "Health Data Connect standard codes for the claim subtypes used to further define the claim type",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/wh-condition-course"
+        },
+        "name": "Health Data Connect Condition Course Codes",
+        "description": "Health Data Connect codes for clinical course of a disease (how the disease behaves over time). These are part of SNOMED course parent concept (288524001).",
         "exampleBoolean": false
       },
       {

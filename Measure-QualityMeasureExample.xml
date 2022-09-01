@@ -26,7 +26,7 @@
     </tag>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "QualityMeasureExample" </p><p style="margin-bottom: 0px">Information Source: http://ibm.com/fhir/quality-measure!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-quality-measure.html">Quality Measure</a></p><p style="margin-bottom: 0px">Tag: <span title="{http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification}">http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification</span></p></div><p><b>Measure Parameter</b>: </p><p><b style="color: maroon">Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here</b></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Measure</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Measure "QualityMeasureExample" </p><p style="margin-bottom: 0px">Information Source: http://ibm.com/fhir/quality-measure!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-quality-measure.html">Quality Measure</a></p><p style="margin-bottom: 0px">Tag: <span title="{http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification}">http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification</span></p></div><p><b>Measure Parameter</b>: </p><p><b style="color: maroon">Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here</b></p></div>
   </text>
   <extension url="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter">
     <valueParameterDefinition>
@@ -69,7 +69,7 @@
       <display value="HDC"/>
     </assigner>
   </identifier>
-  <version value="6.1.1"/>
+  <version value="7.0.0"/>
   <name value="Diabetes_HbA1c_Test_Performed"/>
   <status value="active"/>
   <subjectCodeableConcept>
@@ -152,19 +152,6 @@
         <expression value="DmHbA1cTest.InInitialPopulation"/>
       </criteria>
     </population>
-    <population id="dm-hba1c-den">
-      <code>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
-          <code value="denominator"/>
-        </coding>
-      </code>
-      <description value="Patients 18-75 years of age with diabetes with a visit during the measurement period"/>
-      <criteria>
-        <language value="text/cql"/>
-        <expression value="DmHbA1cTest.InDenominator"/>
-      </criteria>
-    </population>
     <population id="dm-hba1c-num">
       <code>
         <coding>
@@ -176,6 +163,19 @@
       <criteria>
         <language value="text/cql"/>
         <expression value="DmHbA1cTest.InNumerator"/>
+      </criteria>
+    </population>
+    <population id="dm-hba1c-den">
+      <code>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/measure-population"/>
+          <code value="denominator"/>
+        </coding>
+      </code>
+      <description value="Patients 18-75 years of age with diabetes with a visit during the measurement period"/>
+      <criteria>
+        <language value="text/cql"/>
+        <expression value="DmHbA1cTest.InDenominator"/>
       </criteria>
     </population>
     <population id="dm-hba1c-caregap-controlled">
