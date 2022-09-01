@@ -34,6 +34,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
 
+      - name: Add exception for workspace directory for git
+        run: git config --global --add safe.directory /github/workspace
+
       - name: Update release notes (gren)
         env:
             GREN_GITHUB_TOKEN: ${{ secrets.GREN_GITHUB_TOKEN }}
