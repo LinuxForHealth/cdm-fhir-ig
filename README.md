@@ -85,7 +85,7 @@ open ./build/output/history.md
 
 ## Contribution Guide
 
-Since we have not completely moved our development into the open yet, external contributions are limited. If you would like to make contributions, please create an issue detailing the change. We will work with you to get it merged in.
+Since we have not completely moved our development into the open yet, external contributions are limited. If you would like to make contributions, please create an issue detailing the change. We will work with you to review and merge it in.
 
 You must have git configured for signed-by commmits.  See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 

@@ -29,6 +29,11 @@ Description:    "Health Data Connect Common Data Model definition of what fields
 * identifier[Source].system 1..1
 * identifier[Source].value 1..1
 
+* extension contains ConditionDiseaseCourse named conditionDiseaseCourse 0..1
+* extension[conditionDiseaseCourse].valueCodeableConcept from WhConditionCourseValueSet (example)
+* extension[conditionDiseaseCourse] ^short      = "Clinical course of the disease (how the disease behaves over time), such as acute versus chronic"
+* extension[conditionDiseaseCourse] ^definition = "Clinical course of the disease (how the disease behaves over time), such as acute versus chronic"
+
 * extension contains ProblemType named problemType 0..1 
 * extension[problemType] ^short      = "Problem type code"
 * extension[problemType] ^definition = "Problem type code"
@@ -36,10 +41,6 @@ Description:    "Health Data Connect Common Data Model definition of what fields
 * extension contains ProblemPriority named problemPriority 0..1
 * extension[problemPriority] ^short      = "Problem priority code"
 * extension[problemPriority] ^definition = "Problem priority code"
-
-* extension contains ProblemClinicalCourse named problemClinicalCourse 0..1
-* extension[problemClinicalCourse] ^short      = "Problem clinical course code"
-* extension[problemClinicalCourse] ^definition = "Problem clinical course code"
 
 * extension contains RecorderFacility named recorderFacility 0..1 
 * extension[recorderFacility] ^short      = "Facility where condition was recorded"

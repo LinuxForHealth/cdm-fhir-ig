@@ -115,3 +115,15 @@ Description:    "Health Data Connect Common Data Model definition of what fields
 * extension contains VeteranIndicator named veteranIndicator 0..1
 * extension[veteranIndicator] ^short      = "Indicates whether the individual served in the active military, naval, or air service"
 * extension[veteranIndicator] ^definition = "Indicates whether the individual served in the active military, naval, or air service"
+
+* extension contains SnapshotAgeInWeeks named snapshotAgeInWeeks 0..1
+* extension[snapshotAgeInWeeks] ^short      = "Age in weeks of the patient at a point in time"
+* extension[snapshotAgeInWeeks] ^definition = "Age in weeks at the patient at a point in time"
+
+* extension contains SnapshotAgeInMonths named snapshotAgeInMonths 0..1
+* extension[snapshotAgeInMonths] ^short      = "Age in months of the patient at a point in time"
+* extension[snapshotAgeInMonths] ^definition = "Age in months of the patient at a point in time"
+
+* extension contains SnapshotAgeCalculated named snapshotAgeCalculated 0..1
+* extension[snapshotAgeCalculated] ^short      = "Date indicating when the age fields were calculated"
+* extension[snapshotAgeCalculated] ^definition = "Date indicating when the age fields were calculated"

@@ -69,8 +69,6 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 * name.family   = "McLastname"
 * birthDate     = "1990-01-04"
 
-* deceasedDateTime = "2020-09-28T00:00:00Z"
-
 * gender = #male
 * extension[sexAssignedAtBirth].valueCodeableConcept = SexAssignedAtBirthCodeSystem#male
 
@@ -145,3 +143,7 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 * telecom[3].use = #home
 * telecom[3].value = "fmclastname@fakemail.com"
 * telecom[3].rank = 3
+
+* extension[snapshotAgeInWeeks].valueUnsignedInt   = 3
+* extension[snapshotAgeInMonths].valueUnsignedInt  = 1
+* extension[snapshotAgeCalculated].valueDateTime   = "1990-01-25T00:00:00.000Z"

@@ -27,3 +27,5 @@ Description:    "Sample of a hypertension condition diagnosed by a condition rec
 * recordedDate = "2020-01-04"
 * recorder = Reference(DrKelly)
 * asserter = Reference(DrKelly)
+
+* extension[conditionDiseaseCourse].valueCodeableConcept = WhConditionCourseCodeSystem#373935005

@@ -47,21 +47,21 @@ Description:    "Example measure report containing measure results for an attrib
 
 * improvementNotation = MEASURE-IMPROVEMENT-NOTATION#increase
 
-* group.population[0].id = "dm-hba1c-initial-pop"
-* group.population[0].code = MEASURE-POPULATION#initial-population
-* group.population[0].subjectResults = Reference(InitialPopulationPatientList)
+* group.population[InitialPopulation].id = "dm-hba1c-initial-pop"
+* group.population[InitialPopulation].code = MEASURE-POPULATION#initial-population
+* group.population[InitialPopulation].subjectResults = Reference(InitialPopulationPatientList)
 
-* group.population[1].id = "dm-hba1c-den"
-* group.population[1].code = MEASURE-POPULATION#denominator
-* group.population[1].subjectResults = Reference(DenominatorPatientList)
+* group.population[Denominator].id = "dm-hba1c-den"
+* group.population[Denominator].code = MEASURE-POPULATION#denominator
+* group.population[Denominator].subjectResults = Reference(DenominatorPatientList)
 
-* group.population[2].id = "dm-hba1c-num"
-* group.population[2].code = MEASURE-POPULATION#numerator
-* group.population[2].subjectResults = Reference(NumeratorPatientList)
+* group.population[Numerator].id = "dm-hba1c-num"
+* group.population[Numerator].code = MEASURE-POPULATION#numerator
+* group.population[Numerator].subjectResults = Reference(NumeratorPatientList)
 
-* group.population[3][0].id = "dm-hba1c-caregap"
-* group.population[3][0].code = MeasurePopulationTypeCodeSystem#care-gap
-* group.population[3][0].subjectResults = Reference(CareGapPatientList)
+* group.population[CareGap][0].id = "dm-hba1c-caregap"
+* group.population[CareGap][0].code = MeasurePopulationTypeCodeSystem#care-gap
+* group.population[CareGap][0].subjectResults = Reference(CareGapPatientList)
 
 // We should not have both a count and subjectResult list
 // You shoould include one or the other
