@@ -31,11 +31,11 @@ jobs:
       # Gren configuration is stored in .grenrc.js
       # See https://github.com/github-tools/github-release-notes for more details
       # --------------------------------------------------------------------------------------------
-      - name: Checkout Repo
-        uses: actions/checkout@v2
-
       - name: Add exception for workspace directory for git
         run: git config --global --add safe.directory /github/workspace
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
 
       - name: Update release notes (gren)
         env:
