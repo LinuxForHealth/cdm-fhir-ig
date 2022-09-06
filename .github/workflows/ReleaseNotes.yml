@@ -31,9 +31,6 @@ jobs:
       # Gren configuration is stored in .grenrc.js
       # See https://github.com/github-tools/github-release-notes for more details
       # --------------------------------------------------------------------------------------------
-      - name: Add exception for workspace directory for git
-        run: git config --global --add safe.directory /github/workspace
-
       - name: Checkout Repo
         uses: actions/checkout@v3
 
@@ -46,7 +43,7 @@ jobs:
             gren changelog --override 
 
       - name: push
-        uses: actions-x/commit
+        uses: actions-x/commit@v2
         with:
           message: "Github action updated history.md on release {{ github.event.release.tag_name }}" 
           
