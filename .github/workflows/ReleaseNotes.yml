@@ -36,10 +36,12 @@ jobs:
 
       - name: Checkout Repo
         uses: actions/checkout@v3
-        
-      - name: Set ownership
-        run: |
-            chown -R $(id -u):$(id -g) $PWD
+        with:
+          set-safe-directory: true
+       
+      #- name: Set ownership
+      #  run: |
+      #      chown -R $(id -u):$(id -g) $PWD
 
       - name: Update release notes (gren)
         env:
@@ -50,7 +52,7 @@ jobs:
             gren changelog --override 
 
       - name: push
-        uses: actions-x/commit@v2
+        uses: actions-x/commit
         with:
           message: "Github action updated history.md on release {{ github.event.release.tag_name }}" 
           
