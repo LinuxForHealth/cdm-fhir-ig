@@ -39,7 +39,7 @@ jobs:
         
       - name: Set ownership
         run: |
-          # Hack to fix GIT action error: Detected dubious ownership in repository at '/github/workspace'
+          # Fix for new GIT action error: Detected dubious ownership in repository at '/github/workspace'
           chown -R $(id -u):$(id -g) $PWD
 
       - name: Update release notes (gren)
