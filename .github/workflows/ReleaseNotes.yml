@@ -31,21 +31,27 @@ jobs:
       # Gren configuration is stored in .grenrc.js
       # See https://github.com/github-tools/github-release-notes for more details
       # --------------------------------------------------------------------------------------------
-      - name: Checkout Repo
+      - name: Checkout Repo (v3)
         uses: actions/checkout@v3
 
       - name: Update release notes (gren)
         env:
             GREN_GITHUB_TOKEN: ${{ secrets.GREN_GITHUB_TOKEN }}
-        run: |
+        run:  |
             npm install github-release-notes -g
             gren release --tags=${{ github.event.release.tag_name }} --override
             gren changelog --override 
 
-      - name: push
-        uses: actions-x/commit@v2
-        with:
-          message: "Github action updated history.md on release {{ github.event.release.tag_name }}" 
+      #- name: push (V6)
+      #  uses: actions-x/commit@v2
+      #  with:
+      #    message: "Github action updated history.md on release {{ github.event.release.tag_name }}" 
+
+      - name: Push changes (manual)
+        run:  |
+            git add .
+            git commit -m "Github action updated history.md on release {{ github.event.release.tag_name }}"
+            git push
           
       # --------------------------------------------------------------------------------------------
       # BUILD THE IG
