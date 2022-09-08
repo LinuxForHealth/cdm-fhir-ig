@@ -4,6 +4,8 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  # allows the workflow to be manually executed any time
+  workflow_dispatch:
 
 jobs:
   build-and-publish:
