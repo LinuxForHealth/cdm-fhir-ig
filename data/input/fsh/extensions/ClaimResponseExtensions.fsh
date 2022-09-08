@@ -9,7 +9,7 @@ Id:          claim-adjustment-type
 Title:       "Claim Adjustment Type"
 Description: "The code for the claim's adjustment type" 
 * value[x] only CodeableConcept
-* valueCodeableConcept from WhPayerClaimAdjustmentTypeValueSet (extensible)
+* valueCodeableConcept from PayerClaimAdjustmentTypeValueSet (extensible)
 
 Extension:   ClaimReceivedDate
 Id:          claim-received-date
@@ -70,7 +70,7 @@ Id:          claim-response-item-status
 Title:       "Claim Response Item Status"
 Description: "Payment status of claim item"
 * value[x] only CodeableConcept
-* valueCodeableConcept from WHPayerClaimStatusValueSet (extensible)
+* valueCodeableConcept from PayerClaimStatusValueSet (extensible)
 
 Extension:   ClaimResponseBenefitPlan
 Id:          claim-response-benefit-plan

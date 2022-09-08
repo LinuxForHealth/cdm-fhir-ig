@@ -1,7 +1,7 @@
-CodeSystem:     WhPayerProviderTypeCodeSystem
-Id:             wh-payer-provider-type
-Title:          "Health Data Connect Provider Type Codes"
-Description:    "Health Data Connect standard provider type code as reported on the claim."
+CodeSystem:     PayerProviderTypeCodeSystem
+Id:             payer-provider-type
+Title:          "Payer Provider Type Codes"
+Description:    "Payer provider type code as reported on the claim."
 * ^caseSensitive = true
 * #1    "Acute Care Hospital"                   ""
 * #5	"Ambulatory Surgery Centers"            ""
@@ -139,16 +139,16 @@ Description:    "Health Data Connect standard provider type code as reported on 
 * #955  "Unknown Clinic"                        ""
 * #960	"Case Manager"                          ""
 
-ValueSet:       WhOrganizationTypeValueSet
-Id:             wh-organization-type
-Title:          "WH Organization Value Set"
+ValueSet:       OrganizationTypeValueSet
+Id:             organization-type
+Title:          "Organization Type Value Set"
 Description:    "Health Data Connect standard values for organization type"
-* codes from system WhPayerProviderTypeCodeSystem
+* codes from system PayerProviderTypeCodeSystem
 * codes from system ORGANIZATION-TYPE
 
-ValueSet:       WhPractitionerRoleTypeValueSet
-Id:             wh-practitioner-role-type
-Title:          "WH Practitioner Role Type Value Set"
-Description:    "Health Data Connect standard values for practitioner role type"
-* codes from system WhPayerProviderTypeCodeSystem
+ValueSet:       PractitionerRoleTypeValueSet
+Id:             practitioner-role-type
+Title:          "Practitioner Role Type Value Set"
+Description:    "Standard values for practitioner role type"
+* codes from system PayerProviderTypeCodeSystem
 * codes from system PRACTITIONER-ROLE

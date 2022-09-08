@@ -39,7 +39,7 @@ Description:      "Health Data Connect Common Data Model definition of what fiel
 
 * name 1..1 
 
-* type from WhOrganizationTypeValueSet (example)
+* type from OrganizationTypeValueSet (example)
 
 * address only CDMAddress
 * telecom only CDMContactPoint

@@ -194,7 +194,7 @@ Description:    "Code indicating the regular shift which the employee is sched
 Extension:      EmployeeStatus
 Id:             employee-status
 Title:          "Employee Status"
-Description:    "Status of the employee based on one or more code systems. Example codes include HIPAA (HipaaEmployeeStatusCodeSystem), Payer (WhPayerEmployeeStatusCodeSystem) or customer-specific codes."
+Description:    "Status of the employee based on one or more code systems. Example codes include HIPAA (HipaaEmployeeStatusCodeSystem), Payer (PayerEmployeeStatusCodeSystem) or customer-specific codes."
 * value[x] only CodeableConcept
 
 Extension:      EmployeeSubBusinessUnit
@@ -341,8 +341,8 @@ Title:          "Union Worker Indicator"
 Description:    "Indicator that the contract holder (subscriber) belongs to a union"
 * value[x] only string
 
-Extension:      WhPayerRecordPopulationCount
-Id:             wh-payer-record-population-count
-Title:          "Health Data Connect Record Population Count"
+Extension:      PayerRecordPopulationCount
+Id:             payer-record-population-count
+Title:          "Payer Record Population Count"
 Description:    "Specifies whether the member should be counted as eligible for the coverage period"
 * value[x] only integer

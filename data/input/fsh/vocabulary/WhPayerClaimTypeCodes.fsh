@@ -1,7 +1,7 @@
-CodeSystem:     WhPayerClaimTypeCodeSystem
-Id:             wh-payer-claim-type
-Title:          "Health Data Connect Claim Type Codes"
-Description:    "Health Data Connect stanard codes for the coverage type under which the claim was paid"
+CodeSystem:     PayerClaimTypeCodeSystem
+Id:             payer-claim-type
+Title:          "Payer Claim Type Codes"
+Description:    "Payer codes for the coverage type under which the claim was paid"
 * ^caseSensitive = true
 * #absentee         "Absentee"                                                        ""
 * #adminfee	        "Administrative Fee"                                              ""
@@ -28,5 +28,5 @@ Description:    "Health Data Connect stanard codes for the coverage type under w
 ValueSet:       ClaimTypeValueSet
 Id:             claim-type
 Title:          "Claim Type Value Set"
-Description:    "Health Data Connect standard value set for the coverage type under which the claim was paid"
-* codes from system WhPayerClaimTypeCodeSystem
+Description:    "Value set for the coverage type under which the claim was paid"
+* codes from system PayerClaimTypeCodeSystem

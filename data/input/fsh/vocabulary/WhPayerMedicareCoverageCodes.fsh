@@ -1,7 +1,7 @@
-CodeSystem:     WhPayerMedicareCoverageCodeSystem
-Id:             wh-payer-medicare-coverage
-Title:          "Health Data Connect Medicare Coverage Codes"
-Description:    "Health Data Connect standard code for the type of Medicare coverage, if any, for the person"
+CodeSystem:     PayerMedicareCoverageCodeSystem
+Id:             payer-medicare-coverage
+Title:          "Payer Medicare Coverage Codes"
+Description:    "Payer codes for the type of Medicare coverage, if any, for the person"
 * ^caseSensitive = true
 * #2          "Both Parts A and B"           "Both Parts A and B"
 * #3          "Parts A, B and D"             "Parts A, B and D"
@@ -12,8 +12,8 @@ Description:    "Health Data Connect standard code for the type of Medicare cove
 * #F          "Parts B and D"                "Parts B and D"
 * #N          "Not Eligible for Medicare"    "Not Eligible for Medicare"
 
-ValueSet:       WhPayerMedicareCoverageValueSet
-Id:             wh-payer-medicare-coverage
-Title:          "Health Data Connect Medicare Coverage Value Set"
-Description:    "Health Data Connect standard value set for the type of Medicare coverage, if any, for the person"
-* codes from system WhPayerMedicareCoverageCodeSystem
+ValueSet:       PayerMedicareCoverageValueSet
+Id:             payer-medicare-coverage
+Title:          "Payer Medicare Coverage Value Set"
+Description:    "Value set containting payer coees for the type of Medicare coverage, if any, for the person"
+* codes from system PayerMedicareCoverageCodeSystem

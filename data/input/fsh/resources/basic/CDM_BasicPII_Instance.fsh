@@ -20,7 +20,7 @@ Description:    "Sample of a CDM Basic Resource with PII token"
 * identifier.system             = "http://ibm.com/CodeSystem/local-pii-identifier"
 * identifier.value              = "2d86c4246a3c1eb516628bf324w6b9b3"
 
-* code     = WhBasicResourceTypeCodeSystem#patient-tokens
+* code     =  BasicResourceTypeCodeSystem#patient-tokens
 * subject  =  Reference(CDMPatientInstance)
 * created  = "2017-07-25"
 

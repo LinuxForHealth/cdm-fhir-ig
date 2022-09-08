@@ -28,7 +28,7 @@ Description:    "Sample of a CDM Professional Claim"
 * extension[snapshotAgeInYears].valueUnsignedInt   = 20
 * status   = #active
 
-* type.coding[0]   = WhPayerClaimTypeCodeSystem#medical
+* type.coding[0]   = PayerClaimTypeCodeSystem#medical
 * type.coding[1]   = http://acme-health.com/CodeSystem/local-claim-type#Medical
 
 * use      = #claim
@@ -59,10 +59,10 @@ Description:    "Sample of a CDM Professional Claim"
 * insurance.extension[lineOfBusiness].valueCodeableConcept     = http://acme-health.com/CodeSystem/local-line-of-business#LocalLineOfBusiness
 * insurance.extension[priorAuthorizationIndicator].valueString = "Y"
 
-* accident.type.coding        = WhPayerIndicatorsCodeSystem#N
+* accident.type.coding        = PayerIndicatorsCodeSystem#N
 * accident.date               = "2017-06-25"
 
-* subType.coding              = WhClaimSubtypeCodeSystem#emergency
+* subType.coding              = ClaimSubtypeCodeSystem#emergency
 
 * item.sequence                                  = 1
 * item.careTeamSequence                          = 2
@@ -103,7 +103,7 @@ Description:    "Sample of a CDM Professional Claim"
 * extension[participatingPlan].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-participating-plan#LocalParticipatingPlan
 * extension[referralIndicator].valueString                 = "N"
 * extension[submissionType].valueCodeableConcept           = http://acme-health.com/CodeSystem/local-submission-type#SubmitType
-* extension[whPayerPcpResponsibilityIndicator].valueString = "Y"
+* extension[payerPcpResponsibilityIndicator].valueString = "Y"
 
 * referral = Reference(CDMServiceRequestInstance)
 

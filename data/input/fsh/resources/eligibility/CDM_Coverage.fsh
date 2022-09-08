@@ -8,7 +8,7 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 
 * identifier only CDMIdentifier
 
-* class.type from WhPayerCoverageClassValueSet (extensible)
+* class.type from PayerCoverageClassValueSet (extensible)
 * period 1..1
 * payor 1..1
 
@@ -146,12 +146,12 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[unionWorkerIndicator] ^definition = "Indicator that the contract holder (subscriber) belongs to a union"
 
 * extension contains EmployeeEducationLevel named employeeEducationLevel 0..1
-* extension[employeeEducationLevel].valueCodeableConcept from WhPayerEducationLevelValueSet (extensible)
+* extension[employeeEducationLevel].valueCodeableConcept from PayerEducationLevelValueSet (extensible)
 * extension[employeeEducationLevel] ^short      = "Code indicating the highest level of education that the employee has completed"
 * extension[employeeEducationLevel] ^definition = "Code indicating the highest level of education that the employee has completed (e.g., not a high school graduate, high school graduate, some college, associates degree, bachelors degree, graduate degree)"
 
 * extension contains EmployeeGender named employeeGender 0..1
-* extension[employeeGender].valueCodeableConcept from WhPayerGenderValueSet (extensible)
+* extension[employeeGender].valueCodeableConcept from PayerGenderValueSet (extensible)
 * extension[employeeGender] ^short      = "Employee gender code"
 * extension[employeeGender] ^definition = "Employee gender code"
 
@@ -168,7 +168,7 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[employeeTerminationReason] ^definition = "Code indicating the reason for employee termination, if the employee was terminated (e.g., discharged, resigned)"
 
 * extension contains EmployeeJobTitle named employeeJobTitle 0..1
-* extension[employeeJobTitle].valueCodeableConcept from WhPayerJobTitleValueSet (extensible)
+* extension[employeeJobTitle].valueCodeableConcept from PayerJobTitleValueSet (extensible)
 * extension[employeeJobTitle] ^short      = "Job title of the employee"
 * extension[employeeJobTitle] ^definition = "Job title of the employee"
  
@@ -182,7 +182,7 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 
 * extension contains EmployeeStatus named employeeStatus 0..1
 * extension[employeeStatus] ^short      = "Status of the employee based on one or more code systems"
-* extension[employeeStatus] ^definition = "Status of the employee based on one or more code systems. Example codes include HIPAA (HipaaEmployeeStatusCodeSystem), Payer (WhPayerEmployeeStatusCodeSystem) or customer-specific codes."
+* extension[employeeStatus] ^definition = "Status of the employee based on one or more code systems. Example codes include HIPAA (HipaaEmployeeStatusCodeSystem), Payer (PayerEmployeeStatusCodeSystem) or customer-specific codes."
 
 * extension contains EmployeeUnionId named employeeUnionId 0..1
 * extension[employeeUnionId] ^short      = "Identification for the labor union member"
@@ -222,7 +222,7 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[longTermDisabilityBenefitRate] ^definition = "Long term disability (LTD) benefit rate, expressed as a percentage of base wages (for example, 50.00%, 60.00%, 70.00%)"
 
 * extension contains MedicareCoverage named medicareCoverage 0..1
-* extension[medicareCoverage].valueCodeableConcept from WhPayerMedicareCoverageValueSet (extensible)
+* extension[medicareCoverage].valueCodeableConcept from PayerMedicareCoverageValueSet (extensible)
 * extension[medicareCoverage] ^short      = "Standard code for the type of Medicare coverage, if any, for the person"
 * extension[medicareCoverage] ^definition = "Standard code for the type of Medicare coverage, if any, for the person"
 
@@ -255,12 +255,12 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[ssiIndicator] ^definition = "Indicates if the person receives Supplemental Security Income (SSI) administered via the Social Security Administration (SSA), at the time of coverage"
 
 * extension contains SsiStatus named ssiStatus 0..1
-* extension[ssiStatus].valueCodeableConcept from WhPayerSsiStatusValueSet (extensible)
+* extension[ssiStatus].valueCodeableConcept from PayerSsiStatusValueSet (extensible)
 * extension[ssiStatus] ^short      = "Standard code of the Supplemental Security Income (SSI) status for the person, at the time of coverage"
 * extension[ssiStatus] ^definition = "Standard code of the Supplemental Security Income (SSI) status for the person, at the time of coverage"
 
 * extension contains TanfBenefits named tanfBenefits 0..1
-* extension[tanfBenefits].valueCodeableConcept from WhPayerTanfBenefitValueSet (extensible)
+* extension[tanfBenefits].valueCodeableConcept from PayerTanfBenefitValueSet (extensible)
 * extension[tanfBenefits] ^short      = "Standard code of the Temporary Assistance for Needy Families (TANF) benefits for the person"
 * extension[tanfBenefits] ^definition = "Standard code of the Temporary Assistance for Needy Families (TANF) benefits for the person"
 
@@ -272,6 +272,6 @@ Description:    "Describes the healthcare benefit coverage of a member as it rel
 * extension[subscriberIdEncrypted] ^short      = "Encrypted identifier of the subscriber or family"
 * extension[subscriberIdEncrypted] ^definition = "Encrypted identifier of the subscriber or family"
 
-* extension contains WhPayerRecordPopulationCount named whPayerRecordPopulationCount 0..1
-* extension[whPayerRecordPopulationCount] ^short      = "Specifies whether the member should be counted as eligible for the coverage period"
-* extension[whPayerRecordPopulationCount] ^definition = "Specifies whether the member should be counted as eligible for the coverage period. A value of 1 is used to count the member as eligible for the coverage period. Else the value should be 0."
+* extension contains PayerRecordPopulationCount named payerRecordPopulationCount 0..1
+* extension[payerRecordPopulationCount] ^short      = "Specifies whether the member should be counted as eligible for the coverage period"
+* extension[payerRecordPopulationCount] ^definition = "Specifies whether the member should be counted as eligible for the coverage period. A value of 1 is used to count the member as eligible for the coverage period. Else the value should be 0."

@@ -24,7 +24,7 @@ Description:    "Sample of a CDM Drug Claim"
 * extension[snapshotAgeInYears].valueUnsignedInt   = 20
 * status   = #active
 
-* type.coding[0]   = WhPayerClaimTypeCodeSystem#pharmacy
+* type.coding[0]   = PayerClaimTypeCodeSystem#pharmacy
 * type.coding[1]   = http://acme-health.com/CodeSystem/local-claim-type#Pharmacy
 
 * use      = #claim
@@ -135,4 +135,4 @@ Description:    "Sample of a CDM Drug Claim"
 * extension[lastClaimIndicator].valueString                = "Y"
 * extension[rxCount].valueUnsignedInt                      = 1
 * extension[submissionType].valueCodeableConcept           = http://acme-health.com/CodeSystem/local-submission-type#SubmitType1
-* extension[whPayerPcpResponsibilityIndicator].valueString = "N"
+* extension[payerPcpResponsibilityIndicator].valueString = "N"

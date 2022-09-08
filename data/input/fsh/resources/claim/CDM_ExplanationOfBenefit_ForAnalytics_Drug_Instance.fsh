@@ -23,7 +23,7 @@ Description:    "Sample of a CDM Explanation of Benefit for a pharmacy claim"
 * extension[snapshotAgeInYears].valueUnsignedInt   = 27
 * status   = #active
 
-* type.coding[0]   = WhPayerClaimTypeCodeSystem#pharmacy
+* type.coding[0]   = PayerClaimTypeCodeSystem#pharmacy
 * type.coding[1]   = http://acme-health.com/CodeSystem/local-claim-type#Pharmacy
 
 * use      = #claim

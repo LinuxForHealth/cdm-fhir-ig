@@ -1,7 +1,7 @@
-CodeSystem:     WhPayerEmployeeStatusCodeSystem
-Id:             wh-payer-employee-status-code
-Title:          "Health Data Connect Employee Status Codes"
-Description:    "Health Data Connect standard employee status value set for claims"
+CodeSystem:     PayerEmployeeStatusCodeSystem
+Id:             payer-employee-status-code
+Title:          "payer Employee Status Codes"
+Description:    "Payer employee status value set for claims"
 * ^caseSensitive = true
 * #1	"Active Full Time"              "Active Full Time"
 * #2	"Active Part-Time/Seasonal"     "Active Part-Time/Seasonal"
@@ -13,8 +13,8 @@ Description:    "Health Data Connect standard employee status value set for clai
 * #8	"Surviving Spouse/Dependent"    "Surviving Spouse/Dependent"
 * #9	"Other/Unknown"                 "Other/Unknown"
  
-ValueSet:       WhPayerEmployeeStatusValueSet
-Id:             wh-payer-employee-status-code
-Title:          "Health Data Connect Employee Status Value Set"
-Description:    "Health Data Connect standard employee status value set for claims"
-* codes from system WhPayerEmployeeStatusCodeSystem
+ValueSet:       PayerEmployeeStatusValueSet
+Id:             payer-employee-status-code
+Title:          "Payer Employee Status Value Set"
+Description:    "Payer employee status value set for claims"
+* codes from system PayerEmployeeStatusCodeSystem

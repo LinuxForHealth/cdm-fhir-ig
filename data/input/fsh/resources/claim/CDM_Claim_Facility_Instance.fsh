@@ -29,7 +29,7 @@ Description:    "Sample of a CDM Facility Claim"
 
 * status   = #active
 
-* type.coding[0]   = WhPayerClaimTypeCodeSystem#medical
+* type.coding[0]   = PayerClaimTypeCodeSystem#medical
 * type.coding[1]   = http://acme-health.com/CodeSystem/local-claim-type#Medical
 
 * use      = #claim
@@ -58,10 +58,10 @@ Description:    "Sample of a CDM Facility Claim"
 * careTeam[3].qualification.coding.system = "http://acme-health.com/CodeSystem/local-specialty"
 * careTeam[3].qualification.coding.code   = #01
 
-* accident.type.coding        = WhPayerIndicatorsCodeSystem#N
+* accident.type.coding        = PayerIndicatorsCodeSystem#N
 * accident.date               = "1900-01-01"
 
-* subType.coding              = WhClaimSubtypeCodeSystem#emergency
+* subType.coding              = ClaimSubtypeCodeSystem#emergency
 
 * insurance.sequence          = 1
 * insurance.focal             = true
@@ -184,7 +184,7 @@ Description:    "Sample of a CDM Facility Claim"
 * extension[referralIndicator].valueString                 = "N"
 * extension[snapshotAgeInYears].valueUnsignedInt           = 20
 * extension[submissionType].valueCodeableConcept           = http://acme-health.com/CodeSystem/local-submission-type#SubmitType
-* extension[whPayerPcpResponsibilityIndicator].valueString = "N"
+* extension[payerPcpResponsibilityIndicator].valueString = "N"
 
 * item.sequence                           = 1
 * item.careTeamSequence                   = 2
@@ -220,7 +220,7 @@ Description:    "Sample of a CDM Facility Claim"
 
 * diagnosis[3].sequence                  = 4
 * diagnosis[3].diagnosisCodeableConcept  = ICD10#W11.XXXA "Fall on and from ladder, initial encounter"
-* diagnosis[3].type                      = WhDiagnosisTypeCodeSystem#external-cause
+* diagnosis[3].type                      = DiagnosisTypeCodeSystem#external-cause
 
 * procedure[0].sequence                  = 1
 * procedure[0].procedureCodeableConcept	 = CPT#95958 "Special EEG Tests"

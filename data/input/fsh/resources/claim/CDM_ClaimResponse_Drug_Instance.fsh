@@ -25,7 +25,7 @@ Description:    "Sample of a CDM Drug Claim Response"
 * extension[claimStatus].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-status#LocClaimSts
 * extension[claimReceivedDate].valueDate      = "2017-06-01"
 
-* type.coding[0]    = WhPayerClaimTypeCodeSystem#pharmacy
+* type.coding[0]    = PayerClaimTypeCodeSystem#pharmacy
 * type.coding[1]    = http://acme-health.com/CodeSystem/local-claim-type#Pharmacy
 
 * use      = #claim
@@ -81,7 +81,7 @@ Description:    "Sample of a CDM Drug Claim Response"
 * item.adjudication[19].category     = AdjudicationCategoryCodeSystem#medicare-paid
 * item.adjudication[19].amount.value = 0.00
 
-* item.extension[claimResponseItemStatus].valueCodeableConcept = WhPayerClaimStatusCodeSystem#P "Paid"
+* item.extension[claimResponseItemStatus].valueCodeableConcept = PayerClaimStatusCodeSystem#P "Paid"
 * item.extension[claimResponseBenefitPlan].valueReference = Reference(CoverageDrugExample)
 
 * item.extension[rxFormularyIndicator].valueString     = "N"
@@ -96,6 +96,6 @@ Description:    "Sample of a CDM Drug Claim Response"
 * payment.type                   = PAYMENT-TYPE#complete
 * payment.amount.value           = 5.00
 * payment.adjustmentReason[0]    = http://acme-health.com/CodeSystem/local-adjustment-reason#local-adj-reason
-* payment.extension[claimAdjustmentType][0].valueCodeableConcept = WhPayerClaimAdjustmentTypeCodeSystem#1
+* payment.extension[claimAdjustmentType][0].valueCodeableConcept = PayerClaimAdjustmentTypeCodeSystem#1
 * payment.extension[claimAdjustmentType][1].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-adjustment-type#LocalClaimAdjType
 * payment.extension[dispositionReason][0].valueCodeableConcept  = http://acme-health.com/CodeSystem/local-disposition-reason#record-in-error-correct-and-resubmit

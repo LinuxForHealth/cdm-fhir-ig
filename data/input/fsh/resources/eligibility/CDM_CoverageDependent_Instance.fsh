@@ -37,12 +37,12 @@ Description:        "Example of a coverage record for a child beneficiary"
 * extension[enrollmentPcpZipOnEnrollment].valueString     = "75014"
 * extension[enrollmentPcp].valueString                    = "EnrollmentPCP1"
 
-* class[0].type.coding  = WhPayerCoverageClassCodeSystem#election-tier
+* class[0].type.coding  = PayerCoverageClassCodeSystem#election-tier
 * class[0].value        = "Family"
-* class[1].type.coding  = WhPayerCoverageClassCodeSystem#group-type
+* class[1].type.coding  = PayerCoverageClassCodeSystem#group-type
 * class[1].value        = "HMO" 
 * class[2].type.coding  = COVERAGE-CLASS#group
 * class[2].value        = "GR12345"
 
 * relationship.coding[0] = SUBSCRIBER-RELATIONSHIP#child
-* relationship.coding[1] = WhPayerSubscriberRelationshipCodeSystem#childother
+* relationship.coding[1] = PayerSubscriberRelationshipCodeSystem#childother

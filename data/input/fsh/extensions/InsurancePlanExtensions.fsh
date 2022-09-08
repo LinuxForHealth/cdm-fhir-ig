@@ -124,92 +124,92 @@ Title:          "Vision Fully Insured Indicator"
 Description:    "Indicator of the fully insured vision coverage for the member or employee"
 * value[x] only string
 
-Extension:      WhPayerDentalCoverageIndicator
-Id:             wh-payer-dental-coverage-indicator
-Title:          "Dental Coverage Indicator"
+Extension:      PayerDentalCoverageIndicator
+Id:             payer-dental-coverage-indicator
+Title:          "Payer Dental Coverage Indicator"
 Description:    "Indicates whether the member has dental benefit coverage: Y or N"
 * value[x] only string
 
-Extension:      WhPayerDrugCoverageIndicator
-Id:             wh-payer-drug-coverage-indicator
-Title:          "Drug Coverage Indicator"
+Extension:      PayerDrugCoverageIndicator
+Id:             payer-drug-coverage-indicator
+Title:          "Payer Drug Coverage Indicator"
 Description:    "Indicates whether the member has drug benefit coverage: Y or N"
 * value[x] only string
 
-Extension:      WhPayerHearingCoverageIndicator
-Id:             wh-payer-hearing-coverage-indicator
-Title:          "Hearing Coverage Indicator"
+Extension:      PayerHearingCoverageIndicator
+Id:             payer-hearing-coverage-indicator
+Title:          "Payer Hearing Coverage Indicator"
 Description:    "Indicates whether the member has hearing benefit coverage: Y or N"
 * value[x] only string
 
-Extension:      WhPayerLongtermCareCoverageIndicator
-Id:             wh-payer-long-term-care-coverage-indicator
-Title:          "Longterm Care Coverage Indicator"
+Extension:      PayerLongtermCareCoverageIndicator
+Id:             payer-long-term-care-coverage-indicator
+Title:          "Payer Longterm Care Coverage Indicator"
 Description:    "Indicates whether the member or employee has long-term care benefit coverage"
 * value[x] only string
 
-Extension:      WhPayerManagedCarePlanType
-Id:             wh-payer-managed-care-plan-type
-Title:          "Managed Care Plan Type"
+Extension:      PayerManagedCarePlanType
+Id:             payer-managed-care-plan-type
+Title:          "Payer Managed Care Plan Type"
 Description:    "Code for the managed care plan type under which the eligible individual is enrolled"
 * value[x] only CodeableConcept
 
-Extension:      WhPayerMedicalCoverageIndicator
-Id:             wh-payer-medical-coverage-indicator
-Title:          "Medical Coverage Indicator"
+Extension:      PayerMedicalCoverageIndicator
+Id:             payer-medical-coverage-indicator
+Title:          "Payer Medical Coverage Indicator"
 Description:    "Indicates whether the member has medical benefit coverage: Y or N"
 * value[x] only string
 
-Extension:      WhPayerMentalHealthAmbulatoryCoverageIndicator
-Id:             wh-payer-mental-health-ambulatory-coverage-indicator
-Title:          "Mental Health Ambulatory Coverage Indicator"
+Extension:      PayerMentalHealthAmbulatoryCoverageIndicator
+Id:             payer-mental-health-ambulatory-coverage-indicator
+Title:          "Payer Mental Health Ambulatory Coverage Indicator"
 Description:    "Indicates whether the member has mental health ambulatory benefit coverage: Y or N. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 * value[x] only string
 
-Extension:      WhPayerMentalHealthDayNightCoverageIndicator
-Id:             wh-payer-mental-health-day-night-coverage-indicator
-Title:          "Mental Health Day Night Coverage Indicator"
+Extension:      PayerMentalHealthDayNightCoverageIndicator
+Id:             payer-mental-health-day-night-coverage-indicator
+Title:          "Payer Mental Health Day Night Coverage Indicator"
 Description:    "Indicates whether the member has mental health day-night benefit coverage: Y or N. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 * value[x] only string
 
-Extension:      WhPayerMentalHealthInpatientCoverageIndicator
-Id:             wh-payer-mental-health-inpatient-coverage-indicator
-Title:          "Mental Health Inpatient Coverage Indicator"
+Extension:      PayerMentalHealthInpatientCoverageIndicator
+Id:             payer-mental-health-inpatient-coverage-indicator
+Title:          "Payer Mental Health Inpatient Coverage Indicator"
 Description:    "Indicates whether the member has mental health Inpatient benefit coverage: Y or N. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 * value[x] only string
 
-Extension:      WhPayerPsychCoverageIndicator
-Id:             wh-payer-psych-coverage-indicator
-Title:          "Psychiatric Coverage Indicator"
+Extension:      PayerPsychCoverageIndicator
+Id:             payer-psych-coverage-indicator
+Title:          "Payer Psychiatric Coverage Indicator"
 Description:    "Indicates whether the member has mental health and substance abuse benefit coverage: Y or N"
 * value[x] only string
 
-Extension:      WhPayerShorttermCareCoverageIndicator
-Id:             wh-payer-short-term-care-coverage-indicator
-Title:          "Shortterm Care Coverage Indicator"
+Extension:      PayerShorttermCareCoverageIndicator
+Id:             payer-short-term-care-coverage-indicator
+Title:          "Payer Shortterm Care Coverage Indicator"
 Description:    "Indicates whether the member or employee has short-term care benefit coverage"
 * value[x] only string
 
-Extension:      WhPayerSubstanceAbuseAmbulatoryCoverageIndicator
-Id:             wh-payer-substance-abuse-ambulatory-coverage-indicator
-Title:          "Substance Abuse Ambulatory Coverage Indicator"
+Extension:      PayerSubstanceAbuseAmbulatoryCoverageIndicator
+Id:             payer-substance-abuse-ambulatory-coverage-indicator
+Title:          "Payer Substance Abuse Ambulatory Coverage Indicator"
 Description:    "Indicator of Substance Abuse (chemical dependency) Ambulatory benefit coverage for the member. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 * value[x] only string
 
-Extension:      WhPayerSubstanceAbuseDayNightCoverageIndicator
-Id:             wh-payer-substance-abuse-day-night-coverage-indicator
-Title:          "Substance Abuse Day-Night Coverage Indicator"
+Extension:      PayerSubstanceAbuseDayNightCoverageIndicator
+Id:             payer-substance-abuse-day-night-coverage-indicator
+Title:          "Payer Substance Abuse Day-Night Coverage Indicator"
 Description:    "Indicator of Substance Abuse (chemical dependency) day-night benefit coverage for the member. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 * value[x] only string
 
-Extension:      WhPayerSubstanceAbuseInpatientCoverageIndicator
-Id:             wh-payer-substance-abuse-inpatient-coverage-indicator
-Title:          "Substance Abuse Inpatient Coverage Indicator"
+Extension:      PayerSubstanceAbuseInpatientCoverageIndicator
+Id:             payer-substance-abuse-inpatient-coverage-indicator
+Title:          "Payer Substance Abuse Inpatient Coverage Indicator"
 Description:    "Indicator of Substance Abuse (chemical dependency) inpatient benefit coverage for the member. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 * value[x] only string
 
-Extension:      WhPayerVisionCoverageIndicator
-Id:             wh-payer-vision-coverage-indicator
-Title:          "Vision Coverage Indicator"
+Extension:      PayerVisionCoverageIndicator
+Id:             payer-vision-coverage-indicator
+Title:          "Payer Vision Coverage Indicator"
 Description:    "Indicates whether the member has vision benefit coverage: Y or N"
 * value[x] only string

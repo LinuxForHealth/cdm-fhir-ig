@@ -1,13 +1,13 @@
-CodeSystem:     WhPayerGenderCodeSystem
-Id:             wh-payer-gender
-Title:          "Health Data Connect Gender Codes"
-Description:    "Health Data Connect gender code"
+CodeSystem:     PayerGenderCodeSystem
+Id:             payer-gender
+Title:          "Payer Gender Codes"
+Description:    "Payer gender codes"
 * ^caseSensitive = true
 * #M    "Male"      "Male"
 * #F    "Female"    "Female"
 
-ValueSet:       WhPayerGenderValueSet
-Id:             wh-payer-gender
-Title:          "Health Data Connect Gender Value Set"
-Description:    "Health Data Connect gender value set"
-* codes from system WhPayerGenderCodeSystem
+ValueSet:       PayerGenderValueSet
+Id:             payer-gender
+Title:          "Payer Gender Value Set"
+Description:    "Payer gender value set"
+* codes from system PayerGenderCodeSystem

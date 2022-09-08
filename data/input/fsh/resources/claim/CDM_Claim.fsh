@@ -14,7 +14,7 @@ Description:    "A provider issued list of professional services and products wh
 * identifier.type  from IdentifierTypeValueSet (extensible) 
 
 * type                    from ClaimTypeValueSet (extensible)
-* subType                 from WhClaimSubtypeValueSet (extensible)
+* subType                 from ClaimSubtypeValueSet (extensible)
 * supportingInfo.category from ClaimSupportingInfoCategoryValueSet (extensible)
 * supportingInfo.code     from ClaimSupportingInfoTypeValueSet (extensible)
 
@@ -24,12 +24,12 @@ Description:    "A provider issued list of professional services and products wh
 * diagnosis.extension contains MajorDiagnosticCategory named majorDiagnosticCategory 0..1
 * diagnosis.extension[majorDiagnosticCategory]  ^short           = "The body system or disease related groupings of clinical conditions, based on diagnosis codes"
 * diagnosis.extension[majorDiagnosticCategory]  ^definition      = "The body system or disease related groupings of clinical conditions, based on diagnosis codes"
-* diagnosis.extension[majorDiagnosticCategory].valueCodeableConcept from WHPayerMajorDiagnosticCategoryValueSet (extensible)
+* diagnosis.extension[majorDiagnosticCategory].valueCodeableConcept from PayerMajorDiagnosticCategoryValueSet (extensible)
 
 * procedure.extension contains ProcedureGroup named procedureGroup 0..1
 * procedure.extension[procedureGroup]  ^short           = "Code assigned to categorize related procedures"
 * procedure.extension[procedureGroup]  ^definition      = "Code assigned to categorize related procedures"
-* procedure.extension[procedureGroup].valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
+* procedure.extension[procedureGroup].valueCodeableConcept from PayerProcedureGroupValueSet (extensible)
 
 * item.extension contains CapitatedServiceIndicator named capitatedServiceIndicator 0..1
 * item.extension[capitatedServiceIndicator] ^short      = "Indicates whether this service (encounter record) was capitated" 
@@ -121,7 +121,7 @@ Description:    "A provider issued list of professional services and products wh
 * extension[submissionType] ^short      = "Customer-specific code for the type of electronic submission"
 * extension[submissionType] ^definition = "Customer-specific code for the type of electronic submission"
 
-* extension contains WhPayerPcpResponsibilityIndicator named whPayerPcpResponsibilityIndicator 0..1
-* extension[whPayerPcpResponsibilityIndicator] ^short      =  "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim"
-* extension[whPayerPcpResponsibilityIndicator] ^definition =  "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim"
+* extension contains PayerPcpResponsibilityIndicator named payerPcpResponsibilityIndicator 0..1
+* extension[payerPcpResponsibilityIndicator] ^short      =  "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim"
+* extension[payerPcpResponsibilityIndicator] ^definition =  "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim"
 

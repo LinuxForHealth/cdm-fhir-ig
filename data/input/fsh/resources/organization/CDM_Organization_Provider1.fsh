@@ -30,7 +30,7 @@ Description:    "Sample CDM Organization representing a provider"
 
 * name = "Dr Smith"
 * active = true
-* type = WhPayerProviderTypeCodeSystem#204
+* type = PayerProviderTypeCodeSystem#204
 
 * address.use = #work
 * address.type = #physical

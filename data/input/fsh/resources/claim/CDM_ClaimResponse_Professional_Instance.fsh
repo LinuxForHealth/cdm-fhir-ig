@@ -22,7 +22,7 @@ Description:    "Sample of a CDM Professional Claim Response"
 * identifier[0].assigner.display = "Acme Health - Wellness Medical Center"
 
 * status                   = #active
-* type.coding[0]           = WhPayerClaimTypeCodeSystem#medical
+* type.coding[0]           = PayerClaimTypeCodeSystem#medical
 * type.coding[1].system    = "http://acme-health.com/CodeSystem/local-claim-type"
 * type.coding[1].code      = #MedicalClaimType
 
@@ -161,7 +161,7 @@ Description:    "Sample of a CDM Professional Claim Response"
 * payment.type                   = PAYMENT-TYPE#complete
 * payment.amount.value           = 100.00
 * payment.adjustmentReason[0]    = http://acme-health.com/CodeSystem/local-adjustment-reason#local-adj-reason
-* payment.extension[claimAdjustmentType][0].valueCodeableConcept = WhPayerClaimAdjustmentTypeCodeSystem#1
+* payment.extension[claimAdjustmentType][0].valueCodeableConcept = PayerClaimAdjustmentTypeCodeSystem#1
 * payment.extension[claimAdjustmentType][1].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-adjustment-type#LocalClaimAdjType
 
 * extension[claimStatus].valueCodeableConcept = http://acme-health.com/CodeSystem/local-claim-status#LocalClaimStatus

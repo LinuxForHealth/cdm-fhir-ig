@@ -85,7 +85,7 @@ Description:    "Health Data Connect Common Data Model definition of what fields
 * extension[exchangePlanIndicator] ^definition = "Indicator that identifies if the plan is available on a healthcare exchange marketplace"
 
 * extension contains IndustryClassification named IndustryClassification 0..1
-* extension[IndustryClassification].valueCodeableConcept from WhPayerJobTitleValueSet (example)
+* extension[IndustryClassification].valueCodeableConcept from PayerJobTitleValueSet (example)
 * extension[IndustryClassification] ^short      = "Industry classification code which can be based on the North American Industry Classification System (NAICS)"
 * extension[IndustryClassification] ^definition = "Industry classification code which can be based on the North American Industry Classification System (NAICS)"
 
@@ -97,62 +97,62 @@ Description:    "Health Data Connect Common Data Model definition of what fields
 * extension[visionFullyInsuredIndicator] ^short      = "Indicator of the fully insured vision coverage for the member or employee"
 * extension[visionFullyInsuredIndicator] ^definition = "Indicator of the fully insured vision coverage for the member or employee"
 
-* extension contains WhPayerDentalCoverageIndicator named whPayerDentalCoverageIndicator 0..1
-* extension[whPayerDentalCoverageIndicator] ^short      = "Indicates whether the member has dental benefit coverage: Y or N"
-* extension[whPayerDentalCoverageIndicator] ^definition = "Indicates whether the member has dental benefit coverage: Y or N"
+* extension contains PayerDentalCoverageIndicator named payerDentalCoverageIndicator 0..1
+* extension[payerDentalCoverageIndicator] ^short      = "Indicates whether the member has dental benefit coverage: Y or N"
+* extension[payerDentalCoverageIndicator] ^definition = "Indicates whether the member has dental benefit coverage: Y or N"
 
-* extension contains WhPayerDrugCoverageIndicator named whPayerDrugCoverageIndicator 0..1
-* extension[whPayerDrugCoverageIndicator] ^short      = "Indicates whether the member has drug benefit coverage: Y or N"
-* extension[whPayerDrugCoverageIndicator] ^definition = "Indicates whether the member has drug benefit coverage: Y or N"
+* extension contains PayerDrugCoverageIndicator named payerDrugCoverageIndicator 0..1
+* extension[payerDrugCoverageIndicator] ^short      = "Indicates whether the member has drug benefit coverage: Y or N"
+* extension[payerDrugCoverageIndicator] ^definition = "Indicates whether the member has drug benefit coverage: Y or N"
 
-* extension contains WhPayerHearingCoverageIndicator named whPayerHearingCoverageIndicator 0..1
-* extension[whPayerHearingCoverageIndicator] ^short      = "Indicates whether the member has hearing benefit coverage: Y or N"
-* extension[whPayerHearingCoverageIndicator] ^definition = "Indicates whether the member has hearing benefit coverage: Y or N"
+* extension contains PayerHearingCoverageIndicator named payerHearingCoverageIndicator 0..1
+* extension[payerHearingCoverageIndicator] ^short      = "Indicates whether the member has hearing benefit coverage: Y or N"
+* extension[payerHearingCoverageIndicator] ^definition = "Indicates whether the member has hearing benefit coverage: Y or N"
 
-* extension contains WhPayerLongtermCareCoverageIndicator named whPayerLongtermCareCoverageIndicator 0..1
-* extension[whPayerLongtermCareCoverageIndicator] ^short      = "Indicates whether the member or employee has long-term care benefit coverage"
-* extension[whPayerLongtermCareCoverageIndicator] ^definition = "Indicates whether the member or employee has long-term care benefit coverage"
+* extension contains PayerLongtermCareCoverageIndicator named payerLongtermCareCoverageIndicator 0..1
+* extension[payerLongtermCareCoverageIndicator] ^short      = "Indicates whether the member or employee has long-term care benefit coverage"
+* extension[payerLongtermCareCoverageIndicator] ^definition = "Indicates whether the member or employee has long-term care benefit coverage"
 
-* extension contains WhPayerManagedCarePlanType named whPayerManagedCarePlanType 0..1
-* extension[whPayerManagedCarePlanType] ^short      =  "Code for the managed care plan type under which the eligible individual is enrolled"
-* extension[whPayerManagedCarePlanType] ^definition =  "Code for the managed care plan type under which the eligible individual is enrolled"
+* extension contains PayerManagedCarePlanType named payerManagedCarePlanType 0..1
+* extension[payerManagedCarePlanType] ^short      =  "Code for the managed care plan type under which the eligible individual is enrolled"
+* extension[payerManagedCarePlanType] ^definition =  "Code for the managed care plan type under which the eligible individual is enrolled"
 
-* extension contains WhPayerMedicalCoverageIndicator named whPayerMedicalCoverageIndicator 0..1
-* extension[whPayerMedicalCoverageIndicator] ^short      = "Indicates whether the member has medical benefit coverage: Y or N"
-* extension[whPayerMedicalCoverageIndicator] ^definition = "Indicates whether the member has medical benefit coverage: Y or N"
+* extension contains PayerMedicalCoverageIndicator named payerMedicalCoverageIndicator 0..1
+* extension[payerMedicalCoverageIndicator] ^short      = "Indicates whether the member has medical benefit coverage: Y or N"
+* extension[payerMedicalCoverageIndicator] ^definition = "Indicates whether the member has medical benefit coverage: Y or N"
 
-* extension contains WhPayerMentalHealthAmbulatoryCoverageIndicator named whPayerMentalHealthAmbulatoryCoverageIndicator 0..1
-* extension[whPayerMentalHealthAmbulatoryCoverageIndicator] ^short      = "Indicates whether the member has mental health ambulatory benefit coverage: Y or N."
-* extension[whPayerMentalHealthAmbulatoryCoverageIndicator] ^definition = "Indicates whether the member has mental health ambulatory benefit coverage: Y or N. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
+* extension contains PayerMentalHealthAmbulatoryCoverageIndicator named payerMentalHealthAmbulatoryCoverageIndicator 0..1
+* extension[payerMentalHealthAmbulatoryCoverageIndicator] ^short      = "Indicates whether the member has mental health ambulatory benefit coverage: Y or N."
+* extension[payerMentalHealthAmbulatoryCoverageIndicator] ^definition = "Indicates whether the member has mental health ambulatory benefit coverage: Y or N. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 
-* extension contains WhPayerMentalHealthDayNightCoverageIndicator named whPayerMentalHealthDayNightCoverageIndicator 0..1
-* extension[whPayerMentalHealthDayNightCoverageIndicator] ^short      = "Indicates whether the member has mental health day-night benefit coverage: Y or N."
-* extension[whPayerMentalHealthDayNightCoverageIndicator] ^definition = "Indicates whether the member has mental health day-night benefit coverage: Y or N. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
+* extension contains PayerMentalHealthDayNightCoverageIndicator named payerMentalHealthDayNightCoverageIndicator 0..1
+* extension[payerMentalHealthDayNightCoverageIndicator] ^short      = "Indicates whether the member has mental health day-night benefit coverage: Y or N."
+* extension[payerMentalHealthDayNightCoverageIndicator] ^definition = "Indicates whether the member has mental health day-night benefit coverage: Y or N. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 
-* extension contains WhPayerMentalHealthInpatientCoverageIndicator named whPayerMentalHealthInpatientCoverageIndicator 0..1
-* extension[whPayerMentalHealthInpatientCoverageIndicator] ^short      = "Indicates whether the member has mental health inpatient benefit coverage: Y or N."
-* extension[whPayerMentalHealthInpatientCoverageIndicator] ^definition = "Indicates whether the member has mental health inpatient benefit coverage: Y or N. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
+* extension contains PayerMentalHealthInpatientCoverageIndicator named payerMentalHealthInpatientCoverageIndicator 0..1
+* extension[payerMentalHealthInpatientCoverageIndicator] ^short      = "Indicates whether the member has mental health inpatient benefit coverage: Y or N."
+* extension[payerMentalHealthInpatientCoverageIndicator] ^definition = "Indicates whether the member has mental health inpatient benefit coverage: Y or N. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 
-* extension contains WhPayerPsychCoverageIndicator named whPayerPsychCoverageIndicator 0..1
-* extension[whPayerPsychCoverageIndicator] ^short      = "Indicates whether the member has mental health and substance abuse benefit coverage: Y or N"
-* extension[whPayerPsychCoverageIndicator] ^definition = "Indicates whether the member has mental health and substance abuse benefit coverage: Y or N"
+* extension contains PayerPsychCoverageIndicator named payerPsychCoverageIndicator 0..1
+* extension[payerPsychCoverageIndicator] ^short      = "Indicates whether the member has mental health and substance abuse benefit coverage: Y or N"
+* extension[payerPsychCoverageIndicator] ^definition = "Indicates whether the member has mental health and substance abuse benefit coverage: Y or N"
 
-* extension contains WhPayerShorttermCareCoverageIndicator named whPayerShorttermCareCoverageIndicator 0..1
-* extension[whPayerShorttermCareCoverageIndicator] ^short      = "Indicates whether the member or employee has short-term care benefit coverage"
-* extension[whPayerShorttermCareCoverageIndicator] ^definition = "Indicates whether the member or employee has short-term care benefit coverage"
+* extension contains PayerShorttermCareCoverageIndicator named payerShorttermCareCoverageIndicator 0..1
+* extension[payerShorttermCareCoverageIndicator] ^short      = "Indicates whether the member or employee has short-term care benefit coverage"
+* extension[payerShorttermCareCoverageIndicator] ^definition = "Indicates whether the member or employee has short-term care benefit coverage"
 
-* extension contains WhPayerSubstanceAbuseAmbulatoryCoverageIndicator named whPayerSubstanceAbuseAmbulatoryCoverageIndicator 0..1
-* extension[whPayerSubstanceAbuseAmbulatoryCoverageIndicator] ^short      = "Indicator of Substance Abuse (chemical dependency) Ambulatory benefit coverage for the member"
-* extension[whPayerSubstanceAbuseAmbulatoryCoverageIndicator] ^definition = "Indicator of Substance Abuse (chemical dependency) Ambulatory benefit coverage for the member. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
+* extension contains PayerSubstanceAbuseAmbulatoryCoverageIndicator named payerSubstanceAbuseAmbulatoryCoverageIndicator 0..1
+* extension[payerSubstanceAbuseAmbulatoryCoverageIndicator] ^short      = "Indicator of Substance Abuse (chemical dependency) Ambulatory benefit coverage for the member"
+* extension[payerSubstanceAbuseAmbulatoryCoverageIndicator] ^definition = "Indicator of Substance Abuse (chemical dependency) Ambulatory benefit coverage for the member. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 
-* extension contains WhPayerSubstanceAbuseDayNightCoverageIndicator named whPayerSubstanceAbuseDayNightCoverageIndicator 0..1
-* extension[whPayerSubstanceAbuseDayNightCoverageIndicator] ^short      = "Indicator of Substance Abuse (chemical dependency) day-night benefit coverage for the member"
-* extension[whPayerSubstanceAbuseDayNightCoverageIndicator] ^definition = "Indicator of Substance Abuse (chemical dependency) day-night benefit coverage for the member. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
+* extension contains PayerSubstanceAbuseDayNightCoverageIndicator named payerSubstanceAbuseDayNightCoverageIndicator 0..1
+* extension[payerSubstanceAbuseDayNightCoverageIndicator] ^short      = "Indicator of Substance Abuse (chemical dependency) day-night benefit coverage for the member"
+* extension[payerSubstanceAbuseDayNightCoverageIndicator] ^definition = "Indicator of Substance Abuse (chemical dependency) day-night benefit coverage for the member. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 
-* extension contains WhPayerSubstanceAbuseInpatientCoverageIndicator named whPayerSubstanceAbuseInpatientCoverageIndicator 0..1
-* extension[whPayerSubstanceAbuseInpatientCoverageIndicator] ^short      = "Indicator of Substance Abuse (chemical dependency) inpatient benefit coverage for the member"
-* extension[whPayerSubstanceAbuseInpatientCoverageIndicator] ^definition = "Indicator of Substance Abuse (chemical dependency) inpatient benefit coverage for the member. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
+* extension contains PayerSubstanceAbuseInpatientCoverageIndicator named payerSubstanceAbuseInpatientCoverageIndicator 0..1
+* extension[payerSubstanceAbuseInpatientCoverageIndicator] ^short      = "Indicator of Substance Abuse (chemical dependency) inpatient benefit coverage for the member"
+* extension[payerSubstanceAbuseInpatientCoverageIndicator] ^definition = "Indicator of Substance Abuse (chemical dependency) inpatient benefit coverage for the member. This finer granularity of MHSA benefit coverage may be used in HEDIS reporting."
 
-* extension contains WhPayerVisionCoverageIndicator named whPayerVisionCoverageIndicator 0..1
-* extension[whPayerVisionCoverageIndicator] ^short      = "Indicates whether the member has vision benefit coverage: Y or N"
-* extension[whPayerVisionCoverageIndicator] ^definition = "Indicates whether the member has vision benefit coverage: Y or N"
+* extension contains PayerVisionCoverageIndicator named payerVisionCoverageIndicator 0..1
+* extension[payerVisionCoverageIndicator] ^short      = "Indicates whether the member has vision benefit coverage: Y or N"
+* extension[payerVisionCoverageIndicator] ^definition = "Indicates whether the member has vision benefit coverage: Y or N"

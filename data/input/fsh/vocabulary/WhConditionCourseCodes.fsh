@@ -1,7 +1,7 @@
-CodeSystem:     WhConditionCourseCodeSystem
-Id:             wh-condition-course
-Title:          "Health Data Connect Condition Course Codes"
-Description:    "Health Data Connect codes for clinical course of a disease (how the disease behaves over time). These are part of SNOMED course parent concept (288524001)."
+CodeSystem:     ConditionCourseCodeSystem
+Id:             condition-course
+Title:          "Condition Course Codes"
+Description:    "Codes for clinical course of a disease (how the disease behaves over time). These are part of SNOMED course parent concept (288524001)."
 * ^caseSensitive = true
 * #288524001     "Courses"                                "Courses"
 * #7087005       "Intermittent"                           "Intermittent"
@@ -39,8 +39,8 @@ Description:    "Health Data Connect codes for clinical course of a disease (how
 * #702322003     "Non-progressive"                        "Non-progressive"
 * #78880000      "Delayed onset"                          "Delayed onset (qualifier value)" 
 
-ValueSet:       WhConditionCourseValueSet
-Id:             wh-condition-course
-Title:          "Health Data Connect Condition Course  Value Set"
-Description:    "Health Data Connect value set for clinical course of a disease (how the disease behaves over time)"
-* codes from system WhConditionCourseCodeSystem
+ValueSet:       ConditionCourseValueSet
+Id:             condition-course
+Title:          "Condition Course Value Set"
+Description:    "Value set for clinical course of a disease (how the disease behaves over time)"
+* codes from system ConditionCourseCodeSystem

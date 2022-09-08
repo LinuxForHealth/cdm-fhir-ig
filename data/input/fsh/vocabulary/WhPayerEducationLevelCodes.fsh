@@ -1,7 +1,7 @@
-CodeSystem:     WhPayerEducationLevelCodeSystem
-Id:             wh-payer-education-level
-Title:          "Health Data Connect Education Level Codes"
-Description:    "Health Data Connect standard code for the education level"
+CodeSystem:     PayerEducationLevelCodeSystem
+Id:             payer-education-level
+Title:          "Payer Education Level Codes"
+Description:    "Payer codes for the education level"
 * ^caseSensitive = true
 * #A    "Grade School or Less"              "Grade School or Less"
 * #B    "Some High School"                  "Some High School"
@@ -11,8 +11,8 @@ Description:    "Health Data Connect standard code for the education level"
 * #F    "Bachelors Degree"                  "Bachelors Degree"
 * #G    "Post Graduate or Professional"     "Post Graduate or Professional"
 
-ValueSet:       WhPayerEducationLevelValueSet
-Id:             wh-payer-education-level
-Title:          "Health Data Connect Education Level Value Set"
-Description:    "Health Data Connect standard value set for the education level"
-* codes from system WhPayerEducationLevelCodeSystem
+ValueSet:       PayerEducationLevelValueSet
+Id:             payer-education-level
+Title:          "Payer Education Level Value Set"
+Description:    "Value set containing payer coodes for the education level"
+* codes from system PayerEducationLevelCodeSystem

@@ -37,14 +37,14 @@ Description:        "Example of a coverage record for a deceased patient benefic
 
 * extension[employeeCompany].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-employee-company#LocalEmpCompany
 * extension[employeeCostCenter].valueCodeableConcept     = http://acme-health.com/CodeSystem/local-employee-cost-center#LocalEmpCostCenter
-* extension[employeeStatus].valueCodeableConcept         = WhPayerEmployeeStatusCodeSystem#3
+* extension[employeeStatus].valueCodeableConcept         = PayerEmployeeStatusCodeSystem#3
 * extension[employeeBusinessUnit].valueCodeableConcept   = http://acme-health.com/CodeSystem/local-employee-business-unit#EmpBusUnit
 * extension[jobClassCode].valueCodeableConcept           = http://acme-health.com/CodeSystem/local-job-class-code#jobclass
 * extension[salaryIndicator].valueString                 = "Y"
 * extension[unionWorkerIndicator].valueString            = "N"
 * extension[medicareIndicator].valueString               = "N"
 
-* class[0].type.coding  = WhPayerCoverageClassCodeSystem#election-tier
+* class[0].type.coding  = PayerCoverageClassCodeSystem#election-tier
 * class[0].value        = "Self"
 
 * relationship.coding = SUBSCRIBER-RELATIONSHIP#self

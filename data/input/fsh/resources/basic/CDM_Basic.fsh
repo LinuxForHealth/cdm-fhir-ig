@@ -14,4 +14,4 @@ Description:    "Basic is a special type of resource that doesn't correspond to 
 * identifier.value 1..1
 * identifier.type  from IdentifierTypeValueSet (extensible) 
 
-* code                    from WhBasicResourceTypeValueSet (preferred)
+* code                    from BasicResourceTypeValueSet (preferred)

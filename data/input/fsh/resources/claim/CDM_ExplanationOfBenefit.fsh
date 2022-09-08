@@ -17,7 +17,7 @@ Description:    "This resource provides: the claim details; adjudication details
 * priority                from 	http://terminology.hl7.org/ValueSet/process-priority (example)
 
 * type                    from ClaimTypeValueSet (extensible)
-* subType                 from WhClaimSubtypeValueSet (extensible)
+* subType                 from ClaimSubtypeValueSet (extensible)
 * supportingInfo.category from ClaimSupportingInfoCategoryValueSet (extensible)
 * supportingInfo.code     from ClaimSupportingInfoTypeValueSet (extensible)
 
@@ -40,7 +40,7 @@ Description:    "This resource provides: the claim details; adjudication details
 * extension[employer] ^definition = "Customer-specific code for the employer as reported on the claim record"
 
 * item.extension contains ClaimResponseItemStatus named claimResponseItemStatus 0..1
-* item.extension[claimResponseItemStatus].valueCodeableConcept from WHPayerClaimStatusValueSet (extensible)
+* item.extension[claimResponseItemStatus].valueCodeableConcept from PayerClaimStatusValueSet (extensible)
 * item.extension[claimResponseItemStatus] ^short      = "The status of claim payment on claim item"
 * item.extension[claimResponseItemStatus] ^definition = "The status of claim payment on claim item"
 

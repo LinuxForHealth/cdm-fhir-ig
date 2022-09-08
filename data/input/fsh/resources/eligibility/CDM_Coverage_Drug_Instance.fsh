@@ -30,7 +30,7 @@ Description:    "Sample of a CDM Drug Coverage Claim"
 * extension[claimGroupIdentifier].valueString              = "claim group id"
 * extension[coverageMonth].valueDate                       = "2017-06-01"
 * extension[employeeCount].valueUnsignedInt                = 1
-* extension[employeeStatus].valueCodeableConcept           = WhPayerEmployeeStatusCodeSystem#1
+* extension[employeeStatus].valueCodeableConcept           = PayerEmployeeStatusCodeSystem#1
 * extension[employeeHireDate].valueDate                    = "2017-01-30"
 * period.start                                             = "2017-06-01"
 * period.end                                               = "2017-06-30"

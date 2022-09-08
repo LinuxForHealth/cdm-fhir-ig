@@ -1,7 +1,7 @@
-CodeSystem:     WHPayerProcedureGroupCodeSystem
-Id:             wh-payer-procedure-group
-Title:          "Health Data Connect Procedure Group Codes"
-Description:    "Health Data Connect standard procedure group codes"
+CodeSystem:     PayerProcedureGroupCodeSystem
+Id:             payer-procedure-group
+Title:          "Payer Procedure Group Codes"
+Description:    "Procedure group codes for payers"
 * ^caseSensitive = true
 * #1          "Incision & drainage of cyst"                 "Incision & drainage of cyst"
 * #2          "Acne surgery"                                "Acne surgery"
@@ -200,8 +200,8 @@ Description:    "Health Data Connect standard procedure group codes"
 * #498          "Performance tracking codes"                "Performance tracking codes"
 * #499          "Unmapped codes"                            "Unmapped codes"
 
-ValueSet:       WHPayerProcedureGroupValueSet
-Id:             wh-payer-procedure-group
-Title:          "Procedure Group Value Set"
-Description:    "Health Data Connect standard value set containing procedure group codes"
-* codes from system WHPayerProcedureGroupCodeSystem
+ValueSet:       PayerProcedureGroupValueSet
+Id:             payer-procedure-group
+Title:          "Payer Procedure Group Value Set"
+Description:    "Value set containing procedure group codes for payers"
+* codes from system PayerProcedureGroupCodeSystem

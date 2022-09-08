@@ -77,9 +77,9 @@ Description:      "Health Data Connect Common Data Model definition of what fiel
 * code[Standard].coding[NUCCTaxonomy].code 1..1
 * code[Standard].coding[NUCCType].system = "http://ibm.com/fhir/cdm/nucc-provider-taxonomy-type"
 * code[Standard].coding[NUCCType].code 1..1
-* code[Standard].coding[HDCType].system = "http://ibm.com/fhir/cdm/wh-payer-provider-type"
+* code[Standard].coding[HDCType].system = "http://ibm.com/fhir/cdm/payer-provider-type"
 * code[Standard].coding[HDCType].code 1..1
-* code[Standard].coding[HDCType].code from  WhPractitionerRoleTypeValueSet (preferred)
+* code[Standard].coding[HDCType].code from  PractitionerRoleTypeValueSet (preferred)
 * code[NonStandard].text 1..1
 
 * telecom only CDMContactPoint
