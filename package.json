@@ -1,10 +1,10 @@
 {
-  "name": "alvearie.fhir.ig",
+  "name": "linuxforhealth.fhir.ig",
   "version": "7.0.0",
-  "canonical": "http://alvearie.github.io/alvearie-fhir-ig",
-  "url": "http://alvearie.github.io/alvearie-fhir-ig",
-  "title": "Alvearie FHIR Implementation Guide",
-  "description": "Alvearie FHIR Profiles",
+  "canonical": "http://fhir.linuxforhealth.org/cdm",
+  "url": "http://fhir.linuxforhealth.org/cdm",
+  "title": "LinuxForHealth FHIR Implementation Guide",
+  "description": "LinuxForHealth FHIR Profiles",
   "dependencies": {
     "maven": "^5.0.0",
     "node": "^16.13.1"
@@ -18,25 +18,21 @@
     "sushi_snapshot": "sushi -s data",
     "sync_build": "rsync -ah --delete-after --exclude 'input-cache' data/ build",
     "ig_init": "npm run sync_build && cd build && yes | bash ./_updatePublisher.sh && bash ./_genonce.sh",
-    "ig_init_win": "xcopy data build\\ /i /y /q /s && cd build && _updatePublisher.bat && _genonce.bat",
+    "ig_init_win": "xcopy data build\\ /i /y /q /s && cd build && bash _updatePublisher.sh && bash _genonce.sh",
+    "ig_init_win_old": "xcopy data build\\ /i /y /q /s && cd build && _updatePublisher.bat && _genonce.bat",
     "ig": "npm run sync_build && cd build && sh ./_genonce.sh -tx",
     "ig_win": "xcopy data build /i /y /q && cd build && _genonce.bat",
+    "ig_win_old": "xcopy data build /i /y /q && cd build && bash _genonce.sh",
     "build_snapshot": "mkdirp src/main/resources/com/ibm/fhir/cdm && tar -C src/main/resources/com/ibm/fhir/cdm/ -xf build/output/package.tgz && mvn clean install",
     "copy_snapshot": "mkdirp target/site && cp target/*.jar build/output && cp target/*.jar target/site",
     "copy_snapshot_win": "mkdirp target\\site  && copy target\\*.jar build\\output && copy target\\*.jar target\\site",
     "zip_snapshot": "cd target && zip -ur ../build/output/full-ig.zip site/*.jar",
     "zip_snapshot_win": "cd target && 7z a ..\\build\\output\\full-ig.zip site\\*.jar",
     "all": "npm run sushi && npm run ig_init && npm run build_snapshot && npm run copy_snapshot && npm run zip_snapshot",
+    "all_win": "npm run sushi && npm run ig_init_win && npm run build_snapshot && npm run copy_snapshot_win && npm run zip_snapshot_win",
     "all_win_cmd": "npm run sushi && npm run ig_init_win && npm run build_snapshot && npm run copy_snapshot_win && npm run zip_snapshot_win",
-    "all_win_bash": "npm run sushi && npm run ig_init && npm run build_snapshot && npm run copy_snapshot_win && npm run zip_snapshot_win"
-  },
-  "language": "en",
-  "author": "Alvearie Team",
-  "maintainers": [
-    {
-      "name": "Kim Kenna",
-      "email": "sloand@us.ibm.com"
-    }
-  ],
+    "all_win_bash": "npm run sushi && npm run ig_init && npm run build_snapshot && npm run copy_snapshot_win && npm run zip_snapshot_win"  },
+    "language": "en",
+    "author": "LinuxForHealth Team",
   "license": "CC0-1.0"
 }

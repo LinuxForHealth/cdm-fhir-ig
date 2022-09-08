@@ -1,4 +1,4 @@
-# alvearie-fhir-ig
+# LinuxForHealth FHIR Implementation Guide
 
 ## Introduction
 
@@ -7,7 +7,7 @@ To build upon FHIR standards, this Whole Health Common Data Model Implementation
 
 The Common Data Model extends the industry-standard, base FHIR specification to support the data model requirements needed by healthcare data platform base capabilities, for example, data lineage and resource matching. In addition, the Common Data Model adds elements to support higher-level value that can be driven by a healthcare data platform, including claims data enrichment, care gap analytics, and patient engagement.
 
-Current version of the IG is hosted here:  [https://alvearie.io/alvearie-fhir-ig/index.html](https://alvearie.io/alvearie-fhir-ig/index.html).
+Current version of the IG is hosted here:  [http://linuxforhealth.org/fhir/cdm/index.html](http://linuxforhealth.org/fhir/cdm/index.html).
 
 ## How to Build the Implementation Guide
 
@@ -95,10 +95,10 @@ FHIR® is the registered trademark of HL7 and is used with the permission of HL7
 
 ## Release History
 
-For release history of this IG, view the [release page](https://github.com/Alvearie/alvearie-fhir-ig/releases). Each release includes:
+For release history of this IG, view the [release page](https://github.com/LinuxForHealth/alvearie-fhir-ig/releases). Each release includes:
 
 - Full IG Site Specification (full-ig.zip)
-- A snapshot jar file used to register the IG profiles on an IBM FHIR Server
+- A snapshot jar file used to register the IG profiles on an LinuxForHealth FHIR® Server
 - Tar archive containing all assets used by the FHIR Publisher to build the site (package.tgz)
 - Zip fies containing definitions and examples in json, xml, and ttl (Turtle)
 

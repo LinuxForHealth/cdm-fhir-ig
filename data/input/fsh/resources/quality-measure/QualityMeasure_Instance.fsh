@@ -19,7 +19,7 @@ Description:    "Example measure containing criteria for measure rules"
 * identifier[0].value = "8f3a1491-a07f-4860-8977-e7dac7398175"
 * identifier[0].assigner.display = "HDC"
 
-* url = "https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html"
+* url = "https://linuxforhealth.org/fhir/cdm/Measure-QualityMeasureExample.html"
 
 * version = "1.0"
 * name = "Diabetes_HbA1c_Test_Performed"

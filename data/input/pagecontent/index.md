@@ -23,9 +23,9 @@ FHIR® is the registered trademark of HL7 and is used with the permission of HL7
 
 ### Release History
 
-For release history of this IG, view the [release page](https://github.com/Alvearie/alvearie-fhir-ig/releases) on our GitHub repo. Each release includes:
+For release history of this IG, view the [release page](https://github.com/LinuxForHealth/alvearie-fhir-ig/releases) on our GitHub repo. Each release includes:
 
 - Full IG Site Specification (full-ig.zip)
-- A snapshot jar file used to register the IG profiles on an IBM FHIR Server
+- A snapshot jar file used to register the IG profiles on an LinuxForHealth FHIR® Server
 - Tar archive containing all assets used by the FHIR Publisher to build the site (package.tgz)
 - Zip fies containing definitions and examples in json, xml, and ttl (Turtle)
