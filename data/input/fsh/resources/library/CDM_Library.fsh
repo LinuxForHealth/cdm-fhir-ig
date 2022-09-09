@@ -2,7 +2,7 @@ Profile:        CDMLibrary
 Parent:         Library 
 Id:             cdm-library
 Title:          "CDM Library"
-Description:    "Health Data Connect Common Data Model definition of what fields we currently define for a library"
+Description:    "LinuxForHealth Common Data Model definition of what fields we currently define for a library"
 
 * contained 0..0
 * meta only ProcessMeta

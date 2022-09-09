@@ -2,7 +2,7 @@ Profile:        CDMCommunication
 Parent:         Communication
 Id:             cdm-communication
 Title:          "CDM Communication"
-Description:    "Health Data Connect Common Data Model definition of what fields we currently define for a communication"
+Description:    "LinuxForHealth Common Data Model definition of what fields we currently define for a communication"
 * contained 0..0
 * meta only ProcessMeta
 

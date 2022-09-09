@@ -2,7 +2,7 @@ Profile:        CDMInsurancePlan
 Parent:         InsurancePlan
 Id:             cdm-insurance-plan
 Title:          "CDM Insurance Plan"
-Description:    "Health Data Connect Common Data Model definition of what fields we currently define for an insurance plan"
+Description:    "LinuxForHealth Common Data Model definition of what fields we currently define for an insurance plan"
 * contained 0..0
 * meta only ProcessMeta
 

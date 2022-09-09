@@ -2,7 +2,7 @@ Profile:        CDMPatient
 Parent:         Patient
 Id:             cdm-patient
 Title:          "CDM Patient"
-Description:    "Health Data Connect Common Data Model definition of what fields we currently define for a patient"
+Description:    "LinuxForHealth Common Data Model definition of what fields we currently define for a patient"
 * contained 0..0
 * meta only ProcessMeta
 

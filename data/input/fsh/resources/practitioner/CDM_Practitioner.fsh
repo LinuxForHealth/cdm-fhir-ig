@@ -2,7 +2,7 @@ Profile:          CDMPractitioner
 Parent:           Practitioner
 Id:               cdm-practitioner
 Title:            "CDM Practitioner"
-Description:      "Health Data Connect Common Data Model definition of what fields we currently define for a practitioner"
+Description:      "LinuxForHealth Common Data Model definition of what fields we currently define for a practitioner"
 * contained 0..0
 * meta only ProcessMeta
 
