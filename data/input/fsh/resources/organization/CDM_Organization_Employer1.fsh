@@ -5,7 +5,7 @@ Title:          "CDM Oganization - Employer 1"
 Description:    "Sample CDM Organization representing an employer"
 
 * meta.source = "http://acme-health.com/organization/employer"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-organization"
 
 * identifier[0].use = #official
 * identifier[0].type = IdentifierTypeCodeSystem#SSRI

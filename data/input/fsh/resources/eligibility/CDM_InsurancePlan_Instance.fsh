@@ -5,7 +5,7 @@ Title:              "CDM Insurance Plan Example"
 Description:        "Example of a insurance plan record for a patient beneficiary"
 
 * meta.source  = "http://acme-health.com/WellnessInsuranceCompany"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-insurance-plan"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-insurance-plan"
 
 * identifier[0].use                    = #official
 * identifier[0].type                   = IdentifierTypeCodeSystem#SSRI

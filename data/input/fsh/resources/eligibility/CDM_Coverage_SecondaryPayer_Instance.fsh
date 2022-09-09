@@ -8,7 +8,7 @@ Description:    "Example of secondary payer data originating from an EMR system"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
 
 * meta.source = "http://acme-health.com/emr1"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage"
 
 * identifier[0].use = #official
 * identifier[0].type = IdentifierTypeCodeSystem#SSRI

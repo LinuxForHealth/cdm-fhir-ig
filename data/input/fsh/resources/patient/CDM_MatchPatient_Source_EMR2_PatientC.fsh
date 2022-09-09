@@ -5,7 +5,7 @@ Title:          "Matched Patient Source Example - EMR2 Patient C"
 Description:    "Sample of a matched source patient with reference to the match patient. Used to demonstrate patient matching."
 
 * meta.source = "http://acme-health.com/emr1"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -17,7 +17,7 @@ Description:    "Sample of a matched source patient with reference to the match 
 
 * identifier[1].use = #secondary
 * identifier[1].type =  IdentifierTypeCodeSystem#MDI
-* identifier[1].system = "http://ibm.com/fhir/primary/patient-match-identifier"
+* identifier[1].system = "http://linuxforhealth.org/fhir/primary/patient-match-identifier"
 * identifier[1].value = "c82a8fce-11db-4396-b10c-1150abd1a222"
 * identifier[1].assigner.display = "HDC"
 

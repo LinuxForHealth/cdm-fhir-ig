@@ -5,12 +5,12 @@ Title:          "CDM Claim - Drug Coverage Example"
 Description:    "Sample of a CDM Drug Coverage Claim"
 
 * meta.source  = "http://acme-health.com/WellnessCenterPharmacy"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage"
 
 * identifier[0].type                   = IdentifierTypeCodeSystem#SSRI
 * identifier[0].system                 = "http://acme-health.com/emr1/WellnessCenterPharmacy"
 * identifier[0].value                  = "encryp-id1234"
-* identifier[0].extension.url          = "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state"
+* identifier[0].extension.url          = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/encrypted-state"
 * identifier[0].extension.valueBoolean = true
 
 * payor.type              = RESOURCE-TYPE#Organiation

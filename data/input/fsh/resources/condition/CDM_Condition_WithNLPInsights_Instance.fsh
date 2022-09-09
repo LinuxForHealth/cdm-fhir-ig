@@ -10,7 +10,7 @@ Description:    "Condition example where condition code is set from NLP derived 
 * contained[0] = SourceDiagnosticReport-DiabetesMellitus
 
 * meta.source = "http://acme-health.com/emr"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-condition"
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189145"
 
@@ -37,11 +37,11 @@ Description:    "Condition example where condition code is set from NLP derived 
 
 //Two scoring results apply to this fragment
 * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].code = #Diagnosis_Explicit_Score
-* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].system = "http://ibm.com/fhir/cdm/CodeSystem/1.0/acd-confidence-method"
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][0].extension[method].valueCodeableConcept.coding[0].system = "http://linuxforhealth.org/fhir/cdm/CodeSystem/1.0/acd-confidence-method"
 * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][0].extension[score].valueDecimal = 0.996
 
 * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][1].extension[method].valueCodeableConcept.coding[0].code = #Diagnosis_Family_History
-* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][1].extension[method].valueCodeableConcept.coding[0].system = "http://ibm.com/fhir/cdm/CodeSystem/1.0/acd-confidence-method"
+* meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][1].extension[method].valueCodeableConcept.coding[0].system = "http://linuxforhealth.org/fhir/cdm/CodeSystem/1.0/acd-confidence-method"
 * meta.extension[insight][0].extension[insightDetail][0].extension[insight-result][0].extension[span].extension[insight-confidence][1].extension[score].valueDecimal = 0.006
 
 //NOTE: Could also add a second span array element for the "no family history of type 1 or type 2 diabetes" text

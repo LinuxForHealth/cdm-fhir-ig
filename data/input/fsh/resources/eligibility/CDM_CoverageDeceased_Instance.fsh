@@ -5,7 +5,7 @@ Title:              "Coverage Deceased Example"
 Description:        "Example of a coverage record for a deceased patient beneficiary"
 
 * meta.source  = "http://acme-health.com/WellnessInsuranceCompany"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage"
 * meta.extension[sourceFileId].valueString     = "e00082222"
 
 * identifier.use                 = #official
@@ -17,7 +17,7 @@ Description:        "Example of a coverage record for a deceased patient benefic
 * payor.type                              = RESOURCE-TYPE#Organiation
 * payor.identifier.system                 = "http://acme-health.com/payer1/payer"
 * payor.identifier.value                  = "encryp-i55555"
-* payor.identifier.extension.url          = "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state"
+* payor.identifier.extension.url          = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/encrypted-state"
 * payor.identifier.extension.valueBoolean = true
 
 * beneficiary = Reference(CDMPatientInstance)

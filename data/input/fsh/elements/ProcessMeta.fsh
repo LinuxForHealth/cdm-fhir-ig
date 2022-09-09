@@ -77,7 +77,7 @@ Description:    "Data lineage meta with process extensions"
 
 * tag contains SourceClassificationTag 0..1
 * tag[SourceClassificationTag].code from SourceClassificationValueSet (required)
-* tag[SourceClassificationTag].system = "http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification"
+* tag[SourceClassificationTag].system = "http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification"
 * tag[SourceClassificationTag] ^short      = "Identifies the origin of this FHIR resource, from either a source system of record or derived from a process"
 * tag[SourceClassificationTag] ^definition = "Identifies the origin of this FHIR resource, from either a source system of record or derived from a process"
 

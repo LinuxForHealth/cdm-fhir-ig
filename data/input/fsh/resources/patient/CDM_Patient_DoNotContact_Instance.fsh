@@ -5,7 +5,7 @@ Description:    "Sample CDM Patient showing customer-specific privacy and derive
 Usage:          #example
 
 * meta.source = "http://acme-health.com/emr1"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -18,7 +18,7 @@ Usage:          #example
 
 * identifier[1].use = #secondary
 * identifier[1].type =  IdentifierTypeCodeSystem#MDI
-* identifier[1].system = "http://ibm.com/fhir/primary/patient-match-identifier"
+* identifier[1].system = "http://linuxforhealth.org/fhir/primary/patient-match-identifier"
 * identifier[1].value = "4fd6049c-59c5-4c7b-81b1-88869044535d"
 * identifier[1].assigner.display = "HDC"
 

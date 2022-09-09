@@ -5,7 +5,7 @@ Title:          "CDM Patient Example"
 Description:    "Example of a CDMPatient representing a patient ingested from a EMR or PMS system"
 
 * meta.source = "http://acme-health.com/emr1"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -58,7 +58,7 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 
 * identifier[7].use = #secondary
 * identifier[7].type =  IdentifierTypeCodeSystem#MDI
-* identifier[7].system = "http://ibm.com/fhir/primary/patient-match-identifier"
+* identifier[7].system = "http://linuxforhealth.org/fhir/primary/patient-match-identifier"
 * identifier[7].value = "7b78d6de-46cb-4fbb-930d-2a74e24b17fe"
 * identifier[7].assigner.display = "HDC"
 

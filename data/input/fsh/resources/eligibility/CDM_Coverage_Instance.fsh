@@ -5,7 +5,7 @@ Title:              "Coverage Example"
 Description:        "Example of a coverage record for a patient beneficiary"
 
 * meta.source  = "http://acme-health.com/WellnessInsuranceCompany"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage"
 * meta.extension[sourceFileId].valueString     = "e00085555"
 
 * identifier.use                 = #official

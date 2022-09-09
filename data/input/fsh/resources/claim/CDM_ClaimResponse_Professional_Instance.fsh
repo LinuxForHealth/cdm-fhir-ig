@@ -5,7 +5,7 @@ Title:          "CDM Claim Response - Professional Example"
 Description:    "Sample of a CDM Professional Claim Response"
 
 * meta.source  = "http://acme-health.com/WellnessMedicalCenter"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-response"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-claim-response"
 
 * meta.extension[tenantId].valueString         = "tenant7209"
 * meta.extension[ingestionBatchId].valueString = "rgVCJnQBxvghkKTI8Hzz"

@@ -52,7 +52,7 @@ Description:      "LinuxForHealth Common Data Model definition of what fields we
      Specialty 0..1
 * specialty[Standard].coding[Taxonomy].system = "http://nucc.org/provider-taxonomy"
 * specialty[Standard].coding[Taxonomy].code 1..1
-* specialty[Standard].coding[Specialty].system = "http://ibm.com/fhir/cdm/nucc-provider-taxonomy-specialty"
+* specialty[Standard].coding[Specialty].system = "http://linuxforhealth.org/fhir/cdm/nucc-provider-taxonomy-specialty"
 * specialty[Standard].coding[Specialty].code 1..1
 * specialty[NonStandard].text 1..1
 
@@ -75,9 +75,9 @@ Description:      "LinuxForHealth Common Data Model definition of what fields we
      HDCType 0..1
 * code[Standard].coding[NUCCTaxonomy].system = "http://nucc.org/provider-taxonomy"
 * code[Standard].coding[NUCCTaxonomy].code 1..1
-* code[Standard].coding[NUCCType].system = "http://ibm.com/fhir/cdm/nucc-provider-taxonomy-type"
+* code[Standard].coding[NUCCType].system = "http://linuxforhealth.org/fhir/cdm/nucc-provider-taxonomy-type"
 * code[Standard].coding[NUCCType].code 1..1
-* code[Standard].coding[HDCType].system = "http://ibm.com/fhir/cdm/payer-provider-type"
+* code[Standard].coding[HDCType].system = "http://linuxforhealth.org/fhir/cdm/payer-provider-type"
 * code[Standard].coding[HDCType].code 1..1
 * code[Standard].coding[HDCType].code from  PractitionerRoleTypeValueSet (preferred)
 * code[NonStandard].text 1..1

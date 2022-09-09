@@ -5,7 +5,7 @@ Title:              "Coverage Dependent Example"
 Description:        "Example of a coverage record for a child beneficiary"
 
 * meta.source  = "http://acme-health.com/WellnessInsuranceCompany"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage"
 * meta.extension[sourceFileId].valueString     = "e00083333"
 
 * identifier.use                 = #official

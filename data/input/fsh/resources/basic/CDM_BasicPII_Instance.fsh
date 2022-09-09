@@ -5,7 +5,7 @@ Title:          "CDM Claim - Basic Resource Example"
 Description:    "Sample of a CDM Basic Resource with PII token"
 
 * meta.source  = "http://ibm.com/ApplicationA"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-basic"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-basic"
 
 * meta.extension[tenantId].valueString         = "tenant12345"
 * meta.extension[ingestionBatchId].valueString = "zgVCJnQBxvshkKBI8Hzz"

@@ -5,7 +5,7 @@ Title:          "CDM Explanation of Benefit - Pharmacy Example"
 Description:    "Sample of a CDM Explanation of Benefit for a pharmacy claim"
 
 * meta.source  = "http://acme-health.com/WellnessCenterPharmacy"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit-for-analytics"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit-for-analytics"
 
 * meta.extension[tenantId].valueString         = "tenant7209"
 * meta.extension[ingestionBatchId].valueString = "rgVCJnQBxvghkKTI8Hzzx2"

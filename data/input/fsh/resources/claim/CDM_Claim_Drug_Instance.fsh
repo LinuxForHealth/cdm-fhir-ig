@@ -5,7 +5,7 @@ Title:          "CDM Claim - Drug Example"
 Description:    "Sample of a CDM Drug Claim"
 
 * meta.source  = "http://acme-health.com/WellnessCenterPharmacy"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-drug"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-claim-drug"
 
 * meta.extension[tenantId].valueString         = "tenant7209"
 * meta.extension[ingestionBatchId].valueString = "rgVCJnQBxvghkKTI8Hzz"

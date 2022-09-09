@@ -5,7 +5,7 @@ Title:          "CDM Service Request Example"
 Description:    "Sample of a CDM Service Request"
 
 * meta.source  = "http://acme-health.com/WellnessMedicalCenter"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-service-request"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-service-request"
 
 * meta.extension[tenantId].valueString         = "tenant7209"
 * meta.extension[ingestionBatchId].valueString = "rgVCJnQBxvghkKTI8Hzz"

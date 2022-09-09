@@ -4,8 +4,8 @@ Title:          "CDM Practitioner Role - Attributed PCP"
 Description:    "Sample CDM PractitionerRole created by engagement PCP attribution"
 Usage:          #example
 
-* meta.source = "http://ibm.com/fhir/engagement-attribution"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner-role"
+* meta.source = "http://linuxforhealth.org/fhir/engagement-attribution"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-practitioner-role"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -19,7 +19,7 @@ Usage:          #example
 
 * identifier[0].use = #official
 * identifier[0].type = 	IdentifierTypeCodeSystem#DRI
-* identifier[0].system = "http://ibm.com/fhir/cdm/engagement-attributed-pcp"
+* identifier[0].system = "http://linuxforhealth.org/fhir/cdm/engagement-attributed-pcp"
 * identifier[0].value = "dd914419-12db-4367-aa93-5c7930510e19"
 * identifier[0].assigner.display = "HDC"
 
