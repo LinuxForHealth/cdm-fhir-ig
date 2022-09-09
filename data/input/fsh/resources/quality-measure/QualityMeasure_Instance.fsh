@@ -34,7 +34,7 @@ Description:    "Example measure containing criteria for measure rules"
 * publisher = "HDC"
 * contact[0].name = "Clinical Informatics"
 * contact[0].telecom.system = #email
-* contact[0].telecom.value = "ClinicalInformatics@us.ibm.com"
+* contact[0].telecom.value = "ClinicalInformatics@linuxforhealth.org"
 
 * publisher = "HDC"
 * description = "Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period"
