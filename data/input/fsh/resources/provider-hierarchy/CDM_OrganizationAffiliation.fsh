@@ -2,7 +2,7 @@ Profile:            CDMOrganizationAffiliation
 Parent:             OrganizationAffiliation
 Id:                 cdm-organization-affiliation
 Title:              "CDM Organization Affiliation"
-Description:        "Health Data Connect organization affiliation with versioned hierarchy levels used to relate parent and child organizations"
+Description:        "LinuxForHealth CDM organization affiliation with versioned hierarchy levels used to relate parent and child organizations"
 * contained 0..0
 * meta only ProcessMeta
 

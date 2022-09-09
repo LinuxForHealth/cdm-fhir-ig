@@ -1,7 +1,7 @@
 CodeSystem:     RxMailOrRetailCodeSystem
 Id:             rx-mail-or-retail
 Title:          "Rx Mail Or Retail Codes"
-Description:    "Health Data Connect standard codes indicating the purchase place of the prescription."
+Description:    "LinuxForHealth standard codes indicating the purchase place of the prescription."
 * ^caseSensitive = true
 * #m	"Mail Order"    "Mail Order"
 * #r	"Retail"        "Retail"
@@ -9,5 +9,5 @@ Description:    "Health Data Connect standard codes indicating the purchase plac
 ValueSet:       RxMailOrRetailValueSet
 Id:             rx-mail-or-retail
 Title:          "Rx Mail Or Retail Value Set"
-Description:    "Health Data Connect standard value set indicating the purchase place of the prescription."
+Description:    "LinuxForHealth standard value set indicating the purchase place of the prescription."
 * codes from system RxMailOrRetailCodeSystem

@@ -142,13 +142,13 @@ Description:    "Payer provider type code as reported on the claim."
 ValueSet:       OrganizationTypeValueSet
 Id:             organization-type
 Title:          "Organization Type Value Set"
-Description:    "Health Data Connect standard values for organization type"
+Description:    "LinuxForHealth standard values for organization type"
 * codes from system PayerProviderTypeCodeSystem
 * codes from system ORGANIZATION-TYPE
 
 ValueSet:       PractitionerRoleTypeValueSet
 Id:             practitioner-role-type
 Title:          "Practitioner Role Type Value Set"
-Description:    "Standard values for practitioner role type"
+Description:    "LinuxForHealth standard values for practitioner role type"
 * codes from system PayerProviderTypeCodeSystem
 * codes from system PRACTITIONER-ROLE

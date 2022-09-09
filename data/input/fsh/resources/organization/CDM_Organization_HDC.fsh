@@ -2,7 +2,7 @@ Instance:       HDC
 InstanceOf:     CDMOrganization
 Usage:          #example
 Title:          "CDM Oganization - HDC"
-Description:    "Sample CDM Organization representing Health Data Connect"
+Description:    "Sample CDM Organization representing LinuxForHealth"
 
 * meta.source = "http://ibm.com/wffh/platform"
 * meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"

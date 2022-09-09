@@ -1,7 +1,7 @@
 CodeSystem:     ClaimSupportingInfoCategoryCodeSystem
 Id:             claim-supporting-info-category
 Title:          "Claim Supporting Info Category Codes"
-Description:    "Claim supporting info category codes for Health Data Connect claims"
+Description:    "Claim supporting info category codes for LinuxForHealth claims"
 * ^caseSensitive = true
 * #dayssupply            "Day Supply"        "The number of days of drug therapy covered by this prescription"
 

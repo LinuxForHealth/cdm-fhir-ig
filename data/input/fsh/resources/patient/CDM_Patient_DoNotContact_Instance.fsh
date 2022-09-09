@@ -1,7 +1,7 @@
 Instance:       CDMPatientInstance-DoNotContact
 InstanceOf:     CDMPatient
 Title:          "CDM Patient - Do Not Contact"
-Description:    "Sample CDM Patient showing customer-specific privacy and derived Health Data Connect VIP and DO-NOT-CONTACT codes"
+Description:    "Sample CDM Patient showing customer-specific privacy and derived LinuxForHealth VIP and DO-NOT-CONTACT codes"
 Usage:          #example
 
 * meta.source = "http://acme-health.com/emr1"
