@@ -18,7 +18,7 @@ Usage:          #example
 
 * identifier[1].use = #secondary
 * identifier[1].type =  IdentifierTypeCodeSystem#MDI
-* identifier[1].system = "http://linuxforhealth.org/fhir/primary/patient-match-identifier"
+* identifier[1].system = "http://linuxforhealth.org/platform/patient-match-identifier"
 * identifier[1].value = "4fd6049c-59c5-4c7b-81b1-88869044535d"
 * identifier[1].assigner.display = "HDC"
 

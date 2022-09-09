@@ -58,7 +58,7 @@ Description:    "Example of a CDMPatient representing a patient ingested from a 
 
 * identifier[7].use = #secondary
 * identifier[7].type =  IdentifierTypeCodeSystem#MDI
-* identifier[7].system = "http://linuxforhealth.org/fhir/primary/patient-match-identifier"
+* identifier[7].system = "http://linuxforhealth.org/platform/patient-match-identifier"
 * identifier[7].value = "7b78d6de-46cb-4fbb-930d-2a74e24b17fe"
 * identifier[7].assigner.display = "HDC"
 

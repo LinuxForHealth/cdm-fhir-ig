@@ -4,7 +4,7 @@ Title:          "CDM Practitioner Role - Advantage Imputed PCP"
 Description:    "Sample imputed PCP created from Advantage Suite"
 Usage:          #example
 
-* meta.source = "http://linuxforhealth.org/fhir/advantage-attribution"
+* meta.source = "http://linuxforhealth.org/platform/advantage-attribution"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-practitioner-role"
 
 * meta.extension[tenantId].valueString = "99999"
@@ -19,7 +19,7 @@ Usage:          #example
 
 * identifier[0].use = #official
 * identifier[0].type = 	IdentifierTypeCodeSystem#DRI
-* identifier[0].system = "http://linuxforhealth.org/fhir/cdm/advantage-imputed-pcp"
+* identifier[0].system = "http://linuxforhealth.org/platform/advantage-imputed-pcp"
 * identifier[0].value = "3cce418a-1006-4914-90b5-70bd3d3af1d8"
 * identifier[0].assigner.display = "HDC"
 

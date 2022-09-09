@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "Matched Practitioner Example"
 Description:    "Sample of a matched practitioner linked to multiple source practitioners, each with confidence level and period"
 
-* meta.source = "http://linuxforhealth.org/fhir/primary/practitioner-match"
+* meta.source = "http://linuxforhealth.org/platform/primary/practitioner-match"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-match-practitioner"
 
 * meta.extension[tenantId].valueString = "99999"
@@ -19,7 +19,7 @@ Description:    "Sample of a matched practitioner linked to multiple source prac
 
 * identifier[0].use = #official
 * identifier[0].type = 	IdentifierTypeCodeSystem#MDI
-* identifier[0].system = "http://linuxforhealth.org/fhir/primary/practitioner-match-identifier"
+* identifier[0].system = "http://linuxforhealth.org/platform/practitioner-match-identifier"
 * identifier[0].value = "e65bdcac-6e50-4353-8faa-dc147a603468"
 * identifier[0].assigner.display = "HDC"
 

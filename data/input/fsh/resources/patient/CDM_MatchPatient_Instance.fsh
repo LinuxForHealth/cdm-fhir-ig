@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "Matched Patient Example"
 Description:    "Sample of a matched patient linked to multiple source patients, each with confidence level and period"
 
-* meta.source = "http://linuxforhealth.org/fhir/primary/patient-match"
+* meta.source = "http://linuxforhealth.org/platform/primary/patient-match"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-match-patient"
 
 * meta.extension[tenantId].valueString = "99999"
@@ -19,7 +19,7 @@ Description:    "Sample of a matched patient linked to multiple source patients,
 
 * identifier[0].use = #official
 * identifier[0].type = 	IdentifierTypeCodeSystem#MDI
-* identifier[0].system = "http://linuxforhealth.org/fhir/primary/patient-match-identifier"
+* identifier[0].system = "http://linuxforhealth.org/platform/patient-match-identifier"
 * identifier[0].value = "c82a8fce-11db-4396-b10c-1150abd1a222"
 * identifier[0].assigner.display = "HDC"
 

@@ -17,7 +17,7 @@ Description:    "Example measure report containing measure results for an attrib
 * contained[7] = NumeratorPatientList
 * contained[8] = CareGapPatientList
 
-* meta.source = "http://linuxforhealth.org/fhir/measure-cohort"
+* meta.source = "http://linuxforhealth.org/platform/measure-cohort"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure-report-practitioner"
 
 * meta.extension[tenantId].valueString = "99999"
@@ -30,7 +30,7 @@ Description:    "Example measure report containing measure results for an attrib
 * meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier.type = ID-TYPE#RI
-* identifier.system = "http://linuxforhealth.org/fhir/cdm/quality-measure-report"
+* identifier.system = "http://linuxforhealth.org/platform/quality-measure-report"
 * identifier.value = "36864f66-df3a-47c0-92e2-e8ec2e46eedb"
 * identifier.assigner.display = "HDC"
 

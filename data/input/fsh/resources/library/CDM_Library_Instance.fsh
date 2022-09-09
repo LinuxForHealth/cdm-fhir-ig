@@ -6,7 +6,7 @@ Description:    "Sample library entry for CMS146, including example default para
 
 * identifier[0].use = #official
 * identifier[0].type = 	IdentifierTypeCodeSystem#SSRI
-* identifier[0].system = "http://linuxforhealth.org/fhir/cdm/cql-library"
+* identifier[0].system = "http://linuxforhealth.org/platform/cql-library"
 * identifier[0].value = "sample-library-CMS146"
 * identifier[0].assigner.display = "HDC"
 

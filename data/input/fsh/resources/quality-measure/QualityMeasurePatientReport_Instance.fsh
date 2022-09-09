@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "Quality Measure Report Example - Patient"
 Description:    "Example measure report containing individual measure results for a single patient"
 
-* meta.source = "http://linuxforhealth.org/fhir/measure-cohort"
+* meta.source = "http://linuxforhealth.org/platform/measure-cohort"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure-report-patient"
 
 * meta.extension[tenantId].valueString = "99999"
@@ -17,7 +17,7 @@ Description:    "Example measure report containing individual measure results fo
 * meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier.type = ID-TYPE#RI
-* identifier.system = "http://linuxforhealth.org/fhir/cdm/quality-measure-report"
+* identifier.system = "http://linuxforhealth.org/platform/quality-measure-report"
 * identifier.value = "de25d288-120e-47c1-bb76-caac8bc3f439"
 * identifier.assigner.display = "HDC"
 

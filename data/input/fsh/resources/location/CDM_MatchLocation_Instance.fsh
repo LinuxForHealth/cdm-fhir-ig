@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "Matched Location Example"
 Description:    "Sample of a matched location linked to multiple source locations, each with confidence level and period"
 
-* meta.source = "http://linuxforhealth.org/fhir/primary/location-match"
+* meta.source = "http://linuxforhealth.org/platform/primary/location-match"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-match-location"
 
 * meta.extension[tenantId].valueString = "99999"
@@ -19,7 +19,7 @@ Description:    "Sample of a matched location linked to multiple source location
 
 * identifier[0].use = #official
 * identifier[0].type = 	IdentifierTypeCodeSystem#MDI
-* identifier[0].system = "http://linuxforhealth.org/fhir/primary/location-match-identifier"
+* identifier[0].system = "http://linuxforhealth.org/platform/location-match-identifier"
 * identifier[0].value = "7610613e-2ecb-4cf5-815c-42a9589b2245"
 * identifier[0].assigner.display = "HDC"
 

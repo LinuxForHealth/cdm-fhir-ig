@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "Engagement Communication Request Example"
 Description:    "Example of an engagement communication request to send a SMS text to a patient concerning a care gap"
 
-* meta.source = "http://linuxforhealth.org/fhir/engagement"
+* meta.source = "http://linuxforhealth.org/platform/engagement"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/engagement-communication-request"
 
 * meta.extension[tenantId].valueString = "99999"
@@ -17,7 +17,7 @@ Description:    "Example of an engagement communication request to send a SMS te
 * meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier[0].type = IdentifierTypeCodeSystem#DRI
-* identifier[0].system = "http://linuxforhealth.org/fhir/cdm/engagement-communication-request"
+* identifier[0].system = "http://linuxforhealth.org/platform/engagement-communication-request"
 * identifier[0].value = "0bd930b0-e2fc-4967-957d-a6719ecde9b4"
 * identifier[0].assigner.display = "HDC"
 

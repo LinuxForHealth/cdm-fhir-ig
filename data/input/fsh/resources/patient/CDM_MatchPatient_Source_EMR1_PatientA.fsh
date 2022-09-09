@@ -17,7 +17,7 @@ Description:    "Sample of a matched source patient with reference to the match 
 
 * identifier[1].use = #secondary
 * identifier[1].type =  IdentifierTypeCodeSystem#MDI
-* identifier[1].system = "http://linuxforhealth.org/fhir/primary/patient-match-identifier"
+* identifier[1].system = "http://linuxforhealth.org/platform/patient-match-identifier"
 * identifier[1].value = "c82a8fce-11db-4396-b10c-1150abd1a222"
 * identifier[1].assigner.display = "HDC"
 

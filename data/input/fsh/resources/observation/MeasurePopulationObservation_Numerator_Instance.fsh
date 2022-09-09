@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "Measure Population Observation - Numerator Example"
 Description:    "Example of an observation indicating that the patient was in a numerator over a period of time"
 
-* meta.source = "http://linuxforhealth.org/fhir/engagement-measure-cohort"
+* meta.source = "http://linuxforhealth.org/platform/engagement-measure-cohort"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-population-observation"
 
 * meta.extension[tenantId].valueString = "99999"
@@ -16,7 +16,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 * meta.extension[processTimestamp].valueDateTime = "2020-02-28T02:01:00Z"
 
 * identifier.type = IdentifierTypeCodeSystem#DRI
-* identifier.system = "http://linuxforhealth.org/fhir/cdm/measure-population-observation"
+* identifier.system = "http://linuxforhealth.org/platform/measure-population-observation"
 * identifier.value = "9591c85d-2f90-4586-b76d-be8e8ab2a719"
 * identifier.assigner.display = "HDC"
 
@@ -40,7 +40,7 @@ Usage:          #example
 Title:          "Measure Population Observation - Related Numerator Example"
 Description:    "Example of an observation indicating that the patient was in a related numerator over a period of time"
 
-* meta.source = "http://linuxforhealth.org/fhir/engagement-measure-cohort"
+* meta.source = "http://linuxforhealth.org/platform/engagement-measure-cohort"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-population-observation"
 
 * meta.extension[tenantId].valueString = "99999"
@@ -52,7 +52,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 * meta.extension[processTimestamp].valueDateTime = "2020-02-13T02:01:00Z"
 
 * identifier.type = IdentifierTypeCodeSystem#DRI
-* identifier.system = "http://linuxforhealth.org/fhir/cdm/measure-population-observation"
+* identifier.system = "http://linuxforhealth.org/platform/measure-population-observation"
 * identifier.value = "6b23568b-dccf-4546-b099-6fb8ec3c84e8"
 * identifier.assigner.display = "HDC"
 

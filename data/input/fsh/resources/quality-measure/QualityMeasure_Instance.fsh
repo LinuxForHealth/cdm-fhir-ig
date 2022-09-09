@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "Quality Measure Example"
 Description:    "Example measure containing criteria for measure rules"
 
-* meta.source = "http://linuxforhealth.org/fhir/quality-measure"
+* meta.source = "http://linuxforhealth.org/platform/quality-measure"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure"
 
 * meta.extension[processOrganization].valueString = "HDC"
@@ -15,7 +15,7 @@ Description:    "Example measure containing criteria for measure rules"
 * meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier[0].type = 	ID-TYPE#RI
-* identifier[0].system = "http://linuxforhealth.org/fhir/cdm/quality-measure"
+* identifier[0].system = "http://linuxforhealth.org/platform/quality-measure"
 * identifier[0].value = "8f3a1491-a07f-4860-8977-e7dac7398175"
 * identifier[0].assigner.display = "HDC"
 

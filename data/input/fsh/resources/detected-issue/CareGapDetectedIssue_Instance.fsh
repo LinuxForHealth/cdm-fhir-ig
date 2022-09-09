@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "Care Gap Detected Issue Example"
 Description:    "Example of an detected issue indicating that the patient was in a care gap over a period of time"
 
-* meta.source = "http://linuxforhealth.org/fhir/engagement-measure-cohort"
+* meta.source = "http://linuxforhealth.org/platform/engagement-measure-cohort"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/care-gap-detected-issue"
 
 * meta.extension[tenantId].valueString = "99999"
@@ -16,7 +16,7 @@ Description:    "Example of an detected issue indicating that the patient was in
 * meta.extension[processTimestamp].valueDateTime = "2020-02-12T02:01:00Z"
 
 * identifier.type = IdentifierTypeCodeSystem#DRI
-* identifier.system = "http://linuxforhealth.org/fhir/cdm/care-gap-detected-issue"
+* identifier.system = "http://linuxforhealth.org/platform/care-gap-detected-issue"
 * identifier.value = "d90a8ceb-6f1a-4bc6-8d2a-8c00e6ea8a3e"
 * identifier.assigner.display = "HDC"
 
@@ -41,7 +41,7 @@ Usage:          #example
 Title:          "Related Care Gap Detected Issue"
 Description:    "Example of a related care gap detected issue that has been resolved or reassigned to another provider."
 * identifier.type = IdentifierTypeCodeSystem#DRI
-* identifier.system = "http://linuxforhealth.org/fhir/cdm/care-gap-detected-issue"
+* identifier.system = "http://linuxforhealth.org/platform/care-gap-detected-issue"
 * identifier.value = "4dee9608-e1e0-4653-9f75-b7bdb8d3a968"
 * identifier.assigner.display = "HDC"
 
