@@ -11,5 +11,5 @@ Description:    "Temporary Assistance for Needy Families (TANF) benefits for the
 ValueSet:       PayerTanfBenefitValueSet
 Id:             payer-tanf-benefit
 Title:          "Payer TANF Benefit Value Set"
-Description:     "Temporary Assistance for Needy Families (TANF) benefit value set for the person"
+Description:    "Temporary Assistance for Needy Families (TANF) benefit value set for the person"
 * codes from system PayerTanfBenefitCodeSystem
