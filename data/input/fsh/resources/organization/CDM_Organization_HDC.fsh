@@ -4,7 +4,7 @@ Usage:          #example
 Title:          "CDM Oganization - HDC"
 Description:    "Sample CDM Organization representing LinuxForHealth"
 
-* meta.source = "http://linuxforhealth.org/platform/platform"
+* meta.source = "http://linuxforhealth.org/platform"
 * meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-organization"
 
 * identifier[0].use = #official
