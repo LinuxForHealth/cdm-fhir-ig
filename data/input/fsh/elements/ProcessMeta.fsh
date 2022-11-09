@@ -77,7 +77,7 @@ Description:    "Data lineage meta with process extensions"
 
 * tag contains SourceClassificationTag 0..1
 * tag[SourceClassificationTag].code from SourceClassificationValueSet (required)
-* tag[SourceClassificationTag].system = "http://linuxforhealth.org/platform/process-meta-source-classification"
+* tag[SourceClassificationTag].system = "http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification"
 * tag[SourceClassificationTag] ^short      = "Identifies the origin of this FHIR resource, from either a source system of record or derived from a process"
 * tag[SourceClassificationTag] ^definition = "Identifies the origin of this FHIR resource, from either a source system of record or derived from a process"
 
@@ -184,8 +184,8 @@ Id:             process-meta-source-classification
 Title:          "Classification of the origin of data"
 Description:    "Identifies the class of origin of the data elements"
 * ^caseSensitive = true
-* #system-of-record      "System of record"       "Primary data that originates from the source system of record or the data integrator."
-* #derived    "Derived"     "Derived data produced by a data processor that interprets, aggregates or in some other way enhances the source data."
+* #system-of-record     "System of record"          "Primary data that originates from the source system of record or the data integrator."
+* #derived              "Derived"                   "Derived data produced by a data processor that interprets, aggregates or in some other way enhances the source data."
 
 ValueSet:       SourceClassificationValueSet
 Id:             source-classification-values
