@@ -15,5 +15,5 @@ Description:    "Payer codes for the type of Medicare coverage, if any, for the 
 ValueSet:       PayerMedicareCoverageValueSet
 Id:             payer-medicare-coverage
 Title:          "Payer Medicare Coverage Value Set"
-Description:    "Value set containting payer coees for the type of Medicare coverage, if any, for the person"
+Description:    "Value set containting payer codes for the type of Medicare coverage, if any, for the person"
 * codes from system PayerMedicareCoverageCodeSystem
