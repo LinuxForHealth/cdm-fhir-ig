@@ -12,11 +12,11 @@
   <sch:pattern>
     <sch:title>f:Observation</sch:title>
     <sch:rule context="f:Observation">
-      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure']) &gt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/measure-population-id']) &gt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/measure-population-id': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/measure-population-id']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/measure-population-id': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-met']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-met': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/canonical-measure']) &gt;= 1">extension with URL = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/canonical-measure': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/canonical-measure']) &lt;= 1">extension with URL = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/canonical-measure': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-population-id']) &gt;= 1">extension with URL = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-population-id': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-population-id']) &lt;= 1">extension with URL = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-population-id': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/care-gap-compliance-met']) &lt;= 1">extension with URL = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/care-gap-compliance-met': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:basedOn) &lt;= 0">basedOn: maximum cardinality of 'basedOn' is 0</sch:assert>
       <sch:assert test="count(f:partOf) &lt;= 0">partOf: maximum cardinality of 'partOf' is 0</sch:assert>
       <sch:assert test="count(f:category) &lt;= 0">category: maximum cardinality of 'category' is 0</sch:assert>
@@ -37,18 +37,6 @@
       <sch:assert test="count(f:referenceRange) &lt;= 0">referenceRange: maximum cardinality of 'referenceRange' is 0</sch:assert>
       <sch:assert test="count(f:hasMember) &lt;= 0">hasMember: maximum cardinality of 'hasMember' is 0</sch:assert>
       <sch:assert test="count(f:component) &lt;= 0">component: maximum cardinality of 'component' is 0</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>Observation</sch:title>
-    <sch:rule context="f:Observation">
-      <sch:assert test="not(parent::f:contained and f:contained)">If the resource is contained in another resource, it SHALL NOT contain nested Resources (inherited)</sch:assert>
-      <sch:assert test="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))">If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource (inherited)</sch:assert>
-      <sch:assert test="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))">If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated (inherited)</sch:assert>
-      <sch:assert test="not(exists(f:contained/*/f:meta/f:security))">If a resource is contained in another resource, it SHALL NOT have a security label (inherited)</sch:assert>
-      <sch:assert test="exists(f:text/h:div)">A resource should have narrative for robust management (inherited)</sch:assert>
-      <sch:assert test="not(exists(f:dataAbsentReason)) or (not(exists(*[starts-with(local-name(.), 'value')])))">dataAbsentReason SHALL only be present if Observation.value[x] is not present (inherited)</sch:assert>
-      <sch:assert test="not(f:*[starts-with(local-name(.), 'value')] and (for $coding in f:code/f:coding return f:component/f:code/f:coding[f:code/@value=$coding/f:code/@value] [f:system/@value=$coding/f:system/@value]))">If Observation.code is the same as an Observation.component.code then the value element associated with the code SHALL NOT be present (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

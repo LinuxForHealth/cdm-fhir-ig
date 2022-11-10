@@ -3,46 +3,46 @@
 <Claim xmlns="http://hl7.org/fhir">
   <id value="CDMClaimProfessionalInstance"/>
   <meta>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id">
       <valueString value="tenant7209"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id">
       <valueString value="rgVCJnQBxvghkKTI8Hzz"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-name">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name">
       <valueString value="TREX"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-client-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-client-id">
       <valueString value="7209"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-record-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-record-id">
       <valueIdentifier>
         <system value="http://acme-health.com/WellnessMedicalCenter"/>
         <value value="7209_07869_e00080779_3938586_2516181"/>
       </valueIdentifier>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/source-file-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/source-file-id">
       <valueString value="e00080779"/>
     </extension>
     <source value="http://acme-health.com/WellnessMedicalCenter"/>
-    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim"/>
+    <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-claim"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Claim</b><a name="CDMClaimProfessionalInstance"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Claim "CDMClaimProfessionalInstance" </p><p style="margin-bottom: 0px">Information Source: http://acme-health.com/WellnessMedicalCenter!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cdm-claim.html">CDM Claim</a></p></div><p><b>Snapshot Age In Years</b>: 20</p><p><b>Aggregate Claim Indicator</b>: N</p><p><b>Claim Snapshot Provider Name</b>: Dr Smith</p><p><b>Claim Snapshot Provider Zip Code</b>: 79912</p><p><b>Employee Business Unit</b>: EmpBusUnit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-business-unit#EmpBusUnit)</span></p><p><b>Employer</b>: EmployerCode <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employer-code#EmployerCode)</span></p><p><b>Financial System</b>: FinanceSys <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-financial-system#FinanceSys)</span></p><p><b>Claim Category</b>: F1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (claim-status-category-codes#F1)</span></p><p><b>Claim Status</b>: F1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (claim-status-codes#F1)</span></p><p><b>Last Claim Indicator</b>: Y</p><p><b>Participating Plan</b>: LocalParticipatingPlan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-participating-plan#LocalParticipatingPlan)</span></p><p><b>Referral Indicator</b>: N</p><p><b>Submission Type</b>: SubmitType <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-submission-type#SubmitType)</span></p><p><b>Health Data Connect PCP Responsibility Indicator</b>: Y</p><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019721078 (OFFICIAL), Source System Row Identifier: 000000000000000000099999999 (SECONDARY)</p><p><b>status</b>: active</p><p><b>type</b>: Medical claim; Institutional/Professional unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-claim-type.html">Health Data Connect Claim Type Codes</a>#medical; local-claim-type#Medical)</span></p><p><b>subType</b>: Emergency <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-claim-subtype.html">Health Data Connect Claim Subtype Codes</a>#emergency)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>created</b>: 2017-07-15 05:31:00-0500</p><p><b>provider</b>: <a href="Organization-Provider1.html">Organization/Provider1</a> "Dr Smith"</p><p><b>priority</b>: Normal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-processpriority.html">Process Priority Codes</a>#normal)</span></p><p><b>referral</b>: <a href="ServiceRequest-CDMServiceRequestInstance.html">ServiceRequest/CDMServiceRequestInstance</a></p><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 1</p><p><b>provider</b>: <a href="Practitioner-DrKelly.html">Practitioner/DrKelly</a> " KELLY"</p><p><b>role</b>: Ordering provider <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-claim-care-team-role.html">Claim Care Team Role Codes</a>#ordering)</span></p></blockquote><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 2</p><p><b>provider</b>: <a href="Organization-Provider1.html">Organization/Provider1</a> "Dr Smith"</p><p><b>role</b>: Servicing provider <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-claim-care-team-role.html">Claim Care Team Role Codes</a>#servicing)</span></p><p><b>qualification</b>: 01 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-specialty#01)</span></p></blockquote><h3>SupportingInfos</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1</td><td>Information <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html">Claim Information Category Codes</a>#info)</span></td><td>Network provider indicator <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-claim-supporting-info-type.html">Claim Supporting Info Type Codes</a>#network-provider-indicator)</span></td><td>Y</td></tr></table><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 1</p><p><b>diagnosis</b>: Migraine, Unspecified, not Intractable, without Status Migrainosus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#G43.909)</span></p><p><b>type</b>: Principal Diagnosis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-ex-diagnosistype.html">Example Diagnosis Type Codes</a>#principal)</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 2</p><p><b>diagnosis</b>: Encntr for general adult medical exam w/o abnormal findings <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#Z00.00)</span></p><p><b>type</b>: Discharge Diagnosis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-ex-diagnosistype.html">Example Diagnosis Type Codes</a>#discharge)</span></p></blockquote><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Identifier</b></td><td><b>Coverage</b></td><td><b>PreAuthRef</b></td></tr><tr><td>*</td><td>, , </td><td>1</td><td>true</td><td>id: PPOB</td><td><a href="Coverage-PrimaryPayerExample.html">Coverage/PrimaryPayerExample</a></td><td>Y</td></tr></table><h3>Accidents</h3><table class="grid"><tr><td>-</td><td><b>Date</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>2017-06-25</td><td>No <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-indicators.html">Health Data Connect Indicator Codes</a>#N)</span></td></tr></table><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Sequence</b></td><td><b>CareTeamSequence</b></td><td><b>ProductOrService</b></td><td><b>Modifier</b></td><td><b>Serviced[x]</b></td><td><b>Location[x]</b></td><td><b>Quantity</b></td><td><b>BodySite</b></td><td><b>SubSite</b></td></tr><tr><td>*</td><td>, , , </td><td>1</td><td>2</td><td>Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (2.16.840.1.113883.6.285#G0438; local-service-type#LocalServiceType)</span></td><td>Dressing for one wound <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-procedure-modifier.html">Procedure Modifier Codes</a>#A1)</span></td><td>2017-06-25 --&gt; 2017-06-25</td><td>Office <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-CMSPlaceofServiceCodes.html">CMS Place of Service Codes (POS)</a>#11; local-place-of-service#LocalPlcOfService)</span></td><td>1</td><td>Upper Right Third Molar (Wisdom Tooth) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-ada-tooth.html">American Dental Association Tooth Numbering Code System</a>#1; <a href="CodeSystem-ada-tooth-quadrant.html">American Dental Association Tooth Quadrant Code System</a>#UR)</span></td><td>LocalToothSurface1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-tooth-surface#LocalToothSurface1)</span>, LocalToothSurface2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-tooth-surface#LocalToothSurface2)</span></td></tr></table></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Claim</b><a name="CDMClaimProfessionalInstance"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Claim "CDMClaimProfessionalInstance" </p><p style="margin-bottom: 0px">Information Source: http://acme-health.com/WellnessMedicalCenter!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cdm-claim.html">CDM Claim</a></p></div><p><b>Snapshot Age In Years</b>: 20</p><p><b>Aggregate Claim Indicator</b>: N</p><p><b>Claim Snapshot Provider Name</b>: Dr Smith</p><p><b>Claim Snapshot Provider Zip Code</b>: 79912</p><p><b>Employee Business Unit</b>: EmpBusUnit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employee-business-unit#EmpBusUnit)</span></p><p><b>Employer</b>: EmployerCode <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-employer-code#EmployerCode)</span></p><p><b>Financial System</b>: FinanceSys <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-financial-system#FinanceSys)</span></p><p><b>Claim Category</b>: F1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (claim-status-category-codes#F1)</span></p><p><b>Claim Status</b>: F1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (claim-status-codes#F1)</span></p><p><b>Last Claim Indicator</b>: Y</p><p><b>Participating Plan</b>: LocalParticipatingPlan <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-participating-plan#LocalParticipatingPlan)</span></p><p><b>Referral Indicator</b>: N</p><p><b>Submission Type</b>: SubmitType <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-submission-type#SubmitType)</span></p><p><b>Payer PCP Responsibility Indicator</b>: Y</p><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019721078(use: OFFICIAL), Source System Row Identifier: 000000000000000000099999999(use: SECONDARY)</p><p><b>status</b>: active</p><p><b>type</b>: Medical claim; Institutional/Professional unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-payer-claim-type.html">Payer Claim Type Codes</a>#medical; local-claim-type#Medical)</span></p><p><b>subType</b>: Emergency <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-claim-subtype.html">Claim Subtype Codes</a>#emergency)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>created</b>: 2017-07-15 05:31:00-0500</p><p><b>provider</b>: <a href="Organization-Provider1.html">Organization/Provider1</a> "Dr Smith"</p><p><b>priority</b>: Normal <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-processpriority.html">Process Priority Codes</a>#normal)</span></p><p><b>referral</b>: <a href="ServiceRequest-CDMServiceRequestInstance.html">ServiceRequest/CDMServiceRequestInstance</a></p><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 1</p><p><b>provider</b>: <a href="Practitioner-DrKelly.html">Practitioner/DrKelly</a> " KELLY"</p><p><b>role</b>: Ordering provider <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-claim-care-team-role.html">Claim Care Team Role Codes</a>#ordering)</span></p></blockquote><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 2</p><p><b>provider</b>: <a href="Organization-Provider1.html">Organization/Provider1</a> "Dr Smith"</p><p><b>role</b>: Servicing provider <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-claim-care-team-role.html">Claim Care Team Role Codes</a>#servicing)</span></p><p><b>qualification</b>: 01 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-specialty#01)</span></p></blockquote><h3>SupportingInfos</h3><table class="grid"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1</td><td>Information <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html">Claim Information Category Codes</a>#info)</span></td><td>Network provider indicator <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-claim-supporting-info-type.html">Claim Supporting Info Type Codes</a>#network-provider-indicator)</span></td><td>Y</td></tr></table><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 1</p><p><b>diagnosis</b>: Migraine, Unspecified, not Intractable, without Status Migrainosus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-icd10CM.html">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#G43.909)</span></p><p><b>type</b>: Principal Diagnosis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-ex-diagnosistype.html">Example Diagnosis Type Codes</a>#principal)</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 2</p><p><b>diagnosis</b>: Encntr for general adult medical exam w/o abnormal findings <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-icd10CM.html">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#Z00.00)</span></p><p><b>type</b>: Discharge Diagnosis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-ex-diagnosistype.html">Example Diagnosis Type Codes</a>#discharge)</span></p></blockquote><h3>Insurances</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Identifier</b></td><td><b>Coverage</b></td><td><b>PreAuthRef</b></td></tr><tr><td>*</td><td>, , </td><td>1</td><td>true</td><td>id: PPOB</td><td><a href="Coverage-PrimaryPayerExample.html">Coverage/PrimaryPayerExample</a></td><td>Y</td></tr></table><h3>Accidents</h3><table class="grid"><tr><td>-</td><td><b>Date</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>2017-06-25</td><td>No <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-payer-indicators.html">Payer Indicator Codes</a>#N)</span></td></tr></table><h3>Items</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Sequence</b></td><td><b>CareTeamSequence</b></td><td><b>ProductOrService</b></td><td><b>Modifier</b></td><td><b>Serviced[x]</b></td><td><b>Location[x]</b></td><td><b>Quantity</b></td><td><b>BodySite</b></td><td><b>SubSite</b></td></tr><tr><td>*</td><td>, , , </td><td>1</td><td>2</td><td>Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (2.16.840.1.113883.6.285#G0438; local-service-type#LocalServiceType)</span></td><td>Dressing for one wound <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-procedure-modifier.html">Procedure Modifier Codes</a>#A1)</span></td><td>2017-06-25 --&gt; 2017-06-25</td><td>Office <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-CMSPlaceofServiceCodes.html">CMS Place of Service Codes (POS)</a>#11; local-place-of-service#LocalPlcOfService)</span></td><td>1</td><td>Upper Right Third Molar (Wisdom Tooth) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-ada-tooth.html">American Dental Association Tooth Numbering Code System</a>#1; <a href="CodeSystem-ada-tooth-quadrant.html">American Dental Association Tooth Quadrant Code System</a>#UR)</span></td><td>LocalToothSurface1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-tooth-surface#LocalToothSurface1)</span>, LocalToothSurface2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-tooth-surface#LocalToothSurface2)</span></td></tr></table></div>
   </text>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/snapshot-age-in-years">
     <valueUnsignedInt value="20"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/aggregate-claim-indicator">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/aggregate-claim-indicator">
     <valueString value="N"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-name">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-snapshot-provider-name">
     <valueString value="Dr Smith"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code">
     <valueString value="79912"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/employee-business-unit">
     <valueCodeableConcept>
       <coding>
         <system value="http://acme-health.com/CodeSystem/local-employee-business-unit"/>
@@ -50,7 +50,7 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/employer">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/employer">
     <valueCodeableConcept>
       <coding>
         <system value="http://acme-health.com/CodeSystem/local-employer-code"/>
@@ -58,7 +58,7 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/financial-system">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/financial-system">
     <valueCodeableConcept>
       <coding>
         <system value="http://acme-health.com/CodeSystem/local-financial-system"/>
@@ -66,7 +66,7 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/claim-category">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-category">
     <valueCodeableConcept>
       <coding>
         <system value="https://x12.org/codes/claim-status-category-codes"/>
@@ -74,7 +74,7 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/claim-status">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-status">
     <valueCodeableConcept>
       <coding>
         <system value="https://x12.org/codes/claim-status-codes"/>
@@ -82,10 +82,10 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/last-claim-indicator">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/last-claim-indicator">
     <valueString value="Y"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/participating-plan">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/participating-plan">
     <valueCodeableConcept>
       <coding>
         <system value="http://acme-health.com/CodeSystem/local-participating-plan"/>
@@ -93,10 +93,10 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/referral-indicator">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/referral-indicator">
     <valueString value="N"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/submission-type">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/submission-type">
     <valueCodeableConcept>
       <coding>
         <system value="http://acme-health.com/CodeSystem/local-submission-type"/>
@@ -104,14 +104,14 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-pcp-responsibility-indicator">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/payer-pcp-responsibility-indicator">
     <valueString value="Y"/>
   </extension>
   <identifier>
     <use value="official"/>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="SSRI"/>
       </coding>
     </type>
@@ -125,7 +125,7 @@
     <use value="secondary"/>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="SSRI"/>
       </coding>
     </type>
@@ -135,7 +135,7 @@
   <status value="active"/>
   <type>
     <coding>
-      <system value="http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type"/>
+      <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-type"/>
       <code value="medical"/>
     </coding>
     <coding>
@@ -145,7 +145,7 @@
   </type>
   <subType>
     <coding>
-      <system value="http://ibm.com/fhir/cdm/CodeSystem/wh-claim-subtype"/>
+      <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-subtype"/>
       <code value="emergency"/>
     </coding>
   </subType>
@@ -173,7 +173,7 @@
     </provider>
     <role>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-care-team-role"/>
         <code value="ordering"/>
       </coding>
     </role>
@@ -185,7 +185,7 @@
     </provider>
     <role>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-care-team-role"/>
         <code value="servicing"/>
       </coding>
     </role>
@@ -206,7 +206,7 @@
     </category>
     <code>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type"/>
         <code value="network-provider-indicator"/>
       </coding>
     </code>
@@ -245,10 +245,10 @@
     </type>
   </diagnosis>
   <insurance>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/crossover-indicator">
       <valueString value="N"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/line-of-business">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/line-of-business">
       <valueCodeableConcept>
         <coding>
           <system value="http://acme-health.com/CodeSystem/local-line-of-business"/>
@@ -256,7 +256,7 @@
         </coding>
       </valueCodeableConcept>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/prior-authorization-indicator">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/prior-authorization-indicator">
       <valueString value="Y"/>
     </extension>
     <sequence value="1"/>
@@ -274,22 +274,22 @@
     <date value="2017-06-25"/>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/wh-payer-indicators"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-indicators"/>
         <code value="N"/>
       </coding>
     </type>
   </accident>
   <item>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/capitated-service-indicator">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/capitated-service-indicator">
       <valueString value="N"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/fully-insured-indicator">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/fully-insured-indicator">
       <valueString value="Y"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/nursing-home-indicator">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/nursing-home-indicator">
       <valueString value="N"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/service-bill-days-count">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/service-bill-days-count">
       <valueUnsignedInt value="20"/>
     </extension>
     <sequence value="1"/>
@@ -307,7 +307,7 @@
     </productOrService>
     <modifier>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/procedure-modifier"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/procedure-modifier"/>
         <code value="A1"/>
       </coding>
     </modifier>
@@ -327,7 +327,7 @@
       </coding>
     </locationCodeableConcept>
     <quantity>
-      <extension url="http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service">
+      <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/local-number-of-units-per-service">
         <valueQuantity>
           <value value="1"/>
         </valueQuantity>
@@ -336,11 +336,11 @@
     </quantity>
     <bodySite>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/ada-tooth"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/ada-tooth"/>
         <code value="1"/>
       </coding>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/ada-tooth-quadrant"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/ada-tooth-quadrant"/>
         <code value="UR"/>
       </coding>
     </bodySite>

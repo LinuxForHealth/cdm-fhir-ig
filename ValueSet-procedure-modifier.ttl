@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/procedure-modifier> a fhir:ValueSet;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/procedure-modifier> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "procedure-modifier"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-procedure-modifier.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/procedure-modifier</code></a></li><li>Include all codes defined in <code>https://oidref.com/2.16.840.1.113883.6.285</code></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-procedure-modifier.html\"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/procedure-modifier</code></a></li><li>Include all codes defined in <code>https://oidref.com/2.16.840.1.113883.6.285</code></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/procedure-modifier"];
-  fhir:ValueSet.version [ fhir:value "7.0.0"];
+  fhir:ValueSet.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/procedure-modifier"];
+  fhir:ValueSet.version [ fhir:value "8.0.0"];
   fhir:ValueSet.name [ fhir:value "ProcedureModifierValueSet"];
   fhir:ValueSet.title [ fhir:value "Procedure Modifier Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Alvearie Team"];
+  fhir:ValueSet.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "LinuxForHealth Team"];
   fhir:ValueSet.description [ fhir:value "The value set indicating the procedure modifiers"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
@@ -31,7 +31,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/procedure-modifier" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/procedure-modifier" ]
      ], [
        fhir:index 1;
        fhir:ValueSet.compose.include.system [ fhir:value "https://oidref.com/2.16.840.1.113883.6.285" ]
@@ -40,7 +40,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/procedure-modifier.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/procedure-modifier.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

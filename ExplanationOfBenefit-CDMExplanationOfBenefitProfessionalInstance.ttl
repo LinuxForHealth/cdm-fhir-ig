@@ -5,29 +5,29 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ExplanationOfBenefit/CDMExplanationOfBenefitProfessionalInstance> a fhir:ExplanationOfBenefit;
+<http://linuxforhealth.org/fhir/cdm/ExplanationOfBenefit/CDMExplanationOfBenefitProfessionalInstance> a fhir:ExplanationOfBenefit;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CDMExplanationOfBenefitProfessionalInstance"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "tenant7209" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "rgVCJnQBxvghkKTI8Hzz" ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "TREX" ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-client-id" ];
        fhir:Extension.valueString [ fhir:value "7209" ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-record-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-record-id" ];
        fhir:Extension.valueIdentifier [
          fhir:Identifier.system [ fhir:value "http://acme-health.com/WellnessMedicalCenter" ];
          fhir:Identifier.value [ fhir:value "7209_07869_e00080779_3938586_2516181" ]
@@ -35,14 +35,14 @@
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/WellnessMedicalCenter" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ExplanationOfBenefit</b><a name=\"CDMExplanationOfBenefitProfessionalInstance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ExplanationOfBenefit \"CDMExplanationOfBenefitProfessionalInstance\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/WellnessMedicalCenter!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-explanation-of-benefit.html\">CDM Explanation of Benefit</a></p></div><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019721078 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: MedicalClaimType <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-claim-type#MedicalClaimType)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>created</b>: 2017-07-25 05:31:00-0500</p><p><b>insurer</b>: <span></span></p><p><b>provider</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><p><b>outcome</b>: complete</p><h3>CareTeams</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Provider</b></td><td><b>Role</b></td></tr><tr><td>*</td><td>1</td><td><a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</td><td>Servicing provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-care-team-role.html\">Claim Care Team Role Codes</a>#servicing)</span></td></tr></table><h3>SupportingInfos</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1</td><td>Information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#info)</span></td><td>Network provider indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#network-provider-indicator)</span></td><td>Y</td></tr></table><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>1</td><td>Encntr for general adult medical exam w/o abnormal findings <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#Z00.00)</span></td><td>Discharge Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-diagnosistype.html\">Example Diagnosis Type Codes</a>#discharge)</span></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href=\"Coverage-PrimaryPayerExample.html\">Coverage/PrimaryPayerExample</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>careTeamSequence</b>: 1</p><p><b>productOrService</b>: Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (2.16.840.1.113883.6.285#G0438)</span></p><p><b>serviced</b>: 2017-06-20 --&gt; 2017-06-20</p><p><b>location</b>: Office <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-CMSPlaceofServiceCodes.html\">CMS Place of Service Codes (POS)</a>#11; local-place-of-service#LocalPlcOfService)</span></p><p><b>quantity</b>: 1</p><blockquote><p><b>adjudication</b></p><p><b>category</b>: Coinsurance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#coinsurance)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Copayment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#copay)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>25</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Deductible Amount <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#deductible)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Third Party Amount <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#third-party)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Allowed Amount <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#allowed)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>125</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Submitted <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#submitted)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>165</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Net Payment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#net-payment)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>100</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Discount Amount <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#discount)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>40</td><td>USD</td></tr></table></blockquote></blockquote><h3>Adjudications</h3><table class=\"grid\"><tr><td>-</td><td><b>Category</b></td></tr><tr><td>*</td><td>In Network <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-paid-in-network-indicator.html\">Paid In Network Indicator Codes</a>#in-network)</span></td></tr></table><blockquote><p><b>payment</b></p><p><b>type</b>: Complete <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-paymenttype.html\">Example Payment Type Codes</a>#complete)</span></p><p><b>date</b>: 2017-07-20</p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>100</td></tr></table></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ExplanationOfBenefit</b><a name=\"CDMExplanationOfBenefitProfessionalInstance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ExplanationOfBenefit \"CDMExplanationOfBenefitProfessionalInstance\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/WellnessMedicalCenter!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-explanation-of-benefit.html\">CDM Explanation of Benefit</a></p></div><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019721078(use: OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: MedicalClaimType <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-claim-type#MedicalClaimType)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>created</b>: 2017-07-25 05:31:00-0500</p><p><b>insurer</b>: <span></span></p><p><b>provider</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><p><b>outcome</b>: complete</p><h3>CareTeams</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Provider</b></td><td><b>Role</b></td></tr><tr><td>*</td><td>1</td><td><a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</td><td>Servicing provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-care-team-role.html\">Claim Care Team Role Codes</a>#servicing)</span></td></tr></table><h3>SupportingInfos</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>1</td><td>Information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#info)</span></td><td>Network provider indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#network-provider-indicator)</span></td><td>Y</td></tr></table><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>1</td><td>Encntr for general adult medical exam w/o abnormal findings <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#Z00.00)</span></td><td>Discharge Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-ex-diagnosistype.html\">Example Diagnosis Type Codes</a>#discharge)</span></td></tr></table><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>true</td><td><a href=\"Coverage-PrimaryPayerExample.html\">Coverage/PrimaryPayerExample</a></td></tr></table><blockquote><p><b>item</b></p><p><b>sequence</b>: 1</p><p><b>careTeamSequence</b>: 1</p><p><b>productOrService</b>: Annual wellness visit; includes a personalized prevention plan of service (pps), initial visit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (2.16.840.1.113883.6.285#G0438)</span></p><p><b>serviced</b>: 2017-06-20 --&gt; 2017-06-20</p><p><b>location</b>: Office <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-CMSPlaceofServiceCodes.html\">CMS Place of Service Codes (POS)</a>#11; local-place-of-service#LocalPlcOfService)</span></p><p><b>quantity</b>: 1</p><blockquote><p><b>adjudication</b></p><p><b>category</b>: Coinsurance <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#coinsurance)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Copayment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#copay)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>25</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Deductible Amount <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#deductible)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Third Party Amount <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#third-party)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Allowed Amount <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#allowed)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>125</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Submitted <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#submitted)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>165</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Net Payment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#net-payment)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>100</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Discount Amount <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-adjudication-category.html\">Adjudication Category Codes</a>#discount)</span></p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>40</td><td>USD</td></tr></table></blockquote></blockquote><h3>Adjudications</h3><table class=\"grid\"><tr><td>-</td><td><b>Category</b></td></tr><tr><td>*</td><td>In Network <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-paid-in-network-indicator.html\">Paid In Network Indicator Codes</a>#in-network)</span></td></tr></table><blockquote><p><b>payment</b></p><p><b>type</b>: Complete <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-ex-paymenttype.html\">Example Payment Type Codes</a>#complete)</span></p><p><b>date</b>: 2017-07-20</p><h3>Amounts</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>100</td></tr></table></blockquote></div>"
   ];
   fhir:ExplanationOfBenefit.identifier [
      fhir:index 0;
@@ -50,7 +50,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -70,7 +70,7 @@
   ];
   fhir:ExplanationOfBenefit.use [ fhir:value "claim"];
   fhir:ExplanationOfBenefit.patient [
-     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance>;
      fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
   ];
   fhir:ExplanationOfBenefit.created [ fhir:value "2017-07-25T17:31:00-05:00"^^xsd:dateTime];
@@ -82,7 +82,7 @@
      ]
   ];
   fhir:ExplanationOfBenefit.provider [
-     fhir:link <http://ibm.com/fhir/cdm/Practitioner/DrKelly>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Practitioner/DrKelly>;
      fhir:Reference.reference [ fhir:value "Practitioner/DrKelly" ]
   ];
   fhir:ExplanationOfBenefit.outcome [ fhir:value "complete"];
@@ -90,13 +90,13 @@
      fhir:index 0;
      fhir:ExplanationOfBenefit.careTeam.sequence [ fhir:value "1"^^xsd:positiveInteger ];
      fhir:ExplanationOfBenefit.careTeam.provider [
-       fhir:link <http://ibm.com/fhir/cdm/Practitioner/DrKelly>;
+       fhir:link <http://linuxforhealth.org/fhir/cdm/Practitioner/DrKelly>;
        fhir:Reference.reference [ fhir:value "Practitioner/DrKelly" ]
      ];
      fhir:ExplanationOfBenefit.careTeam.role [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-care-team-role" ];
          fhir:Coding.code [ fhir:value "servicing" ]
        ]
      ]
@@ -114,7 +114,7 @@
      fhir:ExplanationOfBenefit.supportingInfo.code [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type" ];
          fhir:Coding.code [ fhir:value "network-provider-indicator" ]
        ]
      ];
@@ -144,7 +144,7 @@
      fhir:index 0;
      fhir:ExplanationOfBenefit.insurance.focal [ fhir:value "true"^^xsd:boolean ];
      fhir:ExplanationOfBenefit.insurance.coverage [
-       fhir:link <http://ibm.com/fhir/cdm/Coverage/PrimaryPayerExample>;
+       fhir:link <http://linuxforhealth.org/fhir/cdm/Coverage/PrimaryPayerExample>;
        fhir:Reference.reference [ fhir:value "Coverage/PrimaryPayerExample" ]
      ]
   ];
@@ -182,7 +182,7 @@
      fhir:ExplanationOfBenefit.item.quantity [
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/local-number-of-units-per-service" ];
          fhir:Extension.valueQuantity [
            fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ]
          ]
@@ -194,7 +194,7 @@
        fhir:ExplanationOfBenefit.item.adjudication.category [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category" ];
            fhir:Coding.code [ fhir:value "coinsurance" ]
          ]
        ];
@@ -207,7 +207,7 @@
        fhir:ExplanationOfBenefit.item.adjudication.category [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category" ];
            fhir:Coding.code [ fhir:value "copay" ]
          ]
        ];
@@ -220,7 +220,7 @@
        fhir:ExplanationOfBenefit.item.adjudication.category [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category" ];
            fhir:Coding.code [ fhir:value "deductible" ]
          ]
        ];
@@ -233,7 +233,7 @@
        fhir:ExplanationOfBenefit.item.adjudication.category [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category" ];
            fhir:Coding.code [ fhir:value "third-party" ]
          ]
        ];
@@ -246,7 +246,7 @@
        fhir:ExplanationOfBenefit.item.adjudication.category [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category" ];
            fhir:Coding.code [ fhir:value "allowed" ]
          ]
        ];
@@ -259,7 +259,7 @@
        fhir:ExplanationOfBenefit.item.adjudication.category [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category" ];
            fhir:Coding.code [ fhir:value "submitted" ]
          ]
        ];
@@ -272,7 +272,7 @@
        fhir:ExplanationOfBenefit.item.adjudication.category [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category" ];
            fhir:Coding.code [ fhir:value "net-payment" ]
          ]
        ];
@@ -285,7 +285,7 @@
        fhir:ExplanationOfBenefit.item.adjudication.category [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category" ];
            fhir:Coding.code [ fhir:value "discount" ]
          ]
        ];
@@ -300,7 +300,7 @@
      fhir:ExplanationOfBenefit.item.adjudication.category [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/paid-in-network-indicator" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/paid-in-network-indicator" ];
          fhir:Coding.code [ fhir:value "in-network" ]
        ]
      ]
@@ -321,7 +321,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ExplanationOfBenefit/CDMExplanationOfBenefitProfessionalInstance.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/ExplanationOfBenefit/CDMExplanationOfBenefitProfessionalInstance.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

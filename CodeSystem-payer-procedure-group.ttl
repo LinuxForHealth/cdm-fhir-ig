@@ -1,0 +1,1022 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-procedure-group> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "payer-procedure-group"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-procedure-group</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"payer-procedure-group-1\"> </a></td><td>Incision &amp; drainage of cyst</td><td>Incision &amp; drainage of cyst</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"payer-procedure-group-2\"> </a></td><td>Acne surgery</td><td>Acne surgery</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"payer-procedure-group-3\"> </a></td><td>Nail debridement/avulsion</td><td>Nail debridement/avulsion</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"payer-procedure-group-4\"> </a></td><td>Skin lesion injection</td><td>Skin lesion injection</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"payer-procedure-group-5\"> </a></td><td>Destruction, facial lesion</td><td>Destruction, facial lesion</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"payer-procedure-group-6\"> </a></td><td>Destruction, non-facial lesion</td><td>Destruction, non-facial lesion</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"payer-procedure-group-7\"> </a></td><td>Destruction of warts</td><td>Destruction of warts</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"payer-procedure-group-8\"> </a></td><td>Excision of breast tissue</td><td>Excision of breast tissue</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"payer-procedure-group-9\"> </a></td><td>Other minor skin &amp; breast surgery</td><td>Other minor skin &amp; breast surgery</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"payer-procedure-group-10\"> </a></td><td>Arthrocentesis, sm/med joint</td><td>Arthrocentesis, sm/med joint</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"payer-procedure-group-11\"> </a></td><td>Arthrocentesis, large joint</td><td>Arthrocentesis, large joint</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"payer-procedure-group-12\"> </a></td><td>Other major skin surgery</td><td>Other major skin surgery</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"payer-procedure-group-13\"> </a></td><td>Other major breast surgery</td><td>Other major breast surgery</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"payer-procedure-group-14\"> </a></td><td>Other major musculoskeletal surgery</td><td>Other major musculoskeletal surgery</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"payer-procedure-group-15\"> </a></td><td>Other minor musculoskeletal surgery</td><td>Other minor musculoskeletal surgery</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"payer-procedure-group-16\"> </a></td><td>Bronchoscopy</td><td>Bronchoscopy</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"payer-procedure-group-17\"> </a></td><td>Laryngoscopy</td><td>Laryngoscopy</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"payer-procedure-group-19\"> </a></td><td>Other minor respiratory procedures</td><td>Other minor respiratory procedures</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"payer-procedure-group-20\"> </a></td><td>Other major respiratory procedures</td><td>Other major respiratory procedures</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"payer-procedure-group-31\"> </a></td><td>Venipuncture (draw blood)</td><td>Venipuncture (draw blood)</td></tr><tr><td style=\"white-space:nowrap\">38<a name=\"payer-procedure-group-38\"> </a></td><td>Other minor cardiovascular procedures</td><td>Other minor cardiovascular procedures</td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"payer-procedure-group-39\"> </a></td><td>Other major cardiovascular procedures</td><td>Other major cardiovascular procedures</td></tr><tr><td style=\"white-space:nowrap\">44<a name=\"payer-procedure-group-44\"> </a></td><td>Minor hemic &amp; lymphatic procedures</td><td>Minor hemic &amp; lymphatic procedures</td></tr><tr><td style=\"white-space:nowrap\">45<a name=\"payer-procedure-group-45\"> </a></td><td>Major hemic &amp; lymphatic procedures</td><td>Major hemic &amp; lymphatic procedures</td></tr><tr><td style=\"white-space:nowrap\">46<a name=\"payer-procedure-group-46\"> </a></td><td>Upper GI endoscopy</td><td>Upper GI endoscopy</td></tr><tr><td style=\"white-space:nowrap\">47<a name=\"payer-procedure-group-47\"> </a></td><td>Repair of inguinal hernia</td><td>Repair of inguinal hernia</td></tr><tr><td style=\"white-space:nowrap\">48<a name=\"payer-procedure-group-48\"> </a></td><td>Colonoscopy</td><td>Colonoscopy</td></tr><tr><td style=\"white-space:nowrap\">49<a name=\"payer-procedure-group-49\"> </a></td><td>Other major digestive procedures</td><td>Other major digestive procedures</td></tr><tr><td style=\"white-space:nowrap\">50<a name=\"payer-procedure-group-50\"> </a></td><td>Other minor digestive procedures</td><td>Other minor digestive procedures</td></tr><tr><td style=\"white-space:nowrap\">51<a name=\"payer-procedure-group-51\"> </a></td><td>Cystourethroscopy</td><td>Cystourethroscopy</td></tr><tr><td style=\"white-space:nowrap\">52<a name=\"payer-procedure-group-52\"> </a></td><td>Transurethral surgery</td><td>Transurethral surgery</td></tr><tr><td style=\"white-space:nowrap\">54<a name=\"payer-procedure-group-54\"> </a></td><td>Other minor urinary procedures</td><td>Other minor urinary procedures</td></tr><tr><td style=\"white-space:nowrap\">55<a name=\"payer-procedure-group-55\"> </a></td><td>Other major urinary procedures</td><td>Other major urinary procedures</td></tr><tr><td style=\"white-space:nowrap\">58<a name=\"payer-procedure-group-58\"> </a></td><td>Minor male genital procedures</td><td>Minor male genital procedures</td></tr><tr><td style=\"white-space:nowrap\">59<a name=\"payer-procedure-group-59\"> </a></td><td>Major male genital procedures</td><td>Major male genital procedures</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"payer-procedure-group-61\"> </a></td><td>Colposcopy</td><td>Colposcopy</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"payer-procedure-group-62\"> </a></td><td>Dilation &amp; currettage</td><td>Dilation &amp; currettage</td></tr><tr><td style=\"white-space:nowrap\">63<a name=\"payer-procedure-group-63\"> </a></td><td>Laparoscopy, hysteroscopy</td><td>Laparoscopy, hysteroscopy</td></tr><tr><td style=\"white-space:nowrap\">64<a name=\"payer-procedure-group-64\"> </a></td><td>Minor female genital procedures</td><td>Minor female genital procedures</td></tr><tr><td style=\"white-space:nowrap\">65<a name=\"payer-procedure-group-65\"> </a></td><td>Major female genital procedures</td><td>Major female genital procedures</td></tr><tr><td style=\"white-space:nowrap\">66<a name=\"payer-procedure-group-66\"> </a></td><td>Decompression, carpal tunnel</td><td>Decompression, carpal tunnel</td></tr><tr><td style=\"white-space:nowrap\">68<a name=\"payer-procedure-group-68\"> </a></td><td>Minor endocrine system procedures</td><td>Minor endocrine system procedures</td></tr><tr><td style=\"white-space:nowrap\">69<a name=\"payer-procedure-group-69\"> </a></td><td>Major endocrine system procedures</td><td>Major endocrine system procedures</td></tr><tr><td style=\"white-space:nowrap\">74<a name=\"payer-procedure-group-74\"> </a></td><td>Minor nervous system procedures</td><td>Minor nervous system procedures</td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"payer-procedure-group-75\"> </a></td><td>Major nervous system procedures</td><td>Major nervous system procedures</td></tr><tr><td style=\"white-space:nowrap\">76<a name=\"payer-procedure-group-76\"> </a></td><td>Cataract removal</td><td>Cataract removal</td></tr><tr><td style=\"white-space:nowrap\">84<a name=\"payer-procedure-group-84\"> </a></td><td>Other minor eye/ocular procedures</td><td>Other minor eye/ocular procedures</td></tr><tr><td style=\"white-space:nowrap\">85<a name=\"payer-procedure-group-85\"> </a></td><td>Other major eye/ocular procedures</td><td>Other major eye/ocular procedures</td></tr><tr><td style=\"white-space:nowrap\">94<a name=\"payer-procedure-group-94\"> </a></td><td>Other minor ear/auditory procedures</td><td>Other minor ear/auditory procedures</td></tr><tr><td style=\"white-space:nowrap\">95<a name=\"payer-procedure-group-95\"> </a></td><td>Other major ear/auditory procedures</td><td>Other major ear/auditory procedures</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"payer-procedure-group-98\"> </a></td><td>Other minor surgery procedures</td><td>Other minor surgery procedures</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"payer-procedure-group-99\"> </a></td><td>Other major surgery procedures</td><td>Other major surgery procedures</td></tr><tr><td style=\"white-space:nowrap\">101<a name=\"payer-procedure-group-101\"> </a></td><td>Office visits, new patient</td><td>Office visits, new patient</td></tr><tr><td style=\"white-space:nowrap\">104<a name=\"payer-procedure-group-104\"> </a></td><td>Office visits, established patient</td><td>Office visits, established patient</td></tr><tr><td style=\"white-space:nowrap\">109<a name=\"payer-procedure-group-109\"> </a></td><td>Office visits, other</td><td>Office visits, other</td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"payer-procedure-group-110\"> </a></td><td>Office visits, emergency</td><td>Office visits, emergency</td></tr><tr><td style=\"white-space:nowrap\">111<a name=\"payer-procedure-group-111\"> </a></td><td>Emergency department visits</td><td>Emergency department visits</td></tr><tr><td style=\"white-space:nowrap\">113<a name=\"payer-procedure-group-113\"> </a></td><td>Physician telephone/online visits</td><td>Physician telephone/online visits</td></tr><tr><td style=\"white-space:nowrap\">114<a name=\"payer-procedure-group-114\"> </a></td><td>ER visits, other</td><td>ER visits, other</td></tr><tr><td style=\"white-space:nowrap\">115<a name=\"payer-procedure-group-115\"> </a></td><td>Preventive care visits</td><td>Preventive care visits</td></tr><tr><td style=\"white-space:nowrap\">116<a name=\"payer-procedure-group-116\"> </a></td><td>Facility visits</td><td>Facility visits</td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"payer-procedure-group-120\"> </a></td><td>Outpatient consults</td><td>Outpatient consults</td></tr><tr><td style=\"white-space:nowrap\">121<a name=\"payer-procedure-group-121\"> </a></td><td>Inpatient consults</td><td>Inpatient consults</td></tr><tr><td style=\"white-space:nowrap\">122<a name=\"payer-procedure-group-122\"> </a></td><td>Other consults, location unspecified</td><td>Other consults, location unspecified</td></tr><tr><td style=\"white-space:nowrap\">124<a name=\"payer-procedure-group-124\"> </a></td><td>Psychiatric diagnostic services</td><td>Psychiatric diagnostic services</td></tr><tr><td style=\"white-space:nowrap\">127<a name=\"payer-procedure-group-127\"> </a></td><td>Specialty drugs other than chemotherapy</td><td>Specialty drugs other than chemotherapy</td></tr><tr><td style=\"white-space:nowrap\">128<a name=\"payer-procedure-group-128\"> </a></td><td>Unlisted general med service</td><td>Unlisted general med service</td></tr><tr><td style=\"white-space:nowrap\">129<a name=\"payer-procedure-group-129\"> </a></td><td>Other medical services</td><td>Other medical services</td></tr><tr><td style=\"white-space:nowrap\">130<a name=\"payer-procedure-group-130\"> </a></td><td>Injections: immunizations</td><td>Injections: immunizations</td></tr><tr><td style=\"white-space:nowrap\">131<a name=\"payer-procedure-group-131\"> </a></td><td>Injections: therapeutic/IV</td><td>Injections: therapeutic/IV</td></tr><tr><td style=\"white-space:nowrap\">132<a name=\"payer-procedure-group-132\"> </a></td><td>Other injections/noninjectables</td><td>Other injections/noninjectables</td></tr><tr><td style=\"white-space:nowrap\">133<a name=\"payer-procedure-group-133\"> </a></td><td>Other preventive medical services</td><td>Other preventive medical services</td></tr><tr><td style=\"white-space:nowrap\">135<a name=\"payer-procedure-group-135\"> </a></td><td>Psychotherapy, individual</td><td>Psychotherapy, individual</td></tr><tr><td style=\"white-space:nowrap\">136<a name=\"payer-procedure-group-136\"> </a></td><td>Psychotherapy, family</td><td>Psychotherapy, family</td></tr><tr><td style=\"white-space:nowrap\">137<a name=\"payer-procedure-group-137\"> </a></td><td>Psychotherapy, group</td><td>Psychotherapy, group</td></tr><tr><td style=\"white-space:nowrap\">138<a name=\"payer-procedure-group-138\"> </a></td><td>Psych advice, non-patient</td><td>Psych advice, non-patient</td></tr><tr><td style=\"white-space:nowrap\">139<a name=\"payer-procedure-group-139\"> </a></td><td>Therapeutic psychiatric services</td><td>Therapeutic psychiatric services</td></tr><tr><td style=\"white-space:nowrap\">140<a name=\"payer-procedure-group-140\"> </a></td><td>Dialysis</td><td>Dialysis</td></tr><tr><td style=\"white-space:nowrap\">143<a name=\"payer-procedure-group-143\"> </a></td><td>Gastroenterology services (non-surgical)</td><td>Gastroenterology services (non-surgical)</td></tr><tr><td style=\"white-space:nowrap\">144<a name=\"payer-procedure-group-144\"> </a></td><td>General eye exams</td><td>General eye exams</td></tr><tr><td style=\"white-space:nowrap\">145<a name=\"payer-procedure-group-145\"> </a></td><td>General ophthalmology services</td><td>General ophthalmology services</td></tr><tr><td style=\"white-space:nowrap\">147<a name=\"payer-procedure-group-147\"> </a></td><td>Ophthalmic diagnostic services</td><td>Ophthalmic diagnostic services</td></tr><tr><td style=\"white-space:nowrap\">148<a name=\"payer-procedure-group-148\"> </a></td><td>ENT diagnostic services</td><td>ENT diagnostic services</td></tr><tr><td style=\"white-space:nowrap\">149<a name=\"payer-procedure-group-149\"> </a></td><td>Speech/hearing therapy</td><td>Speech/hearing therapy</td></tr><tr><td style=\"white-space:nowrap\">150<a name=\"payer-procedure-group-150\"> </a></td><td>Other ENT services (non-surgical)</td><td>Other ENT services (non-surgical)</td></tr><tr><td style=\"white-space:nowrap\">155<a name=\"payer-procedure-group-155\"> </a></td><td>EKG</td><td>EKG</td></tr><tr><td style=\"white-space:nowrap\">156<a name=\"payer-procedure-group-156\"> </a></td><td>EKG stress test</td><td>EKG stress test</td></tr><tr><td style=\"white-space:nowrap\">157<a name=\"payer-procedure-group-157\"> </a></td><td>EKG monitoring</td><td>EKG monitoring</td></tr><tr><td style=\"white-space:nowrap\">158<a name=\"payer-procedure-group-158\"> </a></td><td>PTCA- percutaneous angioplasty</td><td>PTCA- percutaneous angioplasty</td></tr><tr><td style=\"white-space:nowrap\">160<a name=\"payer-procedure-group-160\"> </a></td><td>Echocardiogram</td><td>Echocardiogram</td></tr><tr><td style=\"white-space:nowrap\">161<a name=\"payer-procedure-group-161\"> </a></td><td>Cardiac catheterization</td><td>Cardiac catheterization</td></tr><tr><td style=\"white-space:nowrap\">162<a name=\"payer-procedure-group-162\"> </a></td><td>Dx radiology, other vascular</td><td>Dx radiology, other vascular</td></tr><tr><td style=\"white-space:nowrap\">163<a name=\"payer-procedure-group-163\"> </a></td><td>Other cardiovascular procedures</td><td>Other cardiovascular procedures</td></tr><tr><td style=\"white-space:nowrap\">165<a name=\"payer-procedure-group-165\"> </a></td><td>Non-invasive peripheral vascular studies</td><td>Non-invasive peripheral vascular studies</td></tr><tr><td style=\"white-space:nowrap\">166<a name=\"payer-procedure-group-166\"> </a></td><td>Spirometry</td><td>Spirometry</td></tr><tr><td style=\"white-space:nowrap\">167<a name=\"payer-procedure-group-167\"> </a></td><td>Bronchospasm evaluation</td><td>Bronchospasm evaluation</td></tr><tr><td style=\"white-space:nowrap\">168<a name=\"payer-procedure-group-168\"> </a></td><td>Pulmonary function tests</td><td>Pulmonary function tests</td></tr><tr><td style=\"white-space:nowrap\">169<a name=\"payer-procedure-group-169\"> </a></td><td>Other non-surgical pulmonary services</td><td>Other non-surgical pulmonary services</td></tr><tr><td style=\"white-space:nowrap\">170<a name=\"payer-procedure-group-170\"> </a></td><td>Respiratory therapy</td><td>Respiratory therapy</td></tr><tr><td style=\"white-space:nowrap\">171<a name=\"payer-procedure-group-171\"> </a></td><td>Allergy testing</td><td>Allergy testing</td></tr><tr><td style=\"white-space:nowrap\">172<a name=\"payer-procedure-group-172\"> </a></td><td>Allergy therapy</td><td>Allergy therapy</td></tr><tr><td style=\"white-space:nowrap\">175<a name=\"payer-procedure-group-175\"> </a></td><td>Nerve conduction tests/EMG</td><td>Nerve conduction tests/EMG</td></tr><tr><td style=\"white-space:nowrap\">176<a name=\"payer-procedure-group-176\"> </a></td><td>Unlisted neurol Dx procedures</td><td>Unlisted neurol Dx procedures</td></tr><tr><td style=\"white-space:nowrap\">177<a name=\"payer-procedure-group-177\"> </a></td><td>Other neurology dx services</td><td>Other neurology dx services</td></tr><tr><td style=\"white-space:nowrap\">180<a name=\"payer-procedure-group-180\"> </a></td><td>Chemotherapy</td><td>Chemotherapy</td></tr><tr><td style=\"white-space:nowrap\">181<a name=\"payer-procedure-group-181\"> </a></td><td>Physical medicine: hot/cold packs</td><td>Physical medicine: hot/cold packs</td></tr><tr><td style=\"white-space:nowrap\">182<a name=\"payer-procedure-group-182\"> </a></td><td>Physical medicine: elec stimulation</td><td>Physical medicine: elec stimulation</td></tr><tr><td style=\"white-space:nowrap\">183<a name=\"payer-procedure-group-183\"> </a></td><td>Physical medicine: other modes</td><td>Physical medicine: other modes</td></tr><tr><td style=\"white-space:nowrap\">184<a name=\"payer-procedure-group-184\"> </a></td><td>Physical medicine: ultrasound</td><td>Physical medicine: ultrasound</td></tr><tr><td style=\"white-space:nowrap\">185<a name=\"payer-procedure-group-185\"> </a></td><td>Physical medicine: manipulation</td><td>Physical medicine: manipulation</td></tr><tr><td style=\"white-space:nowrap\">186<a name=\"payer-procedure-group-186\"> </a></td><td>Physical medicine: other procedures</td><td>Physical medicine: other procedures</td></tr><tr><td style=\"white-space:nowrap\">187<a name=\"payer-procedure-group-187\"> </a></td><td>Physical medicine: testing</td><td>Physical medicine: testing</td></tr><tr><td style=\"white-space:nowrap\">189<a name=\"payer-procedure-group-189\"> </a></td><td>Physical medicine: unlisted/other</td><td>Physical medicine: unlisted/other</td></tr><tr><td style=\"white-space:nowrap\">190<a name=\"payer-procedure-group-190\"> </a></td><td>Case management services</td><td>Case management services</td></tr><tr><td style=\"white-space:nowrap\">191<a name=\"payer-procedure-group-191\"> </a></td><td>Spinal manipulation, chiro</td><td>Spinal manipulation, chiro</td></tr><tr><td style=\"white-space:nowrap\">195<a name=\"payer-procedure-group-195\"> </a></td><td>Chiropractic services</td><td>Chiropractic services</td></tr><tr><td style=\"white-space:nowrap\">197<a name=\"payer-procedure-group-197\"> </a></td><td>Specimen handling</td><td>Specimen handling</td></tr><tr><td style=\"white-space:nowrap\">198<a name=\"payer-procedure-group-198\"> </a></td><td>Medical supplies and devices</td><td>Medical supplies and devices</td></tr><tr><td style=\"white-space:nowrap\">199<a name=\"payer-procedure-group-199\"> </a></td><td>Other medicine procedures</td><td>Other medicine procedures</td></tr><tr><td style=\"white-space:nowrap\">200<a name=\"payer-procedure-group-200\"> </a></td><td>Durable medical equipment</td><td>Durable medical equipment</td></tr><tr><td style=\"white-space:nowrap\">201<a name=\"payer-procedure-group-201\"> </a></td><td>X-ray, head &amp; neck</td><td>X-ray, head &amp; neck</td></tr><tr><td style=\"white-space:nowrap\">202<a name=\"payer-procedure-group-202\"> </a></td><td>X-ray, chest</td><td>X-ray, chest</td></tr><tr><td style=\"white-space:nowrap\">204<a name=\"payer-procedure-group-204\"> </a></td><td>X-ray, spine/pelvis</td><td>X-ray, spine/pelvis</td></tr><tr><td style=\"white-space:nowrap\">205<a name=\"payer-procedure-group-205\"> </a></td><td>X-ray, GI tract</td><td>X-ray, GI tract</td></tr><tr><td style=\"white-space:nowrap\">206<a name=\"payer-procedure-group-206\"> </a></td><td>X-ray, abdomen</td><td>X-ray, abdomen</td></tr><tr><td style=\"white-space:nowrap\">207<a name=\"payer-procedure-group-207\"> </a></td><td>X-ray, OB/Gyn</td><td>X-ray, OB/Gyn</td></tr><tr><td style=\"white-space:nowrap\">208<a name=\"payer-procedure-group-208\"> </a></td><td>X-ray, extremities</td><td>X-ray, extremities</td></tr><tr><td style=\"white-space:nowrap\">210<a name=\"payer-procedure-group-210\"> </a></td><td>CT scan, head &amp; neck</td><td>CT scan, head &amp; neck</td></tr><tr><td style=\"white-space:nowrap\">211<a name=\"payer-procedure-group-211\"> </a></td><td>CT scan, chest</td><td>CT scan, chest</td></tr><tr><td style=\"white-space:nowrap\">212<a name=\"payer-procedure-group-212\"> </a></td><td>CT scan, spine</td><td>CT scan, spine</td></tr><tr><td style=\"white-space:nowrap\">213<a name=\"payer-procedure-group-213\"> </a></td><td>CT scan, abdomen/pelvis</td><td>CT scan, abdomen/pelvis</td></tr><tr><td style=\"white-space:nowrap\">214<a name=\"payer-procedure-group-214\"> </a></td><td>CT scan, extremities</td><td>CT scan, extremities</td></tr><tr><td style=\"white-space:nowrap\">215<a name=\"payer-procedure-group-215\"> </a></td><td>PET scan</td><td>PET scan</td></tr><tr><td style=\"white-space:nowrap\">216<a name=\"payer-procedure-group-216\"> </a></td><td>Magnetic resonance (NMR/MRI)</td><td>Magnetic resonance (NMR/MRI)</td></tr><tr><td style=\"white-space:nowrap\">220<a name=\"payer-procedure-group-220\"> </a></td><td>Myelograms/discograms</td><td>Myelograms/discograms</td></tr><tr><td style=\"white-space:nowrap\">221<a name=\"payer-procedure-group-221\"> </a></td><td>Cholecystograms/cholangiograms</td><td>Cholecystograms/cholangiograms</td></tr><tr><td style=\"white-space:nowrap\">222<a name=\"payer-procedure-group-222\"> </a></td><td>Cholecysto/cholangiogram, inv</td><td>Cholecysto/cholangiogram, inv</td></tr><tr><td style=\"white-space:nowrap\">223<a name=\"payer-procedure-group-223\"> </a></td><td>Mammograms</td><td>Mammograms</td></tr><tr><td style=\"white-space:nowrap\">225<a name=\"payer-procedure-group-225\"> </a></td><td>Aortograms</td><td>Aortograms</td></tr><tr><td style=\"white-space:nowrap\">226<a name=\"payer-procedure-group-226\"> </a></td><td>Angiograms</td><td>Angiograms</td></tr><tr><td style=\"white-space:nowrap\">227<a name=\"payer-procedure-group-227\"> </a></td><td>Lymphangiograms</td><td>Lymphangiograms</td></tr><tr><td style=\"white-space:nowrap\">228<a name=\"payer-procedure-group-228\"> </a></td><td>Venograms</td><td>Venograms</td></tr><tr><td style=\"white-space:nowrap\">229<a name=\"payer-procedure-group-229\"> </a></td><td>Dx radiology, misc/other</td><td>Dx radiology, misc/other</td></tr><tr><td style=\"white-space:nowrap\">241<a name=\"payer-procedure-group-241\"> </a></td><td>Dx ultrasound, abdominal</td><td>Dx ultrasound, abdominal</td></tr><tr><td style=\"white-space:nowrap\">242<a name=\"payer-procedure-group-242\"> </a></td><td>Dx ultrasound, pregnancy</td><td>Dx ultrasound, pregnancy</td></tr><tr><td style=\"white-space:nowrap\">243<a name=\"payer-procedure-group-243\"> </a></td><td>Echocardiogram</td><td>Echocardiogram</td></tr><tr><td style=\"white-space:nowrap\">249<a name=\"payer-procedure-group-249\"> </a></td><td>Dx ultrasound, other</td><td>Dx ultrasound, other</td></tr><tr><td style=\"white-space:nowrap\">269<a name=\"payer-procedure-group-269\"> </a></td><td>Therapeutic radiology</td><td>Therapeutic radiology</td></tr><tr><td style=\"white-space:nowrap\">279<a name=\"payer-procedure-group-279\"> </a></td><td>Nuclear medicine, diagnostic</td><td>Nuclear medicine, diagnostic</td></tr><tr><td style=\"white-space:nowrap\">289<a name=\"payer-procedure-group-289\"> </a></td><td>Nuclear medicine, therapeutic</td><td>Nuclear medicine, therapeutic</td></tr><tr><td style=\"white-space:nowrap\">299<a name=\"payer-procedure-group-299\"> </a></td><td>Other radiology procedure</td><td>Other radiology procedure</td></tr><tr><td style=\"white-space:nowrap\">301<a name=\"payer-procedure-group-301\"> </a></td><td>Blood chemisty tests, automated</td><td>Blood chemisty tests, automated</td></tr><tr><td style=\"white-space:nowrap\">302<a name=\"payer-procedure-group-302\"> </a></td><td>Blood chemistry, Rx monitor</td><td>Blood chemistry, Rx monitor</td></tr><tr><td style=\"white-space:nowrap\">303<a name=\"payer-procedure-group-303\"> </a></td><td>Lab tests, organ/disease panel</td><td>Lab tests, organ/disease panel</td></tr><tr><td style=\"white-space:nowrap\">304<a name=\"payer-procedure-group-304\"> </a></td><td>Clinical path, consultation</td><td>Clinical path, consultation</td></tr><tr><td style=\"white-space:nowrap\">306<a name=\"payer-procedure-group-306\"> </a></td><td>Routine urinalysis</td><td>Routine urinalysis</td></tr><tr><td style=\"white-space:nowrap\">307<a name=\"payer-procedure-group-307\"> </a></td><td>Other urinalysis</td><td>Other urinalysis</td></tr><tr><td style=\"white-space:nowrap\">311<a name=\"payer-procedure-group-311\"> </a></td><td>Thyroid function tests (RIA)</td><td>Thyroid function tests (RIA)</td></tr><tr><td style=\"white-space:nowrap\">312<a name=\"payer-procedure-group-312\"> </a></td><td>Thyroid function tests (non-RIA)</td><td>Thyroid function tests (non-RIA)</td></tr><tr><td style=\"white-space:nowrap\">313<a name=\"payer-procedure-group-313\"> </a></td><td>Other radioimmunoassays (RIA)</td><td>Other radioimmunoassays (RIA)</td></tr><tr><td style=\"white-space:nowrap\">319<a name=\"payer-procedure-group-319\"> </a></td><td>Other chemistry tests</td><td>Other chemistry tests</td></tr><tr><td style=\"white-space:nowrap\">320<a name=\"payer-procedure-group-320\"> </a></td><td>Other toxicology tests</td><td>Other toxicology tests</td></tr><tr><td style=\"white-space:nowrap\">331<a name=\"payer-procedure-group-331\"> </a></td><td>Blood count, automated</td><td>Blood count, automated</td></tr><tr><td style=\"white-space:nowrap\">332<a name=\"payer-procedure-group-332\"> </a></td><td>Blood count, manual</td><td>Blood count, manual</td></tr><tr><td style=\"white-space:nowrap\">334<a name=\"payer-procedure-group-334\"> </a></td><td>Blood test: sedimentation rate</td><td>Blood test: sedimentation rate</td></tr><tr><td style=\"white-space:nowrap\">335<a name=\"payer-procedure-group-335\"> </a></td><td>Blood count: platelet</td><td>Blood count: platelet</td></tr><tr><td style=\"white-space:nowrap\">336<a name=\"payer-procedure-group-336\"> </a></td><td>Blood test: Hgb/Hct</td><td>Blood test: Hgb/Hct</td></tr><tr><td style=\"white-space:nowrap\">338<a name=\"payer-procedure-group-338\"> </a></td><td>Blood test: prothrombin time</td><td>Blood test: prothrombin time</td></tr><tr><td style=\"white-space:nowrap\">339<a name=\"payer-procedure-group-339\"> </a></td><td>Other hematology tests</td><td>Other hematology tests</td></tr><tr><td style=\"white-space:nowrap\">349<a name=\"payer-procedure-group-349\"> </a></td><td>Immunology tests</td><td>Immunology tests</td></tr><tr><td style=\"white-space:nowrap\">361<a name=\"payer-procedure-group-361\"> </a></td><td>Definitive bacterial culture</td><td>Definitive bacterial culture</td></tr><tr><td style=\"white-space:nowrap\">362<a name=\"payer-procedure-group-362\"> </a></td><td>Antibiotic sensitivity studies</td><td>Antibiotic sensitivity studies</td></tr><tr><td style=\"white-space:nowrap\">363<a name=\"payer-procedure-group-363\"> </a></td><td>Bacterial culture, urine</td><td>Bacterial culture, urine</td></tr><tr><td style=\"white-space:nowrap\">364<a name=\"payer-procedure-group-364\"> </a></td><td>Bacterial culture, screening</td><td>Bacterial culture, screening</td></tr><tr><td style=\"white-space:nowrap\">369<a name=\"payer-procedure-group-369\"> </a></td><td>Other microbiology tests</td><td>Other microbiology tests</td></tr><tr><td style=\"white-space:nowrap\">371<a name=\"payer-procedure-group-371\"> </a></td><td>Pap smear</td><td>Pap smear</td></tr><tr><td style=\"white-space:nowrap\">372<a name=\"payer-procedure-group-372\"> </a></td><td>Surgical pathology</td><td>Surgical pathology</td></tr><tr><td style=\"white-space:nowrap\">378<a name=\"payer-procedure-group-378\"> </a></td><td>Molecular pathology</td><td>Molecular pathology</td></tr><tr><td style=\"white-space:nowrap\">379<a name=\"payer-procedure-group-379\"> </a></td><td>Other anatomic pathology services</td><td>Other anatomic pathology services</td></tr><tr><td style=\"white-space:nowrap\">389<a name=\"payer-procedure-group-389\"> </a></td><td>Miscellaneous pathology tests</td><td>Miscellaneous pathology tests</td></tr><tr><td style=\"white-space:nowrap\">399<a name=\"payer-procedure-group-399\"> </a></td><td>Other lab &amp; path procedures</td><td>Other lab &amp; path procedures</td></tr><tr><td style=\"white-space:nowrap\">440<a name=\"payer-procedure-group-440\"> </a></td><td>Cesarean section deliveries</td><td>Cesarean section deliveries</td></tr><tr><td style=\"white-space:nowrap\">445<a name=\"payer-procedure-group-445\"> </a></td><td>Vaginal deliveries</td><td>Vaginal deliveries</td></tr><tr><td style=\"white-space:nowrap\">449<a name=\"payer-procedure-group-449\"> </a></td><td>Major maternity procs &amp; related care</td><td>Major maternity procs &amp; related care</td></tr><tr><td style=\"white-space:nowrap\">450<a name=\"payer-procedure-group-450\"> </a></td><td>Other maternity procs &amp; related care</td><td>Other maternity procs &amp; related care</td></tr><tr><td style=\"white-space:nowrap\">470<a name=\"payer-procedure-group-470\"> </a></td><td>Anesthesia services</td><td>Anesthesia services</td></tr><tr><td style=\"white-space:nowrap\">478<a name=\"payer-procedure-group-478\"> </a></td><td>Home health PT/OT/ST</td><td>Home health PT/OT/ST</td></tr><tr><td style=\"white-space:nowrap\">480<a name=\"payer-procedure-group-480\"> </a></td><td>Other home health services</td><td>Other home health services</td></tr><tr><td style=\"white-space:nowrap\">485<a name=\"payer-procedure-group-485\"> </a></td><td>Transportation services</td><td>Transportation services</td></tr><tr><td style=\"white-space:nowrap\">490<a name=\"payer-procedure-group-490\"> </a></td><td>Dental: diagnostic &amp; preventive</td><td>Dental: diagnostic &amp; preventive</td></tr><tr><td style=\"white-space:nowrap\">491<a name=\"payer-procedure-group-491\"> </a></td><td>Dental: basic restorative</td><td>Dental: basic restorative</td></tr><tr><td style=\"white-space:nowrap\">492<a name=\"payer-procedure-group-492\"> </a></td><td>Dental: major restorative</td><td>Dental: major restorative</td></tr><tr><td style=\"white-space:nowrap\">493<a name=\"payer-procedure-group-493\"> </a></td><td>Dental: orthodontics</td><td>Dental: orthodontics</td></tr><tr><td style=\"white-space:nowrap\">494<a name=\"payer-procedure-group-494\"> </a></td><td>Dental: other</td><td>Dental: other</td></tr><tr><td style=\"white-space:nowrap\">498<a name=\"payer-procedure-group-498\"> </a></td><td>Performance tracking codes</td><td>Performance tracking codes</td></tr><tr><td style=\"white-space:nowrap\">499<a name=\"payer-procedure-group-499\"> </a></td><td>Unmapped codes</td><td>Unmapped codes</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-procedure-group"];
+  fhir:CodeSystem.version [ fhir:value "8.0.0"];
+  fhir:CodeSystem.name [ fhir:value "PayerProcedureGroupCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Payer Procedure Group Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "LinuxForHealth Team"];
+  fhir:CodeSystem.description [ fhir:value "Procedure group codes for payers"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "196"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Incision & drainage of cyst" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Incision & drainage of cyst" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Acne surgery" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Acne surgery" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nail debridement/avulsion" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Nail debridement/avulsion" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Skin lesion injection" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Skin lesion injection" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Destruction, facial lesion" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Destruction, facial lesion" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Destruction, non-facial lesion" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Destruction, non-facial lesion" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Destruction of warts" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Destruction of warts" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Excision of breast tissue" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Excision of breast tissue" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other minor skin & breast surgery" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other minor skin & breast surgery" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Arthrocentesis, sm/med joint" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Arthrocentesis, sm/med joint" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Arthrocentesis, large joint" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Arthrocentesis, large joint" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other major skin surgery" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other major skin surgery" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other major breast surgery" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other major breast surgery" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other major musculoskeletal surgery" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other major musculoskeletal surgery" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other minor musculoskeletal surgery" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other minor musculoskeletal surgery" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "16" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bronchoscopy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Bronchoscopy" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "17" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laryngoscopy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Laryngoscopy" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "19" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other minor respiratory procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other minor respiratory procedures" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "20" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other major respiratory procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other major respiratory procedures" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "31" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Venipuncture (draw blood)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Venipuncture (draw blood)" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "38" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other minor cardiovascular procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other minor cardiovascular procedures" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "39" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other major cardiovascular procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other major cardiovascular procedures" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "44" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Minor hemic & lymphatic procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Minor hemic & lymphatic procedures" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "45" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Major hemic & lymphatic procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Major hemic & lymphatic procedures" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "46" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Upper GI endoscopy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Upper GI endoscopy" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "47" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Repair of inguinal hernia" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Repair of inguinal hernia" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "48" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Colonoscopy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Colonoscopy" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "49" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other major digestive procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other major digestive procedures" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "50" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other minor digestive procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other minor digestive procedures" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "51" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cystourethroscopy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cystourethroscopy" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "52" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transurethral surgery" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Transurethral surgery" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "54" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other minor urinary procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other minor urinary procedures" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "55" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other major urinary procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other major urinary procedures" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "58" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Minor male genital procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Minor male genital procedures" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "59" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Major male genital procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Major male genital procedures" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "61" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Colposcopy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Colposcopy" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "62" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dilation & currettage" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dilation & currettage" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "63" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Laparoscopy, hysteroscopy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Laparoscopy, hysteroscopy" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "64" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Minor female genital procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Minor female genital procedures" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "65" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Major female genital procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Major female genital procedures" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "66" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Decompression, carpal tunnel" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Decompression, carpal tunnel" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "68" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Minor endocrine system procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Minor endocrine system procedures" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "69" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Major endocrine system procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Major endocrine system procedures" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "74" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Minor nervous system procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Minor nervous system procedures" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "75" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Major nervous system procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Major nervous system procedures" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "76" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cataract removal" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cataract removal" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "84" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other minor eye/ocular procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other minor eye/ocular procedures" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "85" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other major eye/ocular procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other major eye/ocular procedures" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "94" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other minor ear/auditory procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other minor ear/auditory procedures" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "95" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other major ear/auditory procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other major ear/auditory procedures" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "98" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other minor surgery procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other minor surgery procedures" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "99" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other major surgery procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other major surgery procedures" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "101" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Office visits, new patient" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Office visits, new patient" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "104" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Office visits, established patient" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Office visits, established patient" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "109" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Office visits, other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Office visits, other" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "110" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Office visits, emergency" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Office visits, emergency" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "111" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Emergency department visits" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Emergency department visits" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "113" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Physician telephone/online visits" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Physician telephone/online visits" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ER visits, other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ER visits, other" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "115" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Preventive care visits" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Preventive care visits" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "116" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Facility visits" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Facility visits" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "120" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Outpatient consults" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Outpatient consults" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "121" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inpatient consults" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Inpatient consults" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "122" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other consults, location unspecified" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other consults, location unspecified" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "124" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Psychiatric diagnostic services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Psychiatric diagnostic services" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "127" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Specialty drugs other than chemotherapy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Specialty drugs other than chemotherapy" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "128" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unlisted general med service" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Unlisted general med service" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "129" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other medical services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other medical services" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "130" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Injections: immunizations" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Injections: immunizations" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "131" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Injections: therapeutic/IV" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Injections: therapeutic/IV" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "132" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other injections/noninjectables" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other injections/noninjectables" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "133" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other preventive medical services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other preventive medical services" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "135" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Psychotherapy, individual" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Psychotherapy, individual" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "136" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Psychotherapy, family" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Psychotherapy, family" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "137" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Psychotherapy, group" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Psychotherapy, group" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "138" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Psych advice, non-patient" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Psych advice, non-patient" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "139" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Therapeutic psychiatric services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Therapeutic psychiatric services" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "140" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dialysis" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dialysis" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "143" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Gastroenterology services (non-surgical)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Gastroenterology services (non-surgical)" ]
+  ], [
+     fhir:index 79;
+     fhir:CodeSystem.concept.code [ fhir:value "144" ];
+     fhir:CodeSystem.concept.display [ fhir:value "General eye exams" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "General eye exams" ]
+  ], [
+     fhir:index 80;
+     fhir:CodeSystem.concept.code [ fhir:value "145" ];
+     fhir:CodeSystem.concept.display [ fhir:value "General ophthalmology services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "General ophthalmology services" ]
+  ], [
+     fhir:index 81;
+     fhir:CodeSystem.concept.code [ fhir:value "147" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ophthalmic diagnostic services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Ophthalmic diagnostic services" ]
+  ], [
+     fhir:index 82;
+     fhir:CodeSystem.concept.code [ fhir:value "148" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ENT diagnostic services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "ENT diagnostic services" ]
+  ], [
+     fhir:index 83;
+     fhir:CodeSystem.concept.code [ fhir:value "149" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Speech/hearing therapy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Speech/hearing therapy" ]
+  ], [
+     fhir:index 84;
+     fhir:CodeSystem.concept.code [ fhir:value "150" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other ENT services (non-surgical)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other ENT services (non-surgical)" ]
+  ], [
+     fhir:index 85;
+     fhir:CodeSystem.concept.code [ fhir:value "155" ];
+     fhir:CodeSystem.concept.display [ fhir:value "EKG" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "EKG" ]
+  ], [
+     fhir:index 86;
+     fhir:CodeSystem.concept.code [ fhir:value "156" ];
+     fhir:CodeSystem.concept.display [ fhir:value "EKG stress test" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "EKG stress test" ]
+  ], [
+     fhir:index 87;
+     fhir:CodeSystem.concept.code [ fhir:value "157" ];
+     fhir:CodeSystem.concept.display [ fhir:value "EKG monitoring" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "EKG monitoring" ]
+  ], [
+     fhir:index 88;
+     fhir:CodeSystem.concept.code [ fhir:value "158" ];
+     fhir:CodeSystem.concept.display [ fhir:value "PTCA- percutaneous angioplasty" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "PTCA- percutaneous angioplasty" ]
+  ], [
+     fhir:index 89;
+     fhir:CodeSystem.concept.code [ fhir:value "160" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Echocardiogram" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Echocardiogram" ]
+  ], [
+     fhir:index 90;
+     fhir:CodeSystem.concept.code [ fhir:value "161" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cardiac catheterization" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cardiac catheterization" ]
+  ], [
+     fhir:index 91;
+     fhir:CodeSystem.concept.code [ fhir:value "162" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dx radiology, other vascular" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dx radiology, other vascular" ]
+  ], [
+     fhir:index 92;
+     fhir:CodeSystem.concept.code [ fhir:value "163" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other cardiovascular procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other cardiovascular procedures" ]
+  ], [
+     fhir:index 93;
+     fhir:CodeSystem.concept.code [ fhir:value "165" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non-invasive peripheral vascular studies" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Non-invasive peripheral vascular studies" ]
+  ], [
+     fhir:index 94;
+     fhir:CodeSystem.concept.code [ fhir:value "166" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spirometry" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Spirometry" ]
+  ], [
+     fhir:index 95;
+     fhir:CodeSystem.concept.code [ fhir:value "167" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bronchospasm evaluation" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Bronchospasm evaluation" ]
+  ], [
+     fhir:index 96;
+     fhir:CodeSystem.concept.code [ fhir:value "168" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pulmonary function tests" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Pulmonary function tests" ]
+  ], [
+     fhir:index 97;
+     fhir:CodeSystem.concept.code [ fhir:value "169" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other non-surgical pulmonary services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other non-surgical pulmonary services" ]
+  ], [
+     fhir:index 98;
+     fhir:CodeSystem.concept.code [ fhir:value "170" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Respiratory therapy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Respiratory therapy" ]
+  ], [
+     fhir:index 99;
+     fhir:CodeSystem.concept.code [ fhir:value "171" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Allergy testing" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Allergy testing" ]
+  ], [
+     fhir:index 100;
+     fhir:CodeSystem.concept.code [ fhir:value "172" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Allergy therapy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Allergy therapy" ]
+  ], [
+     fhir:index 101;
+     fhir:CodeSystem.concept.code [ fhir:value "175" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nerve conduction tests/EMG" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Nerve conduction tests/EMG" ]
+  ], [
+     fhir:index 102;
+     fhir:CodeSystem.concept.code [ fhir:value "176" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unlisted neurol Dx procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Unlisted neurol Dx procedures" ]
+  ], [
+     fhir:index 103;
+     fhir:CodeSystem.concept.code [ fhir:value "177" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other neurology dx services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other neurology dx services" ]
+  ], [
+     fhir:index 104;
+     fhir:CodeSystem.concept.code [ fhir:value "180" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chemotherapy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Chemotherapy" ]
+  ], [
+     fhir:index 105;
+     fhir:CodeSystem.concept.code [ fhir:value "181" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Physical medicine: hot/cold packs" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Physical medicine: hot/cold packs" ]
+  ], [
+     fhir:index 106;
+     fhir:CodeSystem.concept.code [ fhir:value "182" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Physical medicine: elec stimulation" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Physical medicine: elec stimulation" ]
+  ], [
+     fhir:index 107;
+     fhir:CodeSystem.concept.code [ fhir:value "183" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Physical medicine: other modes" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Physical medicine: other modes" ]
+  ], [
+     fhir:index 108;
+     fhir:CodeSystem.concept.code [ fhir:value "184" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Physical medicine: ultrasound" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Physical medicine: ultrasound" ]
+  ], [
+     fhir:index 109;
+     fhir:CodeSystem.concept.code [ fhir:value "185" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Physical medicine: manipulation" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Physical medicine: manipulation" ]
+  ], [
+     fhir:index 110;
+     fhir:CodeSystem.concept.code [ fhir:value "186" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Physical medicine: other procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Physical medicine: other procedures" ]
+  ], [
+     fhir:index 111;
+     fhir:CodeSystem.concept.code [ fhir:value "187" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Physical medicine: testing" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Physical medicine: testing" ]
+  ], [
+     fhir:index 112;
+     fhir:CodeSystem.concept.code [ fhir:value "189" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Physical medicine: unlisted/other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Physical medicine: unlisted/other" ]
+  ], [
+     fhir:index 113;
+     fhir:CodeSystem.concept.code [ fhir:value "190" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Case management services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Case management services" ]
+  ], [
+     fhir:index 114;
+     fhir:CodeSystem.concept.code [ fhir:value "191" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spinal manipulation, chiro" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Spinal manipulation, chiro" ]
+  ], [
+     fhir:index 115;
+     fhir:CodeSystem.concept.code [ fhir:value "195" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chiropractic services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Chiropractic services" ]
+  ], [
+     fhir:index 116;
+     fhir:CodeSystem.concept.code [ fhir:value "197" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Specimen handling" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Specimen handling" ]
+  ], [
+     fhir:index 117;
+     fhir:CodeSystem.concept.code [ fhir:value "198" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medical supplies and devices" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Medical supplies and devices" ]
+  ], [
+     fhir:index 118;
+     fhir:CodeSystem.concept.code [ fhir:value "199" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other medicine procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other medicine procedures" ]
+  ], [
+     fhir:index 119;
+     fhir:CodeSystem.concept.code [ fhir:value "200" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Durable medical equipment" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Durable medical equipment" ]
+  ], [
+     fhir:index 120;
+     fhir:CodeSystem.concept.code [ fhir:value "201" ];
+     fhir:CodeSystem.concept.display [ fhir:value "X-ray, head & neck" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "X-ray, head & neck" ]
+  ], [
+     fhir:index 121;
+     fhir:CodeSystem.concept.code [ fhir:value "202" ];
+     fhir:CodeSystem.concept.display [ fhir:value "X-ray, chest" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "X-ray, chest" ]
+  ], [
+     fhir:index 122;
+     fhir:CodeSystem.concept.code [ fhir:value "204" ];
+     fhir:CodeSystem.concept.display [ fhir:value "X-ray, spine/pelvis" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "X-ray, spine/pelvis" ]
+  ], [
+     fhir:index 123;
+     fhir:CodeSystem.concept.code [ fhir:value "205" ];
+     fhir:CodeSystem.concept.display [ fhir:value "X-ray, GI tract" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "X-ray, GI tract" ]
+  ], [
+     fhir:index 124;
+     fhir:CodeSystem.concept.code [ fhir:value "206" ];
+     fhir:CodeSystem.concept.display [ fhir:value "X-ray, abdomen" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "X-ray, abdomen" ]
+  ], [
+     fhir:index 125;
+     fhir:CodeSystem.concept.code [ fhir:value "207" ];
+     fhir:CodeSystem.concept.display [ fhir:value "X-ray, OB/Gyn" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "X-ray, OB/Gyn" ]
+  ], [
+     fhir:index 126;
+     fhir:CodeSystem.concept.code [ fhir:value "208" ];
+     fhir:CodeSystem.concept.display [ fhir:value "X-ray, extremities" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "X-ray, extremities" ]
+  ], [
+     fhir:index 127;
+     fhir:CodeSystem.concept.code [ fhir:value "210" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CT scan, head & neck" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "CT scan, head & neck" ]
+  ], [
+     fhir:index 128;
+     fhir:CodeSystem.concept.code [ fhir:value "211" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CT scan, chest" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "CT scan, chest" ]
+  ], [
+     fhir:index 129;
+     fhir:CodeSystem.concept.code [ fhir:value "212" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CT scan, spine" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "CT scan, spine" ]
+  ], [
+     fhir:index 130;
+     fhir:CodeSystem.concept.code [ fhir:value "213" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CT scan, abdomen/pelvis" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "CT scan, abdomen/pelvis" ]
+  ], [
+     fhir:index 131;
+     fhir:CodeSystem.concept.code [ fhir:value "214" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CT scan, extremities" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "CT scan, extremities" ]
+  ], [
+     fhir:index 132;
+     fhir:CodeSystem.concept.code [ fhir:value "215" ];
+     fhir:CodeSystem.concept.display [ fhir:value "PET scan" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "PET scan" ]
+  ], [
+     fhir:index 133;
+     fhir:CodeSystem.concept.code [ fhir:value "216" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Magnetic resonance (NMR/MRI)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Magnetic resonance (NMR/MRI)" ]
+  ], [
+     fhir:index 134;
+     fhir:CodeSystem.concept.code [ fhir:value "220" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Myelograms/discograms" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Myelograms/discograms" ]
+  ], [
+     fhir:index 135;
+     fhir:CodeSystem.concept.code [ fhir:value "221" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cholecystograms/cholangiograms" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cholecystograms/cholangiograms" ]
+  ], [
+     fhir:index 136;
+     fhir:CodeSystem.concept.code [ fhir:value "222" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cholecysto/cholangiogram, inv" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cholecysto/cholangiogram, inv" ]
+  ], [
+     fhir:index 137;
+     fhir:CodeSystem.concept.code [ fhir:value "223" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mammograms" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Mammograms" ]
+  ], [
+     fhir:index 138;
+     fhir:CodeSystem.concept.code [ fhir:value "225" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Aortograms" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Aortograms" ]
+  ], [
+     fhir:index 139;
+     fhir:CodeSystem.concept.code [ fhir:value "226" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Angiograms" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Angiograms" ]
+  ], [
+     fhir:index 140;
+     fhir:CodeSystem.concept.code [ fhir:value "227" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lymphangiograms" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Lymphangiograms" ]
+  ], [
+     fhir:index 141;
+     fhir:CodeSystem.concept.code [ fhir:value "228" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Venograms" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Venograms" ]
+  ], [
+     fhir:index 142;
+     fhir:CodeSystem.concept.code [ fhir:value "229" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dx radiology, misc/other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dx radiology, misc/other" ]
+  ], [
+     fhir:index 143;
+     fhir:CodeSystem.concept.code [ fhir:value "241" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dx ultrasound, abdominal" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dx ultrasound, abdominal" ]
+  ], [
+     fhir:index 144;
+     fhir:CodeSystem.concept.code [ fhir:value "242" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dx ultrasound, pregnancy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dx ultrasound, pregnancy" ]
+  ], [
+     fhir:index 145;
+     fhir:CodeSystem.concept.code [ fhir:value "243" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Echocardiogram" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Echocardiogram" ]
+  ], [
+     fhir:index 146;
+     fhir:CodeSystem.concept.code [ fhir:value "249" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dx ultrasound, other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dx ultrasound, other" ]
+  ], [
+     fhir:index 147;
+     fhir:CodeSystem.concept.code [ fhir:value "269" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Therapeutic radiology" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Therapeutic radiology" ]
+  ], [
+     fhir:index 148;
+     fhir:CodeSystem.concept.code [ fhir:value "279" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nuclear medicine, diagnostic" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Nuclear medicine, diagnostic" ]
+  ], [
+     fhir:index 149;
+     fhir:CodeSystem.concept.code [ fhir:value "289" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nuclear medicine, therapeutic" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Nuclear medicine, therapeutic" ]
+  ], [
+     fhir:index 150;
+     fhir:CodeSystem.concept.code [ fhir:value "299" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other radiology procedure" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other radiology procedure" ]
+  ], [
+     fhir:index 151;
+     fhir:CodeSystem.concept.code [ fhir:value "301" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blood chemisty tests, automated" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood chemisty tests, automated" ]
+  ], [
+     fhir:index 152;
+     fhir:CodeSystem.concept.code [ fhir:value "302" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blood chemistry, Rx monitor" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood chemistry, Rx monitor" ]
+  ], [
+     fhir:index 153;
+     fhir:CodeSystem.concept.code [ fhir:value "303" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lab tests, organ/disease panel" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Lab tests, organ/disease panel" ]
+  ], [
+     fhir:index 154;
+     fhir:CodeSystem.concept.code [ fhir:value "304" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Clinical path, consultation" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Clinical path, consultation" ]
+  ], [
+     fhir:index 155;
+     fhir:CodeSystem.concept.code [ fhir:value "306" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Routine urinalysis" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Routine urinalysis" ]
+  ], [
+     fhir:index 156;
+     fhir:CodeSystem.concept.code [ fhir:value "307" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other urinalysis" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other urinalysis" ]
+  ], [
+     fhir:index 157;
+     fhir:CodeSystem.concept.code [ fhir:value "311" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Thyroid function tests (RIA)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Thyroid function tests (RIA)" ]
+  ], [
+     fhir:index 158;
+     fhir:CodeSystem.concept.code [ fhir:value "312" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Thyroid function tests (non-RIA)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Thyroid function tests (non-RIA)" ]
+  ], [
+     fhir:index 159;
+     fhir:CodeSystem.concept.code [ fhir:value "313" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other radioimmunoassays (RIA)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other radioimmunoassays (RIA)" ]
+  ], [
+     fhir:index 160;
+     fhir:CodeSystem.concept.code [ fhir:value "319" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other chemistry tests" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other chemistry tests" ]
+  ], [
+     fhir:index 161;
+     fhir:CodeSystem.concept.code [ fhir:value "320" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other toxicology tests" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other toxicology tests" ]
+  ], [
+     fhir:index 162;
+     fhir:CodeSystem.concept.code [ fhir:value "331" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blood count, automated" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood count, automated" ]
+  ], [
+     fhir:index 163;
+     fhir:CodeSystem.concept.code [ fhir:value "332" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blood count, manual" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood count, manual" ]
+  ], [
+     fhir:index 164;
+     fhir:CodeSystem.concept.code [ fhir:value "334" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blood test: sedimentation rate" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood test: sedimentation rate" ]
+  ], [
+     fhir:index 165;
+     fhir:CodeSystem.concept.code [ fhir:value "335" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blood count: platelet" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood count: platelet" ]
+  ], [
+     fhir:index 166;
+     fhir:CodeSystem.concept.code [ fhir:value "336" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blood test: Hgb/Hct" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood test: Hgb/Hct" ]
+  ], [
+     fhir:index 167;
+     fhir:CodeSystem.concept.code [ fhir:value "338" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blood test: prothrombin time" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Blood test: prothrombin time" ]
+  ], [
+     fhir:index 168;
+     fhir:CodeSystem.concept.code [ fhir:value "339" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other hematology tests" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other hematology tests" ]
+  ], [
+     fhir:index 169;
+     fhir:CodeSystem.concept.code [ fhir:value "349" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Immunology tests" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Immunology tests" ]
+  ], [
+     fhir:index 170;
+     fhir:CodeSystem.concept.code [ fhir:value "361" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Definitive bacterial culture" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Definitive bacterial culture" ]
+  ], [
+     fhir:index 171;
+     fhir:CodeSystem.concept.code [ fhir:value "362" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Antibiotic sensitivity studies" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Antibiotic sensitivity studies" ]
+  ], [
+     fhir:index 172;
+     fhir:CodeSystem.concept.code [ fhir:value "363" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bacterial culture, urine" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Bacterial culture, urine" ]
+  ], [
+     fhir:index 173;
+     fhir:CodeSystem.concept.code [ fhir:value "364" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bacterial culture, screening" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Bacterial culture, screening" ]
+  ], [
+     fhir:index 174;
+     fhir:CodeSystem.concept.code [ fhir:value "369" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other microbiology tests" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other microbiology tests" ]
+  ], [
+     fhir:index 175;
+     fhir:CodeSystem.concept.code [ fhir:value "371" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pap smear" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Pap smear" ]
+  ], [
+     fhir:index 176;
+     fhir:CodeSystem.concept.code [ fhir:value "372" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Surgical pathology" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Surgical pathology" ]
+  ], [
+     fhir:index 177;
+     fhir:CodeSystem.concept.code [ fhir:value "378" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Molecular pathology" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Molecular pathology" ]
+  ], [
+     fhir:index 178;
+     fhir:CodeSystem.concept.code [ fhir:value "379" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other anatomic pathology services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other anatomic pathology services" ]
+  ], [
+     fhir:index 179;
+     fhir:CodeSystem.concept.code [ fhir:value "389" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Miscellaneous pathology tests" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Miscellaneous pathology tests" ]
+  ], [
+     fhir:index 180;
+     fhir:CodeSystem.concept.code [ fhir:value "399" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other lab & path procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other lab & path procedures" ]
+  ], [
+     fhir:index 181;
+     fhir:CodeSystem.concept.code [ fhir:value "440" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cesarean section deliveries" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cesarean section deliveries" ]
+  ], [
+     fhir:index 182;
+     fhir:CodeSystem.concept.code [ fhir:value "445" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Vaginal deliveries" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Vaginal deliveries" ]
+  ], [
+     fhir:index 183;
+     fhir:CodeSystem.concept.code [ fhir:value "449" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Major maternity procs & related care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Major maternity procs & related care" ]
+  ], [
+     fhir:index 184;
+     fhir:CodeSystem.concept.code [ fhir:value "450" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other maternity procs & related care" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other maternity procs & related care" ]
+  ], [
+     fhir:index 185;
+     fhir:CodeSystem.concept.code [ fhir:value "470" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anesthesia services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Anesthesia services" ]
+  ], [
+     fhir:index 186;
+     fhir:CodeSystem.concept.code [ fhir:value "478" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Home health PT/OT/ST" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Home health PT/OT/ST" ]
+  ], [
+     fhir:index 187;
+     fhir:CodeSystem.concept.code [ fhir:value "480" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other home health services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other home health services" ]
+  ], [
+     fhir:index 188;
+     fhir:CodeSystem.concept.code [ fhir:value "485" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Transportation services" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Transportation services" ]
+  ], [
+     fhir:index 189;
+     fhir:CodeSystem.concept.code [ fhir:value "490" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental: diagnostic & preventive" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dental: diagnostic & preventive" ]
+  ], [
+     fhir:index 190;
+     fhir:CodeSystem.concept.code [ fhir:value "491" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental: basic restorative" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dental: basic restorative" ]
+  ], [
+     fhir:index 191;
+     fhir:CodeSystem.concept.code [ fhir:value "492" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental: major restorative" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dental: major restorative" ]
+  ], [
+     fhir:index 192;
+     fhir:CodeSystem.concept.code [ fhir:value "493" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental: orthodontics" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dental: orthodontics" ]
+  ], [
+     fhir:index 193;
+     fhir:CodeSystem.concept.code [ fhir:value "494" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dental: other" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Dental: other" ]
+  ], [
+     fhir:index 194;
+     fhir:CodeSystem.concept.code [ fhir:value "498" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Performance tracking codes" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Performance tracking codes" ]
+  ], [
+     fhir:index 195;
+     fhir:CodeSystem.concept.code [ fhir:value "499" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unmapped codes" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Unmapped codes" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-procedure-group.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

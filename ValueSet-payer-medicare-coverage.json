@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "payer-medicare-coverage",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-payer-medicare-coverage.html\"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-medicare-coverage</code></a></li></ul></div>"
+  },
+  "url": "http://linuxforhealth.org/fhir/cdm/ValueSet/payer-medicare-coverage",
+  "version": "8.0.0",
+  "name": "PayerMedicareCoverageValueSet",
+  "title": "Payer Medicare Coverage Value Set",
+  "status": "active",
+  "date": "2022-11-10T16:00:46+00:00",
+  "publisher": "LinuxForHealth Team",
+  "description": "Value set containting payer codes for the type of Medicare coverage, if any, for the person",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-medicare-coverage"
+      }
+    ]
+  }
+}

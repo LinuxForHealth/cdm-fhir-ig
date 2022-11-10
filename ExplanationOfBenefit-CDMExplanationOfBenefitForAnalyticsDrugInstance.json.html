@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ALVEARIE.FHIR.IG\CDM Explanation of Benefit - Pharmacy Example - JSON Representation - FHIR v4.0.1</title>
+    <title>LINUXFORHEALTH.FHIR.IG\CDM Explanation of Benefit - Pharmacy Example - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,7 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/alvearie.css" rel="stylesheet"/>
+<link href="assets/css/linuxforhealth-fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -49,19 +49,19 @@
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a id="alvearie-logo" no-external="true">
+  <a id="linuxforhealth-logo" no-external="true">
     <!-- 
     // New logo image reference should go here
-    // Place image in data/alvearie-template/content/assets/images folder
-    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    // Place image in data/linuxforhealth-template/content/assets/images folder
+    <img height="60" alt="LinuxForHealth" src="assets/images/linuxforhealth-logo.png" style="float:left"/>
     -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">LinuxForHealth FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">7.0.0 - draft
+            <span style="display:inline-block;">8.0.0 - draft
 
 
 
@@ -126,7 +126,8 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v7.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">LinuxForHealth FHIR Implementation Guide - Local Development build (v8.0.0). See the <a href="http://linuxforhealth.org/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -141,6 +142,7 @@
   <li>
     <a href="ExplanationOfBenefit-CDMExplanationOfBenefitForAnalyticsDrugInstance.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -193,30 +195,30 @@
 
 
 
-  <pre class="json"><code>
+  <pre class="json" style="white-space: pre; overflow: hidden"><code>
 {
   "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit">resourceType</a>" : "ExplanationOfBenefit",
   "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.id">id</a>" : "CDMExplanationOfBenefitForAnalyticsDrugInstance",
   "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "tenant7209"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "rgVCJnQBxvghkKTI8Hzzx2"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "TREX"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-client-id",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "7209"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-record-id",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-record-id",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueIdentifier</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://acme-health.com/WellnessCenterPharmacy",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "7209_07869_e00080779_3938586_2516181_x2"
@@ -225,16 +227,16 @@
     ],
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "http://acme-health.com/WellnessCenterPharmacy",
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit-for-analytics"
+      "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit-for-analytics"
     ]
   },
   "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ExplanationOfBenefit&lt;/b&gt;&lt;a name=\&quot;CDMExplanationOfBenefitForAnalyticsDrugInstance\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ExplanationOfBenefit \&quot;CDMExplanationOfBenefitForAnalyticsDrugInstance\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Information Source: http://acme-health.com/WellnessCenterPharmacy!&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cdm-explanation-of-benefit-for-analytics.html\&quot;&gt;CDM Explanation of Benefit for Analytics&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Snapshot Age In Years&lt;/b&gt;: 27&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Source System Row Identifier: 000000000000000000019721078x2 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Pharmacy; Pharmacy claims for goods and services &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-wh-payer-claim-type.html\&quot;&gt;Health Data Connect Claim Type Codes&lt;/a&gt;#pharmacy; local-claim-type#Pharmacy)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: claim&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-CDMPatientInstance.html\&quot;&gt;Patient/CDMPatientInstance&lt;/a&gt; \&quot; MCLASTNAME\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: 2017-07-25 05:31:00-0500&lt;/p&gt;&lt;p&gt;&lt;b&gt;insurer&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;provider&lt;/b&gt;: &lt;a href=\&quot;Practitioner-DrKelly.html\&quot;&gt;Practitioner/DrKelly&lt;/a&gt; \&quot; KELLY\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: Normal &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-processpriority.html\&quot;&gt;Process Priority Codes&lt;/a&gt;#normal)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;outcome&lt;/b&gt;: complete&lt;/p&gt;&lt;h3&gt;CareTeams&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Provider&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Role&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-DrKelly.html\&quot;&gt;Practitioner/DrKelly&lt;/a&gt; \&quot; KELLY\&quot;&lt;/td&gt;&lt;td&gt;Ordering provider &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-care-team-role.html\&quot;&gt;Claim Care Team Role Codes&lt;/a&gt;#ordering)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Day Supply &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-supporting-info-category.html\&quot;&gt;Claim Supporting Info Category Codes&lt;/a&gt;#dayssupply)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 28&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Information &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\&quot;&gt;Claim Information Category Codes&lt;/a&gt;#info)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 0 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-ncpdp-dispense-as-written.html\&quot;&gt;NCPDP Dispense As Written Codes&lt;/a&gt;#0)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 3&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Information &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\&quot;&gt;Claim Information Category Codes&lt;/a&gt;#info)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Refill number &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-supporting-info-type.html\&quot;&gt;Claim Supporting Info Type Codes&lt;/a&gt;#refill-number)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 4&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Information &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\&quot;&gt;Claim Information Category Codes&lt;/a&gt;#info)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Retail &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-rx-mail-or-retail.html\&quot;&gt;Rx Mail Or Retail Codes&lt;/a&gt;#r)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Insurances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Focal&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Coverage&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Coverage-PrimaryPayerExample.html\&quot;&gt;Coverage/PrimaryPayerExample&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Capitated Service Indicator&lt;/b&gt;: N&lt;/p&gt;&lt;p&gt;&lt;b&gt;Average Wholesale Price&lt;/b&gt;: &lt;span title=\&quot;US Dollar\&quot;&gt;US$2.88&lt;/span&gt; (USD)&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;careTeamSequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: 69452-0151-20 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-ndc-no-hyphens.html\&quot;&gt;NDC No Hyphens Codes&lt;/a&gt;#69452015120)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviced&lt;/b&gt;: 2017-06-18&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: Pharmacy &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-CMSPlaceofServiceCodes.html\&quot;&gt;CMS Place of Service Codes (POS)&lt;/a&gt;#01; local-place-of-service#LocalPlcOfService)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 4 metric&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Coinsurance &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#coinsurance)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0.48&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Copayment &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#copay)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Deductible Amount &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#deductible)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Third Party Amount &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#third-party)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Allowed Amount &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#allowed)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.59&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Net Payment &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#net-payment)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.11&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;detail&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Claim Item Detail Classification&lt;/b&gt;: Dispensing Fee &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-item-detail-classification.html\&quot;&gt;Claim Item Detail Classification Codes&lt;/a&gt;#dispensing-fee)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: 69452-0151-20 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-ndc-no-hyphens.html\&quot;&gt;NDC No Hyphens Codes&lt;/a&gt;#69452015120)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;UnitPrices&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0.45&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;detail&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Claim Item Detail Classification&lt;/b&gt;: Ingredient Cost &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-item-detail-classification.html\&quot;&gt;Claim Item Detail Classification Codes&lt;/a&gt;#ingredient-cost)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: 69452-0151-20 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-ndc-no-hyphens.html\&quot;&gt;NDC No Hyphens Codes&lt;/a&gt;#69452015120)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;UnitPrices&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.14&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;detail&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Claim Item Detail Classification&lt;/b&gt;: Sales Tax &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-item-detail-classification.html\&quot;&gt;Claim Item Detail Classification Codes&lt;/a&gt;#sales-tax)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 3&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: 69452-0151-20 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-ndc-no-hyphens.html\&quot;&gt;NDC No Hyphens Codes&lt;/a&gt;#69452015120)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;UnitPrices&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;h3&gt;Adjudications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Category&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;In Network &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-paid-in-network-indicator.html\&quot;&gt;Paid In Network Indicator Codes&lt;/a&gt;#in-network)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ExplanationOfBenefit&lt;/b&gt;&lt;a name=\&quot;CDMExplanationOfBenefitForAnalyticsDrugInstance\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ExplanationOfBenefit \&quot;CDMExplanationOfBenefitForAnalyticsDrugInstance\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Information Source: http://acme-health.com/WellnessCenterPharmacy!&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cdm-explanation-of-benefit-for-analytics.html\&quot;&gt;CDM Explanation of Benefit for Analytics&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Snapshot Age In Years&lt;/b&gt;: 27&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Source System Row Identifier: 000000000000000000019721078x2(use: OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Pharmacy; Pharmacy claims for goods and services &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-payer-claim-type.html\&quot;&gt;Payer Claim Type Codes&lt;/a&gt;#pharmacy; local-claim-type#Pharmacy)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;use&lt;/b&gt;: claim&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;Patient-CDMPatientInstance.html\&quot;&gt;Patient/CDMPatientInstance&lt;/a&gt; \&quot; MCLASTNAME\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;created&lt;/b&gt;: 2017-07-25 05:31:00-0500&lt;/p&gt;&lt;p&gt;&lt;b&gt;insurer&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;provider&lt;/b&gt;: &lt;a href=\&quot;Practitioner-DrKelly.html\&quot;&gt;Practitioner/DrKelly&lt;/a&gt; \&quot; KELLY\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: Normal &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-processpriority.html\&quot;&gt;Process Priority Codes&lt;/a&gt;#normal)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;outcome&lt;/b&gt;: complete&lt;/p&gt;&lt;h3&gt;CareTeams&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Sequence&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Provider&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Role&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Practitioner-DrKelly.html\&quot;&gt;Practitioner/DrKelly&lt;/a&gt; \&quot; KELLY\&quot;&lt;/td&gt;&lt;td&gt;Ordering provider &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-care-team-role.html\&quot;&gt;Claim Care Team Role Codes&lt;/a&gt;#ordering)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Day Supply &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-supporting-info-category.html\&quot;&gt;Claim Supporting Info Category Codes&lt;/a&gt;#dayssupply)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 28&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Information &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\&quot;&gt;Claim Information Category Codes&lt;/a&gt;#info)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: 0 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-ncpdp-dispense-as-written.html\&quot;&gt;NCPDP Dispense As Written Codes&lt;/a&gt;#0)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 3&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Information &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\&quot;&gt;Claim Information Category Codes&lt;/a&gt;#info)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Refill number &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-supporting-info-type.html\&quot;&gt;Claim Supporting Info Type Codes&lt;/a&gt;#refill-number)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 4&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Information &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\&quot;&gt;Claim Information Category Codes&lt;/a&gt;#info)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Retail &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-rx-mail-or-retail.html\&quot;&gt;Rx Mail Or Retail Codes&lt;/a&gt;#r)&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;h3&gt;Insurances&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Focal&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Coverage&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Coverage-PrimaryPayerExample.html\&quot;&gt;Coverage/PrimaryPayerExample&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Capitated Service Indicator&lt;/b&gt;: N&lt;/p&gt;&lt;p&gt;&lt;b&gt;Average Wholesale Price&lt;/b&gt;: &lt;span title=\&quot;US Dollar\&quot;&gt;US$2.88&lt;/span&gt; (USD)&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;careTeamSequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: 69452-0151-20 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-ndc-no-hyphens.html\&quot;&gt;NDC No Hyphens Codes&lt;/a&gt;#69452015120)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;serviced&lt;/b&gt;: 2017-06-18&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: Pharmacy &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-CMSPlaceofServiceCodes.html\&quot;&gt;CMS Place of Service Codes (POS)&lt;/a&gt;#01; local-place-of-service#LocalPlcOfService)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;quantity&lt;/b&gt;: 4 metric&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Coinsurance &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#coinsurance)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0.48&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Copayment &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#copay)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Deductible Amount &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#deductible)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Third Party Amount &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#third-party)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Allowed Amount &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#allowed)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.59&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;adjudication&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Net Payment &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-adjudication-category.html\&quot;&gt;Adjudication Category Codes&lt;/a&gt;#net-payment)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Amounts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.11&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;detail&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Claim Item Detail Classification&lt;/b&gt;: Dispensing Fee &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-item-detail-classification.html\&quot;&gt;Claim Item Detail Classification Codes&lt;/a&gt;#dispensing-fee)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: 69452-0151-20 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-ndc-no-hyphens.html\&quot;&gt;NDC No Hyphens Codes&lt;/a&gt;#69452015120)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;UnitPrices&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0.45&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;detail&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Claim Item Detail Classification&lt;/b&gt;: Ingredient Cost &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-item-detail-classification.html\&quot;&gt;Claim Item Detail Classification Codes&lt;/a&gt;#ingredient-cost)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 2&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: 69452-0151-20 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-ndc-no-hyphens.html\&quot;&gt;NDC No Hyphens Codes&lt;/a&gt;#69452015120)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;UnitPrices&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1.14&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;detail&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Claim Item Detail Classification&lt;/b&gt;: Sales Tax &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-claim-item-detail-classification.html\&quot;&gt;Claim Item Detail Classification Codes&lt;/a&gt;#sales-tax)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;sequence&lt;/b&gt;: 3&lt;/p&gt;&lt;p&gt;&lt;b&gt;productOrService&lt;/b&gt;: 69452-0151-20 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-ndc-no-hyphens.html\&quot;&gt;NDC No Hyphens Codes&lt;/a&gt;#69452015120)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;UnitPrices&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Currency&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;USD&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;h3&gt;Adjudications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Category&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;In Network &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-paid-in-network-indicator.html\&quot;&gt;Paid In Network Indicator Codes&lt;/a&gt;#in-network)&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.extension">extension</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/snapshot-age-in-years",
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueUnsignedInt</a>" : 27
     }
   ],
@@ -244,7 +246,7 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "SSRI"
           }
         ]
@@ -260,7 +262,7 @@
   "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.type">type</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-type",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "pharmacy"
       },
       {
@@ -302,7 +304,7 @@
       "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.careTeam.role">role</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-care-team-role",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ordering"
           }
         ]
@@ -315,7 +317,7 @@
       "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.supportingInfo.category">category</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-category",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-category",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "dayssupply"
           }
         ]
@@ -337,7 +339,7 @@
       "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.supportingInfo.code">code</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/ncpdp-dispense-as-written",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/ncpdp-dispense-as-written",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "0",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "0"
           }
@@ -357,7 +359,7 @@
       "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.supportingInfo.code">code</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "refill-number"
           }
         ]
@@ -379,7 +381,7 @@
       "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.supportingInfo.code">code</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/rx-mail-or-retail",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/rx-mail-or-retail",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "r"
           }
         ]
@@ -398,11 +400,11 @@
     {
       "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.extension">extension</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/capitated-service-indicator",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/capitated-service-indicator",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "N"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/average-wholesale-price",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/average-wholesale-price",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueMoney</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.value">value</a>" : 2.88,
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Money#Money.currency">currency</a>" : "USD"
@@ -416,7 +418,7 @@
       "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.productOrService">productOrService</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/ndc-no-hyphens",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "69452015120"
           }
         ]
@@ -444,7 +446,7 @@
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">category</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "coinsurance"
               }
             ]
@@ -458,7 +460,7 @@
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">category</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "copay"
               }
             ]
@@ -472,7 +474,7 @@
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">category</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "deductible"
               }
             ]
@@ -486,7 +488,7 @@
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">category</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "third-party"
               }
             ]
@@ -500,7 +502,7 @@
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">category</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "allowed"
               }
             ]
@@ -514,7 +516,7 @@
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">category</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "net-payment"
               }
             ]
@@ -529,11 +531,11 @@
         {
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.detail.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-item-detail-classification",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/claim-item-detail-classification",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-item-detail-classification",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "dispensing-fee"
                   }
                 ]
@@ -544,7 +546,7 @@
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.detail.productOrService">productOrService</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/ndc-no-hyphens",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "69452015120"
               }
             ]
@@ -557,11 +559,11 @@
         {
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.detail.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-item-detail-classification",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/claim-item-detail-classification",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-item-detail-classification",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "ingredient-cost"
                   }
                 ]
@@ -572,7 +574,7 @@
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.detail.productOrService">productOrService</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/ndc-no-hyphens",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "69452015120"
               }
             ]
@@ -585,11 +587,11 @@
         {
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.detail.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-item-detail-classification",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/claim-item-detail-classification",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-item-detail-classification",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "sales-tax"
                   }
                 ]
@@ -600,7 +602,7 @@
           "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.detail.productOrService">productOrService</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/ndc-no-hyphens",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "69452015120"
               }
             ]
@@ -618,7 +620,7 @@
       "<a href="http://hl7.org/fhir/R4/explanationofbenefit.html#ExplanationOfBenefit.item.adjudication.category">category</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/paid-in-network-indicator",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/paid-in-network-indicator",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "in-network"
           }
         ]
@@ -655,9 +657,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#7.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 16:11+0000">2022-09-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://linuxforhealth.github.io/docs/">LinuxForHealth Team</a>.  Package linuxforhealth.fhir.ig#8.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 10, 2022 16:00+0000">2022-11-10</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

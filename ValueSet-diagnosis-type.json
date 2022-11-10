@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "diagnosis-type",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-diagnosis-type.html\"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/diagnosis-type</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-ex-diagnosistype.html\"><code>http://terminology.hl7.org/CodeSystem/ex-diagnosistype</code></a></li></ul></div>"
+  },
+  "url": "http://linuxforhealth.org/fhir/cdm/ValueSet/diagnosis-type",
+  "version": "8.0.0",
+  "name": "DiagnosisTypeValueSet",
+  "title": "Diagnosis Type Value Set",
+  "status": "active",
+  "date": "2022-11-10T16:00:46+00:00",
+  "publisher": "LinuxForHealth Team",
+  "description": "Value set for the diagnosis codes on a claim",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/diagnosis-type"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
+      }
+    ]
+  }
+}

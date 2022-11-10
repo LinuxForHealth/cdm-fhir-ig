@@ -7,42 +7,42 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Condition/ConditionInstanceWithNLPInsights> a fhir:Condition;
+<http://linuxforhealth.org/fhir/cdm/Condition/ConditionInstanceWithNLPInsights> a fhir:Condition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ConditionInstanceWithNLPInsights"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189145" ]
      ], [
        fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/path" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/path" ];
          fhir:Extension.valueString [ fhir:value "code.coding" ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-id" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-id" ];
          fhir:Extension.valueIdentifier [
            fhir:Identifier.system [ fhir:value "https://acme.com/nlp-processor/1.0" ];
            fhir:Identifier.value [ fhir:value "insight-1" ]
          ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/detected" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/detected" ];
          fhir:Extension.valueDateTime [ fhir:value "2021-01-01T03:01:00Z"^^xsd:dateTime ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/category" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/category" ];
          fhir:Extension.valueCodeableConcept [
            fhir:CodeableConcept.coding [
              fhir:index 0;
-             fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insight-category-code-system" ];
+             fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/insight-category-code-system" ];
              fhir:Coding.code [ fhir:value "natural-language-processing" ]
            ]
          ]
@@ -50,19 +50,19 @@
          fhir:index 4;
          fhir:Element.extension [
            fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/reference" ];
+           fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference" ];
            fhir:Extension.valueReference [
              fhir:Reference.reference [ fhir:value "#insight-reference-123456-01" ]
            ]
          ], [
            fhir:index 1;
-           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/reference-path" ];
+           fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-path" ];
            fhir:Extension.valueString [ fhir:value "conclusion" ]
          ], [
            fhir:index 2;
            fhir:Element.extension [
              fhir:index 0;
-             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-value" ];
+             fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-value" ];
              fhir:Extension.valueCoding [
                a sct:46635009;
                fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
@@ -71,7 +71,7 @@
              ]
            ], [
              fhir:index 1;
-             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-value" ];
+             fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-value" ];
              fhir:Extension.valueCoding [
                fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/umls" ];
                fhir:Coding.code [ fhir:value "C0011854" ];
@@ -79,7 +79,7 @@
              ]
            ], [
              fhir:index 2;
-             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-value" ];
+             fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-value" ];
              fhir:Extension.valueCoding [
                a loinc:44877-9;
                fhir:Coding.system [ fhir:value "http://loinc.org" ];
@@ -90,71 +90,71 @@
              fhir:index 3;
              fhir:Element.extension [
                fhir:index 0;
-               fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/covered-text" ];
+               fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/covered-text" ];
                fhir:Extension.valueString [ fhir:value "results consistent with insulin-dependent diabetes" ]
              ], [
                fhir:index 1;
-               fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/offset-begin" ];
+               fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/offset-begin" ];
                fhir:Extension.valueInteger [ fhir:value "17"^^xsd:integer ]
              ], [
                fhir:index 2;
-               fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/offset-end" ];
+               fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/offset-end" ];
                fhir:Extension.valueInteger [ fhir:value "56"^^xsd:integer ]
              ], [
                fhir:index 3;
                fhir:Element.extension [
                  fhir:index 0;
-                 fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/method" ];
+                 fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/method" ];
                  fhir:Extension.valueCodeableConcept [
                    fhir:CodeableConcept.coding [
                      fhir:index 0;
-                     fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/1.0/acd-confidence-method" ];
+                     fhir:Coding.system [ fhir:value "http://linuxforhealth.org/platform/acd-confidence-method" ];
                      fhir:Coding.code [ fhir:value "Diagnosis_Explicit_Score" ]
                    ]
                  ]
                ], [
                  fhir:index 1;
-                 fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/score" ];
+                 fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/score" ];
                  fhir:Extension.valueDecimal [ fhir:value "0.996"^^xsd:decimal ]
                ];
-               fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-confidence" ]
+               fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-confidence" ]
              ], [
                fhir:index 4;
                fhir:Element.extension [
                  fhir:index 0;
-                 fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/method" ];
+                 fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/method" ];
                  fhir:Extension.valueCodeableConcept [
                    fhir:CodeableConcept.coding [
                      fhir:index 0;
-                     fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/1.0/acd-confidence-method" ];
+                     fhir:Coding.system [ fhir:value "http://linuxforhealth.org/platform/acd-confidence-method" ];
                      fhir:Coding.code [ fhir:value "Diagnosis_Family_History" ]
                    ]
                  ]
                ], [
                  fhir:index 1;
-                 fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/score" ];
+                 fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/score" ];
                  fhir:Extension.valueDecimal [ fhir:value "0.006"^^xsd:decimal ]
                ];
-               fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-confidence" ]
+               fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-confidence" ]
              ];
-             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/span" ]
+             fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/span" ]
            ];
-           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-result" ]
+           fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-result" ]
          ];
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-detail" ]
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-detail" ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight" ]
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-condition";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-condition>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ConditionInstanceWithNLPInsights\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition \"ConditionInstanceWithNLPInsights\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-condition.html\">CDM Condition</a></p></div><p><b>identifier</b>: Source System Row Identifier: 46706977-907b-453a-87bc-76002d7076ef (OFFICIAL)</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Diabetes mellitus type 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#46635009; <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C0011854 \"Diabetes Mellitus, Insulin-Dependent\"; <a href=\"https://loinc.org/\">LOINC</a>#44877-9 \"Insulin dependent diabetes mellitus [Presence]\")</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ConditionInstanceWithNLPInsights\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition \"ConditionInstanceWithNLPInsights\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-condition.html\">CDM Condition</a></p></div><p><b>identifier</b>: Source System Row Identifier: 46706977-907b-453a-87bc-76002d7076ef(use: OFFICIAL)</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Diabetes mellitus type 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#46635009; <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-umls.html\">Unified Medical Language System</a>#C0011854 \"Diabetes Mellitus, Insulin-Dependent\"; <a href=\"https://loinc.org/\">LOINC</a>#44877-9 \"Insulin dependent diabetes mellitus [Presence]\")</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><hr/><blockquote><h2><span title=\"Codes: {http://loinc.org 10451-3}\">Proinsulin [Moles/volume] in Serum or Plasma --12 hours fasting</span> </h2><table class=\"grid\"></table><p><b>Report Details</b></p><p>Patient exhibits results consistent with insulin-dependent diabetes despite no family history of type 1 or type 2 diabetes.</p></blockquote></div>"
   ];
   fhir:DomainResource.contained [
      a fhir:DiagnosticReport;
@@ -177,7 +177,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -230,13 +230,13 @@
      ]
   ];
   fhir:Condition.subject [
-     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance>;
      fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Condition/ConditionInstanceWithNLPInsights.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Condition/ConditionInstanceWithNLPInsights.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

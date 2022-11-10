@@ -5,29 +5,29 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Practitioner/MatchedPractitionerSource-EMR1-PractitionerA> a fhir:Practitioner;
+<http://linuxforhealth.org/fhir/cdm/Practitioner/MatchedPractitionerSource-EMR1-PractitionerA> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "MatchedPractitionerSource-EMR1-PractitionerA"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-practitioner";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-practitioner>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"MatchedPractitionerSource-EMR1-PractitionerA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner \"MatchedPractitionerSource-EMR1-PractitionerA\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-practitioner.html\">CDM Practitioner</a></p></div><p><b>identifier</b>: Source System Row Identifier: providerA (OFFICIAL), Provider number: 1122445599 (OFFICIAL), Match Data Identifier: e65bdcac-6e50-4353-8faa-dc147a603468 (SECONDARY)</p><p><b>name</b>: Dr Rosemary B Match, MD</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"MatchedPractitionerSource-EMR1-PractitionerA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner \"MatchedPractitionerSource-EMR1-PractitionerA\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-practitioner.html\">CDM Practitioner</a></p></div><p><b>identifier</b>: Source System Row Identifier: providerA(use: OFFICIAL), Provider number: 1122445599(use: OFFICIAL), Match Data Identifier: e65bdcac-6e50-4353-8faa-dc147a603468(use: SECONDARY)</p><p><b>name</b>: Dr Rosemary B Match, MD</p></div>"
   ];
   fhir:Practitioner.identifier [
      fhir:index 0;
@@ -35,7 +35,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -65,11 +65,11 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "MDI" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "http://ibm.com/fhir/primary/practitioner-match-identifier" ];
+     fhir:Identifier.system [ fhir:value "http://linuxforhealth.org/platform/practitioner-match-identifier" ];
      fhir:Identifier.value [ fhir:value "e65bdcac-6e50-4353-8faa-dc147a603468" ];
      fhir:Identifier.assigner [
        fhir:Reference.display [ fhir:value "HDC" ]
@@ -98,7 +98,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Practitioner/MatchedPractitionerSource-EMR1-PractitionerA.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Practitioner/MatchedPractitionerSource-EMR1-PractitionerA.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

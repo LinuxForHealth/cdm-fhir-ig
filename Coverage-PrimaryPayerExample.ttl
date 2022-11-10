@@ -5,29 +5,29 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Coverage/PrimaryPayerExample> a fhir:Coverage;
+<http://linuxforhealth.org/fhir/cdm/Coverage/PrimaryPayerExample> a fhir:Coverage;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "PrimaryPayerExample"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"PrimaryPayerExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage \"PrimaryPayerExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-coverage.html\">CDM Coverage</a></p></div><p><b>identifier</b>: Source System Row Identifier: c35466d6-0d2b-4efa-8265-b9ac3f887e08 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: preferred provider organization policy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActCode.html\">ActCode</a>#PPO)</span></p><p><b>policyHolder</b>: <a href=\"Organization-Employer1.html\">Organization/Employer1</a> \"Employer 1\"</p><p><b>subscriber</b>: <span></span></p><p><b>beneficiary</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>relationship</b>: Spouse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-subscriber-relationship.html\">SubscriberPolicyholder Relationship Codes</a>#spouse)</span></p><p><b>period</b>: 2020-01-01 12:00:00+0000 --&gt; (ongoing)</p><p><b>payor</b>: <a href=\"Organization-Payer1.html\">Organization/Payer1</a> \"Payer 1\"</p><blockquote><p><b>class</b></p><p><b>type</b>: Group <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-coverage-class.html\">Coverage Class Codes</a>#group)</span></p><p><b>value</b>: 10985-PAYER1</p><p><b>name</b>: PPO with HSA</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Plan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-coverage-class.html\">Coverage Class Codes</a>#plan)</span></p><p><b>value</b>: 282</p></blockquote><p><b>order</b>: 1</p><p><b>network</b>: Choice POS II</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"PrimaryPayerExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage \"PrimaryPayerExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-coverage.html\">CDM Coverage</a></p></div><p><b>identifier</b>: Source System Row Identifier: c35466d6-0d2b-4efa-8265-b9ac3f887e08(use: OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: preferred provider organization policy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html\">ActCode</a>#PPO)</span></p><p><b>policyHolder</b>: <a href=\"Organization-Employer1.html\">Organization/Employer1</a> \"Employer 1\"</p><p><b>subscriber</b>: <span></span></p><p><b>beneficiary</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>relationship</b>: Spouse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-subscriber-relationship.html\">SubscriberPolicyholder Relationship Codes</a>#spouse)</span></p><p><b>period</b>: 2020-01-01 12:00:00+0000 --&gt; (ongoing)</p><p><b>payor</b>: <a href=\"Organization-Payer1.html\">Organization/Payer1</a> \"Payer 1\"</p><blockquote><p><b>class</b></p><p><b>type</b>: Group <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-coverage-class.html\">Coverage Class Codes</a>#group)</span></p><p><b>value</b>: 10985-PAYER1</p><p><b>name</b>: PPO with HSA</p></blockquote><blockquote><p><b>class</b></p><p><b>type</b>: Plan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-coverage-class.html\">Coverage Class Codes</a>#plan)</span></p><p><b>value</b>: 282</p></blockquote><p><b>order</b>: 1</p><p><b>network</b>: Choice POS II</p></div>"
   ];
   fhir:Coverage.identifier [
      fhir:index 0;
@@ -35,7 +35,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -54,7 +54,7 @@
      ]
   ];
   fhir:Coverage.policyHolder [
-     fhir:link <http://ibm.com/fhir/cdm/Organization/Employer1>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Organization/Employer1>;
      fhir:Reference.reference [ fhir:value "Organization/Employer1" ]
   ];
   fhir:Coverage.subscriber [
@@ -65,7 +65,7 @@
      ]
   ];
   fhir:Coverage.beneficiary [
-     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance>;
      fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
   ];
   fhir:Coverage.relationship [
@@ -80,7 +80,7 @@
   ];
   fhir:Coverage.payor [
      fhir:index 0;
-     fhir:link <http://ibm.com/fhir/cdm/Organization/Payer1>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Organization/Payer1>;
      fhir:Reference.reference [ fhir:value "Organization/Payer1" ]
   ];
   fhir:Coverage.class [
@@ -110,7 +110,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Coverage/PrimaryPayerExample.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Coverage/PrimaryPayerExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

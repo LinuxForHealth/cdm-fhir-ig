@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/adjudication-category> a fhir:ValueSet;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/adjudication-category> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "adjudication-category"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-adjudication-category.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/adjudication-category</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-adjudication-category.html\"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/adjudication-category"];
-  fhir:ValueSet.version [ fhir:value "7.0.0"];
+  fhir:ValueSet.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/adjudication-category"];
+  fhir:ValueSet.version [ fhir:value "8.0.0"];
   fhir:ValueSet.name [ fhir:value "AdjudicationCategoryValueSet"];
   fhir:ValueSet.title [ fhir:value "Adjudication Category Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Alvearie Team"];
+  fhir:ValueSet.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "LinuxForHealth Team"];
   fhir:ValueSet.description [ fhir:value "Adjudication category value set for claims"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
@@ -31,13 +31,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/adjudication-category" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/adjudication-category.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/adjudication-category.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

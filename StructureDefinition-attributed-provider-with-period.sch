@@ -10,13 +10,6 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
-    <sch:title>Extension</sch:title>
-    <sch:rule context="f:Extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>Extension.extension</sch:title>
     <sch:rule context="f:Extension/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -26,7 +19,7 @@
   <sch:pattern>
     <sch:title>f:Extension/f:value[x] 1</sch:title>
     <sch:rule context="f:Extension/f:value[x]">
-      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/reference-period']) &gt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/reference-period': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-period']) &gt;= 1">extension with URL = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-period': minimum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

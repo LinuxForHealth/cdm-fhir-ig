@@ -18,13 +18,13 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-service-request"/>
-  <version value="7.0.0"/>
+  <url value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-service-request"/>
+  <version value="8.0.0"/>
   <name value="CDMServiceRequest"/>
   <title value="CDM Service Request"/>
   <status value="active"/>
-  <date value="2022-09-08T16:11:15+00:00"/>
-  <publisher value="Alvearie Team"/>
+  <date value="2022-11-10T16:00:46+00:00"/>
+  <publisher value="LinuxForHealth Team"/>
   <description value="A record of a request for service such as diagnostic investigations, treatments, or operations to be performed. The CDMServiceRequest profile extends the base FHIR ServiceRequest resource with additional details."/>
   <jurisdiction>
     <coding>
@@ -186,7 +186,7 @@
       </base>
       <type>
         <code value="Meta"/>
-        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/process-meta"/>
+        <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -606,7 +606,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://ibm.com/fhir/cdm/ValueSet/identifier-type"/>
+        <valueSet value="http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2216,7 +2216,7 @@
       <path value="ServiceRequest.meta"/>
       <type>
         <code value="Meta"/>
-        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/process-meta"/>
+        <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta"/>
       </type>
     </element>
     <element id="ServiceRequest.contained">
@@ -2231,7 +2231,7 @@
       <path value="ServiceRequest.identifier.type"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://ibm.com/fhir/cdm/ValueSet/identifier-type"/>
+        <valueSet value="http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type"/>
       </binding>
     </element>
     <element id="ServiceRequest.identifier.system">

@@ -6,29 +6,29 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Procedure/CDMProcedureExample> a fhir:Procedure;
+<http://linuxforhealth.org/fhir/cdm/Procedure/CDMProcedureExample> a fhir:Procedure;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CDMProcedureExample"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-procedure";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-procedure";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-procedure>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-procedure>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"CDMProcedureExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure \"CDMProcedureExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-procedure.html\">CDM Procedure</a></p></div><p><b>identifier</b>: Source System Row Identifier: 3c4c3b81-07d2-434a-8696-0d5f325b6519 (OFFICIAL)</p><p><b>status</b>: completed</p><p><b>category</b>: Diagnostic procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103693007)</span></p><p><b>code</b>: Clinical examination <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#5880005)</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>encounter</b>: <a href=\"Encounter-CDMEncounterExample.html\">Encounter/CDMEncounterExample</a></p><p><b>performed</b>: 2020-01-06 10:30:00+0000</p><p><b>recorder</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><p><b>asserter</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Function</b></td><td><b>Actor</b></td><td><b>OnBehalfOf</b></td></tr><tr><td>*</td><td>General physician <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#59058001)</span></td><td><a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</td><td><a href=\"Organization-GeneralHospital.html\">Organization/GeneralHospital</a> \"General Hospital\"</td></tr></table><p><b>location</b>: <a href=\"Location-KellyClinic.html\">Location/KellyClinic</a> \"Kelly Clinic\"</p><p><b>reasonCode</b>: Closed reduction of dislocation of foot and toe <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1119007)</span></p><p><b>bodySite</b>: Structure of metatarsal region of foot <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1484003)</span></p><p><b>outcome</b>: Successful <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#385669000)</span></p><p><b>complication</b>: Blister of foot without infection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1525003)</span></p><p><b>note</b>: Patient complained of pain in foot. Slight fracture suspected.  None found.  Blister looks fine, no infection. (By Practitioner/DrKelly @Jan 6, 2020, 10:45:00 AM)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"CDMProcedureExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure \"CDMProcedureExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-procedure.html\">CDM Procedure</a></p></div><p><b>identifier</b>: Source System Row Identifier: 3c4c3b81-07d2-434a-8696-0d5f325b6519(use: OFFICIAL)</p><p><b>status</b>: completed</p><p><b>category</b>: Diagnostic procedure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#103693007)</span></p><p><b>code</b>: Clinical examination <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#5880005)</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>encounter</b>: <a href=\"Encounter-CDMEncounterExample.html\">Encounter/CDMEncounterExample</a></p><p><b>performed</b>: 2020-01-06 10:30:00+0000</p><p><b>recorder</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><p><b>asserter</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Function</b></td><td><b>Actor</b></td><td><b>OnBehalfOf</b></td></tr><tr><td>*</td><td>General physician <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#59058001)</span></td><td><a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</td><td><a href=\"Organization-GeneralHospital.html\">Organization/GeneralHospital</a> \"General Hospital\"</td></tr></table><p><b>location</b>: <a href=\"Location-KellyClinic.html\">Location/KellyClinic</a> \"Kelly Clinic\"</p><p><b>reasonCode</b>: Closed reduction of dislocation of foot and toe <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1119007)</span></p><p><b>bodySite</b>: Structure of metatarsal region of foot <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1484003)</span></p><p><b>outcome</b>: Successful <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#385669000)</span></p><p><b>complication</b>: Blister of foot without infection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1525003)</span></p><p><b>note</b>: Patient complained of pain in foot. Slight fracture suspected.  None found.  Blister looks fine, no infection. (By Practitioner/DrKelly @Jan 6, 2020, 10:45:00 AM)</p></div>"
   ];
   fhir:Procedure.identifier [
      fhir:index 0;
@@ -36,7 +36,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -66,20 +66,20 @@
      ]
   ];
   fhir:Procedure.subject [
-     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance>;
      fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
   ];
   fhir:Procedure.encounter [
-     fhir:link <http://ibm.com/fhir/cdm/Encounter/CDMEncounterExample>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Encounter/CDMEncounterExample>;
      fhir:Reference.reference [ fhir:value "Encounter/CDMEncounterExample" ]
   ];
   fhir:Procedure.performedDateTime [ fhir:value "2020-01-06T10:30:00Z"^^xsd:dateTime];
   fhir:Procedure.recorder [
-     fhir:link <http://ibm.com/fhir/cdm/Practitioner/DrKelly>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Practitioner/DrKelly>;
      fhir:Reference.reference [ fhir:value "Practitioner/DrKelly" ]
   ];
   fhir:Procedure.asserter [
-     fhir:link <http://ibm.com/fhir/cdm/Practitioner/DrKelly>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Practitioner/DrKelly>;
      fhir:Reference.reference [ fhir:value "Practitioner/DrKelly" ]
   ];
   fhir:Procedure.performer [
@@ -94,16 +94,16 @@
        ]
      ];
      fhir:Procedure.performer.actor [
-       fhir:link <http://ibm.com/fhir/cdm/Practitioner/DrKelly>;
+       fhir:link <http://linuxforhealth.org/fhir/cdm/Practitioner/DrKelly>;
        fhir:Reference.reference [ fhir:value "Practitioner/DrKelly" ]
      ];
      fhir:Procedure.performer.onBehalfOf [
-       fhir:link <http://ibm.com/fhir/cdm/Organization/GeneralHospital>;
+       fhir:link <http://linuxforhealth.org/fhir/cdm/Organization/GeneralHospital>;
        fhir:Reference.reference [ fhir:value "Organization/GeneralHospital" ]
      ]
   ];
   fhir:Procedure.location [
-     fhir:link <http://ibm.com/fhir/cdm/Location/KellyClinic>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Location/KellyClinic>;
      fhir:Reference.reference [ fhir:value "Location/KellyClinic" ]
   ];
   fhir:Procedure.reasonCode [
@@ -148,7 +148,7 @@
   fhir:Procedure.note [
      fhir:index 0;
      fhir:Annotation.authorReference [
-       fhir:link <http://ibm.com/fhir/cdm/Practitioner/DrKelly>;
+       fhir:link <http://linuxforhealth.org/fhir/cdm/Practitioner/DrKelly>;
        fhir:Reference.reference [ fhir:value "Practitioner/DrKelly" ]
      ];
      fhir:Annotation.time [ fhir:value "2020-01-06T10:45:00Z"^^xsd:dateTime ];
@@ -157,7 +157,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Procedure/CDMProcedureExample.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Procedure/CDMProcedureExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

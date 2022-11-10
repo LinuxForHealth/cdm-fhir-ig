@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ALVEARIE.FHIR.IG\Condition Instance With NLP Insights - JSON Representation - FHIR v4.0.1</title>
+    <title>LINUXFORHEALTH.FHIR.IG\Condition Instance With NLP Insights - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,7 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/alvearie.css" rel="stylesheet"/>
+<link href="assets/css/linuxforhealth-fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -49,19 +49,19 @@
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a id="alvearie-logo" no-external="true">
+  <a id="linuxforhealth-logo" no-external="true">
     <!-- 
     // New logo image reference should go here
-    // Place image in data/alvearie-template/content/assets/images folder
-    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    // Place image in data/linuxforhealth-template/content/assets/images folder
+    <img height="60" alt="LinuxForHealth" src="assets/images/linuxforhealth-logo.png" style="float:left"/>
     -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">LinuxForHealth FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">7.0.0 - draft
+            <span style="display:inline-block;">8.0.0 - draft
 
 
 
@@ -126,7 +126,8 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v7.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">LinuxForHealth FHIR Implementation Guide - Local Development build (v8.0.0). See the <a href="http://linuxforhealth.org/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -141,6 +142,7 @@
   <li>
     <a href="Condition-ConditionInstanceWithNLPInsights.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -193,43 +195,43 @@
 
 
 
-  <pre class="json"><code class="language-json">
+  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
 {
   "<a href="http://hl7.org/fhir/R4/condition.html#Condition">resourceType</a>" : "Condition",
   "<a href="http://hl7.org/fhir/R4/condition.html#Condition.id">id</a>" : "ConditionInstanceWithNLPInsights",
   "<a href="http://hl7.org/fhir/R4/condition.html#Condition.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "99999"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "b069a545-9506-40c6-8498-23de2e189145"
       },
       {
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/path",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/path",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "code.coding"
           },
           {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/insight-id",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-id",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueIdentifier</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://acme.com/nlp-processor/1.0",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "insight-1"
             }
           },
           {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/detected",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/detected",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2021-01-01T03:01:00Z"
           },
           {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/category",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/category",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/insight-category-code-system",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/insight-category-code-system",
                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "natural-language-processing"
                 }
               ]
@@ -238,19 +240,19 @@
           {
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/reference",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
                   "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "#insight-reference-123456-01"
                 }
               },
               {
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/reference-path",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-path",
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "conclusion"
               },
               {
                 "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/insight-value",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-value",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                       "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
                       "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "46635009",
@@ -258,7 +260,7 @@
                     }
                   },
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/insight-value",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-value",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                       "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/umls",
                       "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "C0011854",
@@ -266,7 +268,7 @@
                     }
                   },
                   {
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/insight-value",
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-value",
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                       "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
                       "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "44877-9",
@@ -276,78 +278,78 @@
                   {
                     "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
                       {
-                        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/covered-text",
+                        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/covered-text",
                         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "results consistent with insulin-dependent diabetes"
                       },
                       {
-                        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/offset-begin",
+                        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/offset-begin",
                         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueInteger</a>" : 17
                       },
                       {
-                        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/offset-end",
+                        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/offset-end",
                         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueInteger</a>" : 56
                       },
                       {
                         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/method",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/method",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
                               "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                                 {
-                                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/1.0/acd-confidence-method",
+                                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/platform/acd-confidence-method",
                                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Diagnosis_Explicit_Score"
                                 }
                               ]
                             }
                           },
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/score",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/score",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 0.996
                           }
                         ],
-                        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/insight-confidence"
+                        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-confidence"
                       },
                       {
                         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/method",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/method",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
                               "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
                                 {
-                                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/1.0/acd-confidence-method",
+                                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/platform/acd-confidence-method",
                                   "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "Diagnosis_Family_History"
                                 }
                               ]
                             }
                           },
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/score",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/score",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 0.006
                           }
                         ],
-                        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/insight-confidence"
+                        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-confidence"
                       }
                     ],
-                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/span"
+                    "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/span"
                   }
                 ],
-                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/insight-result"
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-result"
               }
             ],
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/insight-detail"
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-detail"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/insight"
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight"
       }
     ],
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "http://acme-health.com/emr",
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition"
+      "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-condition"
     ]
   },
   "<a href="http://hl7.org/fhir/R4/condition.html#Condition.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Condition&lt;/b&gt;&lt;a name=\&quot;ConditionInstanceWithNLPInsights\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Condition \&quot;ConditionInstanceWithNLPInsights\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Information Source: http://acme-health.com/emr!&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cdm-condition.html\&quot;&gt;CDM Condition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Source System Row Identifier: 46706977-907b-453a-87bc-76002d7076ef (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-condition-clinical.html\&quot;&gt;Condition Clinical Status Codes&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: Confirmed &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-condition-ver-status.html\&quot;&gt;ConditionVerificationStatus&lt;/a&gt;#confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Encounter Diagnosis &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\&quot;&gt;Condition Category Codes&lt;/a&gt;#encounter-diagnosis)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diabetes mellitus type 1 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#46635009; &lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-umls.html\&quot;&gt;Unified Medical Language System&lt;/a&gt;#C0011854 \&quot;Diabetes Mellitus, Insulin-Dependent\&quot;; &lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#44877-9 \&quot;Insulin dependent diabetes mellitus [Presence]\&quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-CDMPatientInstance.html\&quot;&gt;Patient/CDMPatientInstance&lt;/a&gt; \&quot; MCLASTNAME\&quot;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Condition&lt;/b&gt;&lt;a name=\&quot;ConditionInstanceWithNLPInsights\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Condition \&quot;ConditionInstanceWithNLPInsights\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Information Source: http://acme-health.com/emr!&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cdm-condition.html\&quot;&gt;CDM Condition&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Source System Row Identifier: 46706977-907b-453a-87bc-76002d7076ef(use: OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-condition-clinical.html\&quot;&gt;Condition Clinical Status Codes&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: Confirmed &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-condition-ver-status.html\&quot;&gt;ConditionVerificationStatus&lt;/a&gt;#confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Encounter Diagnosis &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-condition-category.html\&quot;&gt;Condition Category Codes&lt;/a&gt;#encounter-diagnosis)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Diabetes mellitus type 1 &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#46635009; &lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-umls.html\&quot;&gt;Unified Medical Language System&lt;/a&gt;#C0011854 \&quot;Diabetes Mellitus, Insulin-Dependent\&quot;; &lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#44877-9 \&quot;Insulin dependent diabetes mellitus [Presence]\&quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-CDMPatientInstance.html\&quot;&gt;Patient/CDMPatientInstance&lt;/a&gt; \&quot; MCLASTNAME\&quot;&lt;/p&gt;&lt;hr/&gt;&lt;blockquote&gt;&lt;h2&gt;&lt;span title=\&quot;Codes: {http://loinc.org 10451-3}\&quot;&gt;Proinsulin [Moles/volume] in Serum or Plasma --12 hours fasting&lt;/span&gt; &lt;/h2&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Report Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Patient exhibits results consistent with insulin-dependent diabetes despite no family history of type 1 or type 2 diabetes.&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/diagnosticreport.html#DiagnosticReport">contained</a>" : [
     {
@@ -371,7 +373,7 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "SSRI"
           }
         ]
@@ -461,9 +463,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#7.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 16:11+0000">2022-09-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://linuxforhealth.github.io/docs/">LinuxForHealth Team</a>.  Package linuxforhealth.fhir.ig#8.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 10, 2022 16:00+0000">2022-11-10</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

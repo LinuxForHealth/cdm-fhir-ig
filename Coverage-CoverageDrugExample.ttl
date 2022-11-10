@@ -5,73 +5,73 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Coverage/CoverageDrugExample> a fhir:Coverage;
+<http://linuxforhealth.org/fhir/cdm/Coverage/CoverageDrugExample> a fhir:Coverage;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CoverageDrugExample"];
   fhir:Resource.meta [
      fhir:Meta.source [ fhir:value "http://acme-health.com/WellnessCenterPharmacy" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"CoverageDrugExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage \"CoverageDrugExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/WellnessCenterPharmacy!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-coverage.html\">CDM Coverage</a></p></div><p><b>Age and Gender Groups</b>: Males 20-24 yr <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-age-gender-group.html\">Age and Gender Group Codes</a>#7)</span></p><p><b>Snapshot Age In Years</b>: 21</p><p><b>Claim Group Identifier</b>: claim group id</p><p><b>Coverage Month</b>: 2017-06-01</p><p><b>Employee Count</b>: 1</p><p><b>Employee Status</b>: Active Full Time <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-wh-payer-employee-status-code.html\">Health Data Connect Employee Status Codes</a>#1)</span></p><p><b>Employee Hire Date</b>: 2017-01-30</p><p><b>identifier</b>: Source System Row Identifier: encryp-id1234</p><p><b>status</b>: active</p><p><b>subscriber</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>beneficiary</b>: <span></span></p><p><b>relationship</b>: Self <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-subscriber-relationship.html\">SubscriberPolicyholder Relationship Codes</a>#self)</span></p><p><b>period</b>: 2017-06-01 --&gt; 2017-06-30</p><p><b>payor</b>: <span></span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Coverage</b><a name=\"CoverageDrugExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Coverage \"CoverageDrugExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/WellnessCenterPharmacy!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-coverage.html\">CDM Coverage</a></p></div><p><b>Age and Gender Groups</b>: Males 20-24 yr <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-age-gender-group.html\">Age and Gender Group Codes</a>#7)</span></p><p><b>Snapshot Age In Years</b>: 21</p><p><b>Claim Group Identifier</b>: claim group id</p><p><b>Coverage Month</b>: 2017-06-01</p><p><b>Employee Count</b>: 1</p><p><b>Employee Status</b>: Active Full Time <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-payer-employee-status-code.html\">payer Employee Status Codes</a>#1)</span></p><p><b>Employee Hire Date</b>: 2017-01-30</p><p><b>identifier</b>: Source System Row Identifier: encryp-id1234</p><p><b>status</b>: active</p><p><b>subscriber</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>beneficiary</b>: <span></span></p><p><b>relationship</b>: Self <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-subscriber-relationship.html\">SubscriberPolicyholder Relationship Codes</a>#self)</span></p><p><b>period</b>: 2017-06-01 --&gt; 2017-06-30</p><p><b>payor</b>: <span></span></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/age-gender-group" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/age-gender-group" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/age-gender-group" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/age-gender-group" ];
          fhir:Coding.code [ fhir:value "7" ]
        ]
      ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/snapshot-age-in-years" ];
      fhir:Extension.valueUnsignedInt [ fhir:value "21"^^xsd:nonNegativeInteger ]
   ], [
      fhir:index 2;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/claim-group-identifier" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-group-identifier" ];
      fhir:Extension.valueString [ fhir:value "claim group id" ]
   ], [
      fhir:index 3;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/coverage-month" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/coverage-month" ];
      fhir:Extension.valueDate [ fhir:value "2017-06-01"^^xsd:date ]
   ], [
      fhir:index 4;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/employee-count" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/employee-count" ];
      fhir:Extension.valueUnsignedInt [ fhir:value "1"^^xsd:nonNegativeInteger ]
   ], [
      fhir:index 5;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/employee-status" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/employee-status" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-employee-status-code" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-employee-status-code" ];
          fhir:Coding.code [ fhir:value "1" ]
        ]
      ]
   ], [
      fhir:index 6;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/employee-hire-date" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/employee-hire-date" ];
      fhir:Extension.valueDate [ fhir:value "2017-01-30"^^xsd:date ]
   ];
   fhir:Coverage.identifier [
      fhir:index 0;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/encrypted-state" ];
        fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -80,7 +80,7 @@
   ];
   fhir:Coverage.status [ fhir:value "active"];
   fhir:Coverage.subscriber [
-     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance>;
      fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
   ];
   fhir:Coverage.beneficiary [
@@ -112,7 +112,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Coverage/CoverageDrugExample.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Coverage/CoverageDrugExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

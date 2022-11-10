@@ -3,38 +3,38 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="CDMPatientInstance-DoNotContact"/>
   <meta>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id">
       <valueString value="99999"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id">
       <valueString value="b069a545-9506-40c6-8498-23de2e189143"/>
     </extension>
     <source value="http://acme-health.com/emr1"/>
-    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
+    <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Norm Peterson </b> male, DoB: 1948-10-17 ( Source System Row Identifier: 35e4aa64-fdf8-4ef9-8acd-066aec45f63b (OFFICIAL))</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Norm Peterson </b> male, DoB: 1948-10-17 ( Source System Row Identifier: 35e4aa64-fdf8-4ef9-8acd-066aec45f63b(use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Id:</td><td colspan="3">Match Data Identifier: 4fd6049c-59c5-4c7b-81b1-88869044535d(use: SECONDARY)</td></tr><tr><td style="background-color: #f3f5da" title="Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender identity of the person, which will not be known until the newborn is older."><a href="StructureDefinition-sex-assigned-at-birth.html">Sex Assigned At Birth:</a></td><td colspan="3"><ul><li><span title="Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth male}">Male</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The importance of the patient (e.g. VIP)."><a href="http://hl7.org/fhir/R4/extension-patient-importance.html">importance:</a></td><td colspan="3"><ul><li><span title="Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-importance bad-debt}, {http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-importance do-not-contact}">Bad Debt</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Customer-specific patient status codes"><a href="StructureDefinition-status-code.html">Status Code:</a></td><td colspan="3"><span title="Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-status collection}">Collections</span></td></tr></table></div>
   </text>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/status-code">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/status-code">
     <valueCodeableConcept>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-status"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-status"/>
         <code value="collection"/>
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/status-code">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/status-code">
     <valueCodeableConcept>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-status"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-status"/>
         <code value="confidential"/>
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/status-code">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/status-code">
     <valueCodeableConcept>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-status"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-status"/>
         <code value="test"/>
       </coding>
     </valueCodeableConcept>
@@ -42,19 +42,19 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/patient-importance">
     <valueCodeableConcept>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-importance"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-importance"/>
         <code value="bad-debt"/>
       </coding>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/patient-importance"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-importance"/>
         <code value="do-not-contact"/>
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/sex-assigned-at-birth">
     <valueCodeableConcept>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth"/>
         <code value="male"/>
       </coding>
     </valueCodeableConcept>
@@ -63,7 +63,7 @@
     <use value="official"/>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="SSRI"/>
       </coding>
     </type>
@@ -77,11 +77,11 @@
     <use value="secondary"/>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="MDI"/>
       </coding>
     </type>
-    <system value="http://ibm.com/fhir/primary/patient-match-identifier"/>
+    <system value="http://linuxforhealth.org/platform/patient-match-identifier"/>
     <value value="4fd6049c-59c5-4c7b-81b1-88869044535d"/>
     <assigner>
       <display value="HDC"/>

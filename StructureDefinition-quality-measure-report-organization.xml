@@ -25,13 +25,13 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="business"/>
   </extension>
-  <url value="http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report-organization"/>
-  <version value="7.0.0"/>
+  <url value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure-report-organization"/>
+  <version value="8.0.0"/>
   <name value="QualityMeasureOrganizationReport"/>
   <title value="Organization Quality Measure Report"/>
   <status value="active"/>
-  <date value="2022-09-08T16:11:15+00:00"/>
-  <publisher value="Alvearie Team"/>
+  <date value="2022-11-10T16:00:46+00:00"/>
+  <publisher value="LinuxForHealth Team"/>
   <description value="A quality measure report with an organizational focus"/>
   <jurisdiction>
     <coding>
@@ -53,7 +53,7 @@
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="MeasureReport"/>
-  <baseDefinition value="http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report"/>
+  <baseDefinition value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure-report"/>
   <derivation value="constraint"/>
   <snapshot>
     <element id="MeasureReport">
@@ -170,7 +170,7 @@
       </base>
       <type>
         <code value="Meta"/>
-        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/process-meta"/>
+        <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -372,7 +372,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value"/>
+        <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-parameter-value"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -1058,7 +1058,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://ibm.com/fhir/cdm/ValueSet/quality-measure-population-type"/>
+        <valueSet value="http://linuxforhealth.org/fhir/cdm/ValueSet/quality-measure-population-type"/>
       </binding>
     </element>
     <element id="MeasureReport.group.population.count">
@@ -1099,7 +1099,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+        <targetProfile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1323,7 +1323,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+        <targetProfile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1547,7 +1547,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+        <targetProfile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1771,7 +1771,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+        <targetProfile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1934,7 +1934,7 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/measure-population-type"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/measure-population-type"/>
           <code value="care-gap"/>
         </coding>
       </patternCodeableConcept>
@@ -1995,7 +1995,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+        <targetProfile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2829,7 +2829,7 @@
       <path value="MeasureReport.group.population.subjectResults"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+        <targetProfile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list"/>
       </type>
     </element>
     <element id="MeasureReport.group.population:InitialPopulation">
@@ -2841,7 +2841,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+        <targetProfile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list"/>
       </type>
     </element>
     <element id="MeasureReport.group.population:Denominator">
@@ -2852,7 +2852,7 @@
       <path value="MeasureReport.group.population.subjectResults"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+        <targetProfile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list"/>
       </type>
     </element>
     <element id="MeasureReport.group.population:Numerator">
@@ -2863,7 +2863,7 @@
       <path value="MeasureReport.group.population.subjectResults"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+        <targetProfile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list"/>
       </type>
     </element>
     <element id="MeasureReport.group.population:CareGap">
@@ -2874,7 +2874,7 @@
       <path value="MeasureReport.group.population.subjectResults"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://ibm.com/fhir/cdm/StructureDefinition/patient-list"/>
+        <targetProfile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list"/>
       </type>
     </element>
   </differential>

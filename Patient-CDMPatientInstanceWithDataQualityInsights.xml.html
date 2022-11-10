@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ALVEARIE.FHIR.IG\Data Quality Insights - XML Representation - FHIR v4.0.1</title>
+    <title>LINUXFORHEALTH.FHIR.IG\Data Quality Insights - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,7 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/alvearie.css" rel="stylesheet"/>
+<link href="assets/css/linuxforhealth-fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -49,19 +49,19 @@
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a id="alvearie-logo" no-external="true">
+  <a id="linuxforhealth-logo" no-external="true">
     <!-- 
     // New logo image reference should go here
-    // Place image in data/alvearie-template/content/assets/images folder
-    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    // Place image in data/linuxforhealth-template/content/assets/images folder
+    <img height="60" alt="LinuxForHealth" src="assets/images/linuxforhealth-logo.png" style="float:left"/>
     -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">LinuxForHealth FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">7.0.0 - draft
+            <span style="display:inline-block;">8.0.0 - draft
 
 
 
@@ -126,7 +126,8 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v7.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">LinuxForHealth FHIR Implementation Guide - Local Development build (v8.0.0). See the <a href="http://linuxforhealth.org/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -141,6 +142,7 @@
   <li>
     <a href="Patient-CDMPatientInstanceWithDataQualityInsights.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -193,55 +195,63 @@
 
 
 
-  <pre class="xml"><code class="language-xml">
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;CDMPatientInstanceWithDataQualityInsights&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/tenant-id&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;99999&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;b069a545-9506-40c6-8498-23de2e189143&quot;/&gt;
     &lt;/extension&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/insight&quot;&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/path&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/path&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;contact.telecom.value(where system = 'phone')&quot;/&gt;
       &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/insight-id&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-id&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueIdentifier</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://www.acme.com/insights&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;data-state-id-2&quot;/&gt;
         &lt;/valueIdentifier&gt;
       &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/source-id&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/source-id&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueIdentifier</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://www.acme.com/analytics/phone-validator&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;coyote-md&quot;/&gt;
         &lt;/valueIdentifier&gt;
       &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/detected&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/detected&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2020-01-01T03:01:00Z&quot;/&gt;
       &lt;/extension&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/category&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/category&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/insight-category-code-system&quot;/&gt;
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/insight-category-code-system&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;data-quality&quot;/&gt;
           &lt;/coding&gt;
         &lt;/valueCodeableConcept&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/insight-result-summary&quot;&gt;
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-result-summary&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/insight-value&quot;&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-value&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;555-000-5500&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/insight-confidence&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/method&quot;&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-confidence&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/method&quot;&gt;
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
                 &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://www.claro.com/phone-number-insights&quot;/&gt;
@@ -249,24 +259,26 @@
               &lt;/coding&gt;
             &lt;/valueCodeableConcept&gt;
           &lt;/extension&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/score&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/score&quot;&gt;
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
           &lt;/extension&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/description&quot;&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/description&quot;&gt;
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;555 is not an area code in Chicago.&quot;/&gt;
           &lt;/extension&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/insight-result-summary&quot;&gt;
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-result-summary&quot;&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/insight-value&quot;&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-value&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;773-555-0100&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/insight-confidence&quot;&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/method&quot;&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-confidence&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/method&quot;&gt;
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
               &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
                 &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://www.claro.com/phone-number-insights&quot;/&gt;
@@ -274,47 +286,52 @@
               &lt;/coding&gt;
             &lt;/valueCodeableConcept&gt;
           &lt;/extension&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/score&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/score&quot;&gt;
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;1&quot;/&gt;
           &lt;/extension&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/description&quot;&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/description&quot;&gt;
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;773 is a valid area code in Chicago.&quot;/&gt;
           &lt;/extension&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/insight-detail&quot;&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/reference&quot;&gt;
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-detail&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/CDMPatientInstanceWithDataQualityInsights&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/CDMPatientInstanceWithDataQualityInsights&quot;/&gt;
           &lt;/valueReference&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/reference-path&quot;&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-path&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;address.city&quot;/&gt;
         &lt;/extension&gt;
         &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/insight-result&quot;&gt;
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-result&quot;&gt;
           &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/based-on-value&quot;&gt;
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/based-on-value&quot;&gt;
             &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Chicago&quot;/&gt;
           &lt;/extension&gt;
         &lt;/extension&gt;
       &lt;/extension&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://acme-health.com/emr&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient&quot;/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Firstname McLastname &lt;/b&gt; male, DoB: 1990-01-04 ( Source System Row Identifier: unencryp-id1234 (OFFICIAL))&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;&lt;b&gt;Firstname McLastname &lt;/b&gt; male, DoB: 1990-01-04 ( Source System Row Identifier: unencryp-id1234(use: OFFICIAL))&lt;/p&gt;&lt;hr/&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Ways to contact the Patient&quot;&gt;Contact Detail:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;123 East St Chicago IL 60603 (HOME)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Patient contact&quot;&gt;Contact&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;ph: 555-000-5500(HOME)&lt;/li&gt;&lt;li&gt;ph: 773-555-0100(HOME)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/identifier-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SSRI&quot;/&gt;
       &lt;/coding&gt;
     &lt;/type&gt;
@@ -380,9 +397,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#7.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 16:11+0000">2022-09-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://linuxforhealth.github.io/docs/">LinuxForHealth Team</a>.  Package linuxforhealth.fhir.ig#8.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 10, 2022 16:00+0000">2022-11-10</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

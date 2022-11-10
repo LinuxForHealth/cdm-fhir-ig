@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ALVEARIE.FHIR.IG\Coverage Deceased Example - TTL Representation - FHIR v4.0.1</title>
+    <title>LINUXFORHEALTH.FHIR.IG\Coverage Deceased Example - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,7 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/alvearie.css" rel="stylesheet"/>
+<link href="assets/css/linuxforhealth-fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -49,19 +49,19 @@
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a id="alvearie-logo" no-external="true">
+  <a id="linuxforhealth-logo" no-external="true">
     <!-- 
     // New logo image reference should go here
-    // Place image in data/alvearie-template/content/assets/images folder
-    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    // Place image in data/linuxforhealth-template/content/assets/images folder
+    <img height="60" alt="LinuxForHealth" src="assets/images/linuxforhealth-logo.png" style="float:left"/>
     -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">LinuxForHealth FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">7.0.0 - draft
+            <span style="display:inline-block;">8.0.0 - draft
 
 
 
@@ -126,7 +126,8 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v7.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">LinuxForHealth FHIR Implementation Guide - Local Development build (v8.0.0). See the <a href="http://linuxforhealth.org/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -141,6 +142,7 @@
   <li>
     <a href="Coverage-CoverageDeceasedExample.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -193,7 +195,7 @@
 
 
 
-  <pre class="rdf"><code class="language-turtle">
+  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -207,45 +209,45 @@
   <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">fhir:Element.extension</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/source-file-id&quot; ];
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/source-file-id&quot; ];
        <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;e00082222&quot; ]     ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">fhir:Meta.source</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://acme-health.com/WellnessInsuranceCompany&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage&quot;;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage&quot;;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage&gt;     ]
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage&gt;     ]
   ];
   <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Coverage&lt;/b&gt;&lt;a name=\&quot;CoverageDeceasedExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Coverage \&quot;CoverageDeceasedExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Information Source: http://acme-health.com/WellnessInsuranceCompany!&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cdm-coverage.html\&quot;&gt;CDM Coverage&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Age and Gender Groups&lt;/b&gt;: Males 50-54 yr &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-age-gender-group.html\&quot;&gt;Age and Gender Group Codes&lt;/a&gt;#13)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Snapshot Age In Years&lt;/b&gt;: 50&lt;/p&gt;&lt;p&gt;&lt;b&gt;Cobra Indicator&lt;/b&gt;: N&lt;/p&gt;&lt;p&gt;&lt;b&gt;Coverage Month&lt;/b&gt;: 2000-06-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;Enrollment PCP&lt;/b&gt;: EnrollmentPCP1&lt;/p&gt;&lt;p&gt;&lt;b&gt;Employee Company&lt;/b&gt;: LocalEmpCompany &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (local-employee-company#LocalEmpCompany)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Employee Cost Center&lt;/b&gt;: LocalEmpCostCenter &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (local-employee-cost-center#LocalEmpCostCenter)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Employee Status&lt;/b&gt;: Early Retiree &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-wh-payer-employee-status-code.html\&quot;&gt;Health Data Connect Employee Status Codes&lt;/a&gt;#3)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Employee Business Unit&lt;/b&gt;: EmpBusUnit &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (local-employee-business-unit#EmpBusUnit)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Job Class Code&lt;/b&gt;: jobclass &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (local-job-class-code#jobclass)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Salary Indicator&lt;/b&gt;: Y&lt;/p&gt;&lt;p&gt;&lt;b&gt;Union Worker Indicator&lt;/b&gt;: N&lt;/p&gt;&lt;p&gt;&lt;b&gt;Medicare Indicator&lt;/b&gt;: N&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Source System Row Identifier: c35466d6-0d2b-4efa-8265-b9ac3f887e08 (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;subscriberId&lt;/b&gt;: encryp-familyid-98321&lt;/p&gt;&lt;p&gt;&lt;b&gt;beneficiary&lt;/b&gt;: &lt;a href=\&quot;Patient-CDMPatientInstance.html\&quot;&gt;Patient/CDMPatientInstance&lt;/a&gt; \&quot; MCLASTNAME\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;relationship&lt;/b&gt;: Self &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-subscriber-relationship.html\&quot;&gt;SubscriberPolicyholder Relationship Codes&lt;/a&gt;#self)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2000-01-01 --&amp;gt; 2000-10-31&lt;/p&gt;&lt;p&gt;&lt;b&gt;payor&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Classes&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Election Tier &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-wh-payer-coverage-class.html\&quot;&gt;Health Data Connect Coverage Class Codes&lt;/a&gt;#election-tier)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Self&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Coverage&lt;/b&gt;&lt;a name=\&quot;CoverageDeceasedExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Coverage \&quot;CoverageDeceasedExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Information Source: http://acme-health.com/WellnessInsuranceCompany!&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-cdm-coverage.html\&quot;&gt;CDM Coverage&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Age and Gender Groups&lt;/b&gt;: Males 50-54 yr &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-age-gender-group.html\&quot;&gt;Age and Gender Group Codes&lt;/a&gt;#13)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Snapshot Age In Years&lt;/b&gt;: 50&lt;/p&gt;&lt;p&gt;&lt;b&gt;Cobra Indicator&lt;/b&gt;: N&lt;/p&gt;&lt;p&gt;&lt;b&gt;Coverage Month&lt;/b&gt;: 2000-06-01&lt;/p&gt;&lt;p&gt;&lt;b&gt;Enrollment PCP&lt;/b&gt;: EnrollmentPCP1&lt;/p&gt;&lt;p&gt;&lt;b&gt;Employee Company&lt;/b&gt;: LocalEmpCompany &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (local-employee-company#LocalEmpCompany)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Employee Cost Center&lt;/b&gt;: LocalEmpCostCenter &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (local-employee-cost-center#LocalEmpCostCenter)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Employee Status&lt;/b&gt;: Early Retiree &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-payer-employee-status-code.html\&quot;&gt;payer Employee Status Codes&lt;/a&gt;#3)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Employee Business Unit&lt;/b&gt;: EmpBusUnit &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (local-employee-business-unit#EmpBusUnit)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Job Class Code&lt;/b&gt;: jobclass &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (local-job-class-code#jobclass)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Salary Indicator&lt;/b&gt;: Y&lt;/p&gt;&lt;p&gt;&lt;b&gt;Union Worker Indicator&lt;/b&gt;: N&lt;/p&gt;&lt;p&gt;&lt;b&gt;Medicare Indicator&lt;/b&gt;: N&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Source System Row Identifier: c35466d6-0d2b-4efa-8265-b9ac3f887e08(use: OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;subscriberId&lt;/b&gt;: encryp-familyid-98321&lt;/p&gt;&lt;p&gt;&lt;b&gt;beneficiary&lt;/b&gt;: &lt;a href=\&quot;Patient-CDMPatientInstance.html\&quot;&gt;Patient/CDMPatientInstance&lt;/a&gt; \&quot; MCLASTNAME\&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;relationship&lt;/b&gt;: Self &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-subscriber-relationship.html\&quot;&gt;SubscriberPolicyholder Relationship Codes&lt;/a&gt;#self)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2000-01-01 --&amp;gt; 2000-10-31&lt;/p&gt;&lt;p&gt;&lt;b&gt;payor&lt;/b&gt;: &lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Classes&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Election Tier &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-payer-coverage-class.html\&quot;&gt;Payer Coverage Class Codes&lt;/a&gt;#election-tier)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;Self&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.extension">fhir:DomainResource.extension</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/age-gender-group&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/age-gender-group&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCodeableConcept</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/CodeSystem/age-gender-group&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/age-gender-group&quot; ];
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;13&quot; ]       ]     ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/snapshot-age-in-years&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueUnsignedInt</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:value</a> &quot;50&quot;^^xsd:nonNegativeInteger ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/cobra-indicator&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/cobra-indicator&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;N&quot; ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/coverage-month&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/coverage-month&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:value</a> &quot;2000-06-01&quot;^^xsd:date ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/enrollment-pcp&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/enrollment-pcp&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;EnrollmentPCP1&quot; ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/employee-company&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/employee-company&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCodeableConcept</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -253,7 +255,7 @@
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;LocalEmpCompany&quot; ]       ]     ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/employee-cost-center&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/employee-cost-center&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCodeableConcept</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -261,15 +263,15 @@
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;LocalEmpCostCenter&quot; ]       ]     ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/employee-status&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/employee-status&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCodeableConcept</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/CodeSystem/wh-payer-employee-status-code&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-employee-status-code&quot; ];
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;3&quot; ]       ]     ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 8;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/employee-business-unit&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCodeableConcept</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -277,7 +279,7 @@
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;EmpBusUnit&quot; ]       ]     ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 9;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/job-class-code&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/job-class-code&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCodeableConcept</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -285,15 +287,15 @@
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;jobclass&quot; ]       ]     ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/salary-indicator&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/salary-indicator&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Y&quot; ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 11;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/union-worker-indicator&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/union-worker-indicator&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;N&quot; ]
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 12;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/medicare-indicator&quot; ];
+     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/medicare-indicator&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;N&quot; ]
   ];
   <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.identifier">fhir:Coverage.identifier</a> [
@@ -302,7 +304,7 @@
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/CodeSystem/identifier-type&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type&quot; ];
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;SSRI&quot; ]       ]     ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://acme-health.com/emr1/coverage&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;c35466d6-0d2b-4efa-8265-b9ac3f887e08&quot; ];
@@ -330,7 +332,7 @@
      <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.identifier">fhir:Reference.identifier</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.extension">fhir:Element.extension</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state&quot; ];
+         <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/encrypted-state&quot; ];
          <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueBoolean</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ]       ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://acme-health.com/payer1/payer&quot; ];
        <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;encryp-i55555&quot; ]     ]
@@ -340,7 +342,7 @@
      <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.class.type">fhir:Coverage.class.type</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/CodeSystem/wh-payer-coverage-class&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-coverage-class&quot; ];
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;election-tier&quot; ]       ]     ];
      <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.class.value">fhir:Coverage.class.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Self&quot; ]
   ].
@@ -381,9 +383,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#7.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 16:11+0000">2022-09-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://linuxforhealth.github.io/docs/">LinuxForHealth Team</a>.  Package linuxforhealth.fhir.ig#8.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 10, 2022 16:00+0000">2022-11-10</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

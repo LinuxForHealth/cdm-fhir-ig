@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report-organization> a fhir:StructureDefinition;
+<http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure-report-organization> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "quality-measure-report-organization"];
   fhir:DomainResource.text [
@@ -21,13 +21,13 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report-organization"];
-  fhir:StructureDefinition.version [ fhir:value "7.0.0"];
+  fhir:StructureDefinition.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure-report-organization"];
+  fhir:StructureDefinition.version [ fhir:value "8.0.0"];
   fhir:StructureDefinition.name [ fhir:value "QualityMeasureOrganizationReport"];
   fhir:StructureDefinition.title [ fhir:value "Organization Quality Measure Report"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:StructureDefinition.publisher [ fhir:value "Alvearie Team"];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "LinuxForHealth Team"];
   fhir:StructureDefinition.description [ fhir:value "A quality measure report with an organizational focus"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
@@ -53,8 +53,8 @@
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
   fhir:StructureDefinition.type [ fhir:value "MeasureReport"];
   fhir:StructureDefinition.baseDefinition [
-     fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report";
-     fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report>
+     fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure-report";
+     fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure-report>
   ];
   fhir:StructureDefinition.derivation [ fhir:value "constraint"];
   fhir:StructureDefinition.snapshot [
@@ -207,9 +207,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Meta" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-meta";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/process-meta>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -481,9 +481,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-parameter-value";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter-value>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-parameter-value>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1404,8 +1404,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/quality-measure-population-type";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/quality-measure-population-type>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/quality-measure-population-type";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/quality-measure-population-type>
          ]
        ]
      ], [
@@ -1456,9 +1456,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1754,9 +1754,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2052,9 +2052,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2350,9 +2350,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2569,7 +2569,7 @@
        fhir:ElementDefinition.patternCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/measure-population-type" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/measure-population-type" ];
            fhir:Coding.code [ fhir:value "care-gap" ]
          ]
        ];
@@ -2648,9 +2648,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3763,9 +3763,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list>
          ]
        ]
      ], [
@@ -3782,9 +3782,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list>
          ]
        ]
      ], [
@@ -3800,9 +3800,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list>
          ]
        ]
      ], [
@@ -3818,9 +3818,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list>
          ]
        ]
      ], [
@@ -3836,9 +3836,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/patient-list>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list>
          ]
        ]
      ]
@@ -3846,7 +3846,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report-organization.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure-report-organization.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

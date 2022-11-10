@@ -5,57 +5,57 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Patient/CDMPatientInstance-DoNotContact> a fhir:Patient;
+<http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance-DoNotContact> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CDMPatientInstance-DoNotContact"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Norm Peterson </b> male, DoB: 1948-10-17 ( Source System Row Identifier: 35e4aa64-fdf8-4ef9-8acd-066aec45f63b (OFFICIAL))</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Norm Peterson </b> male, DoB: 1948-10-17 ( Source System Row Identifier: 35e4aa64-fdf8-4ef9-8acd-066aec45f63b(use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">Match Data Identifier: 4fd6049c-59c5-4c7b-81b1-88869044535d(use: SECONDARY)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender identity of the person, which will not be known until the newborn is older.\"><a href=\"StructureDefinition-sex-assigned-at-birth.html\">Sex Assigned At Birth:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The importance of the patient (e.g. VIP).\"><a href=\"http://hl7.org/fhir/R4/extension-patient-importance.html\">importance:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-importance bad-debt}, {http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-importance do-not-contact}\">Bad Debt</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Customer-specific patient status codes\"><a href=\"StructureDefinition-status-code.html\">Status Code:</a></td><td colspan=\"3\"><span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-status collection}\">Collections</span></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/status-code" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/status-code" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/patient-status" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-status" ];
          fhir:Coding.code [ fhir:value "collection" ]
        ]
      ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/status-code" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/status-code" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/patient-status" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-status" ];
          fhir:Coding.code [ fhir:value "confidential" ]
        ]
      ]
   ], [
      fhir:index 2;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/status-code" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/status-code" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/patient-status" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-status" ];
          fhir:Coding.code [ fhir:value "test" ]
        ]
      ]
@@ -65,21 +65,21 @@
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/patient-importance" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-importance" ];
          fhir:Coding.code [ fhir:value "bad-debt" ]
        ], [
          fhir:index 1;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/patient-importance" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-importance" ];
          fhir:Coding.code [ fhir:value "do-not-contact" ]
        ]
      ]
   ], [
      fhir:index 4;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/sex-assigned-at-birth" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth" ];
          fhir:Coding.code [ fhir:value "male" ]
        ]
      ]
@@ -90,7 +90,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -105,11 +105,11 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "MDI" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "http://ibm.com/fhir/primary/patient-match-identifier" ];
+     fhir:Identifier.system [ fhir:value "http://linuxforhealth.org/platform/patient-match-identifier" ];
      fhir:Identifier.value [ fhir:value "4fd6049c-59c5-4c7b-81b1-88869044535d" ];
      fhir:Identifier.assigner [
        fhir:Reference.display [ fhir:value "HDC" ]
@@ -128,7 +128,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Patient/CDMPatientInstance-DoNotContact.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance-DoNotContact.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

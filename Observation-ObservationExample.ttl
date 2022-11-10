@@ -7,29 +7,29 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Observation/ObservationExample> a fhir:Observation;
+<http://linuxforhealth.org/fhir/cdm/Observation/ObservationExample> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ObservationExample"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-observation";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-observation";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-observation>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-observation>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ObservationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"ObservationExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-observation.html\">CDM Observation</a></p></div><p><b>identifier</b>: Source System Row Identifier: 0fe09359-fe8a-42b3-8000-b73b0f6ea96f (OFFICIAL)</p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Blood pressure panel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#35094-2)</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>encounter</b>: <a href=\"Encounter-CDMEncounterExample.html\">Encounter/CDMEncounterExample</a></p><p><b>effective</b>: 2020-04-15 12:00:00+0000</p><p><b>performer</b>: <a href=\"PractitionerRole-CDMPractitionerRole-EMR-PCP.html\">PractitionerRole/CDMPractitionerRole-EMR-PCP</a></p><p><b>interpretation</b>: Critical high <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#HH)</span></p><p><b>bodySite</b>: Right arm <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#368209003)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6)</span></p><p><b>value</b>: 159 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: Critical high <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#HH)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4)</span></p><p><b>value</b>: 108 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: Critical high <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#HH)</span></p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ObservationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"ObservationExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-observation.html\">CDM Observation</a></p></div><p><b>identifier</b>: Source System Row Identifier: 0fe09359-fe8a-42b3-8000-b73b0f6ea96f(use: OFFICIAL)</p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Blood pressure panel <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#35094-2)</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>encounter</b>: <a href=\"Encounter-CDMEncounterExample.html\">Encounter/CDMEncounterExample</a></p><p><b>effective</b>: 2020-04-15 12:00:00+0000</p><p><b>performer</b>: <a href=\"PractitionerRole-CDMPractitionerRole-EMR-PCP.html\">PractitionerRole/CDMPractitionerRole-EMR-PCP</a></p><p><b>interpretation</b>: Critical high <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#HH)</span></p><p><b>bodySite</b>: Right arm <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#368209003)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Systolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8480-6)</span></p><p><b>value</b>: 159 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: Critical high <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#HH)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Diastolic blood pressure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#8462-4)</span></p><p><b>value</b>: 108 mm[Hg]<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm[Hg] = 'mm[Hg]')</span></p><p><b>interpretation</b>: Critical high <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-ObservationInterpretation.html\">ObservationInterpretation</a>#HH)</span></p></blockquote></div>"
   ];
   fhir:Observation.identifier [
      fhir:index 0;
@@ -37,7 +37,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -66,17 +66,17 @@
      ]
   ];
   fhir:Observation.subject [
-     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance>;
      fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
   ];
   fhir:Observation.encounter [
-     fhir:link <http://ibm.com/fhir/cdm/Encounter/CDMEncounterExample>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Encounter/CDMEncounterExample>;
      fhir:Reference.reference [ fhir:value "Encounter/CDMEncounterExample" ]
   ];
   fhir:Observation.effectiveDateTime [ fhir:value "2020-04-15T00:00:00Z"^^xsd:dateTime];
   fhir:Observation.performer [
      fhir:index 0;
-     fhir:link <http://ibm.com/fhir/cdm/PractitionerRole/CDMPractitionerRole-EMR-PCP>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/PractitionerRole/CDMPractitionerRole-EMR-PCP>;
      fhir:Reference.reference [ fhir:value "PractitionerRole/CDMPractitionerRole-EMR-PCP" ]
   ];
   fhir:Observation.interpretation [
@@ -111,7 +111,7 @@
      fhir:Observation.component.valueQuantity [
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/converted-quantity" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/converted-quantity" ];
          fhir:Extension.valueQuantity [
            fhir:Quantity.value [ fhir:value "159"^^xsd:decimal ];
            fhir:Quantity.unit [ fhir:value "mm[Hg]" ];
@@ -147,7 +147,7 @@
      fhir:Observation.component.valueQuantity [
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/converted-quantity" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/converted-quantity" ];
          fhir:Extension.valueQuantity [
            fhir:Quantity.value [ fhir:value "108"^^xsd:decimal ];
            fhir:Quantity.unit [ fhir:value "mm[Hg]" ];
@@ -173,7 +173,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Observation/ObservationExample.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Observation/ObservationExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

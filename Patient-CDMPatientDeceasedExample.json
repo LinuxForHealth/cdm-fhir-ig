@@ -4,30 +4,30 @@
   "meta": {
     "extension": [
       {
-        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id",
         "valueString": "99999"
       },
       {
-        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id",
         "valueString": "b069a545-9506-40c6-5555-23de2e189143"
       }
     ],
     "source": "http://acme-health.com/emr1",
     "profile": [
-      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
+      "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Firstname Lastname </b> male, DoB: 1960-02-29 ( Source System Row Identifier: unencryp-id5555 (OFFICIAL))</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Firstname Lastname </b> male, DoB: 1960-02-29 ( Source System Row Identifier: unencryp-id5555(use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td>2020-02-28 12:00:00+0000</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://acme-health.com/CodeSystem/local-marital-status Married}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>Source System Row Identifier: encryp-id5555(use: SECONDARY)</li><li>Medical record number: 1011115555(use: OFFICIAL)</li><li>Social Beneficiary Identifier: 0001225555(use: OFFICIAL)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>216-248-5555(MOBILE)</li><li>ph: 216-345-5555(HOME)</li><li>ph: 216-555-5555(WORK)</li><li><a href=\"mailto:flastname@fakemail.com\">flastname@fakemail.com</a></li><li>Cardington Ohio 43315 US (HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Languages spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes: {urn:ietf:bcp:47 en}\">English</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <a href=\"PractitionerRole-CDMPractitionerRole-EMR-PCP.html\">PractitionerRole/CDMPractitionerRole-EMR-PCP</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Gender, typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.\"><a href=\"StructureDefinition-identified-pronouns.html\">Identified Pronouns:</a></td><td colspan=\"3\">they</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Sex as defined or amended on the patient's legal documentation, for example a birth certificate or driver's license\">Legally Documented Sex:</td><td colspan=\"3\"><ul><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-sex: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-source: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/legal-document-source passport}\">Official document issued by a government, certifying identity and citizenship</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-system: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/legal-document-system us-gov}\">U.S. Federal Goverment</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1/CodeSystem-cdcrec.html#cdcrec-2186-5\">Race &amp; Ethnicity - CDC</a> 2186-5: Not Hispanic or Latino</li><li>text: Not Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender identity of the person, which will not be known until the newborn is older.\"><a href=\"StructureDefinition-sex-assigned-at-birth.html\">Sex Assigned At Birth:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient's physical, romantic, and/or emotional attraction towards other people\"><a href=\"StructureDefinition-sexual-orientation.html\">SexualOrientation:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sexual-orientation asexual}\">Asexual</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Code to identify if the person is a U.S. Citizen\"><a href=\"StructureDefinition-patient-citizenship.html\">Patient Citizenship:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {urn:iso:std:iso:3166 US}\">United States of America</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Customer-specific code for the race of the person\"><a href=\"StructureDefinition-local-race-cd.html\">Local Race Code:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://acme-health.com/CodeSystem/local-race-code White}\">White</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Customer-specific code for the citizenship status of the person\"><a href=\"StructureDefinition-citizen-status.html\">Citizen Status:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://acme-health.com/CodeSystem/local-citizen-status LocalCitizenStatusCd}\">LocalCitizenStatusCd</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The gender the patient identifies with. The Patient's gender identity is used as guidance (e.g. for staff) about how to interact with the patient.\"><a href=\"http://hl7.org/fhir/R4/extension-patient-genderidentity.html\">genderIdentity:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/gender-identity gender-neutral}\">Gender-neutral</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"http://hl7.org/fhir/us/core/STU3.1/CodeSystem-cdcrec.html#cdcrec-2106-3\">Race &amp; Ethnicity - CDC</a> 2106-3: White</li><li>text: White</li></ul></td></tr></table></div>"
   },
   "extension": [
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/sex-assigned-at-birth",
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth",
             "code": "male"
           }
         ]
@@ -38,64 +38,64 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/gender-identity",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/gender-identity",
             "code": "gender-neutral"
           }
         ]
       }
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/identified-pronouns",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/identified-pronouns",
       "valueString": "they"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/identified-pronouns",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/identified-pronouns",
       "valueString": "ze"
     },
     {
       "extension": [
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/documented-sex",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-sex",
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth",
+                "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth",
                 "code": "male"
               }
             ]
           }
         },
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/documented-source",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-source",
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://ibm.com/fhir/cdm/CodeSystem/legal-document-source",
+                "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/legal-document-source",
                 "code": "passport"
               }
             ]
           }
         },
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/documented-system",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-system",
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://ibm.com/fhir/cdm/CodeSystem/legal-document-system",
+                "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/legal-document-system",
                 "code": "us-gov"
               }
             ]
           }
         }
       ],
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/legally-documented-sex"
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/legally-documented-sex"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/sexual-orientation",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/sexual-orientation",
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/sexual-orientation",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/sexual-orientation",
             "code": "asexual"
           }
         ]
@@ -136,7 +136,7 @@
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-race-cd",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/local-race-cd",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -147,7 +147,7 @@
       }
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/patient-citizenship",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-citizenship",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -158,7 +158,7 @@
       }
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/citizen-status",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/citizen-status",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -173,7 +173,7 @@
     {
       "extension": [
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/encrypted-state",
           "valueBoolean": false
         }
       ],
@@ -181,7 +181,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type",
             "code": "SSRI"
           }
         ]
@@ -195,7 +195,7 @@
     {
       "extension": [
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/encrypted-state",
           "valueBoolean": true
         }
       ],
@@ -203,7 +203,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type",
             "code": "SSRI"
           }
         ]
@@ -327,7 +327,7 @@
     {
       "extension": [
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/county-code",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/county-code",
           "valueCodeableConcept": {
             "coding": [
               {
@@ -338,7 +338,7 @@
           }
         },
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/region-code",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/region-code",
           "valueCodeableConcept": {
             "coding": [
               {
@@ -373,7 +373,7 @@
     {
       "extension": [
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/language-rank",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/language-rank",
           "valuePositiveInt": 1
         }
       ],
@@ -391,14 +391,14 @@
     {
       "extension": [
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/reference-code",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code",
           "valueCoding": {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/attribution-source",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-source",
             "code": "client-emr"
           }
         },
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/reference-period",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-period",
           "valuePeriod": {
             "start": "2019-01-01"
           }

@@ -18,14 +18,14 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-careplan"/>
-  <version value="7.0.0"/>
+  <url value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-careplan"/>
+  <version value="8.0.0"/>
   <name value="CDMCarePlan"/>
   <title value="CDM CarePlan"/>
   <status value="active"/>
-  <date value="2022-09-08T16:11:15+00:00"/>
-  <publisher value="Alvearie Team"/>
-  <description value="Health Data Connect Common Data Model definition of what fields we currently define for a care plan"/>
+  <date value="2022-11-10T16:00:46+00:00"/>
+  <publisher value="LinuxForHealth Team"/>
+  <description value="LinuxForHealth Common Data Model definition of what fields we currently define for a care plan"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -166,7 +166,7 @@
       </base>
       <type>
         <code value="Meta"/>
-        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/process-meta"/>
+        <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -583,7 +583,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://ibm.com/fhir/cdm/ValueSet/identifier-type"/>
+        <valueSet value="http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2647,7 +2647,7 @@
       <path value="CarePlan.meta"/>
       <type>
         <code value="Meta"/>
-        <profile value="http://ibm.com/fhir/cdm/StructureDefinition/process-meta"/>
+        <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta"/>
       </type>
     </element>
     <element id="CarePlan.contained">
@@ -2662,7 +2662,7 @@
       <path value="CarePlan.identifier.type"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://ibm.com/fhir/cdm/ValueSet/identifier-type"/>
+        <valueSet value="http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type"/>
       </binding>
     </element>
     <element id="CarePlan.identifier.system">

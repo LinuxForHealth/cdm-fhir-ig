@@ -5,48 +5,48 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Basic/CDMBasicPIIInstance> a fhir:Basic;
+<http://linuxforhealth.org/fhir/cdm/Basic/CDMBasicPIIInstance> a fhir:Basic;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CDMBasicPIIInstance"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "tenant12345" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "zgVCJnQBxvshkKBI8Hzz" ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "HDP" ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-client-id" ];
        fhir:Extension.valueString [ fhir:value "1234" ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-record-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-record-id" ];
        fhir:Extension.valueIdentifier [
-         fhir:Identifier.system [ fhir:value "http://ibm.com/AppicationA" ];
+         fhir:Identifier.system [ fhir:value "http://linuxforhealth.org/ApplicationA" ];
          fhir:Identifier.value [ fhir:value "7209_07869_e00080779_3938586_2516181" ]
        ]
      ], [
        fhir:index 5;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/source-file-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/source-file-id" ];
        fhir:Extension.valueString [ fhir:value "e00014543" ]
      ];
-     fhir:Meta.source [ fhir:value "http://ibm.com/ApplicationA" ];
+     fhir:Meta.source [ fhir:value "http://linuxforhealth.org/ApplicationA" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-basic";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-basic";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-basic>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-basic>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Basic</b><a name=\"CDMBasicPIIInstance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Basic \"CDMBasicPIIInstance\" </p><p style=\"margin-bottom: 0px\">Information Source: http://ibm.com/ApplicationA!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-basic.html\">CDM Basic</a></p></div><p><b>identifier</b>: Token identifier: 2d86c4246a3c1eb516628bf324w6b9b3 (OFFICIAL)</p><p><b>code</b>: Patient Tokens <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-wh-basic-resource-type.html\">Health Data Connect Basic Resource Type Codes</a>#patient-tokens)</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>created</b>: 2017-07-25</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Basic</b><a name=\"CDMBasicPIIInstance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Basic \"CDMBasicPIIInstance\" </p><p style=\"margin-bottom: 0px\">Information Source: http://linuxforhealth.org/ApplicationA!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-basic.html\">CDM Basic</a></p></div><p><b>identifier</b>: Token identifier: 2d86c4246a3c1eb516628bf324w6b9b3(use: OFFICIAL)</p><p><b>code</b>: Patient Tokens <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-basic-resource-type.html\">Basic Resource Type Codes</a>#patient-tokens)</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>created</b>: 2017-07-25</p></div>"
   ];
   fhir:Basic.identifier [
      fhir:index 0;
@@ -54,29 +54,29 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "TKN" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "http://ibm.com/CodeSystem/local-pii-identifier" ];
+     fhir:Identifier.system [ fhir:value "http://linuxforhealth.org/CodeSystem/local-pii-identifier" ];
      fhir:Identifier.value [ fhir:value "2d86c4246a3c1eb516628bf324w6b9b3" ]
   ];
   fhir:Basic.code [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/wh-basic-resource-type" ];
+       fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/basic-resource-type" ];
        fhir:Coding.code [ fhir:value "patient-tokens" ]
      ]
   ];
   fhir:Basic.subject [
-     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance>;
      fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
   ];
   fhir:Basic.created [ fhir:value "2017-07-25"^^xsd:date] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Basic/CDMBasicPIIInstance.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Basic/CDMBasicPIIInstance.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

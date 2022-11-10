@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ALVEARIE.FHIR.IG\Patient Status Codes - TTL Representation - FHIR v4.0.1</title>
+    <title>LINUXFORHEALTH.FHIR.IG\Patient Status Codes - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,7 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/alvearie.css" rel="stylesheet"/>
+<link href="assets/css/linuxforhealth-fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -42,26 +42,26 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.492"}
-    h3,h4,h5,h6{--heading-prefix:"3.492"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.497"}
+    h3,h4,h5,h6{--heading-prefix:"3.497"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a id="alvearie-logo" no-external="true">
+  <a id="linuxforhealth-logo" no-external="true">
     <!-- 
     // New logo image reference should go here
-    // Place image in data/alvearie-template/content/assets/images folder
-    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    // Place image in data/linuxforhealth-template/content/assets/images folder
+    <img height="60" alt="LinuxForHealth" src="assets/images/linuxforhealth-logo.png" style="float:left"/>
     -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">LinuxForHealth FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">7.0.0 - draft
+            <span style="display:inline-block;">8.0.0 - draft
 
 
 
@@ -126,7 +126,8 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v7.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">LinuxForHealth FHIR Implementation Guide - Local Development build (v8.0.0). See the <a href="http://linuxforhealth.org/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -141,6 +142,7 @@
   <li>
     <a href="CodeSystem-patient-status.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -179,7 +181,7 @@
         
           Active
           
-            as of 2022-09-08
+            as of 2022-11-10
           
         
       </td>
@@ -195,7 +197,7 @@
 
 
 
-  <pre class="rdf"><code class="language-turtle">
+  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -208,15 +210,15 @@
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;patient-status&quot;];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system &lt;code&gt;http://ibm.com/fhir/cdm/CodeSystem/patient-status&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;anonymous&lt;a name=\&quot;patient-status-anonymous\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anonymous&lt;/td&gt;&lt;td&gt;Patient does not provide true identity or identification&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;asl&lt;a name=\&quot;patient-status-asl\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;American Sign Language&lt;/td&gt;&lt;td&gt;Patient communicates using American Sign Language&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;blind&lt;a name=\&quot;patient-status-blind\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blind&lt;/td&gt;&lt;td&gt;Patient is blind or legally blind.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;blood-refusal&lt;a name=\&quot;patient-status-blood-refusal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blood Refusal&lt;/td&gt;&lt;td&gt;Patient refuses blood products and transfusions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;charity&lt;a name=\&quot;patient-status-charity\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Charity&lt;/td&gt;&lt;td&gt;Patient is pro-bono or charity-care patient&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;chronic-pain&lt;a name=\&quot;patient-status-chronic-pain\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chronic Pain&lt;/td&gt;&lt;td&gt;Patient is under treatment for chronic pain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;collection&lt;a name=\&quot;patient-status-collection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Collections&lt;/td&gt;&lt;td&gt;Patient has uncollected debt or account in collection status&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;committed&lt;a name=\&quot;patient-status-committed\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Committed&lt;/td&gt;&lt;td&gt;Patient is committed to a mental institution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;confidential&lt;a name=\&quot;patient-status-confidential\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Confidential&lt;/td&gt;&lt;td&gt;Patient has special privacy concerns&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;da-victim&lt;a name=\&quot;patient-status-da-victim\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Domestic Abuse Victim&lt;/td&gt;&lt;td&gt;Patient is a victim of domestic abuse or violence at home&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;deactivated&lt;a name=\&quot;patient-status-deactivated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deactivated&lt;/td&gt;&lt;td&gt;Patient has been deactivated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dismissed&lt;a name=\&quot;patient-status-dismissed\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dismissed&lt;/td&gt;&lt;td&gt;Patient has been dismissed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;drug-seeking&lt;a name=\&quot;patient-status-drug-seeking\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug Seeking&lt;/td&gt;&lt;td&gt;Patient has exhibited drug seeking behavior&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;esrd&lt;a name=\&quot;patient-status-esrd\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ESRD&lt;/td&gt;&lt;td&gt;Patient is in treatment for End Stage Renal Disease&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fraud&lt;a name=\&quot;patient-status-fraud\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fraud&lt;/td&gt;&lt;td&gt;Patient has a history of identity theft or fraud&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fraud-victim&lt;a name=\&quot;patient-status-fraud-victim\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fraud Victim&lt;/td&gt;&lt;td&gt;Patient is a victim of identity theft or fraud&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hearing-impaired&lt;a name=\&quot;patient-status-hearing-impaired\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hearing Impaired&lt;/td&gt;&lt;td&gt;Patient is deaf or hearing impaired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;heart&lt;a name=\&quot;patient-status-heart\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Heart&lt;/td&gt;&lt;td&gt;Patient is a structural heart patient&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;incarcerated&lt;a name=\&quot;patient-status-incarcerated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Incarcerated&lt;/td&gt;&lt;td&gt;Patient is incarcerated in a state or federal prison&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;no-show&lt;a name=\&quot;patient-status-no-show\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No Show&lt;/td&gt;&lt;td&gt;Patient has a history of repeatedly missing appointments&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;non-compliant&lt;a name=\&quot;patient-status-non-compliant\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Non-Compliant&lt;/td&gt;&lt;td&gt;Patient is non-compliant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;sarscov2&lt;a name=\&quot;patient-status-sarscov2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SARS-CoV-2&lt;/td&gt;&lt;td&gt;Patient is exhibiting symptomps of SARS-CoV-2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;service-animal&lt;a name=\&quot;patient-status-service-animal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Service Animal&lt;/td&gt;&lt;td&gt;Patient has a service animal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;support-person&lt;a name=\&quot;patient-status-support-person\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Support Person&lt;/td&gt;&lt;td&gt;Patient has a support person or assistant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;test&lt;a name=\&quot;patient-status-test\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Test&lt;/td&gt;&lt;td&gt;Patient is a test patient used for training, system demonstration, or testing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;transferred&lt;a name=\&quot;patient-status-transferred\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transferred&lt;/td&gt;&lt;td&gt;Patient has transferred to another location or pactitioner&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;violence&lt;a name=\&quot;patient-status-violence\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Violence&lt;/td&gt;&lt;td&gt;Patient has a history of violent behavior&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vision-impaired&lt;a name=\&quot;patient-status-vision-impaired\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vision Impaired&lt;/td&gt;&lt;td&gt;Patient is has low-vision or other serious vision impairment&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This code system &lt;code&gt;http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-status&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;anonymous&lt;a name=\&quot;patient-status-anonymous\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anonymous&lt;/td&gt;&lt;td&gt;Patient does not provide true identity or identification&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;asl&lt;a name=\&quot;patient-status-asl\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;American Sign Language&lt;/td&gt;&lt;td&gt;Patient communicates using American Sign Language&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;blind&lt;a name=\&quot;patient-status-blind\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blind&lt;/td&gt;&lt;td&gt;Patient is blind or legally blind.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;blood-refusal&lt;a name=\&quot;patient-status-blood-refusal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Blood Refusal&lt;/td&gt;&lt;td&gt;Patient refuses blood products and transfusions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;charity&lt;a name=\&quot;patient-status-charity\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Charity&lt;/td&gt;&lt;td&gt;Patient is pro-bono or charity-care patient&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;chronic-pain&lt;a name=\&quot;patient-status-chronic-pain\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chronic Pain&lt;/td&gt;&lt;td&gt;Patient is under treatment for chronic pain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;collection&lt;a name=\&quot;patient-status-collection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Collections&lt;/td&gt;&lt;td&gt;Patient has uncollected debt or account in collection status&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;committed&lt;a name=\&quot;patient-status-committed\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Committed&lt;/td&gt;&lt;td&gt;Patient is committed to a mental institution&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;confidential&lt;a name=\&quot;patient-status-confidential\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Confidential&lt;/td&gt;&lt;td&gt;Patient has special privacy concerns&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;da-victim&lt;a name=\&quot;patient-status-da-victim\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Domestic Abuse Victim&lt;/td&gt;&lt;td&gt;Patient is a victim of domestic abuse or violence at home&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;deactivated&lt;a name=\&quot;patient-status-deactivated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deactivated&lt;/td&gt;&lt;td&gt;Patient has been deactivated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;dismissed&lt;a name=\&quot;patient-status-dismissed\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dismissed&lt;/td&gt;&lt;td&gt;Patient has been dismissed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;drug-seeking&lt;a name=\&quot;patient-status-drug-seeking\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug Seeking&lt;/td&gt;&lt;td&gt;Patient has exhibited drug seeking behavior&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;esrd&lt;a name=\&quot;patient-status-esrd\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ESRD&lt;/td&gt;&lt;td&gt;Patient is in treatment for End Stage Renal Disease&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fraud&lt;a name=\&quot;patient-status-fraud\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fraud&lt;/td&gt;&lt;td&gt;Patient has a history of identity theft or fraud&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fraud-victim&lt;a name=\&quot;patient-status-fraud-victim\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fraud Victim&lt;/td&gt;&lt;td&gt;Patient is a victim of identity theft or fraud&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;hearing-impaired&lt;a name=\&quot;patient-status-hearing-impaired\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hearing Impaired&lt;/td&gt;&lt;td&gt;Patient is deaf or hearing impaired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;heart&lt;a name=\&quot;patient-status-heart\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Heart&lt;/td&gt;&lt;td&gt;Patient is a structural heart patient&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;incarcerated&lt;a name=\&quot;patient-status-incarcerated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Incarcerated&lt;/td&gt;&lt;td&gt;Patient is incarcerated in a state or federal prison&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;no-show&lt;a name=\&quot;patient-status-no-show\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;No Show&lt;/td&gt;&lt;td&gt;Patient has a history of repeatedly missing appointments&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;non-compliant&lt;a name=\&quot;patient-status-non-compliant\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Non-Compliant&lt;/td&gt;&lt;td&gt;Patient is non-compliant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;sarscov2&lt;a name=\&quot;patient-status-sarscov2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SARS-CoV-2&lt;/td&gt;&lt;td&gt;Patient is exhibiting symptomps of SARS-CoV-2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;service-animal&lt;a name=\&quot;patient-status-service-animal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Service Animal&lt;/td&gt;&lt;td&gt;Patient has a service animal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;support-person&lt;a name=\&quot;patient-status-support-person\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Support Person&lt;/td&gt;&lt;td&gt;Patient has a support person or assistant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;test&lt;a name=\&quot;patient-status-test\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Test&lt;/td&gt;&lt;td&gt;Patient is a test patient used for training, system demonstration, or testing&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;transferred&lt;a name=\&quot;patient-status-transferred\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transferred&lt;/td&gt;&lt;td&gt;Patient has transferred to another location or pactitioner&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;violence&lt;a name=\&quot;patient-status-violence\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Violence&lt;/td&gt;&lt;td&gt;Patient has a history of violent behavior&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vision-impaired&lt;a name=\&quot;patient-status-vision-impaired\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vision Impaired&lt;/td&gt;&lt;td&gt;Patient is has low-vision or other serious vision impairment&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ];
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:CodeSystem.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/CodeSystem/patient-status&quot;];
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;7.0.0&quot;];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:CodeSystem.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/patient-status&quot;];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:CodeSystem.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;8.0.0&quot;];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:CodeSystem.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;PatientStatusCodeSystem&quot;];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:CodeSystem.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Patient Status Codes&quot;];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:CodeSystem.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;active&quot;];
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-09-08T16:11:15+00:00&quot;^^xsd:dateTime];
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:CodeSystem.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Alvearie Team&quot;];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:CodeSystem.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-11-10T16:00:46+00:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:CodeSystem.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;LinuxForHealth Team&quot;];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:CodeSystem.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Patient status code examples&quot;];
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">fhir:CodeSystem.jurisdiction</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -406,9 +408,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#7.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 16:11+0000">2022-09-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://linuxforhealth.github.io/docs/">LinuxForHealth Team</a>.  Package linuxforhealth.fhir.ig#8.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 10, 2022 16:00+0000">2022-11-10</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

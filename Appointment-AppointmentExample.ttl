@@ -6,29 +6,29 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Appointment/AppointmentExample> a fhir:Appointment;
+<http://linuxforhealth.org/fhir/cdm/Appointment/AppointmentExample> a fhir:Appointment;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "AppointmentExample"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-appointment";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-appointment";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-appointment>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-appointment>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"AppointmentExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment \"AppointmentExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-appointment.html\">CDM Appointment</a></p></div><p><b>identifier</b>: Source System Row Identifier: 7e5ce175-e626-43ec-b8d2-9c1c1207e9ba (OFFICIAL)</p><p><b>status</b>: booked</p><p><b>serviceCategory</b>: 17 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#17)</span></p><p><b>serviceType</b>: 367 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#367)</span></p><p><b>specialty</b>: General medicine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394802001)</span></p><p><b>appointmentType</b>: A routine check-up, such as an annual physical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0276.html\">appointmentReason</a>#CHECKUP)</span></p><p><b>reasonCode</b>: Benign essential hypertension <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1201005)</span></p><p><b>start</b>: Apr 15, 2020, 9:00:00 AM</p><p><b>end</b>: Apr 15, 2020, 9:15:00 AM</p><p><b>minutesDuration</b>: 15</p><p><b>created</b>: 2020-04-01 11:45:00+0000</p><p><b>comment</b>: Patient medications working as expected. DM under control. Refill Bytolic and Valartan.</p><p><b>patientInstruction</b>: Take your meds every day.  Excercise more, eat less!</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>required</b>: required</p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: primary performer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PPRF)</span></p><p><b>actor</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><p><b>required</b>: required</p><p><b>status</b>: accepted</p><p><b>period</b>: 2020-04-15 09:00:00+0000 --&gt; 2020-04-15 09:15:00+0000</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Location-KellyClinic.html\">Location/KellyClinic</a> \"Kelly Clinic\"</p><p><b>required</b>: required</p><p><b>status</b>: accepted</p><p><b>period</b>: 2020-04-15 09:00:00+0000 --&gt; 2020-04-15 09:15:00+0000</p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"AppointmentExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment \"AppointmentExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-appointment.html\">CDM Appointment</a></p></div><p><b>identifier</b>: Source System Row Identifier: 7e5ce175-e626-43ec-b8d2-9c1c1207e9ba(use: OFFICIAL)</p><p><b>status</b>: booked</p><p><b>serviceCategory</b>: 17 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#17)</span></p><p><b>serviceType</b>: 367 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#367)</span></p><p><b>specialty</b>: General medicine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394802001)</span></p><p><b>appointmentType</b>: A routine check-up, such as an annual physical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0276.html\">appointmentReason</a>#CHECKUP)</span></p><p><b>reasonCode</b>: Benign essential hypertension <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1201005)</span></p><p><b>start</b>: Apr 15, 2020, 9:00:00 AM</p><p><b>end</b>: Apr 15, 2020, 9:15:00 AM</p><p><b>minutesDuration</b>: 15</p><p><b>created</b>: 2020-04-01 11:45:00+0000</p><p><b>comment</b>: Patient medications working as expected. DM under control. Refill Bytolic and Valartan.</p><p><b>patientInstruction</b>: Take your meds every day.  Excercise more, eat less!</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>required</b>: required</p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: primary performer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PPRF)</span></p><p><b>actor</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><p><b>required</b>: required</p><p><b>status</b>: accepted</p><p><b>period</b>: 2020-04-15 09:00:00+0000 --&gt; 2020-04-15 09:15:00+0000</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Location-KellyClinic.html\">Location/KellyClinic</a> \"Kelly Clinic\"</p><p><b>required</b>: required</p><p><b>status</b>: accepted</p><p><b>period</b>: 2020-04-15 09:00:00+0000 --&gt; 2020-04-15 09:15:00+0000</p></blockquote></div>"
   ];
   fhir:Appointment.identifier [
      fhir:index 0;
@@ -36,7 +36,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -99,7 +99,7 @@
   fhir:Appointment.participant [
      fhir:index 0;
      fhir:Appointment.participant.actor [
-       fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+       fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance>;
        fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
      ];
      fhir:Appointment.participant.required [ fhir:value "required" ];
@@ -116,7 +116,7 @@
        ]
      ];
      fhir:Appointment.participant.actor [
-       fhir:link <http://ibm.com/fhir/cdm/Practitioner/DrKelly>;
+       fhir:link <http://linuxforhealth.org/fhir/cdm/Practitioner/DrKelly>;
        fhir:Reference.reference [ fhir:value "Practitioner/DrKelly" ]
      ];
      fhir:Appointment.participant.required [ fhir:value "required" ];
@@ -128,7 +128,7 @@
   ], [
      fhir:index 2;
      fhir:Appointment.participant.actor [
-       fhir:link <http://ibm.com/fhir/cdm/Location/KellyClinic>;
+       fhir:link <http://linuxforhealth.org/fhir/cdm/Location/KellyClinic>;
        fhir:Reference.reference [ fhir:value "Location/KellyClinic" ]
      ];
      fhir:Appointment.participant.required [ fhir:value "required" ];
@@ -141,7 +141,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Appointment/AppointmentExample.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Appointment/AppointmentExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

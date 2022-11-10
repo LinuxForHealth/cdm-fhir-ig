@@ -3,7 +3,7 @@
   "id": "RelatedCareGapDetectedIssue",
   "meta": {
     "profile": [
-      "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-detected-issue"
+      "http://linuxforhealth.org/fhir/cdm/StructureDefinition/care-gap-detected-issue"
     ]
   },
   "text": {
@@ -12,33 +12,33 @@
   },
   "extension": [
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/canonical-measure",
-      "valueCanonical": "https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html"
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/canonical-measure",
+      "valueCanonical": "https://linuxforhealth.org/fhir/cdm/Measure-QualityMeasureExample.html"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/measure-population-id",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-population-id",
       "valueId": "dm-hba1c-caregap-poor-control"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/assigned-practitioner",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/assigned-practitioner",
       "valueReference": {
         "reference": "PractitionerRole/CDMPractitionerRole-EMR-PCP"
       }
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-display-name",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/care-gap-compliance-display-name",
       "valueString": "HbA1c Test"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-frequency",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/care-gap-compliance-frequency",
       "valueString": "Once yearly"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/care-gap-compliance-met",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/care-gap-compliance-met",
       "valueBoolean": true
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/related-issue",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/related-issue",
       "valueReference": {
         "reference": "DetectedIssue/CareGapDetectedIssueExample"
       }
@@ -49,12 +49,12 @@
       "type": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type",
             "code": "DRI"
           }
         ]
       },
-      "system": "http://ibm.com/fhir/cdm/care-gap-detected-issue",
+      "system": "http://linuxforhealth.org/platform/care-gap-detected-issue",
       "value": "4dee9608-e1e0-4653-9f75-b7bdb8d3a968",
       "assigner": {
         "display": "HDC"

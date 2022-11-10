@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth> a fhir:ValueSet;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/sex-assigned-at-birth> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "sex-assigned-at-birth"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-sex-assigned-at-birth.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-sex-assigned-at-birth.html\"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth"];
-  fhir:ValueSet.version [ fhir:value "7.0.0"];
+  fhir:ValueSet.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/sex-assigned-at-birth"];
+  fhir:ValueSet.version [ fhir:value "8.0.0"];
   fhir:ValueSet.name [ fhir:value "SexAssignedAtBirthValueSet"];
   fhir:ValueSet.title [ fhir:value "Sex Assigned At Birth Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Alvearie Team"];
+  fhir:ValueSet.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "LinuxForHealth Team"];
   fhir:ValueSet.description [ fhir:value "Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender identity of the person, which will not be known until the newborn is older."];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
@@ -31,13 +31,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/sex-assigned-at-birth.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/sex-assigned-at-birth.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -4,53 +4,53 @@
   "meta": {
     "extension": [
       {
-        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id",
         "valueString": "tenant7209"
       },
       {
-        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id",
         "valueString": "rgVCJnQBxvghkKTI8Hzz"
       },
       {
-        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+        "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name",
         "valueString": "TREX"
       },
       {
-        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-client-id",
+        "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-client-id",
         "valueString": "7209"
       },
       {
-        "url": "http://ibm.com/fhir/cdm/StructureDefinition/process-record-id",
+        "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-record-id",
         "valueIdentifier": {
           "system": "http://acme-health.com/WellnessMedicalFacility",
           "value": "7209_07869_e00080779_3938586_2516181"
         }
       },
       {
-        "url": "http://ibm.com/fhir/cdm/StructureDefinition/source-file-id",
+        "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/source-file-id",
         "valueString": "e00030779"
       }
     ],
     "source": "http://acme-health.com/WellnessMedicalFacility",
     "profile": [
-      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-facility"
+      "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-claim-facility"
     ]
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Claim</b><a name=\"CDMClaimFacilityInstance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Claim \"CDMClaimFacilityInstance\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/WellnessMedicalFacility!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-claim-facility.html\">CDM Claim Facility</a></p></div><p><b>Admit Count</b>: 1</p><p><b>Aggregate Claim Indicator</b>: N</p><p><b>Claim Category</b>: F0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (claim-status-category-codes#F0)</span></p><p><b>Claim Status</b>: F0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (claim-status-codes#F0)</span></p><p><b>Claim Snapshot Provider Name</b>: Dr Smith</p><p><b>Claim Snapshot Provider Zip Code</b>: 79912</p><p><b>Employer</b>: EmployerCode <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-employer-code#EmployerCode)</span></p><p><b>Employee Business Unit</b>: EmpBusUnit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-employee-business-unit#EmpBusUnit)</span></p><p><b>Financial System</b>: LocFinanceSys <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-financial-system#LocFinanceSys)</span></p><p><b>Last Claim Indicator</b>: Y</p><p><b>Participating Plan</b>: LocParticipatingPlan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-participating-plan#LocParticipatingPlan)</span></p><p><b>Referral Indicator</b>: N</p><p><b>Snapshot Age In Years</b>: 20</p><p><b>Submission Type</b>: SubmitType <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-submission-type#SubmitType)</span></p><p><b>Health Data Connect PCP Responsibility Indicator</b>: N</p><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019721078 (OFFICIAL), Source System Row Identifier: 99999999999 (SECONDARY)</p><p><b>status</b>: active</p><p><b>type</b>: Medical claim; Institutional/Professional unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-wh-payer-claim-type.html\">Health Data Connect Claim Type Codes</a>#medical; local-claim-type#Medical)</span></p><p><b>subType</b>: Emergency <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-wh-claim-subtype.html\">Health Data Connect Claim Subtype Codes</a>#emergency)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>billablePeriod</b>: 2017-06-02 --&gt; 2017-06-02</p><p><b>created</b>: 2017-07-25 05:31:00-0500</p><p><b>provider</b>: <a href=\"Organization-Provider1.html\">Organization/Provider1</a> \"Dr Smith\"</p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-processpriority.html\">Process Priority Codes</a>#normal)</span></p><p><b>referral</b>: <a href=\"ServiceRequest-CDMServiceRequestInstance.html\">ServiceRequest/CDMServiceRequestInstance</a></p><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 1</p><p><b>provider</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><p><b>role</b>: Ordering provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-care-team-role.html\">Claim Care Team Role Codes</a>#ordering)</span></p></blockquote><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 2</p><p><b>provider</b>: <a href=\"Practitioner-DrSmith.html\">Practitioner/DrSmith</a> \" SMITH\"</p><p><b>role</b>: Admitting provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-care-team-role.html\">Claim Care Team Role Codes</a>#admitting)</span></p></blockquote><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 3</p><p><b>provider</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><p><b>role</b>: Attending provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-care-team-role.html\">Claim Care Team Role Codes</a>#attending)</span></p></blockquote><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 4</p><p><b>provider</b>: <a href=\"Organization-Provider1.html\">Organization/Provider1</a> \"Dr Smith\"</p><p><b>role</b>: Servicing provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-care-team-role.html\">Claim Care Team Role Codes</a>#servicing)</span></p><p><b>qualification</b>: 01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-specialty#01)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: Information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#info)</span></p><p><b>code</b>: Capitated service indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#capitated-service-indicator)</span></p><p><b>value</b>: N</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#other)</span></p><p><b>code</b>: Emergency Room <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-er-or-observation-room-service.html\">Er Or Observation Room Service Codes</a>#1)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 3</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>timing</b>: 2017-06-02 --&gt; 2017-06-02</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 4</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Emergency <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ub04-admit-type.html\">UB04 Admit Type Code System</a>#1)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 5</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Hospital / Level I Intermediate Care / Admit Through Discharge Claim <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ub04-admit-bill-type.html\">UB04 Admit Bill Type Code System</a>#0151)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 6</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Days count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#days-count)</span></p><p><b>value</b>: 3 /d</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 7</p><p><b>category</b>: Discharge <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#discharge)</span></p><p><b>code</b>: 11 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (patient-discharge#11)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 8</p><p><b>category</b>: Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#other)</span></p><p><b>code</b>: Room and Board <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-room-and-board-service.html\">Room And Board Service Codes</a>#1)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 9</p><p><b>category</b>: Information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#info)</span></p><p><b>code</b>: Network provider indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#network-provider-indicator)</span></p><p><b>value</b>: Y</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 10</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Admission hour <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#admission-hour)</span></p><p><b>value</b>: 07</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 11</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Days count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#days-count)</span></p><p><b>value</b>: 3 /d</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 12</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Days not covered <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#days-not-covered)</span></p><p><b>value</b>: 1 /d</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 13</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Days longterm care recipient on leave <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#days-long-term-care-recipient-on-leave)</span></p><p><b>value</b>: 0 /d</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 14</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Newbord length of stay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#newborn-length-of-stay)</span></p><p><b>value</b>: 0 /d</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 15</p><p><b>category</b>: Information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#info)</span></p><p><b>code</b>: Onset of symptoms/illness <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0350.html\">nubc-OccurrenceCode-cs</a>#11)</span></p><p><b>timing</b>: 2017-06-02 --&gt; 2017-06-02</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 16</p><p><b>category</b>: Information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#info)</span></p><p><b>code</b>: Acquired Condition Indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#acquired-condition-indicator)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 17</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Discharge hour <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#discharge-hour)</span></p><p><b>value</b>: 22</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 1</p><p><b>diagnosis</b>: Headache <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#R51)</span></p><p><b>type</b>: Principal Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-diagnosistype.html\">Example Diagnosis Type Codes</a>#principal)</span></p><p><b>onAdmission</b>: Yes, present ad admission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-diagnosis-present-on-admission.html\">Diagnosis Present On Admission Codes</a>#Y)</span></p><p><b>packageCode</b>: 102 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (P0002.html#102)</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 2</p><p><b>diagnosis</b>: Migraine, Unspecified, not Intractable, without Status Migrainosus <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#G43.909)</span></p><p><b>type</b>: Discharge Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-diagnosistype.html\">Example Diagnosis Type Codes</a>#discharge)</span></p><p><b>onAdmission</b>: No, not present at admission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-diagnosis-present-on-admission.html\">Diagnosis Present On Admission Codes</a>#N)</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 3</p><p><b>diagnosis</b>: Migraine, unspecified <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#G43.9)</span></p><p><b>type</b>: Admitting Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-ex-diagnosistype.html\">Example Diagnosis Type Codes</a>#admitting)</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 4</p><p><b>diagnosis</b>: Fall on and from ladder, initial encounter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#W11.XXXA)</span></p><p><b>type</b>: External Cause <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-wh-diagnosis-type.html\">Health Data Connect Diagnosis Type Codes</a>#external-cause)</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 1</p><p><b>type</b>: surgical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-procedure-type.html\">Procedure Type Codes</a>#surgical)</span></p><p><b>procedure</b>: Special EEG Tests <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT&reg;)</a>#95958)</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 2</p><p><b>type</b>: surgical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-procedure-type.html\">Procedure Type Codes</a>#surgical)</span></p><p><b>procedure</b>: Autologous blood or component, collection processing and storage <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT&reg;)</a>#86891)</span></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Identifier</b></td><td><b>Coverage</b></td><td><b>PreAuthRef</b></td></tr><tr><td>*</td><td>, </td><td>1</td><td>true</td><td>id: PPOB</td><td><a href=\"Coverage-CoverageExample.html\">Coverage/CoverageExample</a></td><td>PreAuth12345</td></tr></table><h3>Accidents</h3><table class=\"grid\"><tr><td>-</td><td><b>Date</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>1900-01-01</td><td>No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-wh-payer-indicators.html\">Health Data Connect Indicator Codes</a>#N)</span></td></tr></table><h3>Items</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Sequence</b></td><td><b>CareTeamSequence</b></td><td><b>Revenue</b></td><td><b>ProductOrService</b></td><td><b>Modifier</b></td><td><b>Serviced[x]</b></td><td><b>Location[x]</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td>, , , </td><td>1</td><td>2</td><td>Emergency Room <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (RevenueCodes#0450)</span></td><td>superficial muscle biopsy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT&reg;)</a>#20200; local-service-type#LocalServiceType)</span></td><td>Primary physician <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-procedure-modifier.html\">Procedure Modifier Codes</a>#AG)</span></td><td>2017-06-02</td><td>Office <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-CMSPlaceofServiceCodes.html\">CMS Place of Service Codes (POS)</a>#11; local-place-of-service#LocalPlcOfService)</span></td><td>3</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Claim</b><a name=\"CDMClaimFacilityInstance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Claim \"CDMClaimFacilityInstance\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/WellnessMedicalFacility!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-claim-facility.html\">CDM Claim Facility</a></p></div><p><b>Admit Count</b>: 1</p><p><b>Aggregate Claim Indicator</b>: N</p><p><b>Claim Category</b>: F0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (claim-status-category-codes#F0)</span></p><p><b>Claim Status</b>: F0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (claim-status-codes#F0)</span></p><p><b>Claim Snapshot Provider Name</b>: Dr Smith</p><p><b>Claim Snapshot Provider Zip Code</b>: 79912</p><p><b>Employer</b>: EmployerCode <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-employer-code#EmployerCode)</span></p><p><b>Employee Business Unit</b>: EmpBusUnit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-employee-business-unit#EmpBusUnit)</span></p><p><b>Financial System</b>: LocFinanceSys <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-financial-system#LocFinanceSys)</span></p><p><b>Last Claim Indicator</b>: Y</p><p><b>Participating Plan</b>: LocParticipatingPlan <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-participating-plan#LocParticipatingPlan)</span></p><p><b>Referral Indicator</b>: N</p><p><b>Snapshot Age In Years</b>: 20</p><p><b>Submission Type</b>: SubmitType <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-submission-type#SubmitType)</span></p><p><b>Payer PCP Responsibility Indicator</b>: N</p><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019721078(use: OFFICIAL), Source System Row Identifier: 99999999999(use: SECONDARY)</p><p><b>status</b>: active</p><p><b>type</b>: Medical claim; Institutional/Professional unknown <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-payer-claim-type.html\">Payer Claim Type Codes</a>#medical; local-claim-type#Medical)</span></p><p><b>subType</b>: Emergency <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-subtype.html\">Claim Subtype Codes</a>#emergency)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><p><b>billablePeriod</b>: 2017-06-02 --&gt; 2017-06-02</p><p><b>created</b>: 2017-07-25 05:31:00-0500</p><p><b>provider</b>: <a href=\"Organization-Provider1.html\">Organization/Provider1</a> \"Dr Smith\"</p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-processpriority.html\">Process Priority Codes</a>#normal)</span></p><p><b>referral</b>: <a href=\"ServiceRequest-CDMServiceRequestInstance.html\">ServiceRequest/CDMServiceRequestInstance</a></p><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 1</p><p><b>provider</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><p><b>role</b>: Ordering provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-care-team-role.html\">Claim Care Team Role Codes</a>#ordering)</span></p></blockquote><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 2</p><p><b>provider</b>: <a href=\"Practitioner-DrSmith.html\">Practitioner/DrSmith</a> \" SMITH\"</p><p><b>role</b>: Admitting provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-care-team-role.html\">Claim Care Team Role Codes</a>#admitting)</span></p></blockquote><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 3</p><p><b>provider</b>: <a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</p><p><b>role</b>: Attending provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-care-team-role.html\">Claim Care Team Role Codes</a>#attending)</span></p></blockquote><blockquote><p><b>careTeam</b></p><p><b>sequence</b>: 4</p><p><b>provider</b>: <a href=\"Organization-Provider1.html\">Organization/Provider1</a> \"Dr Smith\"</p><p><b>role</b>: Servicing provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-care-team-role.html\">Claim Care Team Role Codes</a>#servicing)</span></p><p><b>qualification</b>: 01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (local-specialty#01)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 1</p><p><b>category</b>: Information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#info)</span></p><p><b>code</b>: Capitated service indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#capitated-service-indicator)</span></p><p><b>value</b>: N</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 2</p><p><b>category</b>: Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#other)</span></p><p><b>code</b>: Emergency Room <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-er-or-observation-room-service.html\">Er Or Observation Room Service Codes</a>#1)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 3</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>timing</b>: 2017-06-02 --&gt; 2017-06-02</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 4</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Emergency <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ub04-admit-type.html\">UB04 Admit Type Code System</a>#1)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 5</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Hospital / Level I Intermediate Care / Admit Through Discharge Claim <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ub04-admit-bill-type.html\">UB04 Admit Bill Type Code System</a>#0151)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 6</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Days count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#days-count)</span></p><p><b>value</b>: 3 /d</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 7</p><p><b>category</b>: Discharge <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#discharge)</span></p><p><b>code</b>: 11 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (patient-discharge#11)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 8</p><p><b>category</b>: Other <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#other)</span></p><p><b>code</b>: Room and Board <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-room-and-board-service.html\">Room And Board Service Codes</a>#1)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 9</p><p><b>category</b>: Information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#info)</span></p><p><b>code</b>: Network provider indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#network-provider-indicator)</span></p><p><b>value</b>: Y</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 10</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Admission hour <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#admission-hour)</span></p><p><b>value</b>: 07</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 11</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Days count <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#days-count)</span></p><p><b>value</b>: 3 /d</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 12</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Days not covered <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#days-not-covered)</span></p><p><b>value</b>: 1 /d</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 13</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Days longterm care recipient on leave <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#days-long-term-care-recipient-on-leave)</span></p><p><b>value</b>: 0 /d</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 14</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Newbord length of stay <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#newborn-length-of-stay)</span></p><p><b>value</b>: 0 /d</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 15</p><p><b>category</b>: Information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#info)</span></p><p><b>code</b>: Onset of symptoms/illness <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0350.html\">nubc-OccurrenceCode-cs</a>#11)</span></p><p><b>timing</b>: 2017-06-02 --&gt; 2017-06-02</p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 16</p><p><b>category</b>: Information <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#info)</span></p><p><b>code</b>: Acquired Condition Indicator <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#acquired-condition-indicator)</span></p></blockquote><blockquote><p><b>supportingInfo</b></p><p><b>sequence</b>: 17</p><p><b>category</b>: Hospitalized <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-claiminformationcategory.html\">Claim Information Category Codes</a>#hospitalized)</span></p><p><b>code</b>: Discharge hour <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-claim-supporting-info-type.html\">Claim Supporting Info Type Codes</a>#discharge-hour)</span></p><p><b>value</b>: 22</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 1</p><p><b>diagnosis</b>: Headache <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#R51)</span></p><p><b>type</b>: Principal Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-ex-diagnosistype.html\">Example Diagnosis Type Codes</a>#principal)</span></p><p><b>onAdmission</b>: Yes, present ad admission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-diagnosis-present-on-admission.html\">Diagnosis Present On Admission Codes</a>#Y)</span></p><p><b>packageCode</b>: 102 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (P0002.html#102)</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 2</p><p><b>diagnosis</b>: Migraine, Unspecified, not Intractable, without Status Migrainosus <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#G43.909)</span></p><p><b>type</b>: Discharge Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-ex-diagnosistype.html\">Example Diagnosis Type Codes</a>#discharge)</span></p><p><b>onAdmission</b>: No, not present at admission <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-diagnosis-present-on-admission.html\">Diagnosis Present On Admission Codes</a>#N)</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 3</p><p><b>diagnosis</b>: Migraine, unspecified <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#G43.9)</span></p><p><b>type</b>: Admitting Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-ex-diagnosistype.html\">Example Diagnosis Type Codes</a>#admitting)</span></p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>sequence</b>: 4</p><p><b>diagnosis</b>: Fall on and from ladder, initial encounter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-icd10CM.html\">International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)</a>#W11.XXXA)</span></p><p><b>type</b>: External Cause <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-diagnosis-type.html\">Diagnosis Type Codes</a>#external-cause)</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 1</p><p><b>type</b>: surgical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-procedure-type.html\">Procedure Type Codes</a>#surgical)</span></p><p><b>procedure</b>: Special EEG Tests <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT&reg;)</a>#95958)</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 2</p><p><b>type</b>: surgical <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-procedure-type.html\">Procedure Type Codes</a>#surgical)</span></p><p><b>procedure</b>: Autologous blood or component, collection processing and storage <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT&reg;)</a>#86891)</span></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Identifier</b></td><td><b>Coverage</b></td><td><b>PreAuthRef</b></td></tr><tr><td>*</td><td>, </td><td>1</td><td>true</td><td>id: PPOB</td><td><a href=\"Coverage-CoverageExample.html\">Coverage/CoverageExample</a></td><td>PreAuth12345</td></tr></table><h3>Accidents</h3><table class=\"grid\"><tr><td>-</td><td><b>Date</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>1900-01-01</td><td>No <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-payer-indicators.html\">Payer Indicator Codes</a>#N)</span></td></tr></table><h3>Items</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Sequence</b></td><td><b>CareTeamSequence</b></td><td><b>Revenue</b></td><td><b>ProductOrService</b></td><td><b>Modifier</b></td><td><b>Serviced[x]</b></td><td><b>Location[x]</b></td><td><b>Quantity</b></td></tr><tr><td>*</td><td>, , , </td><td>1</td><td>2</td><td>Emergency Room <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (RevenueCodes#0450)</span></td><td>superficial muscle biopsy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT&reg;)</a>#20200; local-service-type#LocalServiceType)</span></td><td>Primary physician <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-procedure-modifier.html\">Procedure Modifier Codes</a>#AG)</span></td><td>2017-06-02</td><td>Office <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-CMSPlaceofServiceCodes.html\">CMS Place of Service Codes (POS)</a>#11; local-place-of-service#LocalPlcOfService)</span></td><td>3</td></tr></table></div>"
   },
   "extension": [
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/admit-count",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/admit-count",
       "valueInteger": 1
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/aggregate-claim-indicator",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/aggregate-claim-indicator",
       "valueString": "N"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-category",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-category",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -61,7 +61,7 @@
       }
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-status",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-status",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -72,15 +72,15 @@
       }
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-name",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-snapshot-provider-name",
       "valueString": "Dr Smith"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code",
       "valueString": "79912"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employer",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/employer",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -91,7 +91,7 @@
       }
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/employee-business-unit",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -102,7 +102,7 @@
       }
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/financial-system",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/financial-system",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -113,11 +113,11 @@
       }
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/last-claim-indicator",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/last-claim-indicator",
       "valueString": "Y"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/participating-plan",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/participating-plan",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -128,15 +128,15 @@
       }
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/referral-indicator",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/referral-indicator",
       "valueString": "N"
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/snapshot-age-in-years",
       "valueUnsignedInt": 20
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/submission-type",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/submission-type",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -147,7 +147,7 @@
       }
     },
     {
-      "url": "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-pcp-responsibility-indicator",
+      "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/payer-pcp-responsibility-indicator",
       "valueString": "N"
     }
   ],
@@ -157,7 +157,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type",
             "code": "SSRI"
           }
         ]
@@ -173,7 +173,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type",
             "code": "SSRI"
           }
         ]
@@ -189,7 +189,7 @@
   "type": {
     "coding": [
       {
-        "system": "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type",
+        "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-type",
         "code": "medical"
       },
       {
@@ -201,7 +201,7 @@
   "subType": {
     "coding": [
       {
-        "system": "http://ibm.com/fhir/cdm/CodeSystem/wh-claim-subtype",
+        "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-subtype",
         "code": "emergency"
       }
     ]
@@ -238,7 +238,7 @@
       "role": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-care-team-role",
             "code": "ordering"
           }
         ]
@@ -252,7 +252,7 @@
       "role": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-care-team-role",
             "code": "admitting"
           }
         ]
@@ -266,7 +266,7 @@
       "role": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-care-team-role",
             "code": "attending"
           }
         ]
@@ -280,7 +280,7 @@
       "role": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-care-team-role",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-care-team-role",
             "code": "servicing"
           }
         ]
@@ -309,7 +309,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type",
             "code": "capitated-service-indicator"
           }
         ]
@@ -329,7 +329,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/er-or-observation-room-service",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/er-or-observation-room-service",
             "code": "1"
           }
         ]
@@ -363,7 +363,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/ub04-admit-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/ub04-admit-type",
             "code": "1"
           }
         ]
@@ -382,7 +382,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/ub04-admit-bill-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/ub04-admit-bill-type",
             "code": "0151"
           }
         ]
@@ -401,7 +401,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type",
             "code": "days-count"
           }
         ]
@@ -444,7 +444,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/room-and-board-service",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/room-and-board-service",
             "code": "1"
           }
         ]
@@ -463,7 +463,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type",
             "code": "network-provider-indicator"
           }
         ]
@@ -483,7 +483,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type",
             "code": "admission-hour"
           }
         ]
@@ -503,7 +503,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type",
             "code": "days-count"
           }
         ]
@@ -527,7 +527,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type",
             "code": "days-not-covered"
           }
         ]
@@ -551,7 +551,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type",
             "code": "days-long-term-care-recipient-on-leave"
           }
         ]
@@ -575,7 +575,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type",
             "code": "newborn-length-of-stay"
           }
         ]
@@ -622,7 +622,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type",
             "code": "acquired-condition-indicator"
           }
         ]
@@ -641,7 +641,7 @@
       "code": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/claim-supporting-info-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/claim-supporting-info-type",
             "code": "discharge-hour"
           }
         ]
@@ -674,7 +674,7 @@
       "onAdmission": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/diagnosis-present-on-admission",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/diagnosis-present-on-admission",
             "code": "Y"
           }
         ]
@@ -712,7 +712,7 @@
       "onAdmission": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/diagnosis-present-on-admission",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/diagnosis-present-on-admission",
             "code": "N"
           }
         ]
@@ -755,7 +755,7 @@
         {
           "coding": [
             {
-              "system": "http://ibm.com/fhir/cdm/CodeSystem/wh-diagnosis-type",
+              "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/diagnosis-type",
               "code": "external-cause"
             }
           ]
@@ -770,7 +770,7 @@
         {
           "coding": [
             {
-              "system": "http://ibm.com/fhir/cdm/CodeSystem/procedure-type",
+              "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/procedure-type",
               "code": "surgical"
             }
           ]
@@ -792,7 +792,7 @@
         {
           "coding": [
             {
-              "system": "http://ibm.com/fhir/cdm/CodeSystem/procedure-type",
+              "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/procedure-type",
               "code": "surgical"
             }
           ]
@@ -813,11 +813,11 @@
     {
       "extension": [
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/crossover-indicator",
           "valueString": "N"
         },
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/prior-authorization-indicator",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/prior-authorization-indicator",
           "valueString": "Y"
         }
       ],
@@ -840,7 +840,7 @@
     "type": {
       "coding": [
         {
-          "system": "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-indicators",
+          "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-indicators",
           "code": "N"
         }
       ]
@@ -850,19 +850,19 @@
     {
       "extension": [
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/capitated-service-indicator",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/capitated-service-indicator",
           "valueString": "N"
         },
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/fully-insured-indicator",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/fully-insured-indicator",
           "valueString": "Y"
         },
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/nursing-home-indicator",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/nursing-home-indicator",
           "valueString": "N"
         },
         {
-          "url": "http://ibm.com/fhir/cdm/StructureDefinition/service-bill-days-count",
+          "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/service-bill-days-count",
           "valueUnsignedInt": 20
         }
       ],
@@ -896,7 +896,7 @@
         {
           "coding": [
             {
-              "system": "http://ibm.com/fhir/cdm/CodeSystem/procedure-modifier",
+              "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/procedure-modifier",
               "code": "AG"
             }
           ]
@@ -919,7 +919,7 @@
       "quantity": {
         "extension": [
           {
-            "url": "http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service",
+            "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/local-number-of-units-per-service",
             "valueQuantity": {
               "value": 5
             }

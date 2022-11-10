@@ -1,17 +1,16 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
 "Reference","Reference","","","",0,*,"","","","","A reference from one resource to another","A reference from one resource to another.","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.","","","","","","","","",,,,,"",,,,"Reference",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
+","","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)"
 "Reference.id","Reference.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Reference.extension","Reference.extension","","","",1,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Reference.extension:referenceCode","Reference.extension","referenceCode","","",1,*,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/reference-code]]} {[]}
+"Reference.extension:referenceCode","Reference.extension","referenceCode","","",1,*,"","","","Extension {[CanonicalType[http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code]]} {[]}
 ","A code describing the context of the reference","A code describing the context of the reference","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Reference.extension:referencePeriod","Reference.extension","referencePeriod","","",0,1,"","","","Extension {[CanonicalType[http://ibm.com/fhir/cdm/StructureDefinition/reference-period]]} {[]}
+"Reference.extension:referencePeriod","Reference.extension","referencePeriod","","",0,1,"","","","Extension {[CanonicalType[http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-period]]} {[]}
 ","A time period in which the reference is valid","A time period in which the reference is valid","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Reference.reference","Reference.reference","","","",0,1,"","","Y","string {[]} {[]}

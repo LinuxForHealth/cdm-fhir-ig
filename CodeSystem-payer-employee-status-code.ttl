@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-employee-status-code> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "payer-employee-status-code"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-employee-status-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"payer-employee-status-code-1\"> </a></td><td>Active Full Time</td><td>Active Full Time</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"payer-employee-status-code-2\"> </a></td><td>Active Part-Time/Seasonal</td><td>Active Part-Time/Seasonal</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"payer-employee-status-code-3\"> </a></td><td>Early Retiree</td><td>Early Retiree</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"payer-employee-status-code-4\"> </a></td><td>Medicare Eligible Retiree</td><td>Medicare Eligible Retiree</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"payer-employee-status-code-5\"> </a></td><td>Retiree (Status Unknown)</td><td>Retiree (Status Unknown)</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"payer-employee-status-code-6\"> </a></td><td>COBRA Continuee</td><td>COBRA Continuee</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"payer-employee-status-code-7\"> </a></td><td>Long Term Disability</td><td>Long Term Disability</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"payer-employee-status-code-8\"> </a></td><td>Surviving Spouse/Dependent</td><td>Surviving Spouse/Dependent</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"payer-employee-status-code-9\"> </a></td><td>Other/Unknown</td><td>Other/Unknown</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-employee-status-code"];
+  fhir:CodeSystem.version [ fhir:value "8.0.0"];
+  fhir:CodeSystem.name [ fhir:value "PayerEmployeeStatusCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "payer Employee Status Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "LinuxForHealth Team"];
+  fhir:CodeSystem.description [ fhir:value "Payer employee status value set for claims"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "9"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Active Full Time" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Active Full Time" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Active Part-Time/Seasonal" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Active Part-Time/Seasonal" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Early Retiree" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Early Retiree" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Medicare Eligible Retiree" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Medicare Eligible Retiree" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Retiree (Status Unknown)" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Retiree (Status Unknown)" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "COBRA Continuee" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "COBRA Continuee" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Long Term Disability" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Long Term Disability" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Surviving Spouse/Dependent" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Surviving Spouse/Dependent" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Other/Unknown" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Other/Unknown" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-employee-status-code.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

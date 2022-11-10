@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-status> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "payer-claim-status"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"payer-claim-status-P\"> </a></td><td>Paid</td></tr><tr><td style=\"white-space:nowrap\">A<a name=\"payer-claim-status-A\"> </a></td><td>Adjusted</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"payer-claim-status-D\"> </a></td><td>Denied</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-status"];
+  fhir:CodeSystem.version [ fhir:value "8.0.0"];
+  fhir:CodeSystem.name [ fhir:value "PayerClaimStatusCodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "Payer Claim Status Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "LinuxForHealth Team"];
+  fhir:CodeSystem.description [ fhir:value "Payer codes for the payment status of the claim."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "P" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Paid" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "A" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Adjusted" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "D" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Denied" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-status.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

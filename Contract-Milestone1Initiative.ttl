@@ -5,43 +5,43 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Contract/Milestone1Initiative> a fhir:Contract;
+<http://linuxforhealth.org/fhir/cdm/Contract/Milestone1Initiative> a fhir:Contract;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "Milestone1Initiative"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ffv-initative-resource";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ffv-initative-resource";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/ffv-initative-resource>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/ffv-initative-resource>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Contract</b><a name=\"Milestone1Initiative\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Contract \"Milestone1Initiative\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ffv-initative-resource.html\">Fee for Value Initative</a></p></div><p><b>Attribution Code</b>: Enrollment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-attribution-code-system.html\">Attribution Codes</a>#enrollment)</span></p><p><b>FFV Schedule</b>: Monthly <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ffv-schedule.html\">Health Data Connect FFV Schedule Codes</a>#monthly)</span></p><p><b>Quality Measures</b>: <span></span></p><p><b>identifier</b>: Advantage Database Key: 1, Advantage customer key: Milestone1Initiative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Contract</b><a name=\"Milestone1Initiative\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Contract \"Milestone1Initiative\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ffv-initative-resource.html\">Fee for Value Initative</a></p></div><p><b>Attribution Code</b>: Enrollment <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-attribution-code-system.html\">Attribution Codes</a>#enrollment)</span></p><p><b>FFV Schedule</b>: Monthly <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ffv-schedule.html\">FFV Schedule Codes</a>#monthly)</span></p><p><b>Quality Measures</b>: <span></span></p><p><b>identifier</b>: Advantage Database Key: 1, Advantage customer key: Milestone1Initiative</p><p><b>title</b>: Primary Care Incentive Program</p><p><b>supportingInfo</b>: </p><ul><li><span></span></li><li><span></span></li><li><span></span></li></ul></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/attribution-code" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/attribution-code" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/attribution-code-system" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-code-system" ];
          fhir:Coding.code [ fhir:value "enrollment" ]
        ]
      ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ffv-schedule" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ffv-schedule" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/ffv-schedule" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/ffv-schedule" ];
          fhir:Coding.code [ fhir:value "monthly" ]
        ]
      ]
   ], [
      fhir:index 2;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/quality-measures" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measures" ];
      fhir:Extension.valueReference [
        fhir:Reference.identifier [
          fhir:Identifier.value [ fhir:value "quality-measure-list-1" ]
@@ -53,7 +53,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "ADKEY" ]
        ]
      ];
@@ -63,7 +63,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "CUSTKEY" ]
        ]
      ];
@@ -89,7 +89,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Contract/Milestone1Initiative.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Contract/Milestone1Initiative.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

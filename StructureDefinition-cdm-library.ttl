@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/StructureDefinition/cdm-library> a fhir:StructureDefinition;
+<http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-library> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cdm-library"];
   fhir:DomainResource.text [
@@ -21,14 +21,14 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "anonymous" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-library"];
-  fhir:StructureDefinition.version [ fhir:value "7.0.0"];
+  fhir:StructureDefinition.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-library"];
+  fhir:StructureDefinition.version [ fhir:value "8.0.0"];
   fhir:StructureDefinition.name [ fhir:value "CDMLibrary"];
   fhir:StructureDefinition.title [ fhir:value "CDM Library"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:StructureDefinition.publisher [ fhir:value "Alvearie Team"];
-  fhir:StructureDefinition.description [ fhir:value "Health Data Connect Common Data Model definition of what fields we currently define for a library"];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "LinuxForHealth Team"];
+  fhir:StructureDefinition.description [ fhir:value "LinuxForHealth Common Data Model definition of what fields we currently define for a library"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -210,9 +210,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Meta" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-meta";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/process-meta>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -812,8 +812,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/identifier-type";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/identifier-type>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2189,9 +2189,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "ParameterDefinition" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/parameter-definition-with-default";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/parameter-definition-with-default";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/parameter-definition-with-default>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/parameter-definition-with-default>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -2303,9 +2303,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Meta" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-meta";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/process-meta>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta>
          ]
        ]
      ], [
@@ -2320,8 +2320,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/identifier-type";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/identifier-type>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type>
          ]
        ]
      ], [
@@ -2342,9 +2342,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "ParameterDefinition" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/parameter-definition-with-default";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/parameter-definition-with-default";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/parameter-definition-with-default>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/parameter-definition-with-default>
          ]
        ]
      ]
@@ -2352,7 +2352,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/StructureDefinition/cdm-library.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-library.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

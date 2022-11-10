@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/MedicationRequest/MedicationRequestDrugExample> a fhir:MedicationRequest;
+<http://linuxforhealth.org/fhir/cdm/MedicationRequest/MedicationRequestDrugExample> a fhir:MedicationRequest;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "MedicationRequestDrugExample"];
   fhir:Resource.meta [
@@ -13,7 +13,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"MedicationRequestDrugExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest \"MedicationRequestDrugExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p></div><p><b>identifier</b>: Prescription Number: 00000000000000000001921078 (OFFICIAL)</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>medication</b>: 69452-0151-20 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ndc-no-hyphens.html\">NDC No Hyphens Codes</a>#69452015120)</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"MedicationRequestDrugExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest \"MedicationRequestDrugExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p></div><p><b>identifier</b>: Prescription Number: 00000000000000000001921078(use: OFFICIAL)</p><p><b>status</b>: completed</p><p><b>intent</b>: order</p><p><b>medication</b>: 69452-0151-20 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ndc-no-hyphens.html\">NDC No Hyphens Codes</a>#69452015120)</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p></div>"
   ];
   fhir:MedicationRequest.identifier [
      fhir:index 0;
@@ -21,7 +21,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "RXN" ]
        ]
      ];
@@ -36,18 +36,18 @@
   fhir:MedicationRequest.medicationCodeableConcept [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/ndc-no-hyphens" ];
+       fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/ndc-no-hyphens" ];
        fhir:Coding.code [ fhir:value "69452015120" ]
      ]
   ];
   fhir:MedicationRequest.subject [
-     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance>;
      fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/MedicationRequest/MedicationRequestDrugExample.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/MedicationRequest/MedicationRequestDrugExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

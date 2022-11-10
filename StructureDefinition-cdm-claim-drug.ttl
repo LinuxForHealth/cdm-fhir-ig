@@ -5,12 +5,12 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-drug> a fhir:StructureDefinition;
+<http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-claim-drug> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cdm-claim-drug"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim\">Claim</a><a name=\"Claim\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-cdm-claim.html\">CDMClaim</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Claim, Pre-determination or Pre-authorization</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.extension:rxCount\" title=\"Extension URL = http://ibm.com/fhir/cdm/StructureDefinition/rx-count\">rxCount</a><a name=\"Claim.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#unsignedInt\">unsignedInt</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Count of prescriptions for the drug claim<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-rx-count.html\">http://ibm.com/fhir/cdm/StructureDefinition/rx-count</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item\">item</a><a name=\"Claim.item\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.extension:averageWholesalePrice\" title=\"Extension URL = http://ibm.com/fhir/cdm/StructureDefinition/average-wholesale-price\">averageWholesalePrice</a><a name=\"Claim.item.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Money\">Money</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The average wholesale price of this drug<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-average-wholesale-price.html\">http://ibm.com/fhir/cdm/StructureDefinition/average-wholesale-price</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.extension:compoundCode\" title=\"Extension URL = http://ibm.com/fhir/cdm/StructureDefinition/compound-code\">compoundCode</a><a name=\"Claim.item.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Customer-specific code for the compound of the drug<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-compound-code.html\">http://ibm.com/fhir/cdm/StructureDefinition/compound-code</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.productOrService\">productOrService</a><a name=\"Claim.item.productOrService\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Billing, service, product, or drug code</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-ndc-no-hyphens.html\">NDC No Hyphens Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#example\" title=\"Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.\">example</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.detail\">detail</a><a name=\"Claim.item.detail\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0012.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.detail.extension\">Slices for extension</a><a name=\"Claim.item.detail.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0014.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.detail.extension:claimItemDetailClassification\" title=\"Extension URL = http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification\">claimItemDetailClassification</a><a name=\"Claim.item.detail.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Classification of the information contained in this claim item detail section<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-claim-item-detail-classification.html\">http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification</a><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-claim-item-detail-classification.html\">Claim Item Detail Classification Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.detail.productOrService\">productOrService</a><a name=\"Claim.item.detail.productOrService\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Billing, service, product, or drug code</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-ndc-no-hyphens.html\">NDC No Hyphens Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#example\" title=\"Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.\">example</a>)</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim\">Claim</a><a name=\"Claim\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-cdm-claim.html\">CDMClaim</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Claim, Pre-determination or Pre-authorization</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.extension:rxCount\" title=\"Extension URL = http://linuxforhealth.org/fhir/cdm/StructureDefinition/rx-count\">rxCount</a><a name=\"Claim.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#unsignedInt\">unsignedInt</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Count of prescriptions for the drug claim<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-rx-count.html\">http://linuxforhealth.org/fhir/cdm/StructureDefinition/rx-count</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item\">item</a><a name=\"Claim.item\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.extension:averageWholesalePrice\" title=\"Extension URL = http://linuxforhealth.org/fhir/cdm/StructureDefinition/average-wholesale-price\">averageWholesalePrice</a><a name=\"Claim.item.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Money\">Money</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The average wholesale price of this drug<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-average-wholesale-price.html\">http://linuxforhealth.org/fhir/cdm/StructureDefinition/average-wholesale-price</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck014.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.extension:compoundCode\" title=\"Extension URL = http://linuxforhealth.org/fhir/cdm/StructureDefinition/compound-code\">compoundCode</a><a name=\"Claim.item.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Customer-specific code for the compound of the drug<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-compound-code.html\">http://linuxforhealth.org/fhir/cdm/StructureDefinition/compound-code</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.productOrService\">productOrService</a><a name=\"Claim.item.productOrService\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Billing, service, product, or drug code</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-ndc-no-hyphens.html\">NDC No Hyphens Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#example\" title=\"Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.\">example</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.detail\">detail</a><a name=\"Claim.item.detail\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0012.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_extension_simple.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Simple Extension\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.detail.extension\">Slices for extension</a><a name=\"Claim.item.detail.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/extensibility.html#Extension\">Extension</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Extension</span><br/><span style=\"font-weight:bold\">Slice: </span>Unordered, Open by value:url</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0014.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.detail.extension:claimItemDetailClassification\" title=\"Extension URL = http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-item-detail-classification\">claimItemDetailClassification</a><a name=\"Claim.item.detail.extension\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Classification of the information contained in this claim item detail section<br/><span style=\"font-weight:bold\">URL: </span><a href=\"http://hl7.org/fhir/R4/StructureDefinition-claim-item-detail-classification.html\">http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-item-detail-classification</a><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-claim-item-detail-classification.html\">Claim Item Detail Classification Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-cdm-claim-drug-definitions.html#Claim.item.detail.productOrService\">productOrService</a><a name=\"Claim.item.detail.productOrService\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Billing, service, product, or drug code</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-ndc-no-hyphens.html\">NDC No Hyphens Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#example\" title=\"Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included.\">example</a>)</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -21,13 +21,13 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-drug"];
-  fhir:StructureDefinition.version [ fhir:value "7.0.0"];
+  fhir:StructureDefinition.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-claim-drug"];
+  fhir:StructureDefinition.version [ fhir:value "8.0.0"];
   fhir:StructureDefinition.name [ fhir:value "CDMClaimDrug"];
   fhir:StructureDefinition.title [ fhir:value "CDM Claim Drug"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:StructureDefinition.publisher [ fhir:value "Alvearie Team"];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "LinuxForHealth Team"];
   fhir:StructureDefinition.description [ fhir:value "The CDMClaimDrug profile extends the base CDMClaim profile with additional details that are specific to pharmacy claims"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
@@ -58,8 +58,8 @@
   fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
   fhir:StructureDefinition.type [ fhir:value "Claim"];
   fhir:StructureDefinition.baseDefinition [
-     fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim";
-     fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim>
+     fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-claim";
+     fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-claim>
   ];
   fhir:StructureDefinition.derivation [ fhir:value "constraint"];
   fhir:StructureDefinition.snapshot [
@@ -205,9 +205,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Meta" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-meta";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/process-meta>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -479,9 +479,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/aggregate-claim-indicator";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/aggregate-claim-indicator";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/aggregate-claim-indicator>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/aggregate-claim-indicator>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -530,9 +530,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-name";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-snapshot-provider-name";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-name>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-snapshot-provider-name>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -581,9 +581,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-snapshot-provider-zip-code>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -632,9 +632,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/company-code";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/company-code";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/company-code>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/company-code>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -683,9 +683,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/employee-business-unit";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/employee-business-unit>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/employee-business-unit>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -734,9 +734,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/employer";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/employer";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/employer>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/employer>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -785,9 +785,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/financial-system";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/financial-system";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/financial-system>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/financial-system>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -836,9 +836,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/claim-category";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-category";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/claim-category>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-category>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -887,9 +887,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/claim-status";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-status";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/claim-status>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-status>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1031,7 +1031,7 @@
          ];
          fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
        ];
-       fhir:ElementDefinition.fixedUri [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/claim-status" ];
+       fhir:ElementDefinition.fixedUri [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-status" ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.mapping [
@@ -1146,9 +1146,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/last-claim-indicator";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/last-claim-indicator";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/last-claim-indicator>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/last-claim-indicator>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1197,9 +1197,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/participating-plan";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/participating-plan";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/participating-plan>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/participating-plan>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1248,9 +1248,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/referral-indicator";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/referral-indicator";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/referral-indicator>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/referral-indicator>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1299,9 +1299,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/snapshot-age-in-years";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/snapshot-age-in-years>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/snapshot-age-in-years>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1350,9 +1350,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/submission-type";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/submission-type";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/submission-type>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/submission-type>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1385,9 +1385,9 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 27;
-       fhir:Element.id [ fhir:value "Claim.extension:whPayerPcpResponsibilityIndicator" ];
+       fhir:Element.id [ fhir:value "Claim.extension:payerPcpResponsibilityIndicator" ];
        fhir:ElementDefinition.path [ fhir:value "Claim.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "whPayerPcpResponsibilityIndicator" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "payerPcpResponsibilityIndicator" ];
        fhir:ElementDefinition.short [ fhir:value "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim" ];
        fhir:ElementDefinition.definition [ fhir:value "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim" ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -1401,9 +1401,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-pcp-responsibility-indicator";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/payer-pcp-responsibility-indicator";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/wh-payer-pcp-responsibility-indicator>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/payer-pcp-responsibility-indicator>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1452,9 +1452,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/rx-count";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/rx-count";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/rx-count>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/rx-count>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1773,8 +1773,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/identifier-type";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/identifier-type>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2073,8 +2073,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/claim-type";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/claim-type>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/claim-type";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/claim-type>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2118,8 +2118,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/wh-claim-subtype";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/wh-claim-subtype>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/claim-subtype";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/claim-subtype>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -3661,8 +3661,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/claim-care-team-role";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/claim-care-team-role>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/claim-care-team-role";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/claim-care-team-role>
          ]
        ]
      ], [
@@ -3973,8 +3973,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/claim-supporting-info-category";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/claim-supporting-info-category>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/claim-supporting-info-category";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/claim-supporting-info-category>
          ]
        ]
      ], [
@@ -4012,8 +4012,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/claim-supporting-info-type";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/claim-supporting-info-type>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/claim-supporting-info-type";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/claim-supporting-info-type>
          ]
        ]
      ], [
@@ -4290,9 +4290,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/major-diagnostic-category";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/major-diagnostic-category";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/major-diagnostic-category>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/major-diagnostic-category>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -4745,9 +4745,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/procedure-group";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/procedure-group";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/procedure-group>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/procedure-group>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -5183,9 +5183,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/crossover-indicator";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/crossover-indicator>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/crossover-indicator>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -5234,9 +5234,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/line-of-business";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/line-of-business";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/line-of-business>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/line-of-business>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -5285,9 +5285,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/prior-authorization-indicator";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/prior-authorization-indicator";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/prior-authorization-indicator>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/prior-authorization-indicator>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -6067,9 +6067,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/capitated-service-indicator";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/capitated-service-indicator";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/capitated-service-indicator>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/capitated-service-indicator>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -6118,9 +6118,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/fully-insured-indicator";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/fully-insured-indicator";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/fully-insured-indicator>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/fully-insured-indicator>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -6169,9 +6169,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/nursing-home-indicator";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/nursing-home-indicator";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/nursing-home-indicator>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/nursing-home-indicator>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -6220,9 +6220,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/service-bill-days-count";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/service-bill-days-count";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/service-bill-days-count>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/service-bill-days-count>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -6271,9 +6271,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/average-wholesale-price";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/average-wholesale-price";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/average-wholesale-price>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/average-wholesale-price>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -6319,9 +6319,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/compound-code";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/compound-code";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/compound-code>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/compound-code>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -6706,8 +6706,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/ndc-no-hyphens";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/ndc-no-hyphens>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/ndc-no-hyphens";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/ndc-no-hyphens>
          ]
        ]
      ], [
@@ -7055,9 +7055,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/local-number-of-units-per-service";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/local-number-of-units-per-service>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/local-number-of-units-per-service>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -7724,9 +7724,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-item-detail-classification";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-item-detail-classification>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -7986,8 +7986,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/ndc-no-hyphens";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/ndc-no-hyphens>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/ndc-no-hyphens";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/ndc-no-hyphens>
          ]
        ]
      ], [
@@ -8924,9 +8924,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/rx-count";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/rx-count";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/rx-count>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/rx-count>
          ]
        ]
      ], [
@@ -8942,9 +8942,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/average-wholesale-price";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/average-wholesale-price";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/average-wholesale-price>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/average-wholesale-price>
          ]
        ]
      ], [
@@ -8960,9 +8960,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/compound-code";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/compound-code";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/compound-code>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/compound-code>
          ]
        ]
      ], [
@@ -8972,8 +8972,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/ndc-no-hyphens";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/ndc-no-hyphens>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/ndc-no-hyphens";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/ndc-no-hyphens>
          ]
        ]
      ], [
@@ -9002,9 +9002,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-item-detail-classification";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/claim-item-detail-classification>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-item-detail-classification>
          ]
        ]
      ], [
@@ -9014,8 +9014,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://ibm.com/fhir/cdm/ValueSet/ndc-no-hyphens";
-           fhir:link <http://ibm.com/fhir/cdm/ValueSet/ndc-no-hyphens>
+           fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/ndc-no-hyphens";
+           fhir:link <http://linuxforhealth.org/fhir/cdm/ValueSet/ndc-no-hyphens>
          ]
        ]
      ]
@@ -9023,7 +9023,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-drug.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-claim-drug.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

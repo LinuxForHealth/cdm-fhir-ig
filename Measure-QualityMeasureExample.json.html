@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ALVEARIE.FHIR.IG\Quality Measure Example - JSON Representation - FHIR v4.0.1</title>
+    <title>LINUXFORHEALTH.FHIR.IG\Quality Measure Example - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,7 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/alvearie.css" rel="stylesheet"/>
+<link href="assets/css/linuxforhealth-fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -49,19 +49,19 @@
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a id="alvearie-logo" no-external="true">
+  <a id="linuxforhealth-logo" no-external="true">
     <!-- 
     // New logo image reference should go here
-    // Place image in data/alvearie-template/content/assets/images folder
-    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    // Place image in data/linuxforhealth-template/content/assets/images folder
+    <img height="60" alt="LinuxForHealth" src="assets/images/linuxforhealth-logo.png" style="float:left"/>
     -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">LinuxForHealth FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">7.0.0 - draft
+            <span style="display:inline-block;">8.0.0 - draft
 
 
 
@@ -126,7 +126,8 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v7.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">LinuxForHealth FHIR Implementation Guide - Local Development build (v8.0.0). See the <a href="http://linuxforhealth.org/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -141,6 +142,7 @@
   <li>
     <a href="Measure-QualityMeasureExample.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -195,51 +197,51 @@
 
 
 
-  <pre class="json"><code class="language-json">
+  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
 {
   "<a href="http://hl7.org/fhir/R4/measure.html#Measure">resourceType</a>" : "Measure",
   "<a href="http://hl7.org/fhir/R4/measure.html#Measure.id">id</a>" : "QualityMeasureExample",
   "<a href="http://hl7.org/fhir/R4/measure.html#Measure.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-organization",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "HDC"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-type",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Measure Authoring"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Measure Authoring Tool (MAT)"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-version",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "1.0"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2020-01-01T00:00:00Z"
       }
     ],
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "http://ibm.com/fhir/quality-measure",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "http://linuxforhealth.org/platform/quality-measure",
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure"
+      "http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure"
     ],
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.tag">tag</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "derived"
       }
     ]
   },
   "<a href="http://hl7.org/fhir/R4/measure.html#Measure.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Measure&lt;/b&gt;&lt;a name=\&quot;QualityMeasureExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Measure \&quot;QualityMeasureExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Information Source: http://ibm.com/fhir/quality-measure!&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-quality-measure.html\&quot;&gt;Quality Measure&lt;/a&gt;&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Tag: &lt;span title=\&quot;{http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification}\&quot;&gt;http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Measure Parameter&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b style=\&quot;color: maroon\&quot;&gt;Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Measure&lt;/b&gt;&lt;a name=\&quot;QualityMeasureExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Measure \&quot;QualityMeasureExample\&quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Information Source: http://linuxforhealth.org/platform/quality-measure!&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-quality-measure.html\&quot;&gt;Quality Measure&lt;/a&gt;&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Tag: &lt;span title=\&quot;{http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification}\&quot;&gt;http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Measure Parameter&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b style=\&quot;color: maroon\&quot;&gt;Exception generating Narrative: type org.hl7.fhir.r5.model.ParameterDefinition not handled - should not be here&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/measure.html#Measure.extension">extension</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-parameter",
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueParameterDefinition</a>" : {
         "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.name">name</a>" : "measurePeriod",
         "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.use">use</a>" : "out",
@@ -247,11 +249,11 @@
       }
     },
     {
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-parameter",
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueParameterDefinition</a>" : {
         "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.extension">extension</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/default-value",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/default-value",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Pharyngitis Testing"
           }
         ],
@@ -261,11 +263,11 @@
       }
     },
     {
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/measure-parameter",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-parameter",
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueParameterDefinition</a>" : {
         "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.extension">extension</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/default-value",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/default-value",
             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Once yearly"
           }
         ],
@@ -275,7 +277,7 @@
       }
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/measure.html#Measure.url">url</a>" : "https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html",
+  "<a href="http://hl7.org/fhir/R4/measure.html#Measure.url">url</a>" : "https://linuxforhealth.org/fhir/cdm/Measure-QualityMeasureExample.html",
   "<a href="http://hl7.org/fhir/R4/measure.html#Measure.identifier">identifier</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
@@ -286,14 +288,14 @@
           }
         ]
       },
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://ibm.com/fhir/cdm/quality-measure",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://linuxforhealth.org/platform/quality-measure",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "8f3a1491-a07f-4860-8977-e7dac7398175",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>" : {
         "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "HDC"
       }
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/measure.html#Measure.version">version</a>" : "7.0.0",
+  "<a href="http://hl7.org/fhir/R4/measure.html#Measure.version">version</a>" : "8.0.0",
   "<a href="http://hl7.org/fhir/R4/measure.html#Measure.name">name</a>" : "Diabetes_HbA1c_Test_Performed",
   "<a href="http://hl7.org/fhir/R4/measure.html#Measure.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/measure.html#Measure.subject[x]">subjectCodeableConcept</a>" : {
@@ -305,14 +307,14 @@
     ]
   },
   "<a href="http://hl7.org/fhir/R4/measure.html#Measure.date">date</a>" : "2020-01-01",
-  "<a href="http://hl7.org/fhir/R4/measure.html#Measure.publisher">publisher</a>" : "Alvearie Team",
+  "<a href="http://hl7.org/fhir/R4/measure.html#Measure.publisher">publisher</a>" : "LinuxForHealth Team",
   "<a href="http://hl7.org/fhir/R4/measure.html#Measure.contact">contact</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Clinical Informatics",
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "ClinicalInformatics@us.ibm.com"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "ClinicalInformatics@linuxforhealth.org"
         }
       ]
     }
@@ -446,7 +448,7 @@
           "<a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.code">code</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/measure-population-type",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/measure-population-type",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "care-gap"
               }
             ]
@@ -462,7 +464,7 @@
           "<a href="http://hl7.org/fhir/R4/measure.html#Measure.group.population.code">code</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/measure-population-type",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/measure-population-type",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "care-gap"
               }
             ]
@@ -506,9 +508,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#7.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 16:11+0000">2022-09-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://linuxforhealth.github.io/docs/">LinuxForHealth Team</a>.  Package linuxforhealth.fhir.ig#8.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 10, 2022 16:00+0000">2022-11-10</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

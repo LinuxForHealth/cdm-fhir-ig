@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ALVEARIE.FHIR.IG\CDM Library Example - TTL Representation - FHIR v4.0.1</title>
+    <title>LINUXFORHEALTH.FHIR.IG\CDM Library Example - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,7 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/alvearie.css" rel="stylesheet"/>
+<link href="assets/css/linuxforhealth-fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -49,19 +49,19 @@
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a id="alvearie-logo" no-external="true">
+  <a id="linuxforhealth-logo" no-external="true">
     <!-- 
     // New logo image reference should go here
-    // Place image in data/alvearie-template/content/assets/images folder
-    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    // Place image in data/linuxforhealth-template/content/assets/images folder
+    <img height="60" alt="LinuxForHealth" src="assets/images/linuxforhealth-logo.png" style="float:left"/>
     -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">LinuxForHealth FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">7.0.0 - draft
+            <span style="display:inline-block;">8.0.0 - draft
 
 
 
@@ -126,7 +126,8 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v7.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">LinuxForHealth FHIR Implementation Guide - Local Development build (v8.0.0). See the <a href="http://linuxforhealth.org/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -141,6 +142,7 @@
   <li>
     <a href="Library-CDMLibraryInstance.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -195,7 +197,7 @@
 
 
 
-  <pre class="rdf"><code class="language-turtle">
+  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -208,29 +210,29 @@
   <a href="http://hl7.org/fhir/R4/library.html#Library.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;CDMLibraryInstance&quot;];
   <a href="http://hl7.org/fhir/R4/library.html#Library.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/cdm-library&quot;;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-library&quot;;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://ibm.com/fhir/cdm/StructureDefinition/cdm-library&gt;     ]
+       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-library&gt;     ]
   ];
   <a href="http://hl7.org/fhir/R4/library.html#Library.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Related Artifacts&lt;/h2&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;depends-on&lt;/td&gt;&lt;td&gt;FHIR Helpers&lt;/td&gt;&lt;td&gt;&lt;code&gt;https://www.hl7.org/fhir/library-fhir-helpers.html&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h2&gt;Parameters&lt;/h2&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;measurePeriod&lt;/td&gt;&lt;td&gt;out&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Period&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;complianceDisplayName&lt;/td&gt;&lt;td&gt;out&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;complianceFrequency&lt;/td&gt;&lt;td&gt;out&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h2&gt;Data Requirements&lt;/h2&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/patient.html\&quot;&gt;Patient&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/condition.html\&quot;&gt;Condition&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;category&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html#condition-category-encounter-diagnosis\&quot;&gt;Condition Category Codes&lt;/a&gt; encounter-diagnosis: Encounter Diagnosis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;clinicalStatus&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-condition-clinical.html#condition-clinical-active\&quot;&gt;Condition Clinical Status Codes&lt;/a&gt; active: Active&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1011&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/condition.html\&quot;&gt;Condition&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;category&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html#condition-category-encounter-diagnosis\&quot;&gt;Condition Category Codes&lt;/a&gt; encounter-diagnosis: Encounter Diagnosis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;clinicalStatus&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-condition-clinical.html#condition-clinical-active\&quot;&gt;Condition Clinical Status Codes&lt;/a&gt; active: Active&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1012&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/encounter.html\&quot;&gt;Encounter&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-finished\&quot;&gt;EncounterStatus&lt;/a&gt; finished: Finished&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;class&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\&quot;&gt;ActCode&lt;/a&gt; AMB: ambulatory&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;type&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.101.12.1061&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/diagnosticreport.html\&quot;&gt;DiagnosticReport&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;diagnosis&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.198.12.1012&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/medication.html\&quot;&gt;Medication&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/medicationrequest.html\&quot;&gt;MedicationRequest&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-medicationrequest-status.html#medicationrequest-status-active\&quot;&gt;Medicationrequest  status&lt;/a&gt; active: Active&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;medication.code&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h2&gt;Contents&lt;/h2&gt;&lt;p&gt;CMS146 Example CQL: &lt;code&gt;No Content&lt;/code&gt; (&lt;code&gt;text/cql&lt;/code&gt;)&lt;/p&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Related Artifacts&lt;/h2&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;depends-on&lt;/td&gt;&lt;td&gt;FHIR Helpers&lt;/td&gt;&lt;td&gt;&lt;code&gt;https://www.hl7.org/fhir/library-fhir-helpers.html&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h2&gt;Parameters&lt;/h2&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;measurePeriod&lt;/td&gt;&lt;td&gt;out&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Period&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;complianceDisplayName&lt;/td&gt;&lt;td&gt;out&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;complianceFrequency&lt;/td&gt;&lt;td&gt;out&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h2&gt;Data Requirements&lt;/h2&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/patient.html\&quot;&gt;Patient&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/condition.html\&quot;&gt;Condition&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;category&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-condition-category.html#condition-category-encounter-diagnosis\&quot;&gt;Condition Category Codes&lt;/a&gt; encounter-diagnosis: Encounter Diagnosis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;clinicalStatus&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-condition-clinical.html#condition-clinical-active\&quot;&gt;Condition Clinical Status Codes&lt;/a&gt; active: Active&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1011&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/condition.html\&quot;&gt;Condition&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;category&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-condition-category.html#condition-category-encounter-diagnosis\&quot;&gt;Condition Category Codes&lt;/a&gt; encounter-diagnosis: Encounter Diagnosis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;clinicalStatus&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-condition-clinical.html#condition-clinical-active\&quot;&gt;Condition Clinical Status Codes&lt;/a&gt; active: Active&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.102.12.1012&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/encounter.html\&quot;&gt;Encounter&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-finished\&quot;&gt;EncounterStatus&lt;/a&gt; finished: Finished&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;class&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\&quot;&gt;ActCode&lt;/a&gt; AMB: ambulatory&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;type&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.101.12.1061&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/diagnosticreport.html\&quot;&gt;DiagnosticReport&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;diagnosis&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.198.12.1012&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/medication.html\&quot;&gt;Medication&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td colspan=\&quot;2\&quot;&gt;&lt;b&gt;Type&lt;/b&gt;: &lt;a href=\&quot;http://hl7.org/fhir/R4/medicationrequest.html\&quot;&gt;MedicationRequest&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #efefef\&quot;&gt;&lt;td&gt;Filter&lt;/td&gt;&lt;td&gt;Value&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;One of these codes: &lt;a href=\&quot;http://hl7.org/fhir/R4/codesystem-medicationrequest-status.html#medicationrequest-status-active\&quot;&gt;Medicationrequest  status&lt;/a&gt; active: Active&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;medication.code&lt;/td&gt;&lt;td&gt;In ValueSet urn:oid:2.16.840.1.113883.3.464.1003.196.12.1001&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;h2&gt;Contents&lt;/h2&gt;&lt;p&gt;CMS146 Example CQL: &lt;code&gt;No Content&lt;/code&gt; (&lt;code&gt;text/cql&lt;/code&gt;)&lt;/p&gt;&lt;/div&gt;&quot;
   ];
-  <a href="http://hl7.org/fhir/R4/library.html#Library.url">fhir:Library.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/Library/CDMLibraryInstance&quot;];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.url">fhir:Library.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/Library/CDMLibraryInstance&quot;];
   <a href="http://hl7.org/fhir/R4/library.html#Library.identifier">fhir:Library.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;official&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
          <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/CodeSystem/identifier-type&quot; ];
+         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type&quot; ];
          <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;SSRI&quot; ]       ]     ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/cql-library&quot; ];
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/platform/cql-library&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;sample-library-CMS146&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">fhir:Identifier.assigner</a> [
        <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;HDC&quot; ]     ]
   ];
-  <a href="http://hl7.org/fhir/R4/library.html#Library.version">fhir:Library.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;7.0.0&quot;];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.version">fhir:Library.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;8.0.0&quot;];
   <a href="http://hl7.org/fhir/R4/library.html#Library.name">fhir:Library.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CMS146_Sample_Cql_Logic_Library&quot;];
   <a href="http://hl7.org/fhir/R4/library.html#Library.title">fhir:Library.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Sample CQL Logic Library for CMS146&quot;];
   <a href="http://hl7.org/fhir/R4/library.html#Library.status">fhir:Library.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
@@ -241,8 +243,8 @@
        <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;logic-library&quot; ]     ]
   ];
   <a href="http://hl7.org/fhir/R4/library.html#Library.date">fhir:Library.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2015-07-22&quot;^^xsd:date];
-  <a href="http://hl7.org/fhir/R4/library.html#Library.publisher">fhir:Library.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Alvearie Team&quot;];
-  <a href="http://hl7.org/fhir/R4/library.html#Library.description">fhir:Library.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Sample CMS146 library for sample measures used to illustrate Alvearie IG usage&quot;];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.publisher">fhir:Library.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;LinuxForHealth Team&quot;];
+  <a href="http://hl7.org/fhir/R4/library.html#Library.description">fhir:Library.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Sample CMS146 library for sample measures used to illustrate LinuxForHealth CDM IG usage&quot;];
   <a href="http://hl7.org/fhir/R4/library.html#Library.jurisdiction">fhir:Library.jurisdiction</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
@@ -267,7 +269,7 @@
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.extension">fhir:Element.extension</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/default-value&quot; ];
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/default-value&quot; ];
        <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pharyngitis Testing&quot; ]     ];
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.name">fhir:ParameterDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;complianceDisplayName&quot; ];
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.use">fhir:ParameterDefinition.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;out&quot; ];
@@ -276,7 +278,7 @@
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.extension">fhir:Element.extension</a> [
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://ibm.com/fhir/cdm/StructureDefinition/default-value&quot; ];
+       <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/default-value&quot; ];
        <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Once yearly&quot; ]     ];
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.name">fhir:ParameterDefinition.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;complianceFrequency&quot; ];
      <a href="http://hl7.org/fhir/R4/metadatatypes.html#ParameterDefinition#ParameterDefinition.use">fhir:ParameterDefinition.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;out&quot; ];
@@ -412,9 +414,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#7.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 16:11+0000">2022-09-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://linuxforhealth.github.io/docs/">LinuxForHealth Team</a>.  Package linuxforhealth.fhir.ig#8.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 10, 2022 16:00+0000">2022-11-10</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

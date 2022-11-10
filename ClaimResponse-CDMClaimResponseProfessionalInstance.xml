@@ -3,34 +3,34 @@
 <ClaimResponse xmlns="http://hl7.org/fhir">
   <id value="CDMClaimResponseProfessionalInstance"/>
   <meta>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id">
       <valueString value="tenant7209"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id">
       <valueString value="rgVCJnQBxvghkKTI8Hzz"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-name">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name">
       <valueString value="TREX"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-client-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-client-id">
       <valueString value="7209"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-record-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-record-id">
       <valueIdentifier>
         <system value="http://acme-health.com/WellnessMedicalCenter"/>
         <value value="7209_07869_e00080779_3938586_2516181"/>
       </valueIdentifier>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/source-file-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/source-file-id">
       <valueString value="e00080739"/>
     </extension>
     <source value="http://acme-health.com/WellnessMedicalCenter"/>
-    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-response"/>
+    <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-claim-response"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ClaimResponse</b><a name="CDMClaimResponseProfessionalInstance"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ClaimResponse "CDMClaimResponseProfessionalInstance" </p><p style="margin-bottom: 0px">Information Source: http://acme-health.com/WellnessMedicalCenter!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cdm-claim-response.html">CDM Claim Response</a></p></div><p><b>Claim Status</b>: LocalClaimStatus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-claim-status#LocalClaimStatus)</span></p><p><b>Days To Process</b>: 15</p><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019721078 (OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: Medical claim; Institutional/Professional unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-claim-type.html">Health Data Connect Claim Type Codes</a>#medical; local-claim-type#MedicalClaimType)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>created</b>: 2017-07-25 05:31:00-0500</p><p><b>insurer</b>: <span></span></p><p><b>outcome</b>: complete</p><p><b>preAuthRef</b>: Y</p><blockquote><p><b>item</b></p><p><b>Copay Exclusion</b>: LocalCopayExclusion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-copay-exclusion#LocalCopayExclusion)</span></p><p><b>Number of Units Allowed</b>: 2</p><p><b>Reinsurance Met Indicator</b>: Y</p><p><b>Utilization Review</b>: LocalUtilizationReviewCd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-utilization-review#LocalUtilizationReviewCd)</span></p><p><b>itemSequence</b>: 1</p><blockquote><p><b>adjudication</b></p><p><b>category</b>: Coinsurance <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#coinsurance)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Copayment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#copay)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>25</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Deductible Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#deductible)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Summary <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#summary)</span></p><p><b>reason</b>: LocalEOB <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-explanation-of-benefits#LocalEOB)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>Savings Type</b>: LocalSavingsType <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-savings-type#LocalSavingsType)</span></p><p><b>category</b>: Third Party Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#third-party)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Allowed Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#allowed)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>125</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Submitted <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#submitted)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>165</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Net Payment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#net-payment)</span></p><p><b>reason</b>: M2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-RARC.html">X12 Remittance Advice Remark Codes</a>#M2; <a href="http://terminology.hl7.org/3.1.0/CodeSystem-RARC.html">X12 Remittance Advice Remark Codes</a>#N16; local-explanation-of-benefits#LocalEOB; local-denied-reason#LocalDeniedReason)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>100</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Discount Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#discount)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>40</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Fee For Service Equivalent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#ffs-equivalent)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Fully Insured Payment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#fully-insured-payment)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Healthcare Reimbursement Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#healthcare-reimbursement)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Healthcare Savings Account <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#healthcare-savings-account)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Medicare Allowed Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#medicare-allowed)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Medicare Coinsurance Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#medicare-coinsurance)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Medicare Deductible Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#medicare-deductible)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Patient Liability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#patient-liability)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Penalty <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#penalty)</span></p><p><b>reason</b>: LocalPenaltyType <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-penalty-type#LocalPenaltyType)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Risk Withhold <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#withhold)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Medicare Paid Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#medicare-paid)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Amount 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded1)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Amount 2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded2)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Amount 3 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded3)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: ITS Access Fee (Out of Network Access Fee) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#out-of-network-access-fee)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: ITS Surcharge Amount (Out of Network Surcharge Amount) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#out-of-network-surcharge-fee)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Reason <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded-reason)</span></p><p><b>reason</b>: LocalExcludedReason1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-excluded-reason#LocalExcludedReason1)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Reason <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded-reason)</span></p><p><b>reason</b>: LocalExcludedReason2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-excluded-reason#LocalExcludedReason2)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Reason <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded-reason)</span></p><p><b>reason</b>: LocalExcludedReason3 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-excluded-reason#LocalExcludedReason3)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Discount Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#discount)</span></p><p><b>reason</b>: LocalDiscountType <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-discount-type#LocalDiscountType)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>Routing Number Code</b>: 12345</p><p><b>category</b>: ITS Access Fee (Out of Network Access Fee) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#out-of-network-access-fee)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Tax Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#tax)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>1</td><td>USD</td></tr></table></blockquote></blockquote><h3>Adjudications</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Category</b></td><td><b>Reason</b></td></tr><tr><td>*</td><td></td><td>In Network <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-paid-in-network-indicator.html">Paid In Network Indicator Codes</a>#in-network)</span></td><td>In Network <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-paid-in-network-indicator.html">Paid In Network Indicator Codes</a>#in-network)</span></td></tr></table><blockquote><p><b>payment</b></p><p><b>Claim Adjustment Type</b>: Adjustment (positive or negative adjustment) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-wh-payer-claim-adjustment-type.html">Health Data Connect Claim Adjustment Type Codes</a>#1)</span></p><p><b>Claim Adjustment Type</b>: LocalClaimAdjType <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-claim-adjustment-type#LocalClaimAdjType)</span></p><p><b>type</b>: Complete <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-ex-paymenttype.html">Example Payment Type Codes</a>#complete)</span></p><p><b>adjustmentReason</b>: local-adj-reason <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-adjustment-reason#local-adj-reason)</span></p><p><b>date</b>: 2017-07-20</p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>100</td></tr></table></blockquote><blockquote><p><b>error</b></p><p><b>code</b>: LocErrorHeader1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-error-header#LocErrorHeader1)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>code</b>: LocErrorHeader2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-error-header#LocErrorHeader2)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>itemSequence</b>: 1</p><p><b>code</b>: LocErrorDetail1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-error-detail#LocErrorDetail1)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>itemSequence</b>: 2</p><p><b>code</b>: LocErrorDetail2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-error-detail#LocErrorDetail2)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>code</b>: LocExceptionHeader1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-exception-header#LocExceptionHeader1)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>code</b>: LocExceptionHeader2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-exception-header#LocExceptionHeader2)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>itemSequence</b>: 3</p><p><b>code</b>: LocExceptionDetail1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-exception-detail#LocExceptionDetail1)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>itemSequence</b>: 4</p><p><b>code</b>: LocExceptionDetail2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-exception-detail#LocExceptionDetail2)</span></p></blockquote></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ClaimResponse</b><a name="CDMClaimResponseProfessionalInstance"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ClaimResponse "CDMClaimResponseProfessionalInstance" </p><p style="margin-bottom: 0px">Information Source: http://acme-health.com/WellnessMedicalCenter!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-cdm-claim-response.html">CDM Claim Response</a></p></div><p><b>Claim Status</b>: LocalClaimStatus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-claim-status#LocalClaimStatus)</span></p><p><b>Days To Process</b>: 15</p><p><b>identifier</b>: Source System Row Identifier: 000000000000000000019721078(use: OFFICIAL)</p><p><b>status</b>: active</p><p><b>type</b>: Medical claim; Institutional/Professional unknown <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-payer-claim-type.html">Payer Claim Type Codes</a>#medical; local-claim-type#MedicalClaimType)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>created</b>: 2017-07-25 05:31:00-0500</p><p><b>insurer</b>: <span></span></p><p><b>outcome</b>: complete</p><p><b>preAuthRef</b>: Y</p><blockquote><p><b>item</b></p><p><b>Copay Exclusion</b>: LocalCopayExclusion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-copay-exclusion#LocalCopayExclusion)</span></p><p><b>Number of Units Allowed</b>: 2</p><p><b>Reinsurance Met Indicator</b>: Y</p><p><b>Utilization Review</b>: LocalUtilizationReviewCd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-utilization-review#LocalUtilizationReviewCd)</span></p><p><b>itemSequence</b>: 1</p><blockquote><p><b>adjudication</b></p><p><b>category</b>: Coinsurance <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#coinsurance)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Copayment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#copay)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>25</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Deductible Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#deductible)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Summary <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#summary)</span></p><p><b>reason</b>: LocalEOB <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-explanation-of-benefits#LocalEOB)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>Savings Type</b>: LocalSavingsType <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-savings-type#LocalSavingsType)</span></p><p><b>category</b>: Third Party Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#third-party)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Allowed Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#allowed)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>125</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Submitted <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#submitted)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>165</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Net Payment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#net-payment)</span></p><p><b>reason</b>: M2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-RARC.html">X12 Remittance Advice Remark Codes</a>#M2; <a href="http://terminology.hl7.org/4.0.0/CodeSystem-RARC.html">X12 Remittance Advice Remark Codes</a>#N16; local-explanation-of-benefits#LocalEOB; local-denied-reason#LocalDeniedReason)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>100</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Discount Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#discount)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>40</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Fee For Service Equivalent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#ffs-equivalent)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Fully Insured Payment <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#fully-insured-payment)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Healthcare Reimbursement Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#healthcare-reimbursement)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Healthcare Savings Account <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#healthcare-savings-account)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Medicare Allowed Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#medicare-allowed)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Medicare Coinsurance Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#medicare-coinsurance)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Medicare Deductible Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#medicare-deductible)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Patient Liability <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#patient-liability)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Penalty <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#penalty)</span></p><p><b>reason</b>: LocalPenaltyType <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-penalty-type#LocalPenaltyType)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Risk Withhold <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#withhold)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Medicare Paid Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#medicare-paid)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Amount 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded1)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Amount 2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded2)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Amount 3 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded3)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: ITS Access Fee (Out of Network Access Fee) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#out-of-network-access-fee)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: ITS Surcharge Amount (Out of Network Surcharge Amount) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#out-of-network-surcharge-fee)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>0</td><td>USD</td></tr></table></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Reason <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded-reason)</span></p><p><b>reason</b>: LocalExcludedReason1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-excluded-reason#LocalExcludedReason1)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Reason <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded-reason)</span></p><p><b>reason</b>: LocalExcludedReason2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-excluded-reason#LocalExcludedReason2)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Excluded Reason <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#excluded-reason)</span></p><p><b>reason</b>: LocalExcludedReason3 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-excluded-reason#LocalExcludedReason3)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Discount Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#discount)</span></p><p><b>reason</b>: LocalDiscountType <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-discount-type#LocalDiscountType)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>Routing Number Code</b>: 12345</p><p><b>category</b>: ITS Access Fee (Out of Network Access Fee) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#out-of-network-access-fee)</span></p></blockquote><blockquote><p><b>adjudication</b></p><p><b>category</b>: Tax Amount <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-adjudication-category.html">Adjudication Category Codes</a>#tax)</span></p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Currency</b></td></tr><tr><td>*</td><td>1</td><td>USD</td></tr></table></blockquote></blockquote><h3>Adjudications</h3><table class="grid"><tr><td>-</td><td><b>Extension</b></td><td><b>Category</b></td><td><b>Reason</b></td></tr><tr><td>*</td><td></td><td>In Network <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-paid-in-network-indicator.html">Paid In Network Indicator Codes</a>#in-network)</span></td><td>In Network <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-paid-in-network-indicator.html">Paid In Network Indicator Codes</a>#in-network)</span></td></tr></table><blockquote><p><b>payment</b></p><p><b>Claim Adjustment Type</b>: Adjustment (positive or negative adjustment) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-payer-claim-adjustment-type.html">Payer Claim Adjustment Type Codes</a>#1)</span></p><p><b>Claim Adjustment Type</b>: LocalClaimAdjType <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-claim-adjustment-type#LocalClaimAdjType)</span></p><p><b>type</b>: Complete <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-ex-paymenttype.html">Example Payment Type Codes</a>#complete)</span></p><p><b>adjustmentReason</b>: local-adj-reason <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-adjustment-reason#local-adj-reason)</span></p><p><b>date</b>: 2017-07-20</p><h3>Amounts</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>100</td></tr></table></blockquote><blockquote><p><b>error</b></p><p><b>code</b>: LocErrorHeader1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-error-header#LocErrorHeader1)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>code</b>: LocErrorHeader2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-error-header#LocErrorHeader2)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>itemSequence</b>: 1</p><p><b>code</b>: LocErrorDetail1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-error-detail#LocErrorDetail1)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>itemSequence</b>: 2</p><p><b>code</b>: LocErrorDetail2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-error-detail#LocErrorDetail2)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>code</b>: LocExceptionHeader1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-exception-header#LocExceptionHeader1)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>code</b>: LocExceptionHeader2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-exception-header#LocExceptionHeader2)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>itemSequence</b>: 3</p><p><b>code</b>: LocExceptionDetail1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-exception-detail#LocExceptionDetail1)</span></p></blockquote><blockquote><p><b>error</b></p><p><b>itemSequence</b>: 4</p><p><b>code</b>: LocExceptionDetail2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (local-exception-detail#LocExceptionDetail2)</span></p></blockquote></div>
   </text>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/claim-status">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-status">
     <valueCodeableConcept>
       <coding>
         <system value="http://acme-health.com/CodeSystem/local-claim-status"/>
@@ -38,14 +38,14 @@
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/days-to-process">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/days-to-process">
     <valueInteger value="15"/>
   </extension>
   <identifier>
     <use value="official"/>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="SSRI"/>
       </coding>
     </type>
@@ -58,7 +58,7 @@
   <status value="active"/>
   <type>
     <coding>
-      <system value="http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type"/>
+      <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-type"/>
       <code value="medical"/>
     </coding>
     <coding>
@@ -81,7 +81,7 @@
   <outcome value="complete"/>
   <preAuthRef value="Y"/>
   <item>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/copay-exclusion">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/copay-exclusion">
       <valueCodeableConcept>
         <coding>
           <system value="http://acme-health.com/CodeSystem/local-copay-exclusion"/>
@@ -89,13 +89,13 @@
         </coding>
       </valueCodeableConcept>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/number-of-units-allowed">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/number-of-units-allowed">
       <valueInteger value="2"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reinsurance-met-indicator">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reinsurance-met-indicator">
       <valueString value="Y"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/utilization-review">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/utilization-review">
       <valueCodeableConcept>
         <coding>
           <system value="http://acme-health.com/CodeSystem/local-utilization-review"/>
@@ -107,7 +107,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="coinsurance"/>
         </coding>
       </category>
@@ -119,7 +119,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="copay"/>
         </coding>
       </category>
@@ -131,7 +131,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="deductible"/>
         </coding>
       </category>
@@ -143,7 +143,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="summary"/>
         </coding>
       </category>
@@ -155,7 +155,7 @@
       </reason>
     </adjudication>
     <adjudication>
-      <extension url="http://ibm.com/fhir/cdm/StructureDefinition/savings-type">
+      <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/savings-type">
         <valueCodeableConcept>
           <coding>
             <system value="http://acme-health.com/CodeSystem/local-savings-type"/>
@@ -165,7 +165,7 @@
       </extension>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="third-party"/>
         </coding>
       </category>
@@ -177,7 +177,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="allowed"/>
         </coding>
       </category>
@@ -189,7 +189,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="submitted"/>
         </coding>
       </category>
@@ -201,7 +201,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="net-payment"/>
         </coding>
       </category>
@@ -231,7 +231,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="discount"/>
         </coding>
       </category>
@@ -243,7 +243,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="ffs-equivalent"/>
         </coding>
       </category>
@@ -255,7 +255,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="fully-insured-payment"/>
         </coding>
       </category>
@@ -267,7 +267,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="healthcare-reimbursement"/>
         </coding>
       </category>
@@ -279,7 +279,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="healthcare-savings-account"/>
         </coding>
       </category>
@@ -291,7 +291,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="medicare-allowed"/>
         </coding>
       </category>
@@ -303,7 +303,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="medicare-coinsurance"/>
         </coding>
       </category>
@@ -315,7 +315,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="medicare-deductible"/>
         </coding>
       </category>
@@ -327,7 +327,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="patient-liability"/>
         </coding>
       </category>
@@ -339,7 +339,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="penalty"/>
         </coding>
       </category>
@@ -357,7 +357,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="withhold"/>
         </coding>
       </category>
@@ -369,7 +369,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="medicare-paid"/>
         </coding>
       </category>
@@ -381,7 +381,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="excluded1"/>
         </coding>
       </category>
@@ -393,7 +393,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="excluded2"/>
         </coding>
       </category>
@@ -405,7 +405,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="excluded3"/>
         </coding>
       </category>
@@ -417,7 +417,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="out-of-network-access-fee"/>
         </coding>
       </category>
@@ -429,7 +429,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="out-of-network-surcharge-fee"/>
         </coding>
       </category>
@@ -441,7 +441,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="excluded-reason"/>
         </coding>
       </category>
@@ -455,7 +455,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="excluded-reason"/>
         </coding>
       </category>
@@ -469,7 +469,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="excluded-reason"/>
         </coding>
       </category>
@@ -483,7 +483,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="discount"/>
         </coding>
       </category>
@@ -495,12 +495,12 @@
       </reason>
     </adjudication>
     <adjudication>
-      <extension url="http://ibm.com/fhir/cdm/StructureDefinition/routing-number-code">
+      <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/routing-number-code">
         <valueString value="12345"/>
       </extension>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="out-of-network-access-fee"/>
         </coding>
       </category>
@@ -508,7 +508,7 @@
     <adjudication>
       <category>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/adjudication-category"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/adjudication-category"/>
           <code value="tax"/>
         </coding>
       </category>
@@ -519,32 +519,32 @@
     </adjudication>
   </item>
   <adjudication>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/adjudication-date">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/adjudication-date">
       <valueDate value="2017-06-30"/>
     </extension>
     <category>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/paid-in-network-indicator"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/paid-in-network-indicator"/>
         <code value="in-network"/>
       </coding>
     </category>
     <reason>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/paid-in-network-indicator"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/paid-in-network-indicator"/>
         <code value="in-network"/>
       </coding>
     </reason>
   </adjudication>
   <payment>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/claim-adjustment-type">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-adjustment-type">
       <valueCodeableConcept>
         <coding>
-          <system value="http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-adjustment-type"/>
+          <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-adjustment-type"/>
           <code value="1"/>
         </coding>
       </valueCodeableConcept>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/claim-adjustment-type">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-adjustment-type">
       <valueCodeableConcept>
         <coding>
           <system value="http://acme-health.com/CodeSystem/local-claim-adjustment-type"/>

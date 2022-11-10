@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ALVEARIE.FHIR.IG\Matched Patient Example - JSON Representation - FHIR v4.0.1</title>
+    <title>LINUXFORHEALTH.FHIR.IG\Matched Patient Example - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,7 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/alvearie.css" rel="stylesheet"/>
+<link href="assets/css/linuxforhealth-fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -49,19 +49,19 @@
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a id="alvearie-logo" no-external="true">
+  <a id="linuxforhealth-logo" no-external="true">
     <!-- 
     // New logo image reference should go here
-    // Place image in data/alvearie-template/content/assets/images folder
-    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    // Place image in data/linuxforhealth-template/content/assets/images folder
+    <img height="60" alt="LinuxForHealth" src="assets/images/linuxforhealth-logo.png" style="float:left"/>
     -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">LinuxForHealth FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">7.0.0 - draft
+            <span style="display:inline-block;">8.0.0 - draft
 
 
 
@@ -126,7 +126,8 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v7.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">LinuxForHealth FHIR Implementation Guide - Local Development build (v8.0.0). See the <a href="http://linuxforhealth.org/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -141,6 +142,7 @@
   <li>
     <a href="Patient-MatchedPatientExample.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -193,63 +195,63 @@
 
 
 
-  <pre class="json"><code class="language-json">
+  <pre class="json" style="white-space: pre; overflow: hidden"><code>
 {
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resourceType</a>" : "Patient",
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "MatchedPatientExample",
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "99999"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "b069a545-9506-40c6-8498-23de2e189143"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-organization",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "HDC"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-type",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Matching"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Patient Matching"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-version",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "1.0"
       },
       {
-        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp",
         "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2020-02-12T03:01:00Z"
       }
     ],
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "http://ibm.com/fhir/primary/patient-match",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "http://linuxforhealth.org/platform/primary/patient-match",
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-match-patient"
+      "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-match-patient"
     ],
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.tag">tag</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification",
         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "derived"
       }
     ]
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Maggie Match &lt;/b&gt; female, DoB: 1990-01-04 ( Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (OFFICIAL))&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;&lt;b&gt;Maggie Match &lt;/b&gt; female, DoB: 1990-01-04 ( Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222(use: OFFICIAL))&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender identity of the person, which will not be known until the newborn is older.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-sex-assigned-at-birth.html\&quot;&gt;Sex Assigned At Birth:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth female}\&quot;&gt;Female&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization).\&quot;&gt;See Also:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference: &lt;a href=\&quot;Patient-MatchedPatientSource-EMR2-PatientB.html\&quot;&gt;Patient/MatchedPatientSource-EMR2-PatientB&lt;/a&gt; \&quot; MATCH\&quot;&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method: &lt;span title=\&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method automated}\&quot;&gt;Automoted matching algorithm or model identified the match&lt;/span&gt;&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level: &lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\&quot;&gt;MatchGrade&lt;/a&gt; certain: Certain Match&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score: 100&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period: 2020-02-12 --&amp;gt; (ongoing)&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=&lt;a href=\&quot;Patient-MatchedPatientSource-EMR2-PatientC.html\&quot;&gt;Patient/MatchedPatientSource-EMR2-PatientC&lt;/a&gt; \&quot; MATCH\&quot;; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Exact name match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\&quot;&gt;MatchGrade&lt;/a&gt; certain: Certain Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=100&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=&lt;a href=\&quot;Patient-MatchedPatientSource-EMR2-PatientC.html\&quot;&gt;Patient/MatchedPatientSource-EMR2-PatientC&lt;/a&gt; \&quot; MATCH\&quot;; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Fuzzy match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\&quot;&gt;MatchGrade&lt;/a&gt; certain: Certain Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=100&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Patient Match&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: MDM&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-01-01 03:01:00+0000&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization).\&quot;&gt;See Also:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference: &lt;a href=\&quot;Patient-MatchedPatientSource-EMR2-PatientB.html\&quot;&gt;Patient/MatchedPatientSource-EMR2-PatientB&lt;/a&gt; \&quot; MATCH\&quot;&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method: &lt;span title=\&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method automated}\&quot;&gt;Automoted matching algorithm or model identified the match&lt;/span&gt;&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level: &lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\&quot;&gt;MatchGrade&lt;/a&gt; certain: Certain Match&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score: 100&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period: 2020-02-12 --&amp;gt; (ongoing)&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=&lt;a href=\&quot;Patient-MatchedPatientSource-EMR2-PatientC.html\&quot;&gt;Patient/MatchedPatientSource-EMR2-PatientC&lt;/a&gt; \&quot; MATCH\&quot;; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Exact name match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\&quot;&gt;MatchGrade&lt;/a&gt; certain: Certain Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=100&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=&lt;a href=\&quot;Patient-MatchedPatientSource-EMR2-PatientC.html\&quot;&gt;Patient/MatchedPatientSource-EMR2-PatientC&lt;/a&gt; \&quot; MATCH\&quot;; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Fuzzy match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\&quot;&gt;MatchGrade&lt;/a&gt; certain: Certain Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=100&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Patient Match&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: MDM&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-01-01 03:01:00+0000&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization).\&quot;&gt;See Also:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference: &lt;a href=\&quot;Patient-MatchedPatientSource-EMR1-PatientA.html\&quot;&gt;Patient/MatchedPatientSource-EMR1-PatientA&lt;/a&gt; \&quot; MATCH\&quot;&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method: &lt;span title=\&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method manual}\&quot;&gt;Manual matching performed by a human&lt;/span&gt;&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level: &lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\&quot;&gt;MatchGrade&lt;/a&gt; certain: Certain Match&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score: 100&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period: 2020-04-18 --&amp;gt; (ongoing)&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=&lt;a href=\&quot;Patient-MatchedPatientSource-EMR2-PatientB.html\&quot;&gt;Patient/MatchedPatientSource-EMR2-PatientB&lt;/a&gt; \&quot; MATCH\&quot;; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Exact name match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certainly-not\&quot;&gt;MatchGrade&lt;/a&gt; certainly-not: Certainly Not a Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=0&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=&lt;a href=\&quot;Patient-MatchedPatientSource-EMR2-PatientB.html\&quot;&gt;Patient/MatchedPatientSource-EMR2-PatientB&lt;/a&gt; \&quot; MATCH\&quot;; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Fuzzy match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-possible\&quot;&gt;MatchGrade&lt;/a&gt; possible: Possible Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=70&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=&lt;a href=\&quot;Patient-MatchedPatientSource-EMR2-PatientB.html\&quot;&gt;Patient/MatchedPatientSource-EMR2-PatientB&lt;/a&gt; \&quot; MATCH\&quot;; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Manual User Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\&quot;&gt;MatchGrade&lt;/a&gt; certain: Certain Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=100&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Manual Patient Match&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: Web Portal&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-04-18 10:35:01+0000&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization).\&quot;&gt;See Also:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference: &lt;a href=\&quot;Patient-MatchedPatientSource-EMR3-PatientD.html\&quot;&gt;Patient/MatchedPatientSource-EMR3-PatientD&lt;/a&gt; \&quot; MATCH\&quot;&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method: &lt;span title=\&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method manual}\&quot;&gt;Manual matching performed by a human&lt;/span&gt;&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level: &lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certainly-not\&quot;&gt;MatchGrade&lt;/a&gt; certainly-not: Certainly Not a Match&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score: 0&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period: 2020-04-14 --&amp;gt; 2020-04-18&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=&lt;a href=\&quot;Patient-MatchedPatientSource-EMR1-PatientA.html\&quot;&gt;Patient/MatchedPatientSource-EMR1-PatientA&lt;/a&gt; \&quot; MATCH\&quot;; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Exact name match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certainly-not\&quot;&gt;MatchGrade&lt;/a&gt; certainly-not: Certainly Not a Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=0&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=&lt;a href=\&quot;Patient-MatchedPatientSource-EMR1-PatientA.html\&quot;&gt;Patient/MatchedPatientSource-EMR1-PatientA&lt;/a&gt; \&quot; MATCH\&quot;; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Fuzzy match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-probable\&quot;&gt;MatchGrade&lt;/a&gt; probable: Probable Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=80&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=&lt;a href=\&quot;Patient-MatchedPatientSource-EMR1-PatientA.html\&quot;&gt;Patient/MatchedPatientSource-EMR1-PatientA&lt;/a&gt; \&quot; MATCH\&quot;; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Manual User Split; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=&lt;a href=\&quot;http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certainly-not\&quot;&gt;MatchGrade&lt;/a&gt; certainly-not: Certainly Not a Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=0&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/split-method: &lt;span title=\&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method manual}\&quot;&gt;Manual matching performed by a human&lt;/span&gt;&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Manual Patient Split&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: Web Portal&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-04-18 10:36:02+0000&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/sex-assigned-at-birth",
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "female"
           }
         ]
@@ -258,35 +260,35 @@
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
             "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR2-PatientB"
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-method",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/match-method",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "automated"
               }
             ]
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certain"
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 100
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-period",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePeriod</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2020-02-12"
           }
@@ -294,110 +296,110 @@
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR2-PatientC"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Exact name match"
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certain"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 100
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-detail"
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail"
         },
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR2-PatientC"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Fuzzy match"
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certain"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 100
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-detail"
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-organization",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "HDC"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-type",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Patient Match"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "MDM"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-version",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "1.0"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2020-01-01T03:01:00Z"
         }
       ],
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/see-also"
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/see-also"
     },
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
             "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR2-PatientB"
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-method",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/match-method",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "automated"
               }
             ]
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certain"
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 100
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-period",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePeriod</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2020-02-12"
           }
@@ -405,110 +407,110 @@
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR2-PatientC"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Exact name match"
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certain"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 100
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-detail"
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail"
         },
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR2-PatientC"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Fuzzy match"
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certain"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 100
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-detail"
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-organization",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "HDC"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-type",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Patient Match"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "MDM"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-version",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "1.0"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2020-01-01T03:01:00Z"
         }
       ],
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/see-also"
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/see-also"
     },
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
             "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR1-PatientA"
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-method",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/match-method",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "manual"
               }
             ]
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certain"
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 100
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-period",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePeriod</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2020-04-18"
           }
@@ -516,136 +518,136 @@
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR2-PatientB"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Exact name match"
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certainly-not"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 0
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-detail"
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail"
         },
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR2-PatientB"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Fuzzy match"
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "possible"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 70
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-detail"
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail"
         },
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR2-PatientB"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Manual User Match"
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certain"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 100
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-detail"
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-organization",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "HDC"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-type",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Manual Patient Match"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Web Portal"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-version",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "1.0"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2020-04-18T10:35:01Z"
         }
       ],
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/see-also"
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/see-also"
     },
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
             "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR3-PatientD"
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-method",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/match-method",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "manual"
               }
             ]
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certainly-not"
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 0
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-period",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePeriod</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a>" : "2020-04-14",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">end</a>" : "2020-04-18"
@@ -654,114 +656,114 @@
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR1-PatientA"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Exact name match"
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certainly-not"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 0
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-detail"
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail"
         },
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR1-PatientA"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Fuzzy match"
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "probable"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 80
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-detail"
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail"
         },
         {
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueReference</a>" : {
                 "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/MatchedPatientSource-EMR1-PatientA"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Manual User Split"
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/match-grade",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "certainly-not"
               }
             },
             {
-              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score",
               "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDecimal</a>" : 0
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/match-detail"
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/split-method",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/split-method",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
             "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
               {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/match-method",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method",
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "manual"
               }
             ]
           }
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-organization",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "HDC"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-type",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Manual Patient Split"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-name",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Web Portal"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-version",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "1.0"
         },
         {
-          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp",
+          "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp",
           "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDateTime</a>" : "2020-04-18T10:36:02Z"
         }
       ],
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ibm.com/fhir/cdm/StructureDefinition/see-also"
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://linuxforhealth.org/fhir/cdm/StructureDefinition/see-also"
     }
   ],
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
@@ -770,12 +772,12 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MDI"
           }
         ]
       },
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://ibm.com/fhir/primary/patient-match-identifier",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://linuxforhealth.org/platform/patient-match-identifier",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "c82a8fce-11db-4396-b10c-1150abd1a222",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>" : {
         "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "HDC"
@@ -823,9 +825,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#7.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 16:11+0000">2022-09-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://linuxforhealth.github.io/docs/">LinuxForHealth Team</a>.  Package linuxforhealth.fhir.ig#8.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 10, 2022 16:00+0000">2022-11-10</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

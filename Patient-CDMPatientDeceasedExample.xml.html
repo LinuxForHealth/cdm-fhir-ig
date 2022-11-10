@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ALVEARIE.FHIR.IG\CDM Patient Deceased Example - XML Representation - FHIR v4.0.1</title>
+    <title>LINUXFORHEALTH.FHIR.IG\CDM Patient Deceased Example - XML Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,7 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/alvearie.css" rel="stylesheet"/>
+<link href="assets/css/linuxforhealth-fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -49,19 +49,19 @@
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a id="alvearie-logo" no-external="true">
+  <a id="linuxforhealth-logo" no-external="true">
     <!-- 
     // New logo image reference should go here
-    // Place image in data/alvearie-template/content/assets/images folder
-    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    // Place image in data/linuxforhealth-template/content/assets/images folder
+    <img height="60" alt="LinuxForHealth" src="assets/images/linuxforhealth-logo.png" style="float:left"/>
     -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">LinuxForHealth FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">7.0.0 - draft
+            <span style="display:inline-block;">8.0.0 - draft
 
 
 
@@ -126,7 +126,8 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v7.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">LinuxForHealth FHIR Implementation Guide - Local Development build (v8.0.0). See the <a href="http://linuxforhealth.org/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
 
 
 
@@ -141,6 +142,7 @@
   <li>
     <a href="Patient-CDMPatientDeceasedExample.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -193,30 +195,39 @@
 
 
 
-  <pre class="xml"><code class="language-xml">
+  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
 
 &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;CDMPatientDeceasedExample&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/tenant-id&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;99999&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;b069a545-9506-40c6-5555-23de2e189143&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://acme-health.com/emr1&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a> <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient&quot;/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Firstname Lastname &lt;/b&gt; male, DoB: 1960-02-29 ( Source System Row Identifier: unencryp-id5555 (OFFICIAL))&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;&lt;b&gt;Firstname Lastname &lt;/b&gt; male, DoB: 1960-02-29 ( Source System Row Identifier: unencryp-id5555(use: OFFICIAL))&lt;/p&gt;&lt;hr/&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Record is active&quot;&gt;Active:&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Known status of Patient&quot;&gt;Deceased:&lt;/td&gt;&lt;td&gt;2020-02-28 12:00:00+0000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Known Marital status of Patient&quot;&gt;Marital Status:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;span title=&quot;Codes: {http://acme-health.com/CodeSystem/local-marital-status Married}&quot;&gt;Married&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Other Ids (see the one above)&quot;&gt;Other Ids:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;Source System Row Identifier: encryp-id5555(use: SECONDARY)&lt;/li&gt;&lt;li&gt;Medical record number: 1011115555(use: OFFICIAL)&lt;/li&gt;&lt;li&gt;Social Beneficiary Identifier: 0001225555(use: OFFICIAL)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Ways to contact the Patient&quot;&gt;Contact Details:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;216-248-5555(MOBILE)&lt;/li&gt;&lt;li&gt;ph: 216-345-5555(HOME)&lt;/li&gt;&lt;li&gt;ph: 216-555-5555(WORK)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;mailto:flastname@fakemail.com&quot;&gt;flastname@fakemail.com&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Cardington Ohio 43315 US (HOME)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Languages spoken&quot;&gt;Language:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;span title=&quot;Codes: {urn:ietf:bcp:47 en}&quot;&gt;English&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Patient Links&quot;&gt;Links:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;General Practitioner: &lt;a href=&quot;PractitionerRole-CDMPractitionerRole-EMR-PCP.html&quot;&gt;PractitionerRole/CDMPractitionerRole-EMR-PCP&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Gender, typically described in terms of masculinity and femininity, is a social construction that varies across different cultures and over time.  This value is often used for identity purposes and should be collected directly from the patient.&quot;&gt;&lt;a href=&quot;StructureDefinition-identified-pronouns.html&quot;&gt;Identified Pronouns:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;they&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Sex as defined or amended on the patient's legal documentation, for example a birth certificate or driver's license&quot;&gt;Legally Documented Sex:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-sex: &lt;span title=&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth male}&quot;&gt;Male&lt;/span&gt;&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-source: &lt;span title=&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/legal-document-source passport}&quot;&gt;Official document issued by a government, certifying identity and citizenship&lt;/span&gt;&lt;/li&gt;&lt;li&gt;http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-system: &lt;span title=&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/legal-document-system us-gov}&quot;&gt;U.S. Federal Goverment&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.&quot;&gt;US Core Ethnicity Extension:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;ombCategory: &lt;a href=&quot;http://hl7.org/fhir/us/core/STU3.1/CodeSystem-cdcrec.html#cdcrec-2186-5&quot;&gt;Race &amp;amp; Ethnicity - CDC&lt;/a&gt; 2186-5: Not Hispanic or Latino&lt;/li&gt;&lt;li&gt;text: Not Hispanic or Latino&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender identity of the person, which will not be known until the newborn is older.&quot;&gt;&lt;a href=&quot;StructureDefinition-sex-assigned-at-birth.html&quot;&gt;Sex Assigned At Birth:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth male}&quot;&gt;Male&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Patient's physical, romantic, and/or emotional attraction towards other people&quot;&gt;&lt;a href=&quot;StructureDefinition-sexual-orientation.html&quot;&gt;SexualOrientation:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sexual-orientation asexual}&quot;&gt;Asexual&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Code to identify if the person is a U.S. Citizen&quot;&gt;&lt;a href=&quot;StructureDefinition-patient-citizenship.html&quot;&gt;Patient Citizenship:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=&quot;Codes: {urn:iso:std:iso:3166 US}&quot;&gt;United States of America&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Customer-specific code for the race of the person&quot;&gt;&lt;a href=&quot;StructureDefinition-local-race-cd.html&quot;&gt;Local Race Code:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=&quot;Codes: {http://acme-health.com/CodeSystem/local-race-code White}&quot;&gt;White&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Customer-specific code for the citizenship status of the person&quot;&gt;&lt;a href=&quot;StructureDefinition-citizen-status.html&quot;&gt;Citizen Status:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=&quot;Codes: {http://acme-health.com/CodeSystem/local-citizen-status LocalCitizenStatusCd}&quot;&gt;LocalCitizenStatusCd&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;The gender the patient identifies with. The Patient's gender identity is used as guidance (e.g. for staff) about how to interact with the patient.&quot;&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/extension-patient-genderidentity.html&quot;&gt;genderIdentity:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=&quot;Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/gender-identity gender-neutral}&quot;&gt;Gender-neutral&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:
+
+ - American Indian or Alaska Native
+ - Asian
+ - Black or African American
+ - Native Hawaiian or Other Pacific Islander
+ - White.&quot;&gt;US Core Race Extension:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;ombCategory: &lt;a href=&quot;http://hl7.org/fhir/us/core/STU3.1/CodeSystem-cdcrec.html#cdcrec-2106-3&quot;&gt;Race &amp;amp; Ethnicity - CDC&lt;/a&gt; 2106-3: White&lt;/li&gt;&lt;li&gt;text: White&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/sex-assigned-at-birth&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;male&quot;/&gt;
       &lt;/coding&gt;
     &lt;/valueCodeableConcept&gt;
@@ -225,61 +236,65 @@
              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/patient-genderIdentity&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/gender-identity&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/gender-identity&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;gender-neutral&quot;/&gt;
       &lt;/coding&gt;
     &lt;/valueCodeableConcept&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/identified-pronouns&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/identified-pronouns&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;they&quot;/&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/identified-pronouns&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/identified-pronouns&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ze&quot;/&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/legally-documented-sex&quot;&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/documented-sex&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/legally-documented-sex&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-sex&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth&quot;/&gt;
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;male&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/documented-source&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-source&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/legal-document-source&quot;/&gt;
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/legal-document-source&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;passport&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/documented-system&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/documented-system&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
-                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/legal-document-system&quot;/&gt;
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/legal-document-system&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;us-gov&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/sexual-orientation&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/sexual-orientation&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/sexual-orientation&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/sexual-orientation&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;asexual&quot;/&gt;
       &lt;/coding&gt;
     &lt;/valueCodeableConcept&gt;
   &lt;/extension&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-race&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-race&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;ombCategory&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:oid:2.16.840.1.113883.6.238&quot;/&gt;
@@ -304,7 +319,8 @@
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Not Hispanic or Latino&quot;/&gt;
     &lt;/extension&gt;
   &lt;/extension&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/local-race-cd&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/local-race-cd&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://acme-health.com/CodeSystem/local-race-code&quot;/&gt;
@@ -313,7 +329,7 @@
     &lt;/valueCodeableConcept&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
-             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/patient-citizenship&quot;&gt;
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-citizenship&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
@@ -321,22 +337,26 @@
       &lt;/coding&gt;
     &lt;/valueCodeableConcept&gt;
   &lt;/extension&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/citizen-status&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/citizen-status&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://acme-health.com/CodeSystem/local-citizen-status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://acme-health.com/CodeSystem/local-citizen-status&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;LocalCitizenStatusCd&quot;/&gt;
       &lt;/coding&gt;
     &lt;/valueCodeableConcept&gt;
   &lt;/extension&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/encrypted-state&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/identifier-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SSRI&quot;/&gt;
       &lt;/coding&gt;
     &lt;/type&gt;
@@ -347,13 +367,15 @@
     &lt;/assigner&gt;
   &lt;/identifier&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/encrypted-state&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;secondary&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/identifier-type&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SSRI&quot;/&gt;
       &lt;/coding&gt;
     &lt;/type&gt;
@@ -456,18 +478,22 @@
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>=&quot;1960-02-29&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">deceasedDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2020-02-28T00:00:00Z&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/county-code&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/county-code&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://acme-health.com/CodeSystem/local-county-code&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://acme-health.com/CodeSystem/local-county-code&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;001&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
     &lt;/extension&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/region-code&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/region-code&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://acme-health.com/CodeSystem/local-region-code&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://acme-health.com/CodeSystem/local-region-code&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MW&quot;/&gt;
         &lt;/coding&gt;
       &lt;/valueCodeableConcept&gt;
@@ -490,7 +516,8 @@
     &lt;/coding&gt;
   &lt;/maritalStatus&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.communication">communication</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.communication.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/language-rank&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.communication.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/language-rank&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePositiveInt</a> <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">value</a>=&quot;1&quot;/&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.communication.language">language</a>&gt;
@@ -501,14 +528,16 @@
     &lt;/language&gt;
   &lt;/communication&gt;
   &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.generalPractitioner">generalPractitioner</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/reference-code&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCoding</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://ibm.com/fhir/cdm/CodeSystem/attribution-source&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-source&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;client-emr&quot;/&gt;
       &lt;/valueCoding&gt;
     &lt;/extension&gt;
     &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.extension">extension</a>
-               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://ibm.com/fhir/cdm/StructureDefinition/reference-period&quot;&gt;
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-period&quot;&gt;
       &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valuePeriod</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2019-01-01&quot;/&gt;
       &lt;/valuePeriod&gt;
@@ -545,9 +574,9 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#7.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 16:11+0000">2022-09-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://linuxforhealth.github.io/docs/">LinuxForHealth Team</a>.  Package linuxforhealth.fhir.ig#8.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 10, 2022 16:00+0000">2022-11-10</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

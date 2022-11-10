@@ -5,21 +5,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/measure-population-type> a fhir:ValueSet;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/measure-population-type> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "measure-population-type"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-measure-population.html\"><code>http://terminology.hl7.org/CodeSystem/measure-population</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-measure-population-type.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/measure-population-type</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-measure-population.html\"><code>http://terminology.hl7.org/CodeSystem/measure-population</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-measure-population-type.html\"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/measure-population-type</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/measure-population-type"];
-  fhir:ValueSet.version [ fhir:value "7.0.0"];
+  fhir:ValueSet.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/measure-population-type"];
+  fhir:ValueSet.version [ fhir:value "8.0.0"];
   fhir:ValueSet.name [ fhir:value "MeasurePopulationTypeValueSet"];
   fhir:ValueSet.title [ fhir:value "Measure Population Type Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Alvearie Team"];
-  fhir:ValueSet.description [ fhir:value "Health Data Connect measure population types"];
+  fhir:ValueSet.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "LinuxForHealth Team"];
+  fhir:ValueSet.description [ fhir:value "LinuxForHealth measure population types"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -34,13 +34,13 @@
        fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/measure-population" ]
      ], [
        fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/measure-population-type" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/measure-population-type" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/measure-population-type.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/measure-population-type.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

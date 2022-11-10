@@ -5,62 +5,62 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Patient/MatchedPatientExample> a fhir:Patient;
+<http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientExample> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "MatchedPatientExample"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization" ];
        fhir:Extension.valueString [ fhir:value "HDC" ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type" ];
        fhir:Extension.valueString [ fhir:value "Matching" ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "Patient Matching" ]
      ], [
        fhir:index 5;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version" ];
        fhir:Extension.valueString [ fhir:value "1.0" ]
      ], [
        fhir:index 6;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp" ];
        fhir:Extension.valueDateTime [ fhir:value "2020-02-12T03:01:00Z"^^xsd:dateTime ]
      ];
-     fhir:Meta.source [ fhir:value "http://ibm.com/fhir/primary/patient-match" ];
+     fhir:Meta.source [ fhir:value "http://linuxforhealth.org/platform/primary/patient-match" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-match-patient";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-match-patient";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-match-patient>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-match-patient>
      ];
      fhir:Meta.tag [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification" ];
+       fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification" ];
        fhir:Coding.code [ fhir:value "derived" ]
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Maggie Match </b> female, DoB: 1990-01-04 ( Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222 (OFFICIAL))</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Maggie Match </b> female, DoB: 1990-01-04 ( Match Data Identifier: c82a8fce-11db-4396-b10c-1150abd1a222(use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender identity of the person, which will not be known until the newborn is older.\"><a href=\"StructureDefinition-sex-assigned-at-birth.html\">Sex Assigned At Birth:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth female}\">Female</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization).\">See Also:</td><td colspan=\"3\"><ul><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference: <a href=\"Patient-MatchedPatientSource-EMR2-PatientB.html\">Patient/MatchedPatientSource-EMR2-PatientB</a> \" MATCH\"</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method automated}\">Automoted matching algorithm or model identified the match</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level: <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\">MatchGrade</a> certain: Certain Match</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score: 100</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period: 2020-02-12 --&gt; (ongoing)</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=<a href=\"Patient-MatchedPatientSource-EMR2-PatientC.html\">Patient/MatchedPatientSource-EMR2-PatientC</a> \" MATCH\"; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Exact name match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\">MatchGrade</a> certain: Certain Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=100</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=<a href=\"Patient-MatchedPatientSource-EMR2-PatientC.html\">Patient/MatchedPatientSource-EMR2-PatientC</a> \" MATCH\"; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Fuzzy match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\">MatchGrade</a> certain: Certain Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=100</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Patient Match</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: MDM</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-01-01 03:01:00+0000</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization).\">See Also:</td><td colspan=\"3\"><ul><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference: <a href=\"Patient-MatchedPatientSource-EMR2-PatientB.html\">Patient/MatchedPatientSource-EMR2-PatientB</a> \" MATCH\"</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method automated}\">Automoted matching algorithm or model identified the match</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level: <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\">MatchGrade</a> certain: Certain Match</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score: 100</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period: 2020-02-12 --&gt; (ongoing)</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=<a href=\"Patient-MatchedPatientSource-EMR2-PatientC.html\">Patient/MatchedPatientSource-EMR2-PatientC</a> \" MATCH\"; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Exact name match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\">MatchGrade</a> certain: Certain Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=100</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=<a href=\"Patient-MatchedPatientSource-EMR2-PatientC.html\">Patient/MatchedPatientSource-EMR2-PatientC</a> \" MATCH\"; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Fuzzy match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\">MatchGrade</a> certain: Certain Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=100</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Patient Match</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: MDM</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-01-01 03:01:00+0000</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization).\">See Also:</td><td colspan=\"3\"><ul><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference: <a href=\"Patient-MatchedPatientSource-EMR1-PatientA.html\">Patient/MatchedPatientSource-EMR1-PatientA</a> \" MATCH\"</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method manual}\">Manual matching performed by a human</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level: <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\">MatchGrade</a> certain: Certain Match</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score: 100</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period: 2020-04-18 --&gt; (ongoing)</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=<a href=\"Patient-MatchedPatientSource-EMR2-PatientB.html\">Patient/MatchedPatientSource-EMR2-PatientB</a> \" MATCH\"; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Exact name match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certainly-not\">MatchGrade</a> certainly-not: Certainly Not a Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=<a href=\"Patient-MatchedPatientSource-EMR2-PatientB.html\">Patient/MatchedPatientSource-EMR2-PatientB</a> \" MATCH\"; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Fuzzy match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-possible\">MatchGrade</a> possible: Possible Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=70</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=<a href=\"Patient-MatchedPatientSource-EMR2-PatientB.html\">Patient/MatchedPatientSource-EMR2-PatientB</a> \" MATCH\"; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Manual User Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certain\">MatchGrade</a> certain: Certain Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=100</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Manual Patient Match</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: Web Portal</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-04-18 10:35:01+0000</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"References matched source entities. Links a matched resource to one or more source resources that refer the same person (patient, practitioner) or entity (location, organization).\">See Also:</td><td colspan=\"3\"><ul><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference: <a href=\"Patient-MatchedPatientSource-EMR3-PatientD.html\">Patient/MatchedPatientSource-EMR3-PatientD</a> \" MATCH\"</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method manual}\">Manual matching performed by a human</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level: <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certainly-not\">MatchGrade</a> certainly-not: Certainly Not a Match</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score: 0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period: 2020-04-14 --&gt; 2020-04-18</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=<a href=\"Patient-MatchedPatientSource-EMR1-PatientA.html\">Patient/MatchedPatientSource-EMR1-PatientA</a> \" MATCH\"; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Exact name match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certainly-not\">MatchGrade</a> certainly-not: Certainly Not a Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=<a href=\"Patient-MatchedPatientSource-EMR1-PatientA.html\">Patient/MatchedPatientSource-EMR1-PatientA</a> \" MATCH\"; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Fuzzy match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-probable\">MatchGrade</a> probable: Probable Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=80</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail: http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to=<a href=\"Patient-MatchedPatientSource-EMR1-PatientA.html\">Patient/MatchedPatientSource-EMR1-PatientA</a> \" MATCH\"; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria=Manual User Split; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level=<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-match-grade.html#match-grade-certainly-not\">MatchGrade</a> certainly-not: Certainly Not a Match; http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score=0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/split-method: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method manual}\">Manual matching performed by a human</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Manual Patient Split</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: Web Portal</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-04-18 10:36:02+0000</li></ul></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/sex-assigned-at-birth" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth" ];
          fhir:Coding.code [ fhir:value "female" ]
        ]
      ]
@@ -68,35 +68,35 @@
      fhir:index 1;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference" ];
        fhir:Extension.valueReference [
-         fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientB>;
+         fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientB>;
          fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR2-PatientB" ]
        ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-method" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-method" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method" ];
            fhir:Coding.code [ fhir:value "automated" ]
          ]
        ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
        fhir:Extension.valueCoding [
          fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
          fhir:Coding.code [ fhir:value "certain" ]
        ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
        fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-period" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period" ];
        fhir:Extension.valuePeriod [
          fhir:Period.start [ fhir:value "2020-02-12"^^xsd:date ]
        ]
@@ -104,109 +104,109 @@
        fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to" ];
          fhir:Extension.valueReference [
-           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientC>;
+           fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientC>;
            fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR2-PatientC" ]
          ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria" ];
          fhir:Extension.valueString [ fhir:value "Exact name match" ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
          fhir:Extension.valueCoding [
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
            fhir:Coding.code [ fhir:value "certain" ]
          ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
          fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail" ]
      ], [
        fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to" ];
          fhir:Extension.valueReference [
-           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientC>;
+           fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientC>;
            fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR2-PatientC" ]
          ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria" ];
          fhir:Extension.valueString [ fhir:value "Fuzzy match" ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
          fhir:Extension.valueCoding [
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
            fhir:Coding.code [ fhir:value "certain" ]
          ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
          fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail" ]
      ], [
        fhir:index 7;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization" ];
        fhir:Extension.valueString [ fhir:value "HDC" ]
      ], [
        fhir:index 8;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type" ];
        fhir:Extension.valueString [ fhir:value "Patient Match" ]
      ], [
        fhir:index 9;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "MDM" ]
      ], [
        fhir:index 10;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version" ];
        fhir:Extension.valueString [ fhir:value "1.0" ]
      ], [
        fhir:index 11;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp" ];
        fhir:Extension.valueDateTime [ fhir:value "2020-01-01T03:01:00Z"^^xsd:dateTime ]
      ];
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/see-also" ]
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/see-also" ]
   ], [
      fhir:index 2;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference" ];
        fhir:Extension.valueReference [
-         fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientB>;
+         fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientB>;
          fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR2-PatientB" ]
        ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-method" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-method" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method" ];
            fhir:Coding.code [ fhir:value "automated" ]
          ]
        ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
        fhir:Extension.valueCoding [
          fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
          fhir:Coding.code [ fhir:value "certain" ]
        ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
        fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-period" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period" ];
        fhir:Extension.valuePeriod [
          fhir:Period.start [ fhir:value "2020-02-12"^^xsd:date ]
        ]
@@ -214,109 +214,109 @@
        fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to" ];
          fhir:Extension.valueReference [
-           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientC>;
+           fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientC>;
            fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR2-PatientC" ]
          ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria" ];
          fhir:Extension.valueString [ fhir:value "Exact name match" ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
          fhir:Extension.valueCoding [
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
            fhir:Coding.code [ fhir:value "certain" ]
          ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
          fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail" ]
      ], [
        fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to" ];
          fhir:Extension.valueReference [
-           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientC>;
+           fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientC>;
            fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR2-PatientC" ]
          ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria" ];
          fhir:Extension.valueString [ fhir:value "Fuzzy match" ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
          fhir:Extension.valueCoding [
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
            fhir:Coding.code [ fhir:value "certain" ]
          ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
          fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail" ]
      ], [
        fhir:index 7;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization" ];
        fhir:Extension.valueString [ fhir:value "HDC" ]
      ], [
        fhir:index 8;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type" ];
        fhir:Extension.valueString [ fhir:value "Patient Match" ]
      ], [
        fhir:index 9;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "MDM" ]
      ], [
        fhir:index 10;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version" ];
        fhir:Extension.valueString [ fhir:value "1.0" ]
      ], [
        fhir:index 11;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp" ];
        fhir:Extension.valueDateTime [ fhir:value "2020-01-01T03:01:00Z"^^xsd:dateTime ]
      ];
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/see-also" ]
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/see-also" ]
   ], [
      fhir:index 3;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference" ];
        fhir:Extension.valueReference [
-         fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR1-PatientA>;
+         fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR1-PatientA>;
          fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR1-PatientA" ]
        ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-method" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-method" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method" ];
            fhir:Coding.code [ fhir:value "manual" ]
          ]
        ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
        fhir:Extension.valueCoding [
          fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
          fhir:Coding.code [ fhir:value "certain" ]
        ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
        fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-period" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period" ];
        fhir:Extension.valuePeriod [
          fhir:Period.start [ fhir:value "2020-04-18"^^xsd:date ]
        ]
@@ -324,135 +324,135 @@
        fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to" ];
          fhir:Extension.valueReference [
-           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientB>;
+           fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientB>;
            fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR2-PatientB" ]
          ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria" ];
          fhir:Extension.valueString [ fhir:value "Exact name match" ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
          fhir:Extension.valueCoding [
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
            fhir:Coding.code [ fhir:value "certainly-not" ]
          ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
          fhir:Extension.valueDecimal [ fhir:value "0"^^xsd:decimal ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail" ]
      ], [
        fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to" ];
          fhir:Extension.valueReference [
-           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientB>;
+           fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientB>;
            fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR2-PatientB" ]
          ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria" ];
          fhir:Extension.valueString [ fhir:value "Fuzzy match" ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
          fhir:Extension.valueCoding [
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
            fhir:Coding.code [ fhir:value "possible" ]
          ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
          fhir:Extension.valueDecimal [ fhir:value "70"^^xsd:decimal ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail" ]
      ], [
        fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to" ];
          fhir:Extension.valueReference [
-           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientB>;
+           fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR2-PatientB>;
            fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR2-PatientB" ]
          ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria" ];
          fhir:Extension.valueString [ fhir:value "Manual User Match" ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
          fhir:Extension.valueCoding [
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
            fhir:Coding.code [ fhir:value "certain" ]
          ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
          fhir:Extension.valueDecimal [ fhir:value "100"^^xsd:decimal ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail" ]
      ], [
        fhir:index 8;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization" ];
        fhir:Extension.valueString [ fhir:value "HDC" ]
      ], [
        fhir:index 9;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type" ];
        fhir:Extension.valueString [ fhir:value "Manual Patient Match" ]
      ], [
        fhir:index 10;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "Web Portal" ]
      ], [
        fhir:index 11;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version" ];
        fhir:Extension.valueString [ fhir:value "1.0" ]
      ], [
        fhir:index 12;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp" ];
        fhir:Extension.valueDateTime [ fhir:value "2020-04-18T10:35:01Z"^^xsd:dateTime ]
      ];
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/see-also" ]
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/see-also" ]
   ], [
      fhir:index 4;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-source-reference" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-source-reference" ];
        fhir:Extension.valueReference [
-         fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR3-PatientD>;
+         fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR3-PatientD>;
          fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR3-PatientD" ]
        ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-method" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-method" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-method" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method" ];
            fhir:Coding.code [ fhir:value "manual" ]
          ]
        ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
        fhir:Extension.valueCoding [
          fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
          fhir:Coding.code [ fhir:value "certainly-not" ]
        ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
        fhir:Extension.valueDecimal [ fhir:value "0"^^xsd:decimal ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-period" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-period" ];
        fhir:Extension.valuePeriod [
          fhir:Period.start [ fhir:value "2020-04-14"^^xsd:date ];
          fhir:Period.end [ fhir:value "2020-04-18"^^xsd:date ]
@@ -461,112 +461,112 @@
        fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to" ];
          fhir:Extension.valueReference [
-           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR1-PatientA>;
+           fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR1-PatientA>;
            fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR1-PatientA" ]
          ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria" ];
          fhir:Extension.valueString [ fhir:value "Exact name match" ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
          fhir:Extension.valueCoding [
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
            fhir:Coding.code [ fhir:value "certainly-not" ]
          ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
          fhir:Extension.valueDecimal [ fhir:value "0"^^xsd:decimal ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail" ]
      ], [
        fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to" ];
          fhir:Extension.valueReference [
-           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR1-PatientA>;
+           fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR1-PatientA>;
            fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR1-PatientA" ]
          ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria" ];
          fhir:Extension.valueString [ fhir:value "Fuzzy match" ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
          fhir:Extension.valueCoding [
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
            fhir:Coding.code [ fhir:value "probable" ]
          ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
          fhir:Extension.valueDecimal [ fhir:value "80"^^xsd:decimal ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail" ]
      ], [
        fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-compared-to" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-compared-to" ];
          fhir:Extension.valueReference [
-           fhir:link <http://ibm.com/fhir/cdm/Patient/MatchedPatientSource-EMR1-PatientA>;
+           fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientSource-EMR1-PatientA>;
            fhir:Reference.reference [ fhir:value "Patient/MatchedPatientSource-EMR1-PatientA" ]
          ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-criteria" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-criteria" ];
          fhir:Extension.valueString [ fhir:value "Manual User Split" ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-level" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-level" ];
          fhir:Extension.valueCoding [
            fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/match-grade" ];
            fhir:Coding.code [ fhir:value "certainly-not" ]
          ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-confidence-score" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-confidence-score" ];
          fhir:Extension.valueDecimal [ fhir:value "0"^^xsd:decimal ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/match-detail" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/match-detail" ]
      ], [
        fhir:index 8;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/split-method" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/split-method" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/match-method" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/match-method" ];
            fhir:Coding.code [ fhir:value "manual" ]
          ]
        ]
      ], [
        fhir:index 9;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization" ];
        fhir:Extension.valueString [ fhir:value "HDC" ]
      ], [
        fhir:index 10;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type" ];
        fhir:Extension.valueString [ fhir:value "Manual Patient Split" ]
      ], [
        fhir:index 11;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "Web Portal" ]
      ], [
        fhir:index 12;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version" ];
        fhir:Extension.valueString [ fhir:value "1.0" ]
      ], [
        fhir:index 13;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp" ];
        fhir:Extension.valueDateTime [ fhir:value "2020-04-18T10:36:02Z"^^xsd:dateTime ]
      ];
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/see-also" ]
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/see-also" ]
   ];
   fhir:Patient.identifier [
      fhir:index 0;
@@ -574,11 +574,11 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "MDI" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "http://ibm.com/fhir/primary/patient-match-identifier" ];
+     fhir:Identifier.system [ fhir:value "http://linuxforhealth.org/platform/patient-match-identifier" ];
      fhir:Identifier.value [ fhir:value "c82a8fce-11db-4396-b10c-1150abd1a222" ];
      fhir:Identifier.assigner [
        fhir:Reference.display [ fhir:value "HDC" ]
@@ -598,7 +598,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Patient/MatchedPatientExample.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Patient/MatchedPatientExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

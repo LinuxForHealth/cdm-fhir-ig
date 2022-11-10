@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="payer-subscriber-relationship"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/4.0.0/CodeSystem-subscriber-relationship.html"><code>http://terminology.hl7.org/CodeSystem/subscriber-relationship</code></a></li><li>Include all codes defined in <a href="CodeSystem-payer-subscriber-relationship.html"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-subscriber-relationship</code></a></li></ul></div>
+  </text>
+  <url value="http://linuxforhealth.org/fhir/cdm/ValueSet/payer-subscriber-relationship"/>
+  <version value="8.0.0"/>
+  <name value="PayerSubscriberRelationshipCodeValueSet"/>
+  <title value="Payer Subscriber Relationship Value Set"/>
+  <status value="active"/>
+  <date value="2022-11-10T16:00:46+00:00"/>
+  <publisher value="LinuxForHealth Team"/>
+  <description value="Payer subscriber relationship value set for the relationship of the member to the contract holder"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
+    </include>
+    <include>
+      <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-subscriber-relationship"/>
+    </include>
+  </compose>
+</ValueSet>

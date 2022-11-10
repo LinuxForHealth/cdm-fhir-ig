@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="organization-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-payer-provider-type.html"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-provider-type</code></a></li><li>Include all codes defined in <a href="http://terminology.hl7.org/4.0.0/CodeSystem-organization-type.html"><code>http://terminology.hl7.org/CodeSystem/organization-type</code></a></li></ul></div>
+  </text>
+  <url value="http://linuxforhealth.org/fhir/cdm/ValueSet/organization-type"/>
+  <version value="8.0.0"/>
+  <name value="OrganizationTypeValueSet"/>
+  <title value="Organization Type Value Set"/>
+  <status value="active"/>
+  <date value="2022-11-10T16:00:46+00:00"/>
+  <publisher value="LinuxForHealth Team"/>
+  <description value="LinuxForHealth standard values for organization type"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-provider-type"/>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ALVEARIE.FHIR.IG\Home - FHIR v4.0.1</title>
+    <title>LINUXFORHEALTH.FHIR.IG\Home - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -19,7 +19,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/alvearie.css" rel="stylesheet"/>
+<link href="assets/css/linuxforhealth-fhir-ig.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -47,19 +47,19 @@
         <!-- Placeholder for child template header declarations -->
 
 <div id="hl7-nav">
-  <a id="alvearie-logo" no-external="true">
+  <a id="linuxforhealth-logo" no-external="true">
     <!-- 
     // New logo image reference should go here
-    // Place image in data/alvearie-template/content/assets/images folder
-    <img height="60" alt="Alvearie" src="assets/images/logoHere.png" style="float:left"/>
+    // Place image in data/linuxforhealth-template/content/assets/images folder
+    <img height="60" alt="LinuxForHealth" src="assets/images/linuxforhealth-logo.png" style="float:left"/>
     -->
   </a>
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Alvearie FHIR Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">LinuxForHealth FHIR Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">7.0.0 - draft
+            <span style="display:inline-block;">8.0.0 - draft
 
 
 
@@ -131,7 +131,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Alvearie FHIR Implementation Guide - Local Development build (v7.0.0). See the <a href="http://ibm.com/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">LinuxForHealth FHIR Implementation Guide - Local Development build (v8.0.0). See the <a href="http://linuxforhealth.org/fhir/cdm/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -143,10 +143,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <table class="colsi">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://linuxforhealth.org/fhir/cdm/ImplementationGuide/linuxforhealth.fhir.ig<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://linuxforhealth.org/fhir/cdm/ImplementationGuide/linuxforhealth.fhir.ig"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">7.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://ibm.com/fhir/cdm/ImplementationGuide/alvearie.fhir.ig|7.0.0"/></span>
+      <span class="copy-text">8.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://linuxforhealth.org/fhir/cdm/ImplementationGuide/linuxforhealth.fhir.ig|8.0.0"/></span>
       </td>
     </tr>
 
@@ -162,14 +162,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Active
           
-            as of 2022-09-08
+            as of 2022-11-10
           
         
       </td>
 
 
 
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">AlvearieFHIRImplementationGuide</span></td>
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">LinuxForHealthFHIRImplementationGuide</span></td>
     </tr>
 
 
@@ -188,7 +188,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#about-fhir-and-whole-health-data-connect" id="markdown-toc-about-fhir-and-whole-health-data-connect">About FHIR and Whole Health Data Connect</a></li>
+  <li><a href="#about-fhir-and-linuxforhealth" id="markdown-toc-about-fhir-and-linuxforhealth">About FHIR and LinuxForHealth</a></li>
   <li><a href="#about-the-common-data-model" id="markdown-toc-about-the-common-data-model">About the Common Data Model</a></li>
   <li><a href="#getting-started" id="markdown-toc-getting-started">Getting started</a></li>
   <li><a href="#license" id="markdown-toc-license">License</a></li>
@@ -196,11 +196,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<h3 id="about-fhir-and-whole-health-data-connect">About FHIR and Whole Health Data Connect</h3>
+<h3 id="about-fhir-and-linuxforhealth">About FHIR and LinuxForHealth</h3>
 
 <p>The Fast Healthcare Interoperability Resource (<strong>FHIR</strong>) is a standard for healthcare data exchange, published by the <a href="http://www.hl7.org/">Health Level Seven International</a> (HL7®) standards organization.</p>
 
-<p>To build upon FHIR standards, Whole Health Data Connect is a Common Data Model Implementation Guide designed to support data interoperability for a cross-section of healthcare use cases, and refers to the model defined by this implementation guide as the Health Data Connect Common Data Model.</p>
+<p>To build upon FHIR standards, LinuxForHealth is a Common Data Model Implementation Guide designed to support data interoperability for a cross-section of healthcare use cases, and refers to the model defined by this implementation guide as the LinuxForHealth Common Data Model.</p>
 
 <h3 id="about-the-common-data-model">About the Common Data Model</h3>
 
@@ -221,11 +221,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="release-history">Release History</h3>
 
-<p>For release history of this IG, view the <a href="https://github.com/Alvearie/alvearie-fhir-ig/releases">release page</a> on our GitHub repo. Each release includes:</p>
+<p>For release history of this IG, view the <a href="https://github.com/LinuxForHealth/alvearie-fhir-ig/releases">release page</a> on our GitHub repo. Each release includes:</p>
 
 <ul>
   <li>Full IG Site Specification (full-ig.zip)</li>
-  <li>A snapshot jar file used to register the IG profiles on an IBM FHIR Server</li>
+  <li>A snapshot jar file used to register the IG profiles on an LinuxForHealth FHIR® Server</li>
   <li>Tar archive containing all assets used by the FHIR Publisher to build the site (package.tgz)</li>
   <li>Zip fies containing definitions and examples in json, xml, and ttl (Turtle)</li>
 </ul>
@@ -254,9 +254,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ibm.com/watson-health/project-alvearie">Alvearie Team</a>.  Package alvearie.fhir.ig#7.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 8, 2022 16:11+0000">2022-09-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://linuxforhealth.github.io/docs/">LinuxForHealth Team</a>.  Package linuxforhealth.fhir.ig#8.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 10, 2022 16:00+0000">2022-11-10</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  

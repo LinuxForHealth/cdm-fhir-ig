@@ -5,37 +5,37 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Patient/CDMPatientInstance-CommOptOut> a fhir:Patient;
+<http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance-CommOptOut> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CDMPatientInstance-CommOptOut"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Frasier Crane </b> male, DoB: 1955-02-21 ( Source System Row Identifier: 1c1751b9-fc28-4615-b09e-f594649dc7bf (OFFICIAL))</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Frasier Crane </b> male, DoB: 1955-02-21 ( Source System Row Identifier: 1c1751b9-fc28-4615-b09e-f594649dc7bf(use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">Match Data Identifier: 82587288-b8d8-4c3a-a3a6-4f3ba901cc7e(use: SECONDARY)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Opt-out patient for communications by product and/or mode\">Communication Opt-Out:</td><td colspan=\"3\"><ul><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/stated-reason: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-opt-out-reason other}\">Global opt-out example: all products, all communication modes, all conversation types</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/effective-period: 2020-01-01 12:00:00+0000 --&gt; (ongoing)</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Patient Portal</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: care-gap</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-01-01 01:01:00+0000</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Opt-out patient for communications by product and/or mode\">Communication Opt-Out:</td><td colspan=\"3\"><ul><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/stated-reason: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-opt-out-reason other}\">Product-specific opt-out example: care-gap only, all modes, health reminders only)</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-product: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-product care-gap}\">Care Gap</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/conversation-type: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-conversation-type gap-in-care}\">Health reminders associated with a gap in care</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/effective-period: 2020-01-01 12:00:00+0000 --&gt; (ongoing)</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Patient Portal</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: care-gap</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-01-01 01:01:00+0000</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Opt-out patient for communications by product and/or mode\">Communication Opt-Out:</td><td colspan=\"3\"><ul><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/stated-reason: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-opt-out-reason other}\">Product-specific opt-out example: care-gap only, all modes, appointment reminders only)</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-product: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-product care-gap}\">Care Gap</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/conversation-type: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-conversation-type appointment-reminder}\">Reminders for upcoming appointments</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/effective-period: 2020-01-01 12:00:00+0000 --&gt; (ongoing)</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Patient Portal</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: care-gap</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-01-01 01:01:00+0000</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Opt-out patient for communications by product and/or mode\">Communication Opt-Out:</td><td colspan=\"3\"><ul><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/stated-reason: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-opt-out-reason other}\">Product-specific opt-out example: care-gap only, sms text only, limited to one care gap)</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-product: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-product care-gap}\">Care Gap</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-mode: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-communication-mode sms}\">Sms Text</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/effective-period: 2020-01-01 12:00:00+0000 --&gt; (ongoing)</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-care-gap: dm-hba1c-caregap-poor-control</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Patient Portal</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: care-gap</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-01-01 01:01:00+0000</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Opt-out patient for communications by product and/or mode\">Communication Opt-Out:</td><td colspan=\"3\"><ul><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/stated-reason: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-opt-out-reason other}\">TEMPORARY product-specific opt-out example: care-gap only, all modes, all conversation types, all care gaps</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-product: <span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-product care-gap}\">Care Gap</span></li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/effective-period: 2020-01-01 12:00:00+0000 --&gt; 2020-03-30 12:00:00+0000</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization: HDC</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type: Patient Portal</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name: care-gap</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version: 1.0</li><li>http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp: 2020-01-01 01:01:00+0000</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender identity of the person, which will not be known until the newborn is older.\"><a href=\"StructureDefinition-sex-assigned-at-birth.html\">Sex Assigned At Birth:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth male}\">Male</span></li></ul></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/sex-assigned-at-birth" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth" ];
          fhir:Coding.code [ fhir:value "male" ]
        ]
      ]
@@ -43,282 +43,282 @@
      fhir:index 1;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/stated-reason" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/stated-reason" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-opt-out-reason" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-opt-out-reason" ];
            fhir:Coding.code [ fhir:value "other" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Global opt-out example: all products, all communication modes, all conversation types" ]
        ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/effective-period" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/effective-period" ];
        fhir:Extension.valuePeriod [
          fhir:Period.start [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime ]
        ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization" ];
        fhir:Extension.valueString [ fhir:value "HDC" ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type" ];
        fhir:Extension.valueString [ fhir:value "Patient Portal" ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "care-gap" ]
      ], [
        fhir:index 5;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version" ];
        fhir:Extension.valueString [ fhir:value "1.0" ]
      ], [
        fhir:index 6;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp" ];
        fhir:Extension.valueDateTime [ fhir:value "2020-01-01T13:01:00Z"^^xsd:dateTime ]
      ];
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/communication-opt-out" ]
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-opt-out" ]
   ], [
      fhir:index 2;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/stated-reason" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/stated-reason" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-opt-out-reason" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-opt-out-reason" ];
            fhir:Coding.code [ fhir:value "other" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Product-specific opt-out example: care-gap only, all modes, health reminders only)" ]
        ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/communication-product" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-product" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-product" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-product" ];
            fhir:Coding.code [ fhir:value "care-gap" ]
          ]
        ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/conversation-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/conversation-type" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-conversation-type" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-conversation-type" ];
            fhir:Coding.code [ fhir:value "gap-in-care" ]
          ]
        ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/effective-period" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/effective-period" ];
        fhir:Extension.valuePeriod [
          fhir:Period.start [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime ]
        ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization" ];
        fhir:Extension.valueString [ fhir:value "HDC" ]
      ], [
        fhir:index 5;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type" ];
        fhir:Extension.valueString [ fhir:value "Patient Portal" ]
      ], [
        fhir:index 6;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "care-gap" ]
      ], [
        fhir:index 7;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version" ];
        fhir:Extension.valueString [ fhir:value "1.0" ]
      ], [
        fhir:index 8;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp" ];
        fhir:Extension.valueDateTime [ fhir:value "2020-01-01T13:01:00Z"^^xsd:dateTime ]
      ];
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/communication-opt-out" ]
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-opt-out" ]
   ], [
      fhir:index 3;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/stated-reason" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/stated-reason" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-opt-out-reason" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-opt-out-reason" ];
            fhir:Coding.code [ fhir:value "other" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Product-specific opt-out example: care-gap only, all modes, appointment reminders only)" ]
        ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/communication-product" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-product" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-product" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-product" ];
            fhir:Coding.code [ fhir:value "care-gap" ]
          ]
        ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/conversation-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/conversation-type" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-conversation-type" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-conversation-type" ];
            fhir:Coding.code [ fhir:value "appointment-reminder" ]
          ]
        ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/effective-period" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/effective-period" ];
        fhir:Extension.valuePeriod [
          fhir:Period.start [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime ]
        ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization" ];
        fhir:Extension.valueString [ fhir:value "HDC" ]
      ], [
        fhir:index 5;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type" ];
        fhir:Extension.valueString [ fhir:value "Patient Portal" ]
      ], [
        fhir:index 6;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "care-gap" ]
      ], [
        fhir:index 7;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version" ];
        fhir:Extension.valueString [ fhir:value "1.0" ]
      ], [
        fhir:index 8;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp" ];
        fhir:Extension.valueDateTime [ fhir:value "2020-01-01T13:01:00Z"^^xsd:dateTime ]
      ];
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/communication-opt-out" ]
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-opt-out" ]
   ], [
      fhir:index 4;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/stated-reason" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/stated-reason" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-opt-out-reason" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-opt-out-reason" ];
            fhir:Coding.code [ fhir:value "other" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "Product-specific opt-out example: care-gap only, sms text only, limited to one care gap)" ]
        ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/communication-product" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-product" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-product" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-product" ];
            fhir:Coding.code [ fhir:value "care-gap" ]
          ]
        ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/communication-mode" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-mode" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-communication-mode" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-communication-mode" ];
            fhir:Coding.code [ fhir:value "sms" ]
          ]
        ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/effective-period" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/effective-period" ];
        fhir:Extension.valuePeriod [
          fhir:Period.start [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime ]
        ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-care-gap" ];
        fhir:Extension.valueString [ fhir:value "dm-hba1c-caregap-poor-control" ]
      ], [
        fhir:index 5;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization" ];
        fhir:Extension.valueString [ fhir:value "HDC" ]
      ], [
        fhir:index 6;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type" ];
        fhir:Extension.valueString [ fhir:value "Patient Portal" ]
      ], [
        fhir:index 7;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "care-gap" ]
      ], [
        fhir:index 8;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version" ];
        fhir:Extension.valueString [ fhir:value "1.0" ]
      ], [
        fhir:index 9;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp" ];
        fhir:Extension.valueDateTime [ fhir:value "2020-01-01T13:01:00Z"^^xsd:dateTime ]
      ];
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/communication-opt-out" ]
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-opt-out" ]
   ], [
      fhir:index 5;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/stated-reason" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/stated-reason" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-opt-out-reason" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-opt-out-reason" ];
            fhir:Coding.code [ fhir:value "other" ]
          ];
          fhir:CodeableConcept.text [ fhir:value "TEMPORARY product-specific opt-out example: care-gap only, all modes, all conversation types, all care gaps" ]
        ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/communication-product" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-product" ];
        fhir:Extension.valueCodeableConcept [
          fhir:CodeableConcept.coding [
            fhir:index 0;
-           fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/eng-product" ];
+           fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-product" ];
            fhir:Coding.code [ fhir:value "care-gap" ]
          ]
        ]
      ], [
        fhir:index 2;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/effective-period" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/effective-period" ];
        fhir:Extension.valuePeriod [
          fhir:Period.start [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime ];
          fhir:Period.end [ fhir:value "2020-03-30T00:00:00Z"^^xsd:dateTime ]
        ]
      ], [
        fhir:index 3;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-organization" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization" ];
        fhir:Extension.valueString [ fhir:value "HDC" ]
      ], [
        fhir:index 4;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-type" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type" ];
        fhir:Extension.valueString [ fhir:value "Patient Portal" ]
      ], [
        fhir:index 5;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-name" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name" ];
        fhir:Extension.valueString [ fhir:value "care-gap" ]
      ], [
        fhir:index 6;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-version" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version" ];
        fhir:Extension.valueString [ fhir:value "1.0" ]
      ], [
        fhir:index 7;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp" ];
        fhir:Extension.valueDateTime [ fhir:value "2020-01-01T13:01:00Z"^^xsd:dateTime ]
      ];
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/communication-opt-out" ]
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-opt-out" ]
   ];
   fhir:Patient.identifier [
      fhir:index 0;
@@ -326,7 +326,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -341,11 +341,11 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "MDI" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "http://ibm.com/fhir/primary/patient-match-identifier" ];
+     fhir:Identifier.system [ fhir:value "http://linuxforhealth.org/platform/patient-match-identifier" ];
      fhir:Identifier.value [ fhir:value "82587288-b8d8-4c3a-a3a6-4f3ba901cc7e" ];
      fhir:Identifier.assigner [
        fhir:Reference.display [ fhir:value "HDC" ]
@@ -364,7 +364,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Patient/CDMPatientInstance-CommOptOut.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance-CommOptOut.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

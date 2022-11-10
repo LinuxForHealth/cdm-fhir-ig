@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/appointment-cancellation-reason> a fhir:ValueSet;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/appointment-cancellation-reason> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "appointment-cancellation-reason"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://terminology.hl7.org/3.1.0/ValueSet-appointment-cancellation-reason.html\">http://terminology.hl7.org/ValueSet/appointment-cancellation-reason</a></li><li>Include all codes defined in <a href=\"CodeSystem-appointment-cancellation-reason.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/appointment-cancellation-reason</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://terminology.hl7.org/4.0.0/ValueSet-appointment-cancellation-reason.html\">http://terminology.hl7.org/ValueSet/appointment-cancellation-reason</a></li><li>Include all codes defined in <a href=\"CodeSystem-appointment-cancellation-reason.html\"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/appointment-cancellation-reason</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/appointment-cancellation-reason"];
-  fhir:ValueSet.version [ fhir:value "7.0.0"];
+  fhir:ValueSet.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/appointment-cancellation-reason"];
+  fhir:ValueSet.version [ fhir:value "8.0.0"];
   fhir:ValueSet.name [ fhir:value "AppointmentCancellationReasonValueSet"];
   fhir:ValueSet.title [ fhir:value "Appointment Cancellation Reason Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Alvearie Team"];
+  fhir:ValueSet.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "LinuxForHealth Team"];
   fhir:ValueSet.description [ fhir:value "Extended set of reasons for the cancellation of an appointment"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
@@ -38,13 +38,13 @@
        ]
      ], [
        fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/appointment-cancellation-reason" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/appointment-cancellation-reason" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/appointment-cancellation-reason.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/appointment-cancellation-reason.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

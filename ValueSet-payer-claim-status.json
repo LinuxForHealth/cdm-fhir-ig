@@ -1,0 +1,33 @@
+{
+  "resourceType": "ValueSet",
+  "id": "payer-claim-status",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-payer-claim-status.html\"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-status</code></a></li></ul></div>"
+  },
+  "url": "http://linuxforhealth.org/fhir/cdm/ValueSet/payer-claim-status",
+  "version": "8.0.0",
+  "name": "PayerClaimStatusValueSet",
+  "title": "Payer Claim Status Codes Value Set",
+  "status": "active",
+  "date": "2022-11-10T16:00:46+00:00",
+  "publisher": "LinuxForHealth Team",
+  "description": "Value set containing payer codes for the payment status of the claim.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-status"
+      }
+    ]
+  }
+}

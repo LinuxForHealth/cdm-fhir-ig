@@ -5,29 +5,29 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Organization/GeneralHospital> a fhir:Organization;
+<http://linuxforhealth.org/fhir/cdm/Organization/GeneralHospital> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "GeneralHospital"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-organization";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-organization>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"GeneralHospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization \"GeneralHospital\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-organization.html\">CDM Organization</a></p></div><p><b>identifier</b>: Source System Row Identifier: 7d5007d6-edd0-48b5-b34f-5c5f948b6d13 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Hospital and Medical Service Plans <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-organization-type.html\">Organization type</a>#prov; unknown#6324)</span></p><p><b>name</b>: General Hospital</p><p><b>telecom</b>: ph: 214-555-6000(WORK), fax: 214-555-6001(WORK)</p><p><b>address</b>: 100 Easy Street Irving TX 75014 US (WORK)</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"GeneralHospital\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization \"GeneralHospital\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-organization.html\">CDM Organization</a></p></div><p><b>identifier</b>: Source System Row Identifier: 7d5007d6-edd0-48b5-b34f-5c5f948b6d13(use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: Hospital and Medical Service Plans <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-organization-type.html\">Organization type</a>#prov; unknown#6324)</span></p><p><b>name</b>: General Hospital</p><p><b>telecom</b>: ph: 214-555-6000(WORK), fax: 214-555-6001(WORK)</p><p><b>address</b>: 100 Easy Street Irving TX 75014 US (WORK)</p></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
@@ -35,7 +35,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -102,7 +102,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Organization/GeneralHospital.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Organization/GeneralHospital.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

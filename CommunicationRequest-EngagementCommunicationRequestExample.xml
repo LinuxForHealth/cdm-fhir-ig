@@ -3,97 +3,97 @@
 <CommunicationRequest xmlns="http://hl7.org/fhir">
   <id value="EngagementCommunicationRequestExample"/>
   <meta>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id">
       <valueString value="99999"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id">
       <valueString value="b069a545-9506-40c6-8498-23de2e189143"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization">
       <valueString value="HDC"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type">
       <valueString value="Engagement Communication"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-name">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name">
       <valueString value="ATC"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-version">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version">
       <valueString value="1.0"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp">
       <valueDateTime value="2020-03-01T03:05:00Z"/>
     </extension>
-    <source value="http://ibm.com/fhir/engagement"/>
-    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/engagement-communication-request"/>
+    <source value="http://linuxforhealth.org/platform/engagement"/>
+    <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/engagement-communication-request"/>
     <tag>
-      <system value="http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification"/>
+      <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification"/>
       <code value="derived"/>
     </tag>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CommunicationRequest</b><a name="EngagementCommunicationRequestExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CommunicationRequest "EngagementCommunicationRequestExample" </p><p style="margin-bottom: 0px">Information Source: http://ibm.com/fhir/engagement!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-engagement-communication-request.html">Engagement CommunicationRequest</a></p><p style="margin-bottom: 0px">Tag: <span title="{http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification}">http://ibm.com/fhir/cdm/CodeSystem/process-meta-source-classification</span></p></div><p><b>Communication Contact</b>: 808-248-8689(MOBILE)</p><p><b>Communication Template</b>: dm-template</p><p><b>Communication Payload Data</b>: {shortCode = '888-111'}</p><p><b>Communication Product</b>: Care Gap <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eng-product.html">Engagement Product Codes</a>#care-gap)</span></p><p><b>Conversation Type</b>: Health reminders associated with a gap in care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eng-conversation-type.html">Engagement Conversation Type Codes</a>#gap-in-care)</span></p><p><b>Communication On-Behalf Of</b>: <a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html">PractitionerRole/CDMPractitionerRole-Attributed-PCP</a></p><p><b>Communication Measure</b>: <a href="Measure-QualityMeasureExample.html">Measure/QualityMeasureExample</a> "Diabetes_HbA1c_Test_Performed"</p><p><b>Communication Care Gap</b>: dm-hba1c-caregap-poor-control</p><p><b>Communication Priority Sequence</b>: 1</p><blockquote><p><b>Communication Reengagement</b></p><p><b>value</b>: 1</p><p><b>value</b>: 1st reengagement</p></blockquote><p><b>Communication Language</b>: en-US</p><p><b>Communication Retry Limit</b>: 5</p><p><b>Communication Vendor</b>: <a href="Organization-CommunicationVendor1.html">Organization/CommunicationVendor1</a> "Communication Vendor 1"</p><p><b>identifier</b>: Derived Resource Identifier: 0bd930b0-e2fc-4967-957d-a6719ecde9b4</p><p><b>status</b>: completed</p><p><b>statusReason</b>: In-Process - Communication request complete <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eng-communication-request-status-reason.html">Engagement Communication Request Status Reason Codes</a>#request-complete)</span></p><p><b>category</b>: Notification <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-communication-category.html">CommunicationCategory</a>#notification)</span></p><p><b>priority</b>: routine</p><p><b>medium</b>: Sms Text <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eng-communication-mode.html">Engagement Communication Mode Codes</a>#sms)</span></p><p><b>subject</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>about</b>: <a href="DetectedIssue-CareGapDetectedIssueExample.html">DetectedIssue/CareGapDetectedIssueExample</a></p><h3>Payloads</h3><table class="grid"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Our records indicate you are overdue for a medical appointment.  Please contact [PRACTIIONER-NAME] at [FACILITY-NAME], [FACILTY-PHONE] to schedule an appointment.</td></tr></table><p><b>occurrence</b>: 2020-06-16 09:00:00+0000 --&gt; 2020-06-16 08:00:00+0000</p><p><b>authoredOn</b>: 2020-06-16 03:00:00+0000</p><p><b>requester</b>: <a href="Organization-HDC.html">Organization/HDC</a> "HDC"</p><p><b>recipient</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>sender</b>: <a href="Organization-HDC.html">Organization/HDC</a> "HDC"</p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CommunicationRequest</b><a name="EngagementCommunicationRequestExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CommunicationRequest "EngagementCommunicationRequestExample" </p><p style="margin-bottom: 0px">Information Source: http://linuxforhealth.org/platform/engagement!</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-engagement-communication-request.html">Engagement CommunicationRequest</a></p><p style="margin-bottom: 0px">Tag: <span title="{http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification}">http://linuxforhealth.org/fhir/cdm/CodeSystem/process-meta-source-classification</span></p></div><p><b>Communication Contact</b>: 808-248-8689(MOBILE)</p><p><b>Communication Template</b>: dm-template</p><p><b>Communication Payload Data</b>: {shortCode = '888-111'}</p><p><b>Communication Product</b>: Care Gap <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eng-product.html">Engagement Product Codes</a>#care-gap)</span></p><p><b>Conversation Type</b>: Health reminders associated with a gap in care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eng-conversation-type.html">Engagement Conversation Type Codes</a>#gap-in-care)</span></p><p><b>Communication On-Behalf Of</b>: <a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html">PractitionerRole/CDMPractitionerRole-Attributed-PCP</a></p><p><b>Communication Measure</b>: <a href="Measure-QualityMeasureExample.html">Measure/QualityMeasureExample</a> "Diabetes_HbA1c_Test_Performed"</p><p><b>Communication Care Gap</b>: dm-hba1c-caregap-poor-control</p><p><b>Communication Priority Sequence</b>: 1</p><blockquote><p><b>Communication Reengagement</b></p><p><b>value</b>: 1</p><p><b>value</b>: 1st reengagement</p></blockquote><p><b>Communication Language</b>: en-US</p><p><b>Communication Retry Limit</b>: 5</p><p><b>Communication Vendor</b>: <a href="Organization-CommunicationVendor1.html">Organization/CommunicationVendor1</a> "Communication Vendor 1"</p><p><b>identifier</b>: Derived Resource Identifier: 0bd930b0-e2fc-4967-957d-a6719ecde9b4</p><p><b>status</b>: completed</p><p><b>statusReason</b>: In-Process - Communication request complete <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eng-communication-request-status-reason.html">Engagement Communication Request Status Reason Codes</a>#request-complete)</span></p><p><b>category</b>: Notification <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/4.0.0/CodeSystem-communication-category.html">CommunicationCategory</a>#notification)</span></p><p><b>priority</b>: routine</p><p><b>medium</b>: Sms Text <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-eng-communication-mode.html">Engagement Communication Mode Codes</a>#sms)</span></p><p><b>subject</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>about</b>: <a href="DetectedIssue-CareGapDetectedIssueExample.html">DetectedIssue/CareGapDetectedIssueExample</a></p><h3>Payloads</h3><table class="grid"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td>Our records indicate you are overdue for a medical appointment.  Please contact [PRACTIIONER-NAME] at [FACILITY-NAME], [FACILTY-PHONE] to schedule an appointment.</td></tr></table><p><b>occurrence</b>: 2020-06-16 09:00:00+0000 --&gt; 2020-06-16 08:00:00+0000</p><p><b>authoredOn</b>: 2020-06-16 03:00:00+0000</p><p><b>requester</b>: <a href="Organization-HDC.html">Organization/HDC</a> "HDC"</p><p><b>recipient</b>: <a href="Patient-CDMPatientInstance.html">Patient/CDMPatientInstance</a> " MCLASTNAME"</p><p><b>sender</b>: <a href="Organization-HDC.html">Organization/HDC</a> "HDC"</p></div>
   </text>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-contact">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-contact">
     <valueContactPoint>
       <system value="sms"/>
       <value value="808-248-8689"/>
       <use value="mobile"/>
     </valueContactPoint>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-template">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-template">
     <valueString value="dm-template"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-payload-data">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-payload-data">
     <valueString value="{shortCode = '888-111'}"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-product">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-product">
     <valueCodeableConcept>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/eng-product"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-product"/>
         <code value="care-gap"/>
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/conversation-type">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/conversation-type">
     <valueCodeableConcept>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/eng-conversation-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-conversation-type"/>
         <code value="gap-in-care"/>
       </coding>
     </valueCodeableConcept>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-on-behalf-of">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-on-behalf-of">
     <valueReference>
       <reference value="PractitionerRole/CDMPractitionerRole-Attributed-PCP"/>
     </valueReference>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-measure">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-measure">
     <valueReference>
       <reference value="Measure/QualityMeasureExample"/>
     </valueReference>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-care-gap">
     <valueString value="dm-hba1c-caregap-poor-control"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-priority-sequence">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-priority-sequence">
     <valueDecimal value="1"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-reengagement">
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reengagement-value">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-reengagement">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reengagement-value">
       <valueUnsignedInt value="1"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reengagement-display">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reengagement-display">
       <valueString value="1st reengagement"/>
     </extension>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-language">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-language">
     <valueCode value="en-US"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-retry-limt">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-retry-limt">
     <valueString value="5"/>
   </extension>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/communication-vendor">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/communication-vendor">
     <valueReference>
       <reference value="Organization/CommunicationVendor1"/>
     </valueReference>
@@ -101,11 +101,11 @@
   <identifier>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="DRI"/>
       </coding>
     </type>
-    <system value="http://ibm.com/fhir/cdm/engagement-communication-request"/>
+    <system value="http://linuxforhealth.org/platform/engagement-communication-request"/>
     <value value="0bd930b0-e2fc-4967-957d-a6719ecde9b4"/>
     <assigner>
       <display value="HDC"/>
@@ -113,11 +113,11 @@
   </identifier>
   <status value="completed"/>
   <statusReason>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp">
       <valueDateTime value="2020-03-01T03:06:01Z"/>
     </extension>
     <coding>
-      <system value="http://ibm.com/fhir/cdm/CodeSystem/eng-communication-request-status-reason"/>
+      <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-communication-request-status-reason"/>
       <code value="request-complete"/>
       <display value="In-Process - Communication request complete"/>
     </coding>
@@ -131,7 +131,7 @@
   <priority value="routine"/>
   <medium>
     <coding>
-      <system value="http://ibm.com/fhir/cdm/CodeSystem/eng-communication-mode"/>
+      <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/eng-communication-mode"/>
       <code value="sms"/>
     </coding>
   </medium>

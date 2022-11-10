@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/StructureDefinition/patient-list> a fhir:StructureDefinition;
+<http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "patient-list"];
   fhir:DomainResource.text [
@@ -21,13 +21,13 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/patient-list"];
-  fhir:StructureDefinition.version [ fhir:value "7.0.0"];
+  fhir:StructureDefinition.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list"];
+  fhir:StructureDefinition.version [ fhir:value "8.0.0"];
   fhir:StructureDefinition.name [ fhir:value "PatientList"];
   fhir:StructureDefinition.title [ fhir:value "Patient List"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:StructureDefinition.publisher [ fhir:value "Alvearie Team"];
+  fhir:StructureDefinition.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "LinuxForHealth Team"];
   fhir:StructureDefinition.description [ fhir:value "A list of references to specific patients"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
@@ -232,9 +232,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Meta" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-meta";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/process-meta>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta>
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -1531,9 +1531,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Meta" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/process-meta";
+           fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta";
            fhir:index 0;
-           fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/process-meta>
+           fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-meta>
          ]
        ]
      ], [
@@ -1609,7 +1609,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/StructureDefinition/patient-list.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/StructureDefinition/patient-list.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

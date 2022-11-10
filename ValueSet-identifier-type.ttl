@@ -5,21 +5,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/identifier-type> a fhir:ValueSet;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "identifier-type"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0203.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0203</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-identifier-type.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/identifier-type</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v2-0203.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0203</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-identifier-type.html\"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/identifier-type"];
-  fhir:ValueSet.version [ fhir:value "7.0.0"];
+  fhir:ValueSet.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type"];
+  fhir:ValueSet.version [ fhir:value "8.0.0"];
   fhir:ValueSet.name [ fhir:value "IdentifierTypeValueSet"];
   fhir:ValueSet.title [ fhir:value "Identifier Type Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Alvearie Team"];
-  fhir:ValueSet.description [ fhir:value "Extended set of identifier type codes from FHIR HL7 and extended Health Data Connect Common Data Model resource identifiers"];
+  fhir:ValueSet.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "LinuxForHealth Team"];
+  fhir:ValueSet.description [ fhir:value "Extended set of identifier type codes from FHIR HL7 and extended LinuxForHealth Common Data Model resource identifiers"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -34,13 +34,13 @@
        fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ]
      ], [
        fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/identifier-type.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/identifier-type.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

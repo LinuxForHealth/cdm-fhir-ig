@@ -3,22 +3,22 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="CDMPatientInstance-Attributed"/>
   <meta>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id">
       <valueString value="99999"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id">
       <valueString value="b069a545-9506-40c6-8498-23de2e189143"/>
     </extension>
     <source value="http://acme-health.com/emr1"/>
-    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
+    <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Sam Malone </b> male, DoB: 1947-12-29 ( Source System Row Identifier: 1fe85e9a-a19f-463c-b8cf-2b649c1740b6 (OFFICIAL))</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Sam Malone </b> male, DoB: 1947-12-29 ( Source System Row Identifier: 1fe85e9a-a19f-463c-b8cf-2b649c1740b6(use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Id:</td><td colspan="3">Match Data Identifier: a491127b-2e01-452f-ba3c-0cc93e986e8c(use: SECONDARY)</td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>General Practitioner: <a href="PractitionerRole-CDMPractitionerRole-EMR-PCP.html">PractitionerRole/CDMPractitionerRole-EMR-PCP</a></li><li>General Practitioner: <a href="PractitionerRole-CDMPractitionerRole-Enrollment.html">PractitionerRole/CDMPractitionerRole-Enrollment</a></li><li>General Practitioner: <a href="PractitionerRole-CDMPractitionerRole-Enrollment.html">PractitionerRole/CDMPractitionerRole-Enrollment</a></li><li>General Practitioner: <a href="CDMPractitionerRole-Imputed-PCP">CDMPractitionerRole-Imputed-PCP</a></li><li>General Practitioner: <a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html">PractitionerRole/CDMPractitionerRole-Attributed-PCP</a></li><li>General Practitioner: <a href="PractitionerRole-CDMPractitionerRole-Attributed-PCP.html">PractitionerRole/CDMPractitionerRole-Attributed-PCP</a></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender identity of the person, which will not be known until the newborn is older."><a href="StructureDefinition-sex-assigned-at-birth.html">Sex Assigned At Birth:</a></td><td colspan="3"><ul><li><span title="Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth male}">Male</span></li></ul></td></tr></table></div>
   </text>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/sex-assigned-at-birth">
     <valueCodeableConcept>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth"/>
         <code value="male"/>
       </coding>
     </valueCodeableConcept>
@@ -27,7 +27,7 @@
     <use value="official"/>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="SSRI"/>
       </coding>
     </type>
@@ -41,11 +41,11 @@
     <use value="secondary"/>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="MDI"/>
       </coding>
     </type>
-    <system value="http://ibm.com/fhir/primary/patient-match-identifier"/>
+    <system value="http://linuxforhealth.org/platform/patient-match-identifier"/>
     <value value="a491127b-2e01-452f-ba3c-0cc93e986e8c"/>
     <assigner>
       <display value="HDC"/>
@@ -58,13 +58,13 @@
   <gender value="male"/>
   <birthDate value="1947-12-29"/>
   <generalPractitioner>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-source"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-source"/>
         <code value="client-emr"/>
       </valueCoding>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-period">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-period">
       <valuePeriod>
         <start value="2019-01-01"/>
       </valuePeriod>
@@ -72,179 +72,179 @@
     <reference value="PractitionerRole/CDMPractitionerRole-EMR-PCP"/>
   </generalPractitioner>
   <generalPractitioner>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-source"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-source"/>
         <code value="enrollment"/>
       </valueCoding>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-period">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-period">
       <valuePeriod>
         <start value="2019-01-01"/>
         <end value="2019-12-31"/>
       </valuePeriod>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization">
       <valueString value="HDC"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type">
       <valueString value="Practitioner Attribution"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-name">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name">
       <valueString value="Claims Enrollment PCP Attribution"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-version">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version">
       <valueString value="1.0"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp">
       <valueDateTime value="2020-01-01T03:01:00Z"/>
     </extension>
     <reference value="PractitionerRole/CDMPractitionerRole-Enrollment"/>
   </generalPractitioner>
   <generalPractitioner>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-source"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-source"/>
         <code value="enrollment"/>
       </valueCoding>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-period">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-period">
       <valuePeriod>
         <start value="2020-01-01"/>
       </valuePeriod>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization">
       <valueString value="HDC"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type">
       <valueString value="Practitioner Attribution"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-name">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name">
       <valueString value="Claims Enrollment PCP Attribution"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-version">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version">
       <valueString value="1.0"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp">
       <valueDateTime value="2020-01-01T03:01:00Z"/>
     </extension>
     <reference value="PractitionerRole/CDMPractitionerRole-Enrollment"/>
   </generalPractitioner>
   <generalPractitioner>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-source"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-source"/>
         <code value="imputed"/>
       </valueCoding>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-product"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-product"/>
         <code value="engagement"/>
       </valueCoding>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-period">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-period">
       <valuePeriod>
         <start value="2020-02-14"/>
       </valuePeriod>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization">
       <valueString value="HDC"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type">
       <valueString value="Practitioner Attribution"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-name">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name">
       <valueString value="Advantage PCP Attribution"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-version">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version">
       <valueString value="1.0"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp">
       <valueDateTime value="2020-02-14T03:12:00Z"/>
     </extension>
     <reference value="CDMPractitionerRole-Imputed-PCP"/>
   </generalPractitioner>
   <generalPractitioner>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-source"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-source"/>
         <code value="imputed"/>
       </valueCoding>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-product"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-product"/>
         <code value="engagement"/>
       </valueCoding>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
         <system value="http://snomed.info/sct"/>
         <code value="446050000"/>
         <display value="PCP - Primary care physician"/>
       </valueCoding>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-period">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-period">
       <valuePeriod>
         <start value="2020-02-14"/>
       </valuePeriod>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization">
       <valueString value="HDC"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type">
       <valueString value="Practitioner Attribution"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-name">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name">
       <valueString value="Engagement PCP Attribution"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-version">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version">
       <valueString value="1.0"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp">
       <valueDateTime value="2020-02-14T03:18:00Z"/>
     </extension>
     <reference value="PractitionerRole/CDMPractitionerRole-Attributed-PCP"/>
   </generalPractitioner>
   <generalPractitioner>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-source"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-source"/>
         <code value="imputed"/>
       </valueCoding>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/attribution-product"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/attribution-product"/>
         <code value="engagement"/>
       </valueCoding>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-code">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-code">
       <valueCoding>
         <system value="http://snomed.info/sct"/>
         <code value="394592004"/>
         <display value="Clinical oncology"/>
       </valueCoding>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/reference-period">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-period">
       <valuePeriod>
         <start value="2020-02-14"/>
       </valuePeriod>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-organization">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization">
       <valueString value="HDC"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-type">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type">
       <valueString value="Practitioner Attribution"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-name">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name">
       <valueString value="Engagement PCP Attribution"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-version">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version">
       <valueString value="1.0"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp">
       <valueDateTime value="2020-02-14T03:18:00Z"/>
     </extension>
     <reference value="PractitionerRole/CDMPractitionerRole-Attributed-PCP"/>

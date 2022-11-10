@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/er-or-observation-room-service> a fhir:ValueSet;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/er-or-observation-room-service> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "er-or-observation-room-service"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-er-or-observation-room-service.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/er-or-observation-room-service</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-er-or-observation-room-service.html\"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/er-or-observation-room-service</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/er-or-observation-room-service"];
-  fhir:ValueSet.version [ fhir:value "7.0.0"];
+  fhir:ValueSet.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/er-or-observation-room-service"];
+  fhir:ValueSet.version [ fhir:value "8.0.0"];
   fhir:ValueSet.name [ fhir:value "ErOrObservationRoomServiceValueSet"];
   fhir:ValueSet.title [ fhir:value "Er Or Observation Room Service Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Alvearie Team"];
+  fhir:ValueSet.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "LinuxForHealth Team"];
   fhir:ValueSet.description [ fhir:value "Er Or Observation Room Service value set for claims"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
@@ -31,13 +31,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/er-or-observation-room-service" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/er-or-observation-room-service" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/er-or-observation-room-service.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/er-or-observation-room-service.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

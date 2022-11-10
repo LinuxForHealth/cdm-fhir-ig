@@ -12,13 +12,7 @@
   <sch:pattern>
     <sch:title>f:ParameterDefinition</sch:title>
     <sch:rule context="f:ParameterDefinition">
-      <sch:assert test="count(f:extension[@url = 'http://ibm.com/fhir/cdm/StructureDefinition/parameter-value']) &lt;= 1">extension with URL = 'http://ibm.com/fhir/cdm/StructureDefinition/parameter-value': maximum cardinality of 'extension' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ParameterDefinition</sch:title>
-    <sch:rule context="f:ParameterDefinition">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/parameter-value']) &lt;= 1">extension with URL = 'http://linuxforhealth.org/fhir/cdm/StructureDefinition/parameter-value': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

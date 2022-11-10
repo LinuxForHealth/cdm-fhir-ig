@@ -6,37 +6,37 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Encounter/CDMEncounterExample> a fhir:Encounter;
+<http://linuxforhealth.org/fhir/cdm/Encounter/CDMEncounterExample> a fhir:Encounter;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CDMEncounterExample"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr1" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-encounter";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-encounter";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-encounter>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-encounter>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"CDMEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"CDMEncounterExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-encounter.html\">CDM Encounter</a></p></div><p><b>Claim Type</b>: Financial information coming from the clinical data set <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-wh-payer-claim-type.html\">Health Data Connect Claim Type Codes</a>#financial)</span></p><p><b>identifier</b>: Source System Row Identifier: e17be8c4-07be-43d2-a53c-9487881f6f70 (OFFICIAL)</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: Patient-initiated encounter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#270427003)</span></p><p><b>serviceType</b>: 367 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#367)</span></p><p><b>priority</b>: routine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ActPriority.html\">ActPriority</a>#R)</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Period</b></td><td><b>Individual</b></td></tr><tr><td>*</td><td>primary performer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PPRF)</span></td><td>2020-04-15 09:00:00+0000 --&gt; 2020-04-15 09:15:00+0000</td><td><a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</td></tr></table><p><b>appointment</b>: <a href=\"Appointment-AppointmentExample.html\">Appointment/AppointmentExample</a></p><p><b>period</b>: 2020-04-15 09:00:00+0000 --&gt; 2020-04-15 09:15:00+0000</p><p><b>reasonCode</b>: Benign essential hypertension <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1201005)</span></p><p><b>reasonReference</b>: <a href=\"Procedure-CDMProcedureExample.html\">Procedure/CDMProcedureExample</a></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Condition</b></td><td><b>Use</b></td><td><b>Rank</b></td></tr><tr><td>*</td><td><a href=\"Condition-CDMConditionExample.html\">Condition/CDMConditionExample</a></td><td>Billing <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-diagnosis-role.html\">DiagnosisRole</a>#billing)</span></td><td>1</td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>PhysicalType</b></td><td><b>Period</b></td></tr><tr><td>*</td><td><a href=\"Location-KellyClinic.html\">Location/KellyClinic</a> \"Kelly Clinic\"</td><td>completed</td><td>Building <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-location-physical-type.html\">Location type</a>#bu)</span></td><td>2020-04-15 09:00:00+0000 --&gt; 2020-04-15 09:15:00+0000</td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-GeneralHospital.html\">Organization/GeneralHospital</a> \"General Hospital\"</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"CDMEncounterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter \"CDMEncounterExample\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-encounter.html\">CDM Encounter</a></p></div><p><b>Claim Type</b>: Financial information coming from the clinical data set <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-payer-claim-type.html\">Payer Claim Type Codes</a>#financial)</span></p><p><b>identifier</b>: Source System Row Identifier: e17be8c4-07be-43d2-a53c-9487881f6f70(use: OFFICIAL)</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: Patient-initiated encounter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#270427003)</span></p><p><b>serviceType</b>: 367 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#367)</span></p><p><b>priority</b>: routine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-ActPriority.html\">ActPriority</a>#R)</span></p><p><b>subject</b>: <a href=\"Patient-CDMPatientInstance.html\">Patient/CDMPatientInstance</a> \" MCLASTNAME\"</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Period</b></td><td><b>Individual</b></td></tr><tr><td>*</td><td>primary performer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#PPRF)</span></td><td>2020-04-15 09:00:00+0000 --&gt; 2020-04-15 09:15:00+0000</td><td><a href=\"Practitioner-DrKelly.html\">Practitioner/DrKelly</a> \" KELLY\"</td></tr></table><p><b>appointment</b>: <a href=\"Appointment-AppointmentExample.html\">Appointment/AppointmentExample</a></p><p><b>period</b>: 2020-04-15 09:00:00+0000 --&gt; 2020-04-15 09:15:00+0000</p><p><b>reasonCode</b>: Benign essential hypertension <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1201005)</span></p><p><b>reasonReference</b>: <a href=\"Procedure-CDMProcedureExample.html\">Procedure/CDMProcedureExample</a></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td>-</td><td><b>Condition</b></td><td><b>Use</b></td><td><b>Rank</b></td></tr><tr><td>*</td><td><a href=\"Condition-CDMConditionExample.html\">Condition/CDMConditionExample</a></td><td>Billing <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-diagnosis-role.html\">DiagnosisRole</a>#billing)</span></td><td>1</td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>PhysicalType</b></td><td><b>Period</b></td></tr><tr><td>*</td><td><a href=\"Location-KellyClinic.html\">Location/KellyClinic</a> \"Kelly Clinic\"</td><td>completed</td><td>Building <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-location-physical-type.html\">Location type</a>#bu)</span></td><td>2020-04-15 09:00:00+0000 --&gt; 2020-04-15 09:15:00+0000</td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-GeneralHospital.html\">Organization/GeneralHospital</a> \"General Hospital\"</p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/claim-type" ];
+     fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/claim-type" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/wh-payer-claim-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/payer-claim-type" ];
          fhir:Coding.code [ fhir:value "financial" ]
        ]
      ]
@@ -47,7 +47,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -89,7 +89,7 @@
      ]
   ];
   fhir:Encounter.subject [
-     fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstance>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstance>;
      fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstance" ]
   ];
   fhir:Encounter.participant [
@@ -108,13 +108,13 @@
        fhir:Period.end [ fhir:value "2020-04-15T09:15:00Z"^^xsd:dateTime ]
      ];
      fhir:Encounter.participant.individual [
-       fhir:link <http://ibm.com/fhir/cdm/Practitioner/DrKelly>;
+       fhir:link <http://linuxforhealth.org/fhir/cdm/Practitioner/DrKelly>;
        fhir:Reference.reference [ fhir:value "Practitioner/DrKelly" ]
      ]
   ];
   fhir:Encounter.appointment [
      fhir:index 0;
-     fhir:link <http://ibm.com/fhir/cdm/Appointment/AppointmentExample>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Appointment/AppointmentExample>;
      fhir:Reference.reference [ fhir:value "Appointment/AppointmentExample" ]
   ];
   fhir:Encounter.period [
@@ -133,10 +133,10 @@
   ];
   fhir:Encounter.reasonReference [
      fhir:index 0;
-     fhir:link <http://ibm.com/fhir/cdm/Procedure/CDMProcedureExample>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Procedure/CDMProcedureExample>;
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/reference-sequence" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-sequence" ];
        fhir:Extension.valuePositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
      ];
      fhir:Reference.reference [ fhir:value "Procedure/CDMProcedureExample" ]
@@ -144,7 +144,7 @@
   fhir:Encounter.diagnosis [
      fhir:index 0;
      fhir:Encounter.diagnosis.condition [
-       fhir:link <http://ibm.com/fhir/cdm/Condition/CDMConditionExample>;
+       fhir:link <http://linuxforhealth.org/fhir/cdm/Condition/CDMConditionExample>;
        fhir:Reference.reference [ fhir:value "Condition/CDMConditionExample" ]
      ];
      fhir:Encounter.diagnosis.use [
@@ -160,7 +160,7 @@
   fhir:Encounter.location [
      fhir:index 0;
      fhir:Encounter.location.location [
-       fhir:link <http://ibm.com/fhir/cdm/Location/KellyClinic>;
+       fhir:link <http://linuxforhealth.org/fhir/cdm/Location/KellyClinic>;
        fhir:Reference.reference [ fhir:value "Location/KellyClinic" ]
      ];
      fhir:Encounter.location.status [ fhir:value "completed" ];
@@ -178,13 +178,13 @@
      ]
   ];
   fhir:Encounter.serviceProvider [
-     fhir:link <http://ibm.com/fhir/cdm/Organization/GeneralHospital>;
+     fhir:link <http://linuxforhealth.org/fhir/cdm/Organization/GeneralHospital>;
      fhir:Reference.reference [ fhir:value "Organization/GeneralHospital" ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Encounter/CDMEncounterExample.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Encounter/CDMEncounterExample.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

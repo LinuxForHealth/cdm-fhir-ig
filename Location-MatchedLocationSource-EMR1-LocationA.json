@@ -4,22 +4,22 @@
   "meta": {
     "extension": [
       {
-        "url": "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id",
+        "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id",
         "valueString": "99999"
       },
       {
-        "url": "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id",
+        "url": "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id",
         "valueString": "b069a545-9506-40c6-8498-23de2e189143"
       }
     ],
     "source": "http://acme-health.com/emr1",
     "profile": [
-      "http://ibm.com/fhir/cdm/StructureDefinition/cdm-location"
+      "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-location"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"MatchedLocationSource-EMR1-LocationA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location \"MatchedLocationSource-EMR1-LocationA\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-location.html\">CDM Location</a></p></div><p><b>identifier</b>: Source System Row Identifier: locationA (OFFICIAL), Tax ID number: 222333789 (SECONDARY), Match Data Identifier: 7610613e-2ecb-4cf5-815c-42a9589b2245 (SECONDARY)</p><p><b>name</b>: Match Family Clinic</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"MatchedLocationSource-EMR1-LocationA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location \"MatchedLocationSource-EMR1-LocationA\" </p><p style=\"margin-bottom: 0px\">Information Source: http://acme-health.com/emr1!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cdm-location.html\">CDM Location</a></p></div><p><b>identifier</b>: Source System Row Identifier: locationA(use: OFFICIAL), Tax ID number: 222333789(use: SECONDARY), Match Data Identifier: 7610613e-2ecb-4cf5-815c-42a9589b2245(use: SECONDARY)</p><p><b>name</b>: Match Family Clinic</p></div>"
   },
   "identifier": [
     {
@@ -27,7 +27,7 @@
       "type": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type",
             "code": "SSRI"
           }
         ]
@@ -59,12 +59,12 @@
       "type": {
         "coding": [
           {
-            "system": "http://ibm.com/fhir/cdm/CodeSystem/identifier-type",
+            "system": "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type",
             "code": "MDI"
           }
         ]
       },
-      "system": "http://ibm.com/fhir/primary/location-match-identifier",
+      "system": "http://linuxforhealth.org/platform/location-match-identifier",
       "value": "7610613e-2ecb-4cf5-815c-42a9589b2245",
       "assigner": {
         "display": "HDC"

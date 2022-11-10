@@ -3,22 +3,22 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="MatchedPatientSource-EMR3-PatientD"/>
   <meta>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/tenant-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id">
       <valueString value="99999"/>
     </extension>
-    <extension url="http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id">
+    <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id">
       <valueString value="b069a545-9506-40c6-8498-23de2e189143"/>
     </extension>
     <source value="http://acme-health.com/emr1"/>
-    <profile value="http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"/>
+    <profile value="http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Margaret B Match </b> female, DoB: 1990-01-04 ( Source System Row Identifier: emr3-patientC (OFFICIAL))</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Margaret B Match </b> female, DoB: 1990-01-04 ( Source System Row Identifier: emr3-patientC(use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Id:</td><td colspan="3">Match Data Identifier: e00e79d2-684e-4a1a-8f2b-858b2ff9db36(use: SECONDARY)</td></tr><tr><td style="background-color: #f3f5da" title="Sex assigned at birth based on observation by a physician.  Also called phenotype, or how the genes were expressed, based on the observation of the doctor. This assignment may not match the gender identity of the person, which will not be known until the newborn is older."><a href="StructureDefinition-sex-assigned-at-birth.html">Sex Assigned At Birth:</a></td><td colspan="3"><ul><li><span title="Codes: {http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth female}">Female</span></li></ul></td></tr></table></div>
   </text>
-  <extension url="http://ibm.com/fhir/cdm/StructureDefinition/sex-assigned-at-birth">
+  <extension url="http://linuxforhealth.org/fhir/cdm/StructureDefinition/sex-assigned-at-birth">
     <valueCodeableConcept>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/sex-assigned-at-birth"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/sex-assigned-at-birth"/>
         <code value="female"/>
       </coding>
     </valueCodeableConcept>
@@ -27,7 +27,7 @@
     <use value="official"/>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="SSRI"/>
       </coding>
     </type>
@@ -38,11 +38,11 @@
     <use value="secondary"/>
     <type>
       <coding>
-        <system value="http://ibm.com/fhir/cdm/CodeSystem/identifier-type"/>
+        <system value="http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type"/>
         <code value="MDI"/>
       </coding>
     </type>
-    <system value="http://ibm.com/fhir/primary/patient-match-identifier"/>
+    <system value="http://linuxforhealth.org/platform/patient-match-identifier"/>
     <value value="e00e79d2-684e-4a1a-8f2b-858b2ff9db36"/>
     <assigner>
       <display value="HDC"/>

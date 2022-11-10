@@ -5,49 +5,49 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Patient/CDMPatientInstanceWithDataQualityInsights> a fhir:Patient;
+<http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstanceWithDataQualityInsights> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "CDMPatientInstanceWithDataQualityInsights"];
   fhir:Resource.meta [
      fhir:Element.extension [
        fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/tenant-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/tenant-id" ];
        fhir:Extension.valueString [ fhir:value "99999" ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/ingestion-batch-id" ];
        fhir:Extension.valueString [ fhir:value "b069a545-9506-40c6-8498-23de2e189143" ]
      ], [
        fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/path" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/path" ];
          fhir:Extension.valueString [ fhir:value "contact.telecom.value(where system = 'phone')" ]
        ], [
          fhir:index 1;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-id" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-id" ];
          fhir:Extension.valueIdentifier [
            fhir:Identifier.system [ fhir:value "http://www.acme.com/insights" ];
            fhir:Identifier.value [ fhir:value "data-state-id-2" ]
          ]
        ], [
          fhir:index 2;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/source-id" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/source-id" ];
          fhir:Extension.valueIdentifier [
            fhir:Identifier.system [ fhir:value "http://www.acme.com/analytics/phone-validator" ];
            fhir:Identifier.value [ fhir:value "coyote-md" ]
          ]
        ], [
          fhir:index 3;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/detected" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/detected" ];
          fhir:Extension.valueDateTime [ fhir:value "2020-01-01T03:01:00Z"^^xsd:dateTime ]
        ], [
          fhir:index 4;
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/category" ];
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/category" ];
          fhir:Extension.valueCodeableConcept [
            fhir:CodeableConcept.coding [
              fhir:index 0;
-             fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/insight-category-code-system" ];
+             fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/insight-category-code-system" ];
              fhir:Coding.code [ fhir:value "data-quality" ]
            ]
          ]
@@ -55,13 +55,13 @@
          fhir:index 5;
          fhir:Element.extension [
            fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-value" ];
+           fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-value" ];
            fhir:Extension.valueString [ fhir:value "555-000-5500" ]
          ], [
            fhir:index 1;
            fhir:Element.extension [
              fhir:index 0;
-             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/method" ];
+             fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/method" ];
              fhir:Extension.valueCodeableConcept [
                fhir:CodeableConcept.coding [
                  fhir:index 0;
@@ -71,27 +71,27 @@
              ]
            ], [
              fhir:index 1;
-             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/score" ];
+             fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/score" ];
              fhir:Extension.valueDecimal [ fhir:value "0"^^xsd:decimal ]
            ], [
              fhir:index 2;
-             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/description" ];
+             fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/description" ];
              fhir:Extension.valueString [ fhir:value "555 is not an area code in Chicago." ]
            ];
-           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-confidence" ]
+           fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-confidence" ]
          ];
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-result-summary" ]
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-result-summary" ]
        ], [
          fhir:index 6;
          fhir:Element.extension [
            fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-value" ];
+           fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-value" ];
            fhir:Extension.valueString [ fhir:value "773-555-0100" ]
          ], [
            fhir:index 1;
            fhir:Element.extension [
              fhir:index 0;
-             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/method" ];
+             fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/method" ];
              fhir:Extension.valueCodeableConcept [
                fhir:CodeableConcept.coding [
                  fhir:index 0;
@@ -101,52 +101,52 @@
              ]
            ], [
              fhir:index 1;
-             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/score" ];
+             fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/score" ];
              fhir:Extension.valueDecimal [ fhir:value "1"^^xsd:decimal ]
            ], [
              fhir:index 2;
-             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/description" ];
+             fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/description" ];
              fhir:Extension.valueString [ fhir:value "773 is a valid area code in Chicago." ]
            ];
-           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-confidence" ]
+           fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-confidence" ]
          ];
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-result-summary" ]
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-result-summary" ]
        ], [
          fhir:index 7;
          fhir:Element.extension [
            fhir:index 0;
-           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/reference" ];
+           fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference" ];
            fhir:Extension.valueReference [
-             fhir:link <http://ibm.com/fhir/cdm/Patient/CDMPatientInstanceWithDataQualityInsights>;
+             fhir:link <http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstanceWithDataQualityInsights>;
              fhir:Reference.reference [ fhir:value "Patient/CDMPatientInstanceWithDataQualityInsights" ]
            ]
          ], [
            fhir:index 1;
-           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/reference-path" ];
+           fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/reference-path" ];
            fhir:Extension.valueString [ fhir:value "address.city" ]
          ], [
            fhir:index 2;
            fhir:Element.extension [
              fhir:index 0;
-             fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/based-on-value" ];
+             fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/based-on-value" ];
              fhir:Extension.valueString [ fhir:value "Chicago" ]
            ];
-           fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-result" ]
+           fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-result" ]
          ];
-         fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight-detail" ]
+         fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight-detail" ]
        ];
-       fhir:Extension.url [ fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/insight" ]
+       fhir:Extension.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/insight" ]
      ];
      fhir:Meta.source [ fhir:value "http://acme-health.com/emr" ];
      fhir:Meta.profile [
-       fhir:value "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient";
+       fhir:value "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient";
        fhir:index 0;
-       fhir:link <http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient>
+       fhir:link <http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Firstname McLastname </b> male, DoB: 1990-01-04 ( Source System Row Identifier: unencryp-id1234 (OFFICIAL))</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Firstname McLastname </b> male, DoB: 1990-01-04 ( Source System Row Identifier: unencryp-id1234(use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">123 East St Chicago IL 60603 (HOME)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient contact\">Contact</td><td colspan=\"3\"><ul><li>ph: 555-000-5500(HOME)</li><li>ph: 773-555-0100(HOME)</li></ul></td></tr></table></div>"
   ];
   fhir:Patient.identifier [
      fhir:index 0;
@@ -154,7 +154,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/identifier-type" ];
+         fhir:Coding.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/identifier-type" ];
          fhir:Coding.code [ fhir:value "SSRI" ]
        ]
      ];
@@ -203,7 +203,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/Patient/CDMPatientInstanceWithDataQualityInsights.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/Patient/CDMPatientInstanceWithDataQualityInsights.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

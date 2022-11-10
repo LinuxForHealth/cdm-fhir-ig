@@ -5,21 +5,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/medication-knowledge-cost-type> a fhir:ValueSet;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/medication-knowledge-cost-type> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "medication-knowledge-cost-type"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-medication-knowledge-cost-type.html\"><code>http://ibm.com/fhir/cdm/CodeSystem/medication-knowledge-cost-type</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-medication-knowledge-cost-type.html\"><code>http://linuxforhealth.org/fhir/cdm/CodeSystem/medication-knowledge-cost-type</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://ibm.com/fhir/cdm/ValueSet/medication-knowledge-cost-type"];
-  fhir:ValueSet.version [ fhir:value "7.0.0"];
-  fhir:ValueSet.name [ fhir:value "WhPayerMedicationKnowledgeCostTypValueSet"];
-  fhir:ValueSet.title [ fhir:value "Health Data Connect Medication Knowledge Cost Type Value Set"];
+  fhir:ValueSet.url [ fhir:value "http://linuxforhealth.org/fhir/cdm/ValueSet/medication-knowledge-cost-type"];
+  fhir:ValueSet.version [ fhir:value "8.0.0"];
+  fhir:ValueSet.name [ fhir:value "MedicationKnowledgeCostTypValueSet"];
+  fhir:ValueSet.title [ fhir:value "Medication Knowledge Cost Type Value Set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-09-08T16:11:15+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Alvearie Team"];
-  fhir:ValueSet.description [ fhir:value "Health Data Connect medication knowledge cost type value set"];
+  fhir:ValueSet.date [ fhir:value "2022-11-10T16:00:46+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "LinuxForHealth Team"];
+  fhir:ValueSet.description [ fhir:value "Medication knowledge cost type value set"];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -31,13 +31,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ibm.com/fhir/cdm/CodeSystem/medication-knowledge-cost-type" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://linuxforhealth.org/fhir/cdm/CodeSystem/medication-knowledge-cost-type" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://ibm.com/fhir/cdm/ValueSet/medication-knowledge-cost-type.ttl> a owl:Ontology;
+<http://linuxforhealth.org/fhir/cdm/ValueSet/medication-knowledge-cost-type.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
