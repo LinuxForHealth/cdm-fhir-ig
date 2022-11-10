@@ -2,7 +2,7 @@ Profile:        CDMCondition
 Parent:         Condition
 Id:             cdm-condition
 Title:          "CDM Condition"
-Description:    "Health Data Connect Common Data Model definition of what fields we currently define for a condition"
+Description:    "LinuxForHealth Common Data Model definition of what fields we currently define for a condition"
 
 // Adding inline resources as contained resources for references
 * contained 0..*
@@ -30,7 +30,7 @@ Description:    "Health Data Connect Common Data Model definition of what fields
 * identifier[Source].value 1..1
 
 * extension contains ConditionDiseaseCourse named conditionDiseaseCourse 0..1
-* extension[conditionDiseaseCourse].valueCodeableConcept from WhConditionCourseValueSet (example)
+* extension[conditionDiseaseCourse].valueCodeableConcept from ConditionCourseValueSet (example)
 * extension[conditionDiseaseCourse] ^short      = "Clinical course of the disease (how the disease behaves over time), such as acute versus chronic"
 * extension[conditionDiseaseCourse] ^definition = "Clinical course of the disease (how the disease behaves over time), such as acute versus chronic"
 

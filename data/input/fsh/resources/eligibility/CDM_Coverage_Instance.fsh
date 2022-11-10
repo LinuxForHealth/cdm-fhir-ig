@@ -5,7 +5,7 @@ Title:              "Coverage Example"
 Description:        "Example of a coverage record for a patient beneficiary"
 
 * meta.source  = "http://acme-health.com/WellnessInsuranceCompany"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage"
 * meta.extension[sourceFileId].valueString     = "e00085555"
 
 * identifier.use                 = #official
@@ -42,11 +42,11 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[employeeCostCenter].valueCodeableConcept     = http://acme-health.com/CodeSystem/local-employee-cost-center#LocalEmpCostCenter
 * extension[employeeDepartment].valueCodeableConcept     = http://acme-health.com/CodeSystem/local-employee-department#LocalEmpDepartment
 * extension[employeeDivision].valueCodeableConcept       = http://acme-health.com/CodeSystem/local-employee-division#LocalEmpDivision
-* extension[employeeEducationLevel].valueCodeableConcept.coding[0] = WhPayerEducationLevelCodeSystem#D
+* extension[employeeEducationLevel].valueCodeableConcept.coding[0] = PayerEducationLevelCodeSystem#D
 * extension[employeeEducationLevel].valueCodeableConcept.coding[1] = http://acme-health.com/CodeSystem/local-employee-education-level#AttendedCollege
 * extension[employeeExemptIndicator].valueString         = "N"
 * extension[employeeFamilySize].valueInteger             = 2
-* extension[employeeGender].valueCodeableConcept         = WhPayerGenderCodeSystem#M
+* extension[employeeGender].valueCodeableConcept         = PayerGenderCodeSystem#M
 * extension[employeeHireDate].valueDate                  = "2000-01-01"
 * extension[employeeId].valueIdentifier.value            = "555555"
 * extension[employeeJobFamily].valueCodeableConcept      = http://acme-health.com/CodeSystem/local-employee-job-family#LocalEmpJobFamilyCd
@@ -66,7 +66,7 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[employeeRetirementDate].valueDate                      = "2099-12-31"
 * extension[employeeShift].valueCodeableConcept                    = http://acme-health.com/CodeSystem/local-employee-shift#Day
 * extension[employeeStatus].valueCodeableConcept.coding[0]         = http://acme-health.com/CodeSystem/local-employee-status#LocalEmpStatus
-* extension[employeeStatus].valueCodeableConcept.coding[1]         = WhPayerEmployeeStatusCodeSystem#1
+* extension[employeeStatus].valueCodeableConcept.coding[1]         = PayerEmployeeStatusCodeSystem#1
 * extension[employeeStatus].valueCodeableConcept.coding[2]         = HipaaEmployeeStatusCodeSystem#AC
 * extension[employeeSubBusinessUnit].valueCodeableConcept          = http://acme-health.com/CodeSystem/local-employee-sub-business-unit#LocalEmpSubBusinessUnit
 * extension[employeeTerminationDate].valueDate                     = "2099-12-31"
@@ -83,25 +83,25 @@ Description:        "Example of a coverage record for a patient beneficiary"
 * extension[jobClassCode].valueCodeableConcept            = http://acme-health.com/CodeSystem/local-job-class-code#jobclass
 * extension[jobLocationZipcode].valueString               = "43315"
 * extension[longTermDisabilityBenefitRate].valueDecimal   = 10.00
-* extension[medicareCoverage].valueCodeableConcept        = WhPayerMedicareCoverageCodeSystem#N
+* extension[medicareCoverage].valueCodeableConcept        = PayerMedicareCoverageCodeSystem#N
 * extension[medicareIndicator].valueString                = "N"
 * extension[memberEmployeeIndicator].valueCodeableConcept = http://acme-health.com/CodeSystem/local-member-employee-indicator#MemberEmployee
 * extension[restrictedBenefits].valueCodeableConcept      = http://acme-health.com/CodeSystem/local-restricted-benefits#LocalRestrictedBenefits
 * extension[salaryIndicator].valueString                  = "Y"
 * extension[shortTermDisabilityBenefitRate].valueDecimal  = 30.00
 * extension[ssiIndicator].valueString                     = "N"
-* extension[ssiStatus].valueCodeableConcept               = WhPayerSsiStatusCodeSystem#999
-* extension[tanfBenefits].valueCodeableConcept            = WhPayerTanfBenefitCodeSystem#9
+* extension[ssiStatus].valueCodeableConcept               = PayerSsiStatusCodeSystem#999
+* extension[tanfBenefits].valueCodeableConcept            = PayerTanfBenefitCodeSystem#9
 * extension[totalDependentCount].valueInteger             = 1
 * extension[unionWorkerIndicator].valueString             = "N"
 
-* class[0].type.coding  = WhPayerCoverageClassCodeSystem#election-tier
+* class[0].type.coding  = PayerCoverageClassCodeSystem#election-tier
 * class[0].value        = "Family"
-* class[1].type         = WhPayerCoverageClassCodeSystem#election-tier
+* class[1].type         = PayerCoverageClassCodeSystem#election-tier
 * class[1].value        = "dental employee only"
-* class[2].type.coding  = WhPayerCoverageClassCodeSystem#election-tier
+* class[2].type.coding  = PayerCoverageClassCodeSystem#election-tier
 * class[2].value        = "vision employee only"
-* class[3].type.coding  = WhPayerCoverageClassCodeSystem#group-type
+* class[3].type.coding  = PayerCoverageClassCodeSystem#group-type
 * class[3].value        = "HMO" 
 * class[4].type.coding  = COVERAGE-CLASS#group
 * class[4].value        = "GR12345"

@@ -4,8 +4,8 @@ Usage:          #example
 Title:          "Matched Practitioner Example"
 Description:    "Sample of a matched practitioner linked to multiple source practitioners, each with confidence level and period"
 
-* meta.source = "http://ibm.com/fhir/primary/practitioner-match"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-match-practitioner"
+* meta.source = "http://linuxforhealth.org/platform/primary/practitioner-match"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-match-practitioner"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -19,7 +19,7 @@ Description:    "Sample of a matched practitioner linked to multiple source prac
 
 * identifier[0].use = #official
 * identifier[0].type = 	IdentifierTypeCodeSystem#MDI
-* identifier[0].system = "http://ibm.com/fhir/primary/practitioner-match-identifier"
+* identifier[0].system = "http://linuxforhealth.org/platform/practitioner-match-identifier"
 * identifier[0].value = "e65bdcac-6e50-4353-8faa-dc147a603468"
 * identifier[0].assigner.display = "HDC"
 
@@ -51,15 +51,15 @@ Description:    "Sample of a matched practitioner linked to multiple source prac
 * extension[seeAlso][0].extension[matchDetail][1].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][0].extension[matchDetail][1].extension[matchConfidenceScore].valueDecimal = 100.0
 ////
-* extension[seeAlso][0].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
+* extension[seeAlso][0].extension[7].url = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization"
 * extension[seeAlso][0].extension[7].valueString = "HDC"
-* extension[seeAlso][0].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
+* extension[seeAlso][0].extension[8].url = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type"
 * extension[seeAlso][0].extension[8].valueString = "Practitioner Match"
-* extension[seeAlso][0].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
+* extension[seeAlso][0].extension[9].url = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name"
 * extension[seeAlso][0].extension[9].valueString = "MDM"
-* extension[seeAlso][0].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-version"
+* extension[seeAlso][0].extension[10].url = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version"
 * extension[seeAlso][0].extension[10].valueString = "1.0"
-* extension[seeAlso][0].extension[11].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
+* extension[seeAlso][0].extension[11].url = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp"
 * extension[seeAlso][0].extension[11].valueDateTime = "2020-01-01T03:01:00Z"
 
 // AUTMOMATED HIGH CONFIDENCE MATCH 2 - EMR1
@@ -77,13 +77,13 @@ Description:    "Sample of a matched practitioner linked to multiple source prac
 * extension[seeAlso][1].extension[matchDetail][1].extension[matchConfidenceLevel].valueCoding = MATCH-GRADE#certain
 * extension[seeAlso][1].extension[matchDetail][1].extension[matchConfidenceScore].valueDecimal = 100.0
 ////
-* extension[seeAlso][1].extension[7].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-organization"
+* extension[seeAlso][1].extension[7].url = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-organization"
 * extension[seeAlso][1].extension[7].valueString = "HDC"
-* extension[seeAlso][1].extension[8].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-type"
+* extension[seeAlso][1].extension[8].url = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-type"
 * extension[seeAlso][1].extension[8].valueString = "Practitioner Match"
-* extension[seeAlso][1].extension[9].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-name"
+* extension[seeAlso][1].extension[9].url = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-name"
 * extension[seeAlso][1].extension[9].valueString = "MDM"
-* extension[seeAlso][1].extension[10].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-version"
+* extension[seeAlso][1].extension[10].url = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-version"
 * extension[seeAlso][1].extension[10].valueString = "1.0"
-* extension[seeAlso][1].extension[11].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
+* extension[seeAlso][1].extension[11].url = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp"
 * extension[seeAlso][1].extension[11].valueDateTime = "2020-01-01T03:01:00Z"

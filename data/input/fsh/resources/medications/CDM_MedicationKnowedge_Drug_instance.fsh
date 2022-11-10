@@ -11,4 +11,4 @@ Description:    "Sample information about a medication for a drug claim"
 
 * cost.cost.currency = CURRENCY#USD
 * cost.source        = "NDC"
-* cost.type.coding   = WhPayerMedicationKnowledgeCostTypeCodeSystem#federal-upper-limit
+* cost.type.coding   = MedicationKnowledgeCostTypeCodeSystem#federal-upper-limit

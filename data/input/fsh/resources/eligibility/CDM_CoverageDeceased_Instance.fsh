@@ -5,7 +5,7 @@ Title:              "Coverage Deceased Example"
 Description:        "Example of a coverage record for a deceased patient beneficiary"
 
 * meta.source  = "http://acme-health.com/WellnessInsuranceCompany"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-coverage"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-coverage"
 * meta.extension[sourceFileId].valueString     = "e00082222"
 
 * identifier.use                 = #official
@@ -17,7 +17,7 @@ Description:        "Example of a coverage record for a deceased patient benefic
 * payor.type                              = RESOURCE-TYPE#Organiation
 * payor.identifier.system                 = "http://acme-health.com/payer1/payer"
 * payor.identifier.value                  = "encryp-i55555"
-* payor.identifier.extension.url          = "http://ibm.com/fhir/cdm/StructureDefinition/encrypted-state"
+* payor.identifier.extension.url          = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/encrypted-state"
 * payor.identifier.extension.valueBoolean = true
 
 * beneficiary = Reference(CDMPatientInstance)
@@ -37,14 +37,14 @@ Description:        "Example of a coverage record for a deceased patient benefic
 
 * extension[employeeCompany].valueCodeableConcept        = http://acme-health.com/CodeSystem/local-employee-company#LocalEmpCompany
 * extension[employeeCostCenter].valueCodeableConcept     = http://acme-health.com/CodeSystem/local-employee-cost-center#LocalEmpCostCenter
-* extension[employeeStatus].valueCodeableConcept         = WhPayerEmployeeStatusCodeSystem#3
+* extension[employeeStatus].valueCodeableConcept         = PayerEmployeeStatusCodeSystem#3
 * extension[employeeBusinessUnit].valueCodeableConcept   = http://acme-health.com/CodeSystem/local-employee-business-unit#EmpBusUnit
 * extension[jobClassCode].valueCodeableConcept           = http://acme-health.com/CodeSystem/local-job-class-code#jobclass
 * extension[salaryIndicator].valueString                 = "Y"
 * extension[unionWorkerIndicator].valueString            = "N"
 * extension[medicareIndicator].valueString               = "N"
 
-* class[0].type.coding  = WhPayerCoverageClassCodeSystem#election-tier
+* class[0].type.coding  = PayerCoverageClassCodeSystem#election-tier
 * class[0].value        = "Self"
 
 * relationship.coding = SUBSCRIBER-RELATIONSHIP#self

@@ -5,7 +5,7 @@ Description:    "Sample CDM PractitionerRole ingested from EMR or PMS system"
 Usage:          #example
 
 * meta.source = "http://acme-health.com/emr1"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner-role"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-practitioner-role"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"

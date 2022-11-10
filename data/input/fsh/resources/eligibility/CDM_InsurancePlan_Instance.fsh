@@ -5,7 +5,7 @@ Title:              "CDM Insurance Plan Example"
 Description:        "Example of a insurance plan record for a patient beneficiary"
 
 * meta.source  = "http://acme-health.com/WellnessInsuranceCompany"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-insurance-plan"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-insurance-plan"
 
 * identifier[0].use                    = #official
 * identifier[0].type                   = IdentifierTypeCodeSystem#SSRI
@@ -123,33 +123,33 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * plan.specificCost[17].benefit[0].cost[0].type[0]     = InsurancePlanBenefitTypeCodeSystem#monthly-premium-paid
 * plan.specificCost[17].benefit[0].cost[0].value.value = 6.00
 
-* extension[whPayerMedicalCoverageIndicator].valueString = "Y"
+* extension[payerMedicalCoverageIndicator].valueString = "Y"
 * type[0].coding                   = INSURANCE-PLAN-TYPE#medical
 * coverage[0].type                 = INSURANCE-PLAN-TYPE#medical
 * coverage[0].benefit.type         = INSURANCE-PLAN-TYPE#medical
 * coverage[0].network              = Reference(GeneralHospital)
 
-* extension[whPayerDentalCoverageIndicator].valueString = "Y"
+* extension[payerDentalCoverageIndicator].valueString = "Y"
 * type[1].coding                   = INSURANCE-PLAN-TYPE#dental
 * coverage[1].type                 = INSURANCE-PLAN-TYPE#dental
 * coverage[1].benefit.type         = INSURANCE-PLAN-TYPE#dental
 
-* extension[whPayerDrugCoverageIndicator].valueString = "Y"
+* extension[payerDrugCoverageIndicator].valueString = "Y"
 * type[2].coding                   = INSURANCE-PLAN-TYPE#Drug
 * coverage[2].type                 = INSURANCE-PLAN-TYPE#Drug
 * coverage[2].benefit.type         = INSURANCE-PLAN-TYPE#Drug
 
-* extension[whPayerHearingCoverageIndicator].valueString = "Y"
+* extension[payerHearingCoverageIndicator].valueString = "Y"
 * type[3].coding                   = InsurancePlanTypeCodeSystem#hearing
 * coverage[3].type                 = InsurancePlanTypeCodeSystem#hearing
 * coverage[3].benefit.type         = InsurancePlanTypeCodeSystem#hearing
 
-* extension[whPayerVisionCoverageIndicator].valueString = "Y"
+* extension[payerVisionCoverageIndicator].valueString = "Y"
 * type[4].coding                   = INSURANCE-PLAN-TYPE#vision
 * coverage[4].type                 = INSURANCE-PLAN-TYPE#vision
 * coverage[4].benefit.type         = INSURANCE-PLAN-TYPE#vision
 
-* extension[whPayerPsychCoverageIndicator].valueString = "N"
+* extension[payerPsychCoverageIndicator].valueString = "N"
 * type[5].coding                   = INSURANCE-PLAN-TYPE#mental
 * coverage[5].type                 = INSURANCE-PLAN-TYPE#mental
 * coverage[5].benefit.type         = INSURANCE-PLAN-TYPE#mental
@@ -158,42 +158,42 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * coverage[6].type                 = INSURANCE-PLAN-TYPE#subst-ab
 * coverage[6].benefit.type         = INSURANCE-PLAN-TYPE#subst-ab
 
-* extension[whPayerShorttermCareCoverageIndicator].valueString  = "Y"
+* extension[payerShorttermCareCoverageIndicator].valueString  = "Y"
 * type[7].coding                   = INSURANCE-PLAN-TYPE#short-term
 * coverage[7].type                 = INSURANCE-PLAN-TYPE#short-term
 * coverage[7].benefit.type         = INSURANCE-PLAN-TYPE#short-term
 
-* extension[whPayerLongtermCareCoverageIndicator].valueString  = "Y"
+* extension[payerLongtermCareCoverageIndicator].valueString  = "Y"
 * type[8].coding                   = INSURANCE-PLAN-TYPE#long-term
 * coverage[8].type                 = INSURANCE-PLAN-TYPE#long-term
 * coverage[8].benefit.type         = INSURANCE-PLAN-TYPE#long-term
 
-* extension[WhPayerSubstanceAbuseAmbulatoryCoverageIndicator].valueString = "N"
+* extension[PayerSubstanceAbuseAmbulatoryCoverageIndicator].valueString = "N"
 * type[9].coding                   = InsurancePlanTypeCodeSystem#substance-abuse-ambulatory
 * coverage[9].type                 = InsurancePlanTypeCodeSystem#substance-abuse-ambulatory
 * coverage[9].benefit.type         = InsurancePlanTypeCodeSystem#substance-abuse-ambulatory
 
-* extension[whPayerSubstanceAbuseDayNightCoverageIndicator].valueString = "N"
+* extension[payerSubstanceAbuseDayNightCoverageIndicator].valueString = "N"
 * type[10].coding                  = InsurancePlanTypeCodeSystem#substance-abuse-day-night
 * coverage[10].type                = InsurancePlanTypeCodeSystem#substance-abuse-day-night
 * coverage[10].benefit.type        = InsurancePlanTypeCodeSystem#substance-abuse-day-night
 
-* extension[whPayerSubstanceAbuseInpatientCoverageIndicator].valueString = "N"
+* extension[payerSubstanceAbuseInpatientCoverageIndicator].valueString = "N"
 * type[11].coding                  = InsurancePlanTypeCodeSystem#substance-abuse-inpatient
 * coverage[11].type                = InsurancePlanTypeCodeSystem#substance-abuse-inpatient
 * coverage[11].benefit.type        = InsurancePlanTypeCodeSystem#substance-abuse-inpatient
 
-* extension[whPayerMentalHealthAmbulatoryCoverageIndicator].valueString  = "N"
+* extension[payerMentalHealthAmbulatoryCoverageIndicator].valueString  = "N"
 * type[12].coding                  = InsurancePlanTypeCodeSystem#mental-health-ambulatory
 * coverage[12].type                = InsurancePlanTypeCodeSystem#mental-health-ambulatory
 * coverage[12].benefit.type        = InsurancePlanTypeCodeSystem#mental-health-ambulatory
 
-* extension[whPayerMentalHealthDayNightCoverageIndicator].valueString  = "N"
+* extension[payerMentalHealthDayNightCoverageIndicator].valueString  = "N"
 * type[13].coding                  = InsurancePlanTypeCodeSystem#mental-health-day-night
 * coverage[13].type                = InsurancePlanTypeCodeSystem#mental-health-day-night
 * coverage[13].benefit.type        = InsurancePlanTypeCodeSystem#mental-health-day-night
 
-* extension[whPayerMentalHealthInpatientCoverageIndicator].valueString  = "N"
+* extension[payerMentalHealthInpatientCoverageIndicator].valueString  = "N"
 * type[14].coding                  = InsurancePlanTypeCodeSystem#mental-health-inpatient
 * coverage[14].type                = InsurancePlanTypeCodeSystem#mental-health-inpatient
 * coverage[14].benefit.type        = InsurancePlanTypeCodeSystem#mental-health-inpatient
@@ -220,4 +220,4 @@ Description:        "Example of a insurance plan record for a patient beneficiar
 * extension[IndustryClassification].valueCodeableConcept = NAICS#621112
 * extension[medicalFullyInsuredIndicator].valueString    = "Y"
 * extension[visionFullyInsuredIndicator].valueString     = "Y"
-* extension[whPayerManagedCarePlanType].valueCodeableConcept              = http://acme-health.com/CodeSystem/local-managed-care-plan-type#LocalManagedCarePlan
+* extension[payerManagedCarePlanType].valueCodeableConcept              = http://acme-health.com/CodeSystem/local-managed-care-plan-type#LocalManagedCarePlan

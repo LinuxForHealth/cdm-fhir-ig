@@ -4,8 +4,8 @@ Usage:          #example
 Title:          "Measure Population Observation - Care Gap Example"
 Description:    "Example of an observation indicating that the patient was in a care gap over a period of time"
 
-* meta.source = "http://ibm.com/fhir/engagement-measure-cohort"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/measure-population-observation"
+* meta.source = "http://linuxforhealth.org/platform/engagement-measure-cohort"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-population-observation"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -16,7 +16,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 * meta.extension[processTimestamp].valueDateTime = "2020-02-28T02:01:00Z"
 
 * identifier.type = IdentifierTypeCodeSystem#DRI
-* identifier.system = "http://ibm.com/fhir/cdm/measure-population-observation"
+* identifier.system = "http://linuxforhealth.org/platform/measure-population-observation"
 * identifier.value = "9591c85d-2f90-4586-b76d-be8e8ab2a719"
 * identifier.assigner.display = "HDC"
 
@@ -42,8 +42,8 @@ Usage:          #example
 Title:          "Measure Population Observation - Related Care Gap Example"
 Description:    "Example of an observation indicating that the patient was in a related care gap over a period of time"
 
-* meta.source = "http://ibm.com/fhir/engagement-measure-cohort"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/measure-population-observation"
+* meta.source = "http://linuxforhealth.org/platform/engagement-measure-cohort"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/measure-population-observation"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -54,7 +54,7 @@ Description:    "Example of an observation indicating that the patient was in a 
 * meta.extension[processTimestamp].valueDateTime = "2020-02-13T02:01:00Z"
 
 * identifier.type = IdentifierTypeCodeSystem#DRI
-* identifier.system = "http://ibm.com/fhir/cdm/measure-population-observation"
+* identifier.system = "http://linuxforhealth.org/platform/measure-population-observation"
 * identifier.value = "68d2c2330e254037adbd83eabee6eec4"
 * identifier.assigner.display = "HDC"
 

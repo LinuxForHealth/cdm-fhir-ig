@@ -1,7 +1,7 @@
 CodeSystem:     EngagementProductCodeSystem
 Id:             eng-product
 Title:          "Engagement Product Codes"
-Description:    "Health Data Connect engagement products"
+Description:    "LinuxForHealth engagement products"
 * ^caseSensitive = true
 * #campaign             "Campaign"      "Custom campaigns configured for patient engagment"
 * #care-gap             "Care Gap"      "Automated comminications based on cohorting and patient care gaps"
@@ -10,5 +10,5 @@ Description:    "Health Data Connect engagement products"
 ValueSet:       EngagementProductValueSet
 Id:             eng-product
 Title:          "Engagement Product Value Set"
-Description:    "Health Data Connect engagement products"
+Description:    "LinuxForHealth engagement products"
 * codes from system EngagementProductCodeSystem

@@ -4,8 +4,8 @@ Usage:          #example
 Title:          "Quality Measure Example"
 Description:    "Example measure containing criteria for measure rules"
 
-* meta.source = "http://ibm.com/fhir/quality-measure"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure"
+* meta.source = "http://linuxforhealth.org/platform/quality-measure"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure"
 
 * meta.extension[processOrganization].valueString = "HDC"
 * meta.extension[processType].valueString = "Measure Authoring"
@@ -15,11 +15,11 @@ Description:    "Example measure containing criteria for measure rules"
 * meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier[0].type = 	ID-TYPE#RI
-* identifier[0].system = "http://ibm.com/fhir/cdm/quality-measure"
+* identifier[0].system = "http://linuxforhealth.org/platform/quality-measure"
 * identifier[0].value = "8f3a1491-a07f-4860-8977-e7dac7398175"
 * identifier[0].assigner.display = "HDC"
 
-* url = "https://alvearie.io/alvearie-fhir-ig/Measure-QualityMeasureExample.html"
+* url = "https://linuxforhealth.org/fhir/cdm/Measure-QualityMeasureExample.html"
 
 * version = "1.0"
 * name = "Diabetes_HbA1c_Test_Performed"
@@ -34,7 +34,7 @@ Description:    "Example measure containing criteria for measure rules"
 * publisher = "HDC"
 * contact[0].name = "Clinical Informatics"
 * contact[0].telecom.system = #email
-* contact[0].telecom.value = "ClinicalInformatics@us.ibm.com"
+* contact[0].telecom.value = "ClinicalInformatics@linuxforhealth.org"
 
 * publisher = "HDC"
 * description = "Percentage of patients 18-75 years of age with diabetes who had a hemoglobin A1c test performed within the measurement period"

@@ -2,7 +2,7 @@ Profile:        CDMCommunicationRequest
 Parent:         CommunicationRequest
 Id:             cdm-communication-request
 Title:          "CDM CommunicationRequest"
-Description:    "Health Data Connect Common Data Model definition of what fields we currently define for a communication request"
+Description:    "LinuxForHealth Common Data Model definition of what fields we currently define for a communication request"
 * contained 0..0
 * meta only ProcessMeta
 

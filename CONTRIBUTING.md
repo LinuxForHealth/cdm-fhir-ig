@@ -1,8 +1,8 @@
-# Contributing to alvearie-fhir-ig
+# Contributing to the LinuxForHealth IG
 Since we have not completely moved our development into the open yet, external contributions are limited. If you would like to make contributions, please create an issue detailing the change. We will work with you to get it merged in.
 
 ## Git Signed-By Commits
-Alvearie projects now require contributors (internal and external) to certify their contributions according to https://developercertificate.org/ (and LinuxForHealth projects will follow soon).
+LinuxForHealth projects require contributors (internal and external) to certify their contributions according to https://developercertificate.org/ (and LinuxForHealth projects will follow soon).
 
 The GitHub DCO bot on all repos to enforce the presence of a **Signed-off-by** line and ensure that it matches the commit author for each commit on each pull request.
 

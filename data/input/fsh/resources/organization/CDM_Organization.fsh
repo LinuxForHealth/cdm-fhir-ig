@@ -2,7 +2,7 @@ Profile:          CDMOrganization
 Parent:           Organization
 Id:               cdm-organization
 Title:            "CDM Organization"
-Description:      "Health Data Connect Common Data Model definition of what fields we currently define for a organization"
+Description:      "LinuxForHealth Common Data Model definition of what fields we currently define for a organization"
 * contained 0..0
 * meta only ProcessMeta
 
@@ -39,7 +39,7 @@ Description:      "Health Data Connect Common Data Model definition of what fiel
 
 * name 1..1 
 
-* type from WhOrganizationTypeValueSet (example)
+* type from OrganizationTypeValueSet (example)
 
 * address only CDMAddress
 * telecom only CDMContactPoint

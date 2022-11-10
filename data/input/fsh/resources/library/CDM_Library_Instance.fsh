@@ -6,7 +6,7 @@ Description:    "Sample library entry for CMS146, including example default para
 
 * identifier[0].use = #official
 * identifier[0].type = 	IdentifierTypeCodeSystem#SSRI
-* identifier[0].system = "http://ibm.com/fhir/cdm/cql-library"
+* identifier[0].system = "http://linuxforhealth.org/platform/cql-library"
 * identifier[0].value = "sample-library-CMS146"
 * identifier[0].assigner.display = "HDC"
 
@@ -18,7 +18,7 @@ Description:    "Sample library entry for CMS146, including example default para
   
 * type = LIBRARY-TYPE#logic-library
 * date = "2015-07-22"
-* description = "Sample CMS146 library for sample measures used to illustrate Alvearie IG usage"
+* description = "Sample CMS146 library for sample measures used to illustrate LinuxForHealth CDM IG usage"
 * relatedArtifact.type = #depends-on
 
 * relatedArtifact.resource = "https://www.hl7.org/fhir/library-fhir-helpers.html"

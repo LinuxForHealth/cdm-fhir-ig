@@ -5,7 +5,7 @@ Title:          "CDM Explanation of Benefit - Professional Example"
 Description:    "Sample of a CDM Explanation of Benefit for a profession claim"
 
 * meta.source = "http://acme-health.com/WellnessMedicalCenter"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-explanation-of-benefit"
 
 * meta.extension[tenantId].valueString         = "tenant7209"
 * meta.extension[ingestionBatchId].valueString = "rgVCJnQBxvghkKTI8Hzz"

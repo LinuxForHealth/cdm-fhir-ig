@@ -2,7 +2,7 @@ Profile: CDMEligibility
 Parent: Bundle
 Id: cdm-eligibility
 Title: "CDM Eligibility"
-Description: "Health Data Connect Common Data Model definition of what fields we currently define for an eligibility record"
+Description: "LinuxForHealth Common Data Model definition of what fields we currently define for an eligibility record"
 * type = #document
 * meta only ProcessMeta
 * entry ^slicing.ordered = false

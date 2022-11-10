@@ -42,7 +42,7 @@ Description:     "This resource provides the adjudication details from the proce
 * payment.extension contains ClaimAdjustmentType named claimAdjustmentType 0..*
 * payment.extension[claimAdjustmentType] ^short      = "The code for the type of adjustment for the claim"
 * payment.extension[claimAdjustmentType] ^definition = "The code for the type of adjustment for the claim"
-* payment.extension[claimAdjustmentType].valueCodeableConcept from WhPayerClaimAdjustmentTypeValueSet (extensible)
+* payment.extension[claimAdjustmentType].valueCodeableConcept from PayerClaimAdjustmentTypeValueSet (extensible)
 
 * payment.extension contains DispositionReason named dispositionReason 0..*
 * payment.extension[dispositionReason] ^short      = "Customer-specific code for the disposition reason, as related to how the claim was paid"
@@ -56,7 +56,7 @@ Description:     "This resource provides the adjudication details from the proce
 
 //Extension for claim status at item level
 * item.extension contains ClaimResponseItemStatus named claimResponseItemStatus 0..1
-* item.extension[claimResponseItemStatus].valueCodeableConcept from WHPayerClaimStatusValueSet (extensible)
+* item.extension[claimResponseItemStatus].valueCodeableConcept from PayerClaimStatusValueSet (extensible)
 * item.extension[claimResponseItemStatus] ^short      = "The status of claim payment on claim item"
 * item.extension[claimResponseItemStatus] ^definition = "The status of claim payment on claim item"
 

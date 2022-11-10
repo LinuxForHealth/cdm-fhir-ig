@@ -5,7 +5,7 @@ Title:          "CDM Organization - Payer 1"
 Description:    "Sample CDM Organization representing a payer"
 
 * meta.source = "http://acme-health.com/organization/payer"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-organization"
 
 * identifier[0].use = #official
 * identifier[0].type = IdentifierTypeCodeSystem#SSRI

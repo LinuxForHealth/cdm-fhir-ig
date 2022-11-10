@@ -5,7 +5,7 @@ Title:          "Matched Practitioner Source - EMR1 Practitioner A"
 Description:    "Sample of a matched source practitioner with mpi guid identifier and reference to the match practitioner"
 
 * meta.source = "http://acme-health.com/emr1"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-practitioner"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -24,7 +24,7 @@ Description:    "Sample of a matched source practitioner with mpi guid identifie
 
 * identifier[2].use = #secondary
 * identifier[2].type = 	IdentifierTypeCodeSystem#MDI
-* identifier[2].system = "http://ibm.com/fhir/primary/practitioner-match-identifier"
+* identifier[2].system = "http://linuxforhealth.org/platform/practitioner-match-identifier"
 * identifier[2].value = "e65bdcac-6e50-4353-8faa-dc147a603468"
 * identifier[2].assigner.display = "HDC"
 

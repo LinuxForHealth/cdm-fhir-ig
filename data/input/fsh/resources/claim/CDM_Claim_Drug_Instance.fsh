@@ -5,7 +5,7 @@ Title:          "CDM Claim - Drug Example"
 Description:    "Sample of a CDM Drug Claim"
 
 * meta.source  = "http://acme-health.com/WellnessCenterPharmacy"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-claim-drug"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-claim-drug"
 
 * meta.extension[tenantId].valueString         = "tenant7209"
 * meta.extension[ingestionBatchId].valueString = "rgVCJnQBxvghkKTI8Hzz"
@@ -24,7 +24,7 @@ Description:    "Sample of a CDM Drug Claim"
 * extension[snapshotAgeInYears].valueUnsignedInt   = 20
 * status   = #active
 
-* type.coding[0]   = WhPayerClaimTypeCodeSystem#pharmacy
+* type.coding[0]   = PayerClaimTypeCodeSystem#pharmacy
 * type.coding[1]   = http://acme-health.com/CodeSystem/local-claim-type#Pharmacy
 
 * use      = #claim
@@ -135,4 +135,4 @@ Description:    "Sample of a CDM Drug Claim"
 * extension[lastClaimIndicator].valueString                = "Y"
 * extension[rxCount].valueUnsignedInt                      = 1
 * extension[submissionType].valueCodeableConcept           = http://acme-health.com/CodeSystem/local-submission-type#SubmitType1
-* extension[whPayerPcpResponsibilityIndicator].valueString = "N"
+* extension[payerPcpResponsibilityIndicator].valueString = "N"

@@ -5,7 +5,7 @@ Title:          "CDM Practitioner - Dr Kelly"
 Description:    "Sample CDM Practitioner ingested from a EMR or PMS system"
 
 * meta.source = "http://acme-health.com/emr1"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-practitioner"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-practitioner"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"

@@ -5,7 +5,7 @@ Title:          "CDM Encounter Example"
 Description:    "Sample encounter"
 
 * meta.source = "http://acme-health.com/emr1"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-encounter"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-encounter"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -39,7 +39,7 @@ Description:    "Sample encounter"
 * period.start = "2020-04-15T09:00:00Z"
 * period.end = "2020-04-15T09:15:00Z"
 
-* extension[claimType].valueCodeableConcept =  WhPayerClaimTypeCodeSystem#financial
+* extension[claimType].valueCodeableConcept =  PayerClaimTypeCodeSystem#financial
 
 * reasonCode = SNOMED#1201005  "Benign essential hypertension" 
 * reasonReference = Reference(CDMProcedureExample)

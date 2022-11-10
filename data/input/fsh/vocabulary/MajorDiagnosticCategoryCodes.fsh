@@ -1,7 +1,7 @@
-CodeSystem:     WHPayerMajorDiagnosticCategoryCodeSystem
-Id:             wh-payer-major-diagnostic-category
-Title:          "Health Data Connect Major Diagnostic Category Codes"
-Description:    "Health Data Connect standard major diagnostic category codes"
+CodeSystem:     PayerMajorDiagnosticCategoryCodeSystem
+Id:             payer-major-diagnostic-category
+Title:          "Payer Major Diagnostic Category Codes"
+Description:    "Major diagnostic category codes for payers"
 * ^caseSensitive = true
 * #0	"Missing/Invalid Diagnosis"     "Missing/Invalid Diagnosis"
 * #1	"Nervous"                       "Nervous"
@@ -30,8 +30,8 @@ Description:    "Health Data Connect standard major diagnostic category codes"
 * #24	"Multiple Trauma"               "Multiple Trauma"
 * #25	"HIV Infections"                "HIV Infections"
 
-ValueSet:       WHPayerMajorDiagnosticCategoryValueSet
-Id:             wh-payer-major-diagnostic-category
-Title:          "Major Diagnostic Category Value Set"
-Description:    "Health Data Connect standard value set containing major diagnostic category codes"
-* codes from system WHPayerMajorDiagnosticCategoryCodeSystem
+ValueSet:       PayerMajorDiagnosticCategoryValueSet
+Id:             payer-major-diagnostic-category
+Title:          "Payer Major Diagnostic Category Value Set"
+Description:    "Value set containing major diagnostic category codes for payers"
+* codes from system PayerMajorDiagnosticCategoryCodeSystem

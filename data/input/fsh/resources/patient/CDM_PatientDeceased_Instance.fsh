@@ -5,7 +5,7 @@ Title:          "CDM Patient Deceased Example"
 Description:    "Example of a CDMPatient representing a patient ingested from a EMR or PMS system who is deceased"
 
 * meta.source = "http://acme-health.com/emr1"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-patient"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-patient"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-5555-23de2e189143"

@@ -4,8 +4,8 @@ Usage:          #example
 Title:          "Quality Measure Report Example - Patient"
 Description:    "Example measure report containing individual measure results for a single patient"
 
-* meta.source = "http://ibm.com/fhir/measure-cohort"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/quality-measure-report-patient"
+* meta.source = "http://linuxforhealth.org/platform/measure-cohort"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/quality-measure-report-patient"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -17,7 +17,7 @@ Description:    "Example measure report containing individual measure results fo
 * meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier.type = ID-TYPE#RI
-* identifier.system = "http://ibm.com/fhir/cdm/quality-measure-report"
+* identifier.system = "http://linuxforhealth.org/platform/quality-measure-report"
 * identifier.value = "de25d288-120e-47c1-bb76-caac8bc3f439"
 * identifier.assigner.display = "HDC"
 

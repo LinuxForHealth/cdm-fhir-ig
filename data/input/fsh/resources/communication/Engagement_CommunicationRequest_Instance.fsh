@@ -4,8 +4,8 @@ Usage:          #example
 Title:          "Engagement Communication Request Example"
 Description:    "Example of an engagement communication request to send a SMS text to a patient concerning a care gap"
 
-* meta.source = "http://ibm.com/fhir/engagement"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/engagement-communication-request"
+* meta.source = "http://linuxforhealth.org/platform/engagement"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/engagement-communication-request"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -17,13 +17,13 @@ Description:    "Example of an engagement communication request to send a SMS te
 * meta.tag = ProcessMetaSourceClassification#derived
 
 * identifier[0].type = IdentifierTypeCodeSystem#DRI
-* identifier[0].system = "http://ibm.com/fhir/cdm/engagement-communication-request"
+* identifier[0].system = "http://linuxforhealth.org/platform/engagement-communication-request"
 * identifier[0].value = "0bd930b0-e2fc-4967-957d-a6719ecde9b4"
 * identifier[0].assigner.display = "HDC"
 
 * status = #completed
 * statusReason = EngagementCommunicationRequestStatusReasonCodeSystem#request-complete "In-Process - Communication request complete"
-* statusReason.extension[0].url = "http://ibm.com/fhir/cdm/StructureDefinition/process-timestamp"
+* statusReason.extension[0].url = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/process-timestamp"
 * statusReason.extension[0].valueDateTime = "2020-03-01T03:06:01Z"
 
 * priority = #routine

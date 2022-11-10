@@ -113,7 +113,7 @@ Id:             major-diagnostic-category
 Title:          "Major Diagnostic Category"
 Description:    "Body system or disease related groupings of clinical conditions, based on diagnosis codes" 
 * value[x] only CodeableConcept 
-* valueCodeableConcept from WHPayerMajorDiagnosticCategoryValueSet (extensible)
+* valueCodeableConcept from PayerMajorDiagnosticCategoryValueSet (extensible)
 
 Extension:      NetworkId
 Id:             network-id
@@ -132,7 +132,7 @@ Id:             procedure-group
 Title:          "Procedure Group"
 Description:    "Code assigned to categorize related procedures"
 * value[x] only CodeableConcept 
-* valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
+* valueCodeableConcept from PayerProcedureGroupValueSet (extensible)
 
 Extension:      ParticipatingPlan
 Id:             participating-plan
@@ -164,9 +164,9 @@ Title:          "Service Bill Days Count"
 Description:    "Number of days between the date of service and the date the claim was received"
 * value[x] only unsignedInt
 
-Extension:      WhPayerPcpResponsibilityIndicator
-Id:             wh-payer-pcp-responsibility-indicator
-Title:          "Health Data Connect PCP Responsibility Indicator"
+Extension:      PayerPcpResponsibilityIndicator
+Id:             payer-pcp-responsibility-indicator
+Title:          "Payer PCP Responsibility Indicator"
 Description:    "Indicates whether the primary care physician is the physician considered either responsible or accountable for this claim"
 * value[x] only string
 

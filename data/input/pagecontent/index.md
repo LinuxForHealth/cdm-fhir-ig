@@ -1,8 +1,8 @@
-### About FHIR and Whole Health Data Connect
+### About FHIR and LinuxForHealth
 
 The Fast Healthcare Interoperability Resource (**FHIR**) is a standard for healthcare data exchange, published by the [Health Level Seven International](http://www.hl7.org/) (HL7®) standards organization. 
 
-To build upon FHIR standards, Whole Health Data Connect is a Common Data Model Implementation Guide designed to support data interoperability for a cross-section of healthcare use cases, and refers to the model defined by this implementation guide as the Health Data Connect Common Data Model. 
+To build upon FHIR standards, LinuxForHealth is a Common Data Model Implementation Guide designed to support data interoperability for a cross-section of healthcare use cases, and refers to the model defined by this implementation guide as the LinuxForHealth Common Data Model. 
 
 
 ### About the Common Data Model
@@ -23,9 +23,9 @@ FHIR® is the registered trademark of HL7 and is used with the permission of HL7
 
 ### Release History
 
-For release history of this IG, view the [release page](https://github.com/Alvearie/alvearie-fhir-ig/releases) on our GitHub repo. Each release includes:
+For release history of this IG, view the [release page](https://github.com/LinuxForHealth/alvearie-fhir-ig/releases) on our GitHub repo. Each release includes:
 
 - Full IG Site Specification (full-ig.zip)
-- A snapshot jar file used to register the IG profiles on an IBM FHIR Server
+- A snapshot jar file used to register the IG profiles on an LinuxForHealth FHIR® Server
 - Tar archive containing all assets used by the FHIR Publisher to build the site (package.tgz)
 - Zip fies containing definitions and examples in json, xml, and ttl (Turtle)

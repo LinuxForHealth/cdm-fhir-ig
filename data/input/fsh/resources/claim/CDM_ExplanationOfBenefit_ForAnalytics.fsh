@@ -66,9 +66,9 @@ Description:    "The CDMExplanationOfBenefitForAnalytics profile extends the bas
 * extension[submissionType] ^short      = "Customer-specific code for the type of electronic submission"
 * extension[submissionType] ^definition = "Customer-specific code for the type of electronic submission"
 
-* extension contains WhPayerPcpResponsibilityIndicator named whPayerPcpResponsibilityIndicator 0..1
-* extension[whPayerPcpResponsibilityIndicator] ^short      =  "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"
-* extension[whPayerPcpResponsibilityIndicator] ^definition =  "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"
+* extension contains PayerPcpResponsibilityIndicator named payerPcpResponsibilityIndicator 0..1
+* extension[payerPcpResponsibilityIndicator] ^short      =  "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"
+* extension[payerPcpResponsibilityIndicator] ^definition =  "Indicator signifying that the primary care physician is the physician considered either responsible or accountable for this claim"
 
 * extension contains RxCount named rxCount 0..1
 * extension[rxCount] ^short      = "Count of prescriptions for the drug claim"
@@ -78,13 +78,13 @@ Description:    "The CDMExplanationOfBenefitForAnalytics profile extends the bas
 * diagnosis.extension contains MajorDiagnosticCategory named majorDiagnosticCategory 0..1
 * diagnosis.extension[majorDiagnosticCategory]  ^short           = "The body system or disease related groupings of clinical conditions, based on diagnosis codes"
 * diagnosis.extension[majorDiagnosticCategory]  ^definition      = "The body system or disease related groupings of clinical conditions, based on diagnosis codes"
-* diagnosis.extension[majorDiagnosticCategory].valueCodeableConcept from WHPayerMajorDiagnosticCategoryValueSet (extensible)
+* diagnosis.extension[majorDiagnosticCategory].valueCodeableConcept from PayerMajorDiagnosticCategoryValueSet (extensible)
 
 // .procedure section EXTENSIONS
 * procedure.extension contains ProcedureGroup named procedureGroup 0..1
 * procedure.extension[procedureGroup]  ^short           = "Code assigned to categorize related procedures"
 * procedure.extension[procedureGroup]  ^definition      = "Code assigned to categorize related procedures"
-* procedure.extension[procedureGroup].valueCodeableConcept from WHPayerProcedureGroupValueSet (extensible)
+* procedure.extension[procedureGroup].valueCodeableConcept from PayerProcedureGroupValueSet (extensible)
 
 // .insurance section EXTENSIONS
 * insurance.extension contains CrossoverIndicator named crossoverIndicator 0..1
@@ -171,7 +171,7 @@ Description:    "The CDMExplanationOfBenefitForAnalytics profile extends the bas
 * payment.extension contains ClaimAdjustmentType named claimAdjustmentType 0..*
 * payment.extension[claimAdjustmentType] ^short      = "The code for the type of adjustment for the claim"
 * payment.extension[claimAdjustmentType] ^definition = "The code for the type of adjustment for the claim"
-* payment.extension[claimAdjustmentType].valueCodeableConcept from WhPayerClaimAdjustmentTypeValueSet (extensible)
+* payment.extension[claimAdjustmentType].valueCodeableConcept from PayerClaimAdjustmentTypeValueSet (extensible)
 
 * payment.extension contains DispositionReason named dispositionReason 0..*
 * payment.extension[dispositionReason] ^short      = "Customer-specific code for the disposition reason, as related to how the claim was paid"

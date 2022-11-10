@@ -5,7 +5,7 @@ Title:          "CDM Condition Example"
 Description:    "Sample of a hypertension condition diagnosed by a condition record"
 
 * meta.source = "http://acme-health.com/emr1"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-condition"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-condition"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -28,4 +28,4 @@ Description:    "Sample of a hypertension condition diagnosed by a condition rec
 * recorder = Reference(DrKelly)
 * asserter = Reference(DrKelly)
 
-* extension[conditionDiseaseCourse].valueCodeableConcept = WhConditionCourseCodeSystem#373935005
+* extension[conditionDiseaseCourse].valueCodeableConcept = ConditionCourseCodeSystem#373935005

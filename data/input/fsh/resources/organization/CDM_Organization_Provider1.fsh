@@ -5,7 +5,7 @@ Title:          "CDM Organization - Provider 1"
 Description:    "Sample CDM Organization representing a provider"
 
 * meta.source  = "http://acme-health.com/emr1/provider-organization"
-* meta.profile = "http://ibm.com/fhir/cdm/StructureDefinition/cdm-organization"
+* meta.profile = "http://linuxforhealth.org/fhir/cdm/StructureDefinition/cdm-organization"
 
 * meta.extension[tenantId].valueString = "99999"
 * meta.extension[ingestionBatchId].valueString = "b069a545-9506-40c6-8498-23de2e189143"
@@ -30,7 +30,7 @@ Description:    "Sample CDM Organization representing a provider"
 
 * name = "Dr Smith"
 * active = true
-* type = WhPayerProviderTypeCodeSystem#204
+* type = PayerProviderTypeCodeSystem#204
 
 * address.use = #work
 * address.type = #physical
